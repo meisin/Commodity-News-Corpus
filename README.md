@@ -1,6 +1,6 @@
 # Commodity News Corpus
-
-
+ 
+Commodity news articles were taken from from notable news agencies below:
 * https://www.investing.com/commodities/crude-oil-news
 * https://www.reuters.com/news/economy
 * https://www.cnbc.com
@@ -10,6 +10,7 @@
 * https://www.marketpulse.com
 * https://www.fxempire.com/news/
 
+**Note** Due to copyright issues, only the links to the original news articles are provided (without the actual news text) along with the annotation files. 
 
 To use this dataset is made available for academic research purposes only, please cite this publication:
 ```
