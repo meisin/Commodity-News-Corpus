@@ -1,5 +1,6 @@
 # Commodity News Corpus
  
+To use this dataset, please cite this publication:
 ```
 @article{lee2021commodities,
   title={The Commodities News Corpus: A Resource forUnderstanding Commodity News Better},
