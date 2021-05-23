@@ -1,8 +1,9 @@
 # Commodity News Corpus
 
-### Annotation
+### 1. Annotation
  ![annotation](brat_annotation.png)
  
+### 2. News Source
 Commodity news articles were taken from from notable news agencies below:
 * https://www.investing.com/commodities/crude-oil-news
 * https://www.reuters.com/news/economy
