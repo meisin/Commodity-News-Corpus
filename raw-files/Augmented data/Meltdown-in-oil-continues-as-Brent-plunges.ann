@@ -1,0 +1,83 @@
+T1	Movement-down-loss 73 80	plummet
+E1	Movement-down-loss:T1 Attribute:T2 Item:T3 Reference_point_time:T4
+T2	Financial_attribute 53 59	prices
+T3	Commodity 49 52	Oil
+T4	DATE 81 90	Wednesday
+T5	Slow-weak 108 112	limp
+E2	Slow-weak:T5 Attribute:T6
+T6	Financial_attribute 113 119	demand
+T7	Financial_attribute 247 254	futures
+T8	Commodity 235 246	Brent crude
+T9	Movement-down-loss 255 262	dropped
+E3	Movement-down-loss:T9 Attribute:T7 Item:T8 Difference:T10 Final_value:T11
+T10	PERCENTAGE 263 266	13%
+T11	Price_unit 270 287	$16.82 per barrel
+T12	Movement-up-gain 370 375	gains
+E4	Movement-up-gain:T12 Item:T13 Contract_date:T18 Intensity_cue:T53 Attribute:T60
+T13	Commodity 322 345	West Texas Intermediate
+T15	Movement-down-loss 382 386	fell
+E5	Movement-down-loss:T15 Difference:T16 Final_value:T17 Item:T14
+T16	PERCENTAGE 387 389	3%
+T17	Price_unit 393 410	$11.20 per barrel
+T18	DATE 304 308	June
+T19	DATE 416 420	July
+T20	Commodity 434 437	WTI
+T21	Movement-flat 447 451	flat
+E6	Movement-flat:T21 Item:T20 Final_value:T22 Contract_date:T19 Attribute:T38
+T22	Price_unit 468 488	below $19 per barrel
+T23	ORGANIZATION 1214 1263	Organization of the Petroleum Exporting Countries
+T24	Cause-movement-down-loss 1314 1317	cut
+E7	Cause-movement-down-loss:T24 Attribute:T26 Modality_cue:T58 Supplier_Consumer:T63 Item:T59
+T25	Commodity 1487 1490	oil
+T26	Financial_attribute 1322 1328	supply
+T27	Financial_attribute 1476 1482	demand
+T28	Movement-down-loss 1731 1739	declines
+E8	Movement-down-loss:T28 Item:T48
+T29	LOCATION 1469 1475	Global
+T30	Commodity 1705 1708	oil
+T31	Movement-down-loss 1495 1501	fallen
+E9	Movement-down-loss:T31 Attribute:T27 Type:T29 Item:T25
+T34	NUMBER 1813 1823	below zero
+T35	DATE 1759 1762	May
+T36	Commodity 1911 1914	WTI
+T38	Financial_attribute 421 429	contract
+T39	Financial_attribute 1915 1923	contract
+T40	DATE 1906 1910	June
+T42	Movement-down-loss 1924 1931	plunged
+E11	Movement-down-loss:T42 Difference:T43 Reference_point_time:T44 Item:T36 Attribute:T39 Contract_date:T40
+T43	PERCENTAGE 1932 1945	more than 40%
+T44	DATE 1949 1956	Tuesday
+T45	Commodity 1987 1992	Brent
+T46	Movement-down-loss 1993 2000	dropped
+E12	Movement-down-loss:T46 Initial_value:T47 Item:T45
+T47	Price_unit 2013 2033	above $24 per barrel
+T48	Commodity 1747 1753	sector
+T49	Negative_sentiment 94 102	concerns
+E13	Negative_sentiment:T49 
+T50	Movement-down-loss 35 42	plunges
+E14	Movement-down-loss:T50 Item:T52 Difference:T51
+T51	PERCENTAGE 43 46	13%
+T52	Commodity 29 34	Brent
+T53	INTENSITY_cue 346 350	shed
+T54	Commodity 683 686	oil
+T55	Economic_item 602 609	markets
+T56	Financial_attribute 802 808	supply
+T57	Financial_attribute 813 819	demand
+T58	MODALITY_cue 1198 1206	decision
+T59	Commodity 1318 1321	oil
+A3	Modality E7 Other
+A1	Intensity E4 Eased
+T60	Financial_attribute 309 317	contract
+T32	Movement-down-loss 1805 1812	plunged
+E10	Movement-down-loss:T32 Item:T33 Reference_point_time:T35 Final_value:T34
+T33	Commodity 1776 1779	WTI
+T14	Commodity 379 381	it
+T37	Commodity 12 15	oil
+R1	Cause-Precondition Arg1:E2 Arg2:E13	
+R2	Cause-Precondition Arg1:E13 Arg2:E1	
+T41	Commodity 598 601	oil
+T61	Cause-movement-up-gain 866 871	build
+E15	Cause-movement-up-gain:T61 
+T62	Cause-movement-down-loss 875 879	draw
+E16	Cause-movement-down-loss:T62 
+T63	ORGANIZATION 1303 1308	OPEC+

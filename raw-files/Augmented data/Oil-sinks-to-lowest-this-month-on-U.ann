@@ -1,0 +1,92 @@
+T1	Movement-down-loss 4 9	sinks
+E1	Movement-down-loss:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	Position-low 13 19	lowest
+E2	Position-low:T3 Reference_point_time:T4
+T4	DATE 20 30	this month
+T5	COUNTRY 34 38	U.S.
+T6	COUNTRY 39 45	Russia
+T7	Geopolitical-tension 46 53	tension
+E3	Geopolitical-tension:T7 Impacted_countries:T5 Impacted_countries2:T6
+T8	Movement-up-gain 55 61	rising
+E4	Movement-up-gain:T8 Attribute:T9
+T9	Financial_attribute 62 71	inventory
+R2	Cause-Precondition Arg1:E3 Arg2:E1	
+R3	Cause-Precondition Arg1:E4 Arg2:E1	
+T10	Movement-down-loss 92 98	plunge
+E5	Movement-down-loss:T10 Difference:T13 Attribute:T11 Item:T12
+T11	Financial_attribute 84 91	futures
+T12	Commodity 74 83	Crude oil
+T13	PERCENTAGE 99 111	more than 5%
+T14	Movement-down-loss 138 142	loss
+E6	Movement-down-loss:T14 Initial_reference_point:T15 Duration:T16
+T15	DATE 149 157	December
+T16	DURATION 129 137	intraday
+T17	Negative_sentiment 185 193	concerns
+E7	Negative_sentiment:T17 
+T18	Geopolitical-tension 199 214	rising tensions
+E8	Geopolitical-tension:T18 Impacted_countries:T52 Impacted_countries2:T61
+T19	COUNTRY 534 538	U.S.
+T20	COUNTRY 539 545	Russia
+T21	Commodity 250 259	WTI crude
+T22	Movement-down-loss 321 328	dropped
+E9	Movement-down-loss:T22 Item:T25 Difference:T28 Difference2:T29 Contract_date:T26
+R5	Cause-Precondition Arg1:E7 Arg2:E5	
+T23	PERCENTAGE 278 282	5.8%
+T24	Price_unit 286 296	$60.85/bbl
+T26	DATE 301 304	May
+T28	PERCENTAGE 329 333	5.5%
+T29	Price_unit 337 347	$64.23/bbl
+T30	Position-low 380 384	lows
+E11	Position-low:T30 Duration:T31
+T31	DURATION 371 379	two-week
+T32	Movement-down-loss 403 411	declines
+E12	Movement-down-loss:T32 Item:T33 Initial_reference_point:T34
+T33	Commodity 472 475	WTI
+T34	DATE 482 495	February 2020
+T37	Geopolitical-tension 546 554	tensions
+E13	Geopolitical-tension:T37 Impacted_countries2:T20 Impacted_countries3:T19 Intensity_cue:T62
+T38	Commodity 504 509	Brent
+T39	DATE 516 529	September 202
+E14	Movement-down-loss:T32 Item:T38 Initial_reference_point:T39
+T40	Embargo 597 606	sanctions
+E15	Embargo:T40 Modality_cue:T42 Imposer:T41 Imposee2:T36
+T41	COUNTRY 580 584	U.S.
+T42	MODALITY_cue 585 596	threatening
+A1	Modality E15 Other
+T45	Commodity 1036 1041	crude
+T46	Grow-strong 1084 1092	recovery
+E17	Grow-strong:T46 Attribute:T47 Modality_cue:T48
+T47	Financial_attribute 1096 1102	demand
+T48	MODALITY_cue 1051 1060	questions
+A2	Modality E17 Other
+T49	Movement-up-gain 1429 1435	rising
+E18	Movement-up-gain:T49 Attribute:T51 Item:T50
+T51	Financial_attribute 1442 1453	inventories
+T53	Financial_attribute 1534 1544	stockpiles
+T54	Movement-up-gain 1551 1555	grow
+E20	Movement-up-gain:T54 Attribute:T53 Modality_cue:T55 Intensity_cue:T43
+T55	MODALITY_cue 1545 1550	could
+A3	Modality E20 Other
+T56	Slow-weak 1693 1700	bearish
+E21	Slow-weak:T56 
+T57	Commodity 1740 1749	crude oil
+T58	LOCATION 1902 1908	global
+T59	Commodity 1909 1912	oil
+T60	Financial_attribute 1913 1919	demand
+T25	Commodity 305 310	Brent
+T27	Movement-down-loss 270 277	dropped
+E10	Movement-down-loss:T27 Item:T21 Contract_date:T35 Difference:T23 Final_value:T24
+T35	DATE 244 249	April
+T50	Commodity 1436 1441	crude
+R4	Cause-Precondition Arg1:E8 Arg2:E7	
+T52	COUNTRY 227 231	U.S.
+T61	COUNTRY 236 242	Russia
+T62	INTENSITY_cue 559 569	increasing
+A4	Intensity E13 Intensified
+T36	COUNTRY 610 616	Russia
+R6	Cause-Precondition Arg1:E15 Arg2:E13	
+T43	INTENSITY_cue 1556 1563	further
+A5	Intensity E20 Intensified
+T44	Commodity 1570 1573	WTI
+T63	Commodity 1642 1645	oil

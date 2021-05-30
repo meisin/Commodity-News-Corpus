@@ -1,0 +1,56 @@
+T2	POLARITY_cue 110 123	stopped short
+T1	Prohibiting 127 134	banning
+T3	Other_activities 135 175	U.S. companies from buying Kurdish crude
+T4	Prohibiting 269 276	banning
+T5	Other_activities 277 336	U.N. inspectors access to its military sites and scientists
+T6	Commodity 508 513	crude
+T7	Prohibiting 583 590	banning
+T8	POLARITY_cue 569 579	stop short
+T9	Other_activities 591 653	U.S. companies from buying oil from the Latin American country
+T10	Prohibiting 825 832	banning
+T11	Commodity 837 840	oil
+T12	Financial_attribute 841 848	imports
+T13	POLARITY_cue 821 824	not
+T14	LOCATION 811 820	euro zone
+T15	STATE_OR_PROVINCE 0 10	Washington
+T16	Geopolitical-tension 895 902	tension
+T17	COUNTRY 911 915	Iran
+T18	LOCATION 920 928	the West
+T19	Embargo 994 1003	sanctions
+T20	STATE_OR_PROVINCE 1007 1013	Tehran
+T21	Prohibiting 1025 1032	banning
+T22	Financial_attribute 1033 1040	imports
+T23	Commodity 1052 1061	crude oil
+T24	NATIONALITY 1044 1051	Iranian
+T25	Embargo 1098 1107	sanctions
+T26	COUNTRY 1116 1125	Venezuela
+T27	Group 1063 1087	The Trump administration
+T28	Prohibiting 1185 1192	banning
+T29	Other_activities 1193 1247	the company from shipping crude into the United States
+T30	Group 244 254	parliament
+T31	COUNTRY 1273 1277	U.S.
+T32	Prohibiting 1309 1316	banning
+T33	Other_activities 1317 1365	PDVSA from shipping crude into the United States
+T35	DATE 1177 1183	Monday
+T36	Cause-movement-down-loss 1421 1428	curbing
+T37	Financial_attribute 1429 1437	supplies
+E1	Prohibiting:T1 Polarity_cue:T2 Activity:T3 Imposer:T15
+E2	Prohibiting:T4 Activity:T5 Imposer:T30
+E3	Prohibiting:T7 Polarity_cue:T8 Activity:T9
+A2	Polarity E3 Negative
+E4	Prohibiting:T10 Polarity_cue:T13 Item:T11 Imposer:T14
+A3	Polarity E4 Negative
+E5	Geopolitical-tension:T16 Impacted_countries:T17 Impacted_countries2:T18
+E6	Embargo:T19 Imposer:T20 Modality_cue:T41
+E7	Prohibiting:T21 Attribute:T22 Type:T24 Item:T23 Modality_cue:T41
+E8	Embargo:T25 Imposer:T27 Imposee:T26 Reference_point_time:T35
+E9	Prohibiting:T28 Activity:T29 Imposer:T27
+E10	Prohibiting:T32 Imposer:T31 Activity:T33
+E11	Cause-movement-down-loss:T36 Attribute:T37
+A1	Polarity E1 Negative
+T38	Commodity 67 70	oil
+T39	Commodity 437 442	crude
+T40	Financial_attribute 443 450	exports
+T41	MODALITY_cue 976 983	discuss
+A4	Modality E6 Other
+A5	Modality E7 Other
