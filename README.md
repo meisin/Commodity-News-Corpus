@@ -1,6 +1,7 @@
 # Commodity News Corpus
 
 ### 1. Annotation
+Annotations are done using [Brat Rapid Annotation Tool](https://brat.nlplab.org/). 
  ![annotation](brat_annotation.png)
  
 ### 2. News Source
@@ -14,9 +15,10 @@ Commodity news articles were taken from from notable news agencies below:
 * https://www.marketpulse.com
 * https://www.fxempire.com/news/
 
-**Note** Due to copyright issues, only the links to the original news articles are provided (without the actual news text). A corresponding URL link is given along with each  annotation file. 
+**Note** Due to copyright issues, only the links to the original news articles are provided (without the actual news text). A corresponding URL link to the original news is given along with their corresponding annotation file. Augmented data, on the other hand, are made fully available (see raw-files/Augmented data/)
 
-### 3. Data Pre-processing 
+### 3. Data Processing 
+Codes for Data processing to convert annotation data (in *.ann* files) from standoff format to CONLL format are provided.
 
 ### 4. Citation
 To use this dataset is made available for academic research purposes only, please cite this publication:
