@@ -1,9 +1,14 @@
 # Raw Files 
-Annotation was done using Brat Rapid Annotation Tool
+Annotation was done using [Brat Rapid Annotation Tool](https://brat.nlplab.org/). Annotation details are stored in *.ann* files in standoff format.
 
-[Go to the Support Web Site](https://support.west-wind.com)
+### 1. News articles
+Due to copyright issues, original news articles are not made available. Instead URL link to each news articles are provided along with the corresponding *.ann* file. Pre-processing codes to extract each articles are made available.
 
-### 1. Augmented Data
- ![annotation](brat_annotation.png)
+### 2. Augmented Data
+In order to increase the size of the annotations, a number of sentences are augmented using the following approach:
+1. Trigger word replacement using FrameNet.
+2. Event argument replacement
+
+For augmented data, original text are made available along with their corresponding *.ann* files.
  
 
