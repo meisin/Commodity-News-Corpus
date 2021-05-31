@@ -1,0 +1,135 @@
+T1	Movement-flat 4 10	steady
+E1	Movement-flat:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	COUNTRY 14 19	Libya
+T4	NATIONALITY 21 28	Kurdish
+T5	Negative_sentiment 29 36	worries
+E2	Negative_sentiment:T5 Type2:T3 Type:T4 Intensity_cue:T93
+T6	Negative_sentiment 53 57	woes
+E3	Negative_sentiment:T6 Type:T7
+T7	NATIONALITY 47 52	Greek
+T8	Movement-flat 260 274	little changed
+E4	Movement-flat:T8 Attribute:T9 Reference_point_time:T11
+T9	Financial_attribute 248 254	prices
+T10	Commodity 244 247	Oil
+T11	DATE 278 284	Monday
+T12	Position-high 306 313	highest
+E5	Position-high:T12 Duration:T13
+T13	DURATION 321 331	two months
+T14	Economic_item 349 355	dollar
+T15	Movement-up-gain 336 341	gains
+E6	Movement-up-gain:T15 Item:T14
+T16	Civil-unrest 414 422	violence
+E7	Civil-unrest:T16 Place:T17 Intensity_cue:T94
+T17	COUNTRY 426 431	Libya
+T18	Negative_sentiment 436 444	concerns
+E8	Negative_sentiment:T18 Type:T19 Intensity_cue:T94
+T19	COUNTRY 463 472	Kurdistan
+T20	Movement-down-loss 512 518	losses
+E9	Movement-down-loss:T20 Item:T22 Intensity_cue:T21
+T22	Economic_item 479 490	U.S. dollar
+T21	INTENSITY_cue 497 505	reversed
+T23	Position-high 756 760	high
+E10	Position-high:T23 Reference_point_time:T26 Attribute:T27 Item:T28
+T24	Negative_sentiment 773 780	worries
+E11	Negative_sentiment:T24 Attribute:T25 Type:T90
+T25	Financial_attribute 766 772	supply
+T26	DATE 751 755	2015
+T27	Financial_attribute 716 722	prices
+T28	Commodity 712 715	oil
+T29	Commodity 1475 1480	Brent
+T30	Financial_attribute 1481 1488	futures
+T31	Movement-down-loss 1489 1496	slipped
+E12	Movement-down-loss:T31 Difference:T32 Attribute:T30 Item:T29 Final_value:T33
+T32	MONEY 1497 1504	3 cents
+T33	Price_unit 1508 1523	$61.49 a barrel
+T34	Position-high 1566 1570	peak
+E13	Position-high:T34 Difference:T35
+T35	Price_unit 1574 1589	$62.57 a barrel
+T36	Position-high 1595 1602	highest
+E14	Position-high:T36 Initial_reference_point:T37
+T37	DATE 1609 1616	Dec. 22
+T38	Movement-up-gain 1639 1645	fallen
+E15	Movement-up-gain:T38 Attribute:T43 Difference:T39 Reference_point_time:T40
+T39	MONEY 1651 1655	$115
+T40	DATE 1659 1663	June
+T41	Commodity 1674 1677	oil
+T42	Oversupply 1678 1682	glut
+E16	Oversupply:T42 Item:T41
+T43	Financial_attribute 1620 1626	Prices
+T44	Movement-up-gain 1689 1698	rebounded
+E17	Movement-up-gain:T44 Difference:T45
+T45	PERCENTAGE 1709 1719	40 percent
+T46	Position-low 1731 1735	lows
+E18	Position-low:T46 Reference_point_time:T47
+T47	DATE 1736 1743	a month
+T48	Movement-down-loss 1766 1770	fall
+E19	Movement-down-loss:T48 Item:T49 Attribute:T50 Supplier_Consumer:T81
+T49	Commodity 1779 1782	oil
+T50	Financial_attribute 1783 1791	drilling
+T51	Movement-flat 1824 1833	unchanged
+E20	Movement-flat:T51 Difference:T55 Attribute:T53 Item:T52 Reference_point_time:T54 Supplier_Consumer:T79
+T52	Commodity 1805 1810	crude
+T53	Financial_attribute 1811 1818	futures
+T54	DATE 1799 1804	March
+T55	Price_unit 1837 1852	$52.78 a barrel
+T56	Movement-down-loss 2075 2082	falling
+E21	Movement-down-loss:T56 Attribute:T58 Item:T60 Supplier_Consumer:T59 Difference:T57 Initial_value:T61
+T57	Production_unit 2086 2097	350,000 bpd
+T58	Financial_attribute 2042 2052	production
+T59	COUNTRY 2030 2035	Libya
+T60	Commodity 2038 2041	oil
+T61	Production_unit 2104 2119	1.6 million bpd
+T62	Financial_attribute 2192 2199	exports
+T63	COUNTRY 2172 2176	Iraq
+T64	Commodity 2188 2191	oil
+T65	Movement-down-loss 2210 2216	fallen
+E22	Movement-down-loss:T65 Attribute:T62 Item:T64 Supplier_Consumer:T63 Final_value:T66 Reference_point_time:T67
+T66	Production_unit 2234 2249	1.5 million bpd
+T67	DATE 2257 2284	first two weeks of February
+T68	MODALITY_cue 2703 2708	would
+T69	Movement-up-gain 2721 2725	rise
+E23	Movement-up-gain:T69 Modality_cue:T68 Attribute:T72 Item:T73 Reference_point_time:T77
+T70	Financial_attribute 2739 2745	supply
+T71	Movement-down-loss 2746 2750	fell
+E24	Movement-down-loss:T71 Attribute:T70
+T72	Financial_attribute 2696 2702	prices
+T73	Commodity 2692 2695	oil
+A1	Modality E23 Other
+T75	Commodity 2769 2772	oil
+T76	Production_unit 2813 2828	1.8 million bpd
+T77	DATE 2726 2735	this year
+R1	Cause-Precondition Arg1:E24 Arg2:E23
+T78	Commodity 2552 2555	oil
+T79	COUNTRY 1794 1798	U.S.
+T80	Movement-down-loss 2801 2806	lower
+E26	Movement-down-loss:T80 Final_value:T76 Attribute:T74 Item:T75
+T74	Financial_attribute 2773 2780	surplus
+R2	Cause-Precondition Arg1:E16 Arg2:E15
+T81	COUNTRY 1774 1778	U.S.
+R5	Cause-Precondition Arg1:E19 Arg2:E17
+T82	Commodity 1416 1419	oil
+T83	Geopolitical-tension 1069 1076	dispute
+E25	Geopolitical-tension:T83 Impacted_countries:T84 Impacted_countries2:T85
+T84	STATE_OR_PROVINCE 1085 1092	Baghdad
+T85	ORGANIZATION 1097 1116	Kurdish authorities
+T86	Financial_attribute 1126 1132	export
+T87	Commodity 1122 1125	oil
+T88	Production_unit 1308 1331	550,000 barrels per day
+T89	Commodity 1335 1338	oil
+R8	Cause-Precondition Arg1:E11 Arg2:E10
+T91	Movement-up-gain 528 534	higher
+E27	Movement-up-gain:T91 Reference_point_time:T92
+T92	DATE 548 554	Monday
+R11	Cause-Precondition Arg1:E6 Arg2:E4
+T94	INTENSITY_cue 399 405	offset
+T93	INTENSITY_cue 37 43	offset
+R12	Cause-Precondition Arg1:E3 Arg2:E2
+R13	Cause-Precondition Arg1:E2 Arg2:E1
+A2	Intensity E2 Eased
+A4	Intensity E7 Eased
+A3	Intensity E8 Eased
+A5	Intensity E9 Eased
+T90	COUNTRY 784 805	two big oil producers
+R3	Cause-Precondition Arg1:E6 Arg2:E7	
+R6	Cause-Precondition Arg1:E6 Arg2:E8	

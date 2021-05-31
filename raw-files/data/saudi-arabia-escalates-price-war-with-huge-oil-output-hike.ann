@@ -1,0 +1,100 @@
+T1	COUNTRY 0 12	Saudi Arabia
+T2	trade-financial-tension 23 32	Price War
+E1	trade-financial-tension:T2 Participating_countries:T1 Intensity_cue:T36
+T3	Movement-up-gain 54 58	Hike
+E2	Movement-up-gain:T3 Attribute:T4 Item:T5
+T4	Financial_attribute 47 53	Output
+T5	Commodity 43 46	Oil
+T6	COUNTRY 192 204	Saudi Arabia
+T7	trade-financial-tension 223 232	price war
+E3	trade-financial-tension:T7 Participating_countries:T6 Item:T8 Participating_countries2:T9 Reference_point_time:T10 Intensity_cue:T70
+T8	Commodity 219 222	oil
+T9	COUNTRY 238 244	Russia
+T10	DATE 248 255	Tuesday
+T11	Production_unit 314 340	12.3 million barrels a day
+T12	Movement-up-gain 374 378	hike
+E4	Movement-up-gain:T12 Attribute:T13
+T13	Financial_attribute 363 373	production
+T14	Economic_item 392 398	market
+T15	Movement-up-gain 411 415	hike
+E5	Movement-up-gain:T15 Attribute:T16
+T16	Financial_attribute 404 410	output
+T18	Movement-up-gain 433 435	up
+E6	Movement-up-gain:T18 Difference:T17
+T19	Financial_attribute 588 599	inventories
+T20	Commodity 616 621	crude
+T21	Economic_item 656 662	market
+T22	Production_unit 705 730	9.7 million barrels a day
+T23	trade-financial-tension 1127 1136	price war
+E7	trade-financial-tension:T23 Participating_countries:T24 Participating_countries2:T55
+T24	COUNTRY 1145 1151	Russia
+T26	Movement-down-loss 1201 1205	fell
+E8	Movement-down-loss:T26 Attribute:T27 Item:T28 Reference_point_time:T29 Difference:T30
+T27	Financial_attribute 1194 1200	prices
+T28	Commodity 1190 1193	oil
+T29	DATE 1173 1179	Monday
+T30	PERCENTAGE 1206 1219	more than 20%
+T17	PERCENTAGE 419 432	more than 25%
+T31	Movement-up-gain 1241 1245	drop
+E9	Movement-up-gain:T31 Duration:T32
+T32	DURATION 1233 1240	one-day
+T33	LOCATION 1293 1299	global
+T35	Grow-strong 1348 1358	recovering
+E10	Grow-strong:T35 Item:T37 Attribute:T69
+T37	Commodity 1325 1328	Oil
+T38	Movement-up-gain 1378 1384	plunge
+E11	Movement-up-gain:T38 Reference_point_time:T39
+T39	DATE 1385 1398	a day earlier
+T40	INTENSITY_cue 1412 1419	gave up
+T41	Movement-up-gain 1434 1439	gains
+E12	Movement-up-gain:T41 Intensity_cue:T40
+T42	Commodity 1441 1452	Brent crude
+T43	Movement-up-gain 1468 1474	higher
+E13	Movement-up-gain:T43 Difference:T44 Final_value:T45 Item:T42
+T44	PERCENTAGE 1465 1467	4%
+T45	Price_unit 1478 1493	$35.75 a barrel
+T46	Commodity 1619 1625	energy
+T47	Cause-movement-up-gain 1669 1674	boost
+E14	Cause-movement-up-gain:T47 Modality_cue:T49 Attribute:T50 Difference:T51 Supplier_Consumer:T48
+T49	MODALITY_cue 1658 1665	ability
+T50	Financial_attribute 1675 1685	production
+T51	Production_unit 1689 1710	500,000 barrels a day
+T52	Production_unit 1763 1789	11.8 million barrels a day
+T53	Financial_attribute 1741 1747	output
+T54	COUNTRY 1605 1616	the country
+T57	LOCATION 2037 2043	global
+T58	Economic_item 1824 1830	market
+T59	Economic_item 2071 2078	economy
+T60	Negative_sentiment 2150 2155	worry
+E15	Negative_sentiment:T60 
+T61	trade-financial-tension 2170 2179	price war
+E16	trade-financial-tension:T61 Participating_countries:T63 Item:T65
+T63	COUNTRY 2188 2238	two of the world’s most powerful petroleum nations
+T66	Cause-movement-up-gain 2394 2403	ramped up
+E17	Cause-movement-up-gain:T66 Attribute:T67
+T67	Financial_attribute 2404 2414	production
+A1	Intensity E12 Eased
+T65	Commodity 2166 2169	oil
+T68	Economic_item 988 994	market
+T48	COUNTRY 1643 1649	Russia
+T55	COUNTRY 1156 1168	Saudi Arabia
+T69	Financial_attribute 1329 1335	prices
+T36	INTENSITY_cue 13 22	Escalates
+A2	Intensity E1 Intensified
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+T70	INTENSITY_cue 205 214	escalated
+A3	Intensity E3 Intensified
+R2	Cause-Precondition Arg1:E4 Arg2:E3	
+T71	Movement-up-gain 743 747	hike
+E18	Movement-up-gain:T71 Attribute:T72
+T72	Financial_attribute 736 742	output
+T73	PERCENTAGE 751 764	more than 25%
+T74	Movement-up-gain 765 767	up
+E19	Movement-up-gain:T74 Difference:T73
+T75	Financial_attribute 920 931	inventories
+T76	Commodity 948 953	crude
+T25	Economic_item 1300 1306	equity
+T34	Economic_item 1311 1323	bond markets
+A4	Modality E14 Other
+T62	Economic_item 2044 2054	oil market
+T56	Economic_item 2361 2372	oil markets

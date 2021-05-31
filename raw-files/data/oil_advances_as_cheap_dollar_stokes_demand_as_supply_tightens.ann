@@ -1,0 +1,101 @@
+T1	Movement-up-gain 237 241	gain
+E1	Movement-up-gain:T1 Item:T2 Reference_point_time:T3
+T2	Commodity 198 201	Oil
+T3	DATE 242 252	this month
+T4	Movement-down-loss 260 269	cratering
+E2	Movement-down-loss:T4 Item:T68
+T5	Commodity 359 364	crude
+T6	Financial_attribute 365 373	supplies
+T7	Movement-down-loss 387 396	shrinking
+E3	Movement-down-loss:T7 Item:T5 Attribute:T6
+T8	Movement-up-gain 425 431	higher
+E4	Movement-up-gain:T8 Difference:T10 Reference_point_time:T11 Attribute:T9
+T9	Financial_attribute 398 405	Futures
+T10	PERCENTAGE 413 424	0.4 percent
+T11	DATE 435 441	Friday
+T12	Slow-weak 586 592	anemic
+E5	Slow-weak:T12 Item:T14 Supplier_Consumer:T70
+T14	Economic_item 598 613	economic growth
+T15	Cause-movement-down-loss 723 731	drawdown
+E6	Cause-movement-down-loss:T15 Type:T16 Attribute:T17
+T16	NATIONALITY 735 743	American
+T17	Financial_attribute 744 755	inventories
+T18	Shortage 987 1001	under-supplied
+E7	Shortage:T18 
+T19	Cause-movement-down-loss 1305 1309	caps
+E8	Cause-movement-down-loss:T19 Attribute:T20 Supplier_Consumer:T25 Supplier_Consumer2:T24 Supplier_Consumer3:T23
+T20	Financial_attribute 1298 1304	supply
+T21	Grow-strong 1315 1321	robust
+E9	Grow-strong:T21 Attribute:T22
+T22	Financial_attribute 1322 1328	demand
+T23	ORGANIZATION 1202 1247	Organization of Petroleum Exporting Countries
+T24	COUNTRY 1249 1255	Russia
+T25	ORGANIZATION 1260 1281	other major producers
+T26	Movement-up-gain 1507 1512	added
+E10	Movement-up-gain:T26 Difference:T29 Final_value:T30 Contract_date:T27 Item:T28
+T27	DATE 1492 1497	March
+T28	Commodity 1464 1487	West Texas Intermediate
+T29	MONEY 1513 1521	34 cents
+T30	Price_unit 1525 1540	$65.85 a barrel
+T31	Movement-down-loss 1634 1639	below
+E11	Movement-down-loss:T31 Difference:T32
+T32	PERCENTAGE 1623 1633	17 percent
+T33	Movement-down-loss 1688 1692	fell
+E12	Movement-down-loss:T33 Contract_date:T35 Item:T34 Difference:T36 Final_value:T37
+T34	Commodity 1661 1666	Brent
+T35	DATE 1671 1676	March
+T36	MONEY 1693 1700	3 cents
+T37	MONEY 1704 1710	$70.39
+T46	Commodity 0 3	Oil
+T47	Movement-up-gain 4 12	Advances
+E16	Movement-up-gain:T47 Item:T46
+T48	Cause-movement-up-gain 29 35	Stokes
+E17	Cause-movement-up-gain:T48 Attribute:T49
+T49	Financial_attribute 36 42	Demand
+T50	Financial_attribute 46 52	Supply
+T51	Cause-movement-down-loss 53 61	Tightens
+E18	Cause-movement-down-loss:T51 Attribute:T50
+T52	Grow-strong 297 305	elevated
+E19	Grow-strong:T52 Attribute:T53 Item:T54
+T53	Financial_attribute 306 312	demand
+T54	Commodity 336 347	commodities
+T55	Commodity 615 620	Crude
+T56	Movement-up-gain 674 678	more
+E20	Movement-up-gain:T56 Attribute:T57
+T57	Financial_attribute 679 685	demand
+T58	Commodity 757 760	Oil
+T59	Commodity 931 934	oil
+T60	Commodity 1110 1113	Oil
+T61	Commodity 1384 1389	crude
+T62	Financial_attribute 1390 1397	futures
+T64	Commodity 1819 1822	WTI
+T38	Financial_attribute 1952 1958	prices
+T39	Commodity 1948 1951	Oil
+T41	Slow-weak 1999 2003	weak
+E14	Slow-weak:T41 Item:T43
+T42	Economic_item 22 28	Dollar
+T43	Economic_item 2004 2015	U.S. dollar
+T44	Economic_item 502 508	dollar
+T45	Economic_item 786 797	U.S. dollar
+T66	Negative_sentiment 571 579	concerns
+E15	Negative_sentiment:T66 
+T67	Economic_item 1002 1008	market
+T68	Economic_item 283 296	U.S. currency
+T69	Slow-weak 16 21	Cheap
+E21	Slow-weak:T69 Item:T42
+R1	Cause-Precondition Arg1:E21 Arg2:E17	
+R2	Cause-Precondition Arg1:E17 Arg2:E16	
+R3	Cause-Precondition Arg1:E18 Arg2:E16	
+R4	Cause-Precondition Arg1:E2 Arg2:E19	
+R5	Cause-Precondition Arg1:E19 Arg2:E1	
+R6	Cause-Precondition Arg1:E3 Arg2:E1	
+T70	COUNTRY 593 597	U.S.
+T13	Commodity 1764 1786	global benchmark crude
+T63	Movement-down-loss 1909 1917	declined
+E22	Movement-down-loss:T63 Difference:T71 Reference_point_time:T72 Item:T65
+T40	Movement-up-gain 1983 1987	gain
+E13	Movement-up-gain:T40 Attribute:T38 Item:T39
+T65	Economic_item 1838 1855	Dollar Spot Index
+T71	PERCENTAGE 1924 1935	1.7 percent
+T72	DATE 1936 1945	this week
+R7	Cause-Precondition Arg1:E14 Arg2:E13	

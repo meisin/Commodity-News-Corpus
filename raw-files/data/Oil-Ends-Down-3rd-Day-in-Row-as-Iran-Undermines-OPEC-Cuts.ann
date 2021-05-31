@@ -1,0 +1,127 @@
+T1	Movement-down-loss 9 13	Down
+E1	Movement-down-loss:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	ORGANIZATION 48 53	OPEC+
+T4	Cause-movement-down-loss 54 58	Cuts
+E2	Cause-movement-down-loss:T4 Supplier_Consumer:T3 Polarity_cue:T5
+T5	POLARITY_cue 37 47	Undermines
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+T6	Movement-down-loss 226 232	dipped
+E3	Movement-down-loss:T6 Attribute:T7 Item:T8 Duration:T9 Reference_point_time:T10
+T7	Financial_attribute 219 225	prices
+T8	Commodity 215 218	Oil
+T9	DURATION 239 257	third straight day
+T10	DATE 261 268	Tuesday
+T11	POLARITY_cue 304 312	negating
+T12	ORGANIZATION 313 318	OPEC+
+T13	Financial_attribute 319 329	production
+T14	Cause-movement-down-loss 330 334	cuts
+E4	Cause-movement-down-loss:T14 Attribute:T13 Supplier_Consumer:T12 Polarity_cue:T11
+A2	Polarity E4 Negative
+T15	Movement-down-loss 572 576	down
+E5	Movement-down-loss:T15 Item:T17 Contract_date:T19 Difference:T16 Difference2:T20 Final_value:T21
+T16	MONEY 577 585	59 cents
+T17	Commodity 493 516	West Texas Intermediate
+T18	Commodity 552 562	U.S. crude
+T19	DATE 469 474	April
+T20	PERCENTAGE 590 599	almost 1%
+T21	Price_unit 604 621	$64.80 per barrel
+T22	Movement-down-loss 641 644	low
+E6	Movement-down-loss:T22 Duration:T24 Final_value:T23
+T23	MONEY 648 654	$63.81
+T24	DURATION 632 640	intraday
+T25	Commodity 657 660	WTI
+T26	DATE 665 668	May
+T27	Movement-up-gain 705 711	higher
+E7	Movement-up-gain:T27 Contract_date:T26 Item:T25
+T28	Commodity 895 898	oil
+T29	Slow-weak 957 964	bearish
+E8	Slow-weak:T29 Item:T30
+T30	Economic_item 965 971	market
+T31	Commodity 983 986	Oil
+T32	Commodity 1059 1062	WTI
+T33	Commodity 1229 1234	Brent
+T34	Commodity 1275 1280	crude
+T35	Movement-down-loss 1290 1294	down
+E9	Movement-down-loss:T35 Item:T33 Contract_date:T36 Difference:T37 Difference2:T38 Final_value:T39 Attribute:T93
+T36	DATE 1212 1215	May
+T37	MONEY 1295 1303	49 cents
+T38	PERCENTAGE 1308 1312	0.7%
+T39	MONEY 1317 1323	$68.39
+T40	Movement-down-loss 1339 1342	low
+E10	Movement-down-loss:T40 Final_value:T42
+T41	Movement-down-loss 1328 1332	fell
+E11	Movement-down-loss:T41 
+R3	Subevent Arg1:E11 Arg2:E10	
+T42	MONEY 1346 1352	$67.37
+T43	Movement-down-loss 1455 1459	slid
+E12	Movement-down-loss:T43 Duration:T44 Attribute:T45 Item:T46
+T44	DURATION 1466 1483	third running day
+T45	Financial_attribute 1448 1454	prices
+T46	Commodity 1442 1447	Crude
+T47	Commodity 1535 1538	oil
+T48	NATIONALITY 1527 1534	Iranian
+T49	ORGANIZATION 1656 1661	OPEC+
+T50	Cause-movement-down-loss 1674 1681	tighten
+E13	Cause-movement-down-loss:T50 Attribute:T51 Type:T53 Item:T52 Supplier_Consumer:T49 Intensity_cue:T54
+T51	Financial_attribute 1682 1688	supply
+T52	Economic_item 1703 1709	market
+T53	LOCATION 1696 1702	global
+T54	INTENSITY_cue 1628 1640	complicating
+A3	Polarity E13 Positive
+R4	Cause-Precondition Arg1:E13 Arg2:E12	
+T55	ORGANIZATION 1725 1730	OPEC+
+T56	Cause-movement-down-loss 1866 1877	withholding
+E14	Cause-movement-down-loss:T56 Supplier_Consumer:T55 Difference:T57 Attribute:T58 Item:T59
+T57	Quantity 1878 1904	at least 7 million barrels
+T58	Financial_attribute 1908 1914	supply
+T59	Economic_item 1924 1930	market
+T60	Shortage 1958 1965	deficit
+E15	Shortage:T60 Attribute:T61
+T61	Financial_attribute 1951 1957	supply
+T62	Economic_item 1985 2000	global economic
+T63	Grow-strong 2001 2009	recovery
+E16	Grow-strong:T63 Item:T62
+T64	Grow-strong 2061 2066	rally
+E17	Grow-strong:T64 Item:T65 Initial_reference_point:T66
+T65	Commodity 2070 2075	crude
+T66	DATE 2082 2100	the end of October
+R5	Cause-Precondition Arg1:E15 Arg2:E17	
+R6	Cause-Precondition Arg1:E16 Arg2:E17	
+T67	Movement-up-gain 2102 2108	adding
+E18	Movement-up-gain:T67 Difference:T68 Attribute:T69
+T68	PERCENTAGE 2115 2118	85%
+T69	Financial_attribute 2122 2128	prices
+R7	Subevent Arg1:E17 Arg2:E18	
+T70	Commodity 2208 2217	crude oil
+T71	Embargo 2271 2281	sanctioned
+E19	Embargo:T71 Item:T72
+T72	Commodity 2282 2287	crude
+T73	Financial_attribute 2402 2410	supplies
+T74	Commodity 2434 2439	crude
+T75	Commodity 2620 2625	crude
+T76	Embargo 2647 2656	sanctions
+E20	Embargo:T76 
+T77	Financial_attribute 2881 2886	price
+T78	Commodity 2894 2899	crude
+T79	Cause-movement-down-loss 2865 2876	discounting
+E21	Cause-movement-down-loss:T79 Attribute:T77 Item:T78 Supplier_Consumer:T80
+T80	COUNTRY 2849 2853	Iran
+T81	Financial_attribute 2913 2919	supply
+T82	ORGANIZATION 2907 2912	OPEC+
+T83	Economic_item 2978 2984	market
+T84	Commodity 3197 3200	oil
+T85	Financial_attribute 3201 3207	prices
+T86	Movement-up-gain 3292 3298	higher
+E22	Movement-up-gain:T86 Attribute:T87 Item:T88
+T87	Financial_attribute 3299 3305	prices
+T88	Commodity 3309 3312	oil
+T89	Financial_attribute 3430 3437	futures
+A4	Intensity E13 Eased
+A1	Polarity E2 Negative
+R8	Cause-Precondition Arg1:E4 Arg2:E3	
+T90	Economic_item 457 463	market
+T91	Financial_attribute 830 838	contract
+T92	Financial_attribute 1119 1127	contract
+T93	Financial_attribute 1216 1224	contract
+T94	Commodity 2304 2312	fuel oil

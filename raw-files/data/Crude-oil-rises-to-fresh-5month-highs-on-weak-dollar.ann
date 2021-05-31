@@ -1,0 +1,86 @@
+T1	Movement-up-gain 10 15	rises
+E1	Movement-up-gain:T1 Item:T4
+T2	Position-high 33 38	highs
+E2	Position-high:T2 Duration:T3
+T3	DURATION 25 32	5-month
+T4	Commodity 0 9	Crude oil
+T5	Slow-weak 42 46	weak
+E3	Slow-weak:T5 Item:T6
+T6	Economic_item 47 53	dollar
+T7	Slow-weak 254 260	weaker
+E4	Slow-weak:T7 Item:T8
+T8	Economic_item 261 272	U.S. dollar
+T10	Movement-down-loss 277 284	falling
+E5	Movement-down-loss:T10 Attribute:T12 Supplier_Consumer:T62 Item:T9
+T12	Financial_attribute 296 306	production
+T13	Movement-up-gain 199 203	rose
+E6	Movement-up-gain:T13 Attribute:T16 Item:T14
+T16	Financial_attribute 191 198	futures
+T17	DURATION 213 223	five-month
+T18	Position-high 224 229	highs
+E7	Position-high:T18 Duration:T17 Reference_point_time:T19
+T19	DATE 233 239	Friday
+T20	Movement-up-gain 429 431	up
+E8	Movement-up-gain:T20 Difference:T21 Final_value:T22 Contract_date:T23 Attribute:T24 Item:T15
+T21	PERCENTAGE 432 437	0.98%
+T22	Price_unit 379 394	$46.48 a barrel
+T23	DATE 352 356	June
+T24	Financial_attribute 340 347	futures
+T27	Commodity 487 492	Brent
+T28	Movement-up-gain 502 508	gained
+E9	Movement-up-gain:T28 Item:T27 Difference:T29 Final_value:T32 Attribute:T63
+T29	PERCENTAGE 509 514	0.57%
+T30	Position-high 400 407	highest
+E10	Position-high:T30 Initial_reference_point:T31
+T31	DATE 414 427	November 2015
+T32	Price_unit 518 533	$48.05 a barrel
+T33	MONEY 578 584	$46.18
+T34	Position-high 570 574	high
+E11	Position-high:T34 Duration:T35 Difference:T33 Reference_point_time:T36
+T35	DURATION 559 569	five-month
+T36	DATE 548 556	Thursday
+T37	Position-high 595 602	highest
+E12	Position-high:T37 Initial_reference_point:T38
+T38	DATE 615 623	November
+T39	Economic_item 749 755	market
+T40	Economic_item 629 635	dollar
+T41	Movement-flat 859 868	unchanged
+E13	Movement-flat:T41 Difference:T43 Reference_point_time:T42 Item:T64
+T42	DATE 886 895	Wednesday
+T43	PERCENTAGE 869 882	close to zero
+T44	Economic_item 1125 1132	economy
+T45	Movement-up-gain 1195 1202	boosted
+E14	Movement-up-gain:T45 Attribute:T46 Item:T47
+T46	Financial_attribute 1183 1189	prices
+T47	Commodity 1179 1182	Oil
+T48	Movement-down-loss 1298 1305	decline
+E15	Movement-down-loss:T48 Item:T50 Attribute:T51 Final_value:T52 Difference:T49 Reference_point_time:T57 Forecaster:T26
+T49	Production_unit 1276 1297	15,000 barrel-per-day
+T50	Commodity 1318 1323	crude
+T51	Financial_attribute 1324 1334	production
+T52	Production_unit 1338 1365	8.938 million barrels a day
+T53	Movement-down-loss 1406 1413	decline
+E16	Movement-down-loss:T53 Duration:T54
+T54	DURATION 1378 1402	seventh consecutive week
+T55	Movement-up-gain 1475 1484	increased
+E17	Movement-up-gain:T55 Attribute:T58 Difference:T56 Reference_point_time:T59 Item:T11 Supplier_Consumer:T25
+T56	Quantity 1488 1505	2 million barrels
+T58	Financial_attribute 1463 1474	inventories
+T59	DATE 1506 1515	last week
+T60	Movement-up-gain 1567 1571	rise
+E18	Movement-up-gain:T60 Duration:T61
+T61	DURATION 1554 1566	third weekly
+T63	Financial_attribute 493 501	contract
+T64	Economic_item 844 858	interest rates
+T14	Commodity 182 190	U.S. oil
+T15	Commodity 329 339	U.S. crude
+T26	ORGANIZATION 1213 1251	U.S. Energy Information Administration
+T57	DATE 1255 1264	Wednesday
+T11	Commodity 1457 1462	crude
+T25	COUNTRY 1452 1456	U.S.
+T9	Commodity 290 295	crude
+T62	COUNTRY 285 289	U.S.
+R1	Cause-Precondition Arg1:E3 Arg2:E1	
+R2	Cause-Precondition Arg1:E4 Arg2:E6	
+R3	Cause-Precondition Arg1:E5 Arg2:E6	
+R4	Cause-Precondition Arg1:E15 Arg2:E14	

@@ -1,0 +1,84 @@
+T1	Grow-strong 22 30	stronger
+E1	Grow-strong:T1 Item:T2
+T2	Economic_item 31 42	U.S. dollar
+T3	Movement-down-loss 10 18	declines
+E2	Movement-down-loss:T3 Item:T4
+T4	Commodity 0 9	Crude oil
+T5	Movement-down-loss 178 186	declined
+E3	Movement-down-loss:T5 Reference_point_time:T6 Attribute:T7 Item:T8
+T6	DATE 190 196	Friday
+T7	Financial_attribute 170 177	futures
+T8	Commodity 160 169	Crude Oil
+T9	Economic_item 224 232	economic
+T10	Economic_item 316 322	dollar
+T11	Movement-down-loss 466 470	down
+E4	Movement-down-loss:T11 Difference:T12 Difference2:T13 Contract_date:T15 Final_value:T14 Item:T16
+T12	MONEY 471 476	0.69$
+T13	PERCENTAGE 480 485	0.86%
+T14	Price_unit 411 426	$80.43 a barrel
+T15	DATE 392 400	December
+T18	Movement-down-loss 494 501	tumbled
+E5	Movement-down-loss:T18 Difference:T20 Difference2:T21 Reference_point_time:T22 Attribute:T19 Final_value:T23
+T19	Financial_attribute 487 493	Prices
+T20	MONEY 502 507	1.08$
+T21	PERCENTAGE 511 516	1.31%
+T22	DATE 520 528	Thursday
+T23	MONEY 542 548	$81.12
+T24	Financial_attribute 550 557	Futures
+T25	Price_unit 589 604	$79.44 a barrel
+T26	Position-low 610 613	low
+E6	Position-low:T26 Initial_reference_point:T27 Final_value:T25 Attribute:T24
+T27	DATE 619 629	October 27
+T28	MONEY 648 654	$82.88
+T29	Position-high 660 664	high
+E7	Position-high:T29 Reference_point_time:T30 Final_value:T28
+T30	DATE 670 680	October 29
+T31	Economic_item 686 692	dollar
+T32	Grow-strong 734 742	recovery
+E8	Grow-strong:T32 Item:T33 Supplier_Consumer:T34
+T33	Economic_item 725 733	economic
+T34	COUNTRY 720 724	U.S.
+T35	Movement-up-gain 839 843	grew
+E9	Movement-up-gain:T35 Difference:T36 Supplier_Consumer:T37 Reference_point_time:T38 Item:T61
+T36	PERCENTAGE 865 869	3.5%
+T37	COUNTRY 811 815	U.S.
+T38	DATE 873 902	the three months to September
+T39	Forecast_target 912 920	forecast
+T40	Movement-up-gain 1022 1026	rose
+E10	Movement-up-gain:T40 Duration:T41 Reference_point_time:T42
+T41	DURATION 1031 1044	a second week
+T42	DATE 1045 1054	last week
+T43	Grow-strong 1097 1105	recovery
+E11	Grow-strong:T43 Item:T44
+T44	Economic_item 1119 1125	market
+T45	Cause-movement-up-gain 1265 1272	boosted
+E12	Cause-movement-up-gain:T45 Attribute:T46 Item:T47
+T46	Financial_attribute 1273 1279	demand
+T47	Economic_item 1288 1299	U.S. dollar
+T48	Economic_item 1312 1321	greenback
+T49	Grow-strong 1303 1311	stronger
+E13	Grow-strong:T49 Item:T48
+T50	Commodity 1328 1331	oil
+T51	Movement-down-loss 1539 1543	lost
+E14	Movement-down-loss:T51 Item:T52 Difference:T54 Difference2:T55 Contract_date:T53 Final_value:T56
+T52	Commodity 1507 1516	Brent oil
+T53	DATE 1521 1529	December
+T54	MONEY 1544 1549	0.92$
+T55	PERCENTAGE 1554 1559	1.07%
+T56	Price_unit 1568 1583	$85.34 a barrel
+T57	Commodity 1614 1619	Brent
+T58	Commodity 1628 1637	WTI crude
+T59	Financial_attribute 1638 1647	contracts
+T60	MONEY 1657 1662	$4.91
+T61	Economic_item 816 838	gross domestic product
+T62	Grow-strong 212 218	upbeat
+E15	Grow-strong:T62 Supplier_Consumer:T63 Item:T9
+T63	COUNTRY 219 223	U.S.
+T16	Commodity 361 375	U.S. crude oil
+R1	Cause-Precondition Arg1:E1 Arg2:E2	
+R2	Cause-Precondition Arg1:E15 Arg2:E3	
+T17	PERCENTAGE 925 927	3%
+T64	Economic_item 1240 1252	labor market
+T65	Grow-strong 1207 1219	improvements
+E16	Grow-strong:T65 Item:T64
+R3	Cause-Precondition Arg1:E16 Arg2:E12	

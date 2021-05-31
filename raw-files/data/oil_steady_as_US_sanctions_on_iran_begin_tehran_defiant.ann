@@ -1,0 +1,105 @@
+T1	Movement-flat 235 243	steadied
+E1	Movement-flat:T1 Attribute:T2 Item:T3 Reference_point_time:T4
+T2	Financial_attribute 228 234	prices
+T3	Commodity 224 227	Oil
+T4	DATE 247 253	Monday
+T6	Embargo 262 271	sanctions
+E2	Embargo:T6 Imposee:T7 Item:T48 Attribute:T49 Imposer:T5
+T7	COUNTRY 280 284	Iran
+T8	Movement-flat 488 497	unchanged
+E3	Movement-flat:T8 Item:T9 Final_value:T10
+T9	Commodity 460 475	Brent crude oil
+T10	Price_unit 501 516	$72.83 a barrel
+T13	Movement-down-loss 567 572	lower
+E4	Movement-down-loss:T13 Difference:T14 Final_value:T15 Item:T11
+T14	MONEY 558 566	15 cents
+T15	MONEY 576 582	$62.99
+T16	Cause-movement-down-loss 703 706	cut
+E5	Cause-movement-down-loss:T16 Item:T56 Supplier_Consumer:T77 Forecast:T76
+T17	Embargo 958 967	sanctions
+E6	Embargo:T17 Imposer:T18 Imposer2:T19 Reference_point_time:T20
+T18	STATE_OR_PROVINCE 939 949	Washington
+T19	COUNTRY 976 980	Iran
+T20	DATE 984 990	Monday
+T21	Embargo 1326 1335	sanctions
+E7	Embargo:T21 Imposee:T25 Modality_cue:T71 Polarity_cue:T75
+T22	Embargo 1468 1477	sanctions
+E8	Embargo:T22 Imposer:T23 Imposee:T24
+T23	COUNTRY 1463 1467	U.S.
+T25	COUNTRY 1305 1309	Iran
+T26	Embargo 2293 2302	sanctions
+E9	Embargo:T26 
+T27	Movement-up-gain 2442 2446	rose
+E10	Movement-up-gain:T27 Supplier_Consumer:T31 Supplier_Consumer3:T29 Final_value:T32 Reference_point_time:T33 Supplier_Consumer2:T30 Attribute:T12
+T29	COUNTRY 2399 2405	Russia
+T31	COUNTRY 2429 2441	Saudi Arabia
+T32	Production_unit 2447 2485	above 33 million barrels per day (bpd)
+T33	DATE 2508 2515	October
+T35	Production_unit 2520 2534	10 million bpd
+T36	DATE 2541 2545	2010
+T34	Movement-up-gain 2517 2519	up
+E11	Movement-up-gain:T34 Difference:T35 Initial_reference_point:T36
+T37	Movement-up-gain 2657 2665	increase
+E12	Movement-up-gain:T37 Supplier_Consumer:T38 Item:T40 Attribute:T39 Modality_cue:T72 Reference_point_time:T42 Final_value:T41 Initial_value:T62
+T38	ORGANIZATION 2622 2647	Abu Dhabi National Oil Co
+A3	Polarity E12 Positive
+A4	Modality E12 Other
+T39	Financial_attribute 2674 2684	production
+T40	Commodity 2670 2673	oil
+T43	Movement-flat 4 10	steady
+E13	Movement-flat:T43 Item:T44
+T44	Commodity 0 3	Oil
+T45	Embargo 19 28	sanctions
+E14	Embargo:T45 Imposer:T46 Imposee:T47
+T46	COUNTRY 14 18	U.S.
+T47	COUNTRY 32 36	Iran
+T48	Commodity 291 295	fuel
+T49	Financial_attribute 296 303	exports
+T50	Commodity 379 384	crude
+T51	Commodity 589 592	oil
+T52	PERCENTAGE 614 634	more than 15 percent
+T53	Movement-down-loss 609 613	lost
+E15	Movement-down-loss:T53 Difference:T52 Item:T51
+T56	Commodity 723 728	crude
+T54	Commodity 749 752	Oil
+T55	Commodity 1169 1172	oil
+T57	Commodity 1357 1360	oil
+T58	Commodity 1457 1460	oil
+T59	Commodity 1814 1817	oil
+T60	Commodity 1863 1868	crude
+T61	Commodity 1993 2002	crude oil
+T63	Financial_attribute 2373 2379	output
+T64	Movement-up-gain 2362 2372	increasing
+E16	Movement-up-gain:T64 Attribute:T63
+T66	Position-high 659 664	highs
+E17	Position-high:T66 Reference_point_time:T68 Duration:T67
+T67	DURATION 649 658	four-year
+T68	DATE 668 681	early October
+T69	Position-low 743 746	low
+E18	Position-low:T69 Duration:T70
+T70	DURATION 734 742	one-year
+T71	MODALITY_cue 1310 1315	would
+T72	MODALITY_cue 2648 2653	plans
+T73	Negative_sentiment 1511 1519	concerns
+E19	Negative_sentiment:T73 
+T74	Negative_sentiment 876 883	concern
+E20	Negative_sentiment:T74 
+T75	POLARITY_cue 1316 1321	break
+T77	Group 686 697	hedge funds
+T41	Production_unit 2697 2710	4 million bpd
+T42	DATE 2714 2729	the end of 2020
+T76	Forecast_target 715 719	bets
+T5	COUNTRY 257 261	U.S.
+T30	COUNTRY 2411 2424	United States
+T11	Commodity 530 546	U.S. light crude
+A2	Modality E7 Other
+T12	Financial_attribute 2387 2393	output
+R1	Cause-Precondition Arg1:E14 Arg2:E13	
+R2	Cause-Precondition Arg1:E2 Arg2:E1	
+R3	Cause-Precondition Arg1:E5 Arg2:E15	
+A1	Polarity E7 Negative
+T24	COUNTRY 1486 1490	Iran
+R4	Cause-Precondition Arg1:E8 Arg2:E19	
+T28	Economic_item 2254 2265	Oil markets
+T62	Production_unit 2804 2817	3 million bpd
+T65	Financial_attribute 2784 2790	output

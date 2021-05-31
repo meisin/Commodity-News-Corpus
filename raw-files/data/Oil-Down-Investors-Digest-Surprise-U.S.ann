@@ -1,0 +1,97 @@
+T1	Movement-down-loss 4 8	Down
+E1	Movement-down-loss:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	Cause-movement-down-loss 58 62	Draw
+E2	Cause-movement-down-loss:T3 Attribute:T4 Item:T5
+T4	Financial_attribute 51 57	Supply
+T5	Commodity 36 50	U.S. Crude Oil
+T6	Movement-down-loss 218 222	down
+E3	Movement-down-loss:T6 Reference_point_time:T8 Item:T7
+T7	Commodity 210 213	Oil
+T8	DATE 223 232	Wednesday
+T9	Cause-movement-down-loss 297 301	draw
+E4	Cause-movement-down-loss:T9 Item:T10 Attribute:T11
+T10	Commodity 305 314	crude oil
+T11	Financial_attribute 315 323	supplies
+T12	Movement-down-loss 349 353	down
+E5	Movement-down-loss:T12 Attribute:T14 Item:T13 Difference:T15 Final_value:T16
+T13	Commodity 325 334	Brent oil
+T14	Financial_attribute 335 342	futures
+T15	PERCENTAGE 354 359	0.20%
+T16	MONEY 363 369	$68.25
+T17	Commodity 403 406	WTI
+T18	Financial_attribute 407 414	futures
+T19	Movement-down-loss 422 426	down
+E6	Movement-down-loss:T19 Attribute:T18 Difference:T20 Final_value:T21
+T20	PERCENTAGE 427 432	0.09%
+T21	MONEY 436 442	$64.74
+T22	Cause-movement-down-loss 543 547	draw
+E7	Cause-movement-down-loss:T22 Attribute:T24 Difference:T25 Reference_point_time:T26
+T23	Commodity 454 468	U.S. crude oil
+T24	Financial_attribute 469 475	supply
+T25	Quantity 551 568	1 million barrels
+T26	DATE 577 596	week ending Mar. 12
+T27	Movement-up-gain 650 655	build
+E8	Movement-up-gain:T27 Difference:T28 Modality_cue:T29
+T28	Quantity 659 680	2.715 million barrels
+T29	MODALITY_cue 638 647	predicted
+A1	Modality E8 Other
+T30	Movement-up-gain 712 717	build
+E9	Movement-up-gain:T30 Difference:T31 Reference_point_time:T32
+T31	Quantity 690 711	12.792-million-barrel
+T32	DATE 738 755	the previous week
+T33	Financial_attribute 792 803	inventories
+T34	Commodity 778 791	U.S. gasoline
+T35	Movement-down-loss 804 811	dropped
+E10	Movement-down-loss:T35 Difference:T36 Reference_point_time:T37 Attribute:T33 Item:T34
+T36	Quantity 815 830	926,000 barrels
+T37	DATE 838 855	the previous week
+T38	Commodity 863 873	distillate
+T39	Financial_attribute 874 884	stockpiles
+T40	Movement-up-gain 885 889	rose
+E11	Movement-up-gain:T40 Attribute:T39 Item:T38 Difference:T41
+T41	Quantity 893 908	904,000 barrels
+T42	Cause-movement-down-loss 1056 1060	draw
+E12	Cause-movement-down-loss:T42 Modality_cue:T43 Attribute:T44
+T43	MODALITY_cue 1024 1030	Should
+A2	Modality E12 Other
+T44	Financial_attribute 1064 1074	stockpiles
+T45	Cause-movement-down-loss 1098 1102	draw
+E13	Cause-movement-down-loss:T45 Initial_reference_point:T46 Modality_cue:T47
+T46	DATE 1109 1121	mid-February
+T47	MODALITY_cue 1079 1084	would
+A3	Modality E13 Other
+T48	Grow-strong 1395 1403	recovery
+E14	Grow-strong:T48 Attribute:T49 Item:T50
+T49	Financial_attribute 1388 1394	demand
+T50	Commodity 1383 1387	fuel
+T51	Movement-up-gain 1427 1433	higher
+E15	Movement-up-gain:T51 Modality_cue:T52
+A4	Modality E15 Other
+T52	MODALITY_cue 1412 1423	possibility
+T53	Movement-up-gain 1507 1509	up
+E16	Movement-up-gain:T53 Difference:T54 Reference_point_time:T55 Item:T60
+T54	PERCENTAGE 1510 1520	almost 34%
+T55	DATE 1524 1528	2021
+T56	ORGANIZATION 1541 1609	Organization of the Petroleum Exporting Countries and allies (OPEC+)
+T57	Financial_attribute 1610 1620	production
+T58	Cause-movement-down-loss 1621 1625	cuts
+E17	Cause-movement-down-loss:T58 Attribute:T57 Supplier_Consumer:T56 Reference_point_time:T59
+T59	DATE 1641 1646	April
+T60	Commodity 1485 1497	black liquid
+R1	Cause-Precondition Arg1:E17 Arg2:E16	
+T62	Grow-strong 1672 1680	recovery
+E19	Grow-strong:T62 Attribute:T63 Item:T64 Intensity_cue:T61
+T63	Financial_attribute 1665 1671	demand
+T64	Commodity 1660 1664	fuel
+T65	Negative_sentiment 1758 1763	fears
+E20	Negative_sentiment:T65 
+T66	INTENSITY_cue 1876 1882	hamper
+T67	Grow-strong 1895 1903	recovery
+E21	Grow-strong:T67 Attribute:T68 Item:T69 Intensity_cue:T66
+T68	Financial_attribute 1888 1894	demand
+T69	Commodity 1883 1887	fuel
+A5	Intensity E21 Eased
+T61	INTENSITY_cue 1652 1659	growing
+A6	Intensity E19 Intensified
+R2	Cause-Precondition Arg1:E19 Arg2:E16	

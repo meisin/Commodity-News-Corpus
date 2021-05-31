@@ -1,0 +1,50 @@
+T1	Commodity 154 163	crude-oil
+T2	Financial_attribute 164 171	futures
+T3	Movement-up-gain 172 178	surged
+E1	Movement-up-gain:T3 Attribute:T2 Item:T1 Supplier_Consumer:T5 Reference_point_time:T4
+T4	DATE 207 213	Monday
+T5	COUNTRY 129 134	China
+T6	Movement-up-gain 464 466	up
+E2	Movement-up-gain:T6 Contract_date:T10 Attribute:T7 Difference:T8
+T8	PERCENTAGE 467 471	3.3%
+T10	DATE 447 456	September
+T7	Financial_attribute 410 426	futures contract
+T11	Movement-up-gain 567 569	up
+E3	Movement-up-gain:T11 Difference:T12 Initial_value:T13
+T12	PERCENTAGE 570 582	more than 6%
+T13	Price_unit 618 637	416 yuan per barrel
+T14	Commodity 8 11	oil
+T15	Financial_attribute 12 19	futures
+T16	Movement-up-gain 20 25	surge
+E4	Movement-up-gain:T16 Attribute:T15 Item:T14 Supplier_Consumer:T17
+T17	COUNTRY 0 5	China
+T18	Commodity 332 335	oil
+T19	Economic_item 268 274	market
+T20	Production_unit 660 688	more than 21 million barrels
+T21	Commodity 693 696	oil
+T22	MONEY 707 724	18.3 billion yuan
+T23	MONEY 726 738	$2.9 billion
+T9	Commodity 851 854	oil
+T24	Economic_item 855 861	market
+T25	Commodity 910 913	oil
+T26	Financial_attribute 914 919	price
+T27	Financial_attribute 963 969	supply
+T28	Financial_attribute 974 980	demand
+T29	Commodity 1034 1037	oil
+T30	Commodity 1095 1098	oil
+T31	Financial_attribute 1099 1106	futures
+T32	Commodity 1330 1345	Brent crude-oil
+T33	Financial_attribute 1346 1353	futures
+T34	Price_unit 1436 1453	$70.46 per barrel
+T35	Commodity 1461 1484	West Texas Intermediate
+T36	Financial_attribute 1485 1492	futures
+T37	Price_unit 1553 1570	$65.68 per barrel
+T38	Commodity 1620 1623	oil
+T39	Economic_item 1919 1923	yuan
+T40	Economic_item 1929 1936	dollars
+T41	Financial_attribute 1991 1998	futures
+T42	Commodity 2351 2354	oil
+T43	Financial_attribute 2355 2362	futures
+T44	Commodity 2547 2556	crude-oil
+T45	Financial_attribute 2557 2564	futures
+T46	Economic_item 3023 3031	currency

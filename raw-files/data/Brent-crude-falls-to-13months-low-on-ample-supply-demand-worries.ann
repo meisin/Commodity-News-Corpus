@@ -1,0 +1,175 @@
+T1	Movement-down-loss 269 273	fell
+E1	Movement-down-loss:T1 Item:T2 Reference_point_time:T3
+T2	Commodity 253 268	Brent crude oil
+T3	DATE 295 302	Tuesday
+T4	Movement-up-gain 306 315	increased
+E2	Movement-up-gain:T4 Supplier_Consumer:T5 Attribute:T6
+T5	ORGANIZATION 316 320	OPEC
+T6	Financial_attribute 321 331	production
+T7	Cause-movement-down-loss 377 388	disruptions
+E3	Cause-movement-down-loss:T7 Attribute:T8 Supplier_Consumer:T9 Supplier_Consumer2:T10 Modality_cue:T22
+T8	Financial_attribute 370 376	supply
+A2	Modality E3 Other
+T9	COUNTRY 392 396	Iraq
+T10	COUNTRY 401 406	Libya
+T13	Movement-down-loss 642 646	down
+E5	Movement-down-loss:T13 Contract_date:T14 Item:T15 Difference:T16 Final_value:T17
+T14	DATE 616 625	September
+T15	Commodity 626 637	Brent crude
+T16	MONEY 647 652	$1.46
+T17	Price_unit 656 674	$103.22 per barrel
+T18	Movement-down-loss 695 702	falling
+E6	Movement-down-loss:T18 Final_value:T19
+T19	MONEY 706 713	$102.65
+T24	MONEY 828 836	68 cents
+T25	Price_unit 840 855	$97.40 a barrel
+T26	COUNTRY 799 803	U.S.
+T27	DATE 804 813	September
+T28	Commodity 814 819	crude
+T31	Oversupply 1042 1046	glut
+E10	Oversupply:T31 
+T32	ORGANIZATION 1049 1053	OPEC
+T33	Financial_attribute 1054 1060	output
+T34	Position-high 1078 1082	high
+E11	Position-high:T34 Attribute:T33 Supplier_Consumer:T32 Difference:T35 Reference_point_time:T36 Duration:T30
+T35	Production_unit 1086 1121	30.44 million barrels per day (bpd)
+T36	DATE 1125 1129	July
+T37	Movement-up-gain 1149 1153	rise
+E12	Movement-up-gain:T37 Difference:T38 Supplier_Consumer:T39 Supplier_Consumer2:T40
+T38	Production_unit 1137 1148	300,000-bpd
+T39	COUNTRY 1161 1173	Saudi Arabia
+T40	COUNTRY 1178 1183	Libya
+T42	STATE_OR_PROVINCE 1519 1526	Tripoli
+T43	STATE_OR_PROVINCE 1531 1539	Benghazi
+T41	Geopolitical-tension 1485 1492	clashes
+E13	Geopolitical-tension:T41 Impacted_countries:T42 Impacted_countries2:T43
+T44	Cause-movement-down-loss 2206 2216	disruption
+E14	Cause-movement-down-loss:T44 Attribute:T45 Modality_cue:T99 Intensity_cue:T87
+T45	Financial_attribute 2199 2205	supply
+A3	Polarity E14 Positive
+A4	Modality E14 Other
+T46	COUNTRY 2315 2321	Russia
+T47	COUNTRY 2278 2282	U.S.
+T48	ORGANIZATION 2287 2301	European Union
+T49	Embargo 2302 2311	sanctions
+E15	Embargo:T49 Imposer:T48 Imposer2:T47 Imposee:T46
+T50	Cause-movement-down-loss 2362 2371	disrupted
+E16	Cause-movement-down-loss:T50 Polarity_cue:T84 Attribute:T83
+A5	Polarity E16 Negative
+A6	Modality E16 Asserted
+T12	Cause-movement-down-loss 2437 2441	trim
+E17	Cause-movement-down-loss:T12 Type:T52 Attribute:T53 Modality_cue:T85
+T52	NATIONALITY 2442 2449	Russian
+T53	Financial_attribute 2450 2456	demand
+A7	Polarity E17 Positive
+A8	Modality E17 Other
+T54	Movement-down-loss 2864 2870	fallen
+E18	Movement-down-loss:T54 Attribute:T56 Item:T57 Difference:T55 Reference_point_time:T64 Forecast:T76 Supplier_Consumer:T109
+T55	Production_unit 2871 2890	2.2 million barrels
+T56	Financial_attribute 2835 2841	stocks
+T57	Economic_item 2825 2834	crude oil
+T58	COUNTRY 2686 2690	U.S.
+A9	Polarity E18 Positive
+T59	Crisis 526 532	crisis
+E19	Crisis:T59 Place:T60
+T60	COUNTRY 536 543	Ukraine
+T61	Crisis 2331 2337	crisis
+E20	Crisis:T61 Place:T62
+T62	COUNTRY 2341 2348	Ukraine
+T63	Movement-down-loss 411 417	plunge
+E21	Movement-down-loss:T63 Item:T65
+T64	DATE 2894 2912	the week to Aug. 8
+T65	Economic_item 449 465	market sentiment
+T20	Position-low 288 291	low
+E7	Position-low:T20 Duration:T21
+T21	DURATION 279 287	13-month
+T22	MODALITY_cue 360 369	potential
+T66	Position-low 473 485	lowest level
+E22	Position-low:T66 Duration:T67
+T67	DURATION 489 510	more than 1-1/2 years
+T68	Financial_attribute 593 599	demand
+T69	Commodity 604 613	petroleum
+T70	Movement-down-loss 12 17	falls
+E23	Movement-down-loss:T70 Item:T71
+T71	Commodity 0 11	Brent crude
+T72	Position-low 30 33	low
+E24	Position-low:T72 Duration:T73
+T73	DURATION 21 29	13-month
+T74	Position-low 719 725	lowest
+E25	Position-low:T74 Initial_reference_point:T75
+T75	DATE 738 750	July 1, 2013
+T76	Forecast_target 2847 2855	forecast
+T77	Economic_item 2652 2659	markets
+T78	Commodity 2648 2651	Oil
+T80	Commodity 2691 2694	oil
+T81	Financial_attribute 2695 2706	inventories
+T82	Economic_item 2541 2547	market
+T84	POLARITY_cue 2354 2361	not yet
+T85	MODALITY_cue 2425 2433	expected
+T86	MODALITY_cue 2186 2191	would
+T90	Production_unit 1458 1476	around 450,000 bpd
+T89	Financial_attribute 1443 1449	output
+T91	Production_unit 1627 1638	430,000 bpd
+T92	Financial_attribute 1649 1659	Production
+T93	Cause-movement-down-loss 1697 1705	affected
+E26	Cause-movement-down-loss:T93 Attribute:T92 Polarity_cue:T94 Type:T117
+A11	Polarity E26 Negative
+T95	Financial_attribute 1715 1722	exports
+T96	Production_unit 1772 1794	around 2.5 million bpd
+T98	Financial_attribute 1801 1807	prices
+T99	MODALITY_cue 2217 2222	fears
+T100	Negative_sentiment 58 65	worries
+E28	Negative_sentiment:T100 Attribute:T101
+T101	Financial_attribute 51 57	demand
+T102	Negative_sentiment 579 586	worries
+E29	Negative_sentiment:T102 Attribute:T68 Item:T69 Intensity_cue:T110
+T103	Oversupply 37 49	ample supply
+E30	Oversupply:T103 
+T104	Negative_sentiment 346 354	concerns
+E31	Negative_sentiment:T104 Intensity_cue:T105
+T105	INTENSITY_cue 339 345	dampen
+T29	Oversupply 986 1005	supplies were ample
+E9	Oversupply:T29 
+T30	DURATION 1067 1077	five-month
+T106	Commodity 2242 2245	oil
+T107	Slow-weak 2230 2237	bearish
+E32	Slow-weak:T107 Item:T106 Modality_cue:T86
+A14	Modality E32 Other
+T108	Financial_attribute 768 776	contract
+A13	Intensity E31 Eased
+T94	POLARITY_cue 1695 1697	un
+T109	COUNTRY 2820 2824	U.S.
+T79	Financial_attribute 2560 2566	demand
+T83	Financial_attribute 2372 2378	supply
+T51	Financial_attribute 1612 1618	output
+T88	Movement-down-loss 824 827	off
+E33	Movement-down-loss:T88 Item:T28 Reference_point_time:T27 Supplier_Consumer:T26 Difference:T24 Final_value:T25
+R1	Cause-Precondition Arg1:E30 Arg2:E23	
+R2	Cause-Precondition Arg1:E28 Arg2:E23	
+R3	Cause-Precondition Arg1:E2 Arg2:E31	
+R4	Cause-Precondition Arg1:E3 Arg2:E1	
+R5	Cause-Precondition Arg1:E19 Arg2:E21	
+T110	INTENSITY_cue 572 578	fueled
+A1	Intensity E29 Intensified
+R6	Cause-Precondition Arg1:E29 Arg2:E21	
+T23	Commodity 1259 1264	Brent
+T111	Position-high 1283 1287	high
+E8	Position-high:T111 Attribute:T112 Item:T23
+T112	Financial_attribute 1288 1299	inventories
+T113	Movement-up-gain 1360 1365	gains
+E34	Movement-up-gain:T113 Intensity_cue:T114
+T114	INTENSITY_cue 1347 1359	holding back
+A10	Intensity E34 Eased
+R7	Cause-Precondition Arg1:E8 Arg2:E34	
+T97	Position-high 1755 1768	record levels
+E35	Position-high:T97 Supplier_Consumer:T116 Difference:T96 Attribute:T95 Reference_point_time:T115
+T115	DATE 1710 1714	July
+T116	COUNTRY 1737 1741	Iraq
+T117	NATIONALITY 1663 1668	Iraqi
+T118	Commodity 1797 1800	Oil
+A12	Intensity E14 Eased
+T87	INTENSITY_cue 2192 2198	reduce
+T11	Embargo 2411 2420	sanctions
+E4	Embargo:T11 
+R8	Cause-Precondition Arg1:E15 Arg2:E16	
+R9	Cause-Precondition Arg1:E4 Arg2:E17	

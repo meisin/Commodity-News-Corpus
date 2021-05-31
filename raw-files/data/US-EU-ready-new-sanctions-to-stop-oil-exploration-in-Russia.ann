@@ -1,0 +1,92 @@
+T1	Embargo 19 28	sanctions
+E1	Embargo:T1 Imposer:T2 Imposer2:T3 Modality_cue:T12
+T2	Group 6 8	EU
+T3	COUNTRY 0 4	U.S.
+T4	Prohibiting 32 36	stop
+E2	Prohibiting:T4 Activity:T5 Imposee:T10
+R1	Cause-Precondition Arg1:E1 Arg2:E2	
+T6	Prohibiting 310 314	stop
+E3	Prohibiting:T6 Imposer:T7 Imposer2:T8 Activity:T9 Imposee:T11 Modality_cue:T13
+T7	Group 287 301	European Union
+T8	COUNTRY 269 282	United States
+T9	Other_activities 315 353	billions of dollars in oil exploration
+T5	Other_activities 37 52	oil exploration
+T10	COUNTRY 56 62	Russia
+T11	COUNTRY 357 363	Russia
+T12	MODALITY_cue 9 14	ready
+A1	Modality E1 Other
+T13	MODALITY_cue 302 306	plan
+A2	Modality E3 Other
+T14	MODALITY_cue 478 485	planned
+T15	Embargo 486 495	sanctions
+E4	Embargo:T15 Modality_cue:T14 Imposee:T16
+A3	Modality E4 Other
+T16	COUNTRY 501 507	Russia
+T17	Prohibiting 542 545	ban
+E5	Prohibiting:T17 Activity:T18 Modality_cue:T19
+T18	Other_activities 546 602	U.S. and European companies from cooperating with Russia
+T19	MODALITY_cue 536 541	would
+A4	Modality E5 Other
+R2	Cause-Precondition Arg1:E4 Arg2:E5	
+T20	Commodity 672 677	crude
+T21	Embargo 881 890	sanctions
+E6	Embargo:T21 Intensity_cue:T22 Modality_cue:T23
+A5	Intensity E6 Intensified
+A6	Modality E6 Other
+T22	INTENSITY_cue 874 880	expand
+T23	MODALITY_cue 868 873	would
+T24	Prohibiting 938 941	ban
+E7	Prohibiting:T24 Activity:T25
+T25	Other_activities 942 1036	U.S. and EU cooperation on all energy services and technology in the unconventional oil fields
+T26	Embargo 1051 1060	sanctions
+E8	Embargo:T26 
+T27	Prohibiting 1066 1072	banned
+E9	Prohibiting:T27 
+R3	Cause-Precondition Arg1:E8 Arg2:E9	
+T28	Commodity 1191 1194	oil
+T29	Commodity 1221 1227	energy
+T30	Commodity 1269 1272	oil
+T31	Commodity 1370 1373	oil
+T32	Embargo 1624 1633	sanctions
+E10	Embargo:T32 Modality_cue:T33
+A7	Modality E10 Other
+T33	MODALITY_cue 1635 1637	if
+T34	Commodity 1758 1761	oil
+T35	Embargo 1786 1795	sanctions
+E11	Embargo:T35 Modality_cue:T36 Polarity_cue:T37
+T36	MODALITY_cue 1796 1801	could
+T37	POLARITY_cue 1805 1814	prevented
+A8	Polarity E11 Negative
+A9	Modality E11 Other
+T38	Embargo 1923 1932	sanctions
+E12	Embargo:T38 Modality_cue:T39
+T39	MODALITY_cue 1915 1922	planned
+A10	Modality E12 Other
+T40	Prohibiting 2145 2148	ban
+E13	Prohibiting:T40 Modality_cue:T41
+T41	MODALITY_cue 2114 2118	Once
+A11	Modality E13 Other
+T42	Prohibiting 2261 2268	barring
+E14	Prohibiting:T42 Activity:T43 Modality_cue:T44
+T43	Other_activities 2269 2390	the export of U.S. gear and expertise for the specialized exploration that Russians are unequipped to pursue on their own
+T44	MODALITY_cue 2210 2215	would
+R4	Cause-Precondition Arg1:E13 Arg2:E14	
+A12	Modality E14 Other
+T45	Commodity 2519 2525	energy
+T46	INTENSITY_cue 2555 2565	strengthen
+T47	Embargo 2566 2575	sanctions
+E15	Embargo:T47 Intensity_cue:T46 Modality_cue:T48
+A13	Intensity E15 Intensified
+T48	MODALITY_cue 2546 2551	plans
+A14	Modality E15 Other
+T49	Embargo 2606 2615	sanctions
+E16	Embargo:T49 
+T50	Financial_attribute 3236 3239	rig
+T51	Financial_attribute 3438 3441	rig
+T52	Embargo 3521 3530	sanctions
+E17	Embargo:T52 Imposee:T53
+T53	COUNTRY 3534 3540	Russia
+T54	Embargo 3562 3571	sanctions
+E18	Embargo:T54 
+T55	Embargo 3622 3631	sanctions
+E19	Embargo:T55 

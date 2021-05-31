@@ -1,0 +1,250 @@
+T1	Cause-movement-down-loss 274 281	reduced
+E1	Cause-movement-down-loss:T1 Item:T3 Attribute:T4 Reference_point_time:T5 Difference:T6 Supplier_Consumer2:T179
+T3	Commodity 286 289	oil
+T4	Financial_attribute 290 296	output
+T5	DATE 300 306	August
+T6	Production_unit 310 339	400,000 barrels per day (bpd)
+T7	Movement-down-loss 369 373	drop
+E2	Movement-down-loss:T7 Item:T8 Attribute:T9 Final_value:T10
+T8	Commodity 377 380	oil
+T9	Financial_attribute 381 387	prices
+T10	Price_unit 428 441	$100 a barrel
+T11	ORGANIZATION 489 538	Organization of the Petroleum Exporting Countries
+T12	Cause-movement-down-loss 544 547	cut
+E3	Cause-movement-down-loss:T12 Item:T14 Reference_point_time:T15 Forecaster:T11 Supplier_Consumer:T167 Forecast:T170 Attribute:T13
+T14	Commodity 582 587	crude
+T15	DATE 588 606	this year and next
+T18	Movement-down-loss 729 733	slid
+E5	Movement-down-loss:T18 Attribute:T19 Item:T116
+T19	Financial_attribute 717 723	prices
+T20	Slow-weak 755 764	weakening
+E6	Slow-weak:T20 Attribute:T21
+T21	Financial_attribute 765 771	demand
+T24	Cause-movement-down-loss 896 900	curb
+E8	Cause-movement-down-loss:T24 Attribute:T25 Supplier_Consumer:T117 Modality_cue:T127
+T25	Financial_attribute 901 907	output
+T26	Movement-down-loss 921 925	fell
+E9	Movement-down-loss:T26 Item:T27 Final_value:T28 Reference_point_time:T29 Duration:T142
+T27	Commodity 909 920	Brent crude
+T28	Price_unit 926 936	below $100
+T29	DATE 940 946	Monday
+T30	Cause-movement-up-gain 1045 1052	boosted
+E10	Cause-movement-up-gain:T30 Attribute:T31 Supplier_Consumer:T118
+T31	Financial_attribute 1053 1059	supply
+T32	Grow-strong 1196 1203	recover
+E11	Grow-strong:T32 Attribute:T33 Supplier_Consumer:T2
+T33	Financial_attribute 1185 1195	production
+T34	Movement-down-loss 1275 1279	down
+E12	Movement-down-loss:T34 Reference_point_time:T37 Final_value:T36 Initial_value:T38 Initial_reference_point:T39 Supplier_Consumer:T119
+T36	Production_unit 1246 1263	9.597 million bpd
+T37	DATE 1267 1273	August
+T38	Production_unit 1285 1303	10.005 million bpd
+T39	DATE 1307 1311	July
+T40	Movement-down-loss 1352 1357	falls
+E13	Movement-down-loss:T40 Attribute:T41 Supplier_Consumer:T42
+T41	Financial_attribute 1339 1345	output
+T42	COUNTRY 1335 1338	its
+T43	Financial_attribute 1372 1378	demand
+T44	LOCATION 1363 1371	domestic
+T45	Movement-down-loss 1400 1408	declines
+E14	Movement-down-loss:T45 Attribute:T43 Type:T44 Modality_cue:T145
+T47	Financial_attribute 1440 1450	production
+T48	Movement-down-loss 1477 1482	lower
+E16	Movement-down-loss:T48 Attribute:T49 Polarity_cue:T177
+T49	Financial_attribute 1483 1490	exports
+T50	Cause-movement-down-loss 1539 1546	cutting
+E17	Cause-movement-down-loss:T50 Type:T51
+T51	NATIONALITY 1528 1534	Saudis
+T52	Movement-down-loss 1645 1649	down
+E18	Movement-down-loss:T52 Item:T53
+T53	Commodity 1622 1627	crude
+T54	Cause-movement-down-loss 1689 1696	reduced
+E19	Cause-movement-down-loss:T54 Attribute:T55 Difference:T56 Modality_cue:T146
+T55	Financial_attribute 1697 1704	exports
+T56	Production_unit 1708 1730	as much as 400,000 bpd
+A2	Modality E19 Other
+T57	Movement-down-loss 1805 1809	drop
+E20	Movement-down-loss:T57 Attribute:T58
+T59	Movement-down-loss 1846 1849	dip
+E21	Movement-down-loss:T59 
+T60	Financial_attribute 1865 1871	prices
+T61	Movement-up-gain 1877 1881	rise
+E22	Movement-up-gain:T61 Attribute:T60 Modality_cue:T147
+T62	Movement-up-gain 1885 1891	higher
+E23	Movement-up-gain:T62 Attribute:T63
+T63	Financial_attribute 1901 1907	demand
+A3	Polarity E22 Positive
+A4	Modality E22 Other
+T64	Movement-up-gain 2006 2010	rise
+E24	Movement-up-gain:T64 Attribute:T65 Modality_cue:T148 Final_value:T67
+T65	Financial_attribute 1996 2002	prices
+A5	Polarity E24 Positive
+A6	Modality E24 Other
+T67	Price_unit 2028 2041	$100-a-barrel
+T66	Cause-movement-down-loss 2278 2281	cut
+E25	Cause-movement-down-loss:T66 Supplier_Consumer:T68 Attribute:T69 Difference:T70 Final_value:T71 Reference_point_time:T72
+T68	COUNTRY 2265 2277	Saudi Arabia
+T69	Financial_attribute 2282 2288	output
+T70	Production_unit 2292 2302	55,000 bpd
+T71	Production_unit 2306 2322	9.86 million bpd
+T72	DATE 2326 2332	August
+T73	Movement-up-gain 2357 2361	rose
+E26	Movement-up-gain:T73 Attribute:T74 Supplier_Consumer:T75 Final_value:T76
+T74	Financial_attribute 2350 2356	output
+T75	ORGANIZATION 2345 2349	OPEC
+T76	Production_unit 2365 2382	30.35 million bpd
+T77	Movement-up-gain 2413 2419	higher
+E27	Movement-up-gain:T77 Attribute:T78 Supplier_Consumer:T79
+T78	Financial_attribute 2420 2427	exports
+T79	COUNTRY 2433 2439	Angola
+T80	Movement-up-gain 2683 2689	Rising
+E28	Movement-up-gain:T80 Attribute:T81
+T81	Financial_attribute 2690 2696	supply
+T82	Cause-movement-down-loss 2776 2784	squeezed
+E29	Cause-movement-down-loss:T82 Supplier_Consumer2:T83 Item:T84
+T83	ORGANIZATION 2785 2789	OPEC
+T84	Economic_item 2792 2804	market share
+T87	Financial_attribute 2817 2823	output
+T88	Production_unit 2833 2848	8.6 million bpd
+T90	DATE 2878 2882	1986
+T91	Cause-movement-down-loss 3236 3239	cut
+E31	Cause-movement-down-loss:T91 Supplier_Consumer:T93 Attribute:T92 Modality_cue:T128
+T92	Financial_attribute 3240 3247	exports
+T93	COUNTRY 3209 3221	Saudi Arabia
+A7	Polarity E31 Positive
+A8	Modality E31 Other
+T94	Cause-movement-down-loss 3429 3432	cut
+E32	Cause-movement-down-loss:T94 Supplier_Consumer:T95 Modality_cue:T158 Polarity_cue:T159
+T95	ORGANIZATION 3393 3397	OPEC
+A9	Polarity E32 Negative
+A10	Modality E32 Other
+T96	Movement-down-loss 3596 3600	fall
+E33	Movement-down-loss:T96 Attribute:T98 Final_value:T97 Modality_cue:T160
+T97	Price_unit 3601 3610	below $90
+T98	Financial_attribute 3589 3595	prices
+T100	Cause-movement-down-loss 3881 3884	cut
+E34	Cause-movement-down-loss:T100 Supplier_Consumer:T102 Reference_point_time:T101 Type:T104 Item:T103 Attribute:T99 Forecast:T169
+T101	DATE 3889 3893	2014
+T102	ORGANIZATION 3871 3875	OPEC
+T103	Commodity 3901 3904	oil
+T104	LOCATION 3894 3900	global
+T105	Financial_attribute 3967 3973	demand
+T106	Movement-up-gain 3977 3981	rise
+E35	Movement-up-gain:T106 Attribute:T105 Difference:T107 Modality_cue:T163
+T107	Production_unit 3985 4001	1.05 million bpd
+A11	Polarity E35 Positive
+A12	Modality E35 Other
+T108	Movement-down-loss 4003 4007	down
+E36	Movement-down-loss:T108 Difference:T109 Initial_reference_point:T110 Modality_cue:T163
+T109	Production_unit 4008 4018	50,000 bpd
+T110	DATE 4024 4034	last month
+T111	Cause-movement-down-loss 4041 4048	trimmed
+E37	Cause-movement-down-loss:T111 Supplier_Consumer:T112 Reference_point_time:T113 Difference:T115 Item:T171 Forecast:T114
+T112	ORGANIZATION 4036 4040	OPEC
+T113	DATE 4049 4058	next year
+T115	Production_unit 4080 4090	20,000 bpd
+T116	Commodity 713 716	Oil
+T117	COUNTRY 824 836	Saudi Arabia
+T118	STATE_OR_PROVINCE 982 988	Riyadh
+T123	Production_unit 2519 2530	160,000 bpd
+T125	Production_unit 2499 2516	29.20 million bpd
+T120	Financial_attribute 2475 2481	demand
+T122	LOCATION 2468 2474	global
+T121	ORGANIZATION 2447 2451	OPEC
+T124	Movement-down-loss 2531 2535	less
+E38	Movement-down-loss:T124 Difference:T123 Final_value:T125 Attribute:T120 Type:T122 Supplier_Consumer:T121 Forecast:T153
+T16	Oversupply 622 636	supply surplus
+E4	Oversupply:T16 Modality_cue:T126 Reference_point_time:T168 Difference:T17
+T17	Production_unit 650 663	1 million bpd
+A13	Modality E4 Other
+T126	MODALITY_cue 672 674	if
+T127	MODALITY_cue 891 895	will
+A14	Modality E8 Other
+T128	MODALITY_cue 3225 3232	willing
+T129	Negative_sentiment 3273 3281	concerns
+E39	Negative_sentiment:T129 
+T130	Negative_sentiment 741 748	concern
+E40	Negative_sentiment:T130 
+T131	Negative_sentiment 1787 1794	concern
+E41	Negative_sentiment:T131 Polarity_cue:T132
+T132	POLARITY_cue 1762 1765	not
+A15	Polarity E41 Negative
+T22	Oversupply 776 790	ample supplies
+E7	Oversupply:T22 
+T23	Grow-strong 2766 2770	boom
+E42	Grow-strong:T23 Item:T133 Supplier_Consumer:T154
+T133	Commodity 2753 2758	shale
+T134	Cause-movement-down-loss 40 44	cuts
+E43	Cause-movement-down-loss:T134 Supplier_Consumer:T135 Attribute:T178 Forecast:T136
+T135	ORGANIZATION 29 33	OPEC
+T137	Cause-movement-down-loss 18 25	cutback
+E44	Cause-movement-down-loss:T137 Item:T139 Supplier_Consumer:T138
+T138	COUNTRY 0 5	Saudi
+T139	Commodity 14 17	oil
+T141	Cause-movement-down-loss 343 350	cutback
+E45	Cause-movement-down-loss:T141 
+T142	DURATION 969 978	14 months
+T145	MODALITY_cue 1358 1362	when
+A17	Modality E14 Other
+T146	MODALITY_cue 1664 1673	skeptical
+T147	MODALITY_cue 1872 1876	will
+T148	MODALITY_cue 1987 1995	expected
+T149	Financial_attribute 2071 2081	production
+T150	Financial_attribute 2602 2608	demand
+T151	Financial_attribute 2583 2589	supply
+T152	Production_unit 2612 2628	1.15 million bpd
+T153	Forecast_target 2456 2467	forecasting
+T154	COUNTRY 2749 2752	its
+T85	Commodity 2811 2816	crude
+T155	COUNTRY 2806 2810	U.S.
+T86	Position-high 2864 2871	highest
+E30	Position-high:T86 Initial_reference_point:T90
+T89	Economic_item 3287 3293	market
+T156	Financial_attribute 3320 3326	demand
+T157	Cause-movement-down-loss 3382 3389	cutback
+E46	Cause-movement-down-loss:T157 
+T158	MODALITY_cue 3419 3425	likely
+T159	POLARITY_cue 3417 3419	un
+T160	MODALITY_cue 3583 3588	until
+T161	Commodity 3685 3688	oil
+T162	Commodity 3771 3774	oil
+T163	MODALITY_cue 3959 3966	expects
+A1	Modality E36 Other
+T164	Commodity 4134 4140	supply
+T165	Commodity 4145 4151	demand
+T166	LOCATION 4127 4133	global
+T167	ORGANIZATION 577 581	OPEC
+T168	DATE 667 671	2015
+A18	Modality E33 Other
+T35	Commodity 3832 3835	oil
+T99	Financial_attribute 3905 3918	demand growth
+T169	Forecast_target 3919 3927	forecast
+T13	Financial_attribute 566 572	demand
+T170	Forecast_target 552 561	forecasts
+T114	Forecast_target 4068 4076	estimate
+T171	Economic_item 4061 4067	growth
+T172	Financial_attribute 3152 3158	output
+T173	Forecast_target 3159 3165	target
+T174	Movement-flat 3124 3135	not changed
+E47	Movement-flat:T174 Supplier_Consumer:T175 Attribute:T172 Forecast:T173
+T175	ORGANIZATION 3136 3140	OPEC
+T176	Financial_attribute 3050 3056	output
+T140	Commodity 235 238	oil
+T58	Financial_attribute 1813 1819	prices
+T46	Movement-down-loss 1434 1439	lower
+E15	Movement-down-loss:T46 Attribute:T47
+A16	Polarity E16 Negative
+T177	POLARITY_cue 1456 1459	not
+T136	Forecast_target 52 56	view
+T178	Financial_attribute 45 51	demand
+R1	Cause-Precondition Arg1:E43 Arg2:E44	
+T179	COUNTRY 248 260	Saudi Arabia
+R2	Cause-Precondition Arg1:E40 Arg2:E5	
+R3	Cause-Precondition Arg1:E6 Arg2:E5	
+R4	Cause-Precondition Arg1:E7 Arg2:E5	
+T2	COUNTRY 1154 1159	Libya
+T119	COUNTRY 1206 1218	Saudi Arabia
+R5	Cause-Precondition Arg1:E14 Arg2:E13	
+R6	Cause-Precondition Arg1:E23 Arg2:E22	
+R7	Cause-Precondition Arg1:E27 Arg2:E26	
+R8	Cause-Precondition Arg1:E28 Arg2:E29	

@@ -1,0 +1,154 @@
+T1	Movement-up-gain 30 36	Rising
+E1	Movement-up-gain:T1 Attribute:T2
+T2	Financial_attribute 37 43	Output
+T3	trade-financial-tension 16 25	Trade War
+E2	trade-financial-tension:T3 
+T4	PERCENTAGE 10 12	2%
+T5	Movement-down-loss 4 9	Falls
+E3	Movement-down-loss:T5 Difference:T4 Item:T6
+T6	Commodity 0 3	Oil
+T7	Movement-down-loss 185 189	fell
+E4	Movement-down-loss:T7 Difference:T10 Reference_point_time:T11 Attribute:T8 Item:T9
+T8	Financial_attribute 178 184	prices
+T9	Commodity 174 177	Oil
+T10	PERCENTAGE 190 199	around 2%
+T11	DATE 203 210	Tuesday
+T12	Movement-down-loss 222 227	lower
+E5	Movement-down-loss:T12 
+T14	trade-financial-tension 267 276	trade war
+E6	trade-financial-tension:T14 Participating_countries:T73
+T13	Economic_item 291 298	economy
+T15	LOCATION 284 290	global
+T16	Movement-up-gain 303 309	rising
+E7	Movement-up-gain:T16 Supplier_Consumer:T17 Supplier_Consumer2:T18
+T17	ORGANIZATION 310 314	OPEC
+T18	ORGANIZATION 315 321	output
+T19	Movement-down-loss 338 342	down
+E8	Movement-down-loss:T19 Difference:T20 Difference2:T21 Item:T23 Final_value:T22
+T20	MONEY 343 348	$1.36
+T21	PERCENTAGE 353 357	2.5%
+T22	Price_unit 362 377	$53.73 a barrel
+T25	Movement-down-loss 446 450	down
+E9	Movement-down-loss:T25 Item:T28 Difference:T26 Final_value:T27
+T26	MONEY 451 459	97 cents
+T27	Price_unit 463 478	$57.66 a barrel
+T28	Commodity 436 441	Brent
+T30	trade-financial-tension 660 669	trade war
+E10	trade-financial-tension:T30 Participating_countries:T31
+T31	COUNTRY 678 711	the world’s two largest economies
+T32	Negative_sentiment 1103 1111	Concerns
+E11	Negative_sentiment:T32 
+T34	LOCATION 1121 1127	global
+T33	trade-financial-tension 1128 1144	economic fallout
+E12	trade-financial-tension:T33 Type:T34
+T35	Economic_item 1201 1208	economy
+T36	Position-low 1401 1407	lowest
+E13	Position-low:T36 Initial_reference_point:T37
+T37	DATE 1428 1432	2012
+T38	Slow-weak 1831 1839	struggle
+E14	Slow-weak:T38 Modality_cue:T40 Item:T39
+T39	Commodity 1822 1825	Oil
+T40	MODALITY_cue 1826 1830	will
+A1	Modality E14 Other
+T42	Movement-up-gain 2196 2202	higher
+E15	Movement-up-gain:T42 Attribute:T43 Supplier_Consumer:T44 Supplier_Consumer2:T45
+T43	Financial_attribute 2203 2209	supply
+T44	COUNTRY 2215 2219	Iraq
+T45	COUNTRY 2224 2231	Nigeria
+T46	Financial_attribute 2075 2081	Output
+T47	ORGANIZATION 2091 2147	Organization of the Petroleum Exporting Countries (OPEC)
+T48	Movement-up-gain 2148 2152	rose
+E16	Movement-up-gain:T48 Reference_point_time:T49 Supplier_Consumer:T47 Attribute:T46
+T49	DATE 2156 2162	August
+T50	Cause-movement-down-loss 2243 2247	cuts
+E17	Cause-movement-down-loss:T50 Supplier_Consumer:T52
+T51	Movement-down-loss 2281 2287	losses
+E18	Movement-down-loss:T51 
+T52	COUNTRY 2264 2276	Saudi Arabia
+T53	Embargo 2303 2312	sanctions
+E19	Embargo:T53 Imposee:T54 Imposer:T55
+T54	COUNTRY 2316 2320	Iran
+T55	COUNTRY 2298 2302	U.S.
+T56	Financial_attribute 2009 2019	production
+T57	Commodity 2330 2333	oil
+T58	NATIONALITY 2322 2329	Russian
+T61	Production_unit 2363 2399	11.294 million barrels per day (bpd)
+T62	Position-high 2436 2443	highest
+E21	Position-high:T62 Reference_point_time:T63
+T63	DATE 2450 2455	March
+T66	Cause-movement-down-loss 2824 2830	reduce
+E22	Cause-movement-down-loss:T66 Difference:T68 Reference_point_time:T69 Supplier_Consumer:T71 Modality_cue:T29 Supplier_Consumer2:T41 Supplier_Consumer3:T77
+T68	Production_unit 2841 2856	1.2 million bpd
+T69	DATE 2862 2878	Jan. 1 this year
+T65	ORGANIZATION 1983 1987	OPEC
+T71	COUNTRY 2767 2784	other non-members
+T72	Financial_attribute 2907 2916	inventory
+T73	COUNTRY 256 266	U.S.-China
+T23	Commodity 323 333	U.S. crude
+T24	Commodity 588 598	U.S. crude
+T29	MODALITY_cue 2802 2808	agreed
+A2	Modality E22 Other
+T74	Financial_attribute 2334 2344	production
+T75	Movement-up-gain 2355 2359	rose
+E23	Movement-up-gain:T75 Difference:T61 Attribute:T74 Item:T57 Type:T58 Reference_point_time:T79
+T76	NATIONALITY 2536 2543	Russian
+T70	Financial_attribute 2548 2558	production
+T41	COUNTRY 2756 2762	Russia
+T77	ORGANIZATION 2750 2754	OPEC
+T78	Commodity 2544 2547	oil
+T79	DATE 2348 2354	August
+T59	Financial_attribute 2831 2837	supply
+T60	DATE 2562 2568	August
+T67	Movement-up-gain 2569 2573	rose
+E20	Movement-up-gain:T67 Difference:T80 Reference_point_time:T60 Attribute:T70 Item:T78 Type:T76
+T80	Production_unit 2577 2613	11.294 million barrels per day (bpd)
+T81	Position-high 2650 2657	highest
+E24	Position-high:T81 Reference_point_time:T82
+T82	DATE 2664 2669	March
+T83	Commodity 821 831	U.S. crude
+T84	trade-financial-tension 893 902	trade war
+E25	trade-financial-tension:T84 Participating_countries:T85
+T85	COUNTRY 911 944	the world’s two largest economies
+T86	Negative_sentiment 1462 1470	Concerns
+E26	Negative_sentiment:T86 
+T87	LOCATION 1480 1486	global
+T88	trade-financial-tension 1487 1503	economic fallout
+E27	trade-financial-tension:T88 Type:T87
+T89	Economic_item 1560 1567	economy
+T90	Position-low 1760 1766	lowest
+E28	Position-low:T90 Initial_reference_point:T91
+T91	DATE 1787 1791	2012
+T92	Slow-weak 3069 3072	bad
+E29	Slow-weak:T92 Item:T97
+T93	Economic_item 3059 3065	growth
+T94	Economic_item 3245 3251	growth
+T95	Slow-weak 3255 3258	bad
+E30	Slow-weak:T95 Item:T96
+T96	Commodity 3263 3266	oil
+T97	Commodity 3077 3080	oil
+T98	LOCATION 3238 3244	global
+T99	LOCATION 3052 3058	global
+T100	Forecast_target 3040 3047	outlook
+T101	Forecast_target 3226 3233	outlook
+T102	Cause-movement-down-loss 3341 3346	draws
+E31	Cause-movement-down-loss:T102 Attribute:T107 Modality_cue:T106
+T103	Cause-movement-down-loss 3155 3160	draws
+E32	Cause-movement-down-loss:T103 Attribute:T105 Modality_cue:T104
+T104	MODALITY_cue 3146 3150	Only
+A3	Modality E32 Other
+T105	Financial_attribute 3164 3175	inventories
+T106	MODALITY_cue 3332 3336	Only
+T107	Financial_attribute 3350 3361	inventories
+R1	Cause-Precondition Arg1:E2 Arg2:E3	
+R2	Cause-Precondition Arg1:E1 Arg2:E3	
+R3	Cause-Precondition Arg1:E6 Arg2:E4	
+R4	Cause-Precondition Arg1:E7 Arg2:E4	
+R5	Cause-Precondition Arg1:E15 Arg2:E16	
+T64	Financial_attribute 2700 2706	output
+T108	Slow-weak 3028 3031	bad
+E33	Slow-weak:T108 Forecast:T100 Type:T99 Item:T93
+R6	Cause-Precondition Arg1:E33 Arg2:E29	
+T109	Slow-weak 3214 3217	bad
+E34	Slow-weak:T109 Forecast:T101 Type:T98 Item:T94
+R7	Cause-Precondition Arg1:E34 Arg2:E30	
+A4	Modality E31 Other

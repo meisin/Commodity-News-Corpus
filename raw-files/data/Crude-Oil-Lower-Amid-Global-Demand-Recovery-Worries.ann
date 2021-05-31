@@ -1,0 +1,105 @@
+T2	Grow-strong 35 43	Recovery
+E2	Grow-strong:T2 Attribute:T3 Type:T4 Modality_cue:T1
+T3	Financial_attribute 28 34	Demand
+T4	LOCATION 21 27	Global
+T5	Movement-down-loss 10 15	Lower
+E3	Movement-down-loss:T5 Item:T6
+T6	Commodity 0 9	Crude Oil
+T7	Movement-down-loss 215 223	weakened
+E4	Movement-down-loss:T7 Reference_point_time:T8 Attribute:T9 Item:T10
+T8	DATE 224 232	Thursday
+T9	Financial_attribute 208 214	prices
+T10	Commodity 198 207	Crude oil
+T11	Grow-strong 286 294	recovery
+E5	Grow-strong:T11 Attribute:T15 Item:T14 Type:T13 Modality_cue:T12
+T12	MODALITY_cue 238 244	doubts
+T13	LOCATION 268 274	global
+T14	Commodity 275 278	oil
+T15	Financial_attribute 279 285	demand
+T16	Movement-up-gain 313 321	increase
+E6	Movement-up-gain:T16 Item:T17 Attribute:T18
+T17	Commodity 325 335	U.S. crude
+T18	Financial_attribute 336 347	inventories
+T19	Movement-down-loss 406 411	lower
+E7	Movement-down-loss:T19 Difference:T22 Attribute:T21 Item:T20 Final_value:T23
+T20	Commodity 375 385	U.S. crude
+T21	Financial_attribute 386 393	futures
+T22	PERCENTAGE 401 405	2.2%
+T23	Price_unit 415 430	$63.14 a barrel
+T24	Movement-down-loss 481 485	fell
+E8	Movement-down-loss:T24 Difference:T26 Item:T25 Final_value:T27 Attribute:T77
+T25	Commodity 466 471	Brent
+T26	PERCENTAGE 486 490	2.3%
+T27	MONEY 494 500	$66.43
+T28	Movement-down-loss 535 539	down
+E9	Movement-down-loss:T28 Attribute:T30 Item:T29 Difference:T31 Final_value:T32
+T29	Commodity 503 516	U.S. Gasoline
+T30	Financial_attribute 522 529	Futures
+T31	PERCENTAGE 540 544	1.6%
+T32	Price_unit 548 564	$2.0135 a gallon
+T33	Economic_item 614 624	employment
+T35	Movement-up-gain 647 651	rose
+E10	Movement-up-gain:T35 Item:T33 Type:T37 Reference_point_time:T36 Final_value:T41
+T36	DATE 652 661	last week
+T37	NATIONALITY 580 589	Americans
+T38	Movement-up-gain 686 688	up
+E11	Movement-up-gain:T38 Initial_value:T39 Initial_reference_point:T40
+T39	NUMBER 694 701	725,000
+T40	DATE 705 719	the prior week
+T41	NUMBER 668 675	770,000
+T42	Commodity 959 964	crude
+T44	Negative_sentiment 1025 1033	worrying
+E12	Negative_sentiment:T44 
+T45	Movement-up-gain 1258 1264	jumped
+E13	Movement-up-gain:T45 Difference:T48
+T46	Movement-up-gain 1299 1303	rise
+E14	Movement-up-gain:T46 
+T47	Slow-weak 1108 1116	sluggish
+E15	Slow-weak:T47 
+T48	NUMBER 1268 1279	over 17,000
+T49	DATE 1310 1317	Jan. 22
+T50	Movement-up-gain 1404 1413	increases
+E16	Movement-up-gain:T50 
+T51	Negative_sentiment 1571 1579	concerns
+E17	Negative_sentiment:T51 
+T52	Financial_attribute 1602 1608	demand
+T53	Grow-strong 1590 1598	recovery
+E18	Grow-strong:T53 Attribute:T52
+T55	Financial_attribute 1802 1808	demand
+T54	Movement-down-loss 1876 1881	lower
+E19	Movement-down-loss:T54 Attribute:T57 Difference:T56 Initial_reference_point:T58 Forecast:T59
+T56	Production_unit 1864 1875	2.5MMbbls/d
+T57	Financial_attribute 1820 1826	demand
+T58	DATE 1905 1914	last year
+T59	Forecast_target 1827 1836	estimated
+T60	Movement-up-gain 2061 2070	increased
+E20	Movement-up-gain:T60 Difference:T61 Attribute:T63 Item:T62 Reference_point_time:T64
+T61	Quantity 2074 2093	2.4 million barrels
+T62	Commodity 2043 2048	crude
+T63	Financial_attribute 2049 2060	inventories
+T64	DATE 2094 2103	last week
+T65	Movement-up-gain 2105 2112	growing
+E21	Movement-up-gain:T65 Duration:T66
+T66	DURATION 2117 2136	four straight weeks
+T67	Quantity 2333 2349	1 million barrel
+T68	Movement-down-loss 2350 2357	decline
+E22	Movement-down-loss:T68 Attribute:T69 Difference:T67 Forecast:T70
+T69	Financial_attribute 2367 2378	inventories
+T70	Forecast_target 2321 2330	estimated
+T71	Movement-up-gain 2488 2498	increasing
+E23	Movement-up-gain:T71 Difference:T72 Attribute:T73 Final_value:T74
+T72	PERCENTAGE 2502 2516	7.1 percentage
+T73	Financial_attribute 2470 2487	utilisation rates
+T74	PERCENTAGE 2556 2561	76.1%
+T75	Movement-down-loss 2586 2591	below
+E24	Movement-down-loss:T75 Initial_value:T76
+T76	PERCENTAGE 2596 2601	83.1%
+T1	MODALITY_cue 44 51	Worries
+A2	Modality E2 Other
+R1	Cause-Precondition Arg1:E2 Arg2:E3	
+A1	Modality E5 Other
+R2	Cause-Precondition Arg1:E6 Arg2:E4	
+R3	Cause-Precondition Arg1:E5 Arg2:E4	
+T77	Financial_attribute 472 480	contract
+T34	Economic_item 780 792	labor market
+T43	Economic_item 985 991	market

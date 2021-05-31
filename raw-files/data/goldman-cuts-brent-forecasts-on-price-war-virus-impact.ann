@@ -1,0 +1,120 @@
+T1	Cause-movement-down-loss 8 12	cuts
+E1	Cause-movement-down-loss:T1 Forecaster:T3 Forecast:T2 Item:T4 Difference:T5
+T2	Forecast_target 19 28	forecasts
+T3	ORGANIZATION 0 7	Goldman
+T4	Commodity 13 18	Brent
+T5	MONEY 32 35	$30
+T6	trade-financial-tension 39 48	price war
+E2	trade-financial-tension:T6 
+T7	trade-financial-tension 309 318	price war
+E3	trade-financial-tension:T7 Participating_countries:T8 Participating_countries2:T9
+T8	COUNTRY 327 333	Russia
+T9	COUNTRY 338 350	Saudi Arabia
+T10	Movement-down-loss 368 376	collapse
+E4	Movement-down-loss:T10 Item:T12 Attribute:T11
+T11	Financial_attribute 384 390	demand
+T12	Commodity 380 383	oil
+T13	Movement-down-loss 460 464	fell
+E5	Movement-down-loss:T13 Initial_reference_point:T15 Reference_point_time:T16 Item:T14
+T14	Commodity 456 459	Oil
+T15	DATE 483 487	1991
+T16	DATE 491 497	Monday
+T17	ORGANIZATION 195 208	Goldman Sachs
+T18	Cause-movement-down-loss 219 222	cut
+E6	Cause-movement-down-loss:T18 Item:T21 Attribute:T20 Forecast:T19 Forecaster:T17 Final_value:T22
+T19	Forecast_target 265 274	forecasts
+T20	Financial_attribute 259 264	price
+T21	Commodity 253 258	Brent
+T22	Price_unit 278 292	$30 per barrel
+T23	COUNTRY 504 516	Saudi Arabia
+T24	trade-financial-tension 527 536	price war
+E7	trade-financial-tension:T24 Participating_countries:T23 Participating_countries2:T25
+T25	COUNTRY 542 548	Russia
+T26	Cause-movement-down-loss 552 560	slashing
+E8	Cause-movement-down-loss:T26 Attribute:T27
+T27	Financial_attribute 573 579	prices
+T28	Financial_attribute 616 622	supply
+T29	Financial_attribute 630 636	market
+T30	Movement-down-loss 650 657	falling
+E9	Movement-down-loss:T30 Attribute:T31
+T31	Financial_attribute 658 664	demand
+T32	POLARITY_cue 1064 1071	refused
+T33	Cause-movement-down-loss 1094 1098	cuts
+E10	Cause-movement-down-loss:T33 Item:T34 Polarity_cue:T32 Supplier_Consumer:T35 Intensity_cue:T73
+T34	Commodity 1090 1093	oil
+T35	STATE_OR_PROVINCE 1057 1063	Moscow
+T36	Financial_attribute 1152 1162	production
+T37	Financial_attribute 1295 1305	production
+T38	Cause-movement-down-loss 1306 1310	cuts
+E11	Cause-movement-down-loss:T38 Attribute:T37
+T39	Movement-down-loss 1409 1414	Lower
+E12	Movement-down-loss:T39 Item:T42 Attribute:T41
+T40	Cause-movement-down-loss 718 721	cut
+E13	Cause-movement-down-loss:T40 
+T41	Financial_attribute 1419 1425	prices
+T42	Commodity 1415 1418	oil
+T43	Financial_attribute 1482 1492	production
+T44	Commodity 1498 1503	shale
+T45	Movement-down-loss 1472 1481	declining
+E14	Movement-down-loss:T45 Attribute:T43 Item:T44 Modality_cue:T74
+T46	Position-high 1521 1525	high
+E15	Position-high:T46 
+T47	Financial_attribute 1645 1651	output
+T48	Movement-down-loss 1657 1661	fall
+E16	Movement-down-loss:T48 Modality_cue:T49 Attribute:T47 Reference_point_time:T50 Difference:T51
+T49	MODALITY_cue 1652 1656	will
+T50	DATE 1665 1682	the third quarter
+T51	Production_unit 1686 1714	75,000 barrels per day (bpd)
+T53	Oversupply 1835 1849	supply surplus
+E17	Oversupply:T53 Difference:T54
+T54	Production_unit 1853 1868	1.2 million bpd
+T55	Movement-down-loss 1939 1946	falling
+E18	Movement-down-loss:T55 Attribute:T56 Item:T57 Modality_cue:T58
+T56	Financial_attribute 1932 1938	prices
+T57	Commodity 1928 1931	oil
+T58	MODALITY_cue 1920 1927	require
+T59	Movement-flat 2059 2068	no change
+E19	Movement-flat:T59 Attribute:T75 Modality_cue:T76
+T60	Movement-down-loss 2116 2122	deﬁcit
+E20	Movement-down-loss:T60 Attribute:T62 Modality_cue:T61 Reference_point_time:T64
+T61	MODALITY_cue 2099 2106	expects
+T62	Financial_attribute 2109 2115	supply
+A3	Modality E20 Other
+T63	Financial_attribute 2192 2203	inventories
+T64	DATE 2136 2162	the fourth quarter of 2020
+T65	Cause-movement-down-loss 2258 2263	draws
+E21	Cause-movement-down-loss:T65 Attribute:T66 Modality_cue:T67
+T66	Financial_attribute 2248 2257	inventory
+T67	MODALITY_cue 2236 2244	prospect
+T68	Movement-up-gain 2285 2292	rebound
+E22	Movement-up-gain:T68 Reference_point_time:T72 Attribute:T70 Modality_cue:T79 Final_value:T69
+T69	Price_unit 2296 2310	$40 per barrel
+T70	Financial_attribute 2275 2281	prices
+T71	MODALITY_cue 2170 2175	would
+A4	Modality E22 Other
+T72	DATE 2314 2334	the end of this year
+T52	Commodity 1597 1607	U.S. shale
+A2	Modality E18 Other
+A5	Modality E21 Other
+A6	Polarity E10 Negative
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+R2	Cause-Precondition Arg1:E4 Arg2:E6	
+R3	Cause-Precondition Arg1:E3 Arg2:E6	
+R4	Cause-Precondition Arg1:E7 Arg2:E8	
+R5	Cause-Precondition Arg1:E8 Arg2:E5	
+T73	INTENSITY_cue 1083 1089	deeper
+A1	Intensity E10 Intensified
+R6	Cause-Precondition Arg1:E12 Arg2:E14	
+T74	MODALITY_cue 1426 1430	will
+A7	Modality E14 Other
+A8	Modality E16 Other
+T75	Financial_attribute 2072 2082	production
+T76	MODALITY_cue 2050 2058	Assuming
+A9	Modality E19 Other
+T77	Movement-down-loss 2176 2184	run down
+E23	Movement-down-loss:T77 Attribute:T63 Modality_cue:T71 Reference_point_time:T78
+A10	Modality E23 Other
+R7	Cause-Precondition Arg1:E20 Arg2:E23	
+T78	DATE 2212 2216	2021
+T79	MODALITY_cue 2264 2269	would
+R8	Cause-Precondition Arg1:E21 Arg2:E22	

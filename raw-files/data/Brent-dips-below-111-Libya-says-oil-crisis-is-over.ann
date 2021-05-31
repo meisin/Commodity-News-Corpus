@@ -1,0 +1,177 @@
+T1	Financial_attribute 236 243	futures
+T2	Movement-down-loss 244 250	dipped
+E1	Movement-down-loss:T2 Attribute:T1 Item:T4 Final_value:T3 Reference_point_time:T5
+T3	Price_unit 251 270	below $111 a barrel
+T4	Commodity 224 235	Brent crude
+T5	DATE 274 282	Thursday
+T6	Cause-movement-down-loss 367 374	slashed
+E2	Cause-movement-down-loss:T6 Attribute:T7 Supplier_Consumer:T8
+T7	Financial_attribute 375 382	exports
+T8	COUNTRY 392 403	OPEC member
+T9	Movement-down-loss 967 971	fall
+E3	Movement-down-loss:T9 
+T10	Commodity 919 924	Brent
+T11	Movement-down-loss 1017 1025	dropping
+E4	Movement-down-loss:T11 Difference:T12 Final_value:T13
+T12	MONEY 1026 1034	59 cents
+T13	Production_unit 1038 1054	$110.65 a barrel
+T14	Movement-down-loss 1079 1087	declined
+E5	Movement-down-loss:T14 Difference:T17 Final_value:T18 Item:T15
+T17	MONEY 1091 1099	44 cents
+T18	Price_unit 1103 1119	$104.04 a barrel
+T19	Crisis 351 357	crisis
+E6	Crisis:T19 Item:T20 Place:T21 Polarity_cue:T76
+T20	Commodity 347 350	oil
+T21	COUNTRY 319 324	Libya
+A1	Polarity E6 Negative
+A2	Modality E6 Asserted
+T22	Crisis 1161 1167	crisis
+E7	Crisis:T22 Place:T23
+T23	COUNTRY 1171 1175	Iraq
+T24	Movement-down-loss 1582 1588	fallen
+E8	Movement-down-loss:T24 
+T25	Movement-down-loss 1879 1883	fell
+E9	Movement-down-loss:T25 Difference:T27 Attribute:T26 Supplier_Consumer:T28 Reference_point_time:T29
+T26	Financial_attribute 1868 1878	Production
+T27	Production_unit 1887 1904	about 170,000 bpd
+T28	COUNTRY 1908 1912	Iraq
+T29	DATE 1916 1920	June
+T30	Movement-down-loss 2039 2046	dropped
+E10	Movement-down-loss:T30 Attribute:T31 Item:T32 Reference_point_time:T34 Supplier_Consumer:T58
+T31	Financial_attribute 2012 2019	exports
+T32	Commodity 2008 2011	Oil
+T34	DATE 2050 2059	late June
+T33	Grow-strong 2419 2429	recovering
+E11	Grow-strong:T33 Item:T35 Modality_cue:T94
+T35	Economic_item 2408 2415	economy
+T37	Financial_attribute 2448 2454	stocks
+T38	Commodity 2442 2447	crude
+T40	Movement-up-gain 2506 2515	increased
+E13	Movement-up-gain:T40 Supplier_Consumer:T63 Attribute:T41 Reference_point_time:T98
+T41	Financial_attribute 2516 2522	output
+T42	Movement-down-loss 2862 2870	declines
+E14	Movement-down-loss:T42 Attribute:T43 Modality_cue:T103 Intensity_cue:T102
+T43	Financial_attribute 2856 2861	price
+T44	Movement-up-gain 2903 2905	up
+E15	Movement-up-gain:T44 Attribute:T45 Modality_cue:T104 Polarity_cue:T105
+T45	Financial_attribute 2896 2902	prices
+A3	Polarity E15 Negative
+A4	Modality E15 Other
+T46	Movement-up-gain 3024 3028	gain
+E16	Movement-up-gain:T46 Duration:T107 Reference_point_time:T108
+T47	Movement-down-loss 3157 3162	slump
+E17	Movement-down-loss:T47 Reference_point_time:T48
+T48	DATE 3143 3156	first-quarter
+T51	COUNTRY 3456 3461	Libya
+T52	Cause-movement-up-gain 3475 3482	ramp up
+E19	Cause-movement-up-gain:T52 Supplier_Consumer:T51 Attribute:T53 Modality_cue:T112
+T53	Financial_attribute 3483 3493	production
+A7	Polarity E19 Positive
+A8	Modality E19 Other
+T54	Civil-unrest 1802 1810	fighting
+E20	Civil-unrest:T54 
+T55	Financial_attribute 1967 1974	exports
+T56	Cause-movement-down-loss 1975 1983	affected
+E21	Cause-movement-down-loss:T56 Attribute:T55 Type:T57
+T57	LOCATION 1958 1966	southern
+T58	STATE_OR_PROVINCE 2025 2038	southern Iraq
+T59	Movement-down-loss 2226 2230	drop
+E22	Movement-down-loss:T59 Modality_cue:T91
+T60	Movement-up-gain 2268 2272	rise
+E23	Movement-up-gain:T60 Attribute:T61 Reference_point_time:T62 Modality_cue:T92
+T61	Financial_attribute 2253 2260	exports
+T62	DATE 2276 2289	coming months
+A11	Polarity E23 Positive
+A12	Modality E23 Other
+T63	Group 2495 2505	refineries
+T64	Movement-up-gain 3124 3133	rebounded
+E24	Movement-up-gain:T64 Item:T65
+T65	Economic_item 3112 3119	economy
+T68	DATE 3268 3272	2014
+T70	NATIONALITY 1836 1841	Iraqi
+T71	Financial_attribute 1842 1849	exports
+T66	Economic_item 3246 3252	growth
+T67	LOCATION 3239 3245	global
+T72	Grow-strong 3253 3261	recovery
+E25	Grow-strong:T72 Item:T66 Type:T67 Initial_reference_point:T68
+T36	COUNTRY 2437 2441	U.S.
+T39	Movement-down-loss 2455 2459	fell
+E12	Movement-down-loss:T39 Attribute:T37 Item:T38 Supplier_Consumer:T36 Reference_point_time:T97
+T73	MONEY 11 21	below $111
+T74	Movement-down-loss 6 10	dips
+E27	Movement-down-loss:T74 Difference:T73 Item:T75
+T75	Commodity 0 5	Brent
+T76	POLARITY_cue 337 340	end
+T77	Commodity 484 487	oil
+T78	Production_unit 578 607	500,000 barrels per day (bpd)
+T79	Commodity 611 616	crude
+T80	Financial_attribute 631 637	export
+T81	Economic_item 646 652	market
+T82	Economic_item 812 818	market
+T83	Commodity 770 779	commodity
+T84	Position-low 988 991	low
+E28	Position-low:T84 Duration:T85
+T85	DURATION 977 987	three-week
+T86	Position-low 1147 1153	trough
+E29	Position-low:T86 Duration:T87
+T87	DURATION 1136 1146	three-week
+T88	Commodity 1346 1349	oil
+T89	Commodity 2118 2121	oil
+T90	Commodity 2169 2172	oil
+T91	MODALITY_cue 2231 2235	will
+A9	Modality E22 Other
+T92	MODALITY_cue 2261 2267	should
+T93	Financial_attribute 2300 2306	demand
+T94	MODALITY_cue 2394 2403	suggested
+A10	Modality E11 Other
+T95	Commodity 2375 2378	oil
+T96	LOCATION 2363 2368	world
+T97	DATE 2482 2491	last week
+T98	DATE 2534 2556	July 4 holiday weekend
+T99	Economic_item 2712 2729	Employment growth
+T100	Grow-strong 2765 2790	continued at a solid clip
+E30	Grow-strong:T100 Modality_cue:T101 Item:T99
+T101	MODALITY_cue 2748 2756	expected
+T102	INTENSITY_cue 2831 2844	put the brake
+T103	MODALITY_cue 2825 2830	could
+A14	Modality E14 Other
+T105	POLARITY_cue 2879 2881	un
+T104	MODALITY_cue 2881 2887	likely
+T106	Economic_item 2946 2956	employment
+T107	DURATION 3032 3043	1-1/2 years
+T108	DATE 3047 3051	June
+T109	Financial_attribute 3172 3178	prices
+T110	Commodity 3166 3171	Brent
+T111	MONEY 3220 3230	below $110
+T112	MODALITY_cue 3447 3455	provided
+T113	MODALITY_cue 3366 3371	would
+T50	Financial_attribute 3350 3356	supply
+T114	Negative_sentiment 3357 3365	concerns
+E31	Negative_sentiment:T114 Attribute:T50 Modality_cue:T113 Intensity_cue:T49
+A16	Modality E31 Other
+T49	INTENSITY_cue 3372 3376	ease
+T115	Commodity 34 37	oil
+T69	Crisis 38 44	crisis
+E18	Crisis:T69 Item:T115 Polarity_cue:T116 Place:T16
+T116	POLARITY_cue 48 52	over
+A5	Polarity E18 Negative
+T117	Financial_attribute 1286 1296	production
+T15	Commodity 1070 1078	U.S. oil
+A6	Intensity E31 Eased
+A15	Modality E30 Other
+T16	COUNTRY 23 28	Libya
+T118	Financial_attribute 286 292	supply
+T119	Negative_sentiment 293 298	fears
+E26	Negative_sentiment:T119 Attribute:T118 Intensity_cue:T120
+T120	INTENSITY_cue 308 312	ease
+A17	Intensity E26 Eased
+R1	Cause-Precondition Arg1:E6 Arg2:E26	
+R2	Cause-Precondition Arg1:E26 Arg2:E1	
+T121	Movement-down-loss 957 963	losses
+E32	Movement-down-loss:T121 Intensity_cue:T122 Item:T10
+T122	INTENSITY_cue 925 933	extended
+A18	Intensity E32 Intensified
+T123	Financial_attribute 1207 1213	prices
+R3	Cause-Precondition Arg1:E13 Arg2:E12	
+A13	Intensity E14 Eased
+R4	Cause-Precondition Arg1:E19 Arg2:E31	

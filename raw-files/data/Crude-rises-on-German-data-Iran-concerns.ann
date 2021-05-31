@@ -1,0 +1,113 @@
+T1	Negative_sentiment 33 41	concerns
+E1	Negative_sentiment:T1 Type:T2
+T2	COUNTRY 28 32	Iran
+T3	Movement-up-gain 6 11	rises
+E2	Movement-up-gain:T3 Item:T4
+T4	Commodity 0 5	Crude
+T5	Movement-up-gain 178 182	rose
+E3	Movement-up-gain:T5 Reference_point_time:T10 Attribute:T7 Item:T6
+T6	Commodity 160 169	Crude oil
+T7	Financial_attribute 170 177	futures
+T8	Embargo 299 302	ban
+E4	Embargo:T8 Imposer:T12 Imposee:T9 Item:T13 Modality_cue:T50
+T9	NATIONALITY 306 313	Iranian
+T10	DATE 199 205	Friday
+T11	Negative_sentiment 274 282	concerns
+E5	Negative_sentiment:T11 
+T12	NATIONALITY 290 298	European
+T13	Commodity 314 319	crude
+T14	Commodity 406 424	light, sweet crude
+T15	Financial_attribute 425 432	futures
+T16	DATE 449 453	June
+T17	Price_unit 464 482	USD104.27 a barrel
+T18	PERCENTAGE 487 492	1.50%
+T19	Movement-up-gain 484 486	up
+E6	Movement-up-gain:T19 Final_value:T17 Difference:T18 Item:T14 Attribute:T15 Contract_date:T16
+T20	Position-high 513 517	high
+E7	Position-high:T20 Final_value:T21
+T21	NUMBER 521 527	104.69
+T22	Movement-up-gain 532 534	up
+E8	Movement-up-gain:T22 
+T23	Position-low 559 562	low
+E9	Position-low:T23 Difference:T24
+T24	MONEY 566 575	USD102.86
+T25	Negative_sentiment 586 594	concerns
+E10	Negative_sentiment:T25 
+T26	NATIONALITY 604 611	Europea
+T27	Crisis 618 624	crisis
+E11	Crisis:T27 Place:T26 Intensity_cue:T75
+T28	Movement-up-gain 792 796	rose
+E12	Movement-up-gain:T28 Reference_point_time:T29 Final_value:T30 Difference:T31 Initial_reference_point:T40
+T29	DATE 786 791	April
+T30	NUMBER 800 805	109.9
+T31	NUMBER 811 816	109.8
+T32	Grow-strong 943 951	stronger
+E13	Grow-strong:T32 Type:T33 Item:T34
+T33	NATIONALITY 952 958	German
+T34	Economic_item 959 966	economy
+T35	Financial_attribute 975 981	demand
+T36	Commodity 986 989	oil
+T37	Cause-movement-up-gain 967 974	sparked
+E14	Cause-movement-up-gain:T37 Attribute:T35 Item:T36
+T38	Commodity 1030 1034	fuel
+T39	Economic_item 663 670	economy
+T40	DATE 821 835	previous month
+T41	MODALITY_cue 847 859	expectations
+T42	Movement-down-loss 878 882	drop
+E15	Movement-down-loss:T42 Difference:T43 Modality_cue:T41
+T43	NUMBER 886 891	109.5
+A1	Modality E15 Other
+T44	Position-high 934 938	high
+E16	Position-high:T44 Duration:T45
+T45	DURATION 923 932	nine-mont
+T46	Crisis 1255 1261	crisis
+E17	Crisis:T46 Item:T48
+T47	Cause-movement-up-gain 1277 1284	boosted
+E18	Cause-movement-up-gain:T47 Item:T48 Intensity_cue:T76
+T48	Commodity 1285 1290	crude
+T49	Embargo 1326 1333	embargo
+E19	Embargo:T49 Modality_cue:T51 Imposer:T53 Item:T54 Imposer2:T52
+T50	MODALITY_cue 323 329	coming
+A2	Modality E4 Other
+T51	MODALITY_cue 1354 1357	set
+T52	NATIONALITY 1317 1325	European
+T53	NATIONALITY 1337 1344	Iranian
+T54	Commodity 1345 1350	crude
+A3	Modality E19 Other
+T55	Negative_sentiment 1386 1394	concerns
+E20	Negative_sentiment:T55 
+T57	Financial_attribute 1474 1480	prices
+T56	Movement-up-gain 1481 1483	up
+E21	Movement-up-gain:T56 Reference_point_time:T58 Attribute:T57
+T58	DATE 1487 1493	Friday
+T59	Embargo 1580 1587	embargo
+E22	Embargo:T59 Item:T60 Imposer:T61
+T60	Commodity 1576 1579	oil
+T61	NATIONALITY 1567 1575	European
+T62	Embargo 1614 1623	sanctions
+E23	Embargo:T62 Imposer:T63
+T63	STATE_OR_PROVINCE 1635 1641	Tehran
+T64	Commodity 1712 1721	Brent oil
+T65	Financial_attribute 1722 1729	futures
+T66	DATE 1734 1738	June
+T67	Movement-up-gain 1753 1755	up
+E24	Movement-up-gain:T67 Difference:T68 Final_value:T69 Reference_point_time:T66 Attribute:T65 Item:T64
+T68	PERCENTAGE 1756 1761	0.76%
+T69	Price_unit 1777 1795	USD118.89 a barrel
+T70	Movement-up-gain 1797 1799	up
+E25	Movement-up-gain:T70 Difference:T71
+T71	MONEY 1800 1808	USD14.62
+T72	Movement-up-gain 1025 1029	more
+E26	Movement-up-gain:T72 Item:T38 Modality_cue:T73 Supplier_Consumer:T74
+T73	MODALITY_cue 1015 1019	will
+T74	COUNTRY 1003 1014	the country
+R1	Cause-Precondition Arg1:E1 Arg2:E2
+R3	Cause-Precondition Arg1:E4 Arg2:E3
+R6	Cause-Precondition Arg1:E13 Arg2:E14
+R7	Cause-Precondition Arg1:E13 Arg2:E26
+R8	Cause-Precondition Arg1:E19 Arg2:E21
+A4	Modality E26 Other
+T75	INTENSITY_cue 636 641	worse
+A5	Intensity E11 Intensified
+A6	Intensity E18 Intensified
+T76	INTENSITY_cue 1269 1276	further

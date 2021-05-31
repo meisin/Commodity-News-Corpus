@@ -1,0 +1,90 @@
+T1	Financial_attribute 203 209	demand
+T2	Commodity 214 220	diesel
+T3	NATIONALITY 194 202	European
+T4	Movement-down-loss 241 247	fallen
+E1	Movement-down-loss:T4 Item:T2 Attribute:T1 Type:T3 Reference_point_time:T5 Modality_cue:T64
+T5	DATE 251 281	the first three months of 2016
+T7	Financial_attribute 546 552	demand
+T8	LOCATION 438 444	Europe
+T11	COUNTRY 520 525	China
+T12	COUNTRY 530 535	Japan
+T6	DATE 598 611	January-March
+T9	Slow-weak 553 561	contract
+E2	Slow-weak:T9 Initial_reference_point:T6 Attribute:T7 Supplier_Consumer:T12 Supplier_Consumer2:T11 Supplier_Consumer3:T10 Supplier_Consumer4:T8
+T14	Financial_attribute 651 657	demand
+T15	Slow-weak 658 666	crumbles
+E3	Slow-weak:T15 Attribute:T14 Type:T16
+T16	LOCATION 637 643	Global
+T20	Movement-up-gain 882 887	gains
+E5	Movement-up-gain:T20 Reference_point_time:T21 Forecast:T65
+T21	DATE 909 928	the end of the year
+A3	Polarity E5 Positive
+A4	Modality E5 Other
+T23	Grow-strong 968 976	improves
+E6	Grow-strong:T23 Type:T26 Supplier_Consumer2:T25 Supplier_Consumer:T22
+T25	COUNTRY 1027 1032	India
+T26	LOCATION 977 986	worldwide
+T27	Financial_attribute 1052 1058	demand
+T28	Commodity 1063 1069	diesel
+T29	NATIONALITY 1044 1051	Chinese
+T30	Slow-weak 1070 1076	slowed
+E7	Slow-weak:T30 Item:T28 Attribute:T27 Type:T29 Reference_point_time:T31
+T31	DATE 1080 1092	recent years
+T32	Slow-weak 1233 1242	weakening
+E8	Slow-weak:T32 Supplier_Consumer:T34 Attribute:T35 Supplier_Consumer2:T24
+T34	COUNTRY 1223 1228	Japan
+T35	Financial_attribute 1243 1249	demand
+T36	Financial_attribute 1464 1470	demand
+T37	Movement-down-loss 1471 1479	declined
+E9	Movement-down-loss:T37 Attribute:T36 Difference:T38 Initial_reference_point:T39
+T38	Production_unit 1483 1505	75,000 barrels per day
+T39	DATE 1518 1532	a year earlier
+T40	Movement-down-loss 1549 1557	declines
+E10	Movement-down-loss:T40 Supplier_Consumer:T41 Supplier_Consumer2:T42
+T41	COUNTRY 1570 1576	France
+T42	COUNTRY 1581 1588	Germany
+T43	Commodity 1600 1606	diesel
+T44	Financial_attribute 1607 1618	consumption
+T45	Movement-down-loss 1619 1623	drop
+T46	NUMBER 1627 1633	50,000
+E12	Movement-down-loss:T45 Attribute:T44 Item:T43 Difference:T46 Difference2:T47 Initial_reference_point:T48
+T47	Production_unit 1638 1648	20,000 bpd
+T48	DATE 1667 1681	a year earlier
+T49	Commodity 1743 1746	oil
+T50	Cause-movement-down-loss 1692 1699	trimmed
+E13	Cause-movement-down-loss:T50 Final_value:T56 Type:T53 Item:T49 Reference_point_time:T54 Difference:T55 Forecaster:T51 Forecast:T71 Attribute:T17
+T51	ORGANIZATION 1688 1691	IEA
+T53	LOCATION 1736 1742	global
+T54	DATE 1754 1763	this year
+T55	Production_unit 1767 1782	1.2 million bpd
+T56	Production_unit 1811 1827	95.9 million bpd
+T57	Movement-down-loss 21 30	crumbling
+E11	Movement-down-loss:T57 Attribute:T58 Item:T59 Type:T60 Modality_cue:T19
+T58	Financial_attribute 14 20	demand
+T59	Commodity 7 13	diesel
+T60	LOCATION 0 6	Global
+A5	Modality E1 Other
+T61	Commodity 487 493	diesel
+T62	Commodity 779 783	fuel
+T63	Commodity 788 794	diesel
+T19	MODALITY_cue 32 37	warns
+T64	MODALITY_cue 224 232	expected
+A1	Modality E11 Other
+T65	Forecast_target 892 900	forecast
+T66	Movement-down-loss 306 313	decline
+E4	Movement-down-loss:T66 Duration:T67
+T67	DURATION 317 333	nearly two years
+T68	Slow-weak 408 416	distress
+E14	Slow-weak:T68 Item:T33
+T52	Financial_attribute 838 851	demand growth
+T71	Forecast_target 1713 1721	forecast
+T10	COUNTRY 505 518	United States
+T22	COUNTRY 1009 1022	United States
+T24	COUNTRY 1205 1218	United States
+R1	Cause-Precondition Arg1:E6 Arg2:E5	
+T13	Slow-weak 1264 1270	slower
+E15	Slow-weak:T13 
+R2	Cause-Precondition Arg1:E15 Arg2:E8	
+T17	Financial_attribute 1747 1753	demand
+T18	Financial_attribute 1726 1732	growth
+T33	Economic_item 424 435	fuel market

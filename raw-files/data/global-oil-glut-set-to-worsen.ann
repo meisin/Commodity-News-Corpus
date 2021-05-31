@@ -1,0 +1,111 @@
+T1	Financial_attribute 164 174	stockpiles
+T2	Movement-up-gain 180 189	ballooned
+E1	Movement-up-gain:T2 Attribute:T1 Item:T3 Type:T4
+T3	Commodity 154 163	crude oil
+T4	LOCATION 147 153	Global
+T5	Slow-weak 365 372	slowing
+E2	Slow-weak:T5 Type:T7 Item:T6
+T6	Economic_item 380 387	economy
+T7	LOCATION 373 379	global
+T8	Oversupply 405 409	glut
+E3	Oversupply:T8 Intensity_cue:T9 Modality_cue:T72
+T10	Grow-strong 419 427	Vigorous
+E5	Grow-strong:T10 Attribute:T11 Supplier_Consumer:T12 Supplier_Consumer2:T13 Supplier_Consumer3:T14
+T11	Financial_attribute 428 438	production
+T12	ORGANIZATION 442 504	Organization of Petroleum Exporting Countries (OPEC) countries
+T13	COUNTRY 506 512	Russia
+T14	STATE_OR_PROVINCE 517 530	North America
+T15	Oversupply 633 640	surplus
+E6	Oversupply:T15 Intensity_cue:T33
+T16	Slow-weak 737 743	slowed
+E7	Slow-weak:T16 Type:T26 Reference_point_time:T27 Final_value:T28 Initial_value:T29 Initial_reference_point:T30 Attribute:T25
+T17	Movement-up-gain 983 988	surge
+E8	Movement-up-gain:T17 Attribute:T18 Initial_reference_point:T19 Item:T20 Type:T21
+T18	Financial_attribute 969 982	demand growth
+T19	DATE 992 996	2015
+T20	Commodity 965 968	oil
+T21	LOCATION 958 964	global
+T23	Grow-strong 1414 1420	strong
+E9	Grow-strong:T23 Supplier_Consumer:T24 Attribute:T66
+T24	COUNTRY 1431 1436	India
+T25	Financial_attribute 725 736	stockpiling
+T26	LOCATION 718 724	global
+T27	DATE 751 768	the third quarter
+T28	Production_unit 772 799	1.6 million barrels per day
+T29	Production_unit 805 832	2.3 million barrels per day
+T30	DATE 840 858	the second quarter
+T32	Oversupply 1047 1067	bulging stock levels
+E10	Oversupply:T32 
+T34	Oversupply 1243 1247	glut
+E12	Oversupply:T34 Intensity_cue:T31 Modality_cue:T48
+T36	Financial_attribute 1329 1335	output
+T37	NATIONALITY 1321 1328	Russian
+T38	Grow-strong 1353 1359	robust
+E13	Grow-strong:T38 Reference_point_time:T39 Attribute:T36 Type:T37 Modality_cue:T74
+A1	Polarity E13 Positive
+A2	Modality E13 Other
+T39	DATE 1363 1367	2016
+T40	Financial_attribute 1455 1461	demand
+T41	Commodity 1451 1454	oil
+T42	LOCATION 1444 1450	global
+T43	Position-high 1477 1481	high
+E14	Position-high:T43 Attribute:T40 Item:T41 Type:T42 Reference_point_time:T44
+T44	DATE 1485 1510	the third quarter of 2015
+T45	Oversupply 1519 1533	glut in supply
+E15	Oversupply:T45 
+T46	Grow-strong 1561 1565	boom
+E16	Grow-strong:T46 Item:T47
+T47	Commodity 1551 1560	shale oil
+T49	Financial_attribute 1107 1113	prices
+T50	Commodity 1097 1106	crude oil
+T52	Movement-down-loss 1603 1618	weighed heavily
+E18	Movement-down-loss:T52 Item:T53 Attribute:T54
+T53	Commodity 1622 1625	oil
+T54	Financial_attribute 1626 1632	prices
+T55	Movement-flat 1264 1273	no change
+E19	Movement-flat:T55 Attribute:T56 Reference_point_time:T57 Modality_cue:T73
+T56	Financial_attribute 1281 1287	supply
+T57	DATE 1306 1315	near-term
+A9	Polarity E19 Positive
+A10	Modality E19 Other
+T58	LOCATION 0 6	Global
+T59	Oversupply 11 15	Glut
+E20	Oversupply:T59 Item:T61 Place:T58 Modality_cue:T71 Intensity_cue:T60
+T61	Commodity 7 10	Oil
+T63	Financial_attribute 544 550	demand
+T64	Financial_attribute 579 585	prices
+T65	Commodity 575 578	oil
+T67	Position-high 668 675	highest
+E22	Position-high:T67 Duration:T68
+T68	DURATION 679 687	a decade
+T69	DURATION 1467 1476	five-year
+T70	Position-high 202 206	high
+E23	Position-high:T70 
+T51	Economic_item 1207 1214	markets
+T71	MODALITY_cue 16 22	Set To
+T72	MODALITY_cue 388 393	could
+T48	MODALITY_cue 1226 1231	could
+T73	MODALITY_cue 1257 1260	may
+T74	MODALITY_cue 1336 1342	likely
+A3	Modality E20 Other
+T60	INTENSITY_cue 23 29	Worsen
+A4	Intensity E20 Intensified
+A5	Modality E3 Other
+T9	INTENSITY_cue 394 400	worsen
+A6	Intensity E12 Intensified
+A7	Modality E12 Other
+T31	INTENSITY_cue 1232 1238	worsen
+A8	Intensity E6 Intensified
+T33	INTENSITY_cue 618 628	prolonging
+T35	Price_unit 599 613	$50 per barrel
+T62	Movement-down-loss 593 598	below
+E4	Movement-down-loss:T62 Difference:T35 Item:T65 Attribute:T64
+A11	Intensity E3 Intensified
+T66	Financial_attribute 1421 1427	demand
+R1	Cause-Precondition Arg1:E2 Arg2:E3	
+R2	Cause-Precondition Arg1:E5 Arg2:E4	
+R3	Cause-Precondition Arg1:E5 Arg2:E6	
+R4	Cause-Precondition Arg1:E13 Arg2:E12	
+R5	Cause-Precondition Arg1:E9 Arg2:E14	
+R6	Cause-Precondition Arg1:E16 Arg2:E15	
+R7	Cause-Precondition Arg1:E15 Arg2:E18	

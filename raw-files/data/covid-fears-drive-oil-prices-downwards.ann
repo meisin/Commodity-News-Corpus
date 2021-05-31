@@ -1,0 +1,89 @@
+T1	Movement-down-loss 29 38	Downwards
+E1	Movement-down-loss:T1 Attribute:T2 Item:T3
+T2	Financial_attribute 22 28	Prices
+T3	Commodity 18 21	Oil
+T4	Movement-down-loss 188 193	lower
+E2	Movement-down-loss:T4 Attribute:T7 Item:T6 Supplier_Consumer:T8 Reference_point_time:T5
+T5	DATE 197 203	Friday
+T6	Commodity 134 167	West Texas Intermediate crude oil
+T7	Financial_attribute 168 175	futures
+T8	COUNTRY 129 133	U.S.
+T9	Movement-up-gain 257 261	gain
+E3	Movement-up-gain:T9 
+T10	Position-high 290 294	high
+E4	Position-high:T10 Duration:T12 Reference_point_time:T11
+T11	DATE 298 307	Wednesday
+T12	DURATION 278 289	multi-month
+T13	Movement-down-loss 351 355	drop
+E5	Movement-down-loss:T13 Supplier_Consumer:T14 Item:T16 Attribute:T15
+T14	COUNTRY 359 363	U.S.
+T15	Financial_attribute 370 380	stockpiles
+T16	Commodity 364 369	crude
+T17	Negative_sentiment 492 499	worries
+E6	Negative_sentiment:T17 Attribute:T18 Item:T19
+T18	Financial_attribute 485 491	demand
+T19	Commodity 480 484	fuel
+T20	Position-high 471 476	highs
+E7	Position-high:T20 Duration:T21 Polarity_cue:T59 Attribute:T56 Item:T34
+T21	DURATION 460 470	five-month
+T22	Movement-down-loss 561 569	declines
+E8	Movement-down-loss:T22 Item:T23
+T23	Economic_item 577 588	U.S. Dollar
+T24	Quantity 720 739	7.4 million barrels
+T25	Financial_attribute 703 714	inventories
+T26	Commodity 693 702	crude oil
+T28	DATE 747 770	the week-ending July 31
+T29	Movement-down-loss 715 719	fell
+E9	Movement-down-loss:T29 Difference:T24 Reference_point_time:T28 Attribute:T25 Item:T26 Supplier_Consumer:T69
+T30	Movement-down-loss 807 814	decline
+E10	Movement-down-loss:T30 Difference:T31 Attribute:T32 Modality_cue:T33 Reference_point_time:T27
+T31	Quantity 818 839	3.267 million barrels
+T32	Financial_attribute 797 806	inventory
+T33	MODALITY_cue 785 793	expected
+T36	Quantity 929 950	8.587 million barrels
+T37	DATE 955 976	the last week of July
+T38	Movement-up-gain 1003 1011	increase
+E11	Movement-up-gain:T38 Item:T39 Attribute:T40 Difference:T41
+T39	Commodity 1015 1023	gasoline
+T40	Financial_attribute 1024 1035	inventories
+T41	Quantity 1039 1054	419,000 barrels
+T42	Movement-up-gain 1079 1084	build
+E12	Movement-up-gain:T42 Forecast:T43 Difference:T45 Reference_point_time:T44
+T43	Forecast_target 1085 1094	estimated
+T44	DATE 1095 1112	the previous week
+T45	Quantity 1064 1078	700,000-barrel
+T46	Movement-up-gain 1141 1150	increased
+E13	Movement-up-gain:T46 Attribute:T53 Item:T52 Difference:T47 Reference_point_time:T48
+T47	Quantity 1151 1170	1.6 million barrels
+T48	DATE 1175 1194	the week to July 31
+T49	Movement-up-gain 1217 1222	build
+E14	Movement-up-gain:T49 Difference:T50 Reference_point_time:T51
+T50	Quantity 1226 1248	half a million barrels
+T51	DATE 1249 1263	a week earlier
+T52	Commodity 1114 1130	Distillate fuels
+T53	Financial_attribute 1131 1140	inventory
+T54	Commodity 1265 1273	Gasoline
+T55	Financial_attribute 1274 1284	production
+T57	Production_unit 1304 1319	9.3 million bpd
+T58	Production_unit 1335 1350	9.2 million bpd
+T60	Production_unit 1549 1577	14.6 million barrels per day
+T61	Commodity 1514 1523	crude oil
+T62	COUNTRY 1509 1513	U.S.
+T63	Commodity 1381 1392	distillates
+T64	Financial_attribute 1367 1377	Production
+T65	DATE 1285 1294	last week
+T66	Production_unit 1412 1427	4.9 million bpd
+T67	Production_unit 1443 1458	4.8 million bpd
+T68	DATE 1351 1365	a week earlier
+A1	Modality E10 Other
+T69	COUNTRY 688 692	U.S.
+T27	DATE 844 852	the week
+R1	Cause-Precondition Arg1:E5 Arg2:E4	
+T34	Commodity 414 417	oil
+T56	Financial_attribute 418 424	prices
+T59	POLARITY_cue 429 439	struggling
+A2	Polarity E7 Negative
+R2	Cause-Precondition Arg1:E6 Arg2:E7	
+T35	Financial_attribute 911 920	inventory
+T70	Cause-movement-down-loss 921 925	draw
+E15	Cause-movement-down-loss:T70 Difference:T36 Reference_point_time:T37 Attribute:T35

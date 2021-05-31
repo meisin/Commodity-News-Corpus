@@ -1,0 +1,150 @@
+T1	Movement-down-loss 18 23	lower
+E1	Movement-down-loss:T1 Item:T2
+T2	Commodity 0 9	Crude oil
+T3	Position-high 53 57	high
+E2	Position-high:T3 Duration:T6 Attribute:T4 Supplier_Consumer:T5
+T4	Financial_attribute 30 40	production
+T5	COUNTRY 27 29	US
+T6	DURATION 46 52	2-year
+T7	Movement-down-loss 212 217	lower
+E3	Movement-down-loss:T7 Reference_point_time:T10 Attribute:T8 Item:T9
+T8	Financial_attribute 196 203	futures
+T9	Commodity 190 195	Crude
+T10	DATE 221 230	Wednesday
+T11	Movement-up-gain 270 274	rose
+E4	Movement-up-gain:T11 Attribute:T12 Item:T13 Supplier_Consumer:T93
+T12	Financial_attribute 259 269	production
+T15	Position-high 282 289	highest
+E5	Position-high:T15 Duration:T16
+T16	DURATION 298 307	two years
+T17	Movement-down-loss 317 324	decline
+E6	Movement-down-loss:T17 Attribute:T24 Supplier_Consumer:T25 Item:T94 Intensity_cue:T96
+T18	Commodity 416 421	crude
+T19	Financial_attribute 422 429	futures
+T20	DATE 434 443	September
+T21	Movement-down-loss 453 457	fell
+E7	Movement-down-loss:T21 Contract_date:T20 Attribute:T19 Item:T18 Difference:T22 Final_value:T23
+T22	MONEY 461 466	$0.77
+T23	Price_unit 480 495	$46.78 a barrel
+T24	Financial_attribute 328 336	supplies
+T26	Commodity 542 547	Brent
+T27	Movement-down-loss 548 552	lost
+E8	Movement-down-loss:T27 Item:T26 Difference:T28 Final_value:T29
+T28	MONEY 553 561	43 cents
+T29	Price_unit 574 589	$50.37 a barrel
+T30	Negative_sentiment 777 785	concerns
+E9	Negative_sentiment:T30 Intensity_cue:T100 Polarity_cue:T99
+T31	Movement-up-gain 793 797	rise
+E10	Movement-up-gain:T31 Attribute:T32
+T32	Financial_attribute 801 811	production
+T33	Movement-down-loss 601 605	fell
+E11	Movement-down-loss:T33 Duration:T35 Item:T34
+T34	Commodity 591 600	Crude oil
+T35	DURATION 614 632	third-straight day
+T36	Movement-down-loss 723 727	fell
+E12	Movement-down-loss:T36 Attribute:T69 Item:T68
+T37	Commodity 1321 1330	crude-oil
+T38	Financial_attribute 1331 1341	production
+T39	Movement-up-gain 1342 1346	rose
+E13	Movement-up-gain:T39 Final_value:T40 Attribute:T38 Item:T37
+T40	Production_unit 1350 1372	9.502m barrels per day
+T41	Production_unit 1387 1407	79,000 barrels a day
+T42	Position-high 1444 1451	highest
+E14	Position-high:T42 Initial_reference_point:T43
+T43	DATE 1479 1492	mid-July 2015
+T44	Oversupply 1512 1522	oversupply
+E15	Oversupply:T44 
+T45	Negative_sentiment 1523 1530	jitters
+E16	Negative_sentiment:T45 
+T46	Commodity 1543 1546	oil
+T47	Financial_attribute 1547 1553	prices
+T48	Movement-up-gain 1559 1563	rise
+E17	Movement-up-gain:T48 Item:T50 Attribute:T49
+T49	Financial_attribute 1576 1586	stockpiles
+T50	Commodity 1567 1575	gasoline
+T51	Oversupply 1602 1612	oversupply
+E18	Oversupply:T51 
+T52	Negative_sentiment 1613 1621	concerns
+E19	Negative_sentiment:T52 
+T53	Movement-down-loss 1660 1665	taper
+E20	Movement-down-loss:T53 Modality_cue:T55 Attribute:T54 Item:T56
+T54	Financial_attribute 1648 1654	demand
+T55	MODALITY_cue 1655 1659	will
+A1	Modality E20 Other
+T56	Commodity 1642 1647	crude
+T57	Movement-down-loss 1797 1801	wane
+E21	Movement-down-loss:T57 Modality_cue:T58 Item:T59 Attribute:T60
+T58	MODALITY_cue 1787 1791	will
+T59	Commodity 1781 1786	crude
+T60	Financial_attribute 1770 1776	demand
+T61	Movement-down-loss 1819 1823	drop
+E22	Movement-down-loss:T61 
+A2	Modality E21 Other
+T62	Position-high 1720 1724	peak
+E23	Position-high:T62 
+T63	Position-high 1673 1677	peak
+E24	Position-high:T63 
+T64	Movement-down-loss 1912 1915	ebb
+E25	Movement-down-loss:T64 Modality_cue:T67 Attribute:T66 Item:T65
+T65	Commodity 1891 1899	Gasoline
+T66	Financial_attribute 1900 1906	demand
+T67	MODALITY_cue 1907 1911	will
+A3	Modality E25 Other
+T68	Commodity 706 711	crude
+T69	Financial_attribute 712 722	stockpiles
+T70	Financial_attribute 813 824	Inventories
+T73	Movement-down-loss 839 843	fell
+E26	Movement-down-loss:T73 Attribute:T70 Difference:T74 Reference_point_time:T75 Item:T14 Supplier_Consumer:T95
+T74	Quantity 855 867	8.9m barrels
+T75	DATE 871 892	the week ended Aug 11
+T76	DURATION 963 984	seventh-straight week
+T77	Movement-down-loss 988 995	falling
+E27	Movement-down-loss:T77 Duration:T76 Item:T78 Attribute:T79
+T78	Commodity 996 1001	crude
+T79	Financial_attribute 1002 1013	inventories
+T80	Movement-up-gain 1098 1102	rose
+E28	Movement-up-gain:T80 Attribute:T82 Item:T81 Difference:T83
+T81	Commodity 1015 1023	Gasoline
+T82	Financial_attribute 1024 1035	inventories
+T83	Quantity 1114 1128	22,000 barrels
+T84	Commodity 1182 1192	distillate
+T85	Financial_attribute 1193 1203	stockpiles
+T86	Movement-up-gain 1204 1208	rose
+E29	Movement-up-gain:T86 Difference:T87 Attribute:T85 Item:T84
+T87	Quantity 1212 1227	702,000 barrels
+T88	Movement-down-loss 1259 1266	decline
+E30	Movement-down-loss:T88 Difference:T90 Modality_cue:T89
+T89	MODALITY_cue 1241 1253	expectations
+T90	Quantity 1270 1285	572,000 barrels
+T71	Movement-down-loss 925 929	draw
+E31	Movement-down-loss:T71 Difference:T72 Modality_cue:T101
+T72	Quantity 944 954	3m barrels
+T91	Movement-down-loss 1155 1159	draw
+E32	Movement-down-loss:T91 Difference:T92 Modality_cue:T102
+T92	Quantity 1163 1175	1.1m barrels
+T13	Commodity 253 258	crude
+T93	COUNTRY 248 252	U.S.
+T25	COUNTRY 340 344	U.S.
+T94	Commodity 345 350	crude
+T14	Commodity 833 838	crude
+T95	COUNTRY 828 832	U.S.
+R1	Cause-Precondition Arg1:E2 Arg2:E1
+R2	Cause-Precondition Arg1:E4 Arg2:E3
+T96	INTENSITY_cue 308 314	offset
+R4	Cause-Precondition Arg1:E4 Arg2:E6
+R5	Cause-Precondition Arg1:E10 Arg2:E11
+R6	Cause-Precondition Arg1:E9 Arg2:E11
+T97	Movement-up-gain 1377 1383	uptick
+E33	Movement-up-gain:T97 Difference:T41 Initial_reference_point:T98
+T98	DATE 1420 1429	last week
+R12	Cause-Precondition Arg1:E17 Arg2:E19
+A4	Intensity E6 Eased
+T99	POLARITY_cue 760 766	failed
+A5	Polarity E9 Negative
+A6	Intensity E9 Eased
+T100	INTENSITY_cue 770 776	offset
+T101	MODALITY_cue 906 918	expectations
+A7	Modality E31 Other
+T102	MODALITY_cue 1137 1149	expectations
+A8	Modality E32 Other
+A9	Modality E30 Other

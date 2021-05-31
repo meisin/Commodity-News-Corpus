@@ -1,0 +1,14 @@
+T1	Cause-movement-down-loss 32 38	freeze
+E1	Cause-movement-down-loss:T1 Attribute:T2 Supplier_Consumer:T3 Modality_cue:T9 Reference_point_time:T10
+T2	Financial_attribute 25 31	output
+T3	Group 0 13	Oil producers
+T4	MODALITY_cue 318 322	plan
+T5	Cause-movement-down-loss 326 332	freeze
+E2	Cause-movement-down-loss:T5 Supplier_Consumer:T7 Modality_cue:T4 Attribute:T6
+T6	Financial_attribute 333 339	output
+T7	ORGANIZATION 249 280	OPEC and non-OPEC oil producers
+T8	Financial_attribute 367 373	prices
+T9	MODALITY_cue 44 51	set for
+T10	DATE 52 60	April 17
+A1	Modality E1 Other
+A2	Modality E2 Other

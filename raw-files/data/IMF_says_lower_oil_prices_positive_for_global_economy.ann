@@ -1,0 +1,78 @@
+T1	Movement-down-loss 236 243	Falling
+E1	Movement-down-loss:T1 Item:T2 Attribute:T3
+T2	Commodity 244 247	oil
+T3	Financial_attribute 248 254	prices
+T4	Movement-down-loss 444 451	decline
+E2	Movement-down-loss:T4 Difference:T5 Item:T6 Attribute:T7 Modality_cue:T55
+T5	PERCENTAGE 433 443	30 percent
+T6	Commodity 456 459	oil
+T7	Financial_attribute 460 466	prices
+T8	Movement-down-loss 711 715	down
+E3	Movement-down-loss:T8 Difference:T12 Attribute:T9 Item:T10 Type:T11 Initial_reference_point:T13
+T9	Financial_attribute 700 706	prices
+T10	Commodity 696 699	oil
+T11	LOCATION 690 695	World
+T12	PERCENTAGE 716 726	40 percent
+T13	DATE 733 737	June
+T14	Cause-movement-down-loss 799 802	cut
+E4	Cause-movement-down-loss:T14 Attribute:T15 Supplier_Consumer:T38 Polarity_cue:T50
+T15	Financial_attribute 803 813	production
+A1	Polarity E4 Negative
+T16	Cause-movement-up-gain 817 824	bolster
+E5	Cause-movement-up-gain:T16 Attribute:T17 Polarity_cue:T50
+T18	Position-low 875 878	low
+E6	Position-low:T18 Attribute:T20 Item:T19 Reference_point_time:T21 Duration:T52
+T19	Commodity 841 852	Brent crude
+T20	Financial_attribute 853 859	prices
+T21	DATE 879 888	this week
+T22	Movement-down-loss 910 917	falling
+E7	Movement-down-loss:T22 Item:T23 Attribute:T24
+T23	Commodity 918 923	crude
+T24	Financial_attribute 924 930	prices
+T25	Movement-down-loss 1125 1132	decline
+E8	Movement-down-loss:T25 Attribute:T27 Item:T42
+T26	Commodity 1174 1177	oil
+T27	Financial_attribute 1144 1149	price
+T28	Movement-down-loss 1415 1419	drop
+E9	Movement-down-loss:T28 Attribute:T29
+T29	Financial_attribute 1423 1429	prices
+T30	Movement-down-loss 1471 1478	decline
+E10	Movement-down-loss:T30 Item:T32 Intensity_cue:T47
+T31	Shortage 1499 1507	shortage
+E11	Shortage:T31 
+T32	Economic_item 1462 1470	economic
+T33	Oversupply 750 765	abundant supply
+E12	Oversupply:T33 
+T34	Movement-down-loss 9 14	lower
+E13	Movement-down-loss:T34 Item:T36 Attribute:T35
+T35	Financial_attribute 19 25	prices
+T36	Commodity 15 18	oil
+A3	Modality E2 Other
+T37	Commodity 600 603	oil
+T38	ORGANIZATION 767 771	OPEC
+T39	Commodity 949 952	oil
+T40	Slow-weak 1054 1064	vulnerable
+E14	Slow-weak:T40 Item:T41
+T41	Economic_item 1044 1053	economies
+T43	Economic_item 46 53	economy
+T44	LOCATION 39 45	global
+T45	Commodity 1403 1406	oil
+T46	Financial_attribute 1382 1388	export
+T49	Economic_item 517 532	economic growth
+T52	DURATION 865 874	five-year
+T53	Economic_item 283 290	economy
+T54	LOCATION 276 282	global
+T55	MODALITY_cue 414 422	Assuming
+T56	Economic_item 552 561	economies
+T50	POLARITY_cue 777 785	declined
+A2	Polarity E5 Negative
+T17	Financial_attribute 825 831	prices
+T42	Commodity 1140 1143	oil
+R1	Cause-Precondition Arg1:E12 Arg2:E3	
+R2	Cause-Precondition Arg1:E4 Arg2:E5	
+R3	Cause-Precondition Arg1:E5 Arg2:E6	
+R4	Cause-Precondition Arg1:E7 Arg2:E14	
+A4	Intensity E10 Intensified
+T47	INTENSITY_cue 1439 1450	exacerbated
+R5	Cause-Precondition Arg1:E9 Arg2:E10	
+R6	Cause-Precondition Arg1:E9 Arg2:E11	

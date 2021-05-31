@@ -1,0 +1,161 @@
+T1	Movement-up-gain 234 241	climbed
+T2	DATE 245 251	Monday
+T3	Financial_attribute 227 233	prices
+T4	Commodity 223 226	Oil
+T5	ORGANIZATION 315 320	OPEC+
+T6	Cause-movement-down-loss 346 351	curbs
+T7	Financial_attribute 339 345	output
+T8	MODALITY_cue 321 325	will
+T9	Slow-weak 373 379	weaker
+T10	Negative_sentiment 359 367	concerns
+T11	Commodity 380 384	fuel
+T12	Financial_attribute 385 391	demand
+T13	Movement-up-gain 434 440	higher
+T14	Financial_attribute 441 451	production
+T15	COUNTRY 455 460	Libya
+T16	Cause-movement-down-loss 65 69	curb
+T17	Movement-up-gain 480 487	rebound
+T18	Financial_attribute 58 64	supply
+T19	ORGANIZATION 52 57	OPEC+
+T20	MODALITY_cue 43 48	hopes
+T21	Commodity 678 689	Brent crude
+T22	Financial_attribute 690 697	futures
+T23	DATE 702 709	January
+T24	Movement-down-loss 718 722	rose
+T25	MONEY 723 731	54 cents
+T26	PERCENTAGE 736 740	1.3%
+T27	Price_unit 745 760	$43.32 a barrel
+T28	Commodity 785 814	West Texas Intermediate crude
+T29	DATE 819 827	December
+T30	Price_unit 842 857	$40.76 a barrel
+T31	Movement-up-gain 859 861	up
+T32	MONEY 862 870	63 cents
+T33	PERCENTAGE 875 879	1.6%
+T34	Movement-up-gain 1011 1017	gained
+T35	PERCENTAGE 1018 1030	more than 8%
+T36	DATE 1031 1040	last week
+T37	Financial_attribute 1001 1010	contracts
+T39	ORGANIZATION 1089 1145	Organization of the Petroleum Exporting Countries (OPEC)
+T38	Cause-movement-down-loss 1185 1199	maintain lower
+T40	Financial_attribute 1200 1206	output
+T41	MODALITY_cue 1180 1184	will
+T42	DATE 1207 1216	next year
+T43	Financial_attribute 1228 1234	prices
+T44	ORGANIZATION 1446 1451	OPEC+
+T45	Grow-strong 1631 1639	recovery
+T46	Financial_attribute 1542 1552	production
+T47	COUNTRY 1673 1678	Libya
+T48	Financial_attribute 1647 1657	production
+T49	Commodity 1643 1646	oil
+T50	Production_unit 1687 1708	above 1.2 million bpd
+T51	Cause-movement-down-loss 1739 1743	cuts
+T52	ORGANIZATION 1733 1738	OPEC+
+T53	Slow-weak 1753 1761	slowdown
+T55	LOCATION 1780 1786	Europe
+T56	COUNTRY 539 544	China
+T57	COUNTRY 549 554	Japan
+T58	Commodity 638 643	crude
+T59	ORGANIZATION 1261 1266	OPEC+
+T60	Cause-movement-down-loss 1277 1284	cutting
+T61	Financial_attribute 1285 1295	production
+T62	Production_unit 1305 1330	7.7 million barrels a day
+T63	Cause-movement-up-gain 1399 1407	increase
+T64	Movement-up-gain 4 17	climbs higher
+T65	Commodity 0 3	Oil
+T66	COUNTRY 21 26	China
+T67	COUNTRY 28 33	Japan
+T68	Grow-strong 34 41	rebound
+T69	Financial_attribute 1408 1414	output
+T70	Production_unit 1418 1431	2 million bpd
+T71	DATE 1437 1444	January
+T72	MODALITY_cue 1388 1395	planned
+T54	Commodity 1818 1822	fuel
+T73	Financial_attribute 1823 1829	demand
+T74	Grow-strong 1830 1838	recovery
+T75	COUNTRY 1791 1808	the United States
+T76	Movement-down-loss 1888 1892	down
+T77	PERCENTAGE 1893 1903	almost 50%
+T78	Slow-weak 2071 2078	slowing
+T79	Cause-movement-down-loss 2156 2161	curbs
+T80	POLARITY_cue 2132 2142	reluctance
+T81	Financial_attribute 2259 2268	rig count
+T82	Commodity 2247 2258	natural gas
+T83	Commodity 2239 2242	oil
+T84	COUNTRY 2234 2238	U.S.
+T85	Slow-weak 2193 2198	slows
+T86	Financial_attribute 2186 2192	demand
+T87	Commodity 2181 2185	fuel
+T88	Movement-up-gain 2269 2273	rose
+T89	DATE 2274 2283	last week
+T90	Position-high 2291 2298	highest
+T91	DATE 2305 2308	May
+T92	Movement-up-gain 2334 2340	higher
+T93	Commodity 2341 2346	crude
+T94	Financial_attribute 2347 2353	prices
+T95	Cause-movement-up-gain 2517 2525	boosting
+T96	Financial_attribute 2526 2532	demand
+T97	DATE 2536 2551	the second half
+T98	Movement-up-gain 2418 2426	increase
+T99	Production_unit 2430 2467	between 1.5 million and 3 million bpd
+T100	DATE 2471 2495	the first half next year
+T101	Oversupply 2407 2414	surplus
+T102	Commodity 2403 2406	oil
+T103	MODALITY_cue 2392 2398	expect
+E1	Movement-up-gain:T1 Attribute:T3 Item:T4 Reference_point_time:T2
+E2	Cause-movement-down-loss:T6 Attribute:T7 Modality_cue:T8 Supplier_Consumer:T5
+E3	Slow-weak:T9 Item:T11 Attribute:T12 Intensity_cue:T106
+E4	Negative_sentiment:T10 Intensity_cue:T106
+E5	Movement-up-gain:T13 Attribute:T14 Supplier_Consumer:T15 Intensity_cue:T106
+E6	Cause-movement-down-loss:T16 Attribute:T18 Supplier_Consumer:T19 Modality_cue:T20
+E7	Movement-up-gain:T17 Supplier_Consumer:T56 Supplier_Consumer2:T57
+A2	Modality E6 Other
+E8	Movement-down-loss:T24 Difference:T25 Difference2:T26 Attribute:T22 Item:T21 Contract_date:T23 Final_value:T27
+E9	Movement-up-gain:T31 Item:T28 Contract_date:T29 Final_value:T30 Difference:T32 Difference2:T33
+E10	Movement-up-gain:T34 Attribute:T37 Difference:T35 Reference_point_time:T36
+E11	Cause-movement-down-loss:T38 Modality_cue:T41 Attribute:T40 Reference_point_time:T42 Supplier_Consumer:T39 Difference:T35
+A3	Modality E11 Other
+E12	Grow-strong:T45 Item:T49 Attribute:T48 Supplier_Consumer:T47 Final_value:T50
+E13	Cause-movement-down-loss:T51 Supplier_Consumer:T52
+E14	Slow-weak:T53 
+E16	Cause-movement-down-loss:T60 Supplier_Consumer:T59 Attribute:T61 Difference:T62
+E17	Cause-movement-up-gain:T63 Attribute:T69 Modality_cue:T72 Difference:T70 Initial_reference_point:T71
+E18	Movement-up-gain:T64 Item:T65
+E19	Grow-strong:T68 Supplier_Consumer:T67 Supplier_Consumer2:T66
+A4	Modality E17 Other
+E15	Grow-strong:T74 Attribute:T73 Item:T54 Intensity_cue:T109 Modality_cue:T110
+E20	Movement-down-loss:T76 Difference:T77
+E21	Slow-weak:T78 
+E22	Cause-movement-down-loss:T79 Polarity_cue:T80
+A5	Polarity E22 Negative
+E23	Slow-weak:T85 Attribute:T86 Item:T87
+E24	Movement-up-gain:T88 Attribute:T81 Item:T82 Supplier_Consumer:T84 Reference_point_time:T89
+E25	Position-high:T90 Initial_reference_point:T91
+E26	Movement-up-gain:T92 Item:T93 Attribute:T94
+E27	Cause-movement-up-gain:T95 Attribute:T96 Reference_point_time:T97
+E28	Movement-up-gain:T98 Modality_cue:T103 Final_value:T99 Reference_point_time:T100 Item:T102
+E29	Oversupply:T101 
+A6	Modality E28 Other
+A1	Modality E2 Other
+R1	Cause-Precondition Arg1:E19 Arg2:E18	
+R2	Cause-Precondition Arg1:E6 Arg2:E18	
+T104	Movement-down-loss 268 274	losses
+E30	Movement-down-loss:T104 Intensity_cue:T105
+T105	INTENSITY_cue 253 262	recouping
+A7	Intensity E30 Eased
+T106	INTENSITY_cue 352 358	offset
+A8	Intensity E4 Eased
+A9	Intensity E3 Eased
+R3	Cause-Precondition Arg1:E2 Arg2:E4	
+R4	Cause-Precondition Arg1:E2 Arg2:E3	
+A10	Intensity E5 Eased
+R5	Cause-Precondition Arg1:E3 Arg2:E1	
+R6	Cause-Precondition Arg1:E5 Arg2:E1	
+T107	Commodity 927 930	oil
+T108	Commodity 931 937	prices
+T109	INTENSITY_cue 1809 1817	dampened
+A11	Intensity E15 Eased
+T110	MODALITY_cue 1839 1844	hopes
+A12	Modality E15 Other
+R7	Cause-Precondition Arg1:E14 Arg2:E15	
+R8	Cause-Precondition Arg1:E26 Arg2:E24	
+E31	Movement-up-gain:T88 Attribute:T81 Item:T83 Supplier_Consumer:T84 Reference_point_time:T89

@@ -1,0 +1,84 @@
+T1	Financial_attribute 138 144	prices
+T2	Commodity 102 105	Oil
+T3	Movement-up-gain 156 162	higher
+E1	Movement-up-gain:T3 Attribute:T1 Item:T53
+T4	Slow-weak 209 215	softer
+E2	Slow-weak:T4 Item:T5
+T5	Economic_item 216 225	US dollar
+T6	Commodity 227 232	Brent
+T7	Commodity 237 240	WTI
+T8	Commodity 343 347	Bren
+T9	Commodity 456 459	WTI
+T10	Position-low 537 541	lows
+E3	Position-low:T10 Reference_point_time:T11 Difference:T12
+T11	DATE 525 534	last week
+T12	MONEY 542 552	around $41
+T13	Slow-weak 669 678	uncertain
+E4	Slow-weak:T13 Type:T15 Forecast:T38 Item:T14
+T15	LOCATION 642 648	global
+T16	Movement-down-loss 825 832	falllen
+E5	Movement-down-loss:T16 Supplier_Consumer:T18 Attribute:T39
+T18	COUNTRY 811 813	US
+T19	Grow-strong 860 870	picking up
+E6	Grow-strong:T19 Polarity_cue:T20 Modality_cue:T55
+A1	Polarity E6 Negative
+T20	POLARITY_cue 850 855	isn’t
+T21	Economic_item 883 889	dollar
+T22	Slow-weak 876 882	softer
+E7	Slow-weak:T22 Item:T21
+T23	Movement-up-gain 937 946	rebounded
+E8	Movement-up-gain:T23 
+T24	Commodity 957 960	Oil
+T25	Financial_attribute 996 1002	prices
+T26	Cause-movement-down-loss 752 756	cuts
+E9	Cause-movement-down-loss:T26 Attribute:T27 Supplier_Consumer:T28
+T27	Financial_attribute 741 751	production
+T28	ORGANIZATION 730 735	OPEC+
+T29	Movement-flat 757 766	unchanged
+E10	Movement-flat:T29 
+T30	Cause-movement-up-gain 773 780	raising
+E11	Cause-movement-up-gain:T30 Attribute:T31 Reference_point_time:T32
+T31	Financial_attribute 781 787	output
+T32	DATE 800 806	August
+T33	Commodity 0 3	Oil
+T34	Commodity 8 12	Gold
+T35	Slow-weak 23 29	Weaker
+E12	Slow-weak:T35 Item:T36
+T36	Economic_item 30 33	USD
+T37	Movement-up-gain 13 19	Lifted
+E13	Movement-up-gain:T37 Item:T34
+R1	Cause-Precondition Arg1:E12 Arg2:E13	
+R2	Cause-Precondition Arg1:E2 Arg2:E1	
+T14	Economic_item 649 657	economic
+T38	Forecast_target 658 665	outlook
+T39	Financial_attribute 814 820	output
+T17	Commodity 1091 1095	Gold
+T40	Movement-up-gain 1107 1113	higher
+E14	Movement-up-gain:T40 Item:T17
+T41	Movement-up-gain 1131 1137	higher
+E15	Movement-up-gain:T41 Item:T42 Final_value:T43 Reference_point_time:T44
+T42	Commodity 1114 1118	Gold
+T43	MONEY 1154 1160	$1,950
+T44	DATE 1161 1173	this morning
+T45	Economic_item 1191 1197	dollar
+T46	Slow-weak 1184 1190	weaker
+E16	Slow-weak:T46 Item:T45
+T47	Grow-strong 1227 1234	rebound
+E17	Grow-strong:T47 Item:T48
+T48	Economic_item 1242 1251	greenback
+T49	Commodity 1297 1301	gold
+T50	Economic_item 1366 1372	dollar
+T51	Grow-strong 1405 1415	bounceback
+E18	Grow-strong:T51 
+E19	Movement-up-gain:T37 Item:T33
+R3	Cause-Precondition Arg1:E12 Arg2:E19	
+T52	Position-high 115 120	Upper
+E20	Position-high:T52 Item:T2
+T53	Commodity 134 137	Oil
+T54	Position-high 262 267	upper
+E21	Position-high:T54 Item:T7
+E22	Position-high:T54 Item:T6
+T55	MODALITY_cue 856 859	yet
+A2	Modality E6 Other
+R4	Cause-Precondition Arg1:E11 Arg2:E9	
+R5	Cause-Precondition Arg1:E5 Arg2:E9	

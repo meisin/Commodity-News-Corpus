@@ -1,0 +1,68 @@
+T1	Movement-up-gain 204 208	rise
+E1	Movement-up-gain:T1 Attribute:T2 Item:T3
+T2	Financial_attribute 197 203	prices
+T3	Commodity 187 196	Crude oil
+T4	Grow-strong 243 250	healthy
+E2	Grow-strong:T4 Type:T5 Item:T43 Modality_cue:T6
+T5	LOCATION 251 256	world
+T7	Cause-movement-down-loss 308 313	curbs
+E3	Cause-movement-down-loss:T7 Attribute:T8
+T8	Financial_attribute 297 307	production
+T9	LOCATION 430 435	world
+T10	Economic_item 436 451	economic growth
+T11	PERCENTAGE 455 459	3.9%
+T14	ORGANIZATION 512 515	its
+T15	PERCENTAGE 496 500	3.7%
+T16	Cause-movement-down-loss 910 918	drawdown
+E5	Cause-movement-down-loss:T16 Attribute:T17 Modality_cue:T37 Supplier_Consumer:T31
+T17	Financial_attribute 927 937	stockpiles
+A1	Polarity E5 Positive
+A2	Modality E5 Other
+T19	Grow-strong 27 35	stronger
+E6	Grow-strong:T19 Supplier_Consumer:T47 Item:T48 Forecast:T20
+T21	MONEY 17 20	$70
+T22	Commodity 0 11	Brent crude
+T23	Position-high 226 231	highs
+E7	Position-high:T23 Duration:T24
+T24	DURATION 216 225	multiyear
+T26	Commodity 351 356	Brent
+T27	Forecast_target 417 425	forecast
+T28	DATE 531 538	October
+T12	DATE 469 473	2018
+T29	DATE 478 482	2019
+T32	Financial_attribute 588 594	demand
+T33	LOCATION 704 710	global
+T36	Financial_attribute 726 743	oil-demand growth
+T37	MODALITY_cue 880 888	expected
+T38	MODALITY_cue 1074 1079	could
+T39	Cause-movement-down-loss 1102 1106	cuts
+E8	Cause-movement-down-loss:T39 Modality_cue:T38 Reference_point_time:T40 Attribute:T46 Supplier_Consumer:T52
+T40	DATE 1114 1118	2018
+A3	Modality E8 Other
+T41	Grow-strong 583 587	rosy
+E9	Grow-strong:T41 Attribute:T32 Modality_cue:T42 Item:T30
+T42	MODALITY_cue 595 604	prospects
+T6	MODALITY_cue 273 282	prospects
+T43	Economic_item 257 272	economic growth
+A4	Modality E2 Other
+T44	Forecast_target 836 845	estimates
+T45	ORGANIZATION 382 385	IMF
+T46	Financial_attribute 1091 1101	production
+T25	Commodity 315 329	U.S. WTI crude
+A5	Modality E9 Other
+T20	Forecast_target 56 63	outlook
+T47	ORGANIZATION 36 39	IMF
+T48	Economic_item 40 55	economic growth
+T49	Commodity 711 714	oil
+T50	Financial_attribute 715 721	demand
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+R2	Cause-Precondition Arg1:E3 Arg2:E1	
+T34	Price_unit 339 349	$64.57/bbl
+T35	Price_unit 366 376	$70.13/bbl
+T51	Movement-up-gain 484 486	up
+E10	Movement-up-gain:T51 Initial_value:T15 Forecaster:T14 Initial_reference_point:T28
+T13	Movement-up-gain 396 404	upwardly
+E4	Movement-up-gain:T13 Forecaster:T45 Forecast:T27 Type:T9 Item:T10 Final_value:T11 Reference_point_time:T12 Reference_point_time2:T29
+T30	Economic_item 612 622	oil market
+T31	COUNTRY 922 926	U.S.
+T52	ORGANIZATION 1069 1073	OPEC

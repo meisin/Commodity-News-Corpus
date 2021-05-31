@@ -1,0 +1,136 @@
+T1	Movement-down-loss 227 231	slid
+E1	Movement-down-loss:T1 Reference_point_time:T2 Attribute:T3 Item:T4 Type:T5 Intensity_cue:T18
+T2	DATE 243 249	Friday
+T3	Financial_attribute 220 226	prices
+T4	Commodity 216 219	oil
+T5	LOCATION 209 215	Global
+T7	COUNTRY 339 343	U.S.
+T8	Economic_item 344 359	employment data
+T9	Cause-movement-down-loss 438 441	cut
+E3	Cause-movement-down-loss:T9 Supplier_Consumer:T10 Attribute:T11
+T10	COUNTRY 425 437	Saudi Arabia
+T11	Financial_attribute 459 465	prices
+T12	Commodity 468 473	Brent
+T15	Position-low 518 522	lows
+E4	Position-low:T15 Duration:T68 Item:T13
+T16	Oversupply 551 561	oversupply
+E5	Oversupply:T16 
+T19	Grow-strong 584 588	boom
+E6	Grow-strong:T19 Item:T14
+T20	ORGANIZATION 620 665	Organization of Petroleum Exporting Countries
+T21	Cause-movement-down-loss 673 676	cut
+E7	Cause-movement-down-loss:T21 Supplier_Consumer:T20 Attribute:T22 Polarity_cue:T67 Modality_cue:T66
+A1	Polarity E7 Negative
+T22	Financial_attribute 677 687	production
+T23	Movement-down-loss 709 715	losses
+E8	Movement-down-loss:T23 Attribute:T24 Intensity_cue:T69
+T24	Financial_attribute 690 696	Prices
+T25	Grow-strong 722 744	stronger-than-expected
+E9	Grow-strong:T25 Supplier_Consumer:T27 Item:T26
+T6	Grow-strong 332 338	strong
+E2	Grow-strong:T6 Item:T8 Supplier_Consumer:T7
+T26	Economic_item 750 765	employment data
+T27	COUNTRY 745 749	U.S.
+T28	Movement-up-gain 815 823	increase
+E10	Movement-up-gain:T28 Initial_reference_point:T73
+T30	Cause-movement-down-loss 1357 1361	cuts
+E11	Cause-movement-down-loss:T30 Attribute:T31 Item:T77 Type:T29
+T31	Financial_attribute 1373 1379	prices
+T32	Cause-movement-down-loss 1456 1460	cuts
+E12	Cause-movement-down-loss:T32 Supplier_Consumer2:T33 Attribute:T34 Polarity_cue:T70
+T33	COUNTRY 1464 1468	OPEC
+T34	Financial_attribute 1475 1481	output
+T35	trade-financial-tension 1616 1625	price war
+E13	trade-financial-tension:T35 Participating_countries:T36
+T36	ORGANIZATION 1587 1591	OPEC
+T37	Movement-down-loss 1765 1769	fell
+E14	Movement-down-loss:T37 Attribute:T38 Item:T39 Reference_point_time:T40 Difference:T41 Final_value:T42
+T38	Financial_attribute 1756 1764	contract
+T39	Commodity 1744 1755	Brent crude
+T40	DATE 1736 1743	January
+T41	MONEY 1773 1781	87 cents
+T42	Price_unit 1785 1800	$68.77 a barrel
+T43	Movement-down-loss 1846 1850	down
+E15	Movement-down-loss:T43 Difference:T45 Final_value:T46 Item:T17
+T45	MONEY 1851 1856	$1.12
+T46	MONEY 1860 1866	$65.69
+T49	Position-high 1958 1962	high
+E17	Position-high:T49 Difference:T84 Duration:T83 Item:T82
+T50	Movement-down-loss 2216 2222	halved
+E18	Movement-down-loss:T50 Reference_point_time:T52 Final_value:T53 Forecaster:T89 Item:T48 Forecast:T51
+T52	DATE 2227 2231	2015
+T53	PERCENTAGE 2285 2294	1 percent
+T54	Oversupply 2297 2307	Oversupply
+E19	Oversupply:T54 Modality_cue:T79 Intensity_cue:T96 Reference_point_time:T97
+T58	Commodity 2361 2364	oil
+T59	Movement-down-loss 18 23	slide
+E21	Movement-down-loss:T59 Attribute:T60 Item:T61 Type:T62
+T60	Financial_attribute 11 17	prices
+T61	Commodity 7 10	oil
+T62	LOCATION 0 6	Global
+T68	DURATION 508 517	five-year
+T73	DATE 830 838	Jan 2012
+T74	Economic_item 1034 1040	market
+T75	Economic_item 989 997	economic
+T77	Commodity 1384 1389	crude
+T80	Economic_item 1520 1526	market
+T81	DURATION 1911 1919	10 weeks
+T82	Economic_item 1926 1932	dollar
+T83	DURATION 1949 1957	intraday
+T84	Quantity 1966 1972	89.467
+T85	Position-high 1978 1985	highest
+E27	Position-high:T85 Initial_reference_point:T86
+T86	DATE 1998 2008	March 2009
+T87	Grow-strong 2012 2020	stronger
+E28	Grow-strong:T87 Item:T88
+T88	Economic_item 2021 2027	dollar
+T89	ORGANIZATION 2195 2205	Bundesbank
+A5	Modality E19 Other
+T55	Financial_attribute 2448 2454	supply
+T56	Commodity 2468 2473	crude
+T90	Production_unit 2514 2551	average 871,000 barrels per day (bpd)
+T91	Commodity 256 261	Brent
+T92	Price_unit 298 316	below $70 a barrel
+T66	MODALITY_cue 604 612	decision
+T67	POLARITY_cue 666 669	not
+T69	INTENSITY_cue 697 702	pared
+T70	POLARITY_cue 1447 1455	blocking
+A4	Polarity E12 Negative
+T71	Economic_item 2129 2144	employment data
+T72	COUNTRY 2124 2128	U.S.
+T78	Slow-weak 2145 2154	contrasts
+E20	Slow-weak:T78 Item:T71 Supplier_Consumer:T72
+T79	MODALITY_cue 2308 2313	could
+T57	Slow-weak 400 407	bearish
+E22	Slow-weak:T57 Item:T63
+T48	Economic_item 2232 2238	growth
+T51	Forecast_target 2239 2248	forecasts
+T29	NATIONALITY 1351 1356	Saudi
+T13	Commodity 478 488	U.S. crude
+T14	Commodity 573 583	U.S. shale
+T17	Commodity 1831 1841	U.S. crude
+A3	Intensity E8 Eased
+T18	INTENSITY_cue 232 239	further
+A2	Intensity E1 Intensified
+R1	Cause-Precondition Arg1:E3 Arg2:E22	
+R2	Cause-Precondition Arg1:E22 Arg2:E1	
+E16	Position-low:T15 Duration:T68 Item:T12
+R3	Cause-Precondition Arg1:E6 Arg2:E5	
+R4	Cause-Precondition Arg1:E7 Arg2:E5	
+R5	Cause-Precondition Arg1:E5 Arg2:E4	
+R6	Cause-Precondition Arg1:E5 Arg2:E16	
+R7	Cause-Precondition Arg1:E9 Arg2:E8	
+T44	Slow-weak 928 938	lackluster
+E23	Slow-weak:T44 Item:T47
+T47	Economic_item 912 918	market
+T65	Commodity 1121 1124	oil
+T76	Commodity 1129 1132	gas
+T93	Economic_item 1164 1175	hedge funds
+T94	Commodity 1177 1180	oil
+T95	Movement-down-loss 1903 1907	loss
+E24	Movement-down-loss:T95 Duration:T81
+T96	INTENSITY_cue 2314 2318	rise
+A6	Intensity E19 Intensified
+T97	DATE 2319 2328	next year
+T98	Commodity 2493 2498	Brent
+T63	Economic_item 383 393	oil market

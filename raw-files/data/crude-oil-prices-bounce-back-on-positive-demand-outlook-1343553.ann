@@ -1,0 +1,132 @@
+T1	Financial_attribute 10 16	Prices
+T2	Commodity 0 9	Crude Oil
+T3	Movement-up-gain 17 28	Bounce Back
+E1	Movement-up-gain:T3 Attribute:T1 Item:T2
+T4	Grow-strong 32 38	Upbeat
+E2	Grow-strong:T4 Attribute:T5 Forecast:T6
+T5	Financial_attribute 39 45	Demand
+T6	Forecast_target 46 53	Outlook
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+T7	Movement-up-gain 210 216	higher
+E3	Movement-up-gain:T7 Reference_point_time:T10 Attribute:T8 Item:T9
+T8	Financial_attribute 195 201	prices
+T9	Commodity 185 194	Crude oil
+T10	DATE 220 228	Thursday
+T11	Movement-down-loss 246 252	losses
+E4	Movement-down-loss:T11 Intensity_cue:T12
+T12	INTENSITY_cue 230 237	erasing
+A1	Intensity E4 Eased
+T13	DATE 342 351	next year
+T14	ORGANIZATION 264 291	International Energy Agency
+T15	Forecast_target 292 300	forecast
+T16	Movement-up-gain 304 312	increase
+E5	Movement-up-gain:T16 Type:T17 Item:T18 Attribute:T19 Forecast:T15 Forecaster:T14 Reference_point_time:T13
+T17	LOCATION 316 322	global
+T18	Commodity 323 326	oil
+T19	Financial_attribute 327 333	demand
+R2	Cause-Precondition Arg1:E5 Arg2:E3	
+T20	Commodity 436 470	U.S. West Texas Intermediate crude
+T21	DATE 471 476	April
+T22	Movement-up-gain 490 492	up
+E6	Movement-up-gain:T22 Reference_point_time:T21 Item:T20 Difference:T23 Difference2:T24 Final_value:T25
+T23	MONEY 493 501	49 cents
+T24	PERCENTAGE 511 516	0.80%
+T25	Price_unit 520 535	$61.45 a barrel
+T26	Position-low 578 582	lows
+E7	Position-low:T26 Final_value:T27
+T27	MONEY 586 592	$60.83
+T28	Commodity 605 614	Brent oil
+T29	DATE 619 622	May
+T30	Movement-up-gain 670 676	gained
+E8	Movement-up-gain:T30 Reference_point_time:T29 Item:T28 Difference:T31 Difference2:T32 Final_value:T33
+T31	MONEY 677 685	42 cents
+T32	PERCENTAGE 695 700	0.65%
+T33	Price_unit 704 719	$65.31 a barrel
+T34	ORGANIZATION 769 772	IEA
+T35	Movement-up-gain 773 782	increased
+E9	Movement-up-gain:T35 Type:T36 Attribute:T37 Forecast:T38 Supplier_Consumer:T34 Reference_point_time:T39 Difference:T40 Final_value:T41
+T36	LOCATION 787 793	global
+T37	Financial_attribute 794 807	demand growth
+T38	Forecast_target 808 815	outlook
+T39	DATE 820 824	2018
+T40	Production_unit 828 857	100,000 barrels per day (bpd)
+T41	Production_unit 861 876	1.5 million bpd
+T42	Commodity 961 964	oil
+T43	Financial_attribute 965 975	production
+T44	Slow-weak 984 992	slowdown
+E10	Slow-weak:T44 
+T45	Commodity 1035 1040	fuels
+T46	trade-financial-tension 1070 1079	trade war
+E11	trade-financial-tension:T46 Type:T47 Modality_cue:T48
+T47	LOCATION 1063 1069	global
+T48	MODALITY_cue 1053 1062	potential
+A2	Modality E11 Other
+T49	Financial_attribute 1173 1180	imports
+T50	ORGANIZATION 1284 1333	Organization of the Petroleum Exporting Countries
+T51	COUNTRY 1338 1344	Russia
+T52	Financial_attribute 1363 1369	supply
+T53	Production_unit 1380 1396	1.60 million bpd
+T54	Production_unit 1419 1435	1.40 million bpd
+T55	Cause-movement-down-loss 1483 1486	cut
+E12	Cause-movement-down-loss:T55 Supplier_Consumer:T56 Attribute:T57
+T56	ORGANIZATION 1452 1456	OPEC
+T57	Financial_attribute 1487 1493	supply
+T58	Economic_item 1537 1543	market
+T59	Cause-movement-down-loss 1572 1575	cut
+E13	Cause-movement-down-loss:T59 Modality_cue:T61 Supplier_Consumer:T60 Item:T62 Difference:T64 Attribute:T63 Reference_point_time:T104
+T60	ORGANIZATION 1545 1549	OPEC
+T61	MODALITY_cue 1550 1556	agreed
+A3	Modality E13 Other
+T62	Commodity 1576 1579	oil
+T63	Financial_attribute 1580 1586	output
+T64	Production_unit 1590 1605	1.8 million bpd
+T65	DATE 1560 1568	December
+T66	Financial_attribute 1712 1718	prices
+T67	Commodity 1708 1711	Oil
+T68	ORGANIZATION 1758 1797	Energy Information Administration (EIA)
+T69	Movement-up-gain 1843 1847	rose
+E14	Movement-up-gain:T69 Attribute:T71 Item:T70 Supplier_Consumer:T68 Difference:T72 Reference_point_time:T73
+T70	Commodity 1821 1830	crude oil
+T71	Financial_attribute 1831 1842	inventories
+T72	Quantity 1851 1872	5.022 million barrels
+T73	DATE 1876 1902	the week ended February 10
+T74	Movement-up-gain 1947 1952	build
+E15	Movement-up-gain:T74 Difference:T78 Attribute:T75 Item:T76 Modality_cue:T77
+T75	Financial_attribute 1941 1946	stock
+T76	Commodity 1935 1940	crude
+T77	MODALITY_cue 1916 1928	expectations
+T78	Quantity 1956 1977	2.023 million barrels
+A4	Modality E15 Other
+T79	Movement-down-loss 2037 2046	decreased
+E16	Movement-down-loss:T79 Difference:T80 Attribute:T82 Item:T81
+T80	Quantity 2050 2071	6.271 million barrels
+T81	Commodity 2016 2024	gasoline
+T82	Financial_attribute 2025 2036	inventories
+T83	Cause-movement-down-loss 2104 2108	draw
+E17	Cause-movement-down-loss:T83 Modality_cue:T85 Difference:T84
+T84	Quantity 2112 2133	1.176 million barrels
+T85	MODALITY_cue 2085 2097	expectations
+A5	Modality E17 Other
+T86	Movement-down-loss 2163 2167	fell
+E18	Movement-down-loss:T86 Difference:T87 Attribute:T89 Item:T88
+T87	Quantity 2171 2192	4.360 million barrels
+T88	Commodity 2141 2151	distillate
+T89	Financial_attribute 2152 2162	stockpiles
+T90	Forecast_target 2206 2215	forecasts
+T91	Movement-down-loss 2222 2229	decline
+E19	Movement-down-loss:T91 Difference:T92 Forecast:T90
+T92	Quantity 2233 2246	1.519 million
+T93	Movement-up-gain 2276 2283	climbed
+E20	Movement-up-gain:T93 Difference:T96 Attribute:T94 Item:T95 Final_value:T97
+T94	Financial_attribute 2268 2275	futures
+T95	Commodity 2259 2267	gasoline
+T96	PERCENTAGE 2284 2289	0.50%
+T97	Production_unit 2293 2308	$1.931 a gallon
+T98	Movement-down-loss 2341 2345	down
+E21	Movement-down-loss:T98 Attribute:T99 Item:T100 Difference:T101 Final_value:T102
+T99	Financial_attribute 2328 2335	futures
+T100	Commodity 2316 2327	natural gas
+T101	PERCENTAGE 2346 2351	0.26%
+T102	Production_unit 2355 2394	$2.732 per million British thermal unit
+T103	Forecast_target 1345 1353	forecast
+T104	DATE 1612 1627	the end of 2018

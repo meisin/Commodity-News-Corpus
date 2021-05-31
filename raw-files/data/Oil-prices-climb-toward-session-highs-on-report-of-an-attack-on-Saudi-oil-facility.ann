@@ -1,0 +1,43 @@
+T1	Movement-up-gain 11 16	climb
+E1	Movement-up-gain:T1 Attribute:T2 Item:T3
+T2	Financial_attribute 4 10	prices
+T3	Commodity 0 3	Oil
+T4	Position-high 32 37	highs
+E2	Position-high:T4 
+T5	Civil-unrest 54 60	attack
+E3	Civil-unrest:T5 Place:T6
+T6	LOCATION 64 82	Saudi oil facility
+R2	Cause-Precondition Arg1:E3 Arg2:E1	
+T7	Movement-up-gain 226 233	climbed
+E4	Movement-up-gain:T7 Attribute:T8 Item:T9
+T8	Financial_attribute 218 225	futures
+T9	Commodity 214 217	Oil
+T10	Position-high 247 254	highest
+E5	Position-high:T10 Reference_point_time:T11
+T11	DATE 285 291	Friday
+T12	Civil-unrest 352 360	attacked
+E6	Civil-unrest:T12 Place:T13
+T13	COUNTRY 335 347	Saudi Arabia
+R4	Cause-Precondition Arg1:E6 Arg2:E4	
+T14	Geopolitical-tension 542 550	Tensions
+E7	Geopolitical-tension:T14 Impacted_countries:T15 Intensity_cue:T30
+T15	STATE_OR_PROVINCE 558 569	Middle East
+T16	Civil-unrest 711 718	attacks
+E8	Civil-unrest:T16 Place:T17
+T17	COUNTRY 722 734	Saudi Arabia
+T18	Movement-up-gain 875 879	rose
+E9	Movement-up-gain:T18 Difference:T22 Difference2:T19 Item:T21 Contract_date:T20 Final_value:T23
+T20	DATE 817 822	April
+T21	Commodity 823 852	West Texas Intermediate crude
+T22	MONEY 880 885	$1.10
+T19	PERCENTAGE 890 894	1.8%
+T23	Price_unit 908 923	$61.10 a barrel
+T24	Movement-up-gain 1006 1011	added
+E10	Movement-up-gain:T24 Contract_date:T25 Item:T26 Difference:T27 Difference2:T28 Final_value:T29
+T25	DATE 967 970	May
+T26	Commodity 971 982	Brent crude
+T27	MONEY 1012 1020	94 cents
+T28	PERCENTAGE 1025 1029	1.5%
+T29	Price_unit 1034 1049	$64.22 a barrel
+T30	INTENSITY_cue 575 582	climbed
+A1	Intensity E7 Intensified

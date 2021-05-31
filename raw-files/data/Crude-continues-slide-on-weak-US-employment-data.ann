@@ -1,0 +1,125 @@
+T1	Movement-down-loss 16 21	slide
+E1	Movement-down-loss:T1 Item:T5
+T2	Slow-weak 25 29	weak
+E2	Slow-weak:T2 Supplier_Consumer:T4 Item:T3
+T3	Economic_item 35 50	employment data
+T4	ORGANIZATION 30 34	U.S.
+T5	Commodity 0 5	Crude
+T6	Financial_attribute 188 195	futures
+T8	Commodity 178 187	Crude oil
+T9	DATE 215 221	Friday
+T7	Movement-down-loss 205 211	losses
+E3	Movement-down-loss:T7 Attribute:T6 Item:T8 Reference_point_time:T9 Intensity_cue:T66
+T10	Slow-weak 225 245	weaker-than-expected
+E4	Slow-weak:T10 Item:T11
+T11	Economic_item 246 258	jobs numbers
+T12	Economic_item 285 292	economy
+T13	COUNTRY 280 284	U.S.
+T14	Slow-weak 296 303	cooling
+E5	Slow-weak:T14 Item:T12 Supplier_Consumer:T13
+T15	Movement-down-loss 318 322	less
+E6	Movement-down-loss:T15 Item:T18 Attribute:T16 Modality_cue:T17
+T16	Financial_attribute 313 317	need
+T17	MODALITY_cue 308 312	will
+T18	Commodity 323 328	fuels
+T20	Financial_attribute 398 405	futures
+T21	DATE 422 428	August
+T22	Price_unit 439 456	USD85.01 a barrel
+T23	DATE 460 466	Friday
+T24	Movement-down-loss 468 472	down
+E7	Movement-down-loss:T24 Difference:T25 Attribute:T20 Contract_date:T21 Final_value:T22 Reference_point_time:T23 Item:T19
+T25	PERCENTAGE 473 478	2.53%
+T26	Position-high 499 503	high
+E8	Position-high:T26 Final_value:T27
+T27	MONEY 507 515	USD87.09
+T28	Movement-up-gain 520 522	up
+E9	Movement-up-gain:T28 
+T29	Position-low 547 550	low
+E10	Position-low:T29 Final_value:T30
+T30	MONEY 554 562	USD84.27
+T31	Movement-up-gain 638 643	added
+E11	Movement-up-gain:T31 Item:T33 Reference_point_time:T67
+T32	Movement-down-loss 683 688	below
+E12	Movement-down-loss:T32 Item:T35 Forecast:T34
+T33	Economic_item 630 637	economy
+T34	Forecast_target 696 705	forecasts
+T35	Economic_item 689 695	market
+T36	Movement-up-gain 712 716	gain
+E13	Movement-up-gain:T36 
+T37	Movement-down-loss 897 904	slipped
+E14	Movement-down-loss:T37 Reference_point_time:T38 Supplier_Consumer:T39 Item:T68
+T38	DATE 908 912	June
+T39	COUNTRY 887 891	U.S.
+T40	Movement-down-loss 1022 1026	fell
+E15	Movement-down-loss:T40 Final_value:T41 Reference_point_time:T42 Initial_value:T43 Initial_reference_point:T44
+T41	NUMBER 1030 1034	52.1
+T42	DATE 1038 1042	June
+T43	NUMBER 1048 1052	53.7
+T44	DATE 1056 1059	May
+T45	Movement-down-loss 1121 1131	plummeting
+E16	Movement-down-loss:T45 Item:T46
+T46	Commodity 1117 1120	oil
+T47	COUNTRY 1150 1177	the world's largest economy
+T48	Slow-weak 1202 1210	stagnant
+E17	Slow-weak:T48 Supplier_Consumer:T47
+T49	Financial_attribute 1220 1226	demand
+T50	Movement-down-loss 1227 1231	less
+E18	Movement-down-loss:T50 Attribute:T49 Item:T51 Modality_cue:T65
+T51	Commodity 1232 1237	fuels
+T52	Slow-weak 1609 1616	cooling
+E19	Slow-weak:T52 Type:T54 Item:T53
+T53	Economic_item 1640 1647	economy
+T54	NATIONALITY 1631 1639	European
+T55	Cause-movement-down-loss 1766 1770	cuts
+E20	Cause-movement-down-loss:T55 Supplier_Consumer:T56 Item:T85
+T56	COUNTRY 1774 1779	China
+T57	Movement-down-loss 1930 1934	down
+E21	Movement-down-loss:T57 Difference:T61 Contract_date:T60 Attribute:T58 Item:T59 Final_value:T62
+T58	Financial_attribute 1897 1904	futures
+T59	Commodity 1887 1896	Brent oil
+T60	DATE 1909 1915	August
+T61	PERCENTAGE 1935 1940	2.14%
+T62	Price_unit 1956 1973	USD98.55 a barrel
+T63	Movement-up-gain 1975 1977	up
+E22	Movement-up-gain:T63 Difference:T64
+T64	MONEY 1978 1986	USD13.54
+T19	Commodity 379 397	light, sweet crude
+T65	MODALITY_cue 1215 1219	will
+A1	Modality E18 Other
+A2	Modality E6 Other
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+T66	INTENSITY_cue 196 204	extended
+A3	Intensity E3 Intensified
+R2	Cause-Precondition Arg1:E4 Arg2:E5	
+R3	Cause-Precondition Arg1:E5 Arg2:E6	
+R4	Cause-Precondition Arg1:E6 Arg2:E3	
+T67	DATE 677 681	June
+T68	Economic_item 865 879	service sector
+T69	Economic_item 1062 1069	Markets
+R5	Cause-Precondition Arg1:E17 Arg2:E18	
+R6	Cause-Precondition Arg1:E18 Arg2:E16	
+T70	Movement-down-loss 1269 1273	fell
+E23	Movement-down-loss:T70 Item:T71
+T71	Commodity 1265 1268	Oil
+T72	Negative_sentiment 1284 1289	fears
+E24	Negative_sentiment:T72 Type:T73
+T73	LOCATION 1277 1283	global
+R7	Cause-Precondition Arg1:E24 Arg2:E23	
+T74	Cause-movement-down-loss 1403 1406	cut
+E25	Cause-movement-down-loss:T74 Type:T79 Attribute:T78 Forecast:T77 Modality_cue:T80 Forecaster:T81
+T75	Commodity 1452 1455	oil
+T76	Movement-down-loss 1456 1463	tanking
+E26	Movement-down-loss:T76 Item:T75
+T77	Forecast_target 1425 1434	forecasts
+T78	Financial_attribute 1418 1424	growth
+T79	LOCATION 1411 1417	global
+T80	MODALITY_cue 1396 1402	likely
+T81	ORGANIZATION 1300 1327	International Monetary Fund
+R8	Cause-Precondition Arg1:E25 Arg2:E26	
+T82	Cause-movement-down-loss 1526 1530	trim
+E27	Cause-movement-down-loss:T82 Attribute:T83 Difference:T84
+T83	Financial_attribute 1545 1558	interest rate
+T84	PERCENTAGE 1578 1583	0.75%
+T85	Economic_item 1752 1765	interest rate
+T86	Commodity 1803 1806	oil
+T87	Economic_item 1710 1717	economy

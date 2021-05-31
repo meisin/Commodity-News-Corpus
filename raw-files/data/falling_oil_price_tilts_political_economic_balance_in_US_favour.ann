@@ -1,0 +1,217 @@
+T1	Movement-down-loss 262 266	drop
+E1	Movement-down-loss:T1 Item:T2 Attribute:T3
+T2	Commodity 270 273	oil
+T3	Financial_attribute 274 280	prices
+T4	Civil-unrest 386 394	violence
+E2	Civil-unrest:T4 Reference_point_time:T6 Place:T5
+T5	COUNTRY 398 402	Iraq
+T6	DATE 403 414	this decade
+T7	Geopolitical-tension 427 435	tensions
+E3	Geopolitical-tension:T7 Impacted_countries:T8 Impacted_countries2:T9 Intensity_cue:T60
+T8	LOCATION 444 452	the West
+T9	COUNTRY 457 463	Russia
+T10	Embargo 469 478	sanctions
+E4	Embargo:T10 Imposee:T11
+T11	COUNTRY 487 491	Iran
+T12	Financial_attribute 508 516	supplies
+T13	Movement-up-gain 501 507	rising
+E5	Movement-up-gain:T13 Attribute:T12 Type:T15 Item:T14
+T14	Commodity 535 540	crude
+T15	NATIONALITY 520 534	North American
+T16	Slow-weak 545 550	tepid
+E6	Slow-weak:T16 Attribute:T17
+T17	Financial_attribute 551 557	demand
+T19	Financial_attribute 570 576	prices
+T21	Financial_attribute 962 972	production
+T22	Commodity 772 775	oil
+T23	Movement-up-gain 951 957	higher
+E8	Movement-up-gain:T23 Attribute:T21 Supplier_Consumer:T24 Supplier_Consumer2:T25 Item:T18
+T24	COUNTRY 982 995	United States
+T25	COUNTRY 1007 1013	Canada
+T26	Cause-movement-down-loss 1077 1082	curbs
+E9	Cause-movement-down-loss:T26 Attribute:T27 Supplier_Consumer:T28 Modality_cue:T123 Polarity_cue:T128
+T27	Financial_attribute 1070 1076	supply
+T28	COUNTRY 1088 1094	Russia
+T29	Cause-movement-down-loss 1106 1117	disruptions
+E10	Cause-movement-down-loss:T29 Attribute:T30 Modality_cue:T123 Supplier_Consumer:T31 Intensity_cue:T141
+T30	Financial_attribute 1121 1129	supplies
+T31	LOCATION 1135 1150	the Middle East
+T32	Movement-up-gain 1158 1166	increase
+E11	Movement-up-gain:T32 Attribute:T142
+T34	Movement-down-loss 1332 1337	lower
+E12	Movement-down-loss:T34 Item:T35 Attribute:T36
+T35	Commodity 1338 1341	oil
+T36	Financial_attribute 1342 1348	prices
+T38	Embargo 1594 1603	sanctions
+E14	Embargo:T38 Imposer:T39 Imposer2:T40
+T39	COUNTRY 1609 1626	the United States
+T40	ORGANIZATION 1631 1645	European Union
+T42	Financial_attribute 1784 1794	production
+T44	Movement-up-gain 1820 1825	risen
+E15	Movement-up-gain:T44 Attribute:T42 Supplier_Consumer:T51
+T45	Movement-down-loss 1525 1529	fall
+E16	Movement-down-loss:T45 Item:T37
+T46	PERCENTAGE 2003 2030	little more than 20 percent
+T47	DATE 2031 2040	next year
+A1	Polarity E16 Positive
+A2	Modality E16 Other
+T48	Prohibiting 2096 2099	ban
+E17	Prohibiting:T48 Activity:T49
+T49	Other_activities 2103 2112	exporting
+T50	Commodity 1909 1914	crude
+T55	Embargo 2411 2420	sanctions
+E19	Embargo:T55 Imposee:T111
+T56	Cause-movement-down-loss 2446 2449	cut
+E20	Cause-movement-down-loss:T56 Attribute:T58 Modality_cue:T126 Item:T61
+T57	Commodity 2358 2361	oil
+T58	Financial_attribute 2458 2463	sales
+T59	Movement-down-loss 2586 2593	falling
+E21	Movement-down-loss:T59 Attribute:T64 Item:T63
+T63	Commodity 2575 2578	oil
+T64	Financial_attribute 2579 2585	prices
+T66	Financial_attribute 2911 2917	prices
+T67	Movement-down-loss 3300 3305	Lower
+E24	Movement-down-loss:T67 Item:T114
+T68	Commodity 2907 2910	oil
+T70	Movement-down-loss 3284 3289	lower
+E25	Movement-down-loss:T70 Attribute:T71
+T71	Financial_attribute 3290 3296	prices
+T72	Movement-down-loss 3907 3911	fall
+E26	Movement-down-loss:T72 Attribute:T75
+T74	Movement-down-loss 4134 4138	drop
+E27	Movement-down-loss:T74 Attribute:T88
+T75	Financial_attribute 3901 3906	price
+T76	Movement-down-loss 4246 4250	fell
+E28	Movement-down-loss:T76 Final_value:T77 Item:T78 Modality_cue:T132
+T77	Price_unit 4251 4269	below $85 a barrel
+T78	Commodity 4240 4245	crude
+T79	Cause-movement-down-loss 4715 4718	cut
+E29	Cause-movement-down-loss:T79 Attribute:T80 Supplier_Consumer:T87 Modality_cue:T147 Polarity_cue:T134
+T80	Financial_attribute 4708 4714	supply
+T81	ORGANIZATION 4341 4345	OPEC
+A3	Polarity E29 Negative
+A4	Modality E29 Other
+T82	Movement-up-gain 4752 4758	rising
+E30	Movement-up-gain:T82 Attribute:T83 Item:T84 Supplier_Consumer:T85
+T83	Financial_attribute 4736 4742	output
+T84	Commodity 4732 4735	oil
+T85	COUNTRY 4727 4731	U.S.
+T86	Movement-up-gain 4781 4785	jump
+E31	Movement-up-gain:T86 Attribute:T140
+T89	Cause-movement-down-loss 4852 4863	disruptions
+E32	Cause-movement-down-loss:T89 Supplier_Consumer:T90 Supplier_Consumer2:T91 Modality_cue:T135 Item:T93
+T90	COUNTRY 4875 4880	Libya
+T91	COUNTRY 4885 4892	Nigeria
+A5	Polarity E32 Positive
+A6	Modality E32 Other
+T92	Movement-up-gain 5088 5097	rebounded
+E33	Movement-up-gain:T92 Attribute:T96 Final_value:T94 Item:T41 Supplier_Consumer:T33
+T94	Production_unit 5101 5134	more than 800,000 barrels per day
+T96	Financial_attribute 5073 5083	production
+T97	Movement-up-gain 5232 5240	increase
+E34	Movement-up-gain:T97 
+T98	Movement-up-gain 5477 5482	surge
+E35	Movement-up-gain:T98 Attribute:T20
+T99	Financial_attribute 5012 5018	supply
+T100	Slow-weak 5497 5501	weak
+E36	Slow-weak:T100 Attribute:T101
+T101	Financial_attribute 5502 5508	demand
+T103	Movement-down-loss 0 7	Falling
+E37	Movement-down-loss:T103 Item:T105 Attribute:T104
+T104	Financial_attribute 12 17	price
+T105	Commodity 8 11	oil
+T106	Position-low 290 296	lowest
+E38	Position-low:T106 Duration:T107
+T107	DURATION 300 309	two years
+A7	Modality E9 Other
+T108	Economic_item 1562 1568	dollar
+T51	COUNTRY 1802 1815	United States
+T109	Movement-down-loss 2265 2270	lower
+E39	Movement-down-loss:T109 Attribute:T110
+T110	Financial_attribute 2271 2277	prices
+T111	COUNTRY 2344 2348	Iran
+A8	Modality E20 Other
+T112	Movement-down-loss 3061 3070	disrupted
+E40	Movement-down-loss:T112 
+T113	Price_unit 3444 3457	$105 a barrel
+T114	Commodity 3306 3309	oil
+A9	Modality E28 Other
+T116	Financial_attribute 3967 3973	prices
+T118	Slow-weak 5032 5042	vulnerable
+E42	Slow-weak:T118 Attribute:T99
+T102	Grow-strong 5588 5595	recover
+E43	Grow-strong:T102 Attribute:T119 Modality_cue:T136
+T119	Financial_attribute 5578 5584	prices
+A10	Modality E43 Other
+T120	Commodity 5747 5753	energy
+T121	LOCATION 5740 5746	global
+T122	Economic_item 674 682	economic
+T123	MODALITY_cue 1048 1054	threat
+T124	MODALITY_cue 1990 1994	will
+T125	Commodity 2220 2226	energy
+T126	MODALITY_cue 2439 2442	try
+T127	Economic_item 2609 2617	economic
+T129	Economic_item 2682 2688	market
+T130	LOCATION 3136 3142	global
+T65	Movement-down-loss 2901 2906	lower
+E23	Movement-down-loss:T65 Attribute:T66 Item:T68
+T115	MODALITY_cue 3889 3896	whether
+T132	MODALITY_cue 4233 4239	unless
+T133	Financial_attribute 4604 4612	supplies
+T135	MODALITY_cue 4837 4841	risk
+T136	MODALITY_cue 5569 5577	wait for
+T137	Negative_sentiment 3916 3924	worrying
+E41	Negative_sentiment:T137 Modality_cue:T115
+A11	Modality E41 Other
+A12	Modality E10 Other
+T131	Crisis 1854 1860	crisis
+E44	Crisis:T131 
+T139	ORGANIZATION 1936 1974	U.S. Energy Information Administration
+T18	Commodity 958 961	oil
+T20	Financial_attribute 5486 5492	supply
+T33	COUNTRY 5061 5066	Libya
+T41	Commodity 5069 5072	oil
+T93	Commodity 4845 4851	supply
+T140	Financial_attribute 4789 4797	supplies
+T87	ORGANIZATION 4703 4707	OPEC
+T88	Financial_attribute 4128 4133	price
+T73	Financial_attribute 3521 3527	prices
+T117	Movement-down-loss 3515 3520	lower
+E7	Movement-down-loss:T117 Attribute:T73
+T62	Movement-down-loss 577 582	below
+E22	Movement-down-loss:T62 Difference:T69 Attribute:T19
+T69	Price_unit 583 596	$100 a barrel
+T61	Commodity 2454 2457	oil
+T52	Movement-down-loss 2352 2357	lower
+E18	Movement-down-loss:T52 Item:T57 Attribute:T53
+T53	Financial_attribute 2362 2367	price
+T54	Movement-down-loss 1995 1999	fall
+E46	Movement-down-loss:T54 Final_value:T46 Reference_point_time:T47 Modality_cue:T124 Forecaster:T139
+A13	Modality E46 Other
+T37	Economic_item 1488 1512	Russia’s rouble currency
+T43	Position-low 1546 1549	low
+E13	Position-low:T43 
+T60	INTENSITY_cue 416 426	heightened
+A14	Intensity E3 Intensified
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+R2	Cause-Precondition Arg1:E3 Arg2:E1	
+R3	Cause-Precondition Arg1:E4 Arg2:E1	
+T95	Commodity 625 634	shale oil
+R4	Cause-Precondition Arg1:E6 Arg2:E22	
+R5	Cause-Precondition Arg1:E5 Arg2:E22	
+T128	POLARITY_cue 1058 1069	retaliatory
+A15	Polarity E9 Negative
+T141	INTENSITY_cue 1098 1105	further
+A16	Intensity E10 Intensified
+T142	Financial_attribute 1170 1180	production
+R6	Cause-Precondition Arg1:E14 Arg2:E47	
+T143	Economic_item 1576 1583	economy
+T144	Slow-weak 1587 1590	hit
+E47	Slow-weak:T144 Item:T143
+R7	Cause-Precondition Arg1:E47 Arg2:E16	
+T138	Economic_item 2387 2394	economy
+R8	Cause-Precondition Arg1:E19 Arg2:E20	
+T145	Commodity 3768 3771	oil
+T146	Commodity 4089 4092	oil
+T134	POLARITY_cue 4670 4672	un
+T147	MODALITY_cue 4672 4678	likely

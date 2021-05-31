@@ -1,0 +1,169 @@
+T1	Commodity 142 153	Brent crude
+T2	Financial_attribute 154 161	futures
+T3	Movement-up-gain 162 173	appreciated
+E1	Movement-up-gain:T3 Attribute:T2 Item:T1 Reference_point_time:T4
+T4	DATE 186 203	the first quarter
+T5	Financial_attribute 218 224	demand
+T6	Slow-weak 225 238	uncertainties
+E2	Slow-weak:T6 Attribute:T5
+T7	Cause-movement-down-loss 289 293	cuts
+E3	Cause-movement-down-loss:T7 Attribute:T8 Supplier_Consumer:T9 Polarity_cue:T70 Modality_cue:T106
+T8	Financial_attribute 282 288	supply
+T9	ORGANIZATION 263 267	Opec
+A1	Polarity E3 Negative
+A2	Modality E3 Other
+T11	Financial_attribute 840 846	demand
+T10	DATE 851 877	the fourth quarter of 2018
+T12	Movement-down-loss 882 889	falling
+E4	Movement-down-loss:T12 Reference_point_time:T10 Attribute:T11 Item:T13
+T13	Commodity 836 839	oil
+T14	Slow-weak 940 946	slower
+E5	Slow-weak:T14 Item:T15 Supplier_Consumer:T16
+T15	Economic_item 947 953	growth
+T16	COUNTRY 961 963	US
+T18	DATE 1031 1035	2019
+T19	LOCATION 1004 1010	global
+T20	Movement-flat 1036 1045	unchanged
+E6	Movement-flat:T20 Reference_point_time:T18 Type:T19 Final_value:T43 Item:T17 Forecast:T111
+T21	Slow-weak 1271 1278	slowing
+E7	Slow-weak:T21 Type:T23 Item:T22
+T22	Economic_item 1286 1292	growth
+T23	LOCATION 1279 1285	global
+A3	Polarity E7 Positive
+T24	Cause-movement-down-loss 1508 1520	restrictions
+E8	Cause-movement-down-loss:T24 Attribute:T26 Supplier_Consumer:T25
+T25	ORGANIZATION 1494 1498	Opec
+T26	Financial_attribute 1501 1507	supply
+T27	Movement-up-gain 1531 1535	rise
+E9	Movement-up-gain:T27 Item:T28 Attribute:T29
+T28	Commodity 1539 1542	oil
+T29	Financial_attribute 1543 1549	prices
+T30	Grow-strong 1655 1662	growing
+E10	Grow-strong:T30 Attribute:T31 Modality_cue:T100 Item:T32
+T31	Financial_attribute 1673 1679	demand
+T32	Commodity 1684 1687	oil
+T33	Financial_attribute 1689 1695	prices
+T35	Commodity 489 492	oil
+T36	Financial_attribute 493 499	demand
+T37	LOCATION 483 488	world
+T39	DATE 534 538	2016
+T40	LOCATION 1106 1114	regional
+T42	Movement-up-gain 1132 1138	upward
+E13	Movement-up-gain:T42 Type:T40 Item:T113 Forecast:T41
+T45	Financial_attribute 1861 1867	supply
+T47	COUNTRY 1881 1890	Venezuela
+T48	ORGANIZATION 1948 1952	Opec
+T50	Financial_attribute 1990 1996	supply
+T51	Cause-movement-down-loss 1997 2009	restrictions
+E17	Cause-movement-down-loss:T51 Attribute:T50 Supplier_Consumer:T48 Modality_cue:T105 Intensity_cue:T104
+T49	Movement-up-gain 2038 2044	higher
+E16	Movement-up-gain:T49 Item:T52 Attribute:T53
+T52	Commodity 2045 2048	oil
+T53	Financial_attribute 2049 2055	prices
+A11	Polarity E17 Positive
+A12	Modality E17 Other
+T54	Commodity 2393 2396	oil
+T55	Financial_attribute 2397 2403	prices
+T58	Financial_attribute 2483 2493	production
+T59	Grow-strong 2467 2473	strong
+E19	Grow-strong:T59 Attribute:T58 Item:T57
+T60	Slow-weak 2536 2544	slowdown
+E20	Slow-weak:T60 Type:T61 Attribute:T62 Modality_cue:T103
+T61	LOCATION 2548 2554	global
+T62	Financial_attribute 2555 2561	demand
+T43	Production_unit 1049 1057	1.4 mb/d
+T63	Slow-weak 1219 1232	uncertainties
+E21	Slow-weak:T63 Attribute:T64
+T64	Financial_attribute 1212 1218	demand
+T65	trade-financial-tension 1297 1321	tough trade negotiations
+E22	trade-financial-tension:T65 Participating_countries2:T67 Participating_countries:T66
+T67	COUNTRY 1341 1346	China
+T34	Movement-up-gain 1709 1721	trend upward
+E11	Movement-up-gain:T34 Attribute:T33 Modality_cue:T101
+T56	Movement-up-gain 2419 2437	seek higher ground
+E18	Movement-up-gain:T56 Attribute:T55 Item:T54 Modality_cue:T102
+A5	Polarity E18 Positive
+A6	Modality E18 Other
+A13	Polarity E20 Positive
+A14	Modality E20 Other
+T38	Movement-up-gain 504 527	pursued an upward trend
+E12	Movement-up-gain:T38 Attribute:T36 Item:T35 Type:T37 Initial_reference_point:T39
+T68	Slow-weak 7 20	uncertainties
+E23	Slow-weak:T68 Attribute:T69
+T69	Financial_attribute 0 6	Demand
+T72	Commodity 295 300	Brent
+T73	Financial_attribute 301 308	futures
+T76	Commodity 544 553	commodity
+T77	Production_unit 619 663	between 94-96 million barrels per day (mb/d)
+T78	Production_unit 726 763	between 97mb/d and 99mb/d per quarter
+T79	Grow-strong 562 572	recovering
+E25	Grow-strong:T79 Item:T76
+T80	DATE 592 599	2014/15
+T81	Grow-strong 1067 1072	solid
+E26	Grow-strong:T81 Supplier_Consumer:T82 Item:T75
+T82	Group 1073 1081	non-OECD
+T84	Commodity 1363 1366	oil
+T85	Financial_attribute 1367 1372	price
+T86	COUNTRY 1577 1579	US
+T87	Oversupply 1556 1569	high supplies
+E27	Oversupply:T87 Place:T86
+T88	LOCATION 698 703	world
+T89	Commodity 704 707	oil
+T90	Financial_attribute 708 714	demand
+T91	Financial_attribute 605 611	demand
+T92	Movement-up-gain 1148 1153	gains
+E28	Movement-up-gain:T92 Supplier_Consumer:T93 Supplier_Consumer2:T94
+T93	STATE_OR_PROVINCE 1170 1181	Middle East
+T94	STATE_OR_PROVINCE 1186 1190	Asia
+T44	Movement-up-gain 1605 1617	upward trend
+E14	Movement-up-gain:T44 Intensity_cue:T95
+A7	Modality E10 Other
+A8	Modality E11 Other
+T98	Commodity 1781 1784	oil
+T46	Production_unit 2105 2113	2.8 mb/d
+T70	POLARITY_cue 247 259	postponement
+T71	MONEY 363 366	$70
+T100	MODALITY_cue 1626 1628	if
+T101	MODALITY_cue 1696 1701	would
+T102	MODALITY_cue 2386 2392	expect
+T103	MODALITY_cue 2522 2530	prospect
+T105	MODALITY_cue 1945 1947	if
+T95	INTENSITY_cue 1588 1598	resistance
+T96	MODALITY_cue 1953 1960	decides
+T106	MODALITY_cue 270 278	decision
+T108	Commodity 26 29	oil
+T109	Economic_item 43 50	outlook
+T99	Negative_sentiment 1257 1265	concerns
+E24	Negative_sentiment:T99 
+T110	Movement-flat 1964 1972	maintain
+E29	Movement-flat:T110 Modality_cue:T96
+A4	Modality E29 Other
+T17	Economic_item 1011 1017	growth
+T111	Forecast_target 1018 1026	forecast
+T112	Crisis 582 588	crisis
+E30	Crisis:T112 Reference_point_time:T80
+T41	Forecast_target 1122 1131	estimates
+T113	Economic_item 1115 1121	growth
+T66	COUNTRY 1334 1336	US
+T114	Commodity 1472 1481	crude oil
+T57	Commodity 2474 2482	US shale
+T104	INTENSITY_cue 1981 1989	increase
+A10	Intensity E17 Intensified
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+R2	Cause-Precondition Arg1:E3 Arg2:E1	
+T74	Economic_item 388 399	oil markets
+R3	Cause-Precondition Arg1:E5 Arg2:E4	
+T75	Economic_item 1082 1088	growth
+R4	Cause-Precondition Arg1:E28 Arg2:E13	
+R5	Cause-Precondition Arg1:E26 Arg2:E6	
+R6	Cause-Precondition Arg1:E7 Arg2:E21	
+R7	Cause-Precondition Arg1:E22 Arg2:E21	
+R8	Cause-Precondition Arg1:E8 Arg2:E9	
+R9	Cause-Precondition Arg1:E27 Arg2:E14	
+A9	Intensity E14 Eased
+R10	Cause-Precondition Arg1:E10 Arg2:E11	
+T83	Movement-down-loss 1868 1877	drop outs
+E15	Movement-down-loss:T83 Attribute:T45 Supplier_Consumer:T47 Modality_cue:T97
+T97	MODALITY_cue 1842 1848	eyeing
+A15	Modality E15 Other
+R11	Cause-Precondition Arg1:E17 Arg2:E16	

@@ -1,0 +1,124 @@
+T1	trade-financial-tension 21 30	Trade War
+E1	trade-financial-tension:T1 
+T2	Negative_sentiment 31 39	Concerns
+E2	Negative_sentiment:T2 
+T3	Movement-down-loss 11 15	Fall
+E3	Movement-down-loss:T3 Attribute:T4 Item:T5
+T4	Financial_attribute 4 10	Prices
+T5	Commodity 0 3	Oil
+T6	DATE 174 180	Monday
+T7	Movement-down-loss 166 170	fell
+E4	Movement-down-loss:T7 Reference_point_time:T6 Attribute:T8 Item:T9
+T8	Financial_attribute 159 165	prices
+T9	Commodity 155 158	Oil
+T10	trade-financial-tension 198 207	trade war
+E5	trade-financial-tension:T10 Participating_countries:T11 Participating_countries2:T12
+T11	COUNTRY 220 224	U.S.
+T12	COUNTRY 229 234	China
+T13	Negative_sentiment 185 192	concern
+E6	Negative_sentiment:T13 
+T14	Movement-down-loss 265 272	slumped
+E7	Movement-down-loss:T14 Difference:T17 Final_value:T18 Attribute:T15 Item:T16
+T15	Financial_attribute 257 264	futures
+T16	Commodity 247 256	Crude oil
+T17	PERCENTAGE 273 278	1.57%
+T18	Price_unit 282 297	$63.92 a barrel
+T19	Commodity 365 368	oil
+T20	Financial_attribute 369 375	prices
+T21	Movement-down-loss 394 398	fell
+E8	Movement-down-loss:T21 Attribute:T25 Item:T26 Supplier_Consumer:T22 Difference:T23 Final_value:T24
+T22	ORGANIZATION 399 407	65 cents
+T23	PERCENTAGE 412 417	0.94%
+T24	Price_unit 422 437	$68.69 a barrel
+T25	Financial_attribute 338 345	futures
+T26	Commodity 326 337	Brent crude
+T27	Cause-movement-up-gain 455 464	increased
+E9	Cause-movement-up-gain:T27 Supplier_Consumer:T28 Reference_point_time:T29 Attribute:T76 Difference:T51
+T28	COUNTRY 449 454	China
+T29	DATE 442 448	Sunday
+T31	trade-financial-tension 630 644	trade tensions
+E11	trade-financial-tension:T31 Participating_countries:T32 Intensity_cue:T30
+T32	COUNTRY 653 691	the two biggest economies in the world
+T33	trade-financial-tension 721 730	trade war
+E12	trade-financial-tension:T33 Modality_cue:T34 Intensity_cue:T35
+T34	MODALITY_cue 711 715	fear
+T36	Economic_item 983 990	markets
+T37	Financial_attribute 1042 1047	price
+T38	Commodity 1051 1054	oil
+T39	Movement-up-gain 1059 1064	risen
+E13	Movement-up-gain:T39 Reference_point_time:T42 Item:T38 Attribute:T37
+T40	Negative_sentiment 1343 1348	worry
+E14	Negative_sentiment:T40 Intensity_cue:T41
+T41	INTENSITY_cue 1337 1342	eased
+T42	DATE 1076 1083	the day
+T43	Movement-down-loss 1152 1160	declined
+E15	Movement-down-loss:T43 Duration:T44
+T44	DURATION 1183 1194	three weeks
+T45	Movement-down-loss 1304 1308	fell
+E16	Movement-down-loss:T45 Attribute:T46 Supplier_Consumer:T47 Difference:T48 Final_value:T49
+T46	Financial_attribute 1282 1286	rigs
+T47	COUNTRY 1277 1281	U.S.
+T48	NUMBER 1312 1317	seven
+T49	NUMBER 1321 1324	797
+T52	Financial_attribute 1369 1379	production
+T53	INTENSITY_cue 1386 1392	derail
+T54	MODALITY_cue 1380 1385	would
+T55	Financial_attribute 1467 1473	supply
+T56	Cause-movement-down-loss 1462 1466	curb
+E17	Cause-movement-down-loss:T56 Attribute:T55 Supplier_Consumer:T57 Modality_cue:T54 Intensity_cue:T53
+T57	ORGANIZATION 1408 1457	Organization of the Petroleum Exporting Countries
+A4	Modality E17 Other
+T58	Cause-movement-down-loss 1489 1496	cutting
+E18	Cause-movement-down-loss:T58 Supplier_Consumer:T59 Item:T60 Attribute:T61 Difference:T62
+T59	ORGANIZATION 1475 1479	OPEC
+T60	Commodity 1497 1502	crude
+T61	Financial_attribute 1503 1509	output
+T62	Production_unit 1513 1546	1.8 million barrels per day (bpd)
+T63	Cause-movement-up-gain 1550 1557	prop up
+E19	Cause-movement-up-gain:T63 Item:T64 Attribute:T65
+T64	Commodity 1558 1561	oil
+T65	Financial_attribute 1562 1568	prices
+T66	Negative_sentiment 1651 1659	concerns
+E20	Negative_sentiment:T66 
+T67	Oversupply 1663 1673	oversupply
+E21	Oversupply:T67 Reference_point_time:T68
+T68	DATE 1688 1694	Monday
+T69	Movement-up-gain 1720 1728	increase
+E22	Movement-up-gain:T69 Supplier_Consumer:T70 Attribute:T71 Reference_point_time:T72 Final_value:T73 Initial_value:T74 Initial_reference_point:T75
+T70	COUNTRY 1701 1707	Russia
+T71	Financial_attribute 1732 1742	production
+T72	DATE 1746 1751	March
+T73	Production_unit 1756 1773	10.97 million bpd
+T74	Production_unit 1779 1796	10.95 million bpd
+T75	DATE 1800 1808	February
+T50	Commodity 1354 1368	U.S. shale oil
+T51	PERCENTAGE 476 479	25%
+T76	Financial_attribute 465 472	tariffs
+T30	INTENSITY_cue 620 629	increased
+A2	Intensity E11 Intensified
+T35	INTENSITY_cue 696 701	risen
+A7	Intensity E14 Eased
+A3	Intensity E17 Eased
+R1	Cause-Precondition Arg1:E1 Arg2:E3	
+R2	Cause-Precondition Arg1:E5 Arg2:E4	
+A1	Modality E12 Other
+R3	Cause-Precondition Arg1:E11 Arg2:E12	
+R4	Cause-Precondition Arg1:E18 Arg2:E19	
+R5	Cause-Precondition Arg1:E22 Arg2:E21	
+T78	PERCENTAGE 1862 1867	1.19%
+T79	Financial_attribute 1844 1851	Futures
+T80	Commodity 1835 1843	Gasoline
+T77	Movement-down-loss 1852 1861	decreased
+E10	Movement-down-loss:T77 Difference:T78 Attribute:T79 Item:T80 Final_value:T81
+T81	Price_unit 1871 1887	$1.9958 a gallon
+T82	Commodity 1895 1906	heating oil
+T83	Movement-down-loss 1907 1913	dipped
+E23	Movement-down-loss:T83 Item:T82 Difference:T84 Final_value:T85
+T84	PERCENTAGE 1914 1919	0.93%
+T85	Price_unit 1923 1939	$2.0022 a gallon
+T86	Movement-down-loss 1961 1968	slipped
+E24	Movement-down-loss:T86 Difference:T87 Final_value:T88 Attribute:T90 Item:T89
+T87	PERCENTAGE 1969 1974	2.20%
+T88	Price_unit 1978 2018	$2.673 per million British thermal units
+T89	Commodity 1941 1952	Natural gas
+T90	Financial_attribute 1953 1960	futures

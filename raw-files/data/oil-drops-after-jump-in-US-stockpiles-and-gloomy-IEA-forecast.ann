@@ -1,0 +1,119 @@
+T1	Movement-down-loss 4 9	Drops
+T2	Commodity 0 3	Oil
+T3	Movement-up-gain 16 20	Jump
+T4	Financial_attribute 29 39	Stockpiles
+T5	Slow-weak 44 50	Gloomy
+T6	Forecast_target 55 63	Forecast
+T7	ORGANIZATION 51 54	IEA
+T8	COUNTRY 24 28	U.S.
+T9	Movement-down-loss 204 208	fell
+T10	Commodity 200 203	Oil
+T11	DURATION 213 225	a second day
+T12	Movement-down-loss 229 237	dropping
+T13	Price_unit 238 256	below $41 a barrel
+T14	Movement-up-gain 289 293	jump
+T15	COUNTRY 297 301	U.S.
+T16	Commodity 302 307	crude
+T17	Financial_attribute 308 318	stockpiles
+T18	Slow-weak 325 331	gloomy
+T19	Forecast_target 332 340	forecast
+T20	ORGANIZATION 350 377	International Energy Agency
+T21	Financial_attribute 393 407	demand outlook
+T22	Commodity 418 423	crude
+T23	Financial_attribute 424 435	inventories
+T24	Movement-up-gain 436 440	rose
+T25	Production_unit 444 464	4.28 million barrels
+T26	Movement-up-gain 466 474	climbing
+T27	DURATION 479 492	a second week
+T28	Forecast_target 611 622	projections
+T29	Cause-movement-down-loss 585 588	cut
+T30	ORGANIZATION 581 584	IEA
+T31	LOCATION 593 599	global
+T32	Commodity 600 603	oil
+T33	Financial_attribute 604 610	demand
+T34	Production_unit 643 668	1.2 million barrels a day
+T35	DATE 627 639	this quarter
+T36	Movement-up-gain 712 714	up
+T37	Commodity 699 702	Oil
+T38	PERCENTAGE 715 717	9%
+T39	DATE 718 727	this week
+T40	Movement-up-gain 810 814	jump
+T41	Financial_attribute 818 824	prices
+T42	DATE 828 834	Monday
+T43	Cause-movement-down-loss 970 974	cuts
+T44	Financial_attribute 963 969	output
+E1	Movement-down-loss:T1 Item:T2
+E2	Movement-up-gain:T3 Supplier_Consumer:T8 Attribute:T4
+E3	Slow-weak:T5 Supplier_Consumer:T7 Forecast:T6
+E4	Movement-down-loss:T9 Duration:T11 Item:T10
+E5	Movement-down-loss:T12 Final_value:T13
+E6	Movement-up-gain:T14 Supplier_Consumer:T15 Item:T16 Attribute:T17
+E7	Slow-weak:T18 Forecast:T19 Supplier_Consumer:T20
+E8	Movement-up-gain:T24 Attribute:T23 Item:T22 Difference:T25
+E9	Movement-up-gain:T26 Duration:T27
+E10	Cause-movement-down-loss:T29 Forecaster:T30 Type:T31 Item:T32 Attribute:T33 Forecast:T28 Difference:T34 Reference_point_time:T35
+E11	Movement-up-gain:T36 Difference:T38 Item:T37 Reference_point_time:T39
+E12	Movement-up-gain:T40 Attribute:T41 Reference_point_time:T42
+E13	Cause-movement-down-loss:T43 Attribute:T44 Intensity_cue:T84 Modality_cue:T85 Polarity_cue:T86
+T47	Financial_attribute 2035 2045	stockpiles
+T48	Commodity 2026 2034	gasoline
+T49	COUNTRY 2021 2025	U.S.
+T50	Movement-down-loss 2046 2050	fell
+E14	Movement-down-loss:T50 Attribute:T47 Difference:T51 Item:T48 Supplier_Consumer:T49 Reference_point_time:T52
+T51	Quantity 2054 2074	2.31 million barrels
+T52	DATE 2075 2084	last week
+T53	Commodity 2090 2100	distillate
+T54	Financial_attribute 2101 2112	inventories
+T55	Movement-down-loss 2137 2144	dropped
+E15	Movement-down-loss:T55 Attribute:T54 Item:T53 Duration:T57
+T56	Commodity 2129 2135	diesel
+T57	DURATION 2152 2163	eighth week
+T58	Commodity 2190 2195	crude
+T59	Financial_attribute 2196 2204	supplies
+T60	MODALITY_cue 2210 2218	expected
+T61	Movement-down-loss 2222 2229	decline
+E16	Movement-down-loss:T61 Difference:T62 Modality_cue:T60 Attribute:T59 Item:T58
+T62	Quantity 2233 2252	1.9 million barrels
+T63	Financial_attribute 2363 2373	production
+T64	ORGANIZATION 2312 2317	OPEC+
+T65	Movement-up-gain 2441 2451	increasing
+E17	Movement-up-gain:T65 Polarity_cue:T66 Modality_cue:T67 Attribute:T68 Reference_point_time:T69
+T66	POLARITY_cue 2435 2440	defer
+A3	Polarity E17 Negative
+T67	MODALITY_cue 2423 2426	may
+A4	Modality E17 Other
+T68	Financial_attribute 2452 2458	supply
+T69	DATE 2464 2486	the start of next year
+T70	Movement-up-gain 2545 2551	rising
+E18	Movement-up-gain:T70 Attribute:T71 Supplier_Consumer:T72 Final_value:T73
+T71	Financial_attribute 2552 2558	output
+T72	COUNTRY 2564 2569	Libya
+T73	Production_unit 2589 2612	1 million barrels a day
+R1	Cause-Precondition Arg1:E3 Arg2:E1	
+R2	Cause-Precondition Arg1:E2 Arg2:E1	
+R3	Cause-Precondition Arg1:E6 Arg2:E4	
+R4	Cause-Precondition Arg1:E7 Arg2:E4	
+T45	Commodity 1012 1015	oil
+T46	Movement-up-gain 1706 1711	surge
+E19	Movement-up-gain:T46 
+T74	Oversupply 1923 1934	over-supply
+E20	Oversupply:T74 
+T75	Negative_sentiment 1908 1916	concerns
+E21	Negative_sentiment:T75 Intensity_cue:T76
+T76	INTENSITY_cue 1940 1945	eased
+A1	Intensity E21 Eased
+T77	Commodity 1735 1740	Brent
+T78	Price_unit 1770 1787	82 cents a barrel
+T79	Financial_attribute 1810 1816	prices
+A2	Modality E16 Other
+T80	Economic_item 2535 2541	market
+T81	Financial_attribute 1661 1667	demand
+T82	LOCATION 1654 1660	global
+T83	Slow-weak 1674 1684	suppressed
+E22	Slow-weak:T83 Attribute:T81 Type:T82
+T84	INTENSITY_cue 953 959	easing
+A5	Intensity E13 Eased
+T85	MODALITY_cue 945 952	planned
+A6	Modality E13 Other
+T86	POLARITY_cue 937 942	delay
+A7	Polarity E13 Negative

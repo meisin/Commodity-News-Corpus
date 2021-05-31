@@ -1,0 +1,94 @@
+T1	Movement-down-loss 6 10	dips
+E1	Movement-down-loss:T1 Item:T2
+T2	Commodity 0 5	Crude
+T3	Negative_sentiment 31 39	concerns
+E2	Negative_sentiment:T3 Type:T4
+T4	COUNTRY 24 30	Greece
+T5	Financial_attribute 46 52	demand
+T6	COUNTRY 41 45	U.S.
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+T7	Commodity 182 191	Crude oil
+T8	Financial_attribute 192 199	futures
+T9	Movement-down-loss 200 204	fell
+E3	Movement-down-loss:T9 Attribute:T8 Reference_point_time:T10 Item:T7
+T10	DATE 208 217	Wednesday
+T11	Negative_sentiment 221 229	concerns
+E4	Negative_sentiment:T11 Type:T12
+T12	COUNTRY 240 246	Greece
+T13	Movement-up-gain 381 387	rising
+E5	Movement-up-gain:T13 Modality_cue:T16 Supplier_Consumer:T14 Attribute:T15
+T14	COUNTRY 369 373	U.S.
+T15	Financial_attribute 351 361	stockpiles
+T16	MODALITY_cue 374 377	may
+A1	Modality E5 Other
+T17	Slow-weak 400 409	softening
+E6	Slow-weak:T17 Attribute:T18
+T18	Financial_attribute 410 416	demand
+R3	Cause-Precondition Arg1:E4 Arg2:E3	
+T19	Financial_attribute 475 482	futures
+R4	Cause-Precondition Arg1:E5 Arg2:E3	
+T20	Commodity 456 474	light, sweet crude
+T21	DATE 499 504	April
+T22	Price_unit 515 533	USD105.88 a barrel
+T23	Movement-down-loss 535 539	down
+E7	Movement-down-loss:T23 Final_value:T22 Difference:T24 Reference_point_time:T21 Attribute:T19 Item:T20
+T24	PERCENTAGE 540 545	0.35%
+T25	Position-high 585 589	high
+E8	Position-high:T25 Difference:T26
+T26	MONEY 593 602	USD106.07
+T27	Position-low 609 612	low
+E9	Position-low:T27 Difference:T28
+T28	MONEY 616 625	USD105.72
+T29	Commodity 628 631	Oil
+T30	Movement-up-gain 632 638	soared
+E10	Movement-up-gain:T30 Item:T29
+T33	Cause-movement-down-loss 911 916	crimp
+E12	Cause-movement-down-loss:T33 Item:T34 Attribute:T35 Modality_cue:T31
+T34	Commodity 917 920	oil
+T35	Financial_attribute 921 927	demand
+T36	Slow-weak 882 888	chilly
+E13	Slow-weak:T36 Type:T37 Item:T38 Modality_cue:T31 Intensity_cue:T32
+T37	NATIONALITY 889 897	European
+T38	Economic_item 898 905	economy
+R6	Cause-Precondition Arg1:E13 Arg2:E12	
+T39	Movement-up-gain 1432 1438	rising
+E14	Movement-up-gain:T39 Item:T40 Attribute:T41
+T40	Commodity 1439 1447	gasoline
+T41	Financial_attribute 1448 1454	prices
+T42	Movement-up-gain 1542 1548	rising
+E15	Movement-up-gain:T42 Attribute:T43 Modality_cue:T44
+T43	Financial_attribute 1531 1541	stockpiles
+T44	MODALITY_cue 1520 1525	would
+A3	Modality E15 Other
+R7	Cause-Precondition Arg1:E14 Arg2:E15	
+T45	Financial_attribute 1557 1561	need
+T46	Movement-down-loss 1578 1585	falling
+E16	Movement-down-loss:T46 Item:T47 Attribute:T45
+T47	Commodity 1572 1577	crude
+R8	Cause-Precondition Arg1:E14 Arg2:E16	
+T48	Geopolitical-tension 1588 1596	Tensions
+E17	Geopolitical-tension:T48 Impacted_countries:T49
+T49	COUNTRY 1602 1606	Iran
+T50	Movement-up-gain 1628 1635	soaring
+E18	Movement-up-gain:T50 Attribute:T51 Item:T52
+T51	Financial_attribute 1621 1627	prices
+T52	Commodity 1617 1620	oil
+R9	Cause-Precondition Arg1:E17 Arg2:E18	
+T53	Commodity 1740 1749	Brent oil
+T54	Financial_attribute 1750 1757	futures
+T55	DATE 1762 1767	April
+T56	Movement-up-gain 1782 1784	up
+E19	Movement-up-gain:T56 Difference:T57 Reference_point_time:T55 Attribute:T54 Item:T53 Final_value:T58
+T57	PERCENTAGE 1785 1790	0.06%
+T58	Price_unit 1806 1824	USD121.29 a barrel
+T59	Movement-up-gain 1826 1828	up
+E20	Movement-up-gain:T59 Difference:T60
+T60	MONEY 1829 1837	USD15.41
+T61	Financial_attribute 1877 1882	price
+R2	Cause-Precondition Arg1:E5 Arg2:E6	
+T31	MODALITY_cue 853 858	would
+A2	Intensity E13 Intensified
+A4	Modality E13 Other
+A5	Modality E12 Other
+T32	INTENSITY_cue 864 870	cooled
+T62	Economic_item 1378 1385	economy

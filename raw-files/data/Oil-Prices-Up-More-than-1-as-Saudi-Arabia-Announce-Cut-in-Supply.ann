@@ -1,0 +1,102 @@
+T1	Movement-up-gain 11 13	Up
+E1	Movement-up-gain:T1 Difference:T2 Attribute:T3 Item:T4
+T2	PERCENTAGE 14 26	More than 1%
+T3	Financial_attribute 4 10	Prices
+T4	Commodity 0 3	Oil
+T5	Cause-movement-down-loss 52 55	Cut
+E2	Cause-movement-down-loss:T5 Attribute:T6 Supplier_Consumer:T7 Modality_cue:T73
+T6	Financial_attribute 59 65	Supply
+T7	COUNTRY 30 42	Saudi Arabia
+T8	Movement-up-gain 217 223	gained
+E3	Movement-up-gain:T8 Difference:T11 Reference_point_time:T12 Attribute:T9 Item:T10
+T9	Financial_attribute 210 216	prices
+T10	Commodity 206 209	Oil
+T11	PERCENTAGE 224 236	more than 1%
+T12	DATE 240 246	Monday
+T13	MODALITY_cue 293 298	plans
+T14	Cause-movement-down-loss 302 305	cut
+E4	Cause-movement-down-loss:T14 Modality_cue:T13 Item:T15 Attribute:T16 Reference_point_time:T17
+T15	Commodity 306 309	oil
+T16	Financial_attribute 310 316	output
+T17	DATE 322 330	December
+A1	Modality E4 Other
+T18	Cause-movement-down-loss 403 406	cut
+E5	Cause-movement-down-loss:T18 Modality_cue:T20 Item:T19 Attribute:T21 Difference:T22 Supplier_Consumer:T25
+T19	Commodity 407 410	oil
+T20	MODALITY_cue 397 402	would
+A2	Modality E5 Other
+T21	Financial_attribute 411 417	supply
+T22	Production_unit 421 448	0.5 million barrels per day
+T23	Movement-down-loss 468 473	lower
+E6	Movement-down-loss:T23 Attribute:T24
+T24	Financial_attribute 483 489	demand
+T25	COUNTRY 385 396	the kingdom
+T26	Cause-movement-down-loss 495 498	cut
+E7	Cause-movement-down-loss:T26 
+T27	PERCENTAGE 552 556	0.5%
+T28	Cause-movement-down-loss 512 521	reduction
+E8	Cause-movement-down-loss:T28 Type:T31 Item:T29 Attribute:T30 Difference:T27
+T29	Commodity 532 535	oil
+T30	Financial_attribute 536 542	supply
+T31	LOCATION 525 531	global
+T32	Movement-up-gain 636 642	higher
+E9	Movement-up-gain:T32 Final_value:T37 Difference:T33 Reference_point_time:T36 Attribute:T35 Item:T34
+T33	PERCENTAGE 631 635	1.1%
+T34	Commodity 580 593	Crude Oil WTI
+T35	Financial_attribute 594 601	Futures
+T36	DATE 606 614	December
+T37	Price_unit 646 663	$60.83 per barrel
+T38	COUNTRY 733 742	Brent Oil
+T39	Financial_attribute 743 750	Futures
+T40	DATE 755 762	January
+T41	Movement-up-gain 777 783	gained
+E10	Movement-up-gain:T41 Difference:T42 Contract_date:T40 Attribute:T39 Supplier_Consumer:T38 Final_value:T43
+T42	PERCENTAGE 784 788	1.4%
+T43	Price_unit 792 807	$71.19 a barrel
+T44	Movement-down-loss 869 873	down
+E11	Movement-down-loss:T44 Difference:T45 Attribute:T46 Item:T47 Type:T48 Reference_point_time:T49
+T45	PERCENTAGE 884 887	20%
+T46	Financial_attribute 858 864	prices
+T47	Commodity 854 857	oil
+T48	LOCATION 847 853	Global
+T49	DATE 900 907	October
+T50	Financial_attribute 938 944	output
+T51	MODALITY_cue 921 926	signs
+T52	Movement-up-gain 930 937	growing
+E12	Movement-up-gain:T52 Attribute:T50 Modality_cue:T51 Supplier_Consumer:T53 Supplier_Consumer2:T54 Supplier_Consumer3:T55
+A3	Modality E12 Other
+T53	COUNTRY 976 980	U.S.
+T54	COUNTRY 982 994	Saudi Arabia
+T55	COUNTRY 999 1005	Russia
+T56	Slow-weak 1044 1052	slowdown
+E13	Slow-weak:T56 Item:T57 Type:T58
+T57	Economic_item 1035 1043	economic
+T58	LOCATION 1028 1034	global
+T59	Embargo 1054 1063	Sanctions
+E14	Embargo:T59 Imposee:T60
+T60	COUNTRY 1067 1071	Iran
+T61	POLARITY_cue 1076 1078	un
+T62	MODALITY_cue 1078 1084	likely
+T63	Cause-movement-down-loss 1088 1091	cut
+E15	Cause-movement-down-loss:T63 Item:T64 Polarity_cue:T61 Modality_cue:T62
+T64	Commodity 1100 1103	oil
+T65	Commodity 1266 1271	crude
+T66	Economic_item 1402 1408	market
+T67	Movement-up-gain 1764 1769	added
+E16	Movement-up-gain:T67 Difference:T68 Attribute:T69 Reference_point_time:T72 Final_value:T74
+T68	NUMBER 1770 1772	12
+T69	Financial_attribute 1773 1781	oil rigs
+T70	Position-high 1842 1849	highest
+E17	Position-high:T70 Initial_reference_point:T71
+T71	DATE 1862 1872	March 2015
+T72	DATE 1785 1803	the week to Nov. 9
+T73	MODALITY_cue 43 51	Announce
+T74	NUMBER 1833 1836	886
+R1	Cause-Precondition Arg1:E2 Arg2:E1
+R2	Cause-Precondition Arg1:E4 Arg2:E3
+R3	Cause-Precondition Arg1:E6 Arg2:E5
+R5	Cause-Precondition Arg1:E12 Arg2:E11
+R6	Cause-Precondition Arg1:E13 Arg2:E11
+A4	Modality E2 Other
+A5	Polarity E15 Negative
+A6	Modality E15 Other

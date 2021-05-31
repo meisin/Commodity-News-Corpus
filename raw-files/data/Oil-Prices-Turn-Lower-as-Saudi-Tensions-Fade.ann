@@ -1,0 +1,49 @@
+T1	INTENSITY_cue 40 44	Fade
+T2	Geopolitical-tension 31 39	Tensions
+E1	Geopolitical-tension:T2 Impacted_countries:T3 Intensity_cue:T1
+T3	NATIONALITY 25 30	Saudi
+T4	Movement-down-loss 16 21	Lower
+E2	Movement-down-loss:T4 Attribute:T5 Item:T6
+T5	Financial_attribute 4 10	Prices
+T6	Commodity 0 3	Oil
+T7	Movement-down-loss 183 188	lower
+E3	Movement-down-loss:T7 Reference_point_time:T10 Attribute:T8 Item:T9
+T8	Financial_attribute 169 175	prices
+T9	Commodity 165 168	Oil
+T10	DATE 192 198	Monday
+T11	Movement-up-gain 213 218	gains
+E4	Movement-up-gain:T11 Intensity_cue:T12
+T12	INTENSITY_cue 200 206	paring
+T13	Geopolitical-tension 347 355	tensions
+E5	Geopolitical-tension:T13 Impacted_countries:T14 Impacted_countries2:T15 Intensity_cue:T16
+T14	COUNTRY 368 372	U.S.
+T15	COUNTRY 377 389	Saudi Arabia
+T16	INTENSITY_cue 395 401	fading
+T17	Movement-down-loss 457 464	slipped
+E6	Movement-down-loss:T17 Attribute:T20 Item:T19 Difference:T18 Difference2:T21 Final_value:T22
+T18	MONEY 465 472	6 cents
+T19	Commodity 419 448	West Texas Intermediate crude
+T20	Financial_attribute 449 456	futures
+T21	PERCENTAGE 477 482	0.08%
+T22	Price_unit 487 502	$71.28 a barrel
+T23	Movement-down-loss 652 656	fell
+E7	Movement-down-loss:T23 Attribute:T24 Item:T25 Difference:T26 Difference2:T27 Final_value:T28
+T24	Financial_attribute 596 603	futures
+T25	Commodity 584 595	Brent crude
+T26	MONEY 657 665	15 cents
+T27	PERCENTAGE 670 675	0.19%
+T28	MONEY 680 686	$80.28
+T29	Position-high 715 719	high
+E8	Position-high:T29 Difference:T30
+T30	MONEY 723 729	$81.86
+T31	Geopolitical-tension 1742 1750	tensions
+E9	Geopolitical-tension:T31 Intensity_cue:T32
+T32	INTENSITY_cue 1778 1791	de-escalating
+T33	Commodity 623 626	oil
+T34	Financial_attribute 627 633	prices
+R1	Cause-Precondition Arg1:E1 Arg2:E2
+R3	Cause-Precondition Arg1:E5 Arg2:E3
+A1	Intensity E1 Eased
+A2	Intensity E4 Eased
+A3	Intensity E5 Eased
+A4	Intensity E9 Eased

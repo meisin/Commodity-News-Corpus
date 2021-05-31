@@ -1,0 +1,97 @@
+T1	Movement-down-loss 4 8	Down
+E1	Movement-down-loss:T1 Duration:T3 Item:T2
+T2	Commodity 0 3	Oil
+T3	DURATION 13 34	Fifth Consecutive Day
+T4	Movement-up-gain 40 45	Build
+E2	Movement-up-gain:T4 Supplier_Consumer:T5 Attribute:T6
+T5	COUNTRY 49 53	U.S.
+T6	Financial_attribute 54 64	Stockpiles
+T7	Movement-down-loss 234 238	down
+E3	Movement-down-loss:T7 Reference_point_time:T8 Item:T9 Duration:T10
+T8	DATE 239 247	Thursday
+T9	Commodity 226 229	Oil
+T10	DURATION 272 293	fifth consecutive day
+T11	Commodity 330 340	U.S. crude
+T12	Commodity 345 349	fuel
+T13	Movement-up-gain 321 326	build
+E4	Movement-up-gain:T13 Item:T11 Attribute:T14
+T14	Financial_attribute 350 361	inventories
+R1	Cause-Precondition Arg1:E4 Arg2:E3	
+T15	Financial_attribute 405 411	demand
+T16	Commodity 400 404	fuel
+E5	Movement-up-gain:T13 Item:T12 Attribute:T14
+R2	Cause-Precondition Arg1:E5 Arg2:E3	
+T17	Grow-strong 412 420	recovery
+E6	Grow-strong:T17 Attribute:T15 Item:T16 Modality_cue:T18 Intensity_cue:T19
+T18	MODALITY_cue 421 428	outlook
+T19	INTENSITY_cue 390 395	cloud
+T20	Movement-down-loss 448 452	fell
+E7	Movement-down-loss:T20 Attribute:T21 Item:T22 Difference:T23 Final_value:T24
+T21	Financial_attribute 440 447	futures
+T22	Commodity 430 439	Brent oil
+T23	PERCENTAGE 453 458	0.56%
+T24	MONEY 462 468	$67.62
+T25	Movement-down-loss 519 523	down
+E8	Movement-down-loss:T25 Attribute:T27 Item:T26 Difference:T28 Difference2:T29
+T26	Commodity 502 505	WTI
+T27	Financial_attribute 506 513	futures
+T28	PERCENTAGE 524 529	0.54%
+T29	MONEY 533 539	$64.25
+T30	Commodity 553 567	U.S. crude oil
+T31	Financial_attribute 568 574	supply
+T32	Movement-up-gain 637 642	build
+E9	Movement-up-gain:T32 Attribute:T31 Item:T30 Difference:T33 Reference_point_time:T34
+T33	Quantity 646 667	2.396 million barrels
+T34	DATE 672 690	the week to Mar. 5
+T35	Movement-up-gain 718 724	builds
+E10	Movement-up-gain:T35 Duration:T36
+T36	DURATION 694 714	fourth straight week
+T37	Movement-up-gain 799 804	build
+E11	Movement-up-gain:T37 Difference:T38 Modality_cue:T39
+T38	Quantity 778 798	2.964-million-barrel
+A3	Modality E11 Other
+T39	MODALITY_cue 766 775	predicted
+T40	Quantity 814 835	13.798-million-barrel
+T41	Movement-up-gain 836 841	build
+E12	Movement-up-gain:T41 Difference:T40 Reference_point_time:T42
+T42	DATE 866 879	previous week
+T43	Cause-movement-down-loss 973 977	draw
+E13	Cause-movement-down-loss:T43 Difference:T44
+T44	Quantity 981 998	1 million barrels
+T45	POLARITY_cue 1027 1032	break
+T46	Financial_attribute 1057 1066	stockpile
+T47	Movement-up-gain 1067 1073	builds
+E14	Movement-up-gain:T47 Attribute:T46 Modality_cue:T60 Polarity_cue:T45
+A4	Modality E14 Other
+T48	Grow-strong 1213 1221	recovery
+E15	Grow-strong:T48 
+T49	Commodity 1244 1254	U.S. crude
+T50	Financial_attribute 1255 1261	stocks
+T51	Movement-up-gain 1262 1266	rose
+E16	Movement-up-gain:T51 Reference_point_time:T52 Attribute:T50 Item:T49
+T52	DATE 1267 1276	last week
+T53	Financial_attribute 1296 1302	stocks
+T54	Movement-down-loss 1308 1312	fall
+E17	Movement-down-loss:T54 Modality_cue:T55 Attribute:T53
+T55	MODALITY_cue 1303 1307	will
+A5	Modality E17 Other
+T56	Movement-up-gain 1339 1344	rises
+E18	Movement-up-gain:T56 Intensity_cue:T62
+T57	Financial_attribute 1363 1373	production
+T58	Commodity 1357 1362	crude
+T59	Movement-flat 1374 1386	holds steady
+E19	Movement-flat:T59 Attribute:T57 Item:T58
+R4	Cause-Precondition Arg1:E19 Arg2:E17	
+A1	Intensity E6 Eased
+A6	Intensity E14 Neutral
+T60	MODALITY_cue 1015 1020	hopes
+A7	Polarity E14 Negative
+R5	Cause-Precondition Arg1:E2 Arg2:E1	
+A2	Modality E6 Other
+R3	Cause-Precondition Arg1:E13 Arg2:E14	
+T61	Grow-strong 1106 1114	recovery
+E20	Grow-strong:T61 
+T62	INTENSITY_cue 1345 1352	further
+A8	Intensity E18 Intensified
+T63	Movement-up-gain 1527 1532	spike
+E21	Movement-up-gain:T63 

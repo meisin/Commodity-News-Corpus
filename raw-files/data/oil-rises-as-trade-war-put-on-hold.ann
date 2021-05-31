@@ -1,0 +1,131 @@
+T1	POLARITY_cue 27 34	on Hold
+T2	trade-financial-tension 13 22	Trade War
+E1	trade-financial-tension:T2 Polarity_cue:T1
+T3	Movement-up-gain 4 9	Rises
+E2	Movement-up-gain:T3 Item:T4
+T4	Commodity 0 3	Oil
+T5	Movement-up-gain 161 167	higher
+E3	Movement-up-gain:T5 Reference_point_time:T8 Attribute:T6 Item:T7
+T6	Financial_attribute 149 155	prices
+T7	Commodity 145 148	Oil
+T8	DATE 171 177	Monday
+T9	COUNTRY 185 189	U.S.
+T10	COUNTRY 194 199	China
+T11	trade-financial-tension 214 223	trade war
+E4	trade-financial-tension:T11 Polarity_cue:T12 Participating_countries:T10 Participating_countries2:T9
+T12	POLARITY_cue 225 232	on hold
+A2	Polarity E4 Negative
+T13	trade-financial-tension 268 277	trade war
+E5	trade-financial-tension:T13 Polarity_cue:T16 Participating_countries:T14 Participating_countries2:T15
+T14	COUNTRY 290 294	U.S.
+T15	COUNTRY 299 304	China
+T16	POLARITY_cue 309 316	on hold
+A3	Polarity E5 Negative
+T17	Movement-up-gain 599 605	higher
+E6	Movement-up-gain:T17 Attribute:T18 Item:T19
+T18	Financial_attribute 587 593	prices
+T19	Commodity 583 586	Oil
+T20	trade-financial-tension 624 638	trade tensions
+E7	trade-financial-tension:T20 Intensity_cue:T21
+T21	INTENSITY_cue 639 647	wore off
+T22	DATE 710 723	November 2014
+T23	Commodity 659 664	Brent
+T24	Commodity 669 672	WTI
+T25	Position-high 689 696	highest
+E8	Position-high:T25 Item:T24 Initial_reference_point:T22
+A4	Intensity E7 Eased
+T26	Financial_attribute 735 742	futures
+T27	Commodity 725 734	Crude oil
+T28	Movement-up-gain 743 747	rose
+E9	Movement-up-gain:T28 Attribute:T26 Item:T27 Difference:T29 Final_value:T30
+T29	PERCENTAGE 748 753	0.45%
+T30	Price_unit 757 772	$71.69 a barrel
+T31	Movement-up-gain 877 879	up
+E10	Movement-up-gain:T31 Item:T32 Difference:T35 Final_value:T36
+T32	Commodity 805 816	Brent crude
+T33	Commodity 844 847	oil
+T34	Financial_attribute 848 854	prices
+T35	PERCENTAGE 880 885	0.53%
+T36	Price_unit 889 904	$78.93 a barrel
+T37	Movement-up-gain 922 928	jumped
+E11	Movement-up-gain:T37 Difference:T38 Attribute:T39 Item:T40 Reference_point_time:T41
+T38	PERCENTAGE 934 937	70%
+T39	Financial_attribute 910 916	prices
+T40	Commodity 906 909	Oil
+T41	DATE 941 954	the last year
+T42	Movement-up-gain 964 968	rise
+E12	Movement-up-gain:T42 Attribute:T43
+T43	Financial_attribute 972 978	demand
+T44	Cause-movement-down-loss 983 993	restricted
+E13	Cause-movement-down-loss:T44 Attribute:T45 Supplier_Consumer:T46
+T45	Financial_attribute 994 1000	supply
+T46	ORGANIZATION 1008 1064	Organization of the Petroleum Exporting Countries (OPEC)
+T47	Cause-movement-down-loss 1080 1087	cutting
+E14	Cause-movement-down-loss:T47 Difference:T51 Item:T49 Attribute:T50 Supplier_Consumer:T48
+T48	ORGANIZATION 1066 1070	OPEC
+T49	Commodity 1088 1093	crude
+T50	Financial_attribute 1094 1100	output
+T51	Production_unit 1104 1137	1.8 million barrels per day (bpd)
+T52	Cause-movement-up-gain 1141 1148	prop up
+E15	Cause-movement-up-gain:T52 Item:T53 Attribute:T54
+T53	Commodity 1149 1152	oil
+T54	Financial_attribute 1153 1159	prices
+T55	Oversupply 1281 1285	glut
+E16	Oversupply:T55 Attribute:T58 Place:T57 Polarity_cue:T56
+T56	POLARITY_cue 1261 1264	end
+T57	LOCATION 1267 1273	global
+T58	Financial_attribute 1274 1280	supply
+A1	Polarity E16 Negative
+T59	Cause-movement-down-loss 1340 1344	cuts
+E17	Cause-movement-down-loss:T59 Intensity_cue:T60 Modality_cue:T91
+T60	INTENSITY_cue 1348 1354	extend
+A5	Intensity E17 Intensified
+T61	Cause-movement-down-loss 1378 1382	cuts
+E18	Cause-movement-down-loss:T61 
+T62	Financial_attribute 1397 1403	supply
+T63	Financial_attribute 1415 1421	demand
+T64	Movement-up-gain 1442 1451	increases
+E19	Movement-up-gain:T64 Attribute:T65 Supplier_Consumer:T66
+T65	Financial_attribute 1431 1441	production
+T66	COUNTRY 1426 1430	U.S.
+T67	Movement-flat 1480 1489	unchanged
+E20	Movement-flat:T67 Attribute:T68 Difference:T71 Item:T69 Supplier_Consumer:T70
+T68	Financial_attribute 1466 1475	rig count
+T69	Commodity 1462 1465	oil
+T70	COUNTRY 1457 1461	U.S.
+T71	NUMBER 1493 1496	844
+T72	Position-high 1502 1509	highest
+E21	Position-high:T72 Initial_reference_point:T73
+T73	DATE 1522 1532	March 2015
+T74	Movement-up-gain 1629 1638	increased
+E22	Movement-up-gain:T74 Difference:T77 Final_value:T78 Attribute:T75 Item:T76
+T75	Financial_attribute 1621 1628	Futures
+T76	Commodity 1607 1615	Gasoline
+T77	PERCENTAGE 1639 1644	0.31%
+T78	Price_unit 1648 1664	$2.2430 a gallon
+T79	Commodity 1672 1683	heating oil
+T80	Movement-up-gain 1684 1688	rose
+E23	Movement-up-gain:T80 Difference:T81 Item:T79 Final_value:T82
+T81	PERCENTAGE 1689 1694	0.43%
+T82	Price_unit 1698 1714	$2.2752 a gallon
+T83	Movement-down-loss 1736 1743	slumped
+E24	Movement-down-loss:T83 Difference:T84 Final_value:T85 Attribute:T87 Item:T86
+T84	PERCENTAGE 1744 1749	1.09%
+T85	Production_unit 1753 1793	$2.816 per million British thermal units
+T86	Commodity 1716 1727	Natural gas
+T87	Financial_attribute 1728 1735	futures
+T88	Movement-down-loss 1843 1852	decreased
+E25	Movement-down-loss:T88 Supplier_Consumer:T90 Attribute:T89
+T89	Financial_attribute 1853 1859	demand
+T90	STATE_OR_PROVINCE 1836 1842	Europe
+A6	Polarity E1 Negative
+R1	Cause-Precondition Arg1:E1 Arg2:E2	
+R2	Cause-Precondition Arg1:E4 Arg2:E3	
+R3	Cause-Precondition Arg1:E7 Arg2:E6	
+E26	Position-high:T25 Initial_reference_point:T22 Item:T23
+R4	Cause-Precondition Arg1:E12 Arg2:E11	
+R5	Cause-Precondition Arg1:E13 Arg2:E11	
+R6	Cause-Precondition Arg1:E14 Arg2:E15	
+T91	MODALITY_cue 1324 1331	pushing
+A7	Modality E17 Other
+R7	Cause-Precondition Arg1:E25 Arg2:E24	

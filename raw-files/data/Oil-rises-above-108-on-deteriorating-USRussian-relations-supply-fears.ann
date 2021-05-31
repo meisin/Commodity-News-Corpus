@@ -1,0 +1,118 @@
+T1	Movement-up-gain 4 9	rises
+E1	Movement-up-gain:T1 Final_value:T2 Item:T3
+T2	MONEY 10 20	above $108
+T3	Commodity 0 3	Oil
+T6	Financial_attribute 62 68	supply
+T8	COUNTRY 360 367	Ukraine
+T9	Civil-unrest 348 356	fighting
+E2	Civil-unrest:T9 Place:T8
+T10	MODALITY_cue 445 450	fears
+T11	Movement-down-loss 294 300	losses
+E3	Movement-down-loss:T11 Item:T13 Difference:T15 Intensity_cue:T12
+T12	INTENSITY_cue 285 293	reversed
+T13	Commodity 269 284	Brent crude oil
+T14	Geopolitical-tension 372 395	deteriorating relations
+E4	Geopolitical-tension:T14 Impacted_countries:T16 Impacted_countries2:T5
+T15	Price_unit 314 333	above $108 a barrel
+T16	COUNTRY 404 410	Russia
+T4	Geopolitical-tension 24 60	deteriorating U.S.-Russian relations
+E5	Geopolitical-tension:T4 
+T5	COUNTRY 415 432	the United States
+T17	Financial_attribute 454 460	supply
+T18	Cause-movement-down-loss 461 472	disruptions
+E6	Cause-movement-down-loss:T18 Modality_cue:T10 Attribute:T17 Item:T19
+T19	Economic_item 480 486	market
+A2	Modality E6 Other
+T20	Movement-up-gain 855 860	gains
+E7	Movement-up-gain:T20 Item:T23 Difference:T21
+T21	MONEY 869 871	$1
+T22	Commodity 876 886	U.S. crude
+T23	Commodity 839 844	Brent
+T24	Movement-up-gain 768 784	rebounding rally
+E8	Movement-up-gain:T24 Item:T25
+T27	Geopolitical-tension 925 936	hostilities
+E9	Geopolitical-tension:T27 
+T28	Financial_attribute 948 954	supply
+T29	Negative_sentiment 955 960	fears
+E10	Negative_sentiment:T29 Attribute:T28
+T7	Negative_sentiment 69 74	fears
+E11	Negative_sentiment:T7 Attribute:T6
+T30	Commodity 1142 1153	Brent crude
+T31	DATE 1158 1167	September
+T32	Movement-up-gain 1177 1181	rose
+E12	Movement-up-gain:T32 Contract_date:T31 Item:T30 Difference:T33 Final_value:T34
+T33	MONEY 1182 1190	81 cents
+T34	Price_unit 1194 1210	$107.89 a barrel
+T35	Movement-up-gain 1241 1243	up
+E13	Movement-up-gain:T35 
+T36	Position-high 1261 1265	high
+E14	Position-high:T36 Final_value:T37 Duration:T38
+T37	MONEY 1269 1276	$108.20
+T38	DURATION 1252 1260	intraday
+T39	Commodity 1279 1289	U.S. crude
+T40	DATE 1294 1303	September
+T41	Movement-up-gain 1313 1317	rose
+E15	Movement-up-gain:T41 Difference:T42 Contract_date:T40 Item:T39 Final_value:T43
+T42	MONEY 1318 1325	2 cents
+T43	Price_unit 1329 1345	$102.09 a barrel
+T44	Position-low 1364 1367	low
+E16	Position-low:T44 Difference:T45
+T45	Price_unit 1371 1384	$101 a barrel
+T46	Movement-up-gain 1423 1429	rising
+E17	Movement-up-gain:T46 Attribute:T47
+T47	Financial_attribute 1410 1416	Prices
+T48	Commodity 1656 1659	oil
+T49	Commodity 1680 1683	gas
+T50	Embargo 1743 1752	sanctions
+E18	Embargo:T50 Imposer:T51
+T51	COUNTRY 1738 1742	U.S.
+T52	Crisis 1967 1973	crisis
+E19	Crisis:T52 Place:T53
+T53	COUNTRY 1977 1984	Ukraine
+T54	Embargo 2226 2235	sanctions
+E20	Embargo:T54 Imposer:T56 Imposer2:T55 Modality_cue:T57
+T55	COUNTRY 2239 2245	Russia
+T56	ORGANIZATION 2189 2203	European Union
+T57	MODALITY_cue 2156 2160	will
+A3	Modality E20 Other
+T58	Civil-unrest 2259 2267	violence
+E21	Civil-unrest:T58 Place:T59 Place2:T60
+T59	COUNTRY 2271 2276	Libya
+T60	COUNTRY 2281 2287	Israel
+T61	Commodity 2317 2320	oil
+T62	Financial_attribute 2321 2327	prices
+T63	Movement-up-gain 2360 2365	risen
+E22	Movement-up-gain:T63 Final_value:T64 Attribute:T66 Item:T67 Supplier_Consumer:T65
+T64	Production_unit 2369 2392	500,000 barrels per day
+T65	COUNTRY 2334 2339	Libya
+T66	Financial_attribute 2345 2355	production
+T67	Commodity 2341 2344	oil
+T68	Financial_attribute 2720 2726	prices
+T69	Commodity 2716 2719	Oil
+T70	Economic_item 2772 2789	unemployment data
+T71	Grow-strong 2820 2828	recovery
+E23	Grow-strong:T71 Item:T72
+T72	Economic_item 2811 2819	economic
+T73	Position-low 2891 2897	lowest
+E24	Position-low:T73 Reference_point_time:T74
+T74	DATE 2904 2917	February 2006
+T75	Financial_attribute 2924 2935	inventories
+T76	Commodity 2920 2923	Oil
+T77	Movement-down-loss 2993 2997	fell
+E25	Movement-down-loss:T77 Attribute:T75 Item:T76 Difference:T78 Duration:T79 Initial_reference_point:T80
+T78	Quantity 3006 3021	163,000 barrels
+T79	DURATION 3027 3040	the four days
+T80	DATE 3044 3051	July 22
+T81	Commodity 2971 2981	U.S. crude
+T82	Financial_attribute 2982 2991	contracts
+R1	Cause-Precondition Arg1:E5 Arg2:E1
+R2	Cause-Precondition Arg1:E11 Arg2:E1
+R3	Cause-Precondition Arg1:E2 Arg2:E3
+T83	Movement-up-gain 887 903	turning positive
+E26	Movement-up-gain:T83 Item:T22
+R8	Cause-Precondition Arg1:E9 Arg2:E10
+T84	Commodity 2442 2445	oil
+T25	Economic_item 792 802	oil market
+A1	Intensity E3 Eased
+R4	Cause-Precondition Arg1:E4 Arg2:E6	
+R5	Cause-Precondition Arg1:E6 Arg2:E3	

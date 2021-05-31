@@ -1,0 +1,136 @@
+T1	Movement-down-loss 4 9	falls
+E1	Movement-down-loss:T1 Difference:T2 Item:T3
+T2	MONEY 13 16	$55
+T3	Commodity 0 3	Oil
+T4	Slow-weak 26 34	slowdown
+E2	Slow-weak:T4 Supplier_Consumer:T5
+T5	COUNTRY 20 25	China
+T6	Economic_item 36 42	dollar
+T7	Movement-down-loss 238 242	fell
+T8	Commodity 222 237	Brent crude oil
+T9	Price_unit 251 263	$55 a barrel
+T10	Grow-strong 310 316	firmed
+T11	DATE 285 292	Tuesday
+T12	Economic_item 303 309	dollar
+T13	Slow-weak 370 377	slowing
+E3	Movement-down-loss:T7 Difference:T9 Item:T8 Reference_point_time:T11
+E4	Grow-strong:T10 Item:T12
+T14	NATIONALITY 378 385	Chinese
+T15	Economic_item 386 392	growth
+T16	NATIONALITY 397 410	Saudi Arabian
+T17	Financial_attribute 415 425	production
+T18	Commodity 411 414	oil
+T19	Position-high 447 451	high
+E5	Slow-weak:T13 Type:T14 Item:T15
+E6	Position-high:T19 Attribute:T17 Item:T18 Type:T16
+T20	Movement-up-gain 490 494	rise
+T21	Movement-down-loss 480 486	losses
+T22	INTENSITY_cue 465 473	reversed
+T23	Economic_item 458 464	dollar
+T24	PERCENTAGE 495 507	0.25 percent
+T25	Economic_item 603 616	U.S. currency
+T26	Financial_attribute 629 636	futures
+T27	Commodity 623 628	Brent
+T28	DATE 647 650	May
+T29	Movement-down-loss 665 669	down
+E7	Movement-up-gain:T20 Item:T23 Difference:T24
+E8	Movement-down-loss:T21 Item:T23 Intensity_cue:T22
+E9	Movement-down-loss:T29 Difference:T30 Attribute:T26 Item:T27 Final_value:T31 Contract_date:T28
+T30	MONEY 670 678	49 cents
+T31	MONEY 682 688	$55.43
+T32	Position-high 717 721	high
+E10	Position-high:T32 Difference:T33
+T33	MONEY 725 731	$56.79
+T34	Commodity 739 749	U.S. crude
+T35	Movement-up-gain 755 759	rose
+E11	Movement-up-gain:T35 Difference:T36 Item:T34 Final_value:T37
+T36	MONEY 760 767	3 cents
+T37	Price_unit 771 786	$47.48 a barrel
+T38	Commodity 805 810	Brent
+T39	Price_unit 840 851	$8 a barrel
+T40	Financial_attribute 887 893	prices
+T41	Commodity 883 886	Oil
+T42	Movement-down-loss 963 970	slipped
+E12	Movement-down-loss:T42 Reference_point_time:T45 Supplier_Consumer:T43
+T43	COUNTRY 957 962	China
+T45	DATE 974 979	March
+T44	Movement-up-gain 1095 1104	increased
+E13	Movement-up-gain:T44 
+T46	Position-high 1267 1271	high
+E14	Position-high:T46 Difference:T47 Supplier_Consumer:T48
+T47	Production_unit 1209 1244	10 million barrels of crude per day
+T48	COUNTRY 1170 1182	Saudi Arabia
+T49	Cause-movement-down-loss 1416 1423	cutting
+E15	Cause-movement-down-loss:T49 Attribute:T50 Polarity_cue:T89 Supplier_Consumer:T90
+T50	Financial_attribute 1424 1430	output
+T51	Movement-down-loss 1452 1459	halving
+E16	Movement-down-loss:T51 Item:T52 Attribute:T53 Initial_reference_point:T91
+T52	Commodity 1463 1466	oil
+T53	Financial_attribute 1467 1473	prices
+T54	Oversupply 1499 1506	surplus
+E17	Oversupply:T54 Item:T56 Attribute:T57 Place:T55
+T55	LOCATION 1492 1498	global
+T56	Commodity 1510 1513	oil
+T57	Financial_attribute 1514 1522	supplies
+T58	Financial_attribute 2002 2008	prices
+T59	Commodity 1996 2001	crude
+T60	Financial_attribute 1661 1671	production
+T61	Cause-movement-down-loss 1672 1676	cuts
+E18	Cause-movement-down-loss:T61 Attribute:T60
+T62	Economic_item 1737 1743	market
+T63	Slow-weak 1769 1776	weakest
+E19	Slow-weak:T63 Item:T62 Modality_cue:T67 Initial_reference_point:T92
+T64	Slow-weak 1821 1826	wanes
+E20	Slow-weak:T64 Attribute:T65 Item:T66
+T65	Financial_attribute 1814 1820	demand
+T66	Commodity 1809 1813	fuel
+A2	Modality E19 Other
+T67	MODALITY_cue 1747 1755	expected
+T68	Position-high 1833 1837	peak
+E21	Position-high:T68 
+T69	Oversupply 1923 1930	surplus
+E22	Oversupply:T69 Place:T70 Difference:T72 Reference_point_time:T93 Forecast:T71
+T70	LOCATION 1916 1922	global
+T71	Forecast_target 1904 1913	forecasts
+T72	Production_unit 1934 1959	2 million barrels per day
+A4	Modality E22 Other
+T73	MODALITY_cue 1989 1995	expect
+T74	Movement-up-gain 2159 2164	risen
+E23	Movement-up-gain:T74 Attribute:T77 Item:T75 Supplier_Consumer:T76 Forecast:T78
+T75	Commodity 2064 2069	crude
+T76	COUNTRY 2059 2063	U.S.
+T77	Financial_attribute 2070 2076	stocks
+T78	Forecast_target 2142 2150	forecast
+A5	Modality E23 Other
+T79	Position-high 2107 2114	highest
+E24	Position-high:T79 Duration:T80
+T80	DURATION 2127 2135	80 years
+T81	Movement-up-gain 2546 2550	rose
+E25	Movement-up-gain:T81 Attribute:T82 Item:T83 Supplier_Consumer:T84
+T82	Financial_attribute 2539 2545	stocks
+T83	Commodity 2533 2538	crude
+T84	COUNTRY 2528 2532	U.S.
+T85	Negative_sentiment 991 999	concerns
+T86	Economic_item 1006 1012	growth
+T87	COUNTRY 1020 1050	world’s second largest economy
+T88	Production_unit 1281 1304	350,000 barrels per day
+T89	POLARITY_cue 1404 1415	rather than
+T90	ORGANIZATION 1362 1366	OPEC
+T91	DATE 1480 1484	June
+T92	DATE 1780 1798	the second quarter
+T93	DATE 1960 1982	between April and June
+T94	Movement-up-gain 2445 2450	build
+T95	Quantity 2454 2471	5 million barrels
+T96	Commodity 2433 2438	crude
+T97	Financial_attribute 2439 2444	stock
+E26	Negative_sentiment:T85 Item:T86 Type:T87
+E27	Movement-up-gain:T94 Difference:T95 Item:T96 Attribute:T97
+R1	Cause-Precondition Arg1:E2 Arg2:E1
+R2	Cause-Precondition Arg1:E4 Arg2:E3
+R3	Cause-Precondition Arg1:E5 Arg2:E3
+R4	Cause-Precondition Arg1:E6 Arg2:E3
+R7	Cause-Precondition Arg1:E17 Arg2:E16
+R8	Cause-Precondition Arg1:E15 Arg2:E17
+R9	Cause-Precondition Arg1:E20 Arg2:E19
+A3	Polarity E15 Negative
+A1	Intensity E8 Eased

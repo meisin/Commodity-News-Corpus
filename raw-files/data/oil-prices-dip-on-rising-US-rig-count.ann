@@ -1,0 +1,129 @@
+T1	Financial_attribute 30 39	Rig Count
+T2	COUNTRY 25 29	U.S.
+T3	Movement-up-gain 18 24	Rising
+E1	Movement-up-gain:T3 Supplier_Consumer:T2 Attribute:T1
+T4	Movement-down-loss 11 14	Dip
+E2	Movement-down-loss:T4 Attribute:T5 Item:T6
+T5	Financial_attribute 4 10	Prices
+T6	Commodity 0 3	Oil
+T7	Movement-down-loss 164 170	dipped
+E3	Movement-down-loss:T7 Reference_point_time:T8 Attribute:T9 Item:T10
+T8	DATE 174 180	Monday
+T9	Financial_attribute 157 163	prices
+T10	Commodity 153 156	Oil
+T11	Movement-down-loss 205 209	down
+E4	Movement-down-loss:T11 
+T12	Movement-up-gain 215 221	rising
+E5	Movement-up-gain:T12 Supplier_Consumer:T13 Attribute:T14
+T13	COUNTRY 222 226	U.S.
+T14	Financial_attribute 227 236	rig count
+T15	Movement-up-gain 261 270	increases
+E6	Movement-up-gain:T15 Supplier_Consumer:T17 Item:T16 Attribute:T18
+T16	Commodity 288 293	crude
+T17	COUNTRY 274 285	the country
+T18	Financial_attribute 294 300	output
+T19	Financial_attribute 316 323	Futures
+T20	Commodity 312 315	WTI
+T21	Commodity 302 311	Crude Oil
+T22	DATE 328 332	June
+T23	Movement-down-loss 409 413	down
+E7	Movement-down-loss:T23 Contract_date:T22 Attribute:T19 Item:T20 Difference:T24 Final_value:T92
+T24	PERCENTAGE 414 419	0.18%
+T25	Movement-down-loss 481 485	down
+E8	Movement-down-loss:T25 Contract_date:T26 Attribute:T27 Item:T28 Final_value:T30 Difference:T29
+T26	DATE 443 447	June
+T27	Financial_attribute 431 438	Futures
+T28	Commodity 421 430	Brent Oil
+T29	PERCENTAGE 486 491	0.08%
+T30	Price_unit 495 509	$74 per barrel
+T31	Movement-up-gain 642 647	added
+E9	Movement-up-gain:T31 Supplier_Consumer:T32 Difference:T33 Attribute:T34 Reference_point_time:T36 Final_value:T37
+T32	COUNTRY 628 632	U.S.
+T33	NUMBER 648 652	five
+T34	Financial_attribute 653 661	oil rigs
+T36	DATE 693 717	the week ending April 20
+T37	NUMBER 747 750	820
+T38	Position-high 756 763	highest
+E10	Position-high:T38 Reference_point_time:T39
+T39	DATE 770 780	March 2015
+T40	Movement-up-gain 786 792	rising
+E11	Movement-up-gain:T40 Attribute:T41
+T41	Financial_attribute 793 802	rig count
+T42	Movement-up-gain 821 830	increases
+E12	Movement-up-gain:T42 Item:T43 Attribute:T91 Supplier_Consumer:T44
+T45	Financial_attribute 679 689	production
+T46	Movement-up-gain 875 881	jumped
+E13	Movement-up-gain:T46 Difference:T47 Initial_reference_point:T48 Final_value:T49
+T47	NUMBER 885 894	a quarter
+T48	DATE 901 909	mid-2016
+T49	Production_unit 922 957	10.54 million barrels per day (bpd)
+T50	Movement-up-gain 990 994	more
+E14	Movement-up-gain:T50 Supplier_Consumer:T52 Difference:T51
+T51	Production_unit 999 1020	almost 11 million bpd
+T52	COUNTRY 964 970	Russia
+T53	Movement-down-loss 1122 1126	dips
+E15	Movement-down-loss:T53 Item:T54 Attribute:T55
+T54	Commodity 1130 1139	crude oil
+T55	Financial_attribute 1140 1146	prices
+T56	Grow-strong 1189 1196	healthy
+E16	Grow-strong:T56 Attribute:T57
+T57	Financial_attribute 1197 1203	demand
+T58	Cause-movement-down-loss 1223 1227	cuts
+E17	Cause-movement-down-loss:T58 Attribute:T59 Supplier_Consumer:T60
+T59	Financial_attribute 1216 1222	supply
+T60	ORGANIZATION 1239 1295	Organization of the Petroleum Exporting Countries (OPEC)
+T61	Cause-movement-down-loss 1352 1359	cutting
+E18	Cause-movement-down-loss:T61 Initial_reference_point:T63 Attribute:T62 Supplier_Consumer:T66 Supplier_Consumer2:T65 Supplier_Consumer3:T35
+T62	Financial_attribute 1360 1366	output
+T63	DATE 1373 1385	January 2017
+T65	COUNTRY 1303 1309	Russia
+T66	COUNTRY 1314 1341	several other oil producers
+T67	Oversupply 1421 1431	oversupply
+E19	Oversupply:T67 Modality_cue:T69
+T69	MODALITY_cue 1392 1399	attempt
+A2	Modality E19 Other
+T70	Cause-movement-up-gain 1436 1443	prop up
+E20	Cause-movement-up-gain:T70 Attribute:T71
+T71	Financial_attribute 1444 1450	prices
+T72	Cause-movement-down-loss 1512 1520	reducing
+E21	Cause-movement-down-loss:T72 Supplier_Consumer:T75 Attribute:T73 Item:T64
+T73	Financial_attribute 1549 1560	inventories
+T75	COUNTRY 1521 1543	industrialized nations
+T76	Cause-movement-up-gain 1845 1850	boost
+E22	Cause-movement-up-gain:T76 Attribute:T77 Supplier_Consumer:T81
+T77	Financial_attribute 1851 1857	prices
+T78	Financial_attribute 1733 1739	supply
+T79	Cause-movement-down-loss 1740 1749	restraint
+E23	Cause-movement-down-loss:T79 Attribute:T78 Supplier_Consumer:T80
+T80	COUNTRY 1680 1692	Saudi Arabia
+T81	COUNTRY 1778 1789	the kingdom
+T82	Embargo 1939 1948	sanctions
+E24	Embargo:T82 Modality_cue:T85 Imposer:T84 Imposee:T83
+T83	COUNTRY 1952 1956	Iran
+T84	COUNTRY 1923 1927	U.S.
+T85	MODALITY_cue 1928 1932	will
+T86	MODALITY_cue 1996 2001	could
+T87	Cause-movement-down-loss 2010 2017	tighten
+E25	Cause-movement-down-loss:T87 Modality_cue:T86 Type:T90 Item:T89 Attribute:T88 Intensity_cue:T93
+T88	Financial_attribute 2029 2037	supplies
+T89	Commodity 2025 2028	oil
+T90	LOCATION 2018 2024	global
+A5	Modality E25 Other
+T43	Commodity 839 844	crude
+A1	Intensity E19 Eased
+T91	Financial_attribute 845 855	production
+T44	COUNTRY 834 838	U.S.
+T35	ORGANIZATION 1297 1301	OPEC
+T64	Commodity 1545 1548	oil
+T68	Financial_attribute 1863 1869	prices
+T74	Commodity 1859 1862	Oil
+R1	Cause-Precondition Arg1:E1 Arg2:E2	
+R3	Cause-Precondition Arg1:E5 Arg2:E6	
+R2	Cause-Precondition Arg1:E6 Arg2:E3	
+T92	Price_unit 358 373	$68.28 a barrel
+R4	Cause-Precondition Arg1:E11 Arg2:E12	
+R5	Cause-Precondition Arg1:E18 Arg2:E19	
+R6	Cause-Precondition Arg1:E18 Arg2:E20	
+A3	Modality E24 Other
+A4	Intensity E25 Intensified
+T93	INTENSITY_cue 2002 2009	further

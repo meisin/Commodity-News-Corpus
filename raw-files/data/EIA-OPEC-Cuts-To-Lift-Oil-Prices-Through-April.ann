@@ -1,0 +1,125 @@
+T1	Cause-movement-down-loss 11 15	Cuts
+E1	Cause-movement-down-loss:T1 Supplier_Consumer:T2
+T2	ORGANIZATION 5 10	OPEC+
+T3	Commodity 24 27	Oil
+T4	Financial_attribute 28 34	Prices
+T5	Cause-movement-up-gain 19 23	Lift
+E2	Cause-movement-up-gain:T5 Item:T3 Attribute:T4 Reference_point_time:T6
+R1	Cause-Precondition Arg1:E1 Arg2:E2	
+T6	DATE 43 48	April
+T7	Financial_attribute 159 165	prices
+T8	Commodity 155 158	Oil
+T10	Position-high 200 204	high
+E3	Position-high:T10 Reference_point_time:T12 Modality_cue:T11 Attribute:T7 Item:T8
+T11	MODALITY_cue 171 177	likely
+T9	Commodity 237 248	Brent Crude
+T12	DATE 215 220	March
+A1	Modality E3 Other
+T13	Price_unit 266 296	between $65 and $70 per barrel
+T14	ORGANIZATION 308 313	OPEC+
+T15	Cause-movement-down-loss 370 374	cuts
+E4	Cause-movement-down-loss:T15 Attribute:T16 Reference_point_time:T17 Supplier_Consumer:T14
+T16	Financial_attribute 359 369	production
+T17	DATE 380 385	April
+R2	Cause-Precondition Arg1:E4 Arg2:E3	
+T18	Commodity 522 527	Brent
+T19	Financial_attribute 528 534	prices
+T20	Price_unit 546 567	$65 to $70 per barrel
+T21	DATE 571 576	March
+T22	Cause-movement-down-loss 668 688	keeping a tight rein
+E5	Cause-movement-down-loss:T22 Attribute:T23 Reference_point_time:T24 Supplier_Consumer:T25
+T23	Financial_attribute 692 702	production
+T24	DATE 706 711	April
+T25	ORGANIZATION 662 667	OPEC+
+T26	ORGANIZATION 737 742	OPEC+
+T27	Cause-movement-up-gain 767 772	raise
+E6	Cause-movement-up-gain:T27 Polarity_cue:T28 Supplier_Consumer:T26 Attribute:T29 Reference_point_time:T30
+T28	POLARITY_cue 760 763	not
+A2	Polarity E6 Negative
+T29	Financial_attribute 773 783	production
+T30	DATE 789 794	April
+T31	Cause-movement-up-gain 813 822	increases
+E7	Cause-movement-up-gain:T31 Supplier_Consumer:T32 Supplier_Consumer2:T33
+T32	COUNTRY 827 833	Russia
+T33	COUNTRY 838 848	Kazakhstan
+T34	COUNTRY 895 907	Saudi Arabia
+T35	Production_unit 930 943	1 million bpd
+T36	Cause-movement-down-loss 944 947	cut
+E8	Cause-movement-down-loss:T36 Difference:T35 Supplier_Consumer:T34 Reference_point_time:T37
+T37	DATE 953 958	April
+T38	Cause-movement-down-loss 1048 1052	cuts
+E9	Cause-movement-down-loss:T38 Difference:T40 Supplier_Consumer:T41 Intensity_cue:T39
+T39	INTENSITY_cue 1037 1043	easing
+T40	Production_unit 1056 1067	500,000 bpd
+T41	ORGANIZATION 1027 1036	the group
+T42	Cause-movement-down-loss 1108 1111	cut
+E10	Cause-movement-down-loss:T42 Type:T43 Intensity_cue:T44
+T43	NATIONALITY 1076 1082	Saudis
+T44	INTENSITY_cue 1083 1092	reversing
+T45	Price_unit 1182 1196	$64 per barrel
+T46	Commodity 1159 1164	Brent
+T47	Financial_attribute 1165 1171	prices
+T48	Price_unit 1216 1228	$58 a barrel
+T49	DATE 1232 1255	the second half of 2021
+T50	Economic_item 1336 1346	oil market
+T51	Financial_attribute 1280 1285	price
+T52	Movement-up-gain 1407 1411	rise
+E11	Movement-up-gain:T52 Difference:T55 Attribute:T53 Item:T54 Reference_point_time:T56 Modality_cue:T62
+T53	Financial_attribute 1397 1403	prices
+T54	Commodity 1393 1396	oil
+T55	Price_unit 1419 1437	$70-$75 per barrel
+T56	DATE 1445 1450	April
+T57	Quantity 1486 1509	more than 1 million bpd
+T58	Cause-movement-down-loss 1467 1471	draw
+E12	Cause-movement-down-loss:T58 Attribute:T59 Difference:T57 Reference_point_time:T60
+T59	Financial_attribute 1461 1466	stock
+T60	DATE 1510 1520	next month
+T61	Financial_attribute 1536 1542	demand
+A5	Modality E11 Other
+T62	MODALITY_cue 1385 1392	expects
+T63	Grow-strong 1675 1683	recovery
+E13	Grow-strong:T63 Type:T64 Modality_cue:T66 Intensity_cue:T65
+T64	LOCATION 1668 1674	global
+T65	INTENSITY_cue 1647 1653	dampen
+T66	MODALITY_cue 1658 1667	tentative
+A7	Modality E13 Other
+R4	Cause-Precondition Arg1:E12 Arg2:E11	
+T67	Movement-up-gain 1628 1634	higher
+E14	Movement-up-gain:T67 Attribute:T68
+T68	Financial_attribute 1635 1641	prices
+R5	Cause-Precondition Arg1:E14 Arg2:E13	
+T69	Movement-up-gain 1793 1797	rise
+E15	Movement-up-gain:T69 Attribute:T70 Modality_cue:T71
+T70	Financial_attribute 1786 1792	demand
+T71	MODALITY_cue 1775 1780	signs
+A8	Modality E15 Other
+T72	Financial_attribute 1817 1827	production
+T73	Movement-flat 2006 2010	flat
+E16	Movement-flat:T73 Attribute:T76 Item:T75 Reference_point_time:T77 Supplier_Consumer:T92
+T74	ORGANIZATION 1911 1916	OPEC+
+T75	Commodity 1991 1994	oil
+T76	Financial_attribute 1995 2005	production
+T77	DATE 2014 2019	April
+T78	Financial_attribute 2050 2056	prices
+T79	Commodity 2044 2049	Brent
+T80	Price_unit 2065 2077	$80 a barrel
+T81	DATE 2081 2108	the third quarter this year
+T82	MONEY 2113 2116	$75
+T83	DATE 2120 2138	the second quarter
+T84	Movement-up-gain 2140 2142	up
+E17	Movement-up-gain:T84 Difference:T85
+T85	MONEY 2146 2148	$5
+R6	Cause-Precondition Arg1:E16 Arg2:E17	
+A3	Intensity E9 Eased
+A4	Intensity E10 Eased
+A6	Intensity E13 Eased
+T86	Movement-up-gain 611 616	above
+E18	Movement-up-gain:T86 Difference:T87 Initial_reference_point:T88
+T87	Price_unit 588 610	more than $10 a barrel
+T88	DATE 635 643	February
+T89	Economic_item 981 987	market
+T90	Movement-down-loss 1271 1279	downward
+E19	Movement-down-loss:T90 Attribute:T51 Modality_cue:T91
+A9	Modality E19 Other
+T91	MODALITY_cue 1263 1270	expects
+T92	ORGANIZATION 1968 1973	OPEC+

@@ -1,0 +1,61 @@
+T1	ORGANIZATION 217 231	European Union
+T4	COUNTRY 309 315	Russia
+T5	ORGANIZATION 737 739	EU
+T6	Embargo 1365 1374	sanctions
+E2	Embargo:T6 
+T2	Embargo 296 305	sanctions
+E1	Embargo:T2 Imposee:T4 Imposer:T1 Modality_cue:T11
+T3	Embargo 19 28	sanctions
+E3	Embargo:T3 Imposee:T8 Imposer:T9 Modality_cue:T10
+T8	COUNTRY 32 38	Russia
+T9	ORGANIZATION 0 2	EU
+T10	MODALITY_cue 3 9	agrees
+A1	Modality E3 Other
+T11	MODALITY_cue 240 249	agreement
+A2	Modality E1 Other
+T12	Commodity 611 614	oil
+T13	Commodity 638 641	gas
+A3	Modality E2 Other
+T15	Economic_item 1499 1506	economy
+T16	Embargo 5260 5269	sanctions
+E4	Embargo:T16 
+T7	Economic_item 4675 4690	primary markets
+T14	Economic_item 4698 4715	secondary markets
+T17	Economic_item 4717 4722	bonds
+T18	Economic_item 4727 4733	shares
+T19	Commodity 4073 4076	gas
+T20	Commodity 4108 4111	oil
+T21	Commodity 3995 3998	oil
+T22	Commodity 4229 4232	oil
+T23	Commodity 3231 3242	natural gas
+T24	Commodity 4018 4029	natural gas
+T25	Commodity 4147 4150	gas
+T26	Civil-unrest 1898 1906	fighting
+E5	Civil-unrest:T26 Place:T27 Place2:T28
+T27	NATIONALITY 1915 1924	Ukrainian
+T28	COUNTRY 1940 1947	Russian
+T29	Embargo 2686 2695	sanctions
+E6	Embargo:T29 Imposer:T41 Intensity_cue:T40
+T30	Embargo 1792 1801	sanctions
+E7	Embargo:T30 Modality_cue:T32 Intensity_cue:T31
+T31	INTENSITY_cue 1811 1831	ratcheted up further
+T32	MODALITY_cue 1802 1807	could
+A4	Intensity E7 Intensified
+A5	Modality E7 Other
+T33	Embargo 2311 2320	sanctions
+E8	Embargo:T33 
+T34	Embargo 2883 2892	sanctions
+E9	Embargo:T34 
+T35	Embargo 3605 3614	sanctions
+E10	Embargo:T35 Modality_cue:T36
+T36	MODALITY_cue 3596 3604	proposed
+A6	Modality E10 Other
+T37	Economic_item 3664 3671	economy
+T38	Economic_item 4475 4482	economy
+T39	Economic_item 3055 3062	economy
+T40	INTENSITY_cue 2680 2685	widen
+A7	Intensity E6 Intensified
+T41	STATE_OR_PROVINCE 2699 2705	Moscow
+T42	Economic_item 3102 3111	economies
+T43	Economic_item 4336 4341	bonds
+T44	Economic_item 4345 4351	shares

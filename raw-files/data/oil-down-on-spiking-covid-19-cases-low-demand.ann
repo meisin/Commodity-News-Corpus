@@ -1,0 +1,87 @@
+T1	Financial_attribute 40 46	Demand
+T2	Slow-weak 36 39	Low
+E1	Slow-weak:T2 Attribute:T1
+T3	Movement-up-gain 12 19	Spiking
+E2	Movement-up-gain:T3 
+T4	Movement-down-loss 4 8	Down
+E3	Movement-down-loss:T4 Item:T5
+T5	Commodity 0 3	Oil
+T6	Movement-down-loss 195 199	down
+E4	Movement-down-loss:T6 Item:T7 Reference_point_time:T8
+T7	Commodity 187 190	Oil
+T8	DATE 203 209	Friday
+T9	Movement-down-loss 330 334	fell
+E5	Movement-down-loss:T9 Difference:T10 Attribute:T11 Item:T12 Final_value:T13
+T10	PERCENTAGE 335 340	1.59%
+T11	Financial_attribute 322 329	futures
+T12	Commodity 312 321	Brent oil
+T13	MONEY 344 350	$42.84
+T14	Movement-down-loss 396 400	slid
+E6	Movement-down-loss:T14 Difference:T17 Attribute:T15 Item:T16 Final_value:T18
+T15	Financial_attribute 388 395	futures
+T16	Commodity 384 387	WTI
+T17	PERCENTAGE 401 406	1.97%
+T18	MONEY 410 416	$40.31
+T19	Commodity 423 428	Brent
+T20	Commodity 433 436	WTI
+T21	Financial_attribute 437 444	futures
+T22	Financial_attribute 483 489	demand
+T23	Negative_sentiment 472 477	Fears
+E7	Negative_sentiment:T23 Attribute:T22
+T24	Movement-up-gain 512 517	gains
+E8	Movement-up-gain:T24 Item:T25 Intensity_cue:T57
+T25	Commodity 522 525	oil
+T26	Movement-up-gain 561 567	builds
+E9	Movement-up-gain:T26 Supplier_Consumer:T27 Type:T28
+T27	COUNTRY 575 583	the U.S.
+T28	LOCATION 588 594	Europe
+T29	Cause-movement-down-loss 611 617	reduce
+E10	Cause-movement-down-loss:T29 Modality_cue:T30 Item:T31
+T30	MODALITY_cue 596 607	threatening
+T31	Economic_item 618 635	economic activity
+T32	Position-high 706 710	high
+E11	Position-high:T32 
+T33	Movement-up-gain 776 782	higher
+E12	Movement-up-gain:T33 Modality_cue:T34
+T34	MODALITY_cue 791 799	expected
+A2	Modality E12 Other
+T35	Movement-up-gain 812 819	Surging
+E13	Movement-up-gain:T35 
+T36	Negative_sentiment 876 884	concerns
+E14	Negative_sentiment:T36 Intensity_cue:T58
+T37	Slow-weak 890 896	weaker
+E15	Slow-weak:T37 Item:T39 Attribute:T38
+T38	Financial_attribute 902 908	demand
+T39	Commodity 897 901	fuel
+T40	Financial_attribute 1656 1662	supply
+T41	Cause-movement-down-loss 1663 1667	cuts
+E16	Cause-movement-down-loss:T41 Attribute:T40 Reference_point_time:T42 Supplier_Consumer:T43
+T42	DATE 1678 1682	2021
+T43	ORGANIZATION 1547 1615	Organization of Petroleum Exporting Countries and its allies (OPEC+)
+T44	Movement-up-gain 1855 1860	build
+E17	Movement-up-gain:T44 Difference:T45 Reference_point_time:T46 Forecaster:T56 Attribute:T51 Item:T50
+T45	Quantity 1834 1854	4.278-million-barrel
+T46	DATE 1868 1890	the week ending Nov. 6
+T47	Movement-down-loss 1913 1917	draw
+E18	Movement-down-loss:T47 Difference:T48 Forecast:T49
+T48	Quantity 1921 1936	913,000 barrels
+T49	Forecast_target 1904 1912	forecast
+T50	Commodity 1721 1730	Crude oil
+T51	Financial_attribute 1731 1737	supply
+T52	Commodity 1938 1947	Crude oil
+T53	Financial_attribute 1948 1954	supply
+T54	Cause-movement-down-loss 2018 2022	draw
+E19	Cause-movement-down-loss:T54 Difference:T55 Reference_point_time:T59 Attribute:T53 Item:T52
+T55	Quantity 2026 2047	5.147 million barrels
+T56	ORGANIZATION 1759 1803	U.S. Energy Information Administration (EIA)
+A1	Modality E10 Other
+R1	Cause-Precondition Arg1:E1 Arg2:E3	
+T57	INTENSITY_cue 495 501	capped
+A3	Intensity E8 Eased
+R2	Cause-Precondition Arg1:E7 Arg2:E8	
+T58	INTENSITY_cue 869 875	fanned
+A4	Intensity E14 Intensified
+T59	DATE 2001 2008	Tuesday
+T60	Financial_attribute 304 310	prices
+T61	Commodity 1373 1376	WTI
+T62	Financial_attribute 1377 1384	futures

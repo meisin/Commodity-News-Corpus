@@ -1,0 +1,142 @@
+T1	Movement-down-loss 6 11	drops
+E1	Movement-down-loss:T1 Item:T5
+T2	Financial_attribute 20 31	inventories
+T3	Movement-up-gain 32 37	surge
+E2	Movement-up-gain:T3 Attribute:T2 Supplier_Consumer:T4
+T4	COUNTRY 15 19	U.S.
+T5	Commodity 0 5	Crude
+T6	Movement-down-loss 163 170	dropped
+E3	Movement-down-loss:T6 Reference_point_time:T9 Attribute:T8
+T7	Movement-up-gain 220 227	shot up
+E4	Movement-up-gain:T7 Reference_point_time:T12 Attribute:T10 Supplier_Consumer:T11
+T8	Financial_attribute 156 162	prices
+T9	DATE 174 183	Wednesday
+T10	Financial_attribute 209 219	stockpiles
+T11	COUNTRY 204 208	U.S.
+T12	DATE 228 237	last week
+T13	Negative_sentiment 247 255	concerns
+E5	Negative_sentiment:T13 
+T14	Oversupply 281 299	awash in crude oil
+E6	Oversupply:T14 Place:T16
+T15	Economic_item 265 272	economy
+T16	COUNTRY 260 264	U.S.
+T17	Commodity 150 155	Crude
+T18	Movement-down-loss 572 576	down
+E7	Movement-down-loss:T18 Contract_date:T21 Difference:T19 Reference_point_time:T22 Final_value:T20 Attribute:T107
+T19	PERCENTAGE 577 582	1.08%
+T20	Price_unit 586 602	$100.03 a barrel
+T21	DATE 549 554	April
+T22	DATE 606 613	Tuesday
+T23	Commodity 621 624	oil
+T24	Financial_attribute 625 632	futures
+T25	Price_unit 664 679	$97.14 a barrel
+T26	Position-low 685 688	low
+E8	Position-low:T26 Final_value:T25 Initial_reference_point:T27 Attribute:T24 Item:T23
+T27	DATE 694 700	Feb. 7
+T28	Price_unit 720 736	$102.89 a barrel
+T29	Position-high 747 751	high
+E9	Position-high:T29 Reference_point_time:T30 Final_value:T28
+T30	DATE 738 744	Friday
+T33	Financial_attribute 850 861	inventories
+T34	Movement-up-gain 862 866	rose
+E10	Movement-up-gain:T34 Difference:T35 Attribute:T33 Reference_point_time:T36 Forecaster:T32 Item:T31 Supplier_Consumer:T108
+T35	Production_unit 870 889	6.2 million barrels
+T36	DATE 893 915	the week ended March 7
+T37	Production_unit 954 972	2.2-million barrel
+T38	Movement-up-gain 973 981	increase
+E11	Movement-up-gain:T38 Difference:T37 Modality_cue:T39
+T39	MODALITY_cue 935 947	expectations
+T40	Financial_attribute 1004 1015	inventories
+T42	Production_unit 1025 1043	370 million barrel
+T43	Commodity 1102 1110	gasoline
+T44	Financial_attribute 1111 1122	inventories
+T45	Movement-down-loss 1123 1132	decreased
+E12	Movement-down-loss:T45 Difference:T46 Attribute:T44 Item:T43
+T46	Production_unit 1136 1155	5.2 million barrels
+T47	Movement-down-loss 1185 1189	drop
+E13	Movement-down-loss:T47 Difference:T49 Forecast:T48
+T48	Forecast_target 1169 1178	forecasts
+T49	Production_unit 1193 1210	2 million barrels
+A2	Modality E13 Other
+T50	Financial_attribute 1229 1239	stockpiles
+T51	Commodity 1218 1228	distillate
+T52	Movement-down-loss 1240 1249	decreased
+E14	Movement-down-loss:T52 Attribute:T50 Item:T51 Difference:T53
+T53	Production_unit 1253 1268	533,000 barrels
+T54	Cause-movement-down-loss 1295 1305	withdrawal
+E15	Cause-movement-down-loss:T54 Difference:T55 Modality_cue:T56
+T55	Production_unit 1309 1324	867,000 barrels
+T56	MODALITY_cue 1276 1288	expectations
+A3	Modality E15 Other
+T57	Financial_attribute 1330 1336	prices
+T58	Commodity 1326 1329	Oil
+T59	Production_unit 1416 1433	5 million barrels
+T60	Commodity 1437 1440	oil
+T61	Negative_sentiment 1708 1716	concerns
+E16	Negative_sentiment:T61 
+T62	Cause-movement-down-loss 1752 1760	dampened
+E17	Cause-movement-down-loss:T62 Attribute:T63 Item:T64
+T63	Financial_attribute 1761 1767	demand
+T64	Commodity 1794 1797	oil
+T65	Movement-down-loss 1869 1873	fell
+E18	Movement-down-loss:T65 Difference:T68 Attribute:T66 Type:T67 Reference_point_time:T69
+T66	Financial_attribute 1861 1868	exports
+T67	NATIONALITY 1853 1860	Chinese
+T68	PERCENTAGE 1874 1879	18.1%
+T69	DATE 1891 1899	February
+T70	PERCENTAGE 1928 1932	6.8%
+T71	Movement-up-gain 1933 1941	increase
+E19	Movement-up-gain:T71 Difference:T70 Modality_cue:T72
+T72	MODALITY_cue 1909 1921	expectations
+A4	Modality E19 Other
+T73	Movement-up-gain 1955 1959	rise
+E20	Movement-up-gain:T73 Difference:T74 Reference_point_time:T75
+T74	PERCENTAGE 1963 1968	10.6%
+T75	DATE 1972 1979	January
+T76	Movement-down-loss 2049 2055	slowed
+E21	Movement-down-loss:T76 Initial_value:T80 Supplier_Consumer:T78 Reference_point_time:T81 Final_value:T77
+T77	PERCENTAGE 2059 2063	2.0%
+T78	COUNTRY 2043 2048	China
+T79	DATE 2067 2075	February
+T80	PERCENTAGE 2082 2086	2.5%
+T81	DATE 2090 2097	January
+T82	Commodity 2146 2149	oil
+T83	Cause-movement-up-gain 2201 2214	strengthening
+E22	Cause-movement-up-gain:T83 Attribute:T84
+T84	Financial_attribute 2215 2221	demand
+T85	Movement-down-loss 2315 2319	down
+E23	Movement-down-loss:T85 Contract_date:T86 Attribute:T87 Item:T88 Difference:T89 Final_value:T90
+T86	DATE 2295 2300	April
+T87	Financial_attribute 2283 2290	futures
+T88	Commodity 2273 2282	Brent oil
+T89	PERCENTAGE 2320 2325	0.70%
+T90	Price_unit 2341 2359	US$107.13 a barrel
+T91	Commodity 2390 2395	Brent
+T92	Commodity 2400 2410	U.S. crude
+T93	Price_unit 2430 2446	US$9.27 a barrel
+T94	Commodity 338 367	West Texas Intermediate crude
+T95	DATE 384 389	April
+T96	Price_unit 400 415	$97.86 a barrel
+T97	Movement-down-loss 437 441	down
+E24	Movement-down-loss:T97 Difference:T98 Final_value:T96 Contract_date:T95 Item:T94
+T98	PERCENTAGE 442 447	2.17%
+T99	Commodity 465 468	oil
+T100	Financial_attribute 469 476	futures
+T101	Position-low 491 494	low
+E25	Position-low:T101 Final_value:T102 Attribute:T100 Item:T99
+T102	Price_unit 498 513	$97.57 a barrel
+T103	Position-high 520 524	high
+E26	Position-high:T103 Final_value:T104
+T104	Price_unit 528 543	$99.63 a barrel
+T105	Financial_attribute 2411 2420	contracts
+T106	DATE 1051 1060	last week
+T32	ORGANIZATION 753 795	The U.S. Energy Information Administration
+T107	Financial_attribute 555 563	contract
+T31	Commodity 840 849	crude oil
+T108	COUNTRY 835 839	U.S.
+T41	Commodity 994 1003	crude oil
+A1	Modality E11 Other
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+R2	Cause-Precondition Arg1:E4 Arg2:E6	
+R3	Cause-Precondition Arg1:E6 Arg2:E3	
+T109	Economic_item 1744 1751	economy

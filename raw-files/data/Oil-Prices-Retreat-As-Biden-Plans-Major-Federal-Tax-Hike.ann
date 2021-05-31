@@ -1,0 +1,36 @@
+T1	Movement-down-loss 11 18	Retreat
+E1	Movement-down-loss:T1 Attribute:T2 Item:T3
+T2	Financial_attribute 4 10	Prices
+T3	Commodity 0 3	Oil
+T4	Forecast_target 207 216	forecasts
+T5	Movement-down-loss 221 226	lower
+E2	Movement-down-loss:T5 Supplier_Consumer:T6 Attribute:T7 Forecast:T4
+T6	ORGANIZATION 227 232	OPEC+
+T7	Financial_attribute 233 239	output
+T8	Slow-weak 247 253	weaker
+E3	Slow-weak:T8 Item:T9
+T9	Economic_item 254 260	dollar
+T10	Movement-down-loss 277 285	tumbling
+E4	Movement-down-loss:T10 Attribute:T11 Item:T12 Reference_point_time:T13
+T11	Financial_attribute 266 272	prices
+T12	Commodity 262 265	oil
+R1	Cause-Precondition Arg1:E3 Arg2:E4	
+R2	Cause-Precondition Arg1:E2 Arg2:E4	
+T13	DATE 286 298	this morning
+T14	Commodity 304 307	WTI
+T15	Movement-down-loss 313 318	below
+E5	Movement-down-loss:T15 Item:T14 Difference:T16
+T16	MONEY 319 325	$64.50
+T17	Movement-down-loss 353 357	drop
+E6	Movement-down-loss:T17 
+T18	Economic_item 458 481	corporate profit growth
+T20	MODALITY_cue 445 450	could
+T19	Oversupply 1019 1029	oversupply
+E7	Oversupply:T19 
+T21	Grow-strong 1061 1065	grew
+E8	Grow-strong:T21 Initial_reference_point:T25 Supplier_Consumer:T24 Attribute:T23
+T23	Financial_attribute 1038 1048	stockpiles
+T24	COUNTRY 1056 1060	U.S.
+T25	DATE 1069 1081	recent weeks
+T22	Slow-weak 980 987	bearish
+E9	Slow-weak:T22 

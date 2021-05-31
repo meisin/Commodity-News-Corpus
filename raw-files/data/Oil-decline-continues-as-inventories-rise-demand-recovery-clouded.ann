@@ -1,0 +1,105 @@
+T1	Movement-down-loss 6 13	decline
+E1	Movement-down-loss:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	Grow-strong 52 60	recovery
+E2	Grow-strong:T3 Attribute:T4 Intensity_cue:T5
+T4	Financial_attribute 45 51	demand
+T5	INTENSITY_cue 61 68	clouded
+T6	Financial_attribute 27 38	inventories
+T7	Movement-up-gain 39 43	rise
+E3	Movement-up-gain:T7 Attribute:T6
+R1	Cause-Precondition Arg1:E3 Arg2:E1	
+R2	Cause-Precondition Arg1:E2 Arg2:E1	
+T8	Movement-down-loss 210 218	declined
+E4	Movement-down-loss:T8 Duration:T11 Attribute:T9 Item:T10 Reference_point_time:T12
+T9	Financial_attribute 203 209	prices
+T10	Commodity 199 202	Oil
+T11	DURATION 225 250	fifth consecutive session
+T12	DATE 254 262	Thursday
+T13	PERCENTAGE 278 280	1%
+T14	Movement-down-loss 263 270	falling
+E5	Movement-down-loss:T14 Difference:T13
+T15	Movement-up-gain 318 326	increase
+E6	Movement-up-gain:T15 Item:T17 Attribute:T18
+T16	Commodity 330 340	U.S. crude
+T17	Commodity 345 349	fuel
+T18	Financial_attribute 350 361	inventories
+E7	Movement-up-gain:T15 Item:T16 Attribute:T18
+R4	Cause-Precondition Arg1:E6 Arg2:E4	
+R5	Cause-Precondition Arg1:E7 Arg2:E4	
+T19	Financial_attribute 423 429	demand
+T20	Grow-strong 430 438	recovery
+E8	Grow-strong:T20 Attribute:T19 Modality_cue:T21 Intensity_cue:T22
+A3	Modality E8 Other
+T21	MODALITY_cue 407 416	prospects
+T22	INTENSITY_cue 395 402	clouded
+T23	Movement-down-loss 456 460	down
+E9	Movement-down-loss:T23 Difference:T25 Difference2:T26 Item:T24 Final_value:T27
+T24	Commodity 440 451	Brent crude
+T25	MONEY 461 469	74 cents
+T26	PERCENTAGE 474 478	1.1%
+T27	Price_unit 483 498	$67.26 a barrel
+T28	Movement-down-loss 517 525	dropping
+E10	Movement-down-loss:T28 Difference:T29 Reference_point_time:T30
+T29	PERCENTAGE 526 530	0.6%
+T30	DATE 534 543	Wednesday
+T31	Commodity 545 553	U.S. oil
+T32	Movement-down-loss 563 567	down
+E11	Movement-down-loss:T32 Difference:T33 Difference2:T34 Final_value:T35 Item:T31
+T33	MONEY 568 576	65 cents
+T34	PERCENTAGE 581 583	1%
+T35	Price_unit 588 603	$63.95 a barrel
+T36	Movement-down-loss 612 618	fallen
+E12	Movement-down-loss:T36 Difference:T37
+T37	PERCENTAGE 619 623	0.3%
+T38	PERCENTAGE 677 679	3%
+T39	Movement-down-loss 665 669	down
+E13	Movement-down-loss:T39 Difference:T38
+T40	Movement-down-loss 707 715	declines
+E14	Movement-down-loss:T40 Duration:T41
+T41	DURATION 689 702	last five day
+T42	Movement-up-gain 781 786	risen
+E15	Movement-up-gain:T42 Attribute:T44 Item:T43 Duration:T45
+T43	Commodity 753 763	U.S. crude
+T44	Financial_attribute 764 775	inventories
+T45	DURATION 791 810	four straight weeks
+T46	Movement-down-loss 921 928	decline
+E16	Movement-down-loss:T46 Modality_cue:T47
+T47	MODALITY_cue 908 918	estimating
+A4	Modality E16 Other
+T48	Movement-up-gain 1006 1015	increased
+E17	Movement-up-gain:T48 Difference:T51 Attribute:T49 Item:T50 Reference_point_time:T52
+T49	Financial_attribute 994 1005	inventories
+T50	Commodity 983 993	U.S. crude
+T51	Quantity 1019 1038	2.4 million barrels
+T52	DATE 1039 1048	last week
+T53	Quantity 1201 1217	1 million barrel
+T54	Movement-down-loss 1218 1225	decline
+E18	Movement-down-loss:T54 Modality_cue:T55
+T55	MODALITY_cue 1189 1198	estimated
+A5	Modality E18 Other
+T56	Financial_attribute 1228 1234	Stocks
+T57	Commodity 1238 1246	gasoline
+T58	Commodity 1251 1257	diesel
+T59	Movement-up-gain 1258 1267	increased
+E19	Movement-up-gain:T59 Item:T58 Attribute:T56
+E20	Movement-up-gain:T59 Item:T57 Attribute:T56
+T60	Movement-down-loss 1310 1317	decline
+E21	Movement-down-loss:T60 Modality_cue:T61
+T61	MODALITY_cue 1276 1288	expectations
+A6	Modality E21 Other
+T62	Slow-weak 1367 1374	bearish
+E22	Slow-weak:T62 Attribute:T63 Supplier_Consumer:T64
+T63	Financial_attribute 1326 1335	inventory
+T64	COUNTRY 1321 1325	U.S.
+T65	Quantity 1487 1506	500 million barrels
+T66	Slow-weak 1735 1743	slowdown
+E23	Slow-weak:T66 
+A1	Intensity E2 Eased
+T67	Financial_attribute 1719 1725	demand
+T68	Grow-strong 1868 1876	recovery
+E24	Grow-strong:T68 Item:T69 Attribute:T70 Modality_cue:T71
+T69	Commodity 1880 1884	fuel
+T70	Financial_attribute 1885 1888	use
+T71	MODALITY_cue 1849 1861	expectations
+A2	Modality E24 Other

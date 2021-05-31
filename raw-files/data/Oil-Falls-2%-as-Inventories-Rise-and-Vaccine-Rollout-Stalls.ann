@@ -1,0 +1,107 @@
+T1	Financial_attribute 16 27	Inventories
+T2	Movement-up-gain 28 32	Rise
+E1	Movement-up-gain:T2 Attribute:T1
+T3	Movement-down-loss 4 9	Falls
+E2	Movement-down-loss:T3 Item:T4 Difference:T5
+T4	Commodity 0 3	Oil
+T5	PERCENTAGE 10 12	2%
+R1	Cause-Precondition Arg1:E1 Arg2:E2	
+T6	Movement-down-loss 197 201	fell
+E3	Movement-down-loss:T6 Reference_point_time:T9 Attribute:T7 Item:T8
+T7	Financial_attribute 190 196	prices
+T8	Commodity 186 189	Oil
+T9	DATE 229 237	Thursday
+T10	Grow-strong 243 251	stronger
+E4	Grow-strong:T10 Item:T11
+T11	Economic_item 252 258	dollar
+R2	Cause-Precondition Arg1:E4 Arg2:E3	
+T12	Movement-up-gain 270 278	increase
+E5	Movement-up-gain:T12 Item:T13 Attribute:T15
+T13	Commodity 282 292	U.S. crude
+T14	Commodity 297 301	fuel
+T15	Financial_attribute 302 313	inventories
+E6	Movement-up-gain:T12 Item:T14 Attribute:T15
+R3	Cause-Precondition Arg1:E6 Arg2:E3	
+R4	Cause-Precondition Arg1:E5 Arg2:E3	
+T16	Movement-down-loss 395 399	fell
+E7	Movement-down-loss:T16 Difference:T18 Difference2:T19 Final_value:T20 Item:T17
+T17	Commodity 383 394	Brent crude
+T18	MONEY 400 405	$1.47
+T19	PERCENTAGE 410 415	2.16%
+T20	Price_unit 420 435	$66.53 a barrel
+T21	Commodity 449 457	U.S. oil
+T22	Movement-down-loss 462 466	down
+E8	Movement-down-loss:T22 Item:T21 Difference:T23 Difference2:T24 Final_value:T25
+T23	MONEY 467 472	$1.50
+T24	PERCENTAGE 477 482	2.32%
+T25	MONEY 487 493	$63.10
+T26	Movement-down-loss 500 508	shedding
+E9	Movement-down-loss:T26 Difference:T27
+T27	PERCENTAGE 509 513	0.3%
+T28	Movement-down-loss 558 562	down
+E10	Movement-down-loss:T28 Difference:T29 Duration:T30
+T29	PERCENTAGE 563 575	more than 4%
+T30	DURATION 585 599	past five days
+T31	Movement-up-gain 664 669	build
+E11	Movement-up-gain:T31 Item:T32 Attribute:T33
+T32	Commodity 673 681	U.S. oil
+T33	Financial_attribute 682 693	inventories
+T34	Cause-movement-up-gain 872 877	boost
+E12	Cause-movement-up-gain:T34 
+T35	Movement-up-gain 930 937	upwards
+E13	Movement-up-gain:T35 Item:T36 Supplier_Consumer:T37
+T36	Economic_item 897 912	economic growth
+T37	COUNTRY 892 896	U.S.
+T38	Economic_item 944 956	unemployment
+T39	MODALITY_cue 960 968	expected
+T40	Movement-down-loss 972 979	decline
+E14	Movement-down-loss:T40 Modality_cue:T39 Item:T38
+A1	Modality E14 Other
+T41	Commodity 1064 1067	oil
+T42	Movement-up-gain 990 994	rise
+E15	Movement-up-gain:T42 Item:T43
+T43	Economic_item 1015 1021	dollar
+T44	Financial_attribute 1125 1136	inventories
+T45	Commodity 1114 1124	U.S. crude
+T46	Movement-up-gain 1142 1147	risen
+E16	Movement-up-gain:T46 Attribute:T44 Item:T45 Duration:T47
+T47	DURATION 1152 1171	four straight weeks
+T48	Movement-up-gain 1347 1351	rose
+E17	Movement-up-gain:T48 Difference:T51 Attribute:T50 Item:T49 Reference_point_time:T52
+T49	Commodity 1324 1334	U.S. crude
+T50	Financial_attribute 1335 1346	inventories
+T51	Quantity 1355 1374	2.4 million barrels
+T52	DATE 1375 1384	last week
+T53	Movement-down-loss 1554 1561	decline
+E18	Movement-down-loss:T53 Difference:T54 Forecast:T56 Supplier_Consumer:T55
+T54	Quantity 1537 1553	1 million barrel
+T55	ORGANIZATION 1470 1504	American Petroleum Institute (API)
+T56	Forecast_target 1505 1514	estimated
+T57	Financial_attribute 1726 1732	demand
+T58	Commodity 1720 1725	crude
+T59	Movement-down-loss 1714 1719	Lower
+E19	Movement-down-loss:T59 Item:T58 Attribute:T57
+T60	Movement-up-gain 1809 1815	higher
+E20	Movement-up-gain:T60 Attribute:T61
+T61	Financial_attribute 1816 1822	prices
+R6	Cause-Precondition Arg1:E20 Arg2:E19	
+T62	Commodity 1853 1858	crude
+T63	Grow-strong 2061 2069	recovery
+E21	Grow-strong:T63 Modality_cue:T67 Item:T64 Attribute:T65 Intensity_cue:T66
+T64	Commodity 2073 2077	fuel
+T65	Financial_attribute 2078 2081	use
+A3	Modality E21 Other
+T66	INTENSITY_cue 2033 2041	tempered
+T67	MODALITY_cue 2042 2054	expectations
+T68	Financial_attribute 2120 2126	supply
+T69	Movement-up-gain 2235 2243	increase
+E22	Movement-up-gain:T69 Initial_reference_point:T70
+T70	DATE 2249 2252	May
+A2	Intensity E21 Eased
+T71	Commodity 739 742	oil
+T72	Forecast_target 743 750	outlook
+T73	Movement-up-gain 1317 1322	gains
+E23	Movement-up-gain:T73 Intensity_cue:T74
+A4	Intensity E23 Eased
+T74	INTENSITY_cue 1305 1309	halt
+T75	Economic_item 1704 1711	economy

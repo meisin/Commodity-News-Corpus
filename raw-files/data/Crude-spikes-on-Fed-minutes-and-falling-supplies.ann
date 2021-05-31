@@ -1,0 +1,159 @@
+T1	Movement-up-gain 6 12	spikes
+E1	Movement-up-gain:T1 Item:T2
+T2	Commodity 0 5	Crude
+T3	Movement-down-loss 32 39	falling
+E2	Movement-down-loss:T3 Attribute:T4
+T4	Financial_attribute 40 48	supplies
+T5	Movement-up-gain 193 206	spiked higher
+E3	Movement-up-gain:T5 Reference_point_time:T8 Attribute:T6 Item:T7
+T6	Financial_attribute 185 192	futures
+T7	Commodity 175 184	Crude oil
+T8	DATE 235 244	Wednesday
+T9	Movement-down-loss 346 350	fell
+E4	Movement-down-loss:T9 Reference_point_time:T12 Item:T11 Attribute:T10
+T10	Financial_attribute 337 345	supplies
+T11	Commodity 333 336	oil
+T12	DATE 370 379	last week
+T13	Commodity 421 438	light sweet crude
+T14	Financial_attribute 439 446	futures
+T15	DATE 463 470	October
+T16	Price_unit 481 498	USD96.99 a barrel
+T17	PERCENTAGE 533 538	0.15%
+T18	Movement-up-gain 526 532	adding
+E5	Movement-up-gain:T18 Difference:T17 Attribute:T14 Item:T13 Final_value:T16 Contract_date:T15
+T19	Position-low 600 603	low
+E6	Position-low:T19 Final_value:T23 Attribute:T20
+T20	Financial_attribute 544 550	Prices
+T21	Position-high 618 622	high
+E7	Position-high:T21 Final_value:T22
+T22	Price_unit 626 643	USD97.15 a barrel
+T23	MONEY 580 588	USD96.28
+T24	Financial_attribute 645 651	Prices
+T25	Price_unit 660 677	USD97.83 a barrel
+T26	DATE 681 688	Tuesday
+T27	Position-high 694 701	highest
+E8	Position-high:T27 Initial_reference_point:T28 Reference_point_time:T26 Difference:T25 Attribute:T24
+T28	DATE 714 719	May 8
+T29	Position-high 943 949	higher
+E9	Position-high:T29 
+T30	Financial_attribute 966 974	contract
+T31	Price_unit 985 1002	USD96.78 a barrel
+T32	Movement-down-loss 1153 1161	declined
+E10	Movement-down-loss:T32 Difference:T36 Attribute:T33 Item:T34 Supplier_Consumer:T35 Reference_point_time:T37
+T33	Financial_attribute 1141 1152	inventories
+T34	Commodity 1131 1140	crude oil
+T35	COUNTRY 1126 1130	U.S.
+T36	Quantity 1165 1184	5.4 million barrels
+T37	DATE 1192 1212	week ended August 17
+T38	Movement-down-loss 1245 1252	decline
+E11	Movement-down-loss:T38 Modality_cue:T39 Difference:T40
+A1	Modality E11 Other
+T39	MODALITY_cue 1226 1238	expectations
+T40	Quantity 1256 1275	0.4 million barrels
+T41	Movement-down-loss 1297 1301	fell
+E12	Movement-down-loss:T41 Difference:T42 Attribute:T43 Item:T44 Supplier_Consumer:T45 Reference_point_time:T61
+T42	Quantity 1305 1324	3.7 million barrels
+T43	Financial_attribute 1288 1296	supplies
+T44	Commodity 1282 1287	crude
+T45	COUNTRY 1277 1281	U.S.
+T46	COUNTRY 1358 1362	U.S.
+T47	Commodity 1363 1372	crude oil
+T48	Financial_attribute 1373 1384	inventories
+T49	Quantity 1394 1415	360.7 million barrels
+T50	DATE 1422 1431	last week
+T51	Movement-down-loss 1469 1478	decreased
+E13	Movement-down-loss:T51 Difference:T54 Attribute:T53 Item:T52
+T52	Commodity 1448 1456	gasoline
+T53	Financial_attribute 1457 1468	inventories
+T54	Quantity 1482 1501	1.0 million barrels
+T55	MODALITY_cue 1513 1525	expectations
+T56	Movement-down-loss 1532 1539	decline
+E14	Movement-down-loss:T56 Difference:T57 Modality_cue:T55
+T57	Quantity 1543 1563	0.72 million barrels
+T58	Movement-down-loss 1571 1578	falling
+E15	Movement-down-loss:T58 Difference:T59 Reference_point_time:T60
+T59	Quantity 1582 1602	2.37 million barrels
+T61	DATE 1328 1346	the preceding week
+T60	DATE 1606 1624	the preceding week
+T62	Financial_attribute 2113 2119	demand
+T63	Commodity 2109 2112	oil
+T64	LOCATION 2102 2108	global
+T65	Financial_attribute 2129 2135	prices
+T66	Commodity 2125 2128	Oil
+T69	Grow-strong 2769 2776	bullish
+E16	Grow-strong:T69 Item:T67
+T70	Movement-up-gain 2819 2821	up
+E17	Movement-up-gain:T70 Difference:T73 Item:T71 Attribute:T72
+T71	Commodity 2806 2811	crude
+T72	Financial_attribute 2812 2818	prices
+T73	PERCENTAGE 2829 2832	20%
+T74	Position-low 2850 2853	low
+E18	Position-low:T74 Difference:T75 Reference_point_time:T76
+T75	Price_unit 2857 2874	USD77.27 a barrel
+T76	DATE 2878 2885	June 28
+T77	Financial_attribute 2890 2896	Prices
+T78	Economic_item 3052 3058	growth
+T79	LOCATION 3045 3051	global
+T80	Slow-weak 3040 3044	weak
+E19	Slow-weak:T80 Type:T79 Item:T78 Modality_cue:T68
+T81	MODALITY_cue 3071 3076	fears
+T82	Civil-unrest 3093 3101	violence
+E20	Civil-unrest:T82 Place:T83 Modality_cue:T81
+T83	COUNTRY 3105 3110	Syria
+T84	Geopolitical-tension 3125 3133	tensions
+E21	Geopolitical-tension:T84 Impacted_countries:T85 Impacted_countries2:T86
+T85	COUNTRY 3142 3146	Iran
+T86	Group 3151 3159	the West
+A3	Modality E20 Other
+T87	Commodity 3253 3262	Brent oil
+T88	Financial_attribute 3263 3270	futures
+T89	DATE 3275 3282	October
+T90	Movement-down-loss 3298 3302	down
+E22	Movement-down-loss:T90 Contract_date:T89 Attribute:T88 Item:T87 Difference:T91 Final_value:T92
+T91	PERCENTAGE 3303 3308	0.05%
+T92	Price_unit 3321 3339	USD114.59 a barrel
+T93	Financial_attribute 3385 3394	contracts
+T95	Commodity 3379 3384	crude
+T96	Price_unit 3407 3424	USD17.61 a barrel
+T97	Price_unit 3464 3482	USD115.53 a barrel
+T98	Commodity 3369 3374	Brent
+T99	Financial_attribute 3449 3455	prices
+T100	DATE 3486 3493	Tuesday
+T101	Position-high 3499 3506	highest
+E23	Position-high:T101 Initial_reference_point:T102
+T102	DATE 3513 3518	May 4
+T104	Commodity 3443 3448	Brent
+T105	Movement-up-gain 3578 3586	rallying
+E24	Movement-up-gain:T105 Difference:T106
+T106	PERCENTAGE 3594 3597	22%
+T107	Position-low 3607 3611	lows
+E25	Position-low:T107 Reference_point_time:T108
+T108	DATE 3623 3627	June
+T109	Negative_sentiment 3642 3650	concerns
+E26	Negative_sentiment:T109 
+T110	Cause-movement-down-loss 3656 3666	tightening
+E27	Cause-movement-down-loss:T110 Attribute:T111 Supplier_Consumer:T112
+T111	Financial_attribute 3667 3675	supplies
+T112	STATE_OR_PROVINCE 3685 3694	North Sea
+T113	NATIONALITY 3730 3737	Western
+T114	Embargo 3742 3751	sanctions
+E28	Embargo:T114 Imposer:T113 Imposee:T115 Item:T116 Attribute:T117 Reference_point_time:T118
+T115	NATIONALITY 3762 3769	Iranian
+T116	Commodity 3770 3773	oil
+T117	Financial_attribute 3774 3781	exports
+T118	DATE 3785 3791	July 1
+R1	Cause-Precondition Arg1:E2 Arg2:E1
+R2	Cause-Precondition Arg1:E4 Arg2:E3
+T119	Grow-strong 1844 1850	Upbeat
+E29	Grow-strong:T119 Supplier_Consumer:T120 Item:T121
+T120	COUNTRY 1851 1855	U.S.
+T121	Economic_item 1856 1869	economic data
+R8	Cause-Precondition Arg1:E27 Arg2:E24
+R9	Cause-Precondition Arg1:E28 Arg2:E24
+A2	Modality E14 Other
+T122	Financial_attribute 3529 3535	prices
+T103	Commodity 3523 3528	Brent
+T67	Economic_item 2747 2758	Oil markets
+A4	Modality E19 Other
+T68	MODALITY_cue 3030 3034	help
+T94	Financial_attribute 3186 3192	prices

@@ -1,0 +1,45 @@
+T1	Position-high 288 292	high
+E1	Position-high:T1 Attribute:T2 Item:T4 Supplier_Consumer:T3 Difference:T5 Reference_point_time:T6
+T2	Financial_attribute 269 276	exports
+T3	COUNTRY 254 258	U.S.
+T4	Commodity 259 268	crude oil
+T5	Production_unit 296 319	349,000 barrels per day
+T6	DATE 323 332	September
+T7	Movement-down-loss 334 338	down
+E2	Movement-down-loss:T7 Difference:T8 Initial_reference_point:T9
+T8	Production_unit 344 354	40,000 bpd
+T9	DATE 360 375	the prior month
+T10	Movement-down-loss 496 500	down
+E3	Movement-down-loss:T10 Initial_reference_point:T11 Attribute:T12 Initial_value:T13
+T11	DATE 506 510	July
+T12	Financial_attribute 511 517	export
+T13	Production_unit 529 540	389,000 bpd
+T14	Shortage 682 691	shortages
+E4	Shortage:T14 Item:T15 Reference_point_time:T16
+T15	Commodity 678 681	oil
+T16	DATE 695 704	the 1970s
+T17	Prohibiting 715 719	bars
+E5	Prohibiting:T17 Attribute:T18 Item:T19
+T18	Financial_attribute 720 727	exports
+T19	Commodity 753 758	crude
+T20	Financial_attribute 556 563	exports
+T21	Production_unit 587 598	281,000 bpd
+T22	Production_unit 627 638	378,000 bpd
+T23	Commodity 826 829	oil
+T24	Financial_attribute 861 867	export
+T25	Commodity 879 884	crude
+T26	Commodity 1239 1248	crude oil
+T27	Financial_attribute 1249 1255	export
+T28	Commodity 1334 1343	crude oil
+T29	Financial_attribute 1344 1350	export
+T30	COUNTRY 0 4	U.S.
+T31	DATE 5 14	September
+T32	Commodity 15 20	crude
+T33	Financial_attribute 21 28	exports
+T34	Production_unit 40 51	349,000 bpd
+T35	Position-high 32 36	high
+E6	Position-high:T35 Attribute:T33 Item:T32 Reference_point_time:T31 Supplier_Consumer:T30 Difference:T34
+T36	Position-low 469 475	lowest
+E7	Position-low:T36 Initial_reference_point:T37
+T37	DATE 482 485	May
+R1	Cause-Precondition Arg1:E4 Arg2:E5	

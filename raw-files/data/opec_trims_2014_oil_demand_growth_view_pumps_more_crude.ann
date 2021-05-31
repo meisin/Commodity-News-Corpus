@@ -1,0 +1,89 @@
+T1	Cause-movement-down-loss 235 242	trimmed
+E1	Cause-movement-down-loss:T1 Reference_point_time:T4 Type:T48 Item:T47 Duration:T49 Attribute:T3 Forecast:T63 Forecaster:T2
+T2	ORGANIZATION 230 234	OPEC
+T4	DATE 247 251	2014
+T5	Movement-up-gain 347 355	increase
+E2	Movement-up-gain:T5 Attribute:T6 Reference_point_time:T7
+T6	Financial_attribute 356 362	output
+T8	Civil-unrest 379 387	violence
+E3	Civil-unrest:T8 Place:T9 Place2:T10
+T9	COUNTRY 391 395	Iraq
+T10	COUNTRY 400 405	Libya
+T12	Cause-movement-down-loss 539 546	trimmed
+E4	Cause-movement-down-loss:T12 Type:T15 Item:T14 Reference_point_time:T16 Final_value:T17 Forecast:T13 Forecaster:T11 Attribute:T67
+T14	Commodity 583 586	oil
+T15	LOCATION 576 582	global
+T16	DATE 594 603	this year
+T17	Production_unit 607 641	1.10 million barrels per day (bpd)
+T18	Movement-down-loss 643 647	down
+E5	Movement-down-loss:T18 Difference:T19
+T19	Production_unit 648 658	30,000 bpd
+T20	Cause-movement-down-loss 703 706	cut
+E6	Cause-movement-down-loss:T20 Forecast:T22 Forecaster:T21
+T21	ORGANIZATION 696 698	it
+T22	Forecast_target 711 719	forecast
+T24	Cause-movement-down-loss 733 740	trimmed
+E7	Cause-movement-down-loss:T24 Item:T26 Reference_point_time:T27 Forecast:T65 Type:T64 Attribute:T23 Forecaster:T25 Final_value:T28
+T25	ORGANIZATION 723 727	OPEC
+T26	Commodity 772 781	crude oil
+T27	DATE 785 789	2014
+T28	Production_unit 793 810	29.61 million bpd
+T29	Movement-down-loss 812 816	down
+E8	Movement-down-loss:T29 Difference:T30 Forecast:T68
+T30	Production_unit 817 827	70,000 bpd
+T31	Movement-down-loss 867 872	lower
+E9	Movement-down-loss:T31 Attribute:T66 Forecast:T32
+T33	Movement-up-gain 895 901	higher
+E10	Movement-up-gain:T33 Attribute:T34 Supplier_Consumer:T52 Modality_cue:T62
+T34	Financial_attribute 926 932	supply
+T35	Movement-up-gain 986 990	rose
+E11	Movement-up-gain:T35 Attribute:T37 Reference_point_time:T36 Item:T38 Supplier_Consumer:T39
+T36	DATE 981 985	July
+T37	Financial_attribute 971 977	output
+T38	Commodity 965 970	crude
+T39	ORGANIZATION 958 962	OPEC
+T40	Movement-up-gain 1051 1060	increased
+E12	Movement-up-gain:T40 Difference:T41 Attribute:T53 Final_value:T42
+T41	Production_unit 1064 1075	170,000 bpd
+T42	Production_unit 1079 1096	29.91 million bpd
+T43	Movement-up-gain 1105 1111	higher
+E13	Movement-up-gain:T43 Attribute:T44 Supplier_Consumer:T45 Supplier_Consumer2:T46
+T44	Financial_attribute 1112 1118	supply
+T45	COUNTRY 1122 1127	Libya
+T46	COUNTRY 1132 1144	Saudi Arabia
+T47	Commodity 259 262	oil
+T48	LOCATION 252 258	global
+T49	DURATION 290 316	a second consecutive month
+T50	Financial_attribute 443 451	supplies
+T51	LOCATION 436 442	global
+T52	ORGANIZATION 917 925	non-OPEC
+T53	Financial_attribute 1044 1050	output
+T54	ORGANIZATION 0 4	OPEC
+T55	Cause-movement-down-loss 5 10	trims
+E14	Cause-movement-down-loss:T55 Reference_point_time:T56 Item:T57 Supplier_Consumer:T54 Attribute:T69 Forecast:T58
+T56	DATE 11 15	2014
+T57	Commodity 16 19	oil
+T59	Movement-up-gain 46 50	more
+E15	Movement-up-gain:T59 Item:T60
+T60	Commodity 51 56	crude
+T61	Movement-up-gain 419 423	more
+E16	Movement-up-gain:T61 Type:T51 Attribute:T50
+T11	ORGANIZATION 489 538	Organization of the Petroleum Exporting Countries
+T62	MODALITY_cue 902 913	expectation
+T3	Financial_attribute 263 276	demand growth
+T63	Forecast_target 277 285	forecast
+T23	Financial_attribute 757 763	demand
+T64	LOCATION 750 756	global
+T65	Forecast_target 741 749	forecast
+T32	Forecast_target 880 888	forecast
+T66	Financial_attribute 873 879	demand
+T13	Forecast_target 551 561	projection
+T68	Forecast_target 846 854	estimate
+T7	DATE 366 370	July
+A1	Modality E10 Other
+T67	Financial_attribute 587 593	demand
+T58	Forecast_target 34 38	view
+T69	Financial_attribute 20 33	demand growth
+R1	Cause-Precondition Arg1:E2 Arg2:E16	
+R2	Cause-Precondition Arg1:E9 Arg2:E7	
+R3	Cause-Precondition Arg1:E10 Arg2:E7	

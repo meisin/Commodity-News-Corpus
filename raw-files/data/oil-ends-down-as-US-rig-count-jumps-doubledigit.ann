@@ -1,0 +1,141 @@
+T1	Movement-down-loss 9 13	Down
+E1	Movement-down-loss:T1 Item:T5
+T2	Movement-up-gain 32 37	Jumps
+E2	Movement-up-gain:T2 Attribute:T3 Supplier_Consumer:T4
+T3	Financial_attribute 22 31	Rig Count
+T4	COUNTRY 17 21	U.S.
+T5	Commodity 0 3	Oil
+T6	Financial_attribute 212 218	prices
+T7	Commodity 208 211	Oil
+T8	Movement-down-loss 227 232	lower
+E3	Movement-down-loss:T8 Reference_point_time:T9 Attribute:T6 Item:T7
+T9	DATE 236 242	Friday
+T10	Movement-up-gain 280 286	jumped
+E4	Movement-up-gain:T10 Attribute:T11 Supplier_Consumer:T12 Reference_point_time:T13
+T11	Financial_attribute 270 279	rig count
+T12	COUNTRY 265 269	U.S.
+T13	DATE 302 311	this week
+T14	Commodity 324 329	crude
+T15	Movement-up-gain 385 391	adding
+E5	Movement-up-gain:T15 Attribute:T16
+T16	Financial_attribute 395 401	output
+T17	Slow-weak 412 424	questionable
+E6	Slow-weak:T17 Attribute:T18 Forecast:T97
+T19	Financial_attribute 471 475	Rigs
+T20	Commodity 498 501	oil
+T21	Position-low 575 578	low
+E7	Position-low:T21 Reference_point_time:T22 Difference:T98
+T22	DATE 554 563	last week
+T23	Commodity 587 590	oil
+T24	POLARITY_cue 664 667	not
+T25	Movement-up-gain 694 702	addition
+E8	Movement-up-gain:T25 Polarity_cue:T24 Attribute:T26 Initial_reference_point:T27
+T26	Financial_attribute 686 693	oil rig
+T27	DATE 709 717	February
+T28	Cause-movement-down-loss 783 792	decimated
+E9	Cause-movement-down-loss:T28 Attribute:T29 Item:T30
+T29	Financial_attribute 793 799	demand
+T30	Commodity 804 810	energy
+T31	Movement-up-gain 872 876	rise
+E10	Movement-up-gain:T31 Attribute:T32
+T32	Financial_attribute 880 884	rigs
+T33	Movement-up-gain 891 896	surge
+E11	Movement-up-gain:T33 Attribute:T34
+T35	Commodity 966 971	crude
+T36	Financial_attribute 972 978	prices
+T37	Price_unit 989 1003	$40 per barrel
+T38	Movement-up-gain 1032 1041	additions
+E12	Movement-up-gain:T38 Attribute:T39
+T39	Financial_attribute 1028 1031	rig
+T40	Movement-up-gain 1072 1076	rise
+E13	Movement-up-gain:T40 Item:T41
+T41	Commodity 1080 1089	shale oil
+T42	Movement-up-gain 1123 1129	higher
+E14	Movement-up-gain:T42 Attribute:T43
+T43	Financial_attribute 1130 1140	production
+T44	Economic_item 1150 1156	market
+T45	Commodity 1206 1211	crude
+T46	Financial_attribute 1212 1218	prices
+T47	Financial_attribute 1233 1242	rig count
+T48	Commodity 1229 1232	oil
+T49	COUNTRY 1224 1228	U.S.
+T50	Position-high 1252 1256	high
+E15	Position-high:T50 Final_value:T51 Reference_point_time:T52 Attribute:T47 Item:T48 Supplier_Consumer:T49
+T51	NUMBER 1260 1265	1,606
+T52	DATE 1269 1273	2014
+T53	Movement-up-gain 1294 1299	crash
+E16	Movement-up-gain:T53 Attribute:T54 Item:T56 Reference_point_time:T57 Final_value:T55
+T54	Financial_attribute 1288 1293	price
+T55	Price_unit 1319 1340	around $25 per barrel
+T56	Commodity 1310 1315	crude
+T57	DATE 1341 1356	two years later
+T58	Position-high 1371 1376	highs
+E17	Position-high:T58 Final_value:T59
+T59	MONEY 1377 1387	above $100
+T60	Commodity 1424 1447	West Texas Intermediate
+T62	Financial_attribute 1478 1485	futures
+T63	Movement-down-loss 1495 1499	down
+E18	Movement-down-loss:T63 Item:T60 Difference:T64 Difference2:T65 Final_value:T66
+T64	MONEY 1500 1508	48 cents
+T65	PERCENTAGE 1513 1517	1.1%
+T66	Price_unit 1522 1538	42.34 per barrel
+T67	Movement-down-loss 1601 1605	fell
+E19	Movement-down-loss:T67 Item:T74 Difference:T71 Difference2:T72 Final_value:T73
+T68	Financial_attribute 1593 1599	prices
+T69	Commodity 1587 1592	crude
+T70	LOCATION 1580 1586	global
+T71	MONEY 1606 1614	55 cents
+T72	PERCENTAGE 1619 1623	1.2%
+T73	MONEY 1658 1664	$44.35
+T74	Commodity 1554 1559	Brent
+T75	Movement-up-gain 1684 1688	rose
+E20	Movement-up-gain:T75 Item:T77 Difference:T76
+T76	PERCENTAGE 1689 1693	0.8%
+T77	Commodity 1680 1683	WTI
+T78	Movement-down-loss 1706 1710	fell
+E21	Movement-down-loss:T78 Item:T80
+T79	PERCENTAGE 1711 1713	1%
+T80	Commodity 1700 1705	Brent
+T81	Movement-down-loss 1784 1788	down
+E22	Movement-down-loss:T81 Attribute:T82 Item:T83
+T82	Financial_attribute 1764 1770	prices
+T83	Commodity 1758 1763	crude
+T84	Civil-unrest 1816 1825	ceasefire
+E23	Civil-unrest:T84 Place:T85
+A2	Polarity E23 Negative
+T85	COUNTRY 1838 1843	Libya
+T86	Movement-up-gain 1879 1887	increase
+E24	Movement-up-gain:T86 Modality_cue:T87 Type:T88 Attribute:T89
+T87	MODALITY_cue 1872 1875	set
+A3	Modality E24 Other
+T88	LOCATION 1888 1894	global
+T89	Financial_attribute 1895 1905	production
+T90	Slow-weak 2185 2191	slower
+E25	Slow-weak:T90 Modality_cue:T93 Item:T92 Attribute:T91
+T91	Financial_attribute 2161 2167	demand
+T92	Commodity 2172 2175	oil
+T93	MODALITY_cue 2176 2181	could
+A4	Modality E25 Other
+T94	Financial_attribute 2215 2225	production
+T95	Cause-movement-down-loss 2226 2230	cuts
+E26	Cause-movement-down-loss:T95 Supplier_Consumer:T96 Attribute:T94
+T96	ORGANIZATION 2247 2258	OPEC+ group
+T61	Commodity 1467 1477	U.S. crude
+T18	Financial_attribute 425 431	demand
+T97	Forecast_target 432 439	outlook
+T34	Financial_attribute 900 904	rigs
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+R2	Cause-Precondition Arg1:E4 Arg2:E3	
+T98	NUMBER 582 585	172
+A1	Polarity E8 Negative
+R3	Cause-Precondition Arg1:E15 Arg2:E16	
+R4	Cause-Precondition Arg1:E23 Arg2:E22	
+R5	Cause-Precondition Arg1:E23 Arg2:E24	
+T99	Cause-movement-down-loss 1963 1966	cut
+E27	Cause-movement-down-loss:T99 Attribute:T100 Item:T101 Intensity_cue:T102 Supplier_Consumer:T103
+T100	Financial_attribute 1952 1962	production
+T101	Commodity 1948 1951	oil
+T102	INTENSITY_cue 1910 1914	ruin
+A5	Intensity E27 Eased
+R6	Cause-Precondition Arg1:E23 Arg2:E27	
+T103	ORGANIZATION 1915 1919	OPEC

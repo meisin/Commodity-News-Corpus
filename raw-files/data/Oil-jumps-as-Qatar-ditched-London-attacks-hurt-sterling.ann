@@ -1,0 +1,187 @@
+T1	Movement-up-gain 4 9	jumps
+T2	Commodity 0 3	Oil
+T3	Geopolitical-tension 292 300	cut ties
+T4	COUNTRY 306 311	Qatar
+T5	DATE 315 321	Monday
+T6	Movement-up-gain 221 227	jumped
+T7	Commodity 217 220	Oil
+T8	Economic_item 328 336	sterling
+T9	Movement-down-loss 337 344	slipped
+T10	COUNTRY 234 246	Saudi Arabia
+T11	COUNTRY 248 253	Egypt
+T12	COUNTRY 259 279	United Arab Emirates
+T13	COUNTRY 284 291	Bahrain
+T14	Civil-unrest 363 370	attacks
+T15	STATE_OR_PROVINCE 374 380	London
+T16	Commodity 1047 1052	Brent
+T17	Movement-up-gain 1062 1070	advanced
+T18	PERCENTAGE 1071 1082	1.1 percent
+T19	Price_unit 1086 1101	$50.48 a barrel
+T20	Commodity 1108 1111	oil
+T21	COUNTRY 1103 1107	U.S.
+T22	Movement-up-gain 1124 1131	climbed
+T24	MONEY 1145 1151	$48.17
+T25	Movement-down-loss 1186 1193	dropped
+T26	PERCENTAGE 1194 1205	0.6 percent
+T27	Movement-down-loss 1232 1236	fell
+T28	Economic_item 1222 1230	Sterling
+T29	PERCENTAGE 1248 1259	0.3 percent
+T30	INTENSITY_cue 1267 1273	paring
+T31	Movement-down-loss 1278 1284	losses
+T32	Movement-down-loss 1294 1298	down
+T33	PERCENTAGE 1299 1310	0.2 percent
+T34	MONEY 1314 1321	$1.2868
+T35	DATE 1325 1331	Monday
+T36	Civil-unrest 35 42	attacks
+T37	Commodity 48 56	sterling
+T38	Slow-weak 43 47	hurt
+T39	STATE_OR_PROVINCE 28 34	London
+T40	Financial_attribute 1166 1177	stock index
+T41	COUNTRY 1154 1159	Dubai
+E1	Movement-up-gain:T1 Item:T2
+E2	Geopolitical-tension:T3 Impacted_countries:T4 Reference_point_time:T5 Impacted_countries2:T13 Impacted_countries3:T12 Impacted_countries4:T11 Impacted_countries5:T10
+E3	Movement-up-gain:T6 Item:T7
+E4	Movement-down-loss:T9 Item:T8
+E5	Civil-unrest:T14 Place:T15
+E6	Movement-up-gain:T17 Item:T16 Difference:T18 Final_value:T19
+E7	Movement-up-gain:T22 Item:T20 Supplier_Consumer:T21 Difference:T42 Final_value:T24
+E8	Movement-down-loss:T25 Difference:T26 Attribute:T40 Supplier_Consumer:T41
+E9	Movement-down-loss:T27 Difference:T29 Item:T28
+E10	Movement-down-loss:T31 Intensity_cue:T30
+E11	Movement-down-loss:T32 Difference:T33 Reference_point_time:T35 Final_value:T34
+E12	Civil-unrest:T36 Place:T39
+E13	Slow-weak:T38 Item:T37
+T42	PERCENTAGE 1132 1141	1 percent
+T23	Movement-down-loss 2783 2789	losses
+E14	Movement-down-loss:T23 Intensity_cue:T44
+T43	Movement-up-gain 2793 2798	climb
+E15	Movement-up-gain:T43 Difference:T45
+T44	INTENSITY_cue 2766 2774	reversed
+A1	Intensity E14 Eased
+T45	PERCENTAGE 2799 2810	0.1 percent
+T46	Position-high 1834 1845	record high
+E16	Position-high:T46 Reference_point_time:T49
+T47	Movement-up-gain 1874 1880	higher
+E17	Movement-up-gain:T47 Modality_cue:T48
+T48	MODALITY_cue 1787 1796	expecting
+A2	Modality E17 Other
+T49	DATE 1849 1855	Friday
+T51	Economic_item 2869 2872	yen
+T52	Economic_item 2825 2831	Nikkei
+T53	Movement-up-gain 2844 2849	added
+E18	Movement-up-gain:T53 Difference:T54 Item:T52
+T54	PERCENTAGE 2850 2861	0.1 percent
+T55	Movement-up-gain 2897 2902	gains
+E19	Movement-up-gain:T55 Intensity_cue:T56 Item:T51
+T56	INTENSITY_cue 2873 2884	surrendered
+A3	Intensity E19 Eased
+T57	Economic_item 2912 2918	shares
+T58	Movement-down-loss 2928 2932	fell
+E20	Movement-down-loss:T58 Item:T57 Difference:T59 Type:T60
+T59	PERCENTAGE 2933 2944	0.5 percent
+T60	NATIONALITY 2904 2911	Chinese
+T61	Economic_item 2959 2982	service-sector activity
+T62	Movement-up-gain 2983 2989	rising
+E21	Movement-up-gain:T62 Item:T61 Reference_point_time:T63
+T63	DATE 2993 2996	May
+T64	Economic_item 3070 3076	shares
+T65	Movement-down-loss 3084 3088	slid
+E22	Movement-down-loss:T65 Difference:T67 Item:T64 Type:T66
+T66	NATIONALITY 3059 3069	Australian
+T67	PERCENTAGE 3089 3100	0.8 percent
+T68	Economic_item 3123 3128	KOSPI
+T69	Movement-flat 3140 3154	little changed
+E23	Movement-flat:T69 Item:T68
+T70	Economic_item 3164 3170	shares
+T71	Movement-up-gain 3283 3285	up
+E24	Movement-up-gain:T71 
+T72	PERCENTAGE 3286 3297	0.5 percent
+T73	NATIONALITY 3157 3163	Taiwan
+T74	Position-high 3210 3217	highest
+E25	Position-high:T74 Initial_reference_point:T75
+T75	DATE 3230 3234	2000
+T76	Movement-up-gain 3392 3394	up
+E26	Movement-up-gain:T76 Difference:T77 Final_value:T78 Item:T79
+T77	PERCENTAGE 3395 3406	0.1 percent
+T78	MONEY 3410 3415	96.82
+T79	Economic_item 3304 3316	dollar index
+T80	Movement-down-loss 3422 3429	sinking
+E27	Movement-down-loss:T80 Reference_point_time:T81
+T81	DATE 3433 3439	Friday
+T82	Position-low 3447 3453	lowest
+E28	Position-low:T82 Initial_reference_point:T83
+T83	DATE 3500 3508	November
+T84	Movement-down-loss 3685 3692	falling
+E29	Movement-down-loss:T84 
+T85	Position-low 3706 3709	low
+E30	Position-low:T85 Duration:T86 Final_value:T87
+T86	DURATION 3698 3705	16-year
+T87	PERCENTAGE 3713 3724	4.3 percent
+T88	Movement-up-gain 3533 3542	increased
+E31	Movement-up-gain:T88 Difference:T90 Reference_point_time:T91 Item:T89
+T89	Economic_item 3511 3532	U.S. nonfarm payrolls
+T90	NUMBER 3543 3550	138,000
+T91	DATE 3554 3557	May
+T92	Movement-down-loss 3790 3794	down
+E32	Movement-down-loss:T92 Modality_cue:T93
+T93	MODALITY_cue 3782 3789	revised
+A4	Modality E32 Other
+T94	Movement-up-gain 3807 3813	gained
+E33	Movement-up-gain:T94 Difference:T96 Final_value:T97 Item:T95
+T95	Economic_item 3800 3806	dollar
+T96	PERCENTAGE 3814 3825	0.2 percent
+T97	MONEY 3829 3839	110.67 yen
+T98	Movement-down-loss 3848 3854	losing
+E34	Movement-down-loss:T98 Difference:T99 Reference_point_time:T100
+T99	PERCENTAGE 3855 3866	0.8 percent
+T100	DATE 3870 3876	Friday
+T101	Movement-up-gain 3916 3925	recovered
+E35	Movement-up-gain:T101 Final_value:T103 Item:T102 Reference_point_time:T104
+T102	Economic_item 3883 3915	U.S. 10-year Treasury bond yield
+T103	NUMBER 3929 3935	2.1695
+T104	DATE 3939 3945	Monday
+T105	Movement-down-loss 3954 3961	plunged
+E36	Movement-down-loss:T105 Initial_reference_point:T106 Initial_value:T128
+T106	DATE 3967 3975	Thursday
+T107	Economic_item 4272 4276	euro
+T108	Movement-down-loss 4278 4282	fell
+E37	Movement-down-loss:T108 Difference:T109 Final_value:T110 Item:T107 Reference_point_time:T111
+T109	PERCENTAGE 4283 4294	0.2 percent
+T110	MONEY 4298 4305	$1.1264
+T111	DATE 4309 4315	Monday
+T112	PERCENTAGE 4352 4363	0.6 percent
+T113	Movement-up-gain 4364 4368	gain
+E38	Movement-up-gain:T113 Difference:T112
+T114	Position-high 4450 4455	highs
+E39	Position-high:T114 Item:T115
+T115	Economic_item 4382 4436	all three major Wall Street indexes (DJI) (SPX) (IXIC)
+T116	Movement-up-gain 4558 4562	rose
+E40	Movement-up-gain:T116 Item:T117 Reference_point_time:T120
+T117	Commodity 4552 4556	Gold
+T118	Position-high 4577 4581	high
+E41	Position-high:T118 Duration:T119
+T119	DURATION 4568 4576	six-week
+T120	DATE 4585 4591	Monday
+T121	Slow-weak 4607 4613	weaker
+E42	Slow-weak:T121 Item:T122
+T122	Economic_item 4614 4620	dollar
+T123	Movement-flat 4634 4640	steady
+E43	Movement-flat:T123 Difference:T124
+T124	Price_unit 4644 4662	$1,280.24 an ounce
+R1	Cause-Precondition Arg1:E12 Arg2:E13	
+R2	Cause-Precondition Arg1:E2 Arg2:E3	
+R3	Cause-Precondition Arg1:E5 Arg2:E4	
+T125	Commodity 893 914	liquefied natural gas
+T126	Commodity 1016 1027	natural gas
+A5	Intensity E10 Eased
+T127	Economic_item 2277 2285	sterling
+R4	Cause-Precondition Arg1:E19 Arg2:E18	
+R5	Cause-Precondition Arg1:E21 Arg2:E20	
+T50	Economic_item 3341 3350	greenback
+T128	NUMBER 3991 3996	2.217
+T129	Movement-down-loss 4126 4137	diminishing
+E44	Movement-down-loss:T129 
+T130	Movement-up-gain 4462 4467	gains
+E45	Movement-up-gain:T130 Item:T131
+T131	Economic_item 4471 4503	technology and industrial stocks
+R6	Cause-Precondition Arg1:E42 Arg2:E40	

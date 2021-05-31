@@ -1,0 +1,283 @@
+T1	trade-financial-tension 30 39	Trade War
+E1	trade-financial-tension:T1 
+T2	Civil-unrest 51 59	Conflict
+E2	Civil-unrest:T2 Place:T3
+T3	LOCATION 43 50	Mideast
+T4	Commodity 15 18	Oil
+T5	ORGANIZATION 0 5	OPEC+
+T6	Cause-movement-down-loss 304 312	restrain
+E3	Cause-movement-down-loss:T6 Modality_cue:T11
+T7	Commodity 313 316	oil
+T8	Financial_attribute 317 325	supplies
+T9	Cause-movement-up-gain 329 336	prop up
+E4	Cause-movement-up-gain:T9 Modality_cue:T11 Attribute:T10
+T10	Financial_attribute 337 343	prices
+T11	MODALITY_cue 296 300	deal
+A2	Modality E4 Other
+T13	Economic_item 354 360	market
+T14	Movement-down-loss 458 465	falters
+E6	Movement-down-loss:T14 Attribute:T15 Item:T16
+T15	Financial_attribute 451 457	demand
+T16	Commodity 447 450	oil
+T17	Slow-weak 489 497	slowdown
+E7	Slow-weak:T17 Item:T18 Type:T19
+T18	Economic_item 480 488	economic
+T19	LOCATION 473 479	global
+T20	Movement-up-gain 511 516	swell
+E8	Movement-up-gain:T20 Attribute:T21
+T21	Financial_attribute 502 510	supplies
+T22	Grow-strong 542 546	boom
+E9	Grow-strong:T22 Item:T23
+T25	Cause-movement-down-loss 640 645	curbs
+E10	Cause-movement-down-loss:T25 Modality_cue:T27 Attribute:T26 Supplier_Consumer:T29 Supplier_Consumer2:T28 Duration:T30
+T26	Financial_attribute 633 639	output
+T27	MODALITY_cue 604 612	expected
+T28	COUNTRY 577 589	Saudi Arabia
+T29	COUNTRY 594 600	Russia
+A3	Modality E10 Other
+T30	DURATION 650 668	another six months
+T31	Economic_item 688 694	market
+T32	trade-financial-tension 773 786	trade dispute
+E11	trade-financial-tension:T32 Participating_countries:T33
+T33	COUNTRY 762 772	U.S.-China
+T34	Civil-unrest 803 820	military flare-up
+E12	Civil-unrest:T34 Modality_cue:T35 Place:T36
+A4	Modality E12 Other
+T35	MODALITY_cue 793 802	potential
+T36	STATE_OR_PROVINCE 828 840	Persian Gulf
+T37	LOCATION 878 883	world
+T38	Commodity 886 889	oil
+T39	trade-financial-tension 967 976	trade war
+E13	trade-financial-tension:T39 
+T41	Cause-movement-down-loss 1491 1495	cuts
+E15	Cause-movement-down-loss:T41 Modality_cue:T42 Intensity_cue:T136
+T42	MODALITY_cue 1467 1476	agreement
+A5	Modality E15 Other
+T43	Cause-movement-down-loss 1739 1746	curbing
+E16	Cause-movement-down-loss:T43 Attribute:T44 Difference:T45
+T44	Financial_attribute 1747 1757	production
+T45	Production_unit 1761 1786	1.2 million barrels a day
+T46	Financial_attribute 1834 1847	demand growth
+T47	Cause-movement-down-loss 1857 1863	eroded
+E17	Cause-movement-down-loss:T47 Attribute:T46 Item:T48
+T48	Commodity 1830 1833	Oil
+T49	Financial_attribute 1967 1975	supplies
+T50	ORGANIZATION 1981 1993	outside OPEC
+T51	Movement-up-gain 1998 2005	surging
+E18	Movement-up-gain:T51 Supplier_Consumer:T50 Attribute:T49
+T52	Financial_attribute 2021 2031	production
+T53	NATIONALITY 2012 2020	American
+T54	Position-high 2047 2052	highs
+E19	Position-high:T54 Attribute:T52 Type:T53
+T55	Commodity 2081 2086	crude
+T56	Financial_attribute 2098 2104	prices
+T57	Price_unit 2110 2122	$65 a barrel
+T58	Cause-movement-down-loss 2618 2623	curbs
+E20	Cause-movement-down-loss:T58 Attribute:T59 Reference_point_time:T61 Intensity_cue:T60 Modality_cue:T169 Supplier_Consumer:T170
+T59	Financial_attribute 2611 2617	supply
+A6	Modality E20 Other
+T61	DATE 2627 2642	the end of 2019
+T62	Movement-flat 2695 2701	steady
+E21	Movement-flat:T62 Attribute:T63 Supplier_Consumer:T64 Modality_cue:T66 Polarity_cue:T65
+T63	Financial_attribute 2672 2682	production
+T64	ORGANIZATION 2660 2669	the group
+T65	POLARITY_cue 2647 2654	doesn’t
+T66	MODALITY_cue 2683 2687	will
+A7	Polarity E21 Negative
+A8	Modality E21 Other
+T67	Crisis 2858 2864	crises
+E22	Crisis:T67 
+T68	Financial_attribute 2851 2857	supply
+T69	Economic_item 2827 2833	market
+T70	Cause-movement-up-gain 2949 2954	boost
+E23	Cause-movement-up-gain:T70 Modality_cue:T72 Attribute:T71
+T71	Financial_attribute 2955 2961	output
+T72	MODALITY_cue 2905 2908	may
+A9	Modality E23 Other
+T73	Financial_attribute 2976 2986	production
+T74	Cause-movement-down-loss 2996 3004	squeezed
+E24	Cause-movement-down-loss:T74 Supplier_Consumer:T75 Attribute:T73
+T75	COUNTRY 2963 2973	The nation
+T76	Position-low 3012 3018	lowest
+E25	Position-low:T76 Initial_reference_point:T77
+T77	DATE 3025 3034	the 1980s
+T78	Embargo 3047 3055	sanction
+E26	Embargo:T78 Imposer:T79
+T79	NATIONALITY 3038 3046	American
+T80	Movement-down-loss 3066 3073	decline
+E27	Movement-down-loss:T80 Modality_cue:T81
+T81	MODALITY_cue 3062 3065	may
+A10	Modality E27 Other
+T82	Geopolitical-tension 3116 3124	Tensions
+E28	Geopolitical-tension:T82 Impacted_countries:T83 Intensity_cue:T84
+T83	LOCATION 3128 3139	Middle East
+T86	Financial_attribute 3278 3284	supply
+T87	Cause-movement-down-loss 3285 3295	disruption
+E31	Cause-movement-down-loss:T87 Attribute:T86 Intensity_cue:T88 Modality_cue:T85
+T89	Movement-down-loss 3339 3345	losses
+E32	Movement-down-loss:T89 
+T90	MODALITY_cue 3415 3420	urged
+T91	Cause-movement-up-gain 3436 3443	ramp up
+E33	Cause-movement-up-gain:T91 Modality_cue:T90 Attribute:T92
+T92	Financial_attribute 3444 3454	production
+T93	Movement-down-loss 3465 3469	down
+E34	Movement-down-loss:T93 Item:T94 Modality_cue:T90
+T94	Commodity 3470 3473	oil
+T95	Financial_attribute 3474 3480	prices
+A11	Modality E33 Other
+A12	Modality E34 Other
+T96	Cause-movement-down-loss 3548 3551	cut
+E35	Cause-movement-down-loss:T96 Attribute:T98 Supplier_Consumer:T97
+T97	COUNTRY 3526 3538	Saudi Arabia
+T98	Financial_attribute 3552 3562	production
+T99	Movement-up-gain 3600 3608	increase
+E36	Movement-up-gain:T99 Modality_cue:T101 Attribute:T100
+T100	Financial_attribute 3609 3615	output
+T101	MODALITY_cue 3592 3596	room
+A13	Modality E36 Other
+T102	Forecast_target 3767 3775	estimate
+T103	ORGANIZATION 3762 3766	OPEC
+T104	Movement-down-loss 3811 3819	contract
+E37	Movement-down-loss:T104 Modality_cue:T107 Attribute:T105 Type:T106 Forecast:T102 Forecaster:T103
+T105	Financial_attribute 3794 3805	inventories
+T106	LOCATION 3787 3793	global
+T107	MODALITY_cue 3806 3810	will
+A14	Modality E37 Other
+T108	Movement-up-gain 3898 3906	increase
+E38	Movement-up-gain:T108 Attribute:T109 Modality_cue:T107
+T109	Financial_attribute 3907 3913	supply
+A15	Modality E38 Other
+T111	Financial_attribute 3965 3971	output
+T112	MODALITY_cue 3994 3999	allow
+T113	Financial_attribute 4015 4025	production
+T114	Movement-up-gain 4029 4033	rise
+E39	Movement-up-gain:T114 Attribute:T113 Modality_cue:T112
+A16	Modality E39 Other
+T115	Financial_attribute 4139 4145	supply
+T116	Cause-movement-down-loss 4146 4150	cuts
+E40	Cause-movement-down-loss:T116 Attribute:T115 Modality_cue:T117
+T117	MODALITY_cue 4113 4121	decision
+A17	Modality E40 Other
+T118	Cause-movement-down-loss 4213 4217	cuts
+E41	Cause-movement-down-loss:T118 
+T119	Grow-strong 4346 4350	boom
+E42	Grow-strong:T119 Item:T120
+T122	Oversupply 4411 4415	glut
+E43	Oversupply:T122 Attribute:T123 Modality_cue:T124
+T123	Financial_attribute 4400 4410	oil-supply
+T124	MODALITY_cue 4384 4389	could
+A18	Modality E43 Other
+T126	Financial_attribute 4478 4484	supply
+T127	Cause-movement-down-loss 4485 4490	curbs
+E45	Cause-movement-down-loss:T127 Attribute:T126 Intensity_cue:T125 Modality_cue:T129
+T129	MODALITY_cue 4462 4467	ready
+T130	Cause-movement-down-loss 4533 4543	disruption
+E46	Cause-movement-down-loss:T130 
+T131	Slow-weak 4611 4619	slowdown
+E47	Slow-weak:T131 Item:T132
+T132	Economic_item 4604 4610	growth
+T133	Financial_attribute 4562 4568	supply
+T134	Cause-movement-down-loss 4839 4843	cuts
+E48	Cause-movement-down-loss:T134 Modality_cue:T137
+T137	MODALITY_cue 4820 4828	possibly
+T138	Economic_item 4885 4891	market
+T139	LOCATION 4878 4884	global
+T140	Financial_attribute 5014 5025	Consumption
+T141	Grow-strong 5032 5039	recover
+E50	Grow-strong:T141 Modality_cue:T142 Attribute:T140
+T142	MODALITY_cue 5026 5031	could
+A21	Modality E50 Other
+T143	trade-financial-tension 5131 5144	trade dispute
+E51	trade-financial-tension:T143 Modality_cue:T164 Intensity_cue:T163
+A23	Modality E51 Other
+T144	Commodity 5882 5885	oil
+T145	Financial_attribute 5594 5604	production
+T146	Movement-up-gain 5583 5593	increasing
+E52	Movement-up-gain:T146 Attribute:T145
+T147	Financial_attribute 5650 5655	price
+T148	Movement-down-loss 5656 5661	crash
+E53	Movement-down-loss:T148 Reference_point_time:T150 Attribute:T147
+T149	MODALITY_cue 5628 5633	risks
+T150	DATE 5665 5685	the end of last year
+A24	Modality E52 Other
+T151	MODALITY_cue 5717 5720	may
+T152	Cause-movement-up-gain 5721 5726	boost
+E54	Cause-movement-up-gain:T152 Attribute:T153 Modality_cue:T151
+T153	Financial_attribute 5727 5733	prices
+A25	Modality E54 Other
+T154	Oversupply 5808 5815	surplus
+E55	Oversupply:T154 Modality_cue:T151
+A26	Modality E55 Other
+T157	Cause-movement-down-loss 5690 5697	cutting
+E56	Cause-movement-down-loss:T157 Intensity_cue:T173
+T158	Financial_attribute 5553 5559	supply
+T159	Oversupply 5412 5422	oversupply
+E57	Oversupply:T159 Polarity_cue:T161 Modality_cue:T162
+T160	Financial_attribute 5389 5402	demand growth
+T161	POLARITY_cue 5423 5433	disappears
+A27	Polarity E57 Negative
+A28	Modality E57 Other
+T162	MODALITY_cue 5403 5407	when
+T163	INTENSITY_cue 5105 5114	resolving
+T164	MODALITY_cue 5040 5042	if
+T40	Geopolitical-tension 992 995	war
+E14	Geopolitical-tension:T40 
+T23	Commodity 531 541	U.S. shale
+T24	trade-financial-tension 1936 1947	tariff feud
+E58	trade-financial-tension:T24 Participating_countries:T165
+T165	COUNTRY 1925 1935	U.S.-China
+T120	Commodity 4335 4345	U.S. shale
+T121	Commodity 5776 5786	U.S. shale
+T84	INTENSITY_cue 3150 3159	increased
+A1	Intensity E28 Intensified
+T88	INTENSITY_cue 3253 3260	raising
+T85	MODALITY_cue 3261 3266	fears
+A29	Intensity E31 Intensified
+A30	Modality E31 Other
+A19	Intensity E45 Intensified
+A31	Modality E45 Other
+T125	INTENSITY_cue 4471 4477	deepen
+A20	Intensity E48 Intensified
+A32	Modality E48 Other
+T128	Embargo 4829 4838	deepening
+E29	Embargo:T128 
+A33	Intensity E29 Intensified
+R1	Cause-Precondition Arg1:E48 Arg2:E29	
+A22	Intensity E51 Eased
+R2	Cause-Precondition Arg1:E3 Arg2:E4	
+T12	Negative_sentiment 372 385	uncertainties
+E5	Negative_sentiment:T12 
+R3	Cause-Precondition Arg1:E7 Arg2:E6	
+R4	Cause-Precondition Arg1:E9 Arg2:E8	
+R5	Cause-Precondition Arg1:E8 Arg2:E6	
+T135	INTENSITY_cue 625 632	prolong
+A34	Intensity E10 Intensified
+T136	INTENSITY_cue 1480 1486	extend
+A35	Intensity E15 Intensified
+R6	Cause-Precondition Arg1:E58 Arg2:E17	
+T155	Slow-weak 1871 1878	weakest
+E30	Slow-weak:T155 Type:T166 Item:T156
+T156	Economic_item 1886 1904	economic expansion
+T166	LOCATION 1879 1885	global
+R7	Cause-Precondition Arg1:E30 Arg2:E17	
+T167	Oversupply 2068 2077	abundance
+E44	Oversupply:T167 Item:T55
+T168	Movement-down-loss 2134 2139	below
+E49	Movement-down-loss:T168 Attribute:T56
+R8	Cause-Precondition Arg1:E44 Arg2:E49	
+T60	INTENSITY_cue 2598 2606	preserve
+T169	MODALITY_cue 2588 2594	agrees
+A36	Intensity E20 Intensified
+T170	ORGANIZATION 2573 2578	OPEC+
+R9	Cause-Precondition Arg1:E28 Arg2:E31	
+R10	Cause-Precondition Arg1:E42 Arg2:E43	
+T110	Cause-movement-down-loss 5488 5492	cuts
+E59	Cause-movement-down-loss:T110 Intensity_cue:T171 Modality_cue:T172
+T171	INTENSITY_cue 5477 5483	extend
+A37	Intensity E59 Intensified
+T172	MODALITY_cue 5468 5473	agree
+A38	Modality E59 Other
+T173	INTENSITY_cue 5698 5705	further
+A39	Intensity E56 Intensified
+R11	Cause-Precondition Arg1:E56 Arg2:E54	
+R12	Cause-Precondition Arg1:E54 Arg2:E55	

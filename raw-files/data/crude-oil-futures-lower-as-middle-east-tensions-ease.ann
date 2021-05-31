@@ -1,0 +1,126 @@
+T1	Movement-down-loss 18 23	lower
+E1	Movement-down-loss:T1 Attribute:T2 Item:T3
+T2	Financial_attribute 10 17	futures
+T3	Commodity 0 9	Crude oil
+T4	Geopolitical-tension 39 47	tensions
+E2	Geopolitical-tension:T4 Place:T6 Intensity_cue:T5
+T5	INTENSITY_cue 48 52	ease
+T6	LOCATION 27 38	Middle East
+T8	Movement-down-loss 201 208	slipped
+E4	Movement-down-loss:T8 Attribute:T9 Item:T10 Reference_point_time:T7
+T9	Financial_attribute 193 200	futures
+T10	Commodity 183 192	Crude oil
+T7	DATE 254 260	Friday
+T11	INTENSITY_cue 265 271	easing
+T12	Geopolitical-tension 272 280	tensions
+E3	Geopolitical-tension:T12 Impacted_countries:T13 Intensity_cue:T11
+T13	LOCATION 288 299	Middle East
+T14	Financial_attribute 311 317	prices
+T15	Economic_item 325 331	market
+T16	DATE 472 480	November
+T17	Movement-down-loss 541 545	down
+E5	Movement-down-loss:T17 Attribute:T20 Item:T21 Contract_date:T16 Final_value:T19 Difference:T18
+T18	PERCENTAGE 546 551	0.42%
+T19	Price_unit 491 509	USD102.60 a barrel
+T20	Financial_attribute 448 455	futures
+T21	Commodity 430 447	light sweet crude
+T22	Movement-up-gain 586 588	up
+E6	Movement-up-gain:T22 Contract_date:T26 Difference:T23 Final_value:T24 Reference_point_time:T25
+T23	PERCENTAGE 589 594	0.36%
+T24	Price_unit 598 616	USD102.03 a barrel
+T25	DATE 620 628	Thursday
+T26	DATE 560 568	November
+T27	Position-low 707 710	low
+E7	Position-low:T27 Reference_point_time:T28 Attribute:T33 Item:T34
+T28	DATE 696 704	Thursday
+T29	Price_unit 729 747	USD103.95 a barrel
+T30	Position-high 753 757	high
+E8	Position-high:T30 Initial_reference_point:T31 Difference:T29
+T31	DATE 763 775	September 25
+T32	Price_unit 676 694	USD102.20 a barrel
+T33	Financial_attribute 637 644	futures
+T34	Commodity 633 636	Oil
+T35	Slow-weak 791 799	weakened
+E9	Slow-weak:T35 Attribute:T36 Item:T37
+T36	Financial_attribute 784 790	prices
+T37	Commodity 780 783	Oil
+T38	Movement-down-loss 805 810	lower
+E10	Movement-down-loss:T38 Attribute:T39 Supplier_Consumer:T41
+T39	Financial_attribute 811 817	supply
+T40	Negative_sentiment 818 826	concerns
+E11	Negative_sentiment:T40 
+T41	LOCATION 836 847	Middle East
+T42	Commodity 1006 1009	oil
+T43	Geopolitical-tension 1038 1046	tensions
+E12	Geopolitical-tension:T43 Modality_cue:T44 Impacted_countries:T46
+T44	MODALITY_cue 1020 1023	any
+A3	Modality E12 Other
+T45	Cause-movement-down-loss 1072 1079	disrupt
+E13	Cause-movement-down-loss:T45 Modality_cue:T47 Attribute:T48
+T46	LOCATION 1054 1065	Middle East
+T47	MODALITY_cue 1066 1071	could
+T48	Financial_attribute 1080 1085	flows
+A4	Modality E13 Other
+T49	LOCATION 1136 1141	world
+T50	Commodity 1144 1147	oil
+T51	Negative_sentiment 1298 1306	concerns
+E14	Negative_sentiment:T51 
+T52	Movement-up-gain 1520 1528	increase
+E15	Movement-up-gain:T52 
+T53	Economic_item 1669 1676	markets
+T54	Negative_sentiment 1735 1743	concerns
+E16	Negative_sentiment:T54 
+T55	Economic_item 1848 1855	economy
+T56	Grow-strong 1856 1864	expanded
+E17	Grow-strong:T56 Item:T55 Supplier_Consumer:T59 Difference:T57 Initial_reference_point:T58
+T57	PERCENTAGE 1868 1872	2.5%
+T58	DATE 1876 1894	the second quarter
+T59	COUNTRY 1843 1847	U.S.
+T60	MODALITY_cue 1908 1920	expectations
+T61	Grow-strong 1932 1941	expansion
+E18	Grow-strong:T61 Final_value:T62 Modality_cue:T60
+T62	PERCENTAGE 1927 1931	2.6%
+A5	Modality E18 Other
+T63	Cause-movement-up-gain 2138 2146	boosting
+E19	Cause-movement-up-gain:T63 Attribute:T64 Item:T65
+T64	Financial_attribute 2151 2156	price
+T65	Commodity 2160 2171	commodities
+T66	Economic_item 2212 2218	dollar
+T67	Financial_attribute 2272 2279	futures
+T68	DATE 2284 2292	November
+T69	PERCENTAGE 2307 2312	0.34%
+T70	Price_unit 2325 2343	USD108.84 a barrel
+T71	Commodity 2262 2271	Brent oil
+T72	Movement-down-loss 2302 2306	fell
+E20	Movement-down-loss:T72 Contract_date:T68 Attribute:T67 Item:T71 Difference:T69 Final_value:T70
+T73	Financial_attribute 2389 2398	contracts
+T74	Commodity 2383 2388	crude
+T76	Price_unit 2411 2427	USD6.24 a barrel
+T77	Movement-down-loss 300 310	weighed on
+E21	Movement-down-loss:T77 Attribute:T14
+A1	Intensity E2 Eased
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+A2	Intensity E3 Eased
+R2	Cause-Precondition Arg1:E3 Arg2:E21	
+R3	Cause-Precondition Arg1:E10 Arg2:E9	
+R4	Cause-Precondition Arg1:E12 Arg2:E13	
+T75	Geopolitical-tension 1232 1240	standoff
+E22	Geopolitical-tension:T75 Impacted_countries:T79 Impacted_countries2:T78 Intensity_cue:T80
+T78	COUNTRY 1169 1173	U.S.
+T79	COUNTRY 1178 1182	Iran
+A6	Intensity E22 Eased
+T80	INTENSITY_cue 1210 1217	resolve
+T81	Negative_sentiment 1584 1595	uncertainty
+E23	Negative_sentiment:T81 
+T82	Economic_item 1778 1786	economic
+T83	Grow-strong 1787 1795	recovery
+E24	Grow-strong:T83 Item:T82 Forecast:T84
+T84	Forecast_target 1753 1760	outlook
+T85	Grow-strong 2025 2033	recovery
+E25	Grow-strong:T85 Item:T86 Intensity_cue:T87
+T86	Economic_item 2016 2024	economic
+T87	INTENSITY_cue 2006 2015	sustained
+A7	Intensity E25 Intensified
+T88	Cause-movement-down-loss 2187 2194	depress
+E26	Cause-movement-down-loss:T88 Item:T66
+R5	Cause-Precondition Arg1:E26 Arg2:E19	

@@ -1,0 +1,71 @@
+T1	Movement-down-loss 16 21	Lower
+E1	Movement-down-loss:T1 Attribute:T3 Item:T4
+T2	ORGANIZATION 25 28	IMF
+T3	Financial_attribute 4 10	Prices
+T4	Commodity 0 3	Oil
+T6	Movement-down-loss 226 231	lower
+E2	Movement-down-loss:T6 Reference_point_time:T19 Attribute:T17 Item:T18
+T7	ORGANIZATION 268 271	IMF
+T8	Cause-movement-down-loss 286 289	cut
+E3	Cause-movement-down-loss:T8 Modality_cue:T5 Forecaster:T7 Type:T11 Item:T10 Forecast:T9 Reference_point_time:T12
+T9	Forecast_target 306 315	forecasts
+T10	Economic_item 297 305	economic
+T11	LOCATION 290 296	global
+T12	DATE 320 324	2018
+T13	DATE 329 333	2019
+T14	Cause-movement-down-loss 340 346	temper
+E4	Cause-movement-down-loss:T14 Modality_cue:T20 Attribute:T15 Item:T16
+T15	Financial_attribute 347 353	demand
+T16	Commodity 358 361	oil
+T17	Financial_attribute 203 209	prices
+T18	Commodity 199 202	Oil
+T19	DATE 235 244	Wednesday
+T5	MODALITY_cue 274 282	decision
+A1	Modality E3 Other
+T20	MODALITY_cue 334 339	could
+T21	Economic_item 398 414	Economic Outlook
+T22	LOCATION 392 397	World
+T23	Movement-down-loss 457 461	down
+E5	Movement-down-loss:T23 Initial_value:T26 Attribute:T48 Forecast:T49 Reference_point_time:T50 Item:T21 Type:T22
+T24	Economic_item 449 455	growth
+T25	PERCENTAGE 444 448	3.7%
+T26	PERCENTAGE 471 475	3.9%
+T27	Movement-down-loss 595 602	slipped
+E6	Movement-down-loss:T27 Contract_date:T29 Attribute:T30 Item:T31 Difference:T28 Final_value:T32
+T28	PERCENTAGE 603 607	0.2%
+T29	DATE 577 585	November
+T30	Financial_attribute 565 572	Futures
+T31	Commodity 551 564	Crude Oil WTI
+T32	Price_unit 611 626	$74.74 a barrel
+T33	Commodity 742 751	Brent Oil
+T34	Financial_attribute 752 759	Futures
+T35	DATE 764 772	December
+T36	Movement-down-loss 799 804	lower
+E7	Movement-down-loss:T36 Difference:T38 Item:T33 Attribute:T34 Final_value:T37 Contract_date:T35
+T38	PERCENTAGE 794 798	0.1%
+T39	Cause-movement-down-loss 973 982	shut down
+E8	Cause-movement-down-loss:T39 Supplier_Consumer:T43 Difference:T40 Item:T41 Attribute:T42
+T40	PERCENTAGE 990 993	20%
+T41	Commodity 1003 1006	oil
+T42	Financial_attribute 1007 1017	production
+T43	Group 941 972	Companies operating in the Gulf
+T44	Commodity 1348 1353	crude
+T45	Commodity 1358 1369	natural gas
+T46	Financial_attribute 1573 1584	inventories
+T47	Commodity 1567 1572	crude
+R1	Cause-Precondition Arg1:E3 Arg2:E4
+R2	Cause-Precondition Arg1:E4 Arg2:E2
+T48	Financial_attribute 476 482	growth
+T49	Forecast_target 486 496	forecasted
+T50	DATE 500 504	July
+T51	Financial_attribute 831 837	prices
+T52	Commodity 827 830	Oil
+T53	Movement-up-gain 838 844	gained
+E9	Movement-up-gain:T53 Attribute:T51 Item:T52
+T54	Negative_sentiment 872 879	worries
+E10	Negative_sentiment:T54 
+R3	Cause-Precondition Arg1:E10 Arg2:E9
+T55	Negative_sentiment 43 48	Fears
+E11	Negative_sentiment:T55 
+A2	Modality E4 Other
+T37	Price_unit 808 825	$84.89 per barrel

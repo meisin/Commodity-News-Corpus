@@ -1,0 +1,118 @@
+T1	Movement-down-loss 16 23	falling
+E1	Movement-down-loss:T1 Item:T2
+T2	Commodity 0 5	Crude
+T3	NATIONALITY 27 32	Greek
+T4	Crisis 33 49	political tumult
+E2	Crisis:T4 Place:T3
+T5	Financial_attribute 186 193	futures
+T6	Commodity 176 185	Crude oil
+T7	Movement-down-loss 194 198	fell
+E3	Movement-down-loss:T7 Reference_point_time:T8 Attribute:T5 Item:T6
+T8	DATE 219 228	Wednesday
+T9	Financial_attribute 420 430	stockpiles
+T10	MODALITY_cue 431 435	will
+T11	Movement-up-gain 445 451	rising
+E4	Movement-up-gain:T11 Modality_cue:T10 Attribute:T9 Supplier_Consumer:T12
+T12	COUNTRY 415 419	U.S.
+T13	Commodity 533 551	light, sweet crude
+T14	Financial_attribute 552 559	futures
+T15	Commodity 2460 2469	Brent oil
+T16	Financial_attribute 2470 2477	futures
+T17	DATE 576 580	June
+T18	DATE 2482 2486	July
+T19	Movement-down-loss 2501 2505	down
+E5	Movement-down-loss:T19 Difference:T20 Final_value:T21 Contract_date:T18 Attribute:T16 Item:T15
+T20	PERCENTAGE 2506 2511	0.13%
+T21	Price_unit 2527 2545	USD110.79 a barrel
+T22	Movement-up-gain 2547 2549	up
+E6	Movement-up-gain:T22 Difference:T23
+T23	MONEY 2550 2558	USD17.38
+T24	Movement-down-loss 2278 2288	contracted
+E7	Movement-down-loss:T24 Item:T26 Supplier_Consumer:T25 Difference:T27 Reference_point_time:T28
+T25	COUNTRY 2261 2269	eurozone
+T26	Economic_item 2270 2277	economy
+T27	PERCENTAGE 2292 2296	0.3%
+T28	DATE 2300 2326	the fourth quarter of 2011
+T29	Crisis 2351 2360	implosion
+E8	Crisis:T29 Place:T30
+T30	NATIONALITY 2345 2350	Greek
+T31	Commodity 2400 2403	oil
+T32	Financial_attribute 2404 2410	prices
+T33	Movement-down-loss 2411 2416	lower
+E9	Movement-down-loss:T33 Attribute:T32 Item:T31
+T34	Cause-movement-down-loss 2366 2373	disrupt
+E10	Cause-movement-down-loss:T34 Modality_cue:T37 Type:T35 Item:T36
+T35	NATIONALITY 2378 2386	European
+T36	Economic_item 2387 2394	economy
+T37	MODALITY_cue 2361 2365	will
+A2	Modality E10 Other
+T38	Movement-down-loss 610 614	down
+E11	Movement-down-loss:T38 Difference:T39 Final_value:T40 Contract_date:T17 Attribute:T14 Item:T13
+T39	PERCENTAGE 615 620	0.61%
+T40	Price_unit 591 608	USD93.41 a barrel
+T41	COUNTRY 1142 1146	U.S.
+T42	Financial_attribute 1147 1158	inventories
+T43	Movement-up-gain 1159 1163	rose
+E12	Movement-up-gain:T43 Difference:T44 Reference_point_time:T45 Attribute:T42 Supplier_Consumer:T41
+T44	Quantity 1164 1183	6.6 million barrels
+T45	DATE 1184 1193	last week
+T46	Movement-up-gain 1305 1310	gains
+E13	Movement-up-gain:T46 Attribute:T68 Modality_cue:T72
+T47	Financial_attribute 1318 1324	prices
+T48	Movement-down-loss 1325 1329	down
+E14	Movement-down-loss:T48 Attribute:T47
+T49	Movement-up-gain 1581 1585	rose
+E15	Movement-up-gain:T49 Difference:T50 Reference_point_time:T51
+T50	PERCENTAGE 1586 1590	0.2%
+T51	DATE 1594 1599	April
+T52	Movement-up-gain 1870 1874	grew
+E16	Movement-up-gain:T52 Difference:T53 Reference_point_time:T54 Supplier_Consumer:T71 Item:T70
+T53	PERCENTAGE 1900 1904	0.5%
+T54	DATE 1908 1933	the first quarter of 2012
+T56	Economic_item 1984 1990	growth
+T57	Slow-weak 2232 2243	contraction
+E17	Slow-weak:T57 Difference:T58 Modality_cue:T59
+T58	PERCENTAGE 2247 2251	0.2%
+A3	Modality E17 Other
+T59	MODALITY_cue 2213 2225	expectations
+T61	Position-high 641 645	high
+E18	Position-high:T61 Difference:T62
+T62	MONEY 649 657	USD93.44
+T63	Movement-down-loss 662 664	up
+E19	Movement-down-loss:T63 
+T64	Position-low 689 692	low
+E20	Position-low:T64 Difference:T65
+T65	MONEY 696 704	USD93.03
+R1	Cause-Precondition Arg1:E2 Arg2:E1
+T66	Commodity 471 480	commodity
+T67	Movement-down-loss 481 490	downwards
+E21	Movement-down-loss:T67 Item:T66
+R2	Cause-Precondition Arg1:E4 Arg2:E21
+T68	Financial_attribute 1240 1249	inventory
+R5	Cause-Precondition Arg1:E13 Arg2:E14
+T69	Negative_sentiment 1199 1207	concerns
+E22	Negative_sentiment:T69 
+T70	Economic_item 1809 1831	Gross domestic product
+T71	COUNTRY 1835 1842	Germany
+A1	Modality E4 Other
+T55	Economic_item 2017 2027	GDP growth
+T60	Economic_item 2178 2188	GDP growth
+T72	MODALITY_cue 1287 1291	will
+A4	Modality E13 Other
+R3	Cause-Precondition Arg1:E12 Arg2:E14	
+T73	Economic_item 1347 1353	market
+T74	Financial_attribute 1434 1440	prices
+T75	Financial_attribute 1518 1524	prices
+T76	Financial_attribute 1573 1579	prices
+T77	Movement-up-gain 1717 1723	jumped
+E23	Movement-up-gain:T77 
+T78	Economic_item 1772 1778	market
+T79	PERCENTAGE 2036 2040	1.7%
+T80	Movement-up-gain 2074 2083	expansion
+E24	Movement-up-gain:T80 Difference:T81 Modality_cue:T82
+T81	PERCENTAGE 2069 2073	0.8%
+T82	MODALITY_cue 2052 2064	expectations
+A5	Modality E24 Other
+T83	Movement-flat 2199 2203	flat
+E25	Movement-flat:T83 Item:T60
+R4	Cause-Precondition Arg1:E10 Arg2:E9	

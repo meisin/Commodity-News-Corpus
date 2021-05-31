@@ -1,0 +1,83 @@
+T1	Slow-weak 25 32	Bearish
+E1	Slow-weak:T1 
+T2	Movement-down-loss 4 11	Plunges
+E2	Movement-down-loss:T2 Item:T3
+T3	Commodity 0 3	Oil
+R1	Cause-Precondition Arg1:E1 Arg2:E2	
+T4	Movement-down-loss 134 143	plummeted
+E3	Movement-down-loss:T4 Difference:T5 Reference_point_time:T8 Attribute:T6 Item:T7
+T5	PERCENTAGE 147 156	4 percent
+T6	Financial_attribute 127 133	prices
+T7	Commodity 123 126	Oil
+T8	DATE 160 168	Thursday
+T9	Movement-up-gain 183 189	rising
+E4	Movement-up-gain:T9 Item:T10
+T10	Economic_item 190 201	U.S. dollar
+T11	Movement-up-gain 203 209	rising
+E5	Movement-up-gain:T11 Item:T12 Attribute:T13
+T12	Commodity 210 220	U.S. crude
+T13	Financial_attribute 221 232	inventories
+R2	Cause-Precondition Arg1:E4 Arg2:E3	
+R3	Cause-Precondition Arg1:E5 Arg2:E3	
+T15	Movement-down-loss 354 362	dropping
+E7	Movement-down-loss:T15 Difference:T18 Attribute:T17 Item:T16 Final_value:T19
+T16	Commodity 332 341	WTI Crude
+T17	Financial_attribute 342 348	prices
+T18	PERCENTAGE 366 378	4.20 percent
+T19	MONEY 382 388	$61.89
+T20	Movement-down-loss 410 418	plunging
+E8	Movement-down-loss:T20 Difference:T22 Final_value:T23 Item:T21
+T21	Commodity 394 405	Brent Crude
+T22	PERCENTAGE 422 434	3.91 percent
+T23	MONEY 438 444	$65.34
+T24	Movement-down-loss 463 467	down
+E9	Movement-down-loss:T24 Attribute:T14 Item:T25
+T14	Financial_attribute 451 457	prices
+T25	Commodity 447 450	Oil
+T26	Financial_attribute 586 597	inventories
+T27	Movement-up-gain 558 566	increase
+E6	Movement-up-gain:T27 Supplier_Consumer:T28 Attribute:T26
+T28	COUNTRY 570 574	U.S.
+T29	Grow-strong 519 524	rally
+E10	Grow-strong:T29 Intensity_cue:T30
+T30	INTENSITY_cue 534 540	unwind
+T31	Grow-strong 601 609	stronger
+E11	Grow-strong:T31 Item:T32
+T32	Economic_item 610 621	U.S. dollar
+T33	Negative_sentiment 635 643	concerns
+E12	Negative_sentiment:T33 Intensity_cue:T55
+T34	Movement-up-gain 772 778	higher
+E13	Movement-up-gain:T34 Item:T35
+T35	Economic_item 779 785	dollar
+T36	Economic_item 805 815	oil market
+T37	Grow-strong 831 839	stronger
+E14	Grow-strong:T37 Item:T38
+T38	Economic_item 840 849	greenback
+T39	Commodity 856 865	crude oil
+T40	Cause-movement-down-loss 790 797	weighed
+E15	Cause-movement-down-loss:T40 Item:T36
+R7	Cause-Precondition Arg1:E13 Arg2:E15	
+T41	Slow-weak 929 936	bearish
+E16	Slow-weak:T41 
+T42	Commodity 1010 1019	crude oil
+T43	Financial_attribute 1020 1029	inventory
+T44	Movement-up-gain 1030 1035	build
+E17	Movement-up-gain:T44 Attribute:T43 Item:T42 Difference:T45 Reference_point_time:T46
+T45	Quantity 1039 1058	2.4 million barrels
+T46	DATE 1063 1083	the week to March 12
+T47	Financial_attribute 1148 1159	inventories
+T48	Commodity 1138 1147	crude oil
+T49	Movement-up-gain 1160 1164	rose
+E18	Movement-up-gain:T49 Final_value:T50 Attribute:T47 Item:T48
+T50	Quantity 1171 1190	500 million barrels
+T51	Financial_attribute 1274 1280	demand
+T52	Slow-weak 1257 1264	bearish
+E19	Slow-weak:T52 Attribute:T51
+T53	Financial_attribute 1723 1729	supply
+A1	Intensity E10 Eased
+T54	Economic_item 302 308	market
+R4	Cause-Precondition Arg1:E6 Arg2:E10	
+R5	Cause-Precondition Arg1:E11 Arg2:E10	
+T55	INTENSITY_cue 627 634	renewed
+A2	Intensity E12 Intensified
+R6	Cause-Precondition Arg1:E12 Arg2:E10	

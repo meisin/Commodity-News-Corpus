@@ -1,0 +1,145 @@
+T1	Movement-up-gain 203 210	climbed
+E1	Movement-up-gain:T1 Final_value:T2 Reference_point_time:T5 Attribute:T3 Item:T4
+T2	MONEY 216 225	above $50
+T3	Financial_attribute 196 202	prices
+T4	Commodity 192 195	Oil
+T5	DATE 229 237	Thursday
+T6	Financial_attribute 363 369	output
+T7	Cause-movement-down-loss 370 373	cut
+E2	Cause-movement-down-loss:T7 Attribute:T6 Modality_cue:T105
+A1	Modality E2 Other
+T8	Movement-up-gain 430 432	up
+E3	Movement-up-gain:T8 Difference:T9 Difference2:T10 Initial_value:T74 Item:T12
+T9	MONEY 433 441	59 cents
+T10	PERCENTAGE 445 450	1.21%
+T11	Movement-up-gain 528 530	up
+E4	Movement-up-gain:T11 Difference:T14 Difference2:T15 Item:T77 Difference3:T78 Attribute:T75
+T14	MONEY 531 539	53 cents
+T15	PERCENTAGE 543 548	1.08%
+T17	Cause-movement-down-loss 640 643	cut
+E5	Cause-movement-down-loss:T17 Attribute:T18 Difference:T19 Reference_point_time:T20 Supplier_Consumer:T16 Modality_cue:T90
+T18	Financial_attribute 644 650	output
+T19	Production_unit 654 681	1.2 million barrels per day
+T20	DATE 704 716	January 2017
+T21	Cause-movement-down-loss 835 838	cut
+E6	Cause-movement-down-loss:T21 Supplier_Consumer2:T25 Attribute:T22 Difference:T23 Modality_cue:T91 Supplier_Consumer:T81
+A2	Polarity E6 Positive
+A3	Modality E6 Other
+T22	Financial_attribute 839 849	production
+T23	Production_unit 867 877	600,000 bp
+T25	ORGANIZATION 794 802	non-OPEC
+T26	COUNTRY 880 886	Russia
+T27	Cause-movement-down-loss 914 920	reduce
+E7	Cause-movement-down-loss:T27 Supplier_Consumer:T26 Attribute:T28 Difference:T29 Reference_point_time:T30 Modality_cue:T92
+T28	Financial_attribute 921 931	production
+T29	Production_unit 935 946	300,000 bpd
+T30	DATE 947 956	next year
+T31	Cause-movement-down-loss 1005 1009	cuts
+E8	Cause-movement-down-loss:T31 
+T32	Oversupply 1065 1075	oversupply
+E9	Oversupply:T32 Modality_cue:T93 Intensity_cue:T80
+T33	Movement-down-loss 1102 1107	lower
+E10	Movement-down-loss:T33 Attribute:T34 Duration:T35
+T34	Financial_attribute 1095 1101	prices
+T35	DURATION 1112 1131	more than two years
+T36	Cause-movement-up-gain 1268 1275	boosted
+E11	Cause-movement-up-gain:T36 Item:T39 Attribute:T38 Reference_point_time:T40
+T38	Financial_attribute 1280 1286	prices
+T39	Commodity 1276 1279	oil
+T40	DATE 1305 1314	this week
+T37	Cause-movement-down-loss 1607 1611	cuts
+E12	Cause-movement-down-loss:T37 
+T41	Cause-movement-up-gain 1694 1701	ramp up
+E13	Cause-movement-up-gain:T41 Attribute:T42 Supplier_Consumer:T45 Modality_cue:T98
+T42	Financial_attribute 1702 1708	output
+T43	Financial_attribute 1712 1718	prices
+T44	Movement-up-gain 1719 1723	rise
+E14	Movement-up-gain:T44 Attribute:T43
+T45	ORGANIZATION 1662 1681	U.S. shale drillers
+T46	Movement-down-loss 1824 1832	declined
+E15	Movement-down-loss:T46 Attribute:T47 Item:T48 Supplier_Consumer:T49 Difference:T50 Reference_point_time:T51
+T47	Financial_attribute 1813 1823	stockpiles
+T48	Commodity 1803 1812	crude oil
+T49	COUNTRY 1798 1802	U.S.
+T50	Production_unit 1859 1878	2.4 million barrels
+T51	DATE 1879 1888	last week
+T52	Movement-up-gain 1915 1923	increase
+E16	Movement-up-gain:T52 Difference:T53
+T53	Production_unit 1896 1914	3.8 million barrel
+T54	Movement-down-loss 1996 2003	decline
+E17	Movement-down-loss:T54 Attribute:T55 Intensity_cue:T104
+T55	Financial_attribute 2007 2016	inventory
+T58	Movement-up-gain 2070 2075	gains
+E18	Movement-up-gain:T58 Item:T61 Attribute:T59
+T59	Financial_attribute 2018 2028	Stockpiles
+T60	Commodity 2032 2040	gasoline
+T61	Commodity 2045 2056	distillates
+T62	Movement-up-gain 2102 2112	increasing
+E19	Movement-up-gain:T62 Attribute:T63 Item:T64 Difference:T65
+T63	Financial_attribute 2091 2101	stockpiles
+T64	Commodity 2082 2090	gasoline
+T65	Production_unit 2116 2135	3.4 million barrels
+T66	Movement-up-gain 2152 2158	rising
+E20	Movement-up-gain:T66 Item:T67 Difference:T68
+T67	Commodity 2140 2151	distillates
+T68	Production_unit 2162 2181	2.5 million barrels
+T69	Movement-flat 4 12	steadies
+E21	Movement-flat:T69 Item:T71 Final_value:T70
+T70	MONEY 13 22	above $50
+T71	Commodity 0 3	Oil
+T72	Cause-movement-down-loss 34 37	cut
+E22	Cause-movement-down-loss:T72 Attribute:T73 Modality_cue:T100
+T73	Financial_attribute 27 33	output
+A4	Modality E22 Other
+T74	Price_unit 401 416	$50.36 a barrel
+T75	Financial_attribute 495 502	futures
+T77	Commodity 489 494	Brent
+T78	Price_unit 511 526	$53.52 a barrel
+T16	ORGANIZATION 554 603	Organization of the Petroleum Exporting Countries
+A5	Modality E5 Other
+A6	Modality E7 Other
+T82	Commodity 1133 1136	Oil
+T83	ORGANIZATION 1137 1147	production
+T84	Financial_attribute 1170 1181	consumption
+T85	Production_unit 1185 1227	between one to two million barrels per day
+T86	DATE 1234 1243	late 2014
+T89	LOCATION 1514 1520	global
+T88	Oversupply 1521 1536	supply overhang
+E24	Oversupply:T88 Place:T89 Modality_cue:T96 Reference_point_time:T97
+A7	Modality E13 Other
+T90	MODALITY_cue 627 636	agreement
+T91	MODALITY_cue 830 834	will
+T92	MODALITY_cue 891 898	pledged
+T93	MODALITY_cue 1010 1014	will
+T95	Financial_attribute 1435 1441	output
+T96	MODALITY_cue 1499 1504	fears
+T97	DATE 1561 1565	2017
+A9	Modality E24 Other
+T98	MODALITY_cue 1616 1622	likely
+A11	Modality E12 Other
+T100	MODALITY_cue 38 44	doubts
+T102	Position-high 1299 1304	highs
+E26	Position-high:T102 Duration:T103
+T103	DURATION 1290 1298	16-month
+T104	INTENSITY_cue 1977 1983	offset
+T105	MODALITY_cue 355 362	planned
+T94	Position-high 1453 1458	highs
+E25	Position-high:T94 Attribute:T95 Supplier_Consumer:T106 Supplier_Consumer2:T107
+T106	COUNTRY 1409 1415	Russia
+T107	ORGANIZATION 1400 1404	OPEC
+T108	Forecast_target 51 58	outlook
+T110	Economic_item 1037 1043	market
+A14	Modality E9 Other
+A13	Intensity E17 Eased
+T80	INTENSITY_cue 1048 1056	reducing
+A15	Intensity E9 Eased
+T81	COUNTRY 822 828	Russia
+T24	Financial_attribute 1385 1391	output
+T12	Commodity 375 385	U.S. crude
+T13	Commodity 718 721	Oil
+R1	Cause-Precondition Arg1:E8 Arg2:E9	
+R2	Cause-Precondition Arg1:E12 Arg2:E13	
+R3	Cause-Precondition Arg1:E14 Arg2:E13	
+R4	Cause-Precondition Arg1:E16 Arg2:E17	
+T56	Commodity 1966 1976	U.S. crude
+E23	Movement-up-gain:T58 Item:T60 Attribute:T59

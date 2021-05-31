@@ -1,0 +1,90 @@
+T1	COUNTRY 46 50	U.S.
+T2	Financial_attribute 51 61	Production
+T3	Cause-movement-down-loss 37 45	Disrupts
+E1	Cause-movement-down-loss:T3 Supplier_Consumer:T1 Attribute:T2
+T5	Movement-up-gain 4 11	Rallies
+E2	Movement-up-gain:T5 Item:T8
+T6	Movement-up-gain 200 204	rose
+E3	Movement-up-gain:T6 Reference_point_time:T9 Item:T7
+T7	Commodity 196 199	Oil
+T8	Commodity 0 3	Oil
+T9	DATE 208 214	Monday
+T11	Cause-movement-down-loss 254 264	disruption
+E4	Cause-movement-down-loss:T11 Item:T12 Supplier_Consumer:T14
+T12	Commodity 268 271	oil
+T14	STATE_OR_PROVINCE 290 304	Gulf of Mexico
+T15	Economic_item 338 353	economic impact
+T16	Movement-up-gain 377 382	gains
+E5	Movement-up-gain:T16 Intensity_cue:T10
+T17	Movement-up-gain 425 432	rallied
+E6	Movement-up-gain:T17 Contract_date:T20 Attribute:T19 Difference:T18
+T18	PERCENTAGE 444 448	0.8%
+T19	Financial_attribute 393 400	Futures
+T20	DATE 405 412	October
+T21	Movement-down-loss 456 463	falling
+E7	Movement-down-loss:T21 Difference:T22 Reference_point_time:T23
+T22	PERCENTAGE 464 468	1.1%
+T23	DATE 472 478	Friday
+T24	Financial_attribute 518 528	production
+T25	Grow-strong 917 925	recovery
+E8	Grow-strong:T25 Item:T26 Intensity_cue:T54
+T26	Economic_item 908 916	economic
+T27	Movement-down-loss 1218 1222	jump
+E9	Movement-down-loss:T27 
+T28	Movement-up-gain 1262 1266	jump
+E10	Movement-up-gain:T28 
+T29	Movement-up-gain 1416 1421	risen
+E11	Movement-up-gain:T29 Attribute:T30 Duration:T33 Item:T31
+T30	Financial_attribute 1403 1410	futures
+T33	DURATION 1435 1446	three weeks
+T34	Movement-down-loss 1461 1468	decline
+E12	Movement-down-loss:T34 Type:T36 Item:T35 Attribute:T37
+T35	Commodity 1481 1486	crude
+T36	LOCATION 1472 1480	domestic
+T37	Financial_attribute 1500 1508	supplies
+T38	Commodity 1491 1499	gasoline
+T39	Movement-up-gain 1587 1592	surge
+E13	Movement-up-gain:T39 
+T40	Grow-strong 1682 1690	recovery
+E14	Grow-strong:T40 Item:T41 Type:T42
+T41	Economic_item 1673 1681	economic
+T42	LOCATION 1666 1672	global
+T43	Financial_attribute 1921 1927	supply
+T44	Cause-movement-down-loss 1979 1984	curbs
+E15	Cause-movement-down-loss:T44 Attribute:T45 Supplier_Consumer:T46 Intensity_cue:T47
+T45	Financial_attribute 1972 1978	output
+T47	INTENSITY_cue 1965 1971	easing
+T48	Financial_attribute 2009 2015	demand
+T49	Financial_attribute 2026 2033	exports
+T31	Commodity 1382 1402	U.S. benchmark crude
+T32	Commodity 2022 2025	oil
+T46	ORGANIZATION 1947 1952	OPEC+
+T50	Cause-movement-up-gain 1913 1920	unleash
+E16	Cause-movement-up-gain:T50 Attribute:T43 Modality_cue:T51
+T51	MODALITY_cue 1898 1909	threatening
+A3	Modality E16 Other
+R1	Cause-Precondition Arg1:E1 Arg2:E2
+T4	Negative_sentiment 320 328	concerns
+E17	Negative_sentiment:T4 Item:T15
+R2	Cause-Precondition Arg1:E17 Arg2:E5
+T52	Cause-movement-down-loss 533 542	shut down
+E18	Cause-movement-down-loss:T52 Attribute:T24 Supplier_Consumer:T53
+T53	STATE_OR_PROVINCE 503 517	Gulf of Mexico
+T54	INTENSITY_cue 877 883	hamper
+A1	Polarity E8 Negative
+T55	Grow-strong 1353 1357	boom
+E19	Grow-strong:T55 Item:T56
+T56	Commodity 1347 1352	shale
+R4	Cause-Precondition Arg1:E12 Arg2:E11
+T57	Grow-strong 1545 1554	returning
+E20	Grow-strong:T57 Attribute:T59 Modality_cue:T58
+T58	MODALITY_cue 1514 1523	tentative
+T59	Financial_attribute 1535 1541	demand
+A4	Modality E20 Other
+A2	Intensity E15 Eased
+A5	Intensity E8 Eased
+R5	Cause-Precondition Arg1:E20 Arg2:E11	
+R6	Cause-Precondition Arg1:E4 Arg2:E3	
+T10	INTENSITY_cue 383 391	in check
+A6	Intensity E5 Eased
+E21	Movement-down-loss:T34 Type:T36 Item:T38 Attribute:T37
