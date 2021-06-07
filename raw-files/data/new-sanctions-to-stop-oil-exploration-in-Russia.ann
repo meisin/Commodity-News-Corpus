@@ -1,0 +1,96 @@
+T1	Embargo 486 495	sanctions
+E1	Embargo:T1 Imposee:T2 Modality_cue:T40
+T2	COUNTRY 501 507	Russia
+T4	Embargo 881 890	sanctions
+E3	Embargo:T4 Modality_cue:T43 Intensity_cue:T58
+T8	Economic_item 1269 1279	oil fields
+T9	Embargo 1624 1633	sanctions
+E6	Embargo:T9 Modality_cue:T37
+T10	Embargo 1923 1932	sanctions
+E7	Embargo:T10 Modality_cue:T49
+A3	Polarity E6 Positive
+A4	Modality E6 Other
+A5	Polarity E7 Positive
+A6	Modality E7 Other
+T13	Prohibiting 2261 2268	barring
+E9	Prohibiting:T13 Attribute:T14 Imposee:T15 Item:T18 Modality_cue:T51
+T14	Financial_attribute 2273 2279	export
+T15	COUNTRY 2283 2287	U.S.
+T18	Economic_item 2288 2306	gear and expertise
+T20	Cause-movement-down-loss 2473 2481	limiting
+E11	Cause-movement-down-loss:T20 Attribute:T21 Supplier_Consumer:T22 Modality_cue:T53 Item:T52
+T21	Financial_attribute 2492 2499	exports
+T22	COUNTRY 2503 2509	Russia
+T25	COUNTRY 3534 3540	Russia
+T23	Embargo 3562 3571	sanctions
+E12	Embargo:T23 
+T26	Embargo 3622 3631	sanctions
+E14	Embargo:T26 
+T27	Embargo 1051 1060	sanctions
+E15	Embargo:T27 
+T28	Prohibiting 1066 1072	banned
+E16	Prohibiting:T28 
+T3	Prohibiting 542 545	ban
+E2	Prohibiting:T3 Modality_cue:T41
+T11	Prohibiting 938 941	ban
+E4	Prohibiting:T11 Modality_cue:T43 Activity:T16
+T32	Prohibiting 2145 2148	ban
+E8	Prohibiting:T32 Modality_cue:T50 Activity:T44
+T34	Embargo 2606 2615	sanctions
+E18	Embargo:T34 Modality_cue:T54
+A1	Polarity E18 Positive
+A2	Modality E18 Other
+T35	POLARITY_cue 1805 1814	prevented
+T36	MODALITY_cue 1796 1801	could
+T37	MODALITY_cue 1635 1637	if
+T29	Embargo 1767 1795	application of the sanctions
+E17	Embargo:T29 Modality_cue:T36 Polarity_cue:T35
+A7	Polarity E17 Negative
+A8	Modality E17 Other
+T5	Embargo 19 28	sanctions
+E19	Embargo:T5 Modality_cue:T7 Imposer:T30 Imposer2:T33
+T7	MODALITY_cue 9 14	ready
+T30	ORGANIZATION 6 8	EU
+T33	COUNTRY 0 4	U.S.
+A9	Modality E19 Other
+T38	Commodity 37 40	oil
+T39	Commodity 338 341	oil
+A10	Modality E1 Other
+T40	MODALITY_cue 478 485	planned
+A11	Modality E2 Other
+T41	MODALITY_cue 536 541	would
+T42	Commodity 672 677	crude
+T43	MODALITY_cue 868 873	would
+A12	Modality E4 Other
+A13	Modality E3 Other
+T45	Commodity 1221 1227	energy
+T46	Commodity 1191 1194	oil
+T6	Movement-down-loss 1287 1294	decline
+E5	Movement-down-loss:T6 Item:T8
+T47	Commodity 1370 1373	oil
+T48	Commodity 1758 1761	oil
+T49	MODALITY_cue 1915 1922	planned
+T50	MODALITY_cue 2114 2118	Once
+A14	Modality E8 Other
+T51	MODALITY_cue 2210 2215	would
+A15	Modality E9 Other
+T52	Commodity 2519 2525	energy
+T53	MODALITY_cue 2461 2472	considering
+A16	Modality E11 Other
+T54	MODALITY_cue 2598 2601	Any
+T55	Commodity 2663 2666	oil
+T56	Commodity 2819 2825	energy
+T57	Commodity 2967 2973	energy
+T19	Embargo 3521 3530	sanctions
+E10	Embargo:T19 Imposer:T25
+T24	Embargo 2566 2575	sanctions
+E13	Embargo:T24 Intensity_cue:T31
+T31	INTENSITY_cue 2555 2565	strengthen
+A17	Intensity E13 Intensified
+R1	Cause-Precondition Arg1:E1 Arg2:E2	
+T12	Other_activities 546 602	U.S. and European companies from cooperating with Russia
+A18	Intensity E3 Intensified
+T58	INTENSITY_cue 874 880	expand
+T16	Other_activities 942 1003	U.S. and EU cooperation on all energy services and technology
+T17	Economic_item 1026 1036	oil fields
+T44	Other_activities 2152 2190	sharing energy technology and services
