@@ -8,7 +8,7 @@ Run the following codes to extract the news articles. The extracted artiles are 
 
 ```
 python content_scraping.py
-
+## Note:  Make sure *data_source.csv* in the same folder as *content_scraping.py*
 ```
 
 
