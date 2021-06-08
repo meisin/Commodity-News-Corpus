@@ -4,7 +4,7 @@ Annotation was done using [Brat Rapid Annotation Tool](https://brat.nlplab.org/)
 ### 1. News articles
 Due to copyright issues, original news articles are not made available. Instead URL link to each news articles are provided, they are listed in *data_source.csv*. Pre-processing codes to extract each articles are made available. The corresponding *.ann* files are provided in the *data* folder. 
 
-To extract each news articles, run the following codes:
+Run the following codes to extract the news articles. The extracted artiles are saved in *.txt* format in the *data* folder.
 
 ```
 python content_scraping.py
