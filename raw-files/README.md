@@ -2,7 +2,15 @@
 Annotation was done using [Brat Rapid Annotation Tool](https://brat.nlplab.org/). Annotation details are stored in *.ann* files in standoff format.
 
 ### 1. News articles
-Due to copyright issues, original news articles are not made available. Instead URL link to each news articles are provided along with the corresponding *.ann* file. Pre-processing codes to extract each articles are made available.
+Due to copyright issues, original news articles are not made available. Instead URL link to each news articles are provided, they are listed in *data_source.csv*. Pre-processing codes to extract each articles are made available. The corresponding *.ann* files are provided in the *data* folder. 
+
+To extract each news articles, run the following codes:
+
+```
+python content_scraping.py
+
+```
+
 
 ### 2. Augmented Data
 In order to increase the size of the annotations, a number of sentences are augmented using the following approach:
