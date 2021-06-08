@@ -6,6 +6,8 @@ from os import listdir
 from os.path import isfile, join
 from bs4 import Tag, NavigableString
 
+OUTPUT_DIRECTORY = 'data/'
+
 def reuters(url, file_name):
     req = Request(url , headers={'User-Agent': 'Mozilla/5.0'})
     webpage = urlopen(req).read()
@@ -18,7 +20,7 @@ def reuters(url, file_name):
     mydivs = page_soup.find("div", {"class": "StandardArticleBody_body"}).findAll('p')
     for p in mydivs:
         text += p.text + '\n'
-    f = open(file_name+ '.txt', 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
+    f = open(join(OUTPUT_DIRECTORY, file_name+ '.txt') , 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
     f.write(text)
     f.close()
 
@@ -55,7 +57,7 @@ def investing(url, file_name):
                 if c.name == "br":
                     text += '\n'
 
-    f = open(file_name+ '.txt', 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
+    f = open(join(OUTPUT_DIRECTORY, file_name+ '.txt'), 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
     f.write(text)
     f.close()
 
@@ -73,7 +75,7 @@ def marketwatch(url, file_name):
     
     for p in mydivs:
         text += p.text
-    f = open(file_name+ '.txt', 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
+    f = open(join(OUTPUT_DIRECTORY, file_name+ '.txt'), 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
     f.write(text)
     f.close()
     
@@ -93,7 +95,7 @@ def hellenicshippingnews(url, file_name):
     for p in mydivs:    
         text += p.text + '\n'
      
-    f = open(file_name+ '.txt', 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
+    f = open(join(OUTPUT_DIRECTORY, file_name+ '.txt'), 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
     f.write(text)
     f.close()
     
@@ -110,7 +112,7 @@ def cnbc(url, file_name):
     for p in mydivs:
         text += p.text + '\n'
          
-    f = open(file_name+ '.txt', 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
+    f = open(join(OUTPUT_DIRECTORY, file_name+ '.txt'), 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
     f.write(text)
     f.close()
     
@@ -129,7 +131,7 @@ def oilprice(url, file_name):
     for p in mydivs:    
         text += p.text + '\n'
      
-    f = open(file_name+ '.txt', 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
+    f = open(join(OUTPUT_DIRECTORY, file_name+ '.txt'), 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
     f.write(text)
     f.close()
     
@@ -147,7 +149,7 @@ def marketpulse(url, file_name):
     for p in mydivs:  
         text += p.text + '\n'
 
-    f = open(file_name+ '.txt', 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
+    f = open(join(OUTPUT_DIRECTORY, file_name+ '.txt'), 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
     f.write(text)
     f.close()
     
@@ -167,7 +169,7 @@ def fxempire(url, file_name):
     for p in mydivs:    
         text += p.text + '\n'
 
-    f = open(file_name+ '.txt', 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
+    f = open(join(OUTPUT_DIRECTORY, file_name+ '.txt'), 'w', encoding='utf8', newline='\n')    ### this saves the file in Unix 'End of line' format
     f.write(text)
     f.close()
 
