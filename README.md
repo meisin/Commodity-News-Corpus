@@ -22,7 +22,7 @@ Codes for Data processing to convert annotation data (in *.ann* files) from stan
 
 1. First list item
    - First nested list item
-         - Second nested list item
+      - Second nested list item
     
 ### 4. Event Types
 There are 19 Event Types
