@@ -23,11 +23,16 @@ Codes for Data processing to convert annotation data (in *.ann* files) from stan
 ### 4. Event Types
 There are 19 Event Types
 1. **Geo-political News**
-   * **Civil Unrest**
-3. **Macro-Economic News**
-4. **Commodity Supply (includes exports)**
-5. **Commodity Demand (includes imports)**
-6. **Commodity Price Movement**
+   * **Civil Unrest (Civil-unrest)** - Violence or turmoil within the oil producing country
+   * **Embargo (Embargo, Prohibiting)** - Trade or other commercial activity of the com-modity is banned.
+   * **Geo-political Tension (Geo-political-tension)** - Political tension between oil-producingnation with other nations.
+   * **Trade Tension (Trade-tensions)** - Trade-related tension between oil-producing andoil-consuming nations
+   * **Other forms of Crisis (Crisis)**
+   
+2. **Macro-Economic News**
+3. **Commodity Supply (includes exports)**
+4. **Commodity Demand (includes imports)**
+5. **Commodity Price Movement**
  
 
 ### 5. Citation
