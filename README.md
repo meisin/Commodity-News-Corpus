@@ -20,6 +20,16 @@ Commodity news articles were taken from from notable news agencies below:
 ### 3. Data Processing 
 Codes for Data processing to convert annotation data (in *.ann* files) from standoff format to CONLL format are provided.
 
+1. Dog
+    1. German Shepherd
+    2. Belgian Shepherd
+           1. Malinois
+           2. Groenendael
+           3. Tervuren
+2. Cat
+    1. Siberian
+    2. Siamese
+    
 ### 4. Event Types
 There are 19 Event Types
 1. **Geo-political News**
