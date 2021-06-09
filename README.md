@@ -23,7 +23,7 @@ Codes for Data processing to convert annotation data (in *.ann* files) from stan
 ### 4. Event Types
 There are 19 Event Types
 1. **Geo-political News**
- * **Civil Unrest**
+   * **Civil Unrest**
 3. **Macro-Economic News**
 4. **Commodity Supply (includes exports)**
 5. **Commodity Demand (includes imports)**
