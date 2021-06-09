@@ -31,8 +31,14 @@ There are 19 Event Types
       * (S3) .... and **sanctions** against Iran.
       * (S4) ...prepared to impose “ strong and swift ” economic **sanctionson** Venezuela.....
    * **Geo-political Tension (Geo-political-tension)** - Political tension between oil-producingnation with other nations.
+      * (S5) .... heightened **tensions** between the West and Russia..... 
+      * (S6) ... despite geopolitical **war** in Iraq , Libya and Ukraine.
    * **Trade Tension (Trade-tensions)** - Trade-related tension between oil-producing andoil-consuming nations
+      * (S7) .....escalating global **trade wars**, especially between the US and China. 
+      * (S8) ....showing that OPEC is not ready to end its **trade tensions**......
    * **Other forms of Crisis (Crisis)**
+      * (a) A time of intense difficulty, such as other forms of unspecified crisis that do not fallinto any of the above category
+         * (S9)  .... Ukraine declared an end to an oil **crisis** that has .........
    
 2. **Macro-Economic News**
    * **Strong Economy / GDP growth / US Employment (Grow-strong)** - Strong or growing economy / GDP of a nation; applicable to indicate strong status of US EmploymentData
