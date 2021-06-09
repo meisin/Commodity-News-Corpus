@@ -25,7 +25,7 @@ There are 19 Event Types
 1. **Geo-political News**
    * **Civil Unrest (Civil-unrest)** - Violence or turmoil within the oil producing country
                      
-         1. asdfasdf
+         - ....a fragile recovery in Libyan supply outweighed **fighting** in Iraq .....
    * **Embargo (Embargo, Prohibiting)** - Trade or other commercial activity of the com-modity is banned.
    * **Geo-political Tension (Geo-political-tension)** - Political tension between oil-producingnation with other nations.
    * **Trade Tension (Trade-tensions)** - Trade-related tension between oil-producing andoil-consuming nations
