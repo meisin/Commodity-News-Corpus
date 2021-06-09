@@ -24,15 +24,42 @@ Codes for Data processing to convert annotation data (in *.ann* files) from stan
 There are 19 Event Types
 1. **Geo-political News**
    * **Civil Unrest (Civil-unrest)** - Violence or turmoil within the oil producing country
+      i. asdfasdf
    * **Embargo (Embargo, Prohibiting)** - Trade or other commercial activity of the com-modity is banned.
    * **Geo-political Tension (Geo-political-tension)** - Political tension between oil-producingnation with other nations.
    * **Trade Tension (Trade-tensions)** - Trade-related tension between oil-producing andoil-consuming nations
    * **Other forms of Crisis (Crisis)**
    
 2. **Macro-Economic News**
+   * **Strong Economy / GDP growth / US Employment (Grow-strong)** - Strong or growing economy / GDP of a nation; applicable to indicate strong status of US EmploymentData
+   * **Weak or Contracting Economy / GDP / US Employment (Slow-weak)** - Weakening or contracting economy / GDP of a nation; applicable to indicate the weakening of USemployment data.
+   * **Bearish technical view or outlook (Negative-sentiment)** - Bearish sentiment or outlook
+ 
 3. **Commodity Supply (includes exports)**
+   * **Oversupply (Oversupply)** - Situation where production goes into surplus
+   * **Shortage (Shortage)** - Situation where demand is more than supply.
+   * **Supply increase (Movement-up-gain)** - Situation where supply increased
+   * **Action taken to increase supply (Cause-Movement-Up-gain)** - Deliberate action toincrease supply.
+   * **Supply decrease (Movement-down-loss)** - Situation where supply decreased
+   * **Action taken to decrease supply (ause-movement-down-loss)** - Deliberate action todecrease supply.
+   
 4. **Commodity Demand (includes imports)**
+   * **Demand increase (Movement-up-gain)** - Situation where demand increased 
+   * **Action taken to increase demand (Caused-movement-up-gain)** - Deliberate actiontaken to increase demand.
+   * **Demand decrease (Movement-down-loss)** - Situation where demand decreased
+   * **Action taken to decrease demand (Caused-movement-down-loss)** - Deliberate actiontaken to decrease demand
+   
 5. **Commodity Price Movement**
+   Commodity price here includes *spot price*,*futures* and *futures contract*
+   * **Price increase (Movement-up-gain)** Situation where commodity price rises
+   * **Price decrease (Movement-down-loss)** - Situation where commodity price drops
+   * **Price movement flat (Movement-flat)** - Situation where no or little change to commod-ity price
+   * **Price position (Position-high, Position-low)** - Describes the position of the currentcommodity price
+   
+6. **Change in Forecasted value**
+   * **Increase forecast target (Caused-movement-up-gain)** - Forecasted / target is raised,possible values are price target, growth target, demand and supply target
+   * **Price target /forecast decrease (Caused-movement-down-loss)** - Forecasted / targetis lowered, possible values are commodity price target, growth target, demand and sup-ply target
+   
  
 
 ### 5. Citation
