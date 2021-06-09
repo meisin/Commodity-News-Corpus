@@ -20,15 +20,13 @@ Commodity news articles were taken from from notable news agencies below:
 ### 3. Data Processing 
 Codes for Data processing to convert annotation data (in *.ann* files) from standoff format to CONLL format are provided.
 
-1. First list item
-   - First nested list item
-      - Second nested list item
     
 ### 4. Event Types
 There are 19 Event Types
 1. **Geo-political News**
    * **Civil Unrest (Civil-unrest)** - Violence or turmoil within the oil producing country
-                          * a fragile recovery in Libyan supply outweighed **fighting** in Iraq .....
+      * a fragile recovery in Libyan supply outweighed **fighting** in Iraq .....
+      * .....a backdrop of the worst **strife** in Iran this decade...
    * **Embargo (Embargo, Prohibiting)** - Trade or other commercial activity of the com-modity is banned.
    * **Geo-political Tension (Geo-political-tension)** - Political tension between oil-producingnation with other nations.
    * **Trade Tension (Trade-tensions)** - Trade-related tension between oil-producing andoil-consuming nations
