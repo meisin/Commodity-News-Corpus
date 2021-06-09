@@ -1,0 +1,112 @@
+T1	Commodity 49 52	Oil
+T2	Financial_attribute 53 59	Prices
+T3	Grow-strong 60 65	Rally
+E1	Grow-strong:T3 Attribute:T2 Item:T1
+T4	Commodity 303 306	oil
+T5	Financial_attribute 307 313	prices
+T6	Movement-up-gain 296 302	rising
+E2	Movement-up-gain:T6 Item:T4 Attribute:T5
+T7	Movement-up-gain 343 347	rise
+E3	Movement-up-gain:T7 Attribute:T9 Item:T8 Modality_cue:T10
+T8	Commodity 327 330	oil
+T9	Financial_attribute 331 339	revenues
+T10	MODALITY_cue 314 318	help
+A1	Modality E3 Other
+T11	Commodity 446 449	oil
+T12	Financial_attribute 450 456	prices
+T13	Grow-strong 437 442	rally
+E4	Grow-strong:T13 Item:T11 Attribute:T12
+T14	Movement-down-loss 469 474	risen
+E5	Movement-down-loss:T14 Difference:T15 Reference_point_time:T16
+T15	PERCENTAGE 485 495	30 percent
+T16	DATE 496 505	this year
+T17	Economic_item 536 543	economy
+T18	Slow-weak 562 567	slump
+E6	Slow-weak:T18 Item:T17 Supplier_Consumer:T19
+T19	COUNTRY 527 533	Russia
+T20	Financial_attribute 659 664	price
+T21	Commodity 655 658	oil
+T22	Movement-down-loss 665 670	crash
+E7	Movement-down-loss:T22 Attribute:T20 Item:T21
+T23	Economic_item 767 780	Russian ruble
+T24	Movement-down-loss 781 788	crashed
+E8	Movement-down-loss:T24 Item:T23
+T25	Movement-down-loss 814 820	shrank
+E9	Movement-down-loss:T25 Attribute:T26 Item:T27 Supplier_Consumer:T28
+T26	Financial_attribute 807 813	income
+T27	Commodity 803 806	oil
+T28	COUNTRY 794 800	Russia
+T29	Movement-down-loss 840 846	plunge
+E10	Movement-down-loss:T29 Item:T30 Attribute:T31
+T30	Commodity 850 853	oil
+T31	Financial_attribute 854 860	prices
+R1	Cause-Precondition Arg1:E10 Arg2:E9	
+R2	Cause-Precondition Arg1:E10 Arg2:E8	
+T32	Movement-down-loss 1021 1026	lower
+E11	Movement-down-loss:T32 Final_value:T36 Modality_cue:T37 Item:T34 Attribute:T33
+T33	Financial_attribute 952 960	revenues
+T34	Commodity 966 969	oil
+T35	Commodity 974 977	gas
+T36	MONEY 987 1000	US$40 billion
+T37	MODALITY_cue 978 983	would
+A2	Modality E11 Other
+T38	Movement-down-loss 1051 1059	tumbling
+E12	Movement-down-loss:T38 Item:T39 Attribute:T40
+T39	Commodity 1060 1063	oil
+T40	Financial_attribute 1064 1070	prices
+T41	Economic_item 1081 1088	economy
+T42	Cause-movement-down-loss 1226 1232	reduce
+E13	Cause-movement-down-loss:T42 
+T43	Movement-down-loss 1330 1335	crash
+E14	Movement-down-loss:T43 Attribute:T44 Item:T45
+T44	Financial_attribute 1324 1329	price
+T45	Commodity 1320 1323	oil
+T46	Slow-weak 1421 1430	shrinking
+E15	Slow-weak:T46 Initial_reference_point:T49 Difference:T50 Item:T47 Supplier_Consumer:T48 Modality_cue:T76
+T47	Economic_item 1413 1420	economy
+T48	COUNTRY 1404 1410	Russia
+T49	DATE 1434 1438	2020
+T50	PERCENTAGE 1442 1451	6 percent
+T51	Economic_item 1508 1516	economic
+T52	Financial_attribute 1714 1719	price
+T53	Commodity 1710 1713	oil
+T54	Movement-down-loss 1720 1727	crashes
+E16	Movement-down-loss:T54 Attribute:T52 Item:T53 Modality_cue:T55
+A3	Modality E16 Other
+T55	MODALITY_cue 1735 1741	future
+T56	Movement-up-gain 1761 1767	higher
+E17	Movement-up-gain:T56 Item:T58 Attribute:T57
+T57	Financial_attribute 1772 1778	prices
+T58	Commodity 1768 1771	oil
+T59	Movement-up-gain 1791 1793	up
+E18	Movement-up-gain:T59 Supplier_Consumer:T60 Item:T61 Attribute:T62
+T60	COUNTRY 1794 1800	Russia
+T61	Commodity 1803 1806	oil
+T62	Financial_attribute 1807 1815	revenues
+R3	Cause-Precondition Arg1:E17 Arg2:E18	
+T63	Movement-down-loss 1873 1878	lower
+E19	Movement-down-loss:T63 
+T64	Cause-movement-down-loss 1957 1964	cutting
+E20	Cause-movement-down-loss:T64 Item:T66 Final_value:T65 Initial_value:T67
+T65	MONEY 1982 1995	US$43 billion
+T66	Economic_item 1969 1978	borrowing
+T67	MONEY 2023 2036	US$50 billion
+T68	Cause-movement-down-loss 2117 2120	cut
+E21	Cause-movement-down-loss:T68 Intensity_cue:T69 Modality_cue:T72 Item:T70 Final_value:T71
+T69	INTENSITY_cue 2148 2154	double
+A4	Intensity E21 Intensified
+A5	Modality E21 Other
+T70	Economic_item 2124 2133	borrowing
+T71	MONEY 2158 2173	US$13.5 billion
+T72	MODALITY_cue 2142 2147	could
+T73	Cause-movement-down-loss 17 24	Cutting
+E22	Cause-movement-down-loss:T73 Modality_cue:T74 Supplier_Consumer:T75
+T74	MODALITY_cue 7 16	Considers
+A6	Modality E22 Other
+T75	COUNTRY 0 6	Russia
+A7	Modality E15 Other
+T76	MODALITY_cue 1389 1393	will
+R4	Cause-Precondition Arg1:E14 Arg2:E15	
+T77	Commodity 1622 1625	oil
+T78	Financial_attribute 1196 1201	price
+T79	Commodity 1192 1195	oil

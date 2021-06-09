@@ -1,0 +1,135 @@
+T1	Cause-movement-up-gain 43 48	Boost
+E1	Cause-movement-up-gain:T1 Reference_point_time:T2 Modality_cue:T3 Attribute:T4 Item:T5 Supplier_Consumer:T6
+T2	DATE 52 56	2021
+T3	MODALITY_cue 27 30	Set
+A1	Modality E1 Other
+T4	Financial_attribute 17 23	Demand
+T5	Commodity 5 16	Oil Product
+T6	COUNTRY 0 4	U.S.
+T7	Grow-strong 250 254	grow
+E2	Grow-strong:T7 Supplier_Consumer:T10 Item:T9 Attribute:T13 Modality_cue:T11 Forecaster:T12 Difference:T8 Final_value:T14 Initial_reference_point:T15
+T8	Production_unit 258 274	1.08 million bpd
+T9	Commodity 224 236	oil products
+T10	COUNTRY 244 246	US
+T11	MODALITY_cue 203 212	projected
+A2	Modality E2 Other
+T12	ORGANIZATION 189 202	Rystad Energy
+T13	Financial_attribute 213 219	demand
+T14	Production_unit 286 302	19.1 million bpd
+T15	DATE 278 282	2021
+T17	Commodity 436 447	US products
+T18	Financial_attribute 448 454	demand
+T19	Production_unit 464 475	350,000 bpd
+T20	Economic_item 515 523	economic
+T16	Forecast_target 426 432	upside
+T21	Forecast_target 989 995	upside
+T22	Financial_attribute 982 988	demand
+T23	Commodity 969 981	oil products
+T24	Grow-strong 1028 1035	bullish
+E3	Grow-strong:T24 Supplier_Consumer:T25 Attribute:T26 Initial_reference_point:T27
+T25	COUNTRY 1049 1051	US
+T26	Financial_attribute 1061 1067	demand
+T27	DATE 1071 1075	2021
+T28	Cause-movement-up-gain 1121 1130	stimulate
+E4	Cause-movement-up-gain:T28 Modality_cue:T29 Attribute:T30 Item:T31
+T29	MODALITY_cue 1106 1110	will
+T30	Financial_attribute 1131 1137	demand
+T31	Commodity 1142 1145	oil
+A3	Modality E4 Other
+T34	Cause-movement-up-gain 1992 2001	increased
+E5	Cause-movement-up-gain:T34 Item:T35 Attribute:T36
+T35	Commodity 2002 2005	oil
+T36	Financial_attribute 2006 2012	demand
+T37	Financial_attribute 2048 2054	demand
+T38	Production_unit 2125 2135	60,000 bpd
+T39	Movement-up-gain 2144 2150	rising
+E6	Movement-up-gain:T39 Reference_point_time:T40 Final_value:T41 Initial_value:T38 Attribute:T37
+T40	DATE 2154 2158	2022
+T41	Production_unit 2162 2173	330,000 bpd
+T42	Cause-movement-down-loss 2251 2258	Slashes
+E7	Cause-movement-down-loss:T42 Forecaster:T47 Item:T43 Attribute:T44 Forecast:T45 Reference_point_time:T46
+T43	Commodity 2259 2262	Oil
+T44	Financial_attribute 2263 2269	Demand
+T45	Forecast_target 2270 2277	Outlook
+T46	DATE 2282 2286	2021
+T47	ORGANIZATION 2247 2250	IEA
+T48	Commodity 2592 2596	fuel
+T49	Financial_attribute 2597 2607	production
+T50	Commodity 2728 2740	oil products
+T51	Financial_attribute 2741 2747	demand
+T52	Commodity 2819 2822	oil
+T53	Financial_attribute 2823 2829	demand
+T54	Movement-up-gain 2966 2970	rise
+E8	Movement-up-gain:T54 Modality_cue:T56 Attribute:T55 Difference:T57 Reference_point_time:T58
+T55	Financial_attribute 2953 2959	demand
+T56	MODALITY_cue 2960 2965	could
+A4	Modality E8 Other
+T57	Production_unit 2988 2999	350,000 bpd
+T58	DATE 3004 3008	2021
+T59	Financial_attribute 3279 3285	demand
+T60	Movement-down-loss 3289 3293	drop
+E9	Movement-down-loss:T60 Attribute:T59 Modality_cue:T61
+T61	MODALITY_cue 3257 3261	will
+A5	Modality E9 Other
+T62	Movement-up-gain 4067 4075	increase
+E10	Movement-up-gain:T62 Modality_cue:T63 Item:T64 Attribute:T65 Difference:T66
+A6	Modality E10 Other
+T63	MODALITY_cue 4061 4066	would
+T64	Commodity 4085 4088	oil
+T65	Financial_attribute 4089 4095	demand
+T66	Production_unit 4113 4124	300,000 bpd
+T67	Movement-up-gain 4256 4265	increases
+E11	Movement-up-gain:T67 Item:T68
+T68	Economic_item 4243 4255	fuel economy
+T69	Economic_item 3181 3193	fuel economy
+T70	Economic_item 4126 4138	Fuel economy
+T71	Economic_item 4929 4941	fuel economy
+T72	Economic_item 5050 5062	fuel economy
+T73	Movement-down-loss 4533 4537	fell
+E12	Movement-down-loss:T73 Difference:T75 Item:T74
+T74	Economic_item 4527 4532	sales
+T75	PERCENTAGE 4555 4558	15%
+T76	Commodity 4769 4777	gasoline
+T77	Financial_attribute 4758 4764	prices
+T78	Movement-down-loss 4918 4925	decline
+E13	Movement-down-loss:T78 Item:T71
+T79	Movement-up-gain 5654 5659	gains
+E14	Movement-up-gain:T79 
+T80	Movement-down-loss 5741 5746	lower
+E15	Movement-down-loss:T80 Item:T83 Attribute:T82 Difference:T81 Reference_point_time:T84 Modality_cue:T85
+T81	Production_unit 5726 5737	500,000 bpd
+T82	Financial_attribute 5751 5757	demand
+T83	Commodity 5747 5750	oil
+T84	DATE 5761 5765	2025
+A7	Modality E15 Other
+T85	MODALITY_cue 5698 5703	would
+T86	Movement-down-loss 5872 5876	fall
+E16	Movement-down-loss:T86 Difference:T90 Modality_cue:T89 Attribute:T87 Item:T88
+T87	Financial_attribute 5859 5865	demand
+T88	Commodity 5855 5858	oil
+T89	MODALITY_cue 5866 5871	would
+A8	Modality E16 Other
+T90	Production_unit 5894 5905	370,000 bpd
+T91	Movement-down-loss 6037 6045	downward
+E17	Movement-down-loss:T91 Forecast:T93 Attribute:T92 Polarity_cue:T105
+T92	Financial_attribute 6021 6027	demand
+T93	Forecast_target 6028 6036	forecast
+T94	Production_unit 6152 6168	20.0 million bpd
+T95	Commodity 6172 6184	oil products
+T96	Movement-up-gain 426 432	upside
+E18	Movement-up-gain:T96 Forecast:T16 Item:T17 Attribute:T18 Difference:T19
+T97	Movement-up-gain 989 995	upside
+E19	Movement-up-gain:T97 Forecast:T21 Attribute:T22 Item:T23
+T98	Movement-up-gain 1663 1669	upside
+E20	Movement-up-gain:T98 Forecast:T99 Supplier_Consumer:T100 Item:T101 Attribute:T102 Difference:T103 Reference_point_time:T104 Modality_cue:T33
+T99	Forecast_target 1663 1669	upside
+T100	COUNTRY 1673 1675	US
+T101	Commodity 1676 1688	oil products
+T102	Financial_attribute 1689 1695	demand
+T103	Production_unit 1713 1724	285,000 bpd
+T104	DATE 1729 1733	2021
+T32	Economic_item 1368 1379	oil markets
+A9	Modality E20 Other
+T33	MODALITY_cue 1646 1652	expect
+T105	POLARITY_cue 6005 6008	not
+A10	Polarity E17 Negative

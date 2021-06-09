@@ -1,0 +1,64 @@
+T1	Commodity 43 48	crude
+T2	Financial_attribute 49 59	production
+T3	DATE 37 42	April
+T4	Cause-movement-up-gain 31 36	eases
+E1	Cause-movement-up-gain:T4 Reference_point_time:T3 Item:T1 Attribute:T2 Supplier_Consumer:T5
+T5	STATE_OR_PROVINCE 23 30	Alberta
+T6	Cause-movement-up-gain 233 239	raised
+E2	Cause-movement-up-gain:T6 Supplier_Consumer:T9 Item:T7 Attribute:T10 Difference:T8 Reference_point_time:T47
+T7	Commodity 254 259	crude
+T8	Production_unit 299 327	3.66 million barrels per day
+T9	STATE_OR_PROVINCE 213 220	Alberta
+T10	Financial_attribute 279 286	produce
+T11	Movement-up-gain 332 340	increase
+E3	Movement-up-gain:T11 Difference:T12
+T12	Quantity 344 355	100,000 bpd
+T13	Commodity 420 423	oil
+T14	Financial_attribute 424 430	export
+T15	Position-low 524 535	record lows
+E4	Position-low:T15 Attribute:T16 Item:T17
+T16	Financial_attribute 489 495	prices
+T17	Commodity 483 488	crude
+T18	Movement-down-loss 541 546	slump
+E5	Movement-down-loss:T18 
+T19	Cause-movement-down-loss 611 615	cuts
+E6	Cause-movement-down-loss:T19 Difference:T21 Attribute:T20 Supplier_Consumer:T23
+T20	Financial_attribute 600 610	production
+T21	Production_unit 643 654	325,000 bpd
+T22	Economic_item 666 672	market
+T23	STATE_OR_PROVINCE 560 567	Alberta
+R1	Cause-Precondition Arg1:E5 Arg2:E6	
+T24	Cause-movement-up-gain 694 701	raising
+E7	Cause-movement-up-gain:T24 
+T25	Financial_attribute 734 737	oil
+T26	Movement-down-loss 752 761	shrinking
+E8	Movement-down-loss:T26 Attribute:T25
+T27	Financial_attribute 766 772	prices
+T28	Grow-strong 777 785	stronger
+E9	Grow-strong:T28 Attribute:T27
+R2	Cause-Precondition Arg1:E9 Arg2:E7	
+R3	Cause-Precondition Arg1:E8 Arg2:E7	
+T29	Movement-up-gain 882 890	increase
+E10	Movement-up-gain:T29 
+T30	Commodity 940 945	crude
+T31	Financial_attribute 1022 1032	production
+T32	Commodity 1198 1203	crude
+T33	Price_unit 1474 1486	$50 a barrel
+T34	Financial_attribute 1488 1498	Production
+T35	Production_unit 1533 1549	3.63 million bpd
+T36	Production_unit 1558 1568	75,000 bpd
+T37	Movement-up-gain 1635 1643	increase
+E11	Movement-up-gain:T37 Attribute:T38 Difference:T39 Reference_point_time:T40
+A1	Modality E11 Other
+T38	Financial_attribute 1644 1650	output
+T39	Production_unit 1662 1672	25,000 bpd
+T40	DATE 1676 1681	April
+T41	Cause-movement-down-loss 1691 1695	cuts
+E12	Cause-movement-down-loss:T41 Item:T42
+T42	Commodity 1687 1690	oil
+T43	Commodity 1756 1761	crude
+T44	Commodity 1907 1912	crude
+T45	Production_unit 2004 2014	10,000 bpd
+T46	Commodity 451 456	crude
+T47	DATE 290 295	April
+T48	Commodity 1389 1399	U.S. crude

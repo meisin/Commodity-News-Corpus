@@ -1,0 +1,112 @@
+T1	Movement-up-gain 4 6	up
+E1	Movement-up-gain:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	ORGANIZATION 16 21	OPEC+
+T4	Commodity 23 27	gold
+T5	Slow-weak 28 38	struggling
+E2	Slow-weak:T5 Item:T4
+T6	Commodity 117 120	Oil
+T7	ORGANIZATION 135 140	OPEC+
+T8	Grow-strong 166 171	rally
+E3	Grow-strong:T8 Final_value:T9 Item:T10
+T9	PERCENTAGE 161 165	2.5%
+T10	Commodity 197 200	oil
+T11	Movement-up-gain 220 225	gains
+E4	Movement-up-gain:T11 Intensity_cue:T12 Reference_point_time:T13
+T12	INTENSITY_cue 204 213	extending
+A1	Intensity E4 Intensified
+T13	DATE 229 237	Thursday
+T14	Movement-up-gain 301 306	surge
+E5	Movement-up-gain:T14 Item:T15 Attribute:T16
+T15	Commodity 310 315	crude
+T16	Financial_attribute 316 327	inventories
+T17	Grow-strong 341 348	growing
+E6	Grow-strong:T17 
+T18	COUNTRY 367 380	oil producers
+T19	Cause-movement-down-loss 404 408	cuts
+E7	Cause-movement-down-loss:T19 Attribute:T20
+T20	Financial_attribute 397 403	output
+T21	Cause-movement-down-loss 466 470	cuts
+E8	Cause-movement-down-loss:T21 Attribute:T22 Intensity_cue:T23 Modality_cue:T24
+T22	Financial_attribute 455 465	production
+A2	Intensity E8 Eased
+T23	INTENSITY_cue 440 446	easing
+T24	MODALITY_cue 488 496	expected
+A3	Modality E8 Other
+T25	Cause-movement-down-loss 569 573	cuts
+E9	Cause-movement-down-loss:T25 Intensity_cue:T26 Attribute:T27 Supplier_Consumer:T28 Modality_cue:T29 Difference:T30
+T26	INTENSITY_cue 553 557	ease
+A4	Intensity E9 Eased
+T27	Financial_attribute 558 568	production
+T28	ORGANIZATION 544 549	OPEC+
+T29	MODALITY_cue 498 510	Expectations
+A5	Modality E9 Other
+T30	Production_unit 586 617	between 500,000 bpd to 1.5m bpd
+T31	Financial_attribute 701 706	price
+T32	Commodity 717 720	oil
+T33	Movement-down-loss 726 733	plunged
+E10	Movement-down-loss:T33 Item:T34 Difference:T35 Reference_point_time:T36
+T34	Commodity 722 725	WTI
+T35	PERCENTAGE 734 736	6%
+T36	DATE 737 759	Friday through Tuesday
+T37	Commodity 792 795	oil
+T38	Economic_item 809 815	market
+T39	Movement-up-gain 837 846	rebounded
+E11	Movement-up-gain:T39 Difference:T41 Attribute:T40
+T40	Financial_attribute 821 826	price
+T41	PERCENTAGE 857 859	3%
+T42	Negative_sentiment 869 874	fears
+E12	Negative_sentiment:T42 Intensity_cue:T43
+T43	INTENSITY_cue 875 882	subside
+A6	Polarity E12 Negative
+R1	Cause-Precondition Arg1:E12 Arg2:E11	
+T44	Quantity 934 951	21 million barrel
+T45	Financial_attribute 952 961	inventory
+T46	Movement-up-gain 962 967	build
+E13	Movement-up-gain:T46 Attribute:T45 Difference:T44
+T47	Commodity 1009 1017	gasoline
+T48	Movement-down-loss 998 1005	decline
+E14	Movement-down-loss:T48 Item:T47 Attribute:T49
+T49	Financial_attribute 1018 1024	stocks
+T50	Economic_item 1149 1156	markets
+T51	Slow-weak 1200 1204	bear
+E15	Slow-weak:T51 Item:T53
+T52	Commodity 1189 1193	Gold
+T53	Economic_item 1205 1211	market
+T54	Movement-down-loss 1349 1353	drop
+E16	Movement-down-loss:T54 Initial_value:T56 Difference:T55 Item:T59
+T55	PERCENTAGE 1345 1348	18%
+T56	MONEY 1380 1387	USD2080
+T57	Slow-weak 1323 1327	bear
+E17	Slow-weak:T57 Item:T58
+T58	Economic_item 1328 1334	market
+T59	Commodity 1341 1344	its
+T60	Commodity 1574 1578	Gold
+T61	Commodity 1705 1719	precious metal
+T62	Commodity 1455 1469	precious metal
+T63	Position-low 1748 1751	low
+E18	Position-low:T63 Final_value:T64 Item:T61
+T64	MONEY 1755 1762	USD1706
+T65	Commodity 1908 1912	gold
+T66	Grow-strong 1959 1967	recovery
+E19	Grow-strong:T66 Intensity_cue:T67 Item:T65
+T67	INTENSITY_cue 1974 1978	weak
+A7	Intensity E19 Eased
+T68	Position-low 1946 1950	lows
+E20	Position-low:T68 Item:T65
+T69	Commodity 2177 2181	gold
+T70	ORGANIZATION 653 658	OPEC+
+T71	Negative_sentiment 1178 1185	concern
+E21	Negative_sentiment:T71 Polarity_cue:T72
+T72	POLARITY_cue 1166 1168	no
+A8	Polarity E21 Negative
+T73	Commodity 1222 1226	Gold
+T74	Movement-down-loss 1865 1871	easing
+E22	Movement-down-loss:T74 Attribute:T75 Item:T77
+T75	Financial_attribute 1858 1864	yields
+T76	Economic_item 1622 1626	bond
+T77	Economic_item 1853 1857	bond
+T78	Commodity 1986 1990	gold
+T79	Movement-up-gain 2140 2146	rising
+E23	Movement-up-gain:T79 Attribute:T80
+T80	Financial_attribute 2129 2135	yields

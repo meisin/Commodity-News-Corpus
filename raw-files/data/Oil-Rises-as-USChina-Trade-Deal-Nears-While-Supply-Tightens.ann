@@ -1,0 +1,136 @@
+T1	Movement-up-gain 4 9	Rises
+E1	Movement-up-gain:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	Cause-movement-down-loss 54 62	Tightens
+E2	Cause-movement-down-loss:T3 Item:T4
+T4	Commodity 47 53	Supply
+T5	Movement-up-gain 170 177	climbed
+E3	Movement-up-gain:T5 Item:T6
+T6	Commodity 166 169	Oil
+T7	Cause-movement-down-loss 332 342	tightening
+E4	Cause-movement-down-loss:T7 Attribute:T8
+T8	Financial_attribute 290 298	supplies
+T9	Commodity 270 275	crude
+T10	Financial_attribute 276 282	demand
+T11	Financial_attribute 344 351	Futures
+T12	Movement-up-gain 364 368	rose
+E5	Movement-up-gain:T12 Attribute:T11 Difference:T13
+T13	PERCENTAGE 380 391	1.1 percent
+T14	Movement-down-loss 400 404	drop
+E6	Movement-down-loss:T14 Difference:T15 Reference_point_time:T16
+T15	PERCENTAGE 408 419	2.6 percent
+T16	DATE 420 429	last week
+T17	Financial_attribute 650 654	rigs
+T18	Commodity 646 649	oil
+T19	Movement-down-loss 666 670	fell
+E7	Movement-down-loss:T19 Attribute:T17 Item:T18
+T20	Position-low 678 684	lowest
+E8	Position-low:T20 Initial_reference_point:T21
+T21	DATE 697 700	May
+T22	Financial_attribute 713 719	output
+T23	ORGANIZATION 708 712	OPEC
+T24	Movement-down-loss 720 728	declined
+E9	Movement-down-loss:T24 Supplier_Consumer:T23 Attribute:T22
+T25	Movement-up-gain 744 751	rallied
+E10	Movement-up-gain:T25 Item:T26 Difference:T27
+T26	Commodity 736 739	Oil
+T27	PERCENTAGE 758 768	24 percent
+T28	Financial_attribute 874 884	production
+T29	Cause-movement-down-loss 870 873	cut
+E11	Cause-movement-down-loss:T29 Attribute:T28 Supplier_Consumer:T31
+T30	ORGANIZATION 862 867	OPEC+
+T31	ORGANIZATION 786 850	Organization of the Petroleum Exporting Countries and its allies
+R1	Cause-Precondition Arg1:E11 Arg2:E10	
+T32	Embargo 900 909	sanctions
+E12	Embargo:T32 Imposer:T33 Imposee:T34
+T33	COUNTRY 891 899	American
+T34	COUNTRY 913 922	Venezuela
+T35	COUNTRY 927 931	Iran
+T36	Financial_attribute 941 949	supplies
+T37	Cause-movement-down-loss 932 940	restrict
+E13	Cause-movement-down-loss:T37 Attribute:T36 Supplier_Consumer:T35 Intensity_cue:T38
+T38	INTENSITY_cue 950 957	further
+A1	Intensity E13 Intensified
+T39	Slow-weak 1003 1010	slowing
+E14	Slow-weak:T39 Attribute:T40 Supplier_Consumer:T42
+T40	Financial_attribute 1011 1014	rig
+T41	Economic_item 1073 1083	oil market
+T42	COUNTRY 1028 1032	U.S.
+T43	Commodity 1155 1178	West Texas Intermediate
+T44	DATE 1183 1188	April
+T45	Movement-up-gain 1198 1202	rose
+E15	Movement-up-gain:T45 Contract_date:T44 Item:T43 Difference:T46 Final_value:T47
+T46	MONEY 1214 1222	62 cents
+T47	Price_unit 1226 1241	$56.42 a barrel
+T48	Movement-down-loss 1336 1340	fell
+E16	Movement-down-loss:T48 Attribute:T49 Reference_point_time:T50
+T49	Financial_attribute 1329 1335	Prices
+T50	DATE 1341 1350	last week
+T51	Commodity 1437 1442	Brent
+T52	DATE 1447 1450	May
+T53	Movement-up-gain 1486 1488	up
+E17	Movement-up-gain:T53 Difference:T54 Final_value:T55 Item:T51 Contract_date:T52
+T54	MONEY 1489 1497	77 cents
+T55	Price_unit 1469 1484	$65.84 a barrel
+T56	Commodity 1590 1593	WTI
+T57	Commodity 1559 1574	benchmark crude
+T58	MONEY 1624 1629	$8.94
+T59	Financial_attribute 1656 1660	rigs
+T60	Movement-down-loss 1635 1639	drop
+E18	Movement-down-loss:T60 Type:T61 Item:T62 Attribute:T59 Difference:T63 Final_value:T64
+T61	NATIONALITY 1643 1651	American
+T62	Commodity 1652 1655	oil
+T63	NUMBER 1665 1667	10
+T64	NUMBER 1671 1674	843
+T65	Movement-down-loss 1740 1748	collapse
+E19	Movement-down-loss:T65 Difference:T66 Attribute:T67 Reference_point_time:T68
+T66	PERCENTAGE 1729 1739	40 percent
+T67	Financial_attribute 1752 1758	prices
+T68	DATE 1764 1773	last year
+T69	Movement-down-loss 1829 1833	fell
+E20	Movement-down-loss:T69 Attribute:T70 Difference:T71 Final_value:T72
+T70	Financial_attribute 1824 1828	rigs
+T71	NUMBER 1837 1842	seven
+T72	NUMBER 1846 1849	466
+T73	Position-low 1860 1866	lowest
+E21	Position-low:T73 Reference_point_time:T74
+T74	DATE 1873 1876	May
+T75	Financial_attribute 1945 1949	rigs
+T76	Cause-movement-down-loss 2048 2052	trim
+E22	Cause-movement-down-loss:T76 Modality_cue:T77 Difference:T78 Reference_point_time:T79
+T77	MODALITY_cue 2040 2044	plan
+A2	Modality E22 Other
+T78	PERCENTAGE 2071 2080	3 percent
+T79	DATE 2081 2090	this year
+T80	Financial_attribute 2097 2103	Output
+T81	Financial_attribute 2111 2121	production
+T82	ORGANIZATION 2104 2108	OPEC
+T83	Movement-down-loss 2122 2129	slumped
+E23	Movement-down-loss:T83 Reference_point_time:T84 Attribute:T81 Supplier_Consumer:T82
+T84	DATE 2130 2140	last month
+T85	COUNTRY 2156 2168	Saudi Arabia
+T86	COUNTRY 2170 2176	Kuwait
+T87	COUNTRY 2185 2205	United Arab Emirates
+T88	Cause-movement-down-loss 2254 2258	cuts
+E24	Cause-movement-down-loss:T88 Supplier_Consumer:T87 Supplier_Consumer2:T86 Supplier_Consumer3:T85
+T89	Production_unit 2368 2396	11.336 million barrels a day
+T90	Movement-down-loss 2398 2402	down
+E25	Movement-down-loss:T90 Initial_reference_point:T92 Difference:T91 Final_value:T89 Supplier_Consumer:T93
+T91	Production_unit 2403 2423	82,000 barrels a day
+T92	DATE 2433 2440	October
+T93	COUNTRY 2336 2342	Russia
+T94	Commodity 2527 2530	oil
+T95	Financial_attribute 2531 2537	prices
+T96	ORGANIZATION 2553 2557	OPEC
+T97	Cause-movement-down-loss 2558 2566	reducing
+E26	Cause-movement-down-loss:T97 Attribute:T98 Supplier_Consumer:T96
+T98	Financial_attribute 2573 2583	production
+T99	Cause-movement-up-gain 2745 2750	raise
+E27	Cause-movement-up-gain:T99 Item:T100 Attribute:T101 Modality_cue:T102
+T100	Commodity 2755 2758	oil
+T101	Financial_attribute 2759 2765	demand
+T102	MODALITY_cue 2741 2744	can
+A3	Modality E27 Other
+T103	Forecast_target 258 265	outlook
+T104	Financial_attribute 578 584	Prices
+R2	Cause-Precondition Arg1:E24 Arg2:E23	

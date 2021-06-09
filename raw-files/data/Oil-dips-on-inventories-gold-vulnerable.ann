@@ -1,0 +1,110 @@
+T1	Movement-down-loss 4 8	dips
+E1	Movement-down-loss:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	Slow-weak 30 40	vulnerable
+E2	Slow-weak:T3 Item:T4
+T4	Commodity 25 29	gold
+T5	Commodity 119 122	Oil
+T6	Movement-down-loss 123 127	dips
+E3	Movement-down-loss:T6 Item:T5
+T7	Movement-up-gain 145 153	increase
+E4	Movement-up-gain:T7 Item:T8
+T8	Commodity 139 144	crude
+R1	Cause-Precondition Arg1:E4 Arg2:E3	
+T9	Financial_attribute 160 166	prices
+T10	Commodity 154 159	Crude
+T11	Commodity 202 207	crude
+T12	Financial_attribute 208 218	stockpiles
+T13	Movement-up-gain 219 225	surged
+E5	Movement-up-gain:T13 Attribute:T12 Item:T11 Initial_reference_point:T14
+T14	DATE 244 248	1982
+T15	Financial_attribute 272 283	inventories
+T16	Movement-up-gain 284 288	rise
+E6	Movement-up-gain:T16 Attribute:T15 Difference:T17
+T17	Quantity 292 313	21.56-million barrels
+T18	Movement-up-gain 320 326	higher
+E7	Movement-up-gain:T18 Difference:T19
+T19	Quantity 336 357	1.285-million barrels
+T20	Movement-up-gain 406 414	increase
+E8	Movement-up-gain:T20 Reference_point_time:T21
+T21	DATE 421 425	1982
+T22	Commodity 450 458	Gasoline
+T23	Commodity 463 474	Distillates
+T24	Cause-movement-down-loss 487 492	draws
+E9	Cause-movement-down-loss:T24 Item:T22
+T25	Cause-movement-down-loss 584 589	draws
+E10	Cause-movement-down-loss:T25 Modality_cue:T28 Item:T26 Attribute:T27
+T26	Commodity 594 599	crude
+T27	Financial_attribute 600 610	stockpiles
+T28	MODALITY_cue 542 547	could
+A1	Modality E10 Other
+T29	Commodity 612 621	WTI crude
+T30	MODALITY_cue 622 627	seems
+T31	Movement-up-gain 655 661	higher
+E11	Movement-up-gain:T31 Modality_cue:T30 Item:T29
+A2	Modality E11 Other
+T32	Movement-up-gain 717 721	more
+E12	Movement-up-gain:T32 Attribute:T33 Supplier_Consumer:T34
+T33	Financial_attribute 722 732	production
+T34	ORGANIZATION 699 704	OPEC+
+T35	Commodity 801 805	Gold
+T36	Commodity 806 810	Gold
+T37	Financial_attribute 811 817	prices
+T38	COUNTRY 977 979	US
+T39	Economic_item 980 993	economic data
+T40	Slow-weak 1043 1051	diminish
+E13	Slow-weak:T40 Forecast:T42 Polarity_cue:T41 Supplier_Consumer:T44 Item:T43 Reference_point_time:T45
+T41	POLARITY_cue 1039 1042	not
+T42	Forecast_target 1056 1064	outlooks
+T43	Economic_item 1072 1078	growth
+T44	COUNTRY 1069 1071	US
+T45	DATE 1082 1086	2021
+A3	Polarity E13 Negative
+T46	Movement-up-gain 1139 1143	gain
+E14	Movement-up-gain:T46 Difference:T47 Item:T48
+T47	NUMBER 1147 1159	117 thousand
+T48	Economic_item 1096 1106	Employment
+T49	Movement-down-loss 1161 1165	down
+E15	Movement-down-loss:T49 Initial_value:T50
+T50	NUMBER 1171 1183	174 thousand
+T51	Negative_sentiment 1262 1270	concerns
+E16	Negative_sentiment:T51 
+T52	Movement-up-gain 1502 1506	rise
+E17	Movement-up-gain:T52 Item:T53 Modality_cue:T54
+T53	Economic_item 1483 1489	yields
+A4	Modality E17 Asserted
+T54	MODALITY_cue 1480 1482	if
+T55	Negative_sentiment 1598 1606	concerns
+E18	Negative_sentiment:T55 Modality_cue:T56
+T56	MODALITY_cue 1573 1579	should
+A5	Modality E18 Other
+T57	Commodity 1630 1634	Gold
+T58	Movement-down-loss 1665 1673	downward
+E19	Movement-down-loss:T58 Item:T57
+T59	Commodity 1878 1882	gold
+T60	Grow-strong 1955 1963	strength
+E20	Grow-strong:T60 Initial_reference_point:T62 Item:T61
+T61	Economic_item 1918 1931	10-year bonds
+T62	DATE 1964 1973	last week
+T63	Movement-up-gain 1975 1981	rising
+E21	Movement-up-gain:T63 
+T64	Position-high 1996 2000	high
+E22	Position-high:T64 Difference:T65
+T65	PERCENTAGE 2004 2008	1.6%
+T66	Movement-down-loss 2039 2046	dropped
+E23	Movement-down-loss:T66 Difference:T67 Item:T68 Duration:T77
+T67	PERCENTAGE 2074 2079	1.50%
+T69	Commodity 740 745	shale
+T70	Economic_item 906 917	bond market
+T71	Commodity 927 931	gold
+T72	Movement-down-loss 918 925	selloff
+E24	Movement-down-loss:T72 Item:T70
+T73	Slow-weak 970 976	Softer
+E25	Slow-weak:T73 Supplier_Consumer:T38 Item:T39
+T74	Negative_sentiment 1470 1479	concerned
+E26	Negative_sentiment:T74 Modality_cue:T75
+T75	MODALITY_cue 1462 1466	will
+A6	Modality E26 Other
+T76	Commodity 1818 1822	gold
+T68	Economic_item 2027 2033	yields
+T77	DURATION 2019 2026	10-year

@@ -1,0 +1,83 @@
+T1	ORGANIZATION 0 10	Oil majors
+T2	ORGANIZATION 164 174	oil majors
+T3	Economic_item 291 297	growth
+T4	Grow-strong 364 368	boom
+E1	Grow-strong:T4 
+T5	Financial_attribute 402 408	demand
+T6	Commodity 423 426	oil
+T7	ORGANIZATION 431 434	gas
+T8	Financial_attribute 753 763	production
+T9	Movement-down-loss 863 870	slumped
+E2	Movement-down-loss:T9 
+T10	Position-low 880 884	lows
+E3	Position-low:T10 
+T11	Commodity 942 945	gas
+T12	Financial_attribute 1030 1040	production
+T13	ORGANIZATION 1105 1114	oil major
+T14	Position-low 1071 1077	lowest
+E4	Position-low:T14 
+T15	Economic_item 1159 1165	growth
+T16	Movement-down-loss 1265 1270	lower
+E5	Movement-down-loss:T16 
+T17	Financial_attribute 1449 1459	production
+T18	Financial_attribute 1887 1895	contract
+T19	Commodity 1931 1934	gas
+T20	Commodity 1974 1977	gas
+T21	Commodity 2035 2043	US shale
+T22	Commodity 2108 2113	shale
+T23	Movement-up-gain 2239 2244	gains
+E6	Movement-up-gain:T23 
+T24	Financial_attribute 2249 2255	prices
+T25	Commodity 2257 2262	shale
+T26	ORGANIZATION 2462 2473	oil company
+T27	Commodity 2540 2549	oil sands
+T28	NATIONALITY 2531 2539	Canadian
+T29	Movement-down-loss 2626 2631	slump
+E7	Movement-down-loss:T29 Attribute:T30 Item:T31 Reference_point_time:T32
+T30	Financial_attribute 2620 2625	price
+T31	Commodity 2616 2619	oil
+T32	DATE 2611 2615	2014
+T33	ORGANIZATION 2721 2731	oil majors
+T34	Financial_attribute 3295 3305	production
+T35	ORGANIZATION 3347 3357	oil majors
+T36	Financial_attribute 3533 3543	production
+T37	ORGANIZATION 3570 3579	oil giant
+T38	Quantity 3681 3698	2 billion barrels
+T39	Economic_item 4318 4324	market
+T40	Commodity 4329 4332	oil
+T41	Commodity 4337 4340	gas
+T42	ORGANIZATION 4358 4368	oil majors
+T43	Position-high 4391 4395	peak
+E8	Position-high:T43 Item:T44 Attribute:T45
+T44	Commodity 4396 4399	oil
+T45	Financial_attribute 4400 4406	demand
+T46	Commodity 4505 4508	oil
+T47	Commodity 4683 4686	oil
+T48	Financial_attribute 4687 4693	demand
+T49	Cause-movement-down-loss 4860 4867	slashed
+E9	Cause-movement-down-loss:T49 Modality_cue:T52 Attribute:T51 Item:T50 Difference:T53 Reference_point_time:T54 Final_value:T55
+T50	Commodity 4840 4843	oil
+T51	Financial_attribute 4844 4850	demand
+A1	Modality E9 Other
+T52	MODALITY_cue 4851 4856	would
+T53	Production_unit 4878 4892	28 million b/d
+T54	DATE 4896 4900	2040
+T55	Production_unit 4904 4918	80 million b/d
+T56	Commodity 4969 4972	oil
+T57	Commodity 4977 4980	gas
+T58	Commodity 5159 5162	oil
+T59	Production_unit 5170 5184	80 million b/d
+T60	Commodity 5237 5240	oil
+T61	Commodity 5448 5451	oil
+T62	Commodity 5456 5459	gas
+T63	ORGANIZATION 5516 5531	oil supermajors
+T64	Commodity 5571 5574	oil
+T65	Grow-strong 5676 5683	growing
+E10	Grow-strong:T65 Item:T66 Attribute:T67
+T66	Commodity 5688 5691	oil
+T67	Financial_attribute 5692 5702	production
+T68	Commodity 5822 5825	oil
+T69	Commodity 5830 5833	gas
+T70	Financial_attribute 5961 5967	demand
+T71	Negative_sentiment 4377 4385	concerns
+E11	Negative_sentiment:T71 

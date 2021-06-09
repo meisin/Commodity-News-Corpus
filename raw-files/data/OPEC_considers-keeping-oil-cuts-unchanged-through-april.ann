@@ -1,0 +1,92 @@
+T1	Cause-movement-down-loss 28 32	Cuts
+E1	Cause-movement-down-loss:T1 Reference_point_time:T5 Item:T2 Supplier_Consumer:T3 Modality_cue:T6
+T2	Commodity 24 27	Oil
+T3	ORGANIZATION 0 5	OPEC+
+T4	Cause-movement-down-loss 230 234	cuts
+E2	Cause-movement-down-loss:T4 Attribute:T7 Reference_point_time:T11 Item:T8 Modality_cue:T10 Supplier_Consumer:T9
+T5	DATE 51 56	April
+T6	MODALITY_cue 6 15	Considers
+A1	Modality E1 Other
+T7	Financial_attribute 219 229	production
+T8	Commodity 215 218	oil
+T9	ORGANIZATION 163 168	OPEC+
+T10	MODALITY_cue 178 189	considering
+T11	DATE 238 243	April
+A2	Modality E2 Other
+T12	Grow-strong 283 291	recovery
+E3	Grow-strong:T12 
+T13	Financial_attribute 276 282	demand
+T14	LOCATION 269 275	global
+T15	Slow-weak 261 268	fragile
+E4	Slow-weak:T15 Type:T14 Attribute:T13
+R1	Cause-Precondition Arg1:E4 Arg2:E3	
+R2	Cause-Precondition Arg1:E4 Arg2:E2	
+T16	Production_unit 402 433	7 million barrels per day (bpd)
+T17	Economic_item 442 448	market
+T18	Economic_item 461 467	market
+T19	Financial_attribute 525 531	demand
+T20	COUNTRY 583 595	Saudi Arabia
+T21	Cause-movement-down-loss 618 625	cutting
+E5	Cause-movement-down-loss:T21 Difference:T22 Reference_point_time:T23 Supplier_Consumer:T20
+T22	Production_unit 626 639	1 million bpd
+T23	DATE 643 651	February
+T24	Economic_item 687 693	market
+T25	Movement-up-gain 737 745	increase
+E6	Movement-up-gain:T25 Supplier_Consumer:T28 Attribute:T26 Modality_cue:T27 Reference_point_time:T29
+T26	Financial_attribute 726 736	production
+T27	MODALITY_cue 703 712	expecting
+T28	ORGANIZATION 755 760	OPEC+
+T29	DATE 773 778	April
+T30	Commodity 814 817	oil
+T31	Financial_attribute 818 823	price
+T32	Grow-strong 824 829	rally
+E7	Grow-strong:T32 Attribute:T31 Item:T30
+R3	Cause-Precondition Arg1:E7 Arg2:E6	
+T33	ORGANIZATION 939 944	OPEC+
+T34	Cause-movement-down-loss 945 949	cuts
+E8	Cause-movement-down-loss:T34 Reference_point_time:T37 Supplier_Consumer:T33 Modality_cue:T36 Supplier_Consumer2:T35
+T35	ORGANIZATION 891 895	OPEC
+T36	MODALITY_cue 901 909	proposed
+T37	DATE 960 965	April
+A3	Modality E8 Other
+T38	Cause-movement-down-loss 1055 1058	cut
+E9	Cause-movement-down-loss:T38 Difference:T39 Intensity_cue:T40 Reference_point_time:T41 Modality_cue:T42 Supplier_Consumer:T43
+T39	Production_unit 1041 1054	1 million bpd
+T40	INTENSITY_cue 1023 1030	reverse
+A4	Intensity E9 Eased
+T41	DATE 1064 1069	April
+T42	MODALITY_cue 1017 1022	would
+A5	Modality E9 Other
+T43	COUNTRY 1004 1016	Saudi Arabia
+T44	Cause-movement-up-gain 1120 1128	increase
+E10	Cause-movement-up-gain:T44 Polarity_cue:T45 Modality_cue:T46 Supplier_Consumer:T47 Attribute:T48 Reference_point_time:T49
+T45	POLARITY_cue 1116 1119	not
+T46	MODALITY_cue 1112 1115	may
+T47	ORGANIZATION 1106 1111	OPEC+
+A6	Polarity E10 Negative
+A7	Modality E10 Other
+T48	Financial_attribute 1129 1139	production
+T49	DATE 1145 1150	April
+T50	Grow-strong 1204 1211	rallied
+E11	Grow-strong:T50 Final_value:T53 Initial_reference_point:T54 Item:T52 Attribute:T51
+T51	Financial_attribute 1197 1203	prices
+T52	Commodity 1193 1196	oil
+T53	PERCENTAGE 1215 1224	2 percent
+T54	DATE 1253 1262	Wednesday
+T55	Economic_item 1385 1393	economic
+T56	Forecast_target 1394 1401	outlook
+T57	Economic_item 1406 1416	oil market
+T58	Forecast_target 1417 1426	prospects
+T59	Grow-strong 1578 1583	Rally
+E12	Grow-strong:T59 Attribute:T60 Item:T61
+T60	Financial_attribute 1571 1577	Prices
+T61	Commodity 1567 1570	Oil
+T62	Cause-movement-down-loss 1718 1722	cuts
+E13	Cause-movement-down-loss:T62 Modality_cue:T63
+T63	MODALITY_cue 1687 1693	decide
+A8	Modality E13 Other
+T64	Economic_item 1899 1909	oil market
+T65	Cause-movement-down-loss 2047 2054	cutting
+E14	Cause-movement-down-loss:T65 
+T66	Cause-movement-down-loss 2114 2120	easing
+E15	Cause-movement-down-loss:T66 

@@ -1,0 +1,154 @@
+T1	COUNTRY 20 24	Iraq
+T2	Civil-unrest 25 35	insurgency
+E1	Civil-unrest:T2 Place:T1
+T3	Commodity 0 3	Oil
+T4	Movement-up-gain 10 16	higher
+E2	Movement-up-gain:T4 Item:T3
+R1	Cause-Precondition Arg1:E1 Arg2:E2	
+T5	Commodity 192 207	Brent crude oil
+T6	Movement-up-gain 214 219	gains
+E3	Movement-up-gain:T6 Intensity_cue:T7 Final_value:T8 Reference_point_time:T9
+T7	INTENSITY_cue 208 213	pared
+A1	Intensity E3 Eased
+T8	Price_unit 233 252	above $113 a barrel
+T9	DATE 256 262	Friday
+T10	Negative_sentiment 273 281	concerns
+E4	Negative_sentiment:T10 Intensity_cue:T11
+T11	INTENSITY_cue 266 272	easing
+A2	Intensity E4 Eased
+T12	Civil-unrest 290 300	insurgency
+E5	Civil-unrest:T12 Place:T13
+T13	COUNTRY 304 308	Iraq
+T14	Commodity 360 363	oil
+T15	Financial_attribute 364 371	exports
+R2	Cause-Precondition Arg1:E4 Arg2:E3	
+T16	Economic_item 379 385	market
+T17	COUNTRY 430 434	Iraq
+T18	Economic_item 452 458	market
+T19	COUNTRY 650 654	Iraq
+T20	Commodity 665 668	oil
+T21	Financial_attribute 669 676	exports
+T22	Financial_attribute 851 858	exports
+T23	Commodity 945 948	oil
+T24	Movement-up-gain 1326 1328	up
+E6	Movement-up-gain:T24 Difference:T25 Item:T26 Final_value:T27
+T25	MONEY 1329 1337	55 cents
+T26	Commodity 1316 1321	Brent
+T27	Price_unit 1341 1359	$113.57 per barrel
+T28	Position-high 1382 1386	peak
+E7	Position-high:T28 Final_value:T29
+T29	MONEY 1390 1397	$114.69
+T30	Position-high 1403 1410	highest
+E8	Position-high:T30 Reference_point_time:T31
+T31	DATE 1417 1426	September
+T32	Cause-movement-up-gain 1483 1485	up
+E9	Cause-movement-up-gain:T32 Difference:T33 Final_value:T34 Item:T35
+T33	MONEY 1486 1494	48 cents
+T34	MONEY 1498 1505	$107.01
+T35	Commodity 1468 1478	U.S. crude
+T36	Position-high 1513 1517	high
+E10	Position-high:T36 Final_value:T37
+T37	MONEY 1521 1528	$107.68
+T38	Movement-up-gain 1571 1577	gained
+E11	Movement-up-gain:T38 Difference:T39
+T39	MONEY 1578 1583	$2.13
+T40	Commodity 1589 1594	Brent
+T41	Movement-up-gain 1606 1610	gain
+E12	Movement-up-gain:T41 Item:T40 Difference:T42 Reference_point_time:T43 Modality_cue:T105
+T42	PERCENTAGE 1611 1630	more than 5 percent
+T43	DATE 1631 1640	this week
+T44	Movement-up-gain 1661 1665	rise
+E13	Movement-up-gain:T44 Initial_reference_point:T45
+T45	DATE 1672 1681	last July
+T46	Movement-up-gain 1729 1733	jump
+E14	Movement-up-gain:T46 Item:T47 Initial_reference_point:T48
+T47	Commodity 1689 1699	U.S. crude
+T48	DATE 1740 1748	December
+T49	Negative_sentiment 2023 2031	concerns
+E15	Negative_sentiment:T49 Item:T50 Attribute:T51
+T50	Commodity 2041 2044	oil
+T51	Financial_attribute 2045 2052	exports
+T52	Movement-down-loss 2259 2263	loss
+E16	Movement-down-loss:T52 Item:T53 Attribute:T54 Modality_cue:T56
+T53	Commodity 2267 2270	oil
+T54	Financial_attribute 2271 2278	exports
+T55	Economic_item 2304 2314	Oil Market
+T56	MODALITY_cue 2243 2251	possible
+A3	Modality E16 Other
+T57	Negative_sentiment 2228 2233	fears
+E17	Negative_sentiment:T57 Intensity_cue:T58
+T58	INTENSITY_cue 2216 2227	played down
+A4	Intensity E17 Eased
+T59	Commodity 2459 2462	oil
+T60	Financial_attribute 2463 2471	supplies
+T61	Economic_item 2537 2548	oil markets
+T62	Movement-up-gain 2633 2635	up
+E18	Movement-up-gain:T62 Attribute:T63 Modality_cue:T64
+T63	Financial_attribute 2636 2642	prices
+T64	MODALITY_cue 2622 2627	could
+A5	Modality E18 Other
+T65	Financial_attribute 2615 2621	supply
+T66	Production_unit 2713 2746	one million barrels per day (bpd)
+T67	Movement-up-gain 2856 2861	spike
+E19	Movement-up-gain:T67 Modality_cue:T69 Attribute:T68
+T68	Financial_attribute 2865 2871	demand
+T69	MODALITY_cue 2830 2834	will
+A6	Modality E19 Other
+T70	Cause-movement-up-gain 2885 2891	raised
+E20	Cause-movement-up-gain:T70 Forecast:T73 Attribute:T72 Forecaster:T71 Supplier_Consumer:T75 Item:T74 Reference_point_time:T76 Difference:T77 Final_value:T109
+T71	ORGANIZATION 2874 2884	The agency
+T72	Financial_attribute 2909 2915	demand
+T73	Forecast_target 2896 2904	estimate
+T74	Commodity 2925 2934	crude oil
+T75	ORGANIZATION 2920 2924	OPEC
+T76	DATE 2938 2966	the second half of this year
+T77	Production_unit 2970 2981	150,000 bpd
+T78	Grow-strong 3182 3189	growing
+E21	Grow-strong:T78 Attribute:T79
+T79	Financial_attribute 3190 3196	demand
+T80	Financial_attribute 3242 3253	inventories
+T81	Commodity 3238 3241	oil
+T82	Position-high 3293 3297	high
+E22	Position-high:T82 Attribute:T83 Supplier_Consumer:T84
+T83	Financial_attribute 3277 3287	stockpiles
+T84	COUNTRY 3272 3276	U.S.
+T85	Movement-up-gain 3485 3489	rose
+E23	Movement-up-gain:T85 
+T86	Movement-up-gain 3565 3574	increased
+E24	Movement-up-gain:T86 
+T87	Movement-up-gain 3614 3618	rose
+E25	Movement-up-gain:T87 Difference:T88 Reference_point_time:T89
+T88	PERCENTAGE 3619 3630	8.8 percent
+T89	DATE 3634 3637	May
+T90	Economic_item 3596 3613	industrial output
+T91	Economic_item 3665 3677	retail sales
+T92	Movement-up-gain 3678 3682	rose
+E26	Movement-up-gain:T92 Difference:T93 Item:T91
+T93	PERCENTAGE 3683 3695	12.5 percent
+T94	Economic_item 3776 3783	markets
+T95	Financial_attribute 3804 3810	demand
+T96	Forecast_target 3811 3818	outlook
+T97	Cause-movement-down-loss 348 352	halt
+E27	Cause-movement-down-loss:T97 Item:T14 Attribute:T15 Modality_cue:T98
+A7	Modality E27 Other
+T98	MODALITY_cue 309 314	would
+R3	Cause-Precondition Arg1:E5 Arg2:E27	
+T99	Financial_attribute 545 553	supplies
+T100	Movement-up-gain 1431 1437	gained
+E28	Movement-up-gain:T100 Difference:T101 Reference_point_time:T102
+T101	MONEY 1438 1450	more than $3
+T102	DATE 1454 1462	Thursday
+T103	Position-high 1548 1552	high
+E29	Position-high:T103 Duration:T104
+T104	DURATION 1537 1547	nine-month
+T105	MODALITY_cue 1599 1605	set to
+A8	Modality E12 Other
+T106	Cause-movement-down-loss 1832 1843	disruptions
+E30	Cause-movement-down-loss:T106 Polarity_cue:T107
+T107	POLARITY_cue 1829 1831	no
+A9	Polarity E30 Negative
+T108	Commodity 2752 2755	oil
+T109	Production_unit 3028 3044	30.9 million bpd
+T110	Grow-strong 3051 3058	bullish
+E31	Grow-strong:T110 
+T111	Financial_attribute 3313 3319	stocks

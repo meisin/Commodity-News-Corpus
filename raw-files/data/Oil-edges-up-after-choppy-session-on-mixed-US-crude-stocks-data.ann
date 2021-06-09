@@ -1,0 +1,125 @@
+T1	Movement-up-gain 10 12	up
+E1	Movement-up-gain:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	Commodity 43 53	U.S. crude
+T4	Financial_attribute 54 60	stocks
+T5	Movement-up-gain 255 261	gained
+E2	Movement-up-gain:T5 Difference:T6 Attribute:T7 Item:T8 Reference_point_time:T9
+T6	PERCENTAGE 262 273	0.4 percent
+T7	Financial_attribute 248 254	prices
+T8	Commodity 244 247	Oil
+T9	DATE 293 302	Wednesday
+T10	Movement-up-gain 367 372	build
+E3	Movement-up-gain:T10 Attribute:T11 Item:T12 Intensity_cue:T17
+T11	Financial_attribute 361 366	stock
+T12	Commodity 350 360	U.S. crude
+T13	Commodity 408 416	gasoline
+T14	Commodity 393 403	distillate
+T15	Cause-movement-down-loss 427 432	draws
+E4	Cause-movement-down-loss:T15 Attribute:T16 Item:T13
+T16	Financial_attribute 417 426	inventory
+E5	Cause-movement-down-loss:T15 Attribute:T16 Item:T14
+A1	Intensity E3 Eased
+T17	INTENSITY_cue 377 383	offset
+R1	Cause-Precondition Arg1:E5 Arg2:E3	
+R2	Cause-Precondition Arg1:E3 Arg2:E2	
+T18	Movement-up-gain 453 457	rose
+E6	Movement-up-gain:T18 Difference:T21 Attribute:T19 Item:T20
+T19	Financial_attribute 446 452	stocks
+T20	Commodity 435 445	U.S. crude
+T21	Quantity 461 478	5 million barrels
+T22	Movement-up-gain 617 622	build
+E7	Movement-up-gain:T22 Difference:T23 Modality_cue:T24
+T23	Quantity 600 616	2 million barrel
+T24	MODALITY_cue 572 584	Expectations
+A2	Modality E7 Other
+T25	Cause-movement-down-loss 661 665	draw
+E8	Cause-movement-down-loss:T25 Item:T26 Attribute:T27
+T26	Commodity 669 673	fuel
+T27	Financial_attribute 674 680	stocks
+T28	Cause-movement-down-loss 793 798	draws
+E9	Cause-movement-down-loss:T28 Item:T30
+T29	Commodity 802 813	distillates
+T30	Commodity 818 826	gasoline
+E10	Cause-movement-down-loss:T28 Item:T29
+T31	Movement-up-gain 890 895	build
+E11	Movement-up-gain:T31 Item:T32
+T32	Commodity 884 889	crude
+T33	Movement-up-gain 990 992	up
+E12	Movement-up-gain:T33 Difference:T34 Difference2:T35 Attribute:T36 Final_value:T38 Item:T37
+T34	MONEY 993 1001	25 cents
+T35	PERCENTAGE 1006 1017	0.4 percent
+T36	Financial_attribute 971 978	futures
+T38	Price_unit 1032 1049	$64.89 per barrel
+T39	Movement-up-gain 1104 1110	gained
+E13	Movement-up-gain:T39 Attribute:T41 Item:T40 Difference:T42 Final_value:T43
+T40	Commodity 1056 1079	West Texas Intermediate
+T41	Financial_attribute 1086 1093	futures
+T42	MONEY 1111 1119	25 cents
+T43	Price_unit 1134 1151	$60.96 per barrel
+T44	Economic_item 1388 1394	market
+T45	Financial_attribute 1426 1432	Prices
+T46	Grow-strong 1584 1588	grow
+E14	Grow-strong:T46 Forecaster:T49 Attribute:T48 Initial_reference_point:T50 Modality_cue:T89 Difference:T47
+T47	Production_unit 1592 1626	1.66 million barrels per day (bpd)
+T48	Financial_attribute 1547 1553	supply
+T49	ORGANIZATION 1559 1570	non-members
+T50	DATE 1630 1634	2018
+T51	Movement-up-gain 1643 1649	double
+E15	Movement-up-gain:T51 Attribute:T52
+T52	Financial_attribute 1654 1660	growth
+T53	Movement-up-gain 1702 1708	rising
+E16	Movement-up-gain:T53 Supplier_Consumer:T54 Attribute:T55
+T54	COUNTRY 1709 1713	U.S.
+T55	Financial_attribute 1714 1720	supply
+R3	Cause-Precondition Arg1:E16 Arg2:E14	
+T56	Movement-up-gain 1795 1799	rose
+E17	Movement-up-gain:T56 Reference_point_time:T59 Attribute:T57 Item:T58
+T57	Financial_attribute 1742 1753	inventories
+T58	Commodity 1738 1741	oil
+T59	DATE 1803 1810	January
+T60	Cause-movement-down-loss 1879 1883	cuts
+E18	Cause-movement-down-loss:T60 Attribute:T62
+T61	Embargo 1891 1897	waning
+E19	Embargo:T61 
+A3	Intensity E19 Eased
+T62	Financial_attribute 1872 1878	output
+A4	Intensity E18 Eased
+R4	Cause-Precondition Arg1:E18 Arg2:E19	
+T63	Cause-movement-down-loss 1904 1911	trimmed
+E20	Cause-movement-down-loss:T63 Reference_point_time:T64 Supplier_Consumer:T67 Attribute:T65 Forecast:T66 Item:T68 Difference:T69 Final_value:T70
+T64	DATE 1916 1920	2018
+T65	Financial_attribute 1921 1927	demand
+T66	Forecast_target 1928 1936	forecast
+T67	ORGANIZATION 1899 1903	OPEC
+T68	Commodity 1949 1954	crude
+T69	Production_unit 1958 1969	250,000 bpd
+T70	Production_unit 1973 1990	32.61 million bpd
+T71	Movement-down-loss 2013 2020	decline
+E21	Movement-down-loss:T71 
+T72	Financial_attribute 2054 2060	demand
+T73	ORGANIZATION 2065 2069	OPEC
+T74	Commodity 2072 2075	oil
+T75	Production_unit 2084 2110	33 million barrels per day
+T76	Oversupply 2164 2174	oversupply
+E22	Oversupply:T76 Polarity_cue:T77
+A6	Polarity E22 Negative
+T77	POLARITY_cue 2143 2146	rid
+T78	Movement-up-gain 2240 2245	boost
+E23	Movement-up-gain:T78 Attribute:T79 Item:T80
+T79	Financial_attribute 2227 2233	prices
+T80	Commodity 2223 2226	Oil
+T81	Grow-strong 2410 2414	grew
+E24	Grow-strong:T81 
+T82	Commodity 2474 2477	Oil
+T83	Financial_attribute 2523 2529	demand
+T84	Commodity 2589 2592	oil
+T85	Financial_attribute 2593 2602	inventory
+T86	Cause-movement-down-loss 2622 2626	draw
+E25	Cause-movement-down-loss:T86 
+T87	Financial_attribute 2668 2674	prices
+T88	Commodity 2664 2667	oil
+T37	Commodity 955 970	Brent crude oil
+T89	MODALITY_cue 1574 1580	likely
+A5	Modality E14 Other
+R5	Cause-Precondition Arg1:E18 Arg2:E17	
