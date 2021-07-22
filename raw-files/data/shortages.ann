@@ -1,0 +1,196 @@
+T1	Shortage 90 98	shortage
+T2	Commodity 102 120	light sweet crudes
+T3	DATE 124 128	2008
+T4	Oversupply 143 153	oversupply
+T5	DATE 173 177	2014
+T6	Commodity 164 169	shale
+T7	Shortage 255 263	shortage
+T8	POLARITY_cue 252 254	no
+T9	Financial_attribute 267 273	supply
+T10	Financial_attribute 185 191	prices
+T11	Commodity 181 184	Oil
+T12	Shortage 561 569	shortage
+T13	POLARITY_cue 546 553	prevent
+T14	Commodity 557 560	oil
+T15	DATE 573 588	the next decade
+T16	Grow-strong 464 468	rise
+T17	ORGANIZATION 472 485	Islamic State
+T18	Shortage 605 613	shortage
+T19	Financial_attribute 598 604	supply
+T20	Commodity 594 597	oil
+T21	Shortage 826 834	shortage
+T22	Cause-movement-down-loss 1032 1040	squeezes
+T23	Financial_attribute 1025 1031	supply
+T24	Shortage 1073 1081	shortage
+T25	MODALITY_cue 1066 1072	future
+T27	Grow-strong 875 882	bullish
+T28	Movement-down-loss 1085 1092	Falling
+T29	Financial_attribute 1097 1103	prices
+T30	Commodity 1093 1096	oil
+T31	Shortage 1123 1131	shortage
+T32	Cause-movement-down-loss 1156 1164	reducing
+T33	PERCENTAGE 1197 1207	44 percent
+T34	MONEY 1211 1242	74 billion dinars ($68 million)
+T35	Financial_attribute 1179 1185	profit
+T36	DATE 1246 1263	the third quarter
+T37	DATE 1269 1283	a year earlier
+T38	Movement-down-loss 1409 1413	fall
+T39	POLARITY_cue 1390 1393	not
+T40	MODALITY_cue 1394 1398	want
+T41	Financial_attribute 1399 1405	prices
+T42	Movement-down-loss 1479 1483	drop
+T43	Shortage 1539 1548	shortages
+T44	MODALITY_cue 1519 1524	could
+T45	Financial_attribute 1553 1558	price
+T46	Movement-up-gain 1559 1565	spikes
+T47	Commodity 1487 1490	oil
+T48	Financial_attribute 1491 1501	investment
+T49	Shortage 1706 1715	shortages
+T50	MODALITY_cue 1696 1705	potential
+T51	Position-high 1626 1633	highest
+T52	DURATION 1637 1650	nearly a year
+T53	Position-low 1762 1766	lows
+T54	DURATION 1754 1761	12-year
+T55	Financial_attribute 1733 1739	prices
+T56	Commodity 1729 1732	oil
+T57	Price_unit 1777 1793	$26-$27 a barrel
+T58	Grow-strong 1816 1824	recovery
+T59	MONEY 1856 1859	$50
+T60	Shortage 1881 1890	shortages
+T26	Financial_attribute 1874 1880	supply
+T61	COUNTRY 1894 1900	Canada
+T62	COUNTRY 1904 1911	Nigeria
+T63	COUNTRY 1916 1921	Libya
+T64	Movement-up-gain 1840 1846	rising
+T65	Movement-down-loss 2001 2005	drop
+T113	MODALITY_cue 1000 1010	vulnerable
+T66	MODALITY_cue 1981 1987	warned
+T67	ORGANIZATION 1947 1974	International Energy Agency
+T68	Commodity 2030 2033	oil
+T69	Commodity 2038 2041	gas
+T70	Financial_attribute 2016 2026	investment
+T71	LOCATION 2009 2015	global
+T72	Shortage 2067 2075	shortage
+T73	Financial_attribute 2060 2066	supply
+T74	MODALITY_cue 2042 2047	would
+T75	DATE 2079 2100	the end of the decade
+T76	Shortage 2248 2257	shortages
+T77	Movement-up-gain 2262 2269	soaring
+T78	Shortage 2323 2331	shortage
+T79	Commodity 2335 2343	gasoline
+T80	Shortage 2610 2618	shortage
+T81	Commodity 2622 2637	synthetic crude
+T82	Cause-movement-down-loss 2586 2589	cut
+T83	Financial_attribute 2590 2600	production
+T84	Shortage 2802 2810	shortage
+T85	Financial_attribute 2795 2801	supply
+T86	LOCATION 2788 2794	global
+T87	Movement-up-gain 2847 2852	gains
+T88	INTENSITY_cue 2841 2846	pared
+T89	Financial_attribute 2828 2835	futures
+T90	Commodity 2819 2827	gasoline
+T91	COUNTRY 2814 2818	U.S.
+T92	Position-high 2938 2945	highest
+T93	DURATION 2949 2960	three years
+T94	Negative_sentiment 3013 3020	worries
+T95	Shortage 3033 3042	shortages
+T96	Financial_attribute 3026 3032	supply
+T97	Movement-up-gain 3132 3139	rallied
+T98	Financial_attribute 3114 3121	futures
+T99	Commodity 3105 3113	gasoline
+T100	COUNTRY 3100 3104	U.S.
+T101	PERCENTAGE 3148 3158	26 percent
+T102	Position-high 3196 3200	high
+T103	Price_unit 3207 3218	$2 a gallon
+T104	Negative_sentiment 3230 3235	fears
+T105	Shortage 3246 3254	shortage
+T106	Commodity 3241 3245	fuel
+T107	Movement-down-loss 3315 3320	surge
+T108	DURATION 3187 3195	two-year
+T109	DATE 3164 3181	the previous week
+T110	MODALITY_cue 2753 2760	thought
+T111	Group 2557 2580	two oil sands producers
+T112	Commodity 1594 1598	zinc
+T114	Movement-up-gain 728 733	surge
+T115	Financial_attribute 737 743	demand
+E1	Shortage:T1 Item:T2 Reference_point_time:T3
+E2	Oversupply:T4 Item:T6 Reference_point_time:T5
+E3	Shortage:T7 Polarity_cue:T8 Attribute:T9
+A1	Polarity E3 Negative
+E4	Shortage:T12 Item:T14 Polarity_cue:T13 Reference_point_time:T15 Modality_cue:T130
+A2	Polarity E4 Negative
+A3	Modality E4 Other
+E6	Shortage:T18 Attribute:T19 Item:T20
+E7	Shortage:T21 
+E8	Cause-movement-down-loss:T22 Attribute:T23 Modality_cue:T113
+E9	Shortage:T24 Modality_cue:T25
+A4	Modality E9 Other
+E10	Grow-strong:T27 
+E12	Shortage:T31 Item:T125
+E13	Cause-movement-down-loss:T32 Difference:T33 Attribute:T35 Reference_point_time:T36 Initial_reference_point:T37 Final_value:T34
+E14	Movement-down-loss:T38 Attribute:T41 Modality_cue:T40 Polarity_cue:T39 Supplier_Consumer:T126
+A6	Polarity E14 Negative
+A7	Modality E14 Other
+E15	Movement-down-loss:T42 Item:T47 Attribute:T48
+E16	Shortage:T43 Modality_cue:T44
+A8	Modality E16 Other
+E17	Movement-up-gain:T46 Attribute:T45 Modality_cue:T44
+E18	Shortage:T49 Modality_cue:T50
+A9	Modality E18 Other
+E19	Position-high:T51 Duration:T52 Reference_point_time:T127 Item:T112
+E20	Position-low:T53 Duration:T54 Attribute:T55 Item:T56 Final_value:T57 Reference_point_time:T128
+E21	Grow-strong:T58 
+E22	Shortage:T60 Attribute:T26 Place:T61 Place2:T62 Place3:T63
+E23	Movement-up-gain:T64 Final_value:T59
+E24	Movement-down-loss:T65 Modality_cue:T66 Forecaster:T67 Type:T71 Attribute:T70 Item:T68
+A5	Modality E24 Other
+E25	Shortage:T72 Attribute:T73 Modality_cue:T74 Reference_point_time:T75
+A10	Modality E25 Other
+E26	Shortage:T76 
+E27	Movement-up-gain:T77 Item:T129
+E28	Shortage:T78 Item:T79
+E29	Shortage:T80 Item:T81
+E30	Cause-movement-down-loss:T82 Attribute:T83 Supplier_Consumer:T111
+E31	Shortage:T84 Attribute:T85 Place:T86 Modality_cue:T110
+E32	Movement-up-gain:T87 Attribute:T89 Item:T90 Supplier_Consumer:T91 Intensity_cue:T88
+E33	Position-high:T92 Duration:T93
+E34	Negative_sentiment:T94 
+E35	Shortage:T95 Attribute:T96
+E36	Movement-up-gain:T97 Difference:T101 Attribute:T98 Item:T99 Supplier_Consumer:T100 Initial_reference_point:T109
+E37	Position-high:T102 Final_value:T103 Duration:T108
+E38	Negative_sentiment:T104 
+E39	Shortage:T105 Item:T106
+E40	Movement-down-loss:T107 
+A12	Modality E31 Other
+A13	Modality E17 Other
+A14	Modality E8 Other
+E41	Movement-up-gain:T114 Attribute:T115 Modality_cue:T117
+E5	Grow-strong:T16 Supplier_Consumer:T17
+E11	Movement-down-loss:T28 Item:T30 Attribute:T29
+A11	Intensity E32 Eased
+T116	Economic_item 65 71	market
+A15	Modality E41 Other
+T117	MODALITY_cue 675 682	ability
+T118	Financial_attribute 958 968	production
+R1	Cause-Precondition Arg1:E11 Arg2:E12	
+R2	Cause-Precondition Arg1:E11 Arg2:E13	
+R3	Cause-Precondition Arg1:E15 Arg2:E16	
+R4	Cause-Precondition Arg1:E15 Arg2:E17	
+T119	Commodity 1924 1927	Oil
+R5	Cause-Precondition Arg1:E24 Arg2:E25	
+T120	Economic_item 2164 2171	economy
+T121	Slow-weak 2185 2194	recession
+E42	Slow-weak:T121 Intensity_cue:T122
+T122	INTENSITY_cue 2173 2182	deepening
+A16	Intensity E42 Intensified
+T123	Financial_attribute 2471 2478	imports
+T124	Financial_attribute 2510 2517	exports
+R6	Cause-Precondition Arg1:E29 Arg2:E30	
+R8	Cause-Precondition Arg1:E34 Arg2:E32	
+R9	Cause-Precondition Arg1:E38 Arg2:E36	
+T125	Economic_item 1113 1122	liquidity
+T126	STATE_OR_PROVINCE 1378 1384	Riyadh
+T127	DATE 1610 1618	Thursday
+T128	DATE 1718 1727	This year
+T129	Economic_item 2270 2279	inflation
+T130	MODALITY_cue 533 542	necessary

@@ -58,7 +58,6 @@ T41	PERCENTAGE 857 859	3%
 T42	Negative_sentiment 869 874	fears
 E12	Negative_sentiment:T42 Intensity_cue:T43
 T43	INTENSITY_cue 875 882	subside
-A6	Polarity E12 Negative
 R1	Cause-Precondition Arg1:E12 Arg2:E11	
 T44	Quantity 934 951	21 million barrel
 T45	Financial_attribute 952 961	inventory
@@ -110,3 +109,6 @@ T78	Commodity 1986 1990	gold
 T79	Movement-up-gain 2140 2146	rising
 E23	Movement-up-gain:T79 Attribute:T80
 T80	Financial_attribute 2129 2135	yields
+A6	Intensity E12 Eased
+T81	Financial_attribute 1678 1684	yields
+T82	Financial_attribute 1627 1633	yields

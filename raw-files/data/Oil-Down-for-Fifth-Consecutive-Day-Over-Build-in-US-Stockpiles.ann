@@ -32,7 +32,7 @@ T22	Commodity 430 439	Brent oil
 T23	PERCENTAGE 453 458	0.56%
 T24	MONEY 462 468	$67.62
 T25	Movement-down-loss 519 523	down
-E8	Movement-down-loss:T25 Attribute:T27 Item:T26 Difference:T28 Difference2:T29
+E8	Movement-down-loss:T25 Attribute:T27 Item:T26 Difference:T28 Final_value:T29
 T26	Commodity 502 505	WTI
 T27	Financial_attribute 506 513	futures
 T28	PERCENTAGE 524 529	0.54%
@@ -64,7 +64,7 @@ T47	Movement-up-gain 1067 1073	builds
 E14	Movement-up-gain:T47 Attribute:T46 Modality_cue:T60 Polarity_cue:T45
 A4	Modality E14 Other
 T48	Grow-strong 1213 1221	recovery
-E15	Grow-strong:T48 
+E15	Grow-strong:T48 Item:T64
 T49	Commodity 1244 1254	U.S. crude
 T50	Financial_attribute 1255 1261	stocks
 T51	Movement-up-gain 1262 1266	rose
@@ -76,7 +76,7 @@ E17	Movement-down-loss:T54 Modality_cue:T55 Attribute:T53
 T55	MODALITY_cue 1303 1307	will
 A5	Modality E17 Other
 T56	Movement-up-gain 1339 1344	rises
-E18	Movement-up-gain:T56 Intensity_cue:T62
+E18	Movement-up-gain:T56 Intensity_cue:T62 Item:T65
 T57	Financial_attribute 1363 1373	production
 T58	Commodity 1357 1362	crude
 T59	Movement-flat 1374 1386	holds steady
@@ -95,3 +95,6 @@ T62	INTENSITY_cue 1345 1352	further
 A8	Intensity E18 Intensified
 T63	Movement-up-gain 1527 1532	spike
 E21	Movement-up-gain:T63 
+T64	Economic_item 1225 1242	refinery activity
+T65	Economic_item 1321 1338	refinery activity
+R6	Cause-Precondition Arg1:E17 Arg2:E18	

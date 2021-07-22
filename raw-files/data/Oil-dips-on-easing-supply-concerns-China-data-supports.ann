@@ -33,7 +33,7 @@ E8	Movement-up-gain:T20 Polarity_cue:T21 Item:T18 Attribute:T19
 T21	POLARITY_cue 656 659	not
 A3	Polarity E8 Negative
 T22	Position-high 807 812	highs
-E9	Position-high:T22 Duration:T23 Reference_point_time:T24
+E9	Position-high:T22 Duration:T23 Reference_point_time:T24 Item:T91 Supplier_Consumer:T90
 T23	DURATION 795 806	multi-month
 T24	DATE 816 820	June
 T25	Movement-down-loss 959 963	lost
@@ -128,3 +128,5 @@ R2	Cause-Precondition Arg1:E26 Arg2:E27
 T87	Commodity 3112 3117	Brent
 T88	Commodity 3122 3125	WTI
 T89	Financial_attribute 3126 3132	prices
+T90	COUNTRY 766 771	China
+T91	Economic_item 774 790	factory activity

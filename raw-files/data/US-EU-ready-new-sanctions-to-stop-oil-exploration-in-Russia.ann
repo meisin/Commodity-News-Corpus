@@ -41,7 +41,7 @@ T25	Other_activities 942 1036	U.S. and EU cooperation on all energy services and
 T26	Embargo 1051 1060	sanctions
 E8	Embargo:T26 
 T27	Prohibiting 1066 1072	banned
-E9	Prohibiting:T27 
+E9	Prohibiting:T27 Activity:T56
 R3	Cause-Precondition Arg1:E8 Arg2:E9	
 T28	Commodity 1191 1194	oil
 T29	Commodity 1221 1227	energy
@@ -63,11 +63,11 @@ E12	Embargo:T38 Modality_cue:T39
 T39	MODALITY_cue 1915 1922	planned
 A10	Modality E12 Other
 T40	Prohibiting 2145 2148	ban
-E13	Prohibiting:T40 Modality_cue:T41
+E13	Prohibiting:T40 Modality_cue:T41 Imposer:T57 Activity:T59
 T41	MODALITY_cue 2114 2118	Once
 A11	Modality E13 Other
 T42	Prohibiting 2261 2268	barring
-E14	Prohibiting:T42 Activity:T43 Modality_cue:T44
+E14	Prohibiting:T42 Activity:T43 Modality_cue:T44 Imposer:T58
 T43	Other_activities 2269 2390	the export of U.S. gear and expertise for the specialized exploration that Russians are unequipped to pursue on their own
 T44	MODALITY_cue 2210 2215	would
 R4	Cause-Precondition Arg1:E13 Arg2:E14	
@@ -90,3 +90,7 @@ T54	Embargo 3562 3571	sanctions
 E18	Embargo:T54 
 T55	Embargo 3622 3631	sanctions
 E19	Embargo:T55 
+T56	Other_activities 1073 1088	some technology
+T57	ORGANIZATION 2123 2125	EU
+T58	COUNTRY 2196 2209	United States
+T59	Other_activities 2152 2190	sharing energy technology and services

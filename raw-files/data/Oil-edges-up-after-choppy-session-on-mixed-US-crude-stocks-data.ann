@@ -66,8 +66,8 @@ T48	Financial_attribute 1547 1553	supply
 T49	ORGANIZATION 1559 1570	non-members
 T50	DATE 1630 1634	2018
 T51	Movement-up-gain 1643 1649	double
-E15	Movement-up-gain:T51 Attribute:T52
-T52	Financial_attribute 1654 1660	growth
+E15	Movement-up-gain:T51 Item:T52
+T52	Economic_item 1654 1660	growth
 T53	Movement-up-gain 1702 1708	rising
 E16	Movement-up-gain:T53 Supplier_Consumer:T54 Attribute:T55
 T54	COUNTRY 1709 1713	U.S.
@@ -79,13 +79,9 @@ T57	Financial_attribute 1742 1753	inventories
 T58	Commodity 1738 1741	oil
 T59	DATE 1803 1810	January
 T60	Cause-movement-down-loss 1879 1883	cuts
-E18	Cause-movement-down-loss:T60 Attribute:T62
-T61	Embargo 1891 1897	waning
-E19	Embargo:T61 
-A3	Intensity E19 Eased
+E18	Cause-movement-down-loss:T60 Attribute:T62 Intensity_cue:T61
 T62	Financial_attribute 1872 1878	output
 A4	Intensity E18 Eased
-R4	Cause-Precondition Arg1:E18 Arg2:E19	
 T63	Cause-movement-down-loss 1904 1911	trimmed
 E20	Cause-movement-down-loss:T63 Reference_point_time:T64 Supplier_Consumer:T67 Attribute:T65 Forecast:T66 Item:T68 Difference:T69 Final_value:T70
 T64	DATE 1916 1920	2018
@@ -123,3 +119,4 @@ T37	Commodity 955 970	Brent crude oil
 T89	MODALITY_cue 1574 1580	likely
 A5	Modality E14 Other
 R5	Cause-Precondition Arg1:E18 Arg2:E17	
+T61	INTENSITY_cue 1891 1897	waning

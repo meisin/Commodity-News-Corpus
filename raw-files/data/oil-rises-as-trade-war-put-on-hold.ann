@@ -111,7 +111,7 @@ T82	Price_unit 1698 1714	$2.2752 a gallon
 T83	Movement-down-loss 1736 1743	slumped
 E24	Movement-down-loss:T83 Difference:T84 Final_value:T85 Attribute:T87 Item:T86
 T84	PERCENTAGE 1744 1749	1.09%
-T85	Production_unit 1753 1793	$2.816 per million British thermal units
+T85	Price_unit 1753 1793	$2.816 per million British thermal units
 T86	Commodity 1716 1727	Natural gas
 T87	Financial_attribute 1728 1735	futures
 T88	Movement-down-loss 1843 1852	decreased

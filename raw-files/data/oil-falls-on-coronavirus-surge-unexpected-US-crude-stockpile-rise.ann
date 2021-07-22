@@ -100,7 +100,7 @@ A5	Modality E20 Other
 E21	Cause-movement-down-loss:T62 Attribute:T63 Modality_cue:T64 Supplier_Consumer:T65 Difference:T66 Reference_point_time:T67 Intensity_cue:T88
 E22	Movement-up-gain:T68 Attribute:T72 Polarity_cue:T69 Modality_cue:T70 Supplier_Consumer:T71 Reference_point_time:T73
 E23	Slow-weak:T74 Forecast:T75
-E24	Movement-up-gain:T77 Attribute:T76 Polarity_cue:T78
+E24	Movement-up-gain:T77 Attribute:T76 Polarity_cue:T78 Supplier_Consumer:T95
 A8	Polarity E24 Negative
 T79	Financial_attribute 1460 1466	demand
 T80	Commodity 1456 1459	oil
@@ -135,3 +135,5 @@ A11	Intensity E28 Eased
 T92	MODALITY_cue 2262 2273	considering
 A12	Modality E28 Other
 T93	Production_unit 2308 2323	5.7 million bpd
+T94	Economic_item 377 385	equities
+T95	ORGANIZATION 2334 2338	OPEC

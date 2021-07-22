@@ -1,5 +1,5 @@
 T1	Movement-up-gain 295 300	surge
-E1	Movement-up-gain:T1 Attribute:T2 Item:T3 Type:T4 Reference_point_time:T5 Modality_cue:T130
+E1	Movement-up-gain:T1 Attribute:T2 Item:T3 Type:T4 Reference_point_time:T5 Modality_cue:T130 Supplier_Consumer:T203
 T2	Financial_attribute 271 278	exports
 T3	Commodity 266 270	fuel
 T4	NATIONALITY 258 265	Russian
@@ -65,7 +65,7 @@ E17	Slow-weak:T45 Modality_cue:T164 Attribute:T187
 A13	Polarity E17 Positive
 A14	Modality E17 Other
 T47	Movement-up-gain 2130 2134	rise
-E18	Movement-up-gain:T47 Modality_cue:T165 Item:T64 Item2:T84
+E18	Movement-up-gain:T47 Modality_cue:T165 Item:T64
 T48	Commodity 1811 1822	oil product
 T50	Shortage 2386 2395	shortages
 E19	Shortage:T50 Place:T181 Item:T51
@@ -127,7 +127,7 @@ T94	Financial_attribute 4104 4111	Exports
 T95	COUNTRY 3949 3955	Russia
 T97	Commodity 4036 4042	diesel
 T99	Movement-up-gain 4401 4409	increase
-E34	Movement-up-gain:T99 Attribute:T101 Final_value:T102 Reference_point_time:T103 Initial_value:T104 Initial_reference_point:T105 Modality_cue:T176 Item:T112
+E34	Movement-up-gain:T99 Attribute:T101 Final_value:T102 Reference_point_time:T103 Initial_value:T104 Initial_reference_point:T105 Modality_cue:T176 Item:T112 Supplier_Consumer:T205
 A23	Polarity E34 Positive
 A24	Modality E34 Other
 T100	Commodity 4227 4233	diesel
@@ -158,7 +158,7 @@ A26	Modality E38 Other
 T121	Movement-down-loss 4840 4847	falling
 E39	Movement-down-loss:T121 Attribute:T123 Modality_cue:T178 Item:T201
 T122	Movement-down-loss 4863 4872	declining
-E40	Movement-down-loss:T122 Modality_cue:T178 Item:T184
+E40	Movement-down-loss:T122 Modality_cue:T178
 T123	Financial_attribute 4852 4858	prices
 T126	Oversupply 1099 1106	surplus
 E42	Oversupply:T126 Item:T127 Place:T183 Intensity_cue:T19 Modality_cue:T140
@@ -227,7 +227,7 @@ T181	COUNTRY 2355 2361	Russia
 T182	Economic_item 2624 2630	growth
 T183	LOCATION 1110 1120	the region
 T185	Movement-up-gain 444 448	More
-E50	Movement-up-gain:T185 Type:T186 Item:T132 Attribute:T134
+E50	Movement-up-gain:T185 Type:T186 Item:T132 Attribute:T134 Supplier_Consumer:T204
 T186	NATIONALITY 449 456	Russian
 T51	Commodity 2381 2385	fuel
 T189	Commodity 3573 3579	energy
@@ -303,6 +303,10 @@ A41	Modality E51 Other
 R9	Cause-Precondition Arg1:E26 Arg2:E27	
 R10	Cause-Precondition Arg1:E39 Arg2:E38	
 R11	Cause-Precondition Arg1:E40 Arg2:E38	
-T184	Economic_item 4882 4889	margins
 T201	Commodity 4848 4851	oil
 T202	Financial_attribute 4813 4820	exports
+T203	STATE_OR_PROVINCE 282 288	Europe
+T204	STATE_OR_PROVINCE 496 502	Europe
+E52	Movement-up-gain:T47 Modality_cue:T165 Item:T84
+A45	Modality E52 Other
+T205	ORGANIZATION 4382 4391	Transneft

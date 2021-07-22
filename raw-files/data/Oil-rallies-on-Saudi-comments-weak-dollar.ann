@@ -24,7 +24,7 @@ T17	Slow-weak 468 476	weakness
 E7	Slow-weak:T17 Item:T18
 T18	Economic_item 484 490	dollar
 T19	Movement-down-loss 503 510	dropped
-E8	Movement-down-loss:T19 Difference:T20
+E8	Movement-down-loss:T19 Difference:T20 Item:T18
 T20	PERCENTAGE 511 522	0.7 percent
 T21	Grow-strong 529 551	stronger-than-expected
 E9	Grow-strong:T21 Supplier_Consumer:T86 Item:T85
@@ -79,10 +79,9 @@ T61	Financial_attribute 1890 1900	production
 T62	Economic_item 1965 1971	market
 T63	Commodity 2171 2174	oil
 T64	Commodity 2294 2299	Brent
-T65	MONEY 2290 2293	$60
 T66	Movement-up-gain 2320 2324	rose
-E19	Movement-up-gain:T66 Difference:T67 Reference_point_time:T70 Attribute:T68 Supplier_Consumer:T69
-T67	Quantity 2328 2345	10.27 million bpd
+E19	Movement-up-gain:T66 Reference_point_time:T70 Attribute:T68 Supplier_Consumer:T69 Final_value:T67
+T67	Production_unit 2328 2345	10.27 million bpd
 T68	Financial_attribute 2309 2319	production
 T69	COUNTRY 2304 2308	U.S.
 T70	DATE 2346 2355	last week
@@ -117,8 +116,6 @@ T91	PERCENTAGE 711 730	more than 1 percent
 T92	Grow-strong 793 799	strong
 E25	Grow-strong:T92 Attribute:T93
 T93	Financial_attribute 743 749	demand
-T94	Movement-down-loss 2284 2289	below
-E26	Movement-down-loss:T94 Final_value:T65 Item:T64
 A3	Modality E16 Other
 T95	MODALITY_cue 1531 1536	would
 T96	Shortage 1574 1579	short
@@ -134,3 +131,4 @@ T97	INTENSITY_cue 231 242	shaking off
 A7	Intensity E4 Eased
 T98	MODALITY_cue 378 384	prefer
 A8	Modality E6 Other
+T65	MONEY 2284 2293	below $60

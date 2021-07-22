@@ -6,7 +6,7 @@ E2	Movement-up-gain:T3 Attribute:T2 Supplier_Consumer:T4
 T4	COUNTRY 15 19	U.S.
 T5	Commodity 0 5	Crude
 T6	Movement-down-loss 163 170	dropped
-E3	Movement-down-loss:T6 Reference_point_time:T9 Attribute:T8
+E3	Movement-down-loss:T6 Reference_point_time:T9 Attribute:T8 Item:T17
 T7	Movement-up-gain 220 227	shot up
 E4	Movement-up-gain:T7 Reference_point_time:T12 Attribute:T10 Supplier_Consumer:T11
 T8	Financial_attribute 156 162	prices
@@ -57,7 +57,6 @@ T47	Movement-down-loss 1185 1189	drop
 E13	Movement-down-loss:T47 Difference:T49 Forecast:T48
 T48	Forecast_target 1169 1178	forecasts
 T49	Production_unit 1193 1210	2 million barrels
-A2	Modality E13 Other
 T50	Financial_attribute 1229 1239	stockpiles
 T51	Commodity 1218 1228	distillate
 T52	Movement-down-loss 1240 1249	decreased
@@ -94,7 +93,7 @@ E20	Movement-up-gain:T73 Difference:T74 Reference_point_time:T75
 T74	PERCENTAGE 1963 1968	10.6%
 T75	DATE 1972 1979	January
 T76	Movement-down-loss 2049 2055	slowed
-E21	Movement-down-loss:T76 Initial_value:T80 Supplier_Consumer:T78 Reference_point_time:T81 Final_value:T77
+E21	Movement-down-loss:T76 Initial_value:T80 Supplier_Consumer:T78 Final_value:T77 Initial_reference_point:T81 Reference_point_time:T79 Item:T110
 T77	PERCENTAGE 2059 2063	2.0%
 T78	COUNTRY 2043 2048	China
 T79	DATE 2067 2075	February
@@ -140,3 +139,4 @@ R1	Cause-Precondition Arg1:E2 Arg2:E1
 R2	Cause-Precondition Arg1:E4 Arg2:E6	
 R3	Cause-Precondition Arg1:E6 Arg2:E3	
 T109	Economic_item 1744 1751	economy
+T110	Economic_item 2030 2039	inflation

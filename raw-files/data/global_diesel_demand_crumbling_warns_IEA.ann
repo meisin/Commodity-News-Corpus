@@ -10,7 +10,7 @@ T11	COUNTRY 520 525	China
 T12	COUNTRY 530 535	Japan
 T6	DATE 598 611	January-March
 T9	Slow-weak 553 561	contract
-E2	Slow-weak:T9 Initial_reference_point:T6 Attribute:T7 Supplier_Consumer:T12 Supplier_Consumer2:T11 Supplier_Consumer3:T10 Supplier_Consumer4:T8
+E2	Slow-weak:T9 Attribute:T7 Supplier_Consumer:T12 Supplier_Consumer2:T11 Supplier_Consumer3:T10 Supplier_Consumer4:T8 Reference_point_time:T6
 T14	Financial_attribute 651 657	demand
 T15	Slow-weak 658 666	crumbles
 E3	Slow-weak:T15 Attribute:T14 Type:T16
@@ -19,7 +19,6 @@ T20	Movement-up-gain 882 887	gains
 E5	Movement-up-gain:T20 Reference_point_time:T21 Forecast:T65
 T21	DATE 909 928	the end of the year
 A3	Polarity E5 Positive
-A4	Modality E5 Other
 T23	Grow-strong 968 976	improves
 E6	Grow-strong:T23 Type:T26 Supplier_Consumer2:T25 Supplier_Consumer:T22
 T25	COUNTRY 1027 1032	India

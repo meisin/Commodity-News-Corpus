@@ -15,7 +15,6 @@ T11	MODALITY_cue 240 249	agreement
 A2	Modality E1 Other
 T12	Commodity 611 614	oil
 T13	Commodity 638 641	gas
-A3	Modality E2 Other
 T15	Economic_item 1499 1506	economy
 T16	Embargo 5260 5269	sanctions
 E4	Embargo:T16 

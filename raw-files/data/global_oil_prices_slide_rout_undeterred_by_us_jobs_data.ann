@@ -44,7 +44,7 @@ T35	trade-financial-tension 1616 1625	price war
 E13	trade-financial-tension:T35 Participating_countries:T36
 T36	ORGANIZATION 1587 1591	OPEC
 T37	Movement-down-loss 1765 1769	fell
-E14	Movement-down-loss:T37 Attribute:T38 Item:T39 Reference_point_time:T40 Difference:T41 Final_value:T42
+E14	Movement-down-loss:T37 Attribute:T38 Item:T39 Difference:T41 Final_value:T42 Contract_date:T40
 T38	Financial_attribute 1756 1764	contract
 T39	Commodity 1744 1755	Brent crude
 T40	DATE 1736 1743	January
@@ -55,7 +55,7 @@ E15	Movement-down-loss:T43 Difference:T45 Final_value:T46 Item:T17
 T45	MONEY 1851 1856	$1.12
 T46	MONEY 1860 1866	$65.69
 T49	Position-high 1958 1962	high
-E17	Position-high:T49 Difference:T84 Duration:T83 Item:T82
+E17	Position-high:T49 Duration:T83 Item:T82 Final_value:T84
 T50	Movement-down-loss 2216 2222	halved
 E18	Movement-down-loss:T50 Reference_point_time:T52 Final_value:T53 Forecaster:T89 Item:T48 Forecast:T51
 T52	DATE 2227 2231	2015
@@ -77,7 +77,7 @@ T80	Economic_item 1520 1526	market
 T81	DURATION 1911 1919	10 weeks
 T82	Economic_item 1926 1932	dollar
 T83	DURATION 1949 1957	intraday
-T84	Quantity 1966 1972	89.467
+T84	NUMBER 1966 1972	89.467
 T85	Position-high 1978 1985	highest
 E27	Position-high:T85 Initial_reference_point:T86
 T86	DATE 1998 2008	March 2009
@@ -134,3 +134,4 @@ A6	Intensity E19 Intensified
 T97	DATE 2319 2328	next year
 T98	Commodity 2493 2498	Brent
 T63	Economic_item 383 393	oil market
+A7	Modality E7 Other

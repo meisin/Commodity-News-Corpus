@@ -54,13 +54,13 @@ T41	Civil-unrest 1680 1687	turmoil
 E15	Civil-unrest:T41 Place:T42
 T42	LOCATION 1703 1714	Middle East
 T43	Embargo 1719 1728	sanctions
-E16	Embargo:T43 Imposer:T44
+E16	Embargo:T43 Imposee:T44
 T44	COUNTRY 1732 1738	Russia
 T45	Civil-unrest 1936 1945	civil war
 E17	Civil-unrest:T45 Place:T46
 T46	COUNTRY 1949 1954	Libya
 T47	Embargo 1959 1968	sanctions
-E18	Embargo:T47 Imposer:T48
+E18	Embargo:T47 Imposee:T48
 T48	COUNTRY 1972 1976	Iran
 T49	Movement-up-gain 1991 1999	rebounds
 E19	Movement-up-gain:T49 
@@ -70,7 +70,7 @@ T51	Financial_attribute 1842 1848	prices
 T52	Movement-down-loss 1880 1888	declines
 E21	Movement-down-loss:T52 
 T53	Grow-strong 2004 2009	spurt
-E22	Grow-strong:T53 Item:T54 Supplier_Consumer:T55
+E22	Grow-strong:T53 Item:T54 Type:T55
 T54	Economic_item 2013 2028	economic growth
 T55	LOCATION 2032 2038	Europe
 T56	Cause-movement-down-loss 2057 2067	disruption
@@ -84,7 +84,7 @@ A4	Modality E24 Other
 T61	Price_unit 2242 2254	$93 a barrel
 T62	ORGANIZATION 2185 2198	Credit Suisse
 T63	Cause-movement-down-loss 2199 2202	cut
-E25	Cause-movement-down-loss:T63 Item:T64 Final_value:T61 Forecaster:T62 Attribute:T60 Forecast:T157
+E25	Cause-movement-down-loss:T63 Item:T64 Final_value:T61 Forecaster:T62 Attribute:T60 Forecast:T157 Reference_point_time:T201
 T64	Commodity 2214 2223	Brent oil
 T65	Movement-down-loss 2565 2570	slump
 E26	Movement-down-loss:T65 Attribute:T66
@@ -155,7 +155,7 @@ T112	Commodity 4743 4746	oil
 T113	Financial_attribute 4752 4757	price
 T114	DATE 4780 4789	Wednesday
 T115	Movement-down-loss 4850 4855	lower
-E45	Movement-down-loss:T115 Attribute:T116 Modality_cue:T174 Item:T189
+E45	Movement-down-loss:T115 Attribute:T116 Modality_cue:T174
 T116	Financial_attribute 4856 4862	prices
 A7	Polarity E45 Positive
 A8	Modality E45 Other
@@ -168,7 +168,7 @@ E47	Cause-movement-down-loss:T120 Supplier_Consumer:T122 Attribute:T121 Polarity
 T121	Financial_attribute 5129 5139	production
 T122	ORGANIZATION 5140 5150	themselves
 T123	Cause-movement-down-loss 5196 5200	cuts
-E48	Cause-movement-down-loss:T123 Modality_cue:T186
+E48	Cause-movement-down-loss:T123 Modality_cue:T186 Supplier_Consumer:T203
 A9	Polarity E48 Positive
 T124	Movement-down-loss 5301 5306	slide
 E49	Movement-down-loss:T124 Attribute:T125 Item:T126 Difference:T127 Modality_cue:T179
@@ -178,7 +178,7 @@ T127	MONEY 5315 5318	$10
 A11	Polarity E49 Positive
 A12	Modality E49 Other
 T128	Cause-movement-down-loss 5418 5422	curb
-E50	Cause-movement-down-loss:T128 Modality_cue:T181
+E50	Cause-movement-down-loss:T128 Modality_cue:T181 Supplier_Consumer:T204
 T129	Cause-movement-down-loss 5345 5352	squeeze
 E51	Cause-movement-down-loss:T129 Modality_cue:T180
 T13	Financial_attribute 480 486	supply
@@ -195,7 +195,7 @@ T134	Movement-down-loss 4387 4392	lower
 E54	Movement-down-loss:T134 Attribute:T135 Modality_cue:T173
 T135	Financial_attribute 4393 4399	prices
 T136	Movement-down-loss 4410 4414	curb
-E55	Movement-down-loss:T136 Modality_cue:T173
+E55	Movement-down-loss:T136 Modality_cue:T173 Attribute:T202
 T138	Financial_attribute 4446 4459	demand growth
 T139	Movement-up-gain 4589 4594	added
 E57	Movement-up-gain:T139 Difference:T140 Supplier_Consumer:T142 Attribute:T141
@@ -267,12 +267,10 @@ A22	Modality E6 Other
 T187	MODALITY_cue 541 548	whether
 T188	Movement-flat 4866 4874	maintain
 E65	Movement-flat:T188 Item:T189
-T189	Economic_item 4875 4881	market
 T60	Financial_attribute 2224 2229	price
 T157	Forecast_target 2230 2238	forecast
 T190	Crisis 3278 3284	crisis
 E61	Crisis:T190 
-T148	Commodity 579 593	U.S. shale oil
 A23	Polarity E47 Negative
 A24	Modality E48 Other
 A25	Modality E50 Other
@@ -300,3 +298,10 @@ T197	Commodity 5547 5559	US shale oil
 T198	Financial_attribute 5615 5621	supply
 T199	Commodity 5665 5668	oil
 T200	Financial_attribute 5669 5675	prices
+T148	Commodity 579 593	U.S. shale oil
+T201	DATE 2163 2172	Last week
+T202	Financial_attribute 4425 4435	investment
+T189	Economic_item 4875 4887	market share
+R13	Cause-Precondition Arg1:E45 Arg2:E65	
+T203	ORGANIZATION 5166 5170	OPEC
+T204	Group 5389 5402	U.S. drillers

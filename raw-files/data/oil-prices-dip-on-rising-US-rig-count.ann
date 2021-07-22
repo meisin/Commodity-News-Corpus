@@ -44,7 +44,7 @@ T34	Financial_attribute 653 661	oil rigs
 T36	DATE 693 717	the week ending April 20
 T37	NUMBER 747 750	820
 T38	Position-high 756 763	highest
-E10	Position-high:T38 Reference_point_time:T39
+E10	Position-high:T38 Initial_reference_point:T39
 T39	DATE 770 780	March 2015
 T40	Movement-up-gain 786 792	rising
 E11	Movement-up-gain:T40 Attribute:T41
@@ -58,7 +58,7 @@ T47	NUMBER 885 894	a quarter
 T48	DATE 901 909	mid-2016
 T49	Production_unit 922 957	10.54 million barrels per day (bpd)
 T50	Movement-up-gain 990 994	more
-E14	Movement-up-gain:T50 Supplier_Consumer:T52 Difference:T51
+E14	Movement-up-gain:T50 Supplier_Consumer:T52 Final_value:T51
 T51	Production_unit 999 1020	almost 11 million bpd
 T52	COUNTRY 964 970	Russia
 T53	Movement-down-loss 1122 1126	dips
@@ -79,7 +79,7 @@ T63	DATE 1373 1385	January 2017
 T65	COUNTRY 1303 1309	Russia
 T66	COUNTRY 1314 1341	several other oil producers
 T67	Oversupply 1421 1431	oversupply
-E19	Oversupply:T67 Modality_cue:T69
+E19	Oversupply:T67 Modality_cue:T69 Place:T94 Intensity_cue:T95
 T69	MODALITY_cue 1392 1399	attempt
 A2	Modality E19 Other
 T70	Cause-movement-up-gain 1436 1443	prop up
@@ -110,7 +110,6 @@ T89	Commodity 2025 2028	oil
 T90	LOCATION 2018 2024	global
 A5	Modality E25 Other
 T43	Commodity 839 844	crude
-A1	Intensity E19 Eased
 T91	Financial_attribute 845 855	production
 T44	COUNTRY 834 838	U.S.
 T35	ORGANIZATION 1297 1301	OPEC
@@ -127,3 +126,6 @@ R6	Cause-Precondition Arg1:E18 Arg2:E20
 A3	Modality E24 Other
 A4	Intensity E25 Intensified
 T93	INTENSITY_cue 2002 2009	further
+T94	LOCATION 1414 1420	global
+T95	INTENSITY_cue 1403 1409	reduce
+A1	Intensity E19 Eased

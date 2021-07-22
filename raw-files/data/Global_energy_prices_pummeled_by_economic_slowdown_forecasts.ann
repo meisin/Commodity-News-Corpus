@@ -8,7 +8,7 @@ T5	PERCENTAGE 488 491	20%
 T6	Commodity 431 434	Oil
 T7	DATE 516 526	late April
 T8	Movement-down-loss 572 576	fall
-E3	Movement-down-loss:T8 Attribute:T10 Item:T9 Difference:T11 Initial_reference_point:T12 Modality_cue:T80
+E3	Movement-down-loss:T8 Attribute:T10 Item:T9 Initial_reference_point:T12 Modality_cue:T80 Final_value:T11
 T9	Commodity 533 548	Brent crude oil
 T10	Financial_attribute 549 556	futures
 T11	Price_unit 577 597	below $60 per barrel
@@ -72,7 +72,7 @@ A8	Modality E4 Other
 T59	Commodity 821 827	energy
 T60	Commodity 916 922	energy
 T61	Movement-down-loss 1124 1128	fell
-E18	Movement-down-loss:T61 Reference_point_time:T62 Item:T57 Supplier_Consumer:T94
+E18	Movement-down-loss:T61 Reference_point_time:T62 Supplier_Consumer:T94 Item:T57
 T62	DATE 1132 1135	May
 T64	Commodity 1313 1319	energy
 T65	Financial_attribute 1320 1326	prices
@@ -81,7 +81,7 @@ E20	Slow-weak:T66
 T67	Movement-down-loss 1819 1823	fall
 E21	Movement-down-loss:T67 Item:T95
 T68	Cause-movement-up-gain 2077 2083	raised
-E22	Cause-movement-up-gain:T68 
+E22	Cause-movement-up-gain:T68 Item:T117
 T69	Financial_attribute 2425 2432	imports
 A7	Modality E14 Other
 T70	Commodity 2415 2424	crude oil
@@ -131,7 +131,6 @@ R2	Cause-Precondition Arg1:E1 Arg2:E13
 R3	Cause-Precondition Arg1:E13 Arg2:E19	
 R4	Cause-Precondition Arg1:E4 Arg2:E5	
 R5	Cause-Precondition Arg1:E18 Arg2:E6	
-T57	Economic_item 1101 1114	manufacturing
 T94	COUNTRY 1096 1100	U.S.
 R6	Cause-Precondition Arg1:E11 Arg2:E9	
 T95	Economic_item 1827 1840	manufacturing
@@ -161,3 +160,8 @@ T112	PERCENTAGE 3016 3019	60%
 T113	Position-high 3036 3041	highs
 E33	Position-high:T113 Reference_point_time:T114
 T114	DATE 3031 3035	2018
+T115	Commodity 377 381	coal
+T116	Commodity 656 660	coal
+T57	Economic_item 1101 1123	manufacturing activity
+T117	Economic_item 2084 2091	tariffs
+T118	Economic_item 1953 1960	tariffs

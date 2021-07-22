@@ -2,9 +2,8 @@ T1	Commodity 0 5	Crude
 T2	Movement-down-loss 6 10	dips
 E1	Movement-down-loss:T2 Item:T1
 T3	LOCATION 23 29	global
-T4	Economic_item 30 45	growth forecast
 T5	Cause-movement-down-loss 18 22	cuts
-E2	Cause-movement-down-loss:T5 Type:T3 Forecaster:T6 Item:T4
+E2	Cause-movement-down-loss:T5 Type:T3 Forecaster:T6 Item:T4 Forecast:T69
 T6	ORGANIZATION 14 17	IMF
 R1	Cause-Precondition Arg1:E2 Arg2:E1	
 T7	Financial_attribute 178 185	futures
@@ -12,8 +11,7 @@ T8	Commodity 168 177	Crude oil
 T9	Movement-down-loss 186 192	dipped
 E3	Movement-down-loss:T9 Attribute:T7 Item:T8
 T10	Cause-movement-down-loss 260 267	trimmed
-E4	Cause-movement-down-loss:T10 Item:T11 Forecaster:T12
-T11	Economic_item 277 292	growth forecast
+E4	Cause-movement-down-loss:T10 Forecaster:T12 Reference_point_time:T66 Item:T11 Forecast:T70
 R2	Cause-Precondition Arg1:E4 Arg2:E3	
 T12	ORGANIZATION 232 259	International Monetary Fund
 T13	Commodity 332 350	light, sweet crude
@@ -32,7 +30,7 @@ T22	Position-low 502 505	low
 E8	Position-low:T22 Final_value:T23
 T23	MONEY 509 517	USD96.21
 T24	Cause-movement-down-loss 560 563	cut
-E9	Cause-movement-down-loss:T24 Type:T25 Supplier_Consumer:T27 Item:T26 Forecast:T62 Final_value:T28 Initial_value:T61 Initial_reference_point:T63
+E9	Cause-movement-down-loss:T24 Type:T25 Item:T26 Forecast:T62 Final_value:T28 Initial_value:T61 Initial_reference_point:T63 Reference_point_time:T65 Forecaster:T27
 T25	LOCATION 568 574	global
 T27	ORGANIZATION 524 551	International Monetary Fund
 T28	PERCENTAGE 594 598	3.5%
@@ -60,10 +58,9 @@ T42	Movement-up-gain 934 938	rose
 E14	Movement-up-gain:T42 Item:T43
 T43	Economic_item 922 933	U.S. dollar
 T44	Movement-flat 992 1001	unchanged
-E15	Movement-flat:T44 
+E15	Movement-flat:T44 Item:T67
 T45	Negative_sentiment 1049 1057	concerns
-E16	Negative_sentiment:T45 Item:T46
-T46	Economic_item 1077 1091	global economy
+E16	Negative_sentiment:T45 Type:T68 Item:T46
 T47	Grow-strong 1156 1164	stronger
 E17	Grow-strong:T47 Item:T48
 T48	Economic_item 1165 1178	U.S. currency
@@ -89,3 +86,13 @@ T63	DATE 637 644	October
 R3	Cause-Precondition Arg1:E9 Arg2:E11	
 R4	Cause-Precondition Arg1:E11 Arg2:E10	
 T64	Economic_item 1126 1136	greenbacks
+T65	DATE 603 607	2013
+T66	DATE 272 276	2013
+T67	Economic_item 977 991	interest rates
+T46	Economic_item 1084 1091	economy
+T68	LOCATION 1077 1083	global
+T4	Economic_item 30 36	growth
+T69	Forecast_target 37 45	forecast
+T11	Economic_item 277 283	growth
+T70	Forecast_target 284 292	forecast
+T71	Forecast_target 620 628	forecast

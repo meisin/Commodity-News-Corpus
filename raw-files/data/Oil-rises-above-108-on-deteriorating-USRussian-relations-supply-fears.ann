@@ -8,7 +8,7 @@ T9	Civil-unrest 348 356	fighting
 E2	Civil-unrest:T9 Place:T8
 T10	MODALITY_cue 445 450	fears
 T11	Movement-down-loss 294 300	losses
-E3	Movement-down-loss:T11 Item:T13 Difference:T15 Intensity_cue:T12
+E3	Movement-down-loss:T11 Item:T13 Intensity_cue:T12 Final_value:T15
 T12	INTENSITY_cue 285 293	reversed
 T13	Commodity 269 284	Brent crude oil
 T14	Geopolitical-tension 372 395	deteriorating relations
@@ -56,15 +56,13 @@ E15	Movement-up-gain:T41 Difference:T42 Contract_date:T40 Item:T39 Final_value:T
 T42	MONEY 1318 1325	2 cents
 T43	Price_unit 1329 1345	$102.09 a barrel
 T44	Position-low 1364 1367	low
-E16	Position-low:T44 Difference:T45
+E16	Position-low:T44 Final_value:T45
 T45	Price_unit 1371 1384	$101 a barrel
 T46	Movement-up-gain 1423 1429	rising
 E17	Movement-up-gain:T46 Attribute:T47
 T47	Financial_attribute 1410 1416	Prices
 T48	Commodity 1656 1659	oil
 T49	Commodity 1680 1683	gas
-T50	Embargo 1743 1752	sanctions
-E18	Embargo:T50 Imposer:T51
 T51	COUNTRY 1738 1742	U.S.
 T52	Crisis 1967 1973	crisis
 E19	Crisis:T52 Place:T53
@@ -116,3 +114,12 @@ T25	Economic_item 792 802	oil market
 A1	Intensity E3 Eased
 R4	Cause-Precondition Arg1:E4 Arg2:E6	
 R5	Cause-Precondition Arg1:E6 Arg2:E3	
+T26	Embargo 1743 1752	sanctions
+E18	Embargo:T26 Imposer:T51 Intensity_cue:T86 Modality_cue:T87
+T50	Movement-down-loss 585 589	fell
+E27	Movement-down-loss:T50 Reference_point_time:T85
+T85	DATE 593 599	Friday
+T86	INTENSITY_cue 1727 1737	additional
+A4	Intensity E18 Intensified
+A5	Modality E18 Other
+T87	MODALITY_cue 1709 1720	speculation

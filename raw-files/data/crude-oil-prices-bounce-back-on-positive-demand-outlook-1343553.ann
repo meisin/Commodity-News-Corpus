@@ -115,18 +115,18 @@ T89	Financial_attribute 2152 2162	stockpiles
 T90	Forecast_target 2206 2215	forecasts
 T91	Movement-down-loss 2222 2229	decline
 E19	Movement-down-loss:T91 Difference:T92 Forecast:T90
-T92	Quantity 2233 2246	1.519 million
+T92	NUMBER 2233 2246	1.519 million
 T93	Movement-up-gain 2276 2283	climbed
 E20	Movement-up-gain:T93 Difference:T96 Attribute:T94 Item:T95 Final_value:T97
 T94	Financial_attribute 2268 2275	futures
 T95	Commodity 2259 2267	gasoline
 T96	PERCENTAGE 2284 2289	0.50%
-T97	Production_unit 2293 2308	$1.931 a gallon
+T97	Price_unit 2293 2308	$1.931 a gallon
 T98	Movement-down-loss 2341 2345	down
 E21	Movement-down-loss:T98 Attribute:T99 Item:T100 Difference:T101 Final_value:T102
 T99	Financial_attribute 2328 2335	futures
 T100	Commodity 2316 2327	natural gas
 T101	PERCENTAGE 2346 2351	0.26%
-T102	Production_unit 2355 2394	$2.732 per million British thermal unit
 T103	Forecast_target 1345 1353	forecast
 T104	DATE 1612 1627	the end of 2018
+T102	Price_unit 2355 2395	$2.732 per million British thermal units

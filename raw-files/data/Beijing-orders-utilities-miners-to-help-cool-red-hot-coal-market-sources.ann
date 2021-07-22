@@ -1,0 +1,79 @@
+T1	Economic_item 54 65	coal market
+T2	Commodity 345 349	coal
+T3	Cause-movement-down-loss 369 374	slash
+E1	Cause-movement-down-loss:T3 Attribute:T4
+T4	Financial_attribute 375 381	prices
+T5	Cause-movement-down-loss 472 476	cool
+E2	Cause-movement-down-loss:T5 Item:T6 Attribute:T7 Initial_reference_point:T8
+T6	Commodity 477 481	coal
+T7	Financial_attribute 482 488	prices
+T8	DATE 495 503	mid-2016
+T9	Commodity 601 605	coal
+T10	Financial_attribute 606 612	prices
+T11	Price_unit 624 648	570 yuan ($90) per tonne
+T12	DATE 652 659	June 10
+T13	Price_unit 695 713	650 yuan per tonne
+T14	Cause-movement-up-gain 760 768	increase
+E3	Cause-movement-up-gain:T14 Modality_cue:T16 Attribute:T15 Difference:T17 Final_value:T18
+T15	Financial_attribute 769 777	supplies
+T16	MODALITY_cue 752 756	told
+A1	Modality E3 Other
+T17	NUMBER 806 817	200 million
+T18	Quantity 821 839	300 million tonnes
+T19	Grow-strong 986 991	rally
+E4	Grow-strong:T19 Item:T20 Attribute:T21
+T20	Commodity 995 999	coal
+T21	Financial_attribute 1000 1006	prices
+T22	Cause-movement-down-loss 1068 1078	bring down
+E5	Cause-movement-down-loss:T22 Attribute:T23 Modality_cue:T24
+T23	Financial_attribute 1079 1085	prices
+R1	Cause-Precondition Arg1:E4 Arg2:E5	
+T24	MODALITY_cue 1011 1019	prompted
+A2	Modality E5 Other
+T25	Economic_item 1155 1166	coal market
+T26	Movement-down-loss 1425 1429	fall
+E6	Movement-down-loss:T26 Attribute:T27 Item:T28 Modality_cue:T29 Final_value:T30
+T27	Financial_attribute 1418 1424	prices
+T28	Commodity 1413 1417	coal
+T29	MODALITY_cue 1409 1412	let
+A3	Modality E6 Other
+T30	MONEY 1430 1444	below 570 yuan
+T31	Financial_attribute 1482 1488	import
+T32	Financial_attribute 1588 1594	output
+T33	Commodity 1679 1683	coal
+T34	Grow-strong 1782 1787	rally
+E7	Grow-strong:T34 Attribute:T35
+T35	Financial_attribute 1791 1797	prices
+T36	Prohibiting 1882 1888	banned
+E8	Prohibiting:T36 Activity:T37
+T37	Other_activities 1889 1919	spot purchases of thermal coal
+T38	Movement-down-loss 1949 1957	declines
+E9	Movement-down-loss:T38 Attribute:T39
+T39	Financial_attribute 1961 1967	prices
+T40	Commodity 1974 1978	Coal
+T41	Financial_attribute 2022 2033	inventories
+T42	Financial_attribute 2061 2066	price
+T43	Financial_attribute 2133 2144	inventories
+T44	Financial_attribute 2206 2212	prices
+T45	Movement-flat 2213 2222	stabilize
+E10	Movement-flat:T45 Attribute:T44 Modality_cue:T46
+T46	MODALITY_cue 2200 2205	until
+A4	Modality E10 Other
+T47	Commodity 2241 2245	coal
+T48	Grow-strong 2367 2373	strong
+E11	Grow-strong:T48 Attribute:T49 Item:T50
+T49	Financial_attribute 2374 2380	demand
+T50	Economic_item 2388 2394	market
+T51	Movement-up-gain 2455 2462	pick-up
+E12	Movement-up-gain:T51 Item:T52 Attribute:T53
+T52	Commodity 2472 2476	coal
+T53	Financial_attribute 2477 2488	consumption
+T54	Position-high 2617 2621	high
+E13	Position-high:T54 Reference_point_time:T55
+T55	DATE 2626 2636	this month
+T56	Movement-down-loss 2698 2702	fell
+E14	Movement-down-loss:T56 Reference_point_time:T59 Attribute:T57 Item:T58 Difference:T60
+T57	Financial_attribute 2683 2697	futures prices
+T58	Commodity 2678 2682	coal
+T59	DATE 2724 2731	Tuesday
+T60	Price_unit 2735 2753	610 yuan per tonne

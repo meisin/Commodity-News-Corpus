@@ -32,7 +32,7 @@ T24	Movement-up-gain 512 517	gains
 E8	Movement-up-gain:T24 Item:T25 Intensity_cue:T57
 T25	Commodity 522 525	oil
 T26	Movement-up-gain 561 567	builds
-E9	Movement-up-gain:T26 Supplier_Consumer:T27 Type:T28
+E9	Movement-up-gain:T26 Supplier_Consumer:T27 Supplier_Consumer2:T28
 T27	COUNTRY 575 583	the U.S.
 T28	LOCATION 588 594	Europe
 T29	Cause-movement-down-loss 611 617	reduce

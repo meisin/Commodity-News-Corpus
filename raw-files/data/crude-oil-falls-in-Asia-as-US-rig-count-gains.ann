@@ -63,7 +63,7 @@ T53	DATE 922 930	February
 T54	Financial_attribute 974 980	prices
 T55	Commodity 970 973	oil
 T56	Movement-up-gain 999 1005	jumped
-E14	Movement-up-gain:T56 Attribute:T51 Item:T52 Reference_point_time:T53 Difference:T57 Difference2:T58 Final_value:T59
+E14	Movement-up-gain:T56 Attribute:T51 Item:T52 Difference:T57 Difference2:T58 Final_value:T59 Contract_date:T53
 T57	MONEY 1006 1011	$1.20
 T58	PERCENTAGE 1016 1028	roughly 1.9%
 T59	Price_unit 1043 1058	$63.40 a barrel
@@ -107,9 +107,7 @@ A3	Polarity E22 Negative
 T89	POLARITY_cue 1670 1679	prevented
 T84	Economic_item 1726 1732	market
 T86	Movement-up-gain 1769 1774	added
-E23	Movement-up-gain:T86 Item:T90 Supplier_Consumer:T91 Difference:T92 Attribute:T93 Reference_point_time:T94 Final_value:T95
-T90	Commodity 1752 1758	energy
-T91	COUNTRY 1747 1751	U.S.
+E23	Movement-up-gain:T86 Difference:T92 Attribute:T93 Reference_point_time:T94 Final_value:T95 Supplier_Consumer:T90
 T92	NUMBER 1775 1778	two
 T93	Financial_attribute 1779 1787	oil rigs
 T94	DATE 1791 1809	the week to Dec. 8
@@ -124,7 +122,7 @@ T100	COUNTRY 2003 2007	U.S.
 T101	LOCATION 1994 2002	Domestic
 T102	PERCENTAGE 2032 2042	almost 15%
 T103	Position-low 2065 2068	low
-E26	Position-low:T103 Reference_point_time:T104
+E26	Position-low:T103 Initial_reference_point:T104
 T104	DATE 2072 2080	mid-2016
 T105	Movement-up-gain 2086 2096	increasing
 E27	Movement-up-gain:T105 Attribute:T106
@@ -137,9 +135,8 @@ A4	Modality E28 Other
 T110	Movement-up-gain 2206 2214	climbing
 E29	Movement-up-gain:T110 Attribute:T111
 T111	Financial_attribute 2215 2221	prices
-A5	Modality E29 Other
 T112	Movement-up-gain 2243 2247	rose
-E30	Movement-up-gain:T112 Final_value:T116 Attribute:T113 Item:T114 Supplier_Consumer:T115
+E30	Movement-up-gain:T112 Final_value:T116 Attribute:T113 Item:T114 Supplier_Consumer:T115 Reference_point_time:T91
 T113	Financial_attribute 2232 2242	production
 T114	Commodity 2228 2231	oil
 T115	COUNTRY 2223 2227	U.S.
@@ -183,3 +180,5 @@ T134	MODALITY_cue 1605 1610	would
 R6	Cause-Precondition Arg1:E20 Arg2:E21	
 R7	Cause-Precondition Arg1:E21 Arg2:E22	
 R8	Cause-Precondition Arg1:E27 Arg2:E28	
+T90	Group 1747 1768	U.S. energy companies
+T91	DATE 2268 2277	last week

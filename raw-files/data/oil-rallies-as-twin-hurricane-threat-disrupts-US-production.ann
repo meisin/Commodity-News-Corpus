@@ -71,7 +71,6 @@ T52	Cause-movement-down-loss 533 542	shut down
 E18	Cause-movement-down-loss:T52 Attribute:T24 Supplier_Consumer:T53
 T53	STATE_OR_PROVINCE 503 517	Gulf of Mexico
 T54	INTENSITY_cue 877 883	hamper
-A1	Polarity E8 Negative
 T55	Grow-strong 1353 1357	boom
 E19	Grow-strong:T55 Item:T56
 T56	Commodity 1347 1352	shale

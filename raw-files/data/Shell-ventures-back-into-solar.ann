@@ -1,0 +1,13 @@
+T1	Commodity 347 350	oil
+T2	Commodity 355 358	gas
+T3	Movement-down-loss 579 584	lower
+E1	Movement-down-loss:T3 Item:T4 Attribute:T5
+T4	Commodity 585 588	oil
+T5	Financial_attribute 589 595	prices
+T6	Group 1592 1605	oil companies
+T7	Group 1701 1714	Oil companies
+T8	Movement-down-loss 1793 1798	lower
+E2	Movement-down-loss:T8 
+T9	Cause-movement-down-loss 1836 1842	reduce
+E3	Cause-movement-down-loss:T9 
+T10	Commodity 2187 2190	gas

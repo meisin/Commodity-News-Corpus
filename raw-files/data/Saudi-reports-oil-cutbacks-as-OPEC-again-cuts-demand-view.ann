@@ -152,7 +152,7 @@ T120	Financial_attribute 2475 2481	demand
 T122	LOCATION 2468 2474	global
 T121	ORGANIZATION 2447 2451	OPEC
 T124	Movement-down-loss 2531 2535	less
-E38	Movement-down-loss:T124 Difference:T123 Final_value:T125 Attribute:T120 Type:T122 Supplier_Consumer:T121 Forecast:T153
+E38	Movement-down-loss:T124 Difference:T123 Final_value:T125 Attribute:T120 Type:T122 Forecast:T153 Supplier_Consumer:T121
 T16	Oversupply 622 636	supply surplus
 E4	Oversupply:T16 Modality_cue:T126 Reference_point_time:T168 Difference:T17
 T17	Production_unit 650 663	1 million bpd

@@ -1,0 +1,17 @@
+T1	Negative_sentiment 27 35	concerns
+E1	Negative_sentiment:T1 
+T2	Slow-weak 41 45	weak
+E2	Slow-weak:T2 Attribute:T3
+T3	Financial_attribute 46 52	prices
+T4	Movement-down-loss 236 243	falling
+E3	Movement-down-loss:T4 Reference_point_time:T6 Attribute:T5
+T5	Financial_attribute 229 235	prices
+T6	DATE 247 267	the year ended March
+T7	Movement-down-loss 611 614	dip
+E4	Movement-down-loss:T7 
+T8	Movement-down-loss 654 661	decline
+E5	Movement-down-loss:T8 Item:T9 Attribute:T10
+T9	Commodity 665 674	crude oil
+T10	Financial_attribute 675 681	prices
+T11	Movement-down-loss 1021 1025	drop
+E6	Movement-down-loss:T11 

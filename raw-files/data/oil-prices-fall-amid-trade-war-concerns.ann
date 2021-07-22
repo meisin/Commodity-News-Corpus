@@ -26,14 +26,13 @@ T18	Price_unit 282 297	$63.92 a barrel
 T19	Commodity 365 368	oil
 T20	Financial_attribute 369 375	prices
 T21	Movement-down-loss 394 398	fell
-E8	Movement-down-loss:T21 Attribute:T25 Item:T26 Supplier_Consumer:T22 Difference:T23 Final_value:T24
-T22	ORGANIZATION 399 407	65 cents
+E8	Movement-down-loss:T21 Attribute:T25 Item:T26 Difference:T23 Final_value:T24 Difference2:T22
 T23	PERCENTAGE 412 417	0.94%
 T24	Price_unit 422 437	$68.69 a barrel
 T25	Financial_attribute 338 345	futures
 T26	Commodity 326 337	Brent crude
 T27	Cause-movement-up-gain 455 464	increased
-E9	Cause-movement-up-gain:T27 Supplier_Consumer:T28 Reference_point_time:T29 Attribute:T76 Difference:T51
+E9	Cause-movement-up-gain:T27 Supplier_Consumer:T28 Reference_point_time:T29 Difference:T51 Item:T76
 T28	COUNTRY 449 454	China
 T29	DATE 442 448	Sunday
 T31	trade-financial-tension 630 644	trade tensions
@@ -93,7 +92,7 @@ T74	Production_unit 1779 1796	10.95 million bpd
 T75	DATE 1800 1808	February
 T50	Commodity 1354 1368	U.S. shale oil
 T51	PERCENTAGE 476 479	25%
-T76	Financial_attribute 465 472	tariffs
+T76	Economic_item 465 472	tariffs
 T30	INTENSITY_cue 620 629	increased
 A2	Intensity E11 Intensified
 T35	INTENSITY_cue 696 701	risen
@@ -122,3 +121,5 @@ T87	PERCENTAGE 1969 1974	2.20%
 T88	Price_unit 1978 2018	$2.673 per million British thermal units
 T89	Commodity 1941 1952	Natural gas
 T90	Financial_attribute 1953 1960	futures
+T22	MONEY 399 407	65 cents
+T91	Economic_item 585 592	tariffs

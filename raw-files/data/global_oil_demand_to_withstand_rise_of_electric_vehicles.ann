@@ -79,7 +79,7 @@ E12	Movement-up-gain:T67 Item:T68 Supplier_Consumer:T69 Modality_cue:T82
 T68	Commodity 3361 3370	crude oil
 T69	COUNTRY 3356 3360	U.S.
 T70	Position-high 3408 3412	peak
-E13	Position-high:T70 Reference_point_time:T71 Difference:T72
+E13	Position-high:T70 Reference_point_time:T71 Final_value:T72
 T71	DATE 3416 3425	the 2020s
 T72	Production_unit 3429 3449	about 17 million bpd
 A8	Modality E12 Other

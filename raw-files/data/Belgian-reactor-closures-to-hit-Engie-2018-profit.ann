@@ -1,0 +1,8 @@
+T1	Financial_attribute 43 49	profit
+T2	Commodity 228 231	gas
+T3	Financial_attribute 406 416	net profit
+T4	Commodity 621 624	gas
+T5	Movement-down-loss 1225 1229	down
+E1	Movement-down-loss:T5 Difference:T7 Item:T6
+T6	Economic_item 1213 1219	shares
+T7	PERCENTAGE 1230 1241	1.7 percent

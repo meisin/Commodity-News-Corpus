@@ -14,10 +14,10 @@ T9	Financial_attribute 481 488	futures
 T10	DATE 505 510	April
 T11	Price_unit 521 539	USD101.02 a barrel
 T12	Movement-down-loss 541 545	down
-E5	Movement-down-loss:T12 Difference:T13 Final_value:T11 Reference_point_time:T10 Attribute:T9 Item:T8
+E5	Movement-down-loss:T12 Difference:T13 Final_value:T11 Attribute:T9 Item:T8 Contract_date:T10
 T13	PERCENTAGE 546 551	0.06%
 T14	Position-high 591 595	high
-E6	Position-high:T14 Difference:T24
+E6	Position-high:T14 Final_value:T24 Item:T58
 T15	Financial_attribute 196 203	futures
 T16	Commodity 186 195	Crude oil
 T18	Financial_attribute 331 337	prices
@@ -32,7 +32,7 @@ T23	Financial_attribute 411 417	prices
 A2	Modality E7 Other
 T24	MONEY 599 608	USD101.47
 T25	Position-low 615 618	low
-E9	Position-low:T25 Difference:T26
+E9	Position-low:T25 Final_value:T26 Item:T58
 T26	MONEY 622 631	USD101.00
 T27	Embargo 686 695	sanctions
 E10	Embargo:T27 Imposee:T49
@@ -81,3 +81,4 @@ T56	Movement-up-gain 1360 1364	rise
 E20	Movement-up-gain:T56 Intensity_cue:T57 Item:T55
 T57	INTENSITY_cue 1347 1353	offset
 A4	Intensity E20 Eased
+T58	Commodity 558 567	commodity

@@ -58,7 +58,7 @@ T42	Commodity 1052 1060	gasoline
 T43	Financial_attribute 1061 1067	stocks
 T44	DATE 1076 1097	last week of February
 T45	Financial_attribute 1114 1124	production
-T46	Quantity 1133 1148	8.3 million bpd
+T46	Production_unit 1133 1148	8.3 million bpd
 T47	Movement-flat 1179 1188	unchanged
 E12	Movement-flat:T47 Item:T48 Attribute:T49 Difference:T50
 T48	Commodity 1189 1197	gasoline
@@ -87,7 +87,7 @@ E15	Movement-up-gain:T67 Attribute:T68
 T68	Financial_attribute 1778 1788	production
 T69	Commodity 1840 1844	fuel
 T70	Cause-movement-down-loss 1904 1908	cuts
-E16	Cause-movement-down-loss:T70 Supplier_Consumer:T72 Polarity_cue:T71 Attribute:T73
+E16	Cause-movement-down-loss:T70 Supplier_Consumer:T72 Polarity_cue:T71 Attribute:T73 Modality_cue:T76
 T71	POLARITY_cue 1882 1886	drop
 T72	ORGANIZATION 1873 1878	OPEC+
 A4	Polarity E16 Negative

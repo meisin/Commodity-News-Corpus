@@ -38,7 +38,7 @@ A2	Modality E8 Other
 T33	Production_unit 1070 1080	800,000 bp
 T34	DATE 1082 1091	this year
 T35	Movement-down-loss 1256 1260	down
-E9	Movement-down-loss:T35 Forecaster:T36 Difference:T38 Reference_point_time:T39 Forecast:T37
+E9	Movement-down-loss:T35 Forecaster:T36 Forecast:T37 Initial_value:T38 Initial_reference_point:T39
 T36	ORGANIZATION 1270 1273	IEA
 T38	Production_unit 1297 1313	31.6 million bpd
 T39	DATE 1317 1324	January
@@ -94,7 +94,7 @@ E22	Grow-strong:T76 Item:T78 Attribute:T77 Modality_cue:T100 Supplier_Consumer:T
 T77	Financial_attribute 2519 2529	production
 T78	Commodity 2509 2518	crude oil
 T82	Slow-weak 255 263	struggle
-E24	Slow-weak:T82 Type:T84 Modality_cue:T109 Item:T45
+E24	Slow-weak:T82 Type:T84 Modality_cue:T109 Item:T45 Initial_reference_point:T118
 A7	Modality E24 Other
 T84	LOCATION 232 238	global
 T85	Financial_attribute 303 309	supply
@@ -157,3 +157,4 @@ R3	Cause-Precondition Arg1:E15 Arg2:E13
 R4	Cause-Precondition Arg1:E14 Arg2:E29	
 R5	Cause-Precondition Arg1:E29 Arg2:E13	
 R6	Cause-Precondition Arg1:E21 Arg2:E20	
+T118	DATE 264 273	this year

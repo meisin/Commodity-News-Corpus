@@ -38,7 +38,7 @@ E9	Position-low:T30 Duration:T31 Final_value:T32
 T31	DURATION 642 647	daily
 T32	Price_unit 655 672	USD91.52 a barrel
 T33	Position-low 725 728	low
-E10	Position-low:T33 Duration:T35 Difference:T34
+E10	Position-low:T33 Duration:T35 Final_value:T34
 T34	Price_unit 732 749	USD91.21 a barrel
 T35	DURATION 715 724	five-week
 T36	Movement-up-gain 859 868	increased
@@ -59,10 +59,7 @@ E14	Movement-up-gain:T48
 T49	Movement-up-gain 1095 1099	gain
 E15	Movement-up-gain:T49 Initial_reference_point:T50
 T50	DATE 1106 1117	early April
-T51	Movement-up-gain 1070 1077	increas
-E16	Movement-up-gain:T51 Difference:T52 Modality_cue:T53
 T52	Quantity 1051 1069	0.5 million barrel
-A2	Modality E16 Other
 T53	MODALITY_cue 1032 1044	expectations
 T54	Financial_attribute 1175 1181	demand
 T55	Commodity 1166 1174	gasoline
@@ -109,11 +106,11 @@ T85	Financial_attribute 1924 1930	prices
 T86	Commodity 1920 1923	oil
 T87	Economic_item 1979 1986	markets
 T89	Movement-up-gain 2018 2023	gains
-E28	Movement-up-gain:T89 Intensity_cue:T20
+E28	Movement-up-gain:T89 Intensity_cue:T20 Item:T106
 T90	Movement-up-gain 2140 2142	up
 E29	Movement-up-gain:T90 Difference:T93 Item:T88
 T91	Position-high 2167 2171	high
-E30	Position-high:T91 Duration:T94 Difference:T92
+E30	Position-high:T91 Duration:T94 Final_value:T92
 T92	NUMBER 2175 2180	74.92
 T93	PERCENTAGE 2143 2148	0.98%
 T94	DURATION 2158 2166	two-week
@@ -142,3 +139,8 @@ R4	Cause-Precondition Arg1:E18 Arg2:E17
 T20	INTENSITY_cue 1990 1994	curb
 A3	Intensity E28 Eased
 T88	Economic_item 2029 2041	dollar index
+T106	Economic_item 1999 2002	yen
+T51	Movement-up-gain 1070 1078	increase
+E16	Movement-up-gain:T51 Difference:T52 Modality_cue:T53
+A2	Modality E16 Other
+A4	Modality E33 Other

@@ -22,7 +22,7 @@ T19	Cause-movement-down-loss 852 855	cut
 E6	Cause-movement-down-loss:T19 Item:T24 Attribute:T25
 T20	Price_unit 546 563	$51.05 per barrel
 T21	Cause-movement-down-loss 921 927	reduce
-E7	Cause-movement-down-loss:T21 Attribute:T74 Difference:T75 Modality_cue:T120
+E7	Cause-movement-down-loss:T21 Attribute:T74 Difference:T75 Modality_cue:T120 Supplier_Consumer:T107
 T22	Financial_attribute 1003 1014	consumption
 T23	Movement-down-loss 1015 1019	drop
 E8	Movement-down-loss:T23 Attribute:T22 Difference:T86
@@ -166,9 +166,10 @@ T99	Commodity 1282 1285	WTI
 T26	Economic_item 1609 1619	oil market
 T40	Financial_attribute 1693 1702	contracts
 R6	Cause-Precondition Arg1:E16 Arg2:E17	
-T106	Cause-movement-up-gain 2477 2480	cut
-E30	Cause-movement-up-gain:T106 Intensity_cue:T58 Polarity_cue:T73 Supplier_Consumer:T57
+T106	Cause-movement-down-loss 2477 2480	cut
+E30	Cause-movement-down-loss:T106 Intensity_cue:T58 Polarity_cue:T73 Supplier_Consumer:T57
 T58	INTENSITY_cue 2466 2476	additional
 A3	Intensity E30 Intensified
 A4	Polarity E30 Negative
 E19	Position-low:T87 Item:T43 Duration:T88 Reference_point_time:T89
+T107	Group 884 900	Chinese refiners

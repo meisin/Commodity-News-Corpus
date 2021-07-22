@@ -16,13 +16,12 @@ T11	DATE 203 210	Tuesday
 T12	Movement-down-loss 222 227	lower
 E5	Movement-down-loss:T12 
 T14	trade-financial-tension 267 276	trade war
-E6	trade-financial-tension:T14 Participating_countries:T73
+E6	trade-financial-tension:T14 Participating_countries:T73 Participating_countries2:T110
 T13	Economic_item 291 298	economy
 T15	LOCATION 284 290	global
 T16	Movement-up-gain 303 309	rising
-E7	Movement-up-gain:T16 Supplier_Consumer:T17 Supplier_Consumer2:T18
+E7	Movement-up-gain:T16 Supplier_Consumer:T17 Attribute:T18
 T17	ORGANIZATION 310 314	OPEC
-T18	ORGANIZATION 315 321	output
 T19	Movement-down-loss 338 342	down
 E8	Movement-down-loss:T19 Difference:T20 Difference2:T21 Item:T23 Final_value:T22
 T20	MONEY 343 348	$1.36
@@ -74,7 +73,7 @@ T57	Commodity 2330 2333	oil
 T58	NATIONALITY 2322 2329	Russian
 T61	Production_unit 2363 2399	11.294 million barrels per day (bpd)
 T62	Position-high 2436 2443	highest
-E21	Position-high:T62 Reference_point_time:T63
+E21	Position-high:T62 Initial_reference_point:T63
 T63	DATE 2450 2455	March
 T66	Cause-movement-down-loss 2824 2830	reduce
 E22	Cause-movement-down-loss:T66 Difference:T68 Reference_point_time:T69 Supplier_Consumer:T71 Modality_cue:T29 Supplier_Consumer2:T41 Supplier_Consumer3:T77
@@ -83,7 +82,6 @@ T69	DATE 2862 2878	Jan. 1 this year
 T65	ORGANIZATION 1983 1987	OPEC
 T71	COUNTRY 2767 2784	other non-members
 T72	Financial_attribute 2907 2916	inventory
-T73	COUNTRY 256 266	U.S.-China
 T23	Commodity 323 333	U.S. crude
 T24	Commodity 588 598	U.S. crude
 T29	MODALITY_cue 2802 2808	agreed
@@ -103,7 +101,7 @@ T67	Movement-up-gain 2569 2573	rose
 E20	Movement-up-gain:T67 Difference:T80 Reference_point_time:T60 Attribute:T70 Item:T78 Type:T76
 T80	Production_unit 2577 2613	11.294 million barrels per day (bpd)
 T81	Position-high 2650 2657	highest
-E24	Position-high:T81 Reference_point_time:T82
+E24	Position-high:T81 Initial_reference_point:T82
 T82	DATE 2664 2669	March
 T83	Commodity 821 831	U.S. crude
 T84	trade-financial-tension 893 902	trade war
@@ -152,3 +150,6 @@ T109	Slow-weak 3214 3217	bad
 E34	Slow-weak:T109 Forecast:T101 Type:T98 Item:T94
 R7	Cause-Precondition Arg1:E34 Arg2:E30	
 A4	Modality E31 Other
+T18	Financial_attribute 315 321	output
+T73	COUNTRY 261 266	China
+T110	COUNTRY 256 260	U.S.

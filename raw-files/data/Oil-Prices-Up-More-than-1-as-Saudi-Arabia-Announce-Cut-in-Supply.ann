@@ -40,7 +40,7 @@ T29	Commodity 532 535	oil
 T30	Financial_attribute 536 542	supply
 T31	LOCATION 525 531	global
 T32	Movement-up-gain 636 642	higher
-E9	Movement-up-gain:T32 Final_value:T37 Difference:T33 Reference_point_time:T36 Attribute:T35 Item:T34
+E9	Movement-up-gain:T32 Final_value:T37 Difference:T33 Attribute:T35 Item:T34 Contract_date:T36
 T33	PERCENTAGE 631 635	1.1%
 T34	Commodity 580 593	Crude Oil WTI
 T35	Financial_attribute 594 601	Futures

@@ -1,0 +1,14 @@
+T1	Commodity 61 66	steel
+T2	Commodity 372 377	steel
+T3	Cause-movement-down-loss 624 631	disrupt
+E1	Cause-movement-down-loss:T3 Attribute:T4 Modality_cue:T5
+T4	Financial_attribute 632 638	supply
+T5	MODALITY_cue 611 620	potential
+A1	Modality E1 Other
+T6	Economic_item 715 722	markets
+T7	Cause-movement-up-gain 894 903	ramped up
+E2	Cause-movement-up-gain:T7 
+T8	Financial_attribute 979 989	production
+T9	Economic_item 1434 1441	markets
+T10	Commodity 1693 1699	copper
+T11	Commodity 1704 1709	steel

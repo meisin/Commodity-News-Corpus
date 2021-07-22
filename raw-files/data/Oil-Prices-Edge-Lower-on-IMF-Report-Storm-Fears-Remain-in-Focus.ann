@@ -26,7 +26,7 @@ T20	MODALITY_cue 334 339	could
 T21	Economic_item 398 414	Economic Outlook
 T22	LOCATION 392 397	World
 T23	Movement-down-loss 457 461	down
-E5	Movement-down-loss:T23 Initial_value:T26 Attribute:T48 Forecast:T49 Reference_point_time:T50 Item:T21 Type:T22
+E5	Movement-down-loss:T23 Initial_value:T26 Forecast:T49 Reference_point_time:T50 Item:T21 Type:T22
 T24	Economic_item 449 455	growth
 T25	PERCENTAGE 444 448	3.7%
 T26	PERCENTAGE 471 475	3.9%
@@ -55,7 +55,6 @@ T46	Financial_attribute 1573 1584	inventories
 T47	Commodity 1567 1572	crude
 R1	Cause-Precondition Arg1:E3 Arg2:E4
 R2	Cause-Precondition Arg1:E4 Arg2:E2
-T48	Financial_attribute 476 482	growth
 T49	Forecast_target 486 496	forecasted
 T50	DATE 500 504	July
 T51	Financial_attribute 831 837	prices
@@ -69,3 +68,4 @@ T55	Negative_sentiment 43 48	Fears
 E11	Negative_sentiment:T55 
 A2	Modality E4 Other
 T37	Price_unit 808 825	$84.89 per barrel
+T48	Economic_item 476 482	growth

@@ -1,0 +1,7 @@
+T1	Commodity 196 199	Oil
+T2	Commodity 204 207	gas
+T3	Movement-down-loss 318 325	decline
+E1	Movement-down-loss:T3 Type:T4 Item:T5 Attribute:T6
+T4	LOCATION 329 335	global
+T5	Commodity 336 339	oil
+T6	Financial_attribute 340 346	prices

@@ -41,12 +41,11 @@ T31	DATE 1141 1145	1973
 T32	Group 1146 1150	Arab
 T33	Commodity 1151 1154	oil
 T34	Oversupply 1329 1334	awash
-E10	Oversupply:T34 Place:T36 Item:T35
+E10	Oversupply:T34 Item:T35 Place:T36
 T35	Commodity 1338 1341	oil
-T36	LOCATION 1315 1328	world markets
 T37	COUNTRY 1488 1499	The kingdom
 T38	Cause-movement-down-loss 1500 1507	slashed
-E11	Cause-movement-down-loss:T38 Attribute:T39 Initial_reference_point:T41 Reference_point_time:T43 Supplier_Consumer:T37 Final_value:T40 Initial_value:T42
+E11	Cause-movement-down-loss:T38 Attribute:T39 Initial_reference_point:T41 Reference_point_time:T43 Supplier_Consumer:T37 Final_value:T42 Initial_value:T40
 T39	Financial_attribute 1516 1522	output
 T40	Production_unit 1528 1564	more than 10 million barrels per day
 T41	DATE 1568 1572	1980
@@ -74,7 +73,7 @@ T56	Movement-down-loss 2366 2370	fell
 E18	Movement-down-loss:T56 Attribute:T57
 T57	Financial_attribute 2360 2365	price
 T58	Movement-down-loss 2749 2753	down
-E19	Movement-down-loss:T58 Attribute:T59 Modality_cue:T139 Polarity_cue:T140 Item:T141
+E19	Movement-down-loss:T58 Attribute:T59 Modality_cue:T139 Polarity_cue:T140 Item:T141 Supplier_Consumer:T132
 A3	Polarity E19 Negative
 A4	Modality E19 Other
 T59	Financial_attribute 2742 2748	prices
@@ -86,7 +85,7 @@ T64	Price_unit 3158 3176	below $88 a barrel
 T65	Commodity 3135 3150	Brent crude oil
 T66	DATE 3180 3186	Monday
 T67	Oversupply 3298 3302	glut
-E22	Oversupply:T67 Item:T68 Intensity_cue:T108 Polarity_cue:T143
+E22	Oversupply:T67 Item:T68 Intensity_cue:T108 Polarity_cue:T143 Place:T150
 T68	Commodity 3294 3297	oil
 T69	Movement-down-loss 3618 3626	collapse
 E23	Movement-down-loss:T69 Attribute:T70 Polarity_cue:T148 Modality_cue:T149
@@ -250,3 +249,6 @@ R10	Cause-Precondition Arg1:E14 Arg2:E41
 T122	Economic_item 2444 2454	oil market
 T131	Grow-strong 3846 3852	growth
 E50	Grow-strong:T131 Item:T151
+T132	COUNTRY 2703 2715	Saudi Arabia
+T150	COUNTRY 3245 3257	Saudi Arabia
+T36	LOCATION 1315 1320	world

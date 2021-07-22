@@ -1,0 +1,19 @@
+T1	Commodity 10 13	oil
+T2	Financial_attribute 379 386	revenue
+T3	Economic_item 411 417	market
+T4	Commodity 720 725	crude
+T5	Commodity 687 693	energy
+T6	Commodity 735 738	oil
+T7	Commodity 901 904	oil
+T8	Financial_attribute 905 912	exports
+T9	Economic_item 1043 1057	equity markets
+T10	LOCATION 1037 1042	local
+T11	Commodity 1408 1411	oil
+T12	Commodity 1464 1467	oil
+T13	Position-low 1460 1463	low
+E1	Position-low:T13 Item:T12 Attribute:T14
+T14	Financial_attribute 1468 1473	price
+T15	Commodity 2467 2472	fuels
+T16	Commodity 2634 2637	oil
+T17	Commodity 2666 2669	oil
+T18	Economic_item 2799 2805	market

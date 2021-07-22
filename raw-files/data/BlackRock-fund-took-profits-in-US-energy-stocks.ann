@@ -1,0 +1,29 @@
+T1	Financial_attribute 20 27	profits
+T2	Financial_attribute 266 273	profits
+T3	Economic_item 295 301	shares
+T4	Commodity 313 316	oil
+T5	Financial_attribute 317 323	prices
+T6	Movement-up-gain 324 328	rose
+E1	Movement-up-gain:T6 Attribute:T5 Item:T4 Difference:T7 Reference_point_time:T8
+T7	PERCENTAGE 329 349	more than 25 percent
+T8	DATE 353 371	the second quarter
+T9	PERCENTAGE 388 398	85 percent
+T10	Grow-strong 399 406	rebound
+E2	Grow-strong:T10 Difference:T9
+T11	Position-low 429 433	lows
+E3	Position-low:T11 Duration:T12 Reference_point_time:T13
+T12	DURATION 421 428	12-year
+T13	DATE 437 447	early 2016
+T14	Oversupply 468 478	oversupply
+E4	Oversupply:T14 
+T15	Negative_sentiment 456 461	fears
+E5	Negative_sentiment:T15 
+T16	Financial_attribute 516 523	profits
+T17	Economic_item 545 551	stocks
+T18	Commodity 562 565	oil
+T19	Financial_attribute 566 572	prices
+T20	Movement-up-gain 555 561	higher
+E6	Movement-up-gain:T20 Item:T18 Attribute:T19
+T21	Movement-up-gain 585 591	higher
+E7	Movement-up-gain:T21 
+R1	Cause-Precondition Arg1:E6 Arg2:E7	

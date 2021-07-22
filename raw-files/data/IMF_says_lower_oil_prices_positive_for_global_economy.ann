@@ -37,7 +37,7 @@ T28	Movement-down-loss 1415 1419	drop
 E9	Movement-down-loss:T28 Attribute:T29
 T29	Financial_attribute 1423 1429	prices
 T30	Movement-down-loss 1471 1478	decline
-E10	Movement-down-loss:T30 Item:T32 Intensity_cue:T47
+E10	Movement-down-loss:T30 Item:T32 Intensity_cue:T47 Type:T48
 T31	Shortage 1499 1507	shortage
 E11	Shortage:T31 
 T32	Economic_item 1462 1470	economic
@@ -76,3 +76,4 @@ A4	Intensity E10 Intensified
 T47	INTENSITY_cue 1439 1450	exacerbated
 R5	Cause-Precondition Arg1:E9 Arg2:E10	
 R6	Cause-Precondition Arg1:E9 Arg2:E11	
+T48	LOCATION 1453 1461	national

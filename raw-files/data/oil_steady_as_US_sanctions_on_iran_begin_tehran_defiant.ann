@@ -17,7 +17,7 @@ T15	MONEY 576 582	$62.99
 T16	Cause-movement-down-loss 703 706	cut
 E5	Cause-movement-down-loss:T16 Item:T56 Supplier_Consumer:T77 Forecast:T76
 T17	Embargo 958 967	sanctions
-E6	Embargo:T17 Imposer:T18 Imposer2:T19 Reference_point_time:T20
+E6	Embargo:T17 Imposer:T18 Reference_point_time:T20 Imposee:T19
 T18	STATE_OR_PROVINCE 939 949	Washington
 T19	COUNTRY 976 980	Iran
 T20	DATE 984 990	Monday

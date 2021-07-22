@@ -1,0 +1,48 @@
+T1	Cause-movement-down-loss 14 18	cuts
+E1	Cause-movement-down-loss:T1 Attribute:T2 Forecast:T3 Forecaster:T4
+T2	Financial_attribute 29 39	production
+T3	Forecast_target 40 48	forecast
+T4	ORGANIZATION 0 13	Acacia Mining
+T5	Movement-down-loss 249 256	lowered
+E2	Movement-down-loss:T5 Forecaster:T8 Attribute:T6 Forecast:T7 Reference_point_time:T9
+T6	Financial_attribute 271 281	production
+T7	Forecast_target 282 290	forecast
+T8	ORGANIZATION 220 248	Gold miner Acacia Mining Plc
+T9	DATE 294 301	Tuesday
+T10	Movement-down-loss 381 385	fell
+E3	Movement-down-loss:T10 Difference:T12 Item:T11
+T11	Economic_item 374 380	shares
+T12	PERCENTAGE 386 396	16 percent
+T13	Financial_attribute 632 642	production
+T14	Financial_attribute 836 846	production
+T15	Financial_attribute 820 826	output
+T16	Movement-down-loss 800 819	lower-than-expected
+E4	Movement-down-loss:T16 Attribute:T15
+T17	Movement-down-loss 1020 1024	down
+E5	Movement-down-loss:T17 
+T18	Financial_attribute 1073 1083	production
+T19	Movement-down-loss 1139 1143	down
+E6	Movement-down-loss:T19 
+T20	Movement-up-gain 1283 1289	higher
+E7	Movement-up-gain:T20 Difference:T21
+T21	PERCENTAGE 1273 1282	5 percent
+T22	Cause-movement-down-loss 1451 1454	cut
+E8	Cause-movement-down-loss:T22 Modality_cue:T25 Attribute:T23 Intensity_cue:T24
+T23	Financial_attribute 1455 1460	costs
+T24	INTENSITY_cue 1461 1468	further
+A1	Intensity E8 Intensified
+A2	Modality E8 Other
+T25	MODALITY_cue 1438 1442	will
+T26	Movement-down-loss 1492 1496	fell
+E9	Movement-down-loss:T26 Difference:T27 Final_value:T28 Reference_point_time:T29
+T27	MONEY 1500 1517	about $45 million
+T28	MONEY 1530 1548	about $100 million
+T29	DATE 1556 1572	end of September
+T30	Movement-down-loss 1610 1614	down
+E10	Movement-down-loss:T30 Difference:T31 Final_value:T33 Item:T32
+T31	PERCENTAGE 1615 1627	15.4 percent
+T32	Economic_item 1575 1581	Shares
+T33	MONEY 1631 1643	222.45 pence
+T34	Position-low 1714 1717	low
+E11	Position-low:T34 Duration:T35
+T35	DURATION 1705 1713	11-month

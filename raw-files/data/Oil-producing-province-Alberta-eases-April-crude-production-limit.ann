@@ -12,7 +12,7 @@ T9	STATE_OR_PROVINCE 213 220	Alberta
 T10	Financial_attribute 279 286	produce
 T11	Movement-up-gain 332 340	increase
 E3	Movement-up-gain:T11 Difference:T12
-T12	Quantity 344 355	100,000 bpd
+T12	Production_unit 344 355	100,000 bpd
 T13	Commodity 420 423	oil
 T14	Financial_attribute 424 430	export
 T15	Position-low 524 535	record lows
@@ -30,9 +30,9 @@ T23	STATE_OR_PROVINCE 560 567	Alberta
 R1	Cause-Precondition Arg1:E5 Arg2:E6	
 T24	Cause-movement-up-gain 694 701	raising
 E7	Cause-movement-up-gain:T24 
-T25	Financial_attribute 734 737	oil
+T25	Commodity 734 737	oil
 T26	Movement-down-loss 752 761	shrinking
-E8	Movement-down-loss:T26 Attribute:T25
+E8	Movement-down-loss:T26 Item:T25 Attribute:T50
 T27	Financial_attribute 766 772	prices
 T28	Grow-strong 777 785	stronger
 E9	Grow-strong:T28 Attribute:T27
@@ -48,7 +48,7 @@ T34	Financial_attribute 1488 1498	Production
 T35	Production_unit 1533 1549	3.63 million bpd
 T36	Production_unit 1558 1568	75,000 bpd
 T37	Movement-up-gain 1635 1643	increase
-E11	Movement-up-gain:T37 Attribute:T38 Difference:T39 Reference_point_time:T40
+E11	Movement-up-gain:T37 Attribute:T38 Difference:T39 Reference_point_time:T40 Modality_cue:T49
 A1	Modality E11 Other
 T38	Financial_attribute 1644 1650	output
 T39	Production_unit 1662 1672	25,000 bpd
@@ -62,3 +62,5 @@ T45	Production_unit 2004 2014	10,000 bpd
 T46	Commodity 451 456	crude
 T47	DATE 290 295	April
 T48	Commodity 1389 1399	U.S. crude
+T49	MODALITY_cue 1631 1634	can
+T50	Financial_attribute 741 748	storage

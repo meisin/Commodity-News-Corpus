@@ -1,0 +1,33 @@
+T1	Movement-up-gain 38 42	soar
+E1	Movement-up-gain:T1 Attribute:T2
+T2	Financial_attribute 29 37	earnings
+T3	Economic_item 302 308	shares
+T4	Grow-strong 385 393	stronger
+E2	Grow-strong:T4 Item:T5 Attribute:T6
+T5	Commodity 394 399	steel
+T6	Financial_attribute 400 406	prices
+T7	Financial_attribute 411 415	cost
+T8	Cause-movement-down-loss 416 420	cuts
+E3	Cause-movement-down-loss:T8 Attribute:T7
+T9	Commodity 443 448	steel
+T10	Financial_attribute 491 499	earnings
+T11	Movement-up-gain 559 565	higher
+E4	Movement-up-gain:T11 
+T12	PERCENTAGE 548 558	50 percent
+T13	Economic_item 643 649	market
+T14	Forecast_target 650 659	forecasts
+T15	Financial_attribute 673 679	profit
+T16	Movement-up-gain 711 715	rose
+E5	Movement-up-gain:T16 Duration:T17 Attribute:T15 Reference_point_time:T19 Final_value:T18 Initial_value:T20 Initial_reference_point:T21
+T17	DURATION 688 698	six months
+T18	MONEY 719 732	A$360 million
+T19	DATE 702 710	December
+T20	MONEY 738 751	A$119 million
+T21	DATE 752 766	a year earlier
+T22	Movement-up-gain 785 791	soared
+E6	Movement-up-gain:T22 Difference:T23
+T23	MONEY 795 808	A$604 million
+T24	Movement-up-gain 994 1000	raised
+E7	Movement-up-gain:T24 Difference:T25
+T25	NUMBER 1027 1034	a third
+T26	Economic_item 1095 1100	share

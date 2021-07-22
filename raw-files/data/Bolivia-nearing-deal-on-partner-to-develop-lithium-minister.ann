@@ -1,0 +1,5 @@
+T1	Financial_attribute 987 997	production
+T2	Movement-up-gain 1401 1407	rising
+E1	Movement-up-gain:T2 Attribute:T3 Supplier_Consumer:T4
+T3	Financial_attribute 1408 1414	demand
+T4	COUNTRY 1420 1425	China

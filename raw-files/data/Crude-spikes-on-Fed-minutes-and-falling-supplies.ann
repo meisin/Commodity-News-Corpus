@@ -32,7 +32,7 @@ T24	Financial_attribute 645 651	Prices
 T25	Price_unit 660 677	USD97.83 a barrel
 T26	DATE 681 688	Tuesday
 T27	Position-high 694 701	highest
-E8	Position-high:T27 Initial_reference_point:T28 Reference_point_time:T26 Difference:T25 Attribute:T24
+E8	Position-high:T27 Initial_reference_point:T28 Reference_point_time:T26 Attribute:T24 Final_value:T25
 T28	DATE 714 719	May 8
 T29	Position-high 943 949	higher
 E9	Position-high:T29 
@@ -88,7 +88,7 @@ T71	Commodity 2806 2811	crude
 T72	Financial_attribute 2812 2818	prices
 T73	PERCENTAGE 2829 2832	20%
 T74	Position-low 2850 2853	low
-E18	Position-low:T74 Difference:T75 Reference_point_time:T76
+E18	Position-low:T74 Reference_point_time:T76 Final_value:T75
 T75	Price_unit 2857 2874	USD77.27 a barrel
 T76	DATE 2878 2885	June 28
 T77	Financial_attribute 2890 2896	Prices
@@ -157,3 +157,4 @@ T67	Economic_item 2747 2758	Oil markets
 A4	Modality E19 Other
 T68	MODALITY_cue 3030 3034	help
 T94	Financial_attribute 3186 3192	prices
+T123	Economic_item 2270 2282	debt markets

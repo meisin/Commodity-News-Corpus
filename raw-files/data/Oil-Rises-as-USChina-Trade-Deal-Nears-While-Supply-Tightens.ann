@@ -2,8 +2,8 @@ T1	Movement-up-gain 4 9	Rises
 E1	Movement-up-gain:T1 Item:T2
 T2	Commodity 0 3	Oil
 T3	Cause-movement-down-loss 54 62	Tightens
-E2	Cause-movement-down-loss:T3 Item:T4
-T4	Commodity 47 53	Supply
+E2	Cause-movement-down-loss:T3 Attribute:T4
+T4	Financial_attribute 47 53	Supply
 T5	Movement-up-gain 170 177	climbed
 E3	Movement-up-gain:T5 Item:T6
 T6	Commodity 166 169	Oil

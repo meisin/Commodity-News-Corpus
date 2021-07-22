@@ -3,9 +3,6 @@ E1	Movement-down-loss:T1 Difference:T3 Item:T2
 T2	Commodity 0 3	Oil
 T3	PERCENTAGE 12 14	7%
 T4	Commodity 24 34	U.S. Crude
-T5	Movement-down-loss 35 40	Below
-E2	Movement-down-loss:T5 Item:T4 Difference:T6
-T6	MONEY 41 44	$60
 T7	LOCATION 49 55	Europe
 T8	Negative_sentiment 56 63	Worries
 E3	Negative_sentiment:T8 Type:T7
@@ -21,9 +18,6 @@ E5	Movement-down-loss:T14 Initial_reference_point:T16 Duration:T15
 T15	DURATION 281 286	a day
 T16	DATE 293 297	June
 T18	Financial_attribute 321 328	futures
-T19	Movement-down-loss 329 336	beneath
-E6	Movement-down-loss:T19 Attribute:T18 Difference:T20
-T20	Price_unit 337 351	$60 per barrel
 T21	Movement-up-gain 360 365	surge
 E7	Movement-up-gain:T21 
 T22	Commodity 482 505	West Texas Intermediate
@@ -33,7 +27,7 @@ T24	MONEY 550 555	$4.60
 T25	PERCENTAGE 560 564	7.1%
 T26	Price_unit 569 583	$60 per barrel
 T27	Movement-down-loss 591 598	falling
-E9	Movement-down-loss:T27 Difference:T28
+E9	Movement-down-loss:T27 Final_value:T28
 T28	MONEY 602 608	$59.48
 T29	Position-high 614 620	lowest
 E10	Position-high:T29 Initial_reference_point:T30
@@ -41,7 +35,7 @@ T30	DATE 627 634	March 3
 T31	Commodity 643 646	WTI
 T32	DURATION 658 665	one-day
 T33	Movement-down-loss 666 670	drop
-E11	Movement-down-loss:T33 Reference_point_time:T34 Duration:T32 Item:T31
+E11	Movement-down-loss:T33 Duration:T32 Item:T31 Initial_reference_point:T34
 T34	DATE 677 684	June 11
 T35	Movement-down-loss 694 698	lost
 E12	Movement-down-loss:T35 Difference:T36
@@ -59,7 +53,7 @@ T44	MONEY 908 913	$4.72
 T45	PERCENTAGE 918 920	7%
 T46	MONEY 925 931	$63.28
 T47	Position-low 950 953	low
-E16	Position-low:T47 Duration:T48 Difference:T49
+E16	Position-low:T47 Duration:T48 Final_value:T49
 T48	DURATION 941 949	two-week
 T49	MONEY 957 963	$62.72
 T50	Movement-down-loss 978 985	tumbled
@@ -160,20 +154,15 @@ T116	Cause-movement-up-gain 2927 2934	boosted
 E36	Cause-movement-up-gain:T116 Item:T117
 T117	Commodity 2935 2938	WTI
 T118	Position-high 3008 3013	highs
-E37	Position-high:T118 Difference:T119 Reference_point_time:T120
+E37	Position-high:T118 Reference_point_time:T120 Final_value:T119
 T119	MONEY 3024 3027	$68
 T120	DATE 3028 3037	last week
 T121	INTENSITY_cue 3179 3184	break
-T122	Movement-down-loss 3185 3190	below
-E38	Movement-down-loss:T122 Difference:T123 Intensity_cue:T121
-T123	MONEY 3191 3194	$60
 T124	Commodity 3196 3199	WTI
 T125	Movement-down-loss 3218 3223	lower
-E39	Movement-down-loss:T125 Item:T124 Difference:T126 Modality_cue:T128
+E39	Movement-down-loss:T125 Item:T124 Modality_cue:T128 Final_value:T126
 T126	MONEY 3276 3282	$53.45
-R18	Cause-Precondition Arg1:E38 Arg2:E39	
 A4	Intensity E30 Eased
-A5	Intensity E38 Intensified
 T127	DATE 832 840	March 11
 T128	MODALITY_cue 3200 3203	may
 A6	Modality E39 Other
@@ -184,3 +173,7 @@ E40	Position-low:T131 Final_value:T129 Reference_point_time:T130
 T17	Commodity 525 535	U.S. crude
 T37	Commodity 759 769	U.S. crude
 T132	Commodity 1483 1486	oil
+T5	MONEY 35 44	Below $60
+T6	Price_unit 329 351	beneath $60 per barrel
+R2	Cause-Precondition Arg1:E7 Arg2:E4	
+T19	MONEY 3185 3194	below $60

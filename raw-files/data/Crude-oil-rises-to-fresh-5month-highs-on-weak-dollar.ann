@@ -28,7 +28,7 @@ T23	DATE 352 356	June
 T24	Financial_attribute 340 347	futures
 T27	Commodity 487 492	Brent
 T28	Movement-up-gain 502 508	gained
-E9	Movement-up-gain:T28 Item:T27 Difference:T29 Final_value:T32 Attribute:T63
+E9	Movement-up-gain:T28 Item:T27 Difference:T29 Final_value:T32 Attribute:T63 Contract_date:T65
 T29	PERCENTAGE 509 514	0.57%
 T30	Position-high 400 407	highest
 E10	Position-high:T30 Initial_reference_point:T31
@@ -36,7 +36,7 @@ T31	DATE 414 427	November 2015
 T32	Price_unit 518 533	$48.05 a barrel
 T33	MONEY 578 584	$46.18
 T34	Position-high 570 574	high
-E11	Position-high:T34 Duration:T35 Difference:T33 Reference_point_time:T36
+E11	Position-high:T34 Duration:T35 Reference_point_time:T36 Final_value:T33
 T35	DURATION 559 569	five-month
 T36	DATE 548 556	Thursday
 T37	Position-high 595 602	highest
@@ -45,7 +45,7 @@ T38	DATE 615 623	November
 T39	Economic_item 749 755	market
 T40	Economic_item 629 635	dollar
 T41	Movement-flat 859 868	unchanged
-E13	Movement-flat:T41 Difference:T43 Reference_point_time:T42 Item:T64
+E13	Movement-flat:T41 Reference_point_time:T42 Item:T64 Final_value:T43
 T42	DATE 886 895	Wednesday
 T43	PERCENTAGE 869 882	close to zero
 T44	Economic_item 1125 1132	economy
@@ -84,3 +84,4 @@ R1	Cause-Precondition Arg1:E3 Arg2:E1
 R2	Cause-Precondition Arg1:E4 Arg2:E6	
 R3	Cause-Precondition Arg1:E5 Arg2:E6	
 R4	Cause-Precondition Arg1:E15 Arg2:E14	
+T65	DATE 482 486	July

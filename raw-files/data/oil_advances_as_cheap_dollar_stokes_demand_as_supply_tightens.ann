@@ -37,9 +37,6 @@ T27	DATE 1492 1497	March
 T28	Commodity 1464 1487	West Texas Intermediate
 T29	MONEY 1513 1521	34 cents
 T30	Price_unit 1525 1540	$65.85 a barrel
-T31	Movement-down-loss 1634 1639	below
-E11	Movement-down-loss:T31 Difference:T32
-T32	PERCENTAGE 1623 1633	17 percent
 T33	Movement-down-loss 1688 1692	fell
 E12	Movement-down-loss:T33 Contract_date:T35 Item:T34 Difference:T36 Final_value:T37
 T34	Commodity 1661 1666	Brent
@@ -90,7 +87,6 @@ R4	Cause-Precondition Arg1:E2 Arg2:E19
 R5	Cause-Precondition Arg1:E19 Arg2:E1	
 R6	Cause-Precondition Arg1:E3 Arg2:E1	
 T70	COUNTRY 593 597	U.S.
-T13	Commodity 1764 1786	global benchmark crude
 T63	Movement-down-loss 1909 1917	declined
 E22	Movement-down-loss:T63 Difference:T71 Reference_point_time:T72 Item:T65
 T40	Movement-up-gain 1983 1987	gain
@@ -99,3 +95,4 @@ T65	Economic_item 1838 1855	Dollar Spot Index
 T71	PERCENTAGE 1924 1935	1.7 percent
 T72	DATE 1936 1945	this week
 R7	Cause-Precondition Arg1:E14 Arg2:E13	
+T13	Commodity 1781 1786	crude

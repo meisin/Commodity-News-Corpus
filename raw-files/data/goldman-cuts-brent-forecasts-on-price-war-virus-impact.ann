@@ -1,5 +1,5 @@
 T1	Cause-movement-down-loss 8 12	cuts
-E1	Cause-movement-down-loss:T1 Forecaster:T3 Forecast:T2 Item:T4 Difference:T5
+E1	Cause-movement-down-loss:T1 Forecaster:T3 Forecast:T2 Item:T4 Final_value:T5
 T2	Forecast_target 19 28	forecasts
 T3	ORGANIZATION 0 7	Goldman
 T4	Commodity 13 18	Brent
@@ -50,15 +50,13 @@ E11	Cause-movement-down-loss:T38 Attribute:T37
 T39	Movement-down-loss 1409 1414	Lower
 E12	Movement-down-loss:T39 Item:T42 Attribute:T41
 T40	Cause-movement-down-loss 718 721	cut
-E13	Cause-movement-down-loss:T40 
+E13	Cause-movement-down-loss:T40 Type:T81 Attribute:T80
 T41	Financial_attribute 1419 1425	prices
 T42	Commodity 1415 1418	oil
 T43	Financial_attribute 1482 1492	production
 T44	Commodity 1498 1503	shale
 T45	Movement-down-loss 1472 1481	declining
 E14	Movement-down-loss:T45 Attribute:T43 Item:T44 Modality_cue:T74
-T46	Position-high 1521 1525	high
-E15	Position-high:T46 
 T47	Financial_attribute 1645 1651	output
 T48	Movement-down-loss 1657 1661	fall
 E16	Movement-down-loss:T48 Modality_cue:T49 Attribute:T47 Reference_point_time:T50 Difference:T51
@@ -118,3 +116,5 @@ R7	Cause-Precondition Arg1:E20 Arg2:E23
 T78	DATE 2212 2216	2021
 T79	MODALITY_cue 2264 2269	would
 R8	Cause-Precondition Arg1:E21 Arg2:E22	
+T80	Financial_attribute 754 760	Prices
+T81	NATIONALITY 725 730	Saudi

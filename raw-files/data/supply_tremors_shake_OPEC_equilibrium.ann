@@ -55,7 +55,7 @@ E17	Embargo:T42 Polarity_cue:T92 Modality_cue:T93
 T46	Commodity 4301 4304	oil
 T48	DATE 4445 4449	2014
 T49	Cause-movement-up-gain 4434 4440	raised
-E19	Cause-movement-up-gain:T49 Reference_point_time:T48 Difference:T50 Forecaster:T51 Attribute:T103 Forecast:T47
+E19	Cause-movement-up-gain:T49 Reference_point_time:T48 Forecaster:T51 Attribute:T103 Forecast:T47 Final_value:T50
 T50	Production_unit 4466 4483	29.76 million bpd
 T51	ORGANIZATION 4425 4429	OPEC
 T55	Financial_attribute 1348 1354	output
@@ -103,9 +103,9 @@ T89	Embargo 3882 3891	sanctions
 E30	Embargo:T89 Polarity_cue:T90 Modality_cue:T91
 T94	Movement-up-gain 4093 4101	increase
 E33	Movement-up-gain:T94 Difference:T95 Modality_cue:T114
-T95	Quantity 4105 4119	half a million
+T95	NUMBER 4105 4119	half a million
 T96	Movement-up-gain 4156 4164	increase
-E34	Movement-up-gain:T96 Difference:T97 Modality_cue:T115
+E34	Movement-up-gain:T96 Modality_cue:T115 Final_value:T97
 T97	Production_unit 4171 4194	700,000 barrels per day
 T43	Slow-weak 7 14	tremors
 E18	Slow-weak:T43 Attribute:T44
@@ -187,3 +187,4 @@ R7	Cause-Precondition Arg1:E11 Arg2:E29
 T88	Commodity 3566 3569	oil
 T125	Commodity 3574 3577	gas
 T126	Production_unit 4656 4670	30 million bpd
+A24	Modality E28 Other

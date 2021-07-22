@@ -36,7 +36,7 @@ T29	DATE 1173 1179	Monday
 T30	PERCENTAGE 1206 1219	more than 20%
 T17	PERCENTAGE 419 432	more than 25%
 T31	Movement-up-gain 1241 1245	drop
-E9	Movement-up-gain:T31 Duration:T32
+E9	Movement-up-gain:T31 Duration:T32 Initial_reference_point:T64
 T32	DURATION 1233 1240	one-day
 T33	LOCATION 1293 1299	global
 T35	Grow-strong 1348 1358	recovering
@@ -98,3 +98,4 @@ T34	Economic_item 1311 1323	bond markets
 A4	Modality E14 Other
 T62	Economic_item 2044 2054	oil market
 T56	Economic_item 2361 2372	oil markets
+T64	DATE 1268 1272	1991

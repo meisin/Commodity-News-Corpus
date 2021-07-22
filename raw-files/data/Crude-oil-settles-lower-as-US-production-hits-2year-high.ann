@@ -18,7 +18,7 @@ T15	Position-high 282 289	highest
 E5	Position-high:T15 Duration:T16
 T16	DURATION 298 307	two years
 T17	Movement-down-loss 317 324	decline
-E6	Movement-down-loss:T17 Attribute:T24 Supplier_Consumer:T25 Item:T94 Intensity_cue:T96
+E6	Movement-down-loss:T17 Attribute:T24 Supplier_Consumer:T25 Item:T94 Intensity_cue:T96 Duration:T103
 T18	Commodity 416 421	crude
 T19	Financial_attribute 422 429	futures
 T20	DATE 434 443	September
@@ -50,7 +50,7 @@ E13	Movement-up-gain:T39 Final_value:T40 Attribute:T38 Item:T37
 T40	Production_unit 1350 1372	9.502m barrels per day
 T41	Production_unit 1387 1407	79,000 barrels a day
 T42	Position-high 1444 1451	highest
-E14	Position-high:T42 Initial_reference_point:T43
+E14	Position-high:T42 Initial_reference_point:T43 Duration:T104
 T43	DATE 1479 1492	mid-July 2015
 T44	Oversupply 1512 1522	oversupply
 E15	Oversupply:T44 
@@ -148,3 +148,5 @@ A7	Modality E31 Other
 T102	MODALITY_cue 1137 1149	expectations
 A8	Modality E32 Other
 A9	Modality E30 Other
+T103	DURATION 357 378	seventh-straight week
+T104	DURATION 1452 1458	weekly

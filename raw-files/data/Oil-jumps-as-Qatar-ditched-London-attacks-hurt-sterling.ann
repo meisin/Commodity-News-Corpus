@@ -36,7 +36,7 @@ T36	Civil-unrest 35 42	attacks
 T37	Commodity 48 56	sterling
 T38	Slow-weak 43 47	hurt
 T39	STATE_OR_PROVINCE 28 34	London
-T40	Financial_attribute 1166 1177	stock index
+T40	Economic_item 1166 1177	stock index
 T41	COUNTRY 1154 1159	Dubai
 E1	Movement-up-gain:T1 Item:T2
 E2	Geopolitical-tension:T3 Impacted_countries:T4 Reference_point_time:T5 Impacted_countries2:T13 Impacted_countries3:T12 Impacted_countries4:T11 Impacted_countries5:T10
@@ -45,7 +45,7 @@ E4	Movement-down-loss:T9 Item:T8
 E5	Civil-unrest:T14 Place:T15
 E6	Movement-up-gain:T17 Item:T16 Difference:T18 Final_value:T19
 E7	Movement-up-gain:T22 Item:T20 Supplier_Consumer:T21 Difference:T42 Final_value:T24
-E8	Movement-down-loss:T25 Difference:T26 Attribute:T40 Supplier_Consumer:T41
+E8	Movement-down-loss:T25 Difference:T26 Supplier_Consumer:T41 Item:T40
 E9	Movement-down-loss:T27 Difference:T29 Item:T28
 E10	Movement-down-loss:T31 Intensity_cue:T30
 E11	Movement-down-loss:T32 Difference:T33 Reference_point_time:T35 Final_value:T34
@@ -94,7 +94,7 @@ T69	Movement-flat 3140 3154	little changed
 E23	Movement-flat:T69 Item:T68
 T70	Economic_item 3164 3170	shares
 T71	Movement-up-gain 3283 3285	up
-E24	Movement-up-gain:T71 
+E24	Movement-up-gain:T71 Difference:T72
 T72	PERCENTAGE 3286 3297	0.5 percent
 T73	NATIONALITY 3157 3163	Taiwan
 T74	Position-high 3210 3217	highest
@@ -136,8 +136,7 @@ E34	Movement-down-loss:T98 Difference:T99 Reference_point_time:T100
 T99	PERCENTAGE 3855 3866	0.8 percent
 T100	DATE 3870 3876	Friday
 T101	Movement-up-gain 3916 3925	recovered
-E35	Movement-up-gain:T101 Final_value:T103 Item:T102 Reference_point_time:T104
-T102	Economic_item 3883 3915	U.S. 10-year Treasury bond yield
+E35	Movement-up-gain:T101 Final_value:T103 Reference_point_time:T104
 T103	NUMBER 3929 3935	2.1695
 T104	DATE 3939 3945	Monday
 T105	Movement-down-loss 3954 3961	plunged
@@ -185,3 +184,6 @@ T130	Movement-up-gain 4462 4467	gains
 E45	Movement-up-gain:T130 Item:T131
 T131	Economic_item 4471 4503	technology and industrial stocks
 R6	Cause-Precondition Arg1:E42 Arg2:E40	
+T132	Financial_attribute 3910 3915	yield
+T133	Financial_attribute 4062 4067	yield
+T102	Economic_item 3905 3909	bond

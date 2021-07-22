@@ -70,9 +70,9 @@ T50	NUMBER 1171 1183	174 thousand
 T51	Negative_sentiment 1262 1270	concerns
 E16	Negative_sentiment:T51 
 T52	Movement-up-gain 1502 1506	rise
-E17	Movement-up-gain:T52 Item:T53 Modality_cue:T54
-T53	Economic_item 1483 1489	yields
-A4	Modality E17 Asserted
+E17	Movement-up-gain:T52 Modality_cue:T54 Attribute:T53
+T53	Financial_attribute 1483 1489	yields
+A4	Modality E17 Other
 T54	MODALITY_cue 1480 1482	if
 T55	Negative_sentiment 1598 1606	concerns
 E18	Negative_sentiment:T55 Modality_cue:T56
@@ -84,21 +84,20 @@ E19	Movement-down-loss:T58 Item:T57
 T59	Commodity 1878 1882	gold
 T60	Grow-strong 1955 1963	strength
 E20	Grow-strong:T60 Initial_reference_point:T62 Item:T61
-T61	Economic_item 1918 1931	10-year bonds
 T62	DATE 1964 1973	last week
 T63	Movement-up-gain 1975 1981	rising
 E21	Movement-up-gain:T63 
 T64	Position-high 1996 2000	high
-E22	Position-high:T64 Difference:T65
+E22	Position-high:T64 Final_value:T65
 T65	PERCENTAGE 2004 2008	1.6%
 T66	Movement-down-loss 2039 2046	dropped
-E23	Movement-down-loss:T66 Difference:T67 Item:T68 Duration:T77
+E23	Movement-down-loss:T66 Difference:T67 Duration:T77 Attribute:T68
 T67	PERCENTAGE 2074 2079	1.50%
 T69	Commodity 740 745	shale
 T70	Economic_item 906 917	bond market
 T71	Commodity 927 931	gold
 T72	Movement-down-loss 918 925	selloff
-E24	Movement-down-loss:T72 Item:T70
+E24	Movement-down-loss:T72 Item:T70 Intensity_cue:T78 Modality_cue:T79
 T73	Slow-weak 970 976	Softer
 E25	Slow-weak:T73 Supplier_Consumer:T38 Item:T39
 T74	Negative_sentiment 1470 1479	concerned
@@ -106,5 +105,10 @@ E26	Negative_sentiment:T74 Modality_cue:T75
 T75	MODALITY_cue 1462 1466	will
 A6	Modality E26 Other
 T76	Commodity 1818 1822	gold
-T68	Economic_item 2027 2033	yields
+T68	Financial_attribute 2027 2033	yields
 T77	DURATION 2019 2026	10-year
+A7	Intensity E24 Intensified
+A8	Modality E24 Other
+T78	INTENSITY_cue 894 900	extend
+T79	MODALITY_cue 872 874	If
+T61	Economic_item 1926 1931	bonds

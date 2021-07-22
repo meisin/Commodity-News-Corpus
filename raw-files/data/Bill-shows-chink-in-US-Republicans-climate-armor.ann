@@ -1,0 +1,14 @@
+T1	Commodity 712 715	oil
+T2	Commodity 717 721	coal
+T3	Commodity 739 744	fuels
+T4	Economic_item 926 941	economic growth
+T5	Movement-up-gain 1131 1141	increasing
+E1	Movement-up-gain:T5 
+T6	Cause-movement-down-loss 1404 1411	cutting
+E2	Cause-movement-down-loss:T6 
+T7	Grow-strong 1568 1576	stronger
+E3	Grow-strong:T7 
+T8	Movement-up-gain 1588 1594	rising
+E4	Movement-up-gain:T8 
+T9	Cause-movement-down-loss 2070 2078	reducing
+E5	Cause-movement-down-loss:T9 

@@ -1,0 +1,5 @@
+T1	Cause-movement-down-loss 718 724	reduce
+E1	Cause-movement-down-loss:T1 Attribute:T2 Modality_cue:T3
+T2	Financial_attribute 725 730	costs
+T3	MODALITY_cue 639 644	would
+A1	Modality E1 Other

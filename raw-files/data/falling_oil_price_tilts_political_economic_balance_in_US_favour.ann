@@ -99,7 +99,7 @@ T85	COUNTRY 4727 4731	U.S.
 T86	Movement-up-gain 4781 4785	jump
 E31	Movement-up-gain:T86 Attribute:T140
 T89	Cause-movement-down-loss 4852 4863	disruptions
-E32	Cause-movement-down-loss:T89 Supplier_Consumer:T90 Supplier_Consumer2:T91 Modality_cue:T135 Item:T93
+E32	Cause-movement-down-loss:T89 Supplier_Consumer:T90 Supplier_Consumer2:T91 Modality_cue:T135 Attribute:T93
 T90	COUNTRY 4875 4880	Libya
 T91	COUNTRY 4885 4892	Nigeria
 A5	Polarity E32 Positive
@@ -171,7 +171,7 @@ T18	Commodity 958 961	oil
 T20	Financial_attribute 5486 5492	supply
 T33	COUNTRY 5061 5066	Libya
 T41	Commodity 5069 5072	oil
-T93	Commodity 4845 4851	supply
+T93	Financial_attribute 4845 4851	supply
 T140	Financial_attribute 4789 4797	supplies
 T87	ORGANIZATION 4703 4707	OPEC
 T88	Financial_attribute 4128 4133	price
@@ -215,3 +215,4 @@ T145	Commodity 3768 3771	oil
 T146	Commodity 4089 4092	oil
 T134	POLARITY_cue 4670 4672	un
 T147	MODALITY_cue 4672 4678	likely
+T148	Financial_attribute 3742 3748	supply

@@ -1,0 +1,111 @@
+T1	Commodity 36 39	oil
+T2	Price_unit 266 280	$10 per barrel
+T3	Commodity 281 284	oil
+T4	Group 618 631	oil producers
+T5	Financial_attribute 775 782	revenue
+T6	Cause-movement-up-gain 767 774	Raising
+E1	Cause-movement-up-gain:T6 Attribute:T5
+T7	Cause-movement-up-gain 3010 3017	raising
+E2	Cause-movement-up-gain:T7 Difference:T9 Attribute:T8 Initial_reference_point:T10 Reference_point_time:T11
+T8	Financial_attribute 3042 3049	revenue
+T9	MONEY 3027 3038	$31 billion
+T10	DATE 3065 3069	2010
+T11	DATE 3081 3085	2019
+T12	Cause-movement-up-gain 3282 3287	raise
+E3	Cause-movement-up-gain:T12 Difference:T13 Attribute:T14 Initial_reference_point:T15 Reference_point_time:T16
+T13	MONEY 3297 3308	$42 billion
+T14	Financial_attribute 3312 3319	revenue
+T15	DATE 3335 3339	2016
+T16	DATE 3351 3355	2025
+T17	Price_unit 3632 3646	$10 per barrel
+T18	Commodity 3654 3657	oil
+T19	Commodity 3829 3832	oil
+T20	Commodity 4179 4187	gasoline
+T21	Commodity 4192 4198	diesel
+T22	Cause-movement-up-gain 4211 4216	raise
+E4	Cause-movement-up-gain:T22 Attribute:T23 Modality_cue:T24
+T23	Financial_attribute 4217 4224	revenue
+T24	MODALITY_cue 4202 4207	a way
+A1	Modality E4 Other
+T25	Commodity 4271 4277	energy
+T26	Commodity 4340 4348	gasoline
+T27	Financial_attribute 4349 4354	sales
+T28	Price_unit 4370 4387	1 cent per gallon
+T29	Movement-up-gain 4397 4406	increased
+E5	Movement-up-gain:T29 Final_value:T30 Reference_point_time:T31
+T30	MONEY 4410 4417	2 cents
+T31	DATE 4421 4425	1951
+T32	MONEY 4427 4434	4 cents
+T33	DATE 4438 4442	1959
+T34	MONEY 4444 4451	9 cents
+T35	DATE 4455 4459	1983
+T36	MONEY 4461 4469	14 cents
+T37	DATE 4473 4477	1990
+T38	MONEY 4482 4492	18.4 cents
+T39	DATE 4496 4500	1993
+E6	Movement-up-gain:T29 Final_value:T32 Reference_point_time:T33
+E7	Movement-up-gain:T29 Final_value:T34 Reference_point_time:T35
+E8	Movement-up-gain:T29 Final_value:T36 Reference_point_time:T37
+E9	Movement-up-gain:T29 Final_value:T38 Reference_point_time:T39
+T40	Commodity 4561 4567	diesel
+T41	Commodity 4603 4614	natural gas
+T42	Commodity 4619 4638	other special fuels
+T43	Financial_attribute 4736 4744	Revenues
+T44	Commodity 4750 4754	fuel
+T45	Movement-flat 4917 4926	unchanged
+E10	Movement-flat:T45 Attribute:T46 Initial_reference_point:T47
+T46	Financial_attribute 4885 4890	rates
+T47	DATE 4933 4937	1993
+T48	Economic_item 4950 4959	inflation
+T49	Price_unit 5119 5133	$10 per barrel
+T50	Commodity 5141 5144	oil
+T51	Movement-up-gain 5165 5173	increase
+E11	Movement-up-gain:T51 Item:T52 Difference:T53
+T52	Commodity 5177 5181	fuel
+T53	Price_unit 5191 5213	22-24 cents per gallon
+T55	Movement-up-gain 5263 5268	raise
+E12	Movement-up-gain:T55 Modality_cue:T56
+T56	MODALITY_cue 5254 5262	proposed
+A2	Modality E12 Other
+T57	Movement-up-gain 5325 5333	increase
+E13	Movement-up-gain:T57 
+T58	Movement-up-gain 5401 5411	increasing
+E14	Movement-up-gain:T58 
+T59	Cause-movement-down-loss 5456 5462	reduce
+E15	Cause-movement-down-loss:T59 
+T60	Movement-up-gain 5592 5597	raise
+E16	Movement-up-gain:T60 
+T61	Commodity 5609 5612	oil
+T62	Financial_attribute 5613 5619	prices
+T63	Position-low 5624 5627	low
+E17	Position-low:T63 Attribute:T62 Item:T61
+T64	Commodity 5648 5652	fuel
+T65	Financial_attribute 5640 5644	cost
+T66	Movement-up-gain 5745 5753	increase
+E18	Movement-up-gain:T66 Polarity_cue:T67 Item:T68
+T67	POLARITY_cue 5720 5723	not
+A3	Polarity E18 Negative
+T68	Commodity 5757 5760	fue
+T69	Movement-up-gain 5852 5860	doubling
+E19	Movement-up-gain:T69 Modality_cue:T71 Polarity_cue:T70
+A4	Polarity E19 Negative
+A5	Modality E19 Other
+T70	POLARITY_cue 5796 5798	un
+T71	MODALITY_cue 5798 5804	likely
+T72	Commodity 5880 5888	gasoline
+T73	Commodity 5893 5899	diesel
+T74	Group 6099 6112	oil companies
+T75	Commodity 6143 6146	oil
+T76	Economic_item 6047 6055	economic
+T77	Price_unit 6250 6264	$10 per barrel
+T78	Commodity 6265 6268	oil
+T79	Commodity 6369 6372	oil
+T80	Commodity 6377 6380	gas
+T81	Commodity 6601 6604	oil
+T82	Commodity 6875 6878	oil
+T83	Commodity 7213 7221	gasoline
+T84	Movement-up-gain 7202 7212	increasing
+E20	Movement-up-gain:T84 Item:T83 Modality_cue:T85
+T85	MODALITY_cue 7146 7151	could
+A6	Modality E20 Other
+T86	Commodity 7305 7308	oil

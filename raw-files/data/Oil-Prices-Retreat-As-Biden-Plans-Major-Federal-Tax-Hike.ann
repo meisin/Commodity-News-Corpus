@@ -18,9 +18,6 @@ R1	Cause-Precondition Arg1:E3 Arg2:E4
 R2	Cause-Precondition Arg1:E2 Arg2:E4	
 T13	DATE 286 298	this morning
 T14	Commodity 304 307	WTI
-T15	Movement-down-loss 313 318	below
-E5	Movement-down-loss:T15 Item:T14 Difference:T16
-T16	MONEY 319 325	$64.50
 T17	Movement-down-loss 353 357	drop
 E6	Movement-down-loss:T17 
 T18	Economic_item 458 481	corporate profit growth
@@ -34,3 +31,4 @@ T24	COUNTRY 1056 1060	U.S.
 T25	DATE 1069 1081	recent weeks
 T22	Slow-weak 980 987	bearish
 E9	Slow-weak:T22 
+T15	MONEY 313 325	below $64.50

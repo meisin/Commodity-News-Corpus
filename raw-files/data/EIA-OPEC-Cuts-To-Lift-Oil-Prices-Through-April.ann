@@ -64,12 +64,12 @@ T49	DATE 1232 1255	the second half of 2021
 T50	Economic_item 1336 1346	oil market
 T51	Financial_attribute 1280 1285	price
 T52	Movement-up-gain 1407 1411	rise
-E11	Movement-up-gain:T52 Difference:T55 Attribute:T53 Item:T54 Reference_point_time:T56 Modality_cue:T62
+E11	Movement-up-gain:T52 Attribute:T53 Item:T54 Reference_point_time:T56 Modality_cue:T62 Final_value:T55
 T53	Financial_attribute 1397 1403	prices
 T54	Commodity 1393 1396	oil
 T55	Price_unit 1419 1437	$70-$75 per barrel
 T56	DATE 1445 1450	April
-T57	Quantity 1486 1509	more than 1 million bpd
+T57	Production_unit 1486 1509	more than 1 million bpd
 T58	Cause-movement-down-loss 1467 1471	draw
 E12	Cause-movement-down-loss:T58 Attribute:T59 Difference:T57 Reference_point_time:T60
 T59	Financial_attribute 1461 1466	stock
@@ -123,3 +123,4 @@ E19	Movement-down-loss:T90 Attribute:T51 Modality_cue:T91
 A9	Modality E19 Other
 T91	MODALITY_cue 1263 1270	expects
 T92	ORGANIZATION 1968 1973	OPEC+
+T93	Financial_attribute 249 255	prices

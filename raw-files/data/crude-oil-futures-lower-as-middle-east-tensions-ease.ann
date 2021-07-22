@@ -25,7 +25,7 @@ T19	Price_unit 491 509	USD102.60 a barrel
 T20	Financial_attribute 448 455	futures
 T21	Commodity 430 447	light sweet crude
 T22	Movement-up-gain 586 588	up
-E6	Movement-up-gain:T22 Contract_date:T26 Difference:T23 Final_value:T24 Reference_point_time:T25
+E6	Movement-up-gain:T22 Contract_date:T26 Difference:T23 Final_value:T24 Reference_point_time:T25 Attribute:T89
 T23	PERCENTAGE 589 594	0.36%
 T24	Price_unit 598 616	USD102.03 a barrel
 T25	DATE 620 628	Thursday
@@ -35,7 +35,7 @@ E7	Position-low:T27 Reference_point_time:T28 Attribute:T33 Item:T34
 T28	DATE 696 704	Thursday
 T29	Price_unit 729 747	USD103.95 a barrel
 T30	Position-high 753 757	high
-E8	Position-high:T30 Initial_reference_point:T31 Difference:T29
+E8	Position-high:T30 Initial_reference_point:T31 Final_value:T29
 T31	DATE 763 775	September 25
 T32	Price_unit 676 694	USD102.20 a barrel
 T33	Financial_attribute 637 644	futures
@@ -124,3 +124,4 @@ A7	Intensity E25 Intensified
 T88	Cause-movement-down-loss 2187 2194	depress
 E26	Cause-movement-down-loss:T88 Item:T66
 R5	Cause-Precondition Arg1:E26 Arg2:E19	
+T89	Financial_attribute 569 577	contract

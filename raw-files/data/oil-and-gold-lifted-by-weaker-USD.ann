@@ -7,10 +7,9 @@ E2	Slow-weak:T4 Item:T5
 T5	Economic_item 216 225	US dollar
 T6	Commodity 227 232	Brent
 T7	Commodity 237 240	WTI
-T8	Commodity 343 347	Bren
 T9	Commodity 456 459	WTI
 T10	Position-low 537 541	lows
-E3	Position-low:T10 Reference_point_time:T11 Difference:T12
+E3	Position-low:T10 Reference_point_time:T11 Final_value:T12
 T11	DATE 525 534	last week
 T12	MONEY 542 552	around $41
 T13	Slow-weak 669 678	uncertain
@@ -82,3 +81,5 @@ T55	MODALITY_cue 856 859	yet
 A2	Modality E6 Other
 R4	Cause-Precondition Arg1:E11 Arg2:E9	
 R5	Cause-Precondition Arg1:E5 Arg2:E9	
+T56	Economic_item 1446 1452	dollar
+T8	Commodity 343 348	Brent

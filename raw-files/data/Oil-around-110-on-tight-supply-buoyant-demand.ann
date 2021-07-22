@@ -55,7 +55,7 @@ T48	Commodity 1169 1171	It
 T49	Cause-movement-down-loss 1262 1265	cut
 E15	Cause-movement-down-loss:T49 
 T52	Slow-weak 19 24	tight
-E16	Slow-weak:T52 
+E16	Slow-weak:T52 Attribute:T53
 T53	Financial_attribute 25 31	supply
 T54	Production_unit 478 511	1.4 million barrels per day (bpd)
 T55	Commodity 535 540	crude
@@ -69,7 +69,7 @@ T66	Financial_attribute 2224 2230	prices
 T68	LOCATION 1565 1571	global
 T69	Production_unit 2588 2602	30 million bpd
 T71	Movement-flat 2554 2562	maintain
-E17	Movement-flat:T71 Difference:T69 Attribute:T70 Modality_cue:T26
+E17	Movement-flat:T71 Attribute:T70 Modality_cue:T26 Final_value:T69
 A4	Modality E17 Other
 T75	Price_unit 2951 2964	$110 a barrel
 T76	Commodity 2134 2137	oil

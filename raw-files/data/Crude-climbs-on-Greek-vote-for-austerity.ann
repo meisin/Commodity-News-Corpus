@@ -1,0 +1,74 @@
+T1	Movement-up-gain 6 12	climbs
+E1	Movement-up-gain:T1 Item:T2
+T2	Commodity 0 5	Crude
+T3	Movement-up-gain 176 180	rose
+E2	Movement-up-gain:T3 Reference_point_time:T6 Attribute:T4 Item:T5
+T4	Financial_attribute 168 175	futures
+T5	Commodity 158 167	Crude oil
+T6	DATE 181 187	Monday
+T7	Negative_sentiment 298 303	fears
+E3	Negative_sentiment:T7 Intensity_cue:T8
+T8	INTENSITY_cue 286 297	alleviating
+A1	Intensity E3 Eased
+T9	Economic_item 360 367	economy
+T10	Slow-weak 339 346	rattled
+E4	Slow-weak:T10 Item:T9 Type:T11 Modality_cue:T12
+T11	NATIONALITY 351 359	European
+T12	MODALITY_cue 328 333	would
+A2	Modality E4 Other
+T13	Cause-movement-down-loss 372 379	crimped
+E5	Cause-movement-down-loss:T13 Item:T14 Attribute:T15
+T14	Commodity 380 383	oil
+T15	Financial_attribute 384 390	demand
+R1	Cause-Precondition Arg1:E3 Arg2:E2	
+T16	Movement-up-gain 508 510	up
+E6	Movement-up-gain:T16 Difference:T17 Contract_date:T19 Item:T20 Final_value:T18
+T17	PERCENTAGE 511 516	0.61%
+T18	Price_unit 489 506	USD98.64 a barrel
+T19	DATE 473 478	April
+T20	Commodity 430 448	light, sweet crude
+T21	Position-high 556 560	high
+E7	Position-high:T21 Final_value:T22
+T22	MONEY 564 572	USD99.89
+T23	Position-low 579 582	low
+E8	Position-low:T23 Final_value:T24
+T24	MONEY 586 594	USD99.44
+T25	Negative_sentiment 932 937	fears
+E9	Negative_sentiment:T25 Intensity_cue:T26
+T26	INTENSITY_cue 926 931	eased
+A3	Intensity E9 Eased
+T27	Economic_item 994 1002	economic
+T28	Slow-weak 1050 1056	dampen
+E10	Slow-weak:T28 Item:T29 Attribute:T30 Modality_cue:T32
+T29	Commodity 1057 1060	oil
+T30	Financial_attribute 1061 1067	demand
+T31	Economic_item 1478 1487	economies
+T32	MODALITY_cue 1044 1049	would
+A4	Modality E10 Other
+T33	NATIONALITY 1470 1477	Chinese
+T34	COUNTRY 1461 1465	U.S.
+T35	Grow-strong 1504 1510	growth
+E11	Grow-strong:T35 Modality_cue:T36 Item:T31 Type:T33 Supplier_Consumer:T34
+T36	MODALITY_cue 1493 1499	poised
+A5	Modality E11 Other
+T37	Civil-unrest 1532 1540	tensions
+E12	Civil-unrest:T37 Place:T38
+T38	COUNTRY 1544 1549	Syria
+T39	Movement-up-gain 1565 1567	up
+E13	Movement-up-gain:T39 Reference_point_time:T40
+R2	Cause-Precondition Arg1:E12 Arg2:E13	
+R3	Cause-Precondition Arg1:E11 Arg2:E13	
+T40	DATE 1608 1614	Monday
+T41	Movement-up-gain 1688 1690	up
+E14	Movement-up-gain:T41 Difference:T42 Contract_date:T43 Attribute:T44 Item:T45 Final_value:T46
+T42	PERCENTAGE 1691 1696	0.31%
+T43	DATE 1668 1673	April
+T44	Financial_attribute 1656 1663	futures
+T45	Commodity 1646 1655	Brent oil
+T46	Price_unit 1712 1730	USD117.47 a barrel
+T47	Movement-up-gain 1732 1734	up
+E15	Movement-up-gain:T47 Difference:T48
+T48	MONEY 1735 1743	USD18.83
+T49	Position-high 1905 1909	high
+E16	Position-high:T49 
+T50	Financial_attribute 1783 1788	price

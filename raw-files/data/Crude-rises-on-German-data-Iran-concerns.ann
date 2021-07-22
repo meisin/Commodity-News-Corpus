@@ -29,7 +29,7 @@ T21	NUMBER 521 527	104.69
 T22	Movement-up-gain 532 534	up
 E8	Movement-up-gain:T22 
 T23	Position-low 559 562	low
-E9	Position-low:T23 Difference:T24
+E9	Position-low:T23 Final_value:T24
 T24	MONEY 566 575	USD102.86
 T25	Negative_sentiment 586 594	concerns
 E10	Negative_sentiment:T25 
@@ -37,7 +37,7 @@ T26	NATIONALITY 604 611	Europea
 T27	Crisis 618 624	crisis
 E11	Crisis:T27 Place:T26 Intensity_cue:T75
 T28	Movement-up-gain 792 796	rose
-E12	Movement-up-gain:T28 Reference_point_time:T29 Final_value:T30 Difference:T31 Initial_reference_point:T40
+E12	Movement-up-gain:T28 Reference_point_time:T29 Final_value:T30 Difference:T31 Initial_reference_point:T40 Item:T77 Type:T78
 T29	DATE 786 791	April
 T30	NUMBER 800 805	109.9
 T31	NUMBER 811 816	109.8
@@ -54,7 +54,7 @@ T39	Economic_item 663 670	economy
 T40	DATE 821 835	previous month
 T41	MODALITY_cue 847 859	expectations
 T42	Movement-down-loss 878 882	drop
-E15	Movement-down-loss:T42 Difference:T43 Modality_cue:T41
+E15	Movement-down-loss:T42 Modality_cue:T41 Final_value:T43
 T43	NUMBER 886 891	109.5
 A1	Modality E15 Other
 T44	Position-high 934 938	high
@@ -66,7 +66,7 @@ T47	Cause-movement-up-gain 1277 1284	boosted
 E18	Cause-movement-up-gain:T47 Item:T48 Intensity_cue:T76
 T48	Commodity 1285 1290	crude
 T49	Embargo 1326 1333	embargo
-E19	Embargo:T49 Modality_cue:T51 Imposer:T53 Item:T54 Imposer2:T52
+E19	Embargo:T49 Modality_cue:T51 Item:T54 Imposee:T53 Imposer:T52
 T50	MODALITY_cue 323 329	coming
 A2	Modality E4 Other
 T51	MODALITY_cue 1354 1357	set
@@ -85,13 +85,13 @@ E22	Embargo:T59 Item:T60 Imposer:T61
 T60	Commodity 1576 1579	oil
 T61	NATIONALITY 1567 1575	European
 T62	Embargo 1614 1623	sanctions
-E23	Embargo:T62 Imposer:T63
+E23	Embargo:T62 Imposee:T63
 T63	STATE_OR_PROVINCE 1635 1641	Tehran
 T64	Commodity 1712 1721	Brent oil
 T65	Financial_attribute 1722 1729	futures
 T66	DATE 1734 1738	June
 T67	Movement-up-gain 1753 1755	up
-E24	Movement-up-gain:T67 Difference:T68 Final_value:T69 Reference_point_time:T66 Attribute:T65 Item:T64
+E24	Movement-up-gain:T67 Difference:T68 Final_value:T69 Attribute:T65 Item:T64 Contract_date:T66
 T68	PERCENTAGE 1756 1761	0.76%
 T69	Price_unit 1777 1795	USD118.89 a barrel
 T70	Movement-up-gain 1797 1799	up
@@ -111,3 +111,5 @@ T75	INTENSITY_cue 636 641	worse
 A5	Intensity E11 Intensified
 A6	Intensity E18 Intensified
 T76	INTENSITY_cue 1269 1276	further
+T77	Economic_item 757 781	business sentiment index
+T78	NATIONALITY 746 752	German

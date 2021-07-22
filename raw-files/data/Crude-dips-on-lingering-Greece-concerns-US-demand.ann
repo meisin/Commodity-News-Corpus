@@ -31,13 +31,13 @@ T20	Commodity 456 474	light, sweet crude
 T21	DATE 499 504	April
 T22	Price_unit 515 533	USD105.88 a barrel
 T23	Movement-down-loss 535 539	down
-E7	Movement-down-loss:T23 Final_value:T22 Difference:T24 Reference_point_time:T21 Attribute:T19 Item:T20
+E7	Movement-down-loss:T23 Final_value:T22 Difference:T24 Attribute:T19 Item:T20 Contract_date:T21
 T24	PERCENTAGE 540 545	0.35%
 T25	Position-high 585 589	high
-E8	Position-high:T25 Difference:T26
+E8	Position-high:T25 Final_value:T26
 T26	MONEY 593 602	USD106.07
 T27	Position-low 609 612	low
-E9	Position-low:T27 Difference:T28
+E9	Position-low:T27 Final_value:T28
 T28	MONEY 616 625	USD105.72
 T29	Commodity 628 631	Oil
 T30	Movement-up-gain 632 638	soared
@@ -78,7 +78,7 @@ T53	Commodity 1740 1749	Brent oil
 T54	Financial_attribute 1750 1757	futures
 T55	DATE 1762 1767	April
 T56	Movement-up-gain 1782 1784	up
-E19	Movement-up-gain:T56 Difference:T57 Reference_point_time:T55 Attribute:T54 Item:T53 Final_value:T58
+E19	Movement-up-gain:T56 Difference:T57 Attribute:T54 Item:T53 Final_value:T58 Contract_date:T55
 T57	PERCENTAGE 1785 1790	0.06%
 T58	Price_unit 1806 1824	USD121.29 a barrel
 T59	Movement-up-gain 1826 1828	up

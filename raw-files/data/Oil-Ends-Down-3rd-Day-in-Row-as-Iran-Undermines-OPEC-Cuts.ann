@@ -52,7 +52,6 @@ T40	Movement-down-loss 1339 1342	low
 E10	Movement-down-loss:T40 Final_value:T42
 T41	Movement-down-loss 1328 1332	fell
 E11	Movement-down-loss:T41 
-R3	Subevent Arg1:E11 Arg2:E10	
 T42	MONEY 1346 1352	$67.37
 T43	Movement-down-loss 1455 1459	slid
 E12	Movement-down-loss:T43 Duration:T44 Attribute:T45 Item:T46
@@ -79,9 +78,8 @@ T59	Economic_item 1924 1930	market
 T60	Shortage 1958 1965	deficit
 E15	Shortage:T60 Attribute:T61
 T61	Financial_attribute 1951 1957	supply
-T62	Economic_item 1985 2000	global economic
 T63	Grow-strong 2001 2009	recovery
-E16	Grow-strong:T63 Item:T62
+E16	Grow-strong:T63 Item:T62 Type:T95
 T64	Grow-strong 2061 2066	rally
 E17	Grow-strong:T64 Item:T65 Initial_reference_point:T66
 T65	Commodity 2070 2075	crude
@@ -92,7 +90,6 @@ T67	Movement-up-gain 2102 2108	adding
 E18	Movement-up-gain:T67 Difference:T68 Attribute:T69
 T68	PERCENTAGE 2115 2118	85%
 T69	Financial_attribute 2122 2128	prices
-R7	Subevent Arg1:E17 Arg2:E18	
 T70	Commodity 2208 2217	crude oil
 T71	Embargo 2271 2281	sanctioned
 E19	Embargo:T71 Item:T72
@@ -125,3 +122,5 @@ T91	Financial_attribute 830 838	contract
 T92	Financial_attribute 1119 1127	contract
 T93	Financial_attribute 1216 1224	contract
 T94	Commodity 2304 2312	fuel oil
+T62	Economic_item 1992 2000	economic
+T95	LOCATION 1985 1991	global

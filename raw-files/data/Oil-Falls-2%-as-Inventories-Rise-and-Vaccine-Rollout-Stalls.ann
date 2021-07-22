@@ -47,7 +47,7 @@ E11	Movement-up-gain:T31 Item:T32 Attribute:T33
 T32	Commodity 673 681	U.S. oil
 T33	Financial_attribute 682 693	inventories
 T34	Cause-movement-up-gain 872 877	boost
-E12	Cause-movement-up-gain:T34 
+E12	Cause-movement-up-gain:T34 Item:T76
 T35	Movement-up-gain 930 937	upwards
 E13	Movement-up-gain:T35 Item:T36 Supplier_Consumer:T37
 T36	Economic_item 897 912	economic growth
@@ -73,14 +73,14 @@ T50	Financial_attribute 1335 1346	inventories
 T51	Quantity 1355 1374	2.4 million barrels
 T52	DATE 1375 1384	last week
 T53	Movement-down-loss 1554 1561	decline
-E18	Movement-down-loss:T53 Difference:T54 Forecast:T56 Supplier_Consumer:T55
+E18	Movement-down-loss:T53 Difference:T54 Forecast:T56 Forecaster:T55
 T54	Quantity 1537 1553	1 million barrel
 T55	ORGANIZATION 1470 1504	American Petroleum Institute (API)
 T56	Forecast_target 1505 1514	estimated
 T57	Financial_attribute 1726 1732	demand
 T58	Commodity 1720 1725	crude
 T59	Movement-down-loss 1714 1719	Lower
-E19	Movement-down-loss:T59 Item:T58 Attribute:T57
+E19	Movement-down-loss:T59 Item:T58 Attribute:T57 Supplier_Consumer:T78
 T60	Movement-up-gain 1809 1815	higher
 E20	Movement-up-gain:T60 Attribute:T61
 T61	Financial_attribute 1816 1822	prices
@@ -105,3 +105,7 @@ E23	Movement-up-gain:T73 Intensity_cue:T74
 A4	Intensity E23 Eased
 T74	INTENSITY_cue 1305 1309	halt
 T75	Economic_item 1704 1711	economy
+T76	Economic_item 881 889	equities
+T77	Movement-down-loss 1275 1282	decline
+E24	Movement-down-loss:T77 
+T78	Group 1738 1750	Asian buyers

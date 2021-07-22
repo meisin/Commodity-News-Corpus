@@ -91,9 +91,6 @@ E23	Movement-up-gain:T71 Difference:T72 Attribute:T73 Final_value:T74
 T72	PERCENTAGE 2502 2516	7.1 percentage
 T73	Financial_attribute 2470 2487	utilisation rates
 T74	PERCENTAGE 2556 2561	76.1%
-T75	Movement-down-loss 2586 2591	below
-E24	Movement-down-loss:T75 Initial_value:T76
-T76	PERCENTAGE 2596 2601	83.1%
 T1	MODALITY_cue 44 51	Worries
 A2	Modality E2 Other
 R1	Cause-Precondition Arg1:E2 Arg2:E3	

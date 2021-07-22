@@ -1,0 +1,22 @@
+T1	Prohibiting 65 68	ban
+E1	Prohibiting:T1 Activity:T2
+T2	Other_activities 58 64	travel
+T3	Prohibiting 364 367	ban
+E2	Prohibiting:T3 Activity:T4
+T4	Other_activities 357 363	travel
+T5	Civil-unrest 1124 1132	violence
+E3	Civil-unrest:T5 
+T6	Prohibiting 1561 1564	ban
+E4	Prohibiting:T6 
+T7	Prohibiting 1837 1840	ban
+E5	Prohibiting:T7 
+T8	Prohibiting 3361 3364	ban
+E6	Prohibiting:T8 
+T9	Prohibiting 3703 3706	ban
+E7	Prohibiting:T9 
+T10	Prohibiting 3978 3981	ban
+E8	Prohibiting:T10 
+T11	Prohibiting 4248 4251	ban
+E9	Prohibiting:T11 
+T12	Prohibiting 4587 4590	ban
+E10	Prohibiting:T12 

@@ -1,0 +1,4 @@
+T1	Cause-movement-down-loss 1095 1102	cutting
+E1	Cause-movement-down-loss:T1 
+T2	Cause-movement-up-gain 2027 2032	boost
+E2	Cause-movement-up-gain:T2 

@@ -36,7 +36,7 @@ E7	Cause-movement-down-loss:T25 Attribute:T26 Modality_cue:T46 Supplier_Consumer
 T26	Financial_attribute 722 732	production
 T27	Commodity 822 825	oil
 T28	Cause-movement-up-gain 892 897	boost
-E8	Cause-movement-up-gain:T28 Item:T29 Attribute:T31 Supplier_Consumer:T30 Difference:T32 Initial_reference_point:T33
+E8	Cause-movement-up-gain:T28 Item:T29 Attribute:T31 Supplier_Consumer:T30 Difference:T32 Reference_point_time:T33
 T29	Commodity 898 903	crude
 T30	ORGANIZATION 875 880	OPEC+
 T31	Financial_attribute 904 910	prices
@@ -55,12 +55,9 @@ E10	Slow-weak:T40 Item:T41 Polarity_cue:T42
 T41	Economic_item 1163 1171	economic
 T42	POLARITY_cue 1155 1159	stem
 A3	Polarity E10 Negative
-T43	Movement-up-gain 1070 1076	buoyed
-E11	Movement-up-gain:T43 Attribute:T37 Item:T38
 T44	Cause-movement-up-gain 1090 1094	lift
 E12	Cause-movement-up-gain:T44 Item:T39
 R3	Cause-Precondition Arg1:E10 Arg2:E12	
-R4	Cause-Precondition Arg1:E12 Arg2:E11	
 T46	MODALITY_cue 692 695	yet
 A4	Modality E7 Other
 T45	COUNTRY 638 644	Russia

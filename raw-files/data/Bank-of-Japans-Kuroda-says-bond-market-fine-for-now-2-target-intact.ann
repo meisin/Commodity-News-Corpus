@@ -1,0 +1,12 @@
+T1	Economic_item 28 39	bond market
+T2	Economic_item 330 335	bonds
+T3	Economic_item 371 377	market
+T4	Position-low 650 661	record lows
+E1	Position-low:T4 
+T5	Cause-movement-down-loss 672 679	reduced
+E2	Cause-movement-down-loss:T5 
+T6	Economic_item 808 814	market
+T7	Slow-weak 986 994	collapse
+E3	Slow-weak:T7 Item:T8 Attribute:T9
+T8	Commodity 998 1007	crude oil
+T9	Financial_attribute 1008 1014	prices

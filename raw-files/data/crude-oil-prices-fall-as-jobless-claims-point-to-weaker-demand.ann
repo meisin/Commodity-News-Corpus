@@ -63,7 +63,7 @@ T52	MODALITY_cue 1735 1741	should
 T53	Commodity 1185 1188	oil
 T54	Financial_attribute 1189 1195	stocks
 T55	Slow-weak 1274 1281	stalled
-E14	Slow-weak:T55 Attribute:T56 Supplier_Consumer:T68
+E14	Slow-weak:T55 Attribute:T56 Item:T39
 T56	Financial_attribute 1258 1269	consumption
 T58	Commodity 1298 1306	gasoline
 T59	Commodity 1311 1317	diesel
@@ -84,6 +84,6 @@ R1	Cause-Precondition Arg1:E1 Arg2:E2
 T57	Movement-up-gain 334 342	increase
 E18	Movement-up-gain:T57 
 T33	Commodity 934 950	global benchmark
-T68	COUNTRY 1244 1248	U.S.
 T62	Commodity 1392 1400	jet fuel
-T38	NATIONALITY 2474 2484	oil market
+T38	Economic_item 2474 2484	oil market
+T39	Economic_item 1244 1257	U.S. products

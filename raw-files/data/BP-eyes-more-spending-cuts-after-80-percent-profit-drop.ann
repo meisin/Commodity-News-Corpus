@@ -1,0 +1,152 @@
+T1	Cause-movement-down-loss 22 26	cuts
+E1	Cause-movement-down-loss:T1 Attribute:T2 Supplier_Consumer:T3 Intensity_cue:T7
+T2	Financial_attribute 13 21	spending
+T3	ORGANIZATION 0 2	BP
+T4	PERCENTAGE 33 43	80 percent
+T5	Financial_attribute 44 50	profit
+T6	Movement-down-loss 51 55	drop
+E2	Movement-down-loss:T6 Attribute:T5 Difference:T4
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+T7	INTENSITY_cue 8 12	more
+A1	Intensity E1 Intensified
+T8	MODALITY_cue 3 7	eyes
+A2	Modality E1 Other
+T9	Cause-movement-down-loss 251 254	cut
+E3	Cause-movement-down-loss:T9 Modality_cue:T11 Supplier_Consumer:T10 Intensity_cue:T12
+T10	ORGANIZATION 223 225	BP
+T11	MODALITY_cue 245 250	could
+A3	Modality E3 Other
+T12	INTENSITY_cue 272 279	further
+A4	Intensity E3 Intensified
+T13	PERCENTAGE 299 309	80 percent
+T14	Movement-down-loss 310 314	drop
+E4	Movement-down-loss:T14 Attribute:T15 Difference:T13 Reference_point_time:T16
+T15	Financial_attribute 318 325	profits
+R2	Cause-Precondition Arg1:E4 Arg2:E3	
+T16	DATE 333 358	first quarter of the year
+T17	Position-low 399 402	low
+E5	Position-low:T17 Duration:T18 Attribute:T20 Item:T19
+T18	DURATION 391 398	13-year
+T19	Commodity 365 368	oil
+T20	Financial_attribute 369 375	prices
+T21	ORGANIZATION 417 428	oil company
+T22	Slow-weak 470 477	weakest
+E6	Slow-weak:T22 
+T23	Cause-movement-down-loss 488 495	lowered
+E7	Cause-movement-down-loss:T23 Supplier_Consumer:T21 Forecast:T24 Reference_point_time:T27 Attribute:T26 Initial_value:T28 Final_value:T25
+T24	Forecast_target 514 520	target
+T25	MONEY 524 535	$17 billion
+T26	Financial_attribute 505 513	spending
+T27	DATE 500 504	2016
+T28	MONEY 542 556	$17-19 billion
+T29	Movement-down-loss 584 588	fall
+E8	Movement-down-loss:T29 Modality_cue:T30 Reference_point_time:T32 Final_value:T31
+T30	MODALITY_cue 578 583	could
+A5	Modality E8 Other
+T31	MONEY 592 607	$15-$17 billion
+T32	DATE 608 617	next year
+T33	Commodity 621 624	oil
+T34	Financial_attribute 625 631	prices
+T35	Slow-weak 639 643	weak
+E9	Slow-weak:T35 Attribute:T34 Item:T33 Modality_cue:T36
+T36	MODALITY_cue 618 620	if
+A6	Modality E9 Other
+R3	Cause-Precondition Arg1:E9 Arg2:E8	
+T37	Cause-movement-down-loss 657 667	reductions
+E10	Cause-movement-down-loss:T37 Attribute:T38
+T38	Financial_attribute 652 656	cost
+T39	Group 685 697	oil producer
+T40	Financial_attribute 745 750	price
+T41	Commodity 741 744	oil
+T42	Price_unit 754 769	$50-55 a barrel
+T43	DATE 773 777	2017
+T44	Movement-down-loss 788 792	down
+E11	Movement-down-loss:T44 Difference:T45
+T45	MONEY 798 801	$60
+T46	Movement-up-gain 847 853	higher
+E12	Movement-up-gain:T46 Difference:T47 Item:T48 Reference_point_time:T49
+T47	PERCENTAGE 837 846	3 percent
+T48	Economic_item 823 829	shares
+T49	DATE 886 893	Tuesday
+T50	Grow-strong 1015 1022	recover
+E13	Grow-strong:T50 Modality_cue:T53 Item:T52 Attribute:T51 Initial_reference_point:T54
+T51	Financial_attribute 1005 1011	prices
+T52	Commodity 999 1004	crude
+A7	Modality E13 Other
+T53	MODALITY_cue 990 998	expected
+T54	DATE 1035 1050	end of the year
+T55	Commodity 1088 1092	fuel
+T56	Financial_attribute 1093 1099	demand
+T57	Grow-strong 1108 1114	robust
+E14	Grow-strong:T57 Attribute:T56 Item:T55
+R4	Cause-Precondition Arg1:E14 Arg2:E13	
+T58	Grow-strong 1182 1188	robust
+E15	Grow-strong:T58 Attribute:T59
+T59	Financial_attribute 1189 1195	demand
+T60	Slow-weak 1200 1204	weak
+E16	Slow-weak:T60 Attribute:T61
+T61	Financial_attribute 1205 1218	supply growth
+T62	Economic_item 1236 1247	oil markets
+T63	LOCATION 1229 1235	global
+T64	Slow-weak 1465 1473	downturn
+E17	Slow-weak:T64 Item:T65 Duration:T66
+T65	Economic_item 1481 1491	oil sector
+T66	DURATION 1504 1517	three decades
+T67	Cause-movement-down-loss 1522 1529	reduced
+E18	Cause-movement-down-loss:T67 Attribute:T69 Supplier_Consumer:T68 Difference:T70 Final_value:T72 Reference_point_time:T71
+T68	ORGANIZATION 1519 1521	BP
+T69	Financial_attribute 1542 1550	spending
+T70	NUMBER 1551 1562	three times
+T71	DATE 1566 1570	2015
+T72	MONEY 1574 1585	$19 billion
+T73	Cause-movement-down-loss 1587 1594	slashed
+E19	Cause-movement-down-loss:T73 Difference:T74 Item:T75 Initial_value:T76
+T74	PERCENTAGE 1602 1612	10 percent
+T75	Economic_item 1620 1629	workforce
+T76	NUMBER 1639 1645	80,000
+T77	Cause-movement-down-loss 1658 1665	lowered
+E20	Cause-movement-down-loss:T77 Attribute:T78
+T78	Financial_attribute 1666 1671	costs
+T79	Movement-down-loss 1677 1684	slipped
+E21	Movement-down-loss:T79 Supplier_Consumer:T80
+T80	ORGANIZATION 1674 1676	BP
+T81	Movement-down-loss 1707 1711	loss
+E22	Movement-down-loss:T81 Reference_point_time:T82
+T82	DATE 1712 1721	last year
+T83	Movement-down-loss 1737 1742	lower
+E23	Movement-down-loss:T83 Item:T84 Attribute:T85
+T84	Commodity 1743 1746	oil
+T85	Financial_attribute 1747 1753	prices
+R5	Cause-Precondition Arg1:E23 Arg2:E21	
+T86	Financial_attribute 1898 1904	profit
+T87	Financial_attribute 1893 1897	cost
+T88	Movement-down-loss 1954 1958	down
+E24	Movement-down-loss:T88 Initial_value:T89 Initial_reference_point:T91 Final_value:T90
+T89	MONEY 1964 1976	$2.6 billion
+T90	MONEY 1940 1952	$532 million
+T91	DATE 1977 1991	a year earlier
+T92	Movement-down-loss 2020 2024	loss
+E25	Movement-down-loss:T92 Forecast:T93 Difference:T94
+T93	Forecast_target 2004 2013	forecasts
+T94	MONEY 2028 2040	$140 million
+T95	Movement-down-loss 2133 2138	lower
+E26	Movement-down-loss:T95 Reference_point_time:T96 Difference:T97
+T96	DATE 2148 2152	2014
+T97	MONEY 2122 2132	$7 billion
+T98	Movement-up-gain 2218 2223	risen
+E27	Movement-up-gain:T98 Final_value:T99
+T99	MONEY 2227 2240	$56.4 billion
+T100	Position-low 2417 2427	record-low
+E28	Position-low:T100 Item:T102 Attribute:T101 Reference_point_time:T103
+T101	Financial_attribute 2432 2438	prices
+T102	Commodity 2428 2431	oil
+T103	DATE 2442 2459	the first quarter
+T104	Financial_attribute 2650 2656	profit
+T105	Movement-down-loss 2700 2704	loss
+E29	Movement-down-loss:T105 Difference:T107 Intensity_cue:T106 Attribute:T110 Item:T109
+T106	INTENSITY_cue 2674 2684	offsetting
+A8	Intensity E29 Eased
+T107	MONEY 2687 2699	$747 million
+T108	MONEY 2660 2672	$1.8 billion
+T109	Commodity 2708 2711	oil
+T110	Financial_attribute 2720 2730	production

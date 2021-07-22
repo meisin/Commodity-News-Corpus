@@ -1,5 +1,5 @@
 T1	Position-high 288 292	high
-E1	Position-high:T1 Attribute:T2 Item:T4 Supplier_Consumer:T3 Difference:T5 Reference_point_time:T6
+E1	Position-high:T1 Attribute:T2 Item:T4 Supplier_Consumer:T3 Reference_point_time:T6 Final_value:T5
 T2	Financial_attribute 269 276	exports
 T3	COUNTRY 254 258	U.S.
 T4	Commodity 259 268	crude oil
@@ -38,7 +38,7 @@ T32	Commodity 15 20	crude
 T33	Financial_attribute 21 28	exports
 T34	Production_unit 40 51	349,000 bpd
 T35	Position-high 32 36	high
-E6	Position-high:T35 Attribute:T33 Item:T32 Reference_point_time:T31 Supplier_Consumer:T30 Difference:T34
+E6	Position-high:T35 Attribute:T33 Item:T32 Reference_point_time:T31 Supplier_Consumer:T30 Final_value:T34
 T36	Position-low 469 475	lowest
 E7	Position-low:T36 Initial_reference_point:T37
 T37	DATE 482 485	May

@@ -1,0 +1,17 @@
+T1	Commodity 255 261	copper
+T2	Economic_item 643 656	copper market
+T3	Commodity 819 825	copper
+T4	Financial_attribute 810 815	price
+T5	Movement-up-gain 859 864	risen
+E1	Movement-up-gain:T5 Item:T3 Attribute:T4 Difference:T6
+T6	PERCENTAGE 865 885	more than 50 percent
+T7	Position-low 912 915	low
+E2	Position-low:T7 Duration:T8 Reference_point_time:T9
+T8	DURATION 902 911	nine-year
+T9	DATE 919 923	2016
+T10	Cause-movement-up-gain 925 933	boosting
+E3	Cause-movement-up-gain:T10 Attribute:T11 Type:T12
+T11	Financial_attribute 934 941	profits
+T12	LOCATION 942 950	globally
+T13	Financial_attribute 387 395	contract
+T14	Financial_attribute 1278 1286	contract

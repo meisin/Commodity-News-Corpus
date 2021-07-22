@@ -35,7 +35,6 @@ T34	Movement-up-gain 1011 1017	gained
 T35	PERCENTAGE 1018 1030	more than 8%
 T36	DATE 1031 1040	last week
 T37	Financial_attribute 1001 1010	contracts
-T39	ORGANIZATION 1089 1145	Organization of the Petroleum Exporting Countries (OPEC)
 T38	Cause-movement-down-loss 1185 1199	maintain lower
 T40	Financial_attribute 1200 1206	output
 T41	MODALITY_cue 1180 1184	will
@@ -112,7 +111,7 @@ A2	Modality E6 Other
 E8	Movement-down-loss:T24 Difference:T25 Difference2:T26 Attribute:T22 Item:T21 Contract_date:T23 Final_value:T27
 E9	Movement-up-gain:T31 Item:T28 Contract_date:T29 Final_value:T30 Difference:T32 Difference2:T33
 E10	Movement-up-gain:T34 Attribute:T37 Difference:T35 Reference_point_time:T36
-E11	Cause-movement-down-loss:T38 Modality_cue:T41 Attribute:T40 Reference_point_time:T42 Supplier_Consumer:T39 Difference:T35
+E11	Cause-movement-down-loss:T38 Modality_cue:T41 Attribute:T40 Reference_point_time:T42 Difference:T35 Supplier_Consumer:T39 Supplier_Consumer2:T111
 A3	Modality E11 Other
 E12	Grow-strong:T45 Item:T49 Attribute:T48 Supplier_Consumer:T47 Final_value:T50
 E13	Cause-movement-down-loss:T51 Supplier_Consumer:T52
@@ -159,3 +158,5 @@ A12	Modality E15 Other
 R7	Cause-Precondition Arg1:E14 Arg2:E15	
 R8	Cause-Precondition Arg1:E26 Arg2:E24	
 E31	Movement-up-gain:T88 Attribute:T81 Item:T83 Supplier_Consumer:T84 Reference_point_time:T89
+T39	ORGANIZATION 1089 1145	Organization of the Petroleum Exporting Countries (OPEC)
+T111	COUNTRY 1172 1178	Russia

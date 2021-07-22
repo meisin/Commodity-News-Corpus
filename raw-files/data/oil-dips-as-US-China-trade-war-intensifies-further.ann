@@ -1,0 +1,47 @@
+T1	Movement-down-loss 4 8	dips
+E1	Movement-down-loss:T1 Item:T2
+T2	Commodity 0 3	Oil
+T3	trade-financial-tension 23 32	trade war
+E2	trade-financial-tension:T3 Intensity_cue:T4 Participating_countries:T5 Participating_countries2:T19
+T6	DATE 77 83	Monday
+T7	Financial_attribute 59 65	prices
+T9	Negative_sentiment 163 171	concerns
+E4	Negative_sentiment:T9 
+T10	Movement-down-loss 223 228	lower
+E5	Movement-down-loss:T10 Attribute:T11 Item:T12
+T11	Financial_attribute 229 235	demand
+T12	Commodity 240 245	crude
+T13	Slow-weak 180 194	already-gloomy
+E6	Slow-weak:T13 Item:T15 Forecast:T32 Type:T14
+T16	Movement-down-loss 66 73	dropped
+E7	Movement-down-loss:T16 Reference_point_time:T6 Attribute:T7 Item:T8
+T17	Movement-down-loss 275 282	slipped
+E8	Movement-down-loss:T17 Difference:T22 Final_value:T23 Item:T18 Attribute:T21
+T22	PERCENTAGE 283 288	0.02%
+T23	MONEY 292 298	$55.09
+T24	Commodity 341 350	Brent Oil
+T25	Financial_attribute 351 358	Futures
+T26	Movement-up-gain 359 365	gained
+E9	Movement-up-gain:T26 Difference:T27 Attribute:T25 Item:T24 Final_value:T28
+T27	PERCENTAGE 366 371	0.44%
+T28	MONEY 375 381	$58.99
+T29	trade-financial-tension 416 425	trade war
+E10	trade-financial-tension:T29 Participating_countries2:T30 Intensity_cue:T31 Participating_countries:T33
+T18	Commodity 248 266	U.S. Crude Oil WTI
+T4	INTENSITY_cue 33 44	intensifies
+A1	Intensity E2 Intensified
+T5	COUNTRY 17 22	China
+T19	COUNTRY 12 16	U.S.
+T30	COUNTRY 406 410	Sino
+A2	Intensity E10 Intensified
+T31	INTENSITY_cue 426 437	intensified
+T15	Economic_item 202 210	economic
+T32	Forecast_target 211 218	outlook
+T21	Financial_attribute 267 274	Futures
+T8	Commodity 55 58	Oil
+R1	Cause-Precondition Arg1:E2 Arg2:E1	
+R2	Cause-Precondition Arg1:E6 Arg2:E4	
+R3	Cause-Precondition Arg1:E5 Arg2:E4	
+R4	Cause-Precondition Arg1:E4 Arg2:E7	
+T33	COUNTRY 411 415	U.S.
+T14	LOCATION 195 201	global

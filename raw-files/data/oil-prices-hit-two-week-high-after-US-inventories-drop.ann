@@ -1,0 +1,78 @@
+T1	Movement-up-gain 73 79	higher
+E1	Movement-up-gain:T1 Item:T7
+T2	Financial_attribute 107 117	stockpiles
+T3	Commodity 101 106	crude
+T4	Movement-down-loss 131 135	fell
+E2	Movement-down-loss:T4 Attribute:T2 Item:T3 Reference_point_time:T6 Supplier_Consumer:T51
+T6	DATE 136 145	last week
+T7	Commodity 57 60	Oil
+T9	Commodity 210 233	West Texas Intermediate
+T10	Movement-flat 268 272	flat
+E3	Movement-flat:T10 Item:T9 Reference_point_time:T11
+T11	DATE 273 283	on the day
+T13	Movement-up-gain 314 320	higher
+E4	Movement-up-gain:T13 
+T15	Commodity 339 344	Brent
+T16	MONEY 363 365	$1
+T17	MONEY 369 375	$66.56
+T18	Movement-up-gain 402 404	up
+E6	Movement-up-gain:T18 Item:T19 Difference:T20 Final_value:T21
+T19	Commodity 395 398	WTI
+T20	PERCENTAGE 405 425	more than 2 per cent
+T21	MONEY 429 435	$63.02
+T22	Commodity 529 534	crude
+T23	Financial_attribute 535 546	inventories
+T25	COUNTRY 526 528	US
+T26	Production_unit 558 570	1.6m barrels
+T27	DATE 571 601	in the week ending February 16
+T28	Movement-up-gain 659 667	increase
+E8	Movement-up-gain:T28 Difference:T29 Modality_cue:T53
+T29	Quantity 646 658	1.33m barrel
+T30	Commodity 705 713	Gasoline
+T31	Financial_attribute 714 724	stockpiles
+T32	Movement-down-loss 725 729	fell
+E9	Movement-down-loss:T32 Attribute:T31 Item:T30 Difference:T33 Reference_point_time:T34
+T33	Production_unit 733 754	about 300,000 barrels
+T34	DATE 755 770	during the week
+T36	Movement-down-loss 870 874	down
+E10	Movement-down-loss:T36 Difference:T37 Item:T14
+T37	Quantity 875 887	2.4m barrels
+T38	Movement-down-loss 918 925	decline
+E11	Movement-down-loss:T38 Difference:T39 Modality_cue:T12
+A3	Polarity E11 Positive
+A4	Modality E11 Other
+T39	Quantity 905 917	1.63m barrel
+T35	Commodity 856 862	diesel
+T40	Movement-down-loss 50 54	drop
+E12	Movement-down-loss:T40 Attribute:T41 Supplier_Consumer:T42
+T41	Financial_attribute 38 49	inventories
+T42	COUNTRY 35 37	US
+T43	Position-high 24 28	high
+E13	Position-high:T43 Duration:T44 Attribute:T45 Item:T46
+T44	DURATION 15 23	two-week
+T45	Financial_attribute 4 10	prices
+T46	Commodity 0 3	Oil
+T47	Position-high 446 453	highest
+E14	Position-high:T47 Duration:T48
+T48	DURATION 463 472	two weeks
+T12	MODALITY_cue 926 934	expected
+T50	DURATION 380 388	two-week
+T24	Movement-down-loss 547 554	dropped
+E7	Movement-down-loss:T24 Difference:T26 Reference_point_time:T27 Attribute:T23 Item:T22 Supplier_Consumer:T25
+T8	Commodity 170 175	Brent
+R1	Cause-Precondition Arg1:E12 Arg2:E13	
+T51	COUNTRY 98 100	US
+R2	Cause-Precondition Arg1:E2 Arg2:E1	
+T5	Position-high 389 393	high
+E15	Position-high:T5 Duration:T50
+T49	Movement-up-gain 357 359	up
+E16	Movement-up-gain:T49 Difference:T16 Final_value:T17 Item:T15
+T14	Commodity 832 843	distillates
+T52	Cause-movement-down-loss 794 798	draw
+E5	Cause-movement-down-loss:T52 Difference:T55 Modality_cue:T54
+T53	MODALITY_cue 632 643	looking for
+A1	Modality E8 Other
+T54	MODALITY_cue 813 824	looking for
+T55	NUMBER 786 793	558,000
+A2	Modality E5 Other
+E17	Movement-flat:T10 Item:T8 Reference_point_time:T11

@@ -31,7 +31,7 @@ T25	Price_unit 635 651	$105.90 a barrel
 T26	Movement-up-gain 675 680	gains
 E8	Movement-up-gain:T26 Intensity_cue:T83
 T28	Position-high 704 708	high
-E9	Position-high:T28 Difference:T29 Duration:T80 Item:T27
+E9	Position-high:T28 Duration:T80 Item:T27 Final_value:T29
 T29	MONEY 709 719	above $106
 T30	Civil-unrest 1053 1065	insurrection
 E10	Civil-unrest:T30 Place:T31
@@ -48,7 +48,7 @@ T37	Financial_attribute 3363 3374	inventories
 T38	Production_unit 3333 3348	2.6-million-bpd
 T39	DATE 3321 3330	last week
 T40	Cause-movement-down-loss 3225 3235	disruption
-E13	Cause-movement-down-loss:T40 Attribute:T41
+E13	Cause-movement-down-loss:T40 Attribute:T41 Modality_cue:T99
 T41	Financial_attribute 3239 3246	exports
 T42	Quantity 3483 3501	1.9-million-barrel
 T43	Movement-down-loss 3502 3509	decline
@@ -134,3 +134,6 @@ T88	Economic_item 3565 3578	economic data
 T95	Commodity 3803 3808	Brent
 T96	Commodity 3814 3817	WTI
 T97	Commodity 3853 3863	U.S. crude
+T98	Position-high 1314 1318	high
+E27	Position-high:T98 
+T99	MODALITY_cue 3201 3207	before

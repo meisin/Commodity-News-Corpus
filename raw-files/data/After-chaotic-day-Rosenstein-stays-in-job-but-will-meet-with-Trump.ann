@@ -1,0 +1,20 @@
+T1	Movement-down-loss 3534 3538	fell
+E1	Movement-down-loss:T1 Attribute:T2 Item:T3
+T2	Financial_attribute 3527 3533	yields
+T3	Economic_item 3513 3526	U.S. Treasury
+T4	Movement-down-loss 3632 3638	losses
+E2	Movement-down-loss:T4 Intensity_cue:T5
+T5	INTENSITY_cue 3626 3631	pared
+A1	Intensity E2 Eased
+T6	Economic_item 3644 3651	S&P 500
+T7	Movement-down-loss 3664 3668	down
+E3	Movement-down-loss:T7 Item:T6
+T8	Movement-down-loss 3703 3709	losses
+E4	Movement-down-loss:T8 Intensity_cue:T9
+T9	INTENSITY_cue 3681 3690	recovered
+A2	Intensity E4 Eased
+T10	Prohibiting 5249 5256	banning
+E5	Prohibiting:T10 Activity:T11
+T11	Other_activities 5257 5334	people from several Muslim-majority countries from entering the United States
+T12	Negative_sentiment 3608 3615	concern
+E6	Negative_sentiment:T12 

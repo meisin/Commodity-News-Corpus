@@ -1,0 +1,54 @@
+T1	Group 7 19	oil drillers
+T2	Group 236 249	oil producers
+T3	Cause-movement-down-loss 312 315	cut
+E1	Cause-movement-down-loss:T3 Attribute:T4
+T4	Financial_attribute 316 321	costs
+T5	Financial_attribute 335 341	output
+T6	Movement-down-loss 351 356	slump
+E2	Movement-down-loss:T6 Attribute:T7
+T7	Financial_attribute 360 366	prices
+T8	Movement-down-loss 412 418	fallen
+E3	Movement-down-loss:T8 Final_value:T9 Initial_value:T11 Initial_reference_point:T12 Attribute:T10
+T9	NUMBER 427 430	121
+T10	Financial_attribute 390 394	rigs
+T11	NUMBER 437 440	190
+T12	DATE 441 451	a year ago
+T13	Financial_attribute 476 479	rig
+T14	Financial_attribute 568 577	rig count
+T15	Financial_attribute 690 696	output
+T16	Production_unit 731 758	1.2 million barrels per day
+T17	Financial_attribute 930 934	rigs
+T18	Financial_attribute 1079 1083	rigs
+T19	Movement-down-loss 1110 1116	fallen
+E4	Movement-down-loss:T19 Attribute:T18 Difference:T20 Initial_value:T21 Initial_reference_point:T22
+T20	PERCENTAGE 1120 1130	30 percent
+T21	NUMBER 1136 1139	165
+T22	DATE 1143 1150	Dec. 12
+T23	Financial_attribute 1246 1256	production
+T24	Commodity 1242 1245	oil
+T25	Production_unit 1284 1309	1 million barrels per day
+T26	Financial_attribute 1321 1325	rigs
+T27	Movement-down-loss 1367 1371	down
+E5	Movement-down-loss:T27 Initial_value:T28 Initial_reference_point:T29
+T28	NUMBER 1377 1379	17
+T29	DATE 1383 1395	mid-December
+T30	Movement-down-loss 1399 1406	decline
+E6	Movement-down-loss:T30 Difference:T31
+T31	PERCENTAGE 1410 1420	65 percent
+T32	Production_unit 1455 1478	128,000 barrels per day
+T33	DATE 1482 1490	December
+T34	Financial_attribute 1532 1538	output
+T35	Financial_attribute 1641 1645	rigs
+T36	Financial_attribute 1739 1743	rigs
+T37	Movement-down-loss 1868 1872	fall
+E7	Movement-down-loss:T37 Modality_cue:T39 Attribute:T40 Reference_point_time:T41
+T38	Movement-flat 1857 1864	plateau
+E8	Movement-flat:T38 Modality_cue:T39 Attribute:T40 Reference_point_time:T41
+A1	Modality E8 Other
+T39	MODALITY_cue 1843 1847	will
+T40	Financial_attribute 1832 1842	production
+A2	Modality E7 Other
+T41	DATE 1876 1893	the coming months
+T42	Movement-down-loss 2013 2020	decline
+E9	Movement-down-loss:T42 
+T43	Financial_attribute 2072 2082	production

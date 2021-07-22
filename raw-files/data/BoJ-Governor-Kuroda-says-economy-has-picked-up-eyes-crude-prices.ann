@@ -1,0 +1,37 @@
+T1	Grow-strong 37 46	picked up
+E1	Grow-strong:T1 Item:T2
+T2	Economic_item 25 32	economy
+T3	Commodity 53 58	crude
+T4	Financial_attribute 59 65	prices
+T5	Grow-strong 299 306	rebound
+E2	Grow-strong:T5 Item:T6 Attribute:T7
+T6	Commodity 310 319	crude oil
+T7	Financial_attribute 320 326	prices
+T8	Movement-down-loss 394 398	slip
+E3	Movement-down-loss:T8 Item:T9 Forecast:T10
+T9	Economic_item 421 430	inflation
+T10	Forecast_target 431 443	expectations
+T11	Movement-down-loss 446 452	plunge
+E4	Movement-down-loss:T11 Item:T12 Attribute:T13 Reference_point_time:T14
+T12	Commodity 456 465	crude oil
+T13	Financial_attribute 466 472	prices
+T14	DATE 478 491	the past year
+T15	Financial_attribute 508 514	prices
+T16	Movement-down-loss 523 531	downward
+E5	Movement-down-loss:T16 Intensity_cue:T17
+T17	INTENSITY_cue 516 522	adding
+A1	Intensity E5 Intensified
+T18	Movement-up-gain 568 572	rise
+E6	Movement-up-gain:T18 Modality_cue:T19
+T19	MODALITY_cue 555 563	expected
+A2	Modality E6 Other
+T20	Movement-down-loss 629 634	lower
+E7	Movement-down-loss:T20 Item:T21 Attribute:T22 Intensity_cue:T23
+T21	Commodity 635 641	energy
+T22	Financial_attribute 642 647	costs
+T23	INTENSITY_cue 648 653	fades
+A3	Intensity E7 Eased
+T24	Commodity 709 718	crude oil
+T25	Financial_attribute 719 725	prices
+T26	Financial_attribute 813 822	inflation
+T27	Forecast_target 823 835	expectations

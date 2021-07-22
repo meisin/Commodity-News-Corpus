@@ -1,0 +1,9 @@
+T1	Commodity 27 30	gas
+T2	Commodity 313 316	gas
+T3	Financial_attribute 404 414	production
+T4	Financial_attribute 503 513	production
+T5	Cause-movement-down-loss 514 521	reduced
+E1	Cause-movement-down-loss:T5 Attribute:T4 Reference_point_time:T6
+T6	DATE 525 537	recent years
+T7	Commodity 662 665	oil
+T8	Commodity 797 800	Gas

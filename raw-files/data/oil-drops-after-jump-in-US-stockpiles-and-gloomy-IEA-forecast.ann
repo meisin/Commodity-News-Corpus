@@ -44,12 +44,12 @@ T43	Cause-movement-down-loss 970 974	cuts
 T44	Financial_attribute 963 969	output
 E1	Movement-down-loss:T1 Item:T2
 E2	Movement-up-gain:T3 Supplier_Consumer:T8 Attribute:T4
-E3	Slow-weak:T5 Supplier_Consumer:T7 Forecast:T6
+E3	Slow-weak:T5 Forecast:T6 Forecaster:T7
 E4	Movement-down-loss:T9 Duration:T11 Item:T10
 E5	Movement-down-loss:T12 Final_value:T13
 E6	Movement-up-gain:T14 Supplier_Consumer:T15 Item:T16 Attribute:T17
-E7	Slow-weak:T18 Forecast:T19 Supplier_Consumer:T20
-E8	Movement-up-gain:T24 Attribute:T23 Item:T22 Difference:T25
+E7	Slow-weak:T18 Forecast:T19 Forecaster:T20
+E8	Movement-up-gain:T24 Attribute:T23 Item:T22 Difference:T25 Type:T87
 E9	Movement-up-gain:T26 Duration:T27
 E10	Cause-movement-down-loss:T29 Forecaster:T30 Type:T31 Item:T32 Attribute:T33 Forecast:T28 Difference:T34 Reference_point_time:T35
 E11	Movement-up-gain:T36 Difference:T38 Item:T37 Reference_point_time:T39
@@ -117,3 +117,4 @@ T85	MODALITY_cue 945 952	planned
 A6	Modality E13 Other
 T86	POLARITY_cue 937 942	delay
 A7	Polarity E13 Negative
+T87	NATIONALITY 409 417	American

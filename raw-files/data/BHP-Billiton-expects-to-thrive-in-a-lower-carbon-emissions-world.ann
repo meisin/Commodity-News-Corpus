@@ -1,0 +1,45 @@
+T1	Movement-down-loss 36 41	lower
+E1	Movement-down-loss:T1 
+T2	Commodity 383 389	copper
+T3	Commodity 391 394	oil
+T4	Commodity 399 402	gas
+T5	Commodity 404 412	iron ore
+T6	Commodity 417 421	coal
+T7	Movement-down-loss 459 464	lower
+E2	Movement-down-loss:T7 
+T8	Financial_attribute 512 517	price
+T9	Commodity 671 676	fuels
+T10	Commodity 683 686	oil
+T11	Commodity 691 695	coal
+T12	Commodity 769 774	fuels
+T13	Cause-movement-down-loss 1099 1102	cut
+E3	Cause-movement-down-loss:T13 Forecast:T14 Forecaster:T16 Item:T15
+T14	Forecast_target 1117 1128	expectation
+T15	Economic_item 1133 1146	global growth
+T16	ORGANIZATION 1091 1094	BHP
+T17	Grow-strong 1327 1331	grow
+E4	Grow-strong:T17 Modality_cue:T18 Reference_point_time:T19
+T18	MODALITY_cue 1322 1326	will
+A1	Modality E4 Other
+T19	DATE 1375 1392	the next 20 years
+T20	Commodity 1520 1526	copper
+T21	Commodity 1730 1741	natural gas
+T22	Commodity 1791 1794	gas
+T23	Financial_attribute 1780 1786	demand
+T24	Commodity 1833 1837	coal
+T25	Commodity 1842 1845	oil
+T26	MODALITY_cue 1850 1856	likely
+T27	Grow-strong 1863 1869	strong
+E5	Grow-strong:T27 Modality_cue:T26 Item:T22 Attribute:T23
+A2	Modality E5 Other
+T28	Commodity 2222 2231	crude oil
+T29	Financial_attribute 2279 2289	production
+T30	Commodity 2302 2307	shale
+T31	Grow-strong 2412 2416	grow
+E6	Grow-strong:T31 
+T32	Commodity 2468 2477	crude oil
+T33	Movement-up-gain 2693 2699	double
+E7	Movement-up-gain:T33 Modality_cue:T35 Attribute:T34
+T34	Financial_attribute 2678 2686	earnings
+T35	MODALITY_cue 2687 2692	would
+A3	Modality E7 Other

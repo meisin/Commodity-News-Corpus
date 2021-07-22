@@ -75,7 +75,7 @@ T51	Quantity 1019 1038	2.4 million barrels
 T52	DATE 1039 1048	last week
 T53	Quantity 1201 1217	1 million barrel
 T54	Movement-down-loss 1218 1225	decline
-E18	Movement-down-loss:T54 Modality_cue:T55
+E18	Movement-down-loss:T54 Modality_cue:T55 Difference:T53 Forecaster:T72
 T55	MODALITY_cue 1189 1198	estimated
 A5	Modality E18 Other
 T56	Financial_attribute 1228 1234	Stocks
@@ -103,3 +103,4 @@ T69	Commodity 1880 1884	fuel
 T70	Financial_attribute 1885 1888	use
 T71	MODALITY_cue 1849 1861	expectations
 A2	Modality E24 Other
+T72	ORGANIZATION 1143 1177	American Petroleum Institute (API)

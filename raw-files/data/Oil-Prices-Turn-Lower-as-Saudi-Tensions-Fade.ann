@@ -34,7 +34,7 @@ T26	MONEY 657 665	15 cents
 T27	PERCENTAGE 670 675	0.19%
 T28	MONEY 680 686	$80.28
 T29	Position-high 715 719	high
-E8	Position-high:T29 Difference:T30
+E8	Position-high:T29 Final_value:T30
 T30	MONEY 723 729	$81.86
 T31	Geopolitical-tension 1742 1750	tensions
 E9	Geopolitical-tension:T31 Intensity_cue:T32

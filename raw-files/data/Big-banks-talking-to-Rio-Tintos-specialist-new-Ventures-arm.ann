@@ -1,0 +1,13 @@
+T1	Commodity 563 567	coal
+T2	Commodity 572 576	iron
+T3	Movement-down-loss 665 670	crash
+E1	Movement-down-loss:T3 
+T4	Financial_attribute 659 664	price
+T5	Financial_attribute 763 769	prices
+T6	Commodity 851 856	fuels
+T7	Financial_attribute 913 919	demand
+T8	Movement-up-gain 863 871	increase
+E2	Movement-up-gain:T8 
+T9	Movement-down-loss 2145 2150	crash
+E3	Movement-down-loss:T9 Attribute:T10
+T10	Financial_attribute 2139 2144	price

@@ -30,13 +30,13 @@ E8	Movement-up-gain:T25 Difference:T26 Final_value:T27 Contract_date:T55 Item:T2
 T26	MONEY 1318 1325	2 cents
 T27	Price_unit 1329 1345	$102.09 a barrel
 T28	Movement-down-loss 1353 1360	falling
-E9	Movement-down-loss:T28 Final_value:T29
+E9	Movement-down-loss:T28 
 T29	Price_unit 1371 1384	$101 a barrel
 T30	Movement-up-gain 1423 1429	rising
 E10	Movement-up-gain:T30 Attribute:T31
 T31	Financial_attribute 1410 1416	Prices
 T32	Embargo 1743 1752	sanctions
-E11	Embargo:T32 Imposer:T33 Modality_cue:T71
+E11	Embargo:T32 Imposer:T33 Modality_cue:T71 Intensity_cue:T94
 T33	COUNTRY 1738 1742	U.S.
 T34	Crisis 1967 1973	crisis
 E12	Crisis:T34 Place:T35
@@ -74,13 +74,13 @@ T59	MODALITY_cue 445 450	fears
 A1	Modality E4 Other
 T60	Economic_item 480 486	market
 T61	Movement-down-loss 585 589	fell
-E19	Movement-down-loss:T61 
+E19	Movement-down-loss:T61 Reference_point_time:T93
 T65	Economic_item 1048 1056	economic
 T66	Position-high 1261 1265	high
 E20	Position-high:T66 Duration:T67 Final_value:T22
 T67	DURATION 1252 1260	intraday
 T68	Position-low 1364 1367	low
-E21	Position-low:T68 
+E21	Position-low:T68 Final_value:T29
 T69	Commodity 1656 1659	oil
 T70	Commodity 1680 1683	gas
 T71	MODALITY_cue 1709 1720	speculation
@@ -112,7 +112,7 @@ E1	Movement-down-loss:T3 Intensity_cue:T86 Item:T1
 T86	INTENSITY_cue 285 293	reversed
 A3	Intensity E1 Eased
 T87	Movement-up-gain 301 308	jumping
-E26	Movement-up-gain:T87 Item:T1 Difference:T2 Reference_point_time:T5
+E26	Movement-up-gain:T87 Item:T1 Reference_point_time:T5 Final_value:T2
 R2	Cause-Precondition Arg1:E2 Arg2:E26	
 R3	Cause-Precondition Arg1:E3 Arg2:E4	
 R4	Cause-Precondition Arg1:E4 Arg2:E26	
@@ -129,3 +129,6 @@ T91	Movement-up-gain 1241 1243	up
 E29	Movement-up-gain:T91 
 T92	MODALITY_cue 2156 2160	will
 A5	Modality E13 Other
+T93	DATE 593 599	Friday
+T94	INTENSITY_cue 1727 1737	additional
+A6	Intensity E11 Intensified

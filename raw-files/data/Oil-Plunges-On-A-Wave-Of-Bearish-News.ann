@@ -45,7 +45,7 @@ T31	Grow-strong 601 609	stronger
 E11	Grow-strong:T31 Item:T32
 T32	Economic_item 610 621	U.S. dollar
 T33	Negative_sentiment 635 643	concerns
-E12	Negative_sentiment:T33 Intensity_cue:T55
+E12	Negative_sentiment:T33 Intensity_cue:T55 Attribute:T56
 T34	Movement-up-gain 772 778	higher
 E13	Movement-up-gain:T34 Item:T35
 T35	Economic_item 779 785	dollar
@@ -81,3 +81,4 @@ R5	Cause-Precondition Arg1:E11 Arg2:E10
 T55	INTENSITY_cue 627 634	renewed
 A2	Intensity E12 Intensified
 R6	Cause-Precondition Arg1:E12 Arg2:E10	
+T56	Financial_attribute 650 656	demand

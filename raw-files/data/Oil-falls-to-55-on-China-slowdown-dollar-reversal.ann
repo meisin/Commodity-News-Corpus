@@ -1,5 +1,5 @@
 T1	Movement-down-loss 4 9	falls
-E1	Movement-down-loss:T1 Difference:T2 Item:T3
+E1	Movement-down-loss:T1 Item:T3 Final_value:T2
 T2	MONEY 13 16	$55
 T3	Commodity 0 3	Oil
 T4	Slow-weak 26 34	slowdown
@@ -13,7 +13,7 @@ T10	Grow-strong 310 316	firmed
 T11	DATE 285 292	Tuesday
 T12	Economic_item 303 309	dollar
 T13	Slow-weak 370 377	slowing
-E3	Movement-down-loss:T7 Difference:T9 Item:T8 Reference_point_time:T11
+E3	Movement-down-loss:T7 Item:T8 Reference_point_time:T11 Final_value:T9
 E4	Grow-strong:T10 Item:T12
 T14	NATIONALITY 378 385	Chinese
 T15	Economic_item 386 392	growth
@@ -39,7 +39,7 @@ E9	Movement-down-loss:T29 Difference:T30 Attribute:T26 Item:T27 Final_value:T31 
 T30	MONEY 670 678	49 cents
 T31	MONEY 682 688	$55.43
 T32	Position-high 717 721	high
-E10	Position-high:T32 Difference:T33
+E10	Position-high:T32 Final_value:T33
 T33	MONEY 725 731	$56.79
 T34	Commodity 739 749	U.S. crude
 T35	Movement-up-gain 755 759	rose
@@ -51,13 +51,13 @@ T39	Price_unit 840 851	$8 a barrel
 T40	Financial_attribute 887 893	prices
 T41	Commodity 883 886	Oil
 T42	Movement-down-loss 963 970	slipped
-E12	Movement-down-loss:T42 Reference_point_time:T45 Supplier_Consumer:T43
+E12	Movement-down-loss:T42 Reference_point_time:T45 Supplier_Consumer:T43 Item:T98
 T43	COUNTRY 957 962	China
 T45	DATE 974 979	March
 T44	Movement-up-gain 1095 1104	increased
-E13	Movement-up-gain:T44 
+E13	Movement-up-gain:T44 Item:T99 Supplier_Consumer:T100
 T46	Position-high 1267 1271	high
-E14	Position-high:T46 Difference:T47 Supplier_Consumer:T48
+E14	Position-high:T46 Supplier_Consumer:T48 Final_value:T47
 T47	Production_unit 1209 1244	10 million barrels of crude per day
 T48	COUNTRY 1170 1182	Saudi Arabia
 T49	Cause-movement-down-loss 1416 1423	cutting
@@ -93,7 +93,6 @@ E22	Oversupply:T69 Place:T70 Difference:T72 Reference_point_time:T93 Forecast:T7
 T70	LOCATION 1916 1922	global
 T71	Forecast_target 1904 1913	forecasts
 T72	Production_unit 1934 1959	2 million barrels per day
-A4	Modality E22 Other
 T73	MODALITY_cue 1989 1995	expect
 T74	Movement-up-gain 2159 2164	risen
 E23	Movement-up-gain:T74 Attribute:T77 Item:T75 Supplier_Consumer:T76 Forecast:T78
@@ -101,7 +100,6 @@ T75	Commodity 2064 2069	crude
 T76	COUNTRY 2059 2063	U.S.
 T77	Financial_attribute 2070 2076	stocks
 T78	Forecast_target 2142 2150	forecast
-A5	Modality E23 Other
 T79	Position-high 2107 2114	highest
 E24	Position-high:T79 Duration:T80
 T80	DURATION 2127 2135	80 years
@@ -134,3 +132,6 @@ R8	Cause-Precondition Arg1:E15 Arg2:E17
 R9	Cause-Precondition Arg1:E20 Arg2:E19
 A3	Polarity E15 Negative
 A1	Intensity E8 Eased
+T98	Economic_item 937 953	factory activity
+T99	Economic_item 1078 1094	factory activity
+T100	COUNTRY 1073 1077	U.S.

@@ -1,0 +1,9 @@
+T1	Commodity 40 43	oil
+T2	Cause-movement-up-gain 258 265	boosted
+E1	Cause-movement-up-gain:T2 
+T3	ORGANIZATION 366 386	oil and gas producer
+T4	Economic_item 621 627	shares
+T5	Movement-up-gain 629 631	up
+E2	Movement-up-gain:T5 Initial_value:T6 Initial_reference_point:T7
+T6	PERCENTAGE 637 648	3.8 percent
+T7	DATE 649 658	last week

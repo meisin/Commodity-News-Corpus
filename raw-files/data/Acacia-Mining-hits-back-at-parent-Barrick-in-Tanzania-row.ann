@@ -1,0 +1,12 @@
+T1	Commodity 1511 1515	gold
+T2	Movement-up-gain 1562 1567	risen
+E1	Movement-up-gain:T2 Difference:T3 Item:T1 Initial_reference_point:T10
+T3	PERCENTAGE 1568 1578	54 percent
+T4	Economic_item 1631 1636	share
+T5	Financial_attribute 1637 1642	price
+T6	PERCENTAGE 1643 1652	3 percent
+T7	Movement-up-gain 1653 1659	higher
+E2	Movement-up-gain:T7 Difference:T6 Attribute:T5 Item:T4
+T8	Financial_attribute 2426 2433	profits
+T9	Financial_attribute 2516 2523	exports
+T10	DATE 1598 1608	a year ago

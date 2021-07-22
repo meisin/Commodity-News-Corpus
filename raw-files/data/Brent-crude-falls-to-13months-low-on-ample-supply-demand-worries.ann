@@ -31,7 +31,7 @@ E10	Oversupply:T31
 T32	ORGANIZATION 1049 1053	OPEC
 T33	Financial_attribute 1054 1060	output
 T34	Position-high 1078 1082	high
-E11	Position-high:T34 Attribute:T33 Supplier_Consumer:T32 Difference:T35 Reference_point_time:T36 Duration:T30
+E11	Position-high:T34 Attribute:T33 Supplier_Consumer:T32 Reference_point_time:T36 Duration:T30 Final_value:T35
 T35	Production_unit 1086 1121	30.44 million barrels per day (bpd)
 T36	DATE 1125 1129	July
 T37	Movement-up-gain 1149 1153	rise
@@ -162,7 +162,7 @@ T114	INTENSITY_cue 1347 1359	holding back
 A10	Intensity E34 Eased
 R7	Cause-Precondition Arg1:E8 Arg2:E34	
 T97	Position-high 1755 1768	record levels
-E35	Position-high:T97 Supplier_Consumer:T116 Difference:T96 Attribute:T95 Reference_point_time:T115
+E35	Position-high:T97 Supplier_Consumer:T116 Attribute:T95 Reference_point_time:T115 Final_value:T96
 T115	DATE 1710 1714	July
 T116	COUNTRY 1737 1741	Iraq
 T117	NATIONALITY 1663 1668	Iraqi
@@ -173,3 +173,4 @@ T11	Embargo 2411 2420	sanctions
 E4	Embargo:T11 
 R8	Cause-Precondition Arg1:E15 Arg2:E16	
 R9	Cause-Precondition Arg1:E4 Arg2:E17	
+T119	Economic_item 561 567	shares

@@ -1,0 +1,8 @@
+T1	Economic_item 511 517	shares
+T2	Economic_item 756 762	market
+T3	Cause-movement-down-loss 807 814	curtail
+E1	Cause-movement-down-loss:T3 
+T4	Commodity 829 838	crude oil
+T5	Slow-weak 839 847	downturn
+E2	Slow-weak:T5 Item:T4
+T6	Economic_item 1006 1012	shares

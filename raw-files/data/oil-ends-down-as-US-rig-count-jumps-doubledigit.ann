@@ -24,7 +24,7 @@ E6	Slow-weak:T17 Attribute:T18 Forecast:T97
 T19	Financial_attribute 471 475	Rigs
 T20	Commodity 498 501	oil
 T21	Position-low 575 578	low
-E7	Position-low:T21 Reference_point_time:T22 Difference:T98
+E7	Position-low:T21 Reference_point_time:T22 Final_value:T98
 T22	DATE 554 563	last week
 T23	Commodity 587 590	oil
 T24	POLARITY_cue 664 667	not
@@ -93,16 +93,13 @@ E20	Movement-up-gain:T75 Item:T77 Difference:T76
 T76	PERCENTAGE 1689 1693	0.8%
 T77	Commodity 1680 1683	WTI
 T78	Movement-down-loss 1706 1710	fell
-E21	Movement-down-loss:T78 Item:T80
+E21	Movement-down-loss:T78 Item:T80 Difference:T79
 T79	PERCENTAGE 1711 1713	1%
 T80	Commodity 1700 1705	Brent
 T81	Movement-down-loss 1784 1788	down
 E22	Movement-down-loss:T81 Attribute:T82 Item:T83
 T82	Financial_attribute 1764 1770	prices
 T83	Commodity 1758 1763	crude
-T84	Civil-unrest 1816 1825	ceasefire
-E23	Civil-unrest:T84 Place:T85
-A2	Polarity E23 Negative
 T85	COUNTRY 1838 1843	Libya
 T86	Movement-up-gain 1879 1887	increase
 E24	Movement-up-gain:T86 Modality_cue:T87 Type:T88 Attribute:T89
@@ -129,13 +126,10 @@ R2	Cause-Precondition Arg1:E4 Arg2:E3
 T98	NUMBER 582 585	172
 A1	Polarity E8 Negative
 R3	Cause-Precondition Arg1:E15 Arg2:E16	
-R4	Cause-Precondition Arg1:E23 Arg2:E22	
-R5	Cause-Precondition Arg1:E23 Arg2:E24	
 T99	Cause-movement-down-loss 1963 1966	cut
 E27	Cause-movement-down-loss:T99 Attribute:T100 Item:T101 Intensity_cue:T102 Supplier_Consumer:T103
 T100	Financial_attribute 1952 1962	production
 T101	Commodity 1948 1951	oil
 T102	INTENSITY_cue 1910 1914	ruin
 A5	Intensity E27 Eased
-R6	Cause-Precondition Arg1:E23 Arg2:E27	
 T103	ORGANIZATION 1915 1919	OPEC

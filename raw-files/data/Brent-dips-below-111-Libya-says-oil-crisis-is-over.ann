@@ -14,7 +14,7 @@ T10	Commodity 919 924	Brent
 T11	Movement-down-loss 1017 1025	dropping
 E4	Movement-down-loss:T11 Difference:T12 Final_value:T13
 T12	MONEY 1026 1034	59 cents
-T13	Production_unit 1038 1054	$110.65 a barrel
+T13	Price_unit 1038 1054	$110.65 a barrel
 T14	Movement-down-loss 1079 1087	declined
 E5	Movement-down-loss:T14 Difference:T17 Final_value:T18 Item:T15
 T17	MONEY 1091 1099	44 cents
@@ -60,7 +60,7 @@ A4	Modality E15 Other
 T46	Movement-up-gain 3024 3028	gain
 E16	Movement-up-gain:T46 Duration:T107 Reference_point_time:T108
 T47	Movement-down-loss 3157 3162	slump
-E17	Movement-down-loss:T47 Reference_point_time:T48
+E17	Movement-down-loss:T47 Initial_reference_point:T48
 T48	DATE 3143 3156	first-quarter
 T51	COUNTRY 3456 3461	Libya
 T52	Cause-movement-up-gain 3475 3482	ramp up
@@ -93,13 +93,13 @@ T71	Financial_attribute 1842 1849	exports
 T66	Economic_item 3246 3252	growth
 T67	LOCATION 3239 3245	global
 T72	Grow-strong 3253 3261	recovery
-E25	Grow-strong:T72 Item:T66 Type:T67 Initial_reference_point:T68
+E25	Grow-strong:T72 Item:T66 Type:T67 Reference_point_time:T68
 T36	COUNTRY 2437 2441	U.S.
 T39	Movement-down-loss 2455 2459	fell
 E12	Movement-down-loss:T39 Attribute:T37 Item:T38 Supplier_Consumer:T36 Reference_point_time:T97
 T73	MONEY 11 21	below $111
 T74	Movement-down-loss 6 10	dips
-E27	Movement-down-loss:T74 Difference:T73 Item:T75
+E27	Movement-down-loss:T74 Item:T75 Final_value:T73
 T75	Commodity 0 5	Brent
 T76	POLARITY_cue 337 340	end
 T77	Commodity 484 487	oil

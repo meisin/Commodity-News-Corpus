@@ -76,12 +76,12 @@ T58	PERCENTAGE 2247 2251	0.2%
 A3	Modality E17 Other
 T59	MODALITY_cue 2213 2225	expectations
 T61	Position-high 641 645	high
-E18	Position-high:T61 Difference:T62
+E18	Position-high:T61 Final_value:T62
 T62	MONEY 649 657	USD93.44
 T63	Movement-down-loss 662 664	up
 E19	Movement-down-loss:T63 
 T64	Position-low 689 692	low
-E20	Position-low:T64 Difference:T65
+E20	Position-low:T64 Final_value:T65
 T65	MONEY 696 704	USD93.03
 R1	Cause-Precondition Arg1:E2 Arg2:E1
 T66	Commodity 471 480	commodity

@@ -39,13 +39,11 @@ E10	Position-low:T29 Final_value:T30
 T30	MONEY 554 562	USD84.27
 T31	Movement-up-gain 638 643	added
 E11	Movement-up-gain:T31 Item:T33 Reference_point_time:T67
-T32	Movement-down-loss 683 688	below
-E12	Movement-down-loss:T32 Item:T35 Forecast:T34
 T33	Economic_item 630 637	economy
 T34	Forecast_target 696 705	forecasts
 T35	Economic_item 689 695	market
 T36	Movement-up-gain 712 716	gain
-E13	Movement-up-gain:T36 
+E13	Movement-up-gain:T36 Difference:T88
 T37	Movement-down-loss 897 904	slipped
 E14	Movement-down-loss:T37 Reference_point_time:T38 Supplier_Consumer:T39 Item:T68
 T38	DATE 908 912	June
@@ -106,20 +104,22 @@ E24	Negative_sentiment:T72 Type:T73
 T73	LOCATION 1277 1283	global
 R7	Cause-Precondition Arg1:E24 Arg2:E23	
 T74	Cause-movement-down-loss 1403 1406	cut
-E25	Cause-movement-down-loss:T74 Type:T79 Attribute:T78 Forecast:T77 Modality_cue:T80 Forecaster:T81
+E25	Cause-movement-down-loss:T74 Type:T79 Forecast:T77 Modality_cue:T80 Forecaster:T81 Item:T78
 T75	Commodity 1452 1455	oil
 T76	Movement-down-loss 1456 1463	tanking
 E26	Movement-down-loss:T76 Item:T75
 T77	Forecast_target 1425 1434	forecasts
-T78	Financial_attribute 1418 1424	growth
+T78	Economic_item 1418 1424	growth
 T79	LOCATION 1411 1417	global
 T80	MODALITY_cue 1396 1402	likely
 T81	ORGANIZATION 1300 1327	International Monetary Fund
 R8	Cause-Precondition Arg1:E25 Arg2:E26	
 T82	Cause-movement-down-loss 1526 1530	trim
-E27	Cause-movement-down-loss:T82 Attribute:T83 Difference:T84
-T83	Financial_attribute 1545 1558	interest rate
+E27	Cause-movement-down-loss:T82 Difference:T84 Item:T83
+T83	Economic_item 1545 1558	interest rate
 T84	PERCENTAGE 1578 1583	0.75%
 T85	Economic_item 1752 1765	interest rate
 T86	Commodity 1803 1806	oil
 T87	Economic_item 1710 1717	economy
+T88	NUMBER 727 733	90,000
+A4	Modality E25 Other

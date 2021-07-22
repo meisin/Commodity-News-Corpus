@@ -43,10 +43,6 @@ A2	Modality E18 Other
 T35	POLARITY_cue 1805 1814	prevented
 T36	MODALITY_cue 1796 1801	could
 T37	MODALITY_cue 1635 1637	if
-T29	Embargo 1767 1795	application of the sanctions
-E17	Embargo:T29 Modality_cue:T36 Polarity_cue:T35
-A7	Polarity E17 Negative
-A8	Modality E17 Other
 T5	Embargo 19 28	sanctions
 E19	Embargo:T5 Modality_cue:T7 Imposer:T30 Imposer2:T33
 T7	MODALITY_cue 9 14	ready
@@ -94,3 +90,7 @@ T58	INTENSITY_cue 874 880	expand
 T16	Other_activities 942 1003	U.S. and EU cooperation on all energy services and technology
 T17	Economic_item 1026 1036	oil fields
 T44	Other_activities 2152 2190	sharing energy technology and services
+T29	Embargo 1786 1795	sanctions
+E17	Embargo:T29 Modality_cue:T36 Polarity_cue:T35
+A7	Polarity E17 Negative
+A8	Modality E17 Other

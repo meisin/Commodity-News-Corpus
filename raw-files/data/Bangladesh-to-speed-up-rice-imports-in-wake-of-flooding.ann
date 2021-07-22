@@ -1,0 +1,29 @@
+T1	Financial_attribute 28 35	imports
+T2	Commodity 23 27	rice
+T3	Commodity 276 280	rice
+T4	Financial_attribute 309 317	reserves
+T5	Financial_attribute 336 342	prices
+T6	Financial_attribute 375 381	output
+T7	Cause-movement-up-gain 714 723	Ramped up
+E1	Cause-movement-up-gain:T7 Attribute:T8 Supplier_Consumer:T9
+T8	Financial_attribute 724 730	demand
+T9	COUNTRY 736 746	Bangladesh
+T10	Commodity 775 779	rice
+T11	Financial_attribute 805 811	prices
+T12	Cause-movement-up-gain 895 900	boost
+E2	Cause-movement-up-gain:T12 Attribute:T13
+T13	Financial_attribute 907 915	reserves
+T14	Cause-movement-down-loss 920 930	bring down
+E3	Cause-movement-down-loss:T14 Attribute:T15 Item:T16
+T15	Financial_attribute 931 937	prices
+T16	Commodity 941 945	rice
+T17	Position-high 1011 1023	record highs
+E4	Position-high:T17 Attribute:T18 Item:T19 Type:T20
+T18	Financial_attribute 991 997	prices
+T19	Commodity 986 990	rice
+T20	LOCATION 980 985	Local
+T21	Financial_attribute 1034 1042	reserves
+T22	Position-low 1059 1063	lows
+E5	Position-low:T22 Duration:T23
+T23	DURATION 1050 1058	six-year
+T24	Financial_attribute 1137 1143	output

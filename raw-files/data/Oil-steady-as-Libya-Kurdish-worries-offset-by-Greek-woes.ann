@@ -23,7 +23,7 @@ T16	Civil-unrest 414 422	violence
 E7	Civil-unrest:T16 Place:T17 Intensity_cue:T94
 T17	COUNTRY 426 431	Libya
 T18	Negative_sentiment 436 444	concerns
-E8	Negative_sentiment:T18 Type:T19 Intensity_cue:T94
+E8	Negative_sentiment:T18 Type:T19 Intensity_cue:T94 Attribute:T97
 T19	COUNTRY 463 472	Kurdistan
 T20	Movement-down-loss 512 518	losses
 E9	Movement-down-loss:T20 Item:T22 Intensity_cue:T21
@@ -44,13 +44,13 @@ E12	Movement-down-loss:T31 Difference:T32 Attribute:T30 Item:T29 Final_value:T33
 T32	MONEY 1497 1504	3 cents
 T33	Price_unit 1508 1523	$61.49 a barrel
 T34	Position-high 1566 1570	peak
-E13	Position-high:T34 Difference:T35
+E13	Position-high:T34 Final_value:T35
 T35	Price_unit 1574 1589	$62.57 a barrel
 T36	Position-high 1595 1602	highest
 E14	Position-high:T36 Initial_reference_point:T37
 T37	DATE 1609 1616	Dec. 22
 T38	Movement-up-gain 1639 1645	fallen
-E15	Movement-up-gain:T38 Attribute:T43 Difference:T39 Reference_point_time:T40
+E15	Movement-up-gain:T38 Attribute:T43 Initial_value:T39 Initial_reference_point:T40
 T39	MONEY 1651 1655	$115
 T40	DATE 1659 1663	June
 T41	Commodity 1674 1677	oil
@@ -68,13 +68,13 @@ E19	Movement-down-loss:T48 Item:T49 Attribute:T50 Supplier_Consumer:T81
 T49	Commodity 1779 1782	oil
 T50	Financial_attribute 1783 1791	drilling
 T51	Movement-flat 1824 1833	unchanged
-E20	Movement-flat:T51 Difference:T55 Attribute:T53 Item:T52 Reference_point_time:T54 Supplier_Consumer:T79
+E20	Movement-flat:T51 Attribute:T53 Item:T52 Reference_point_time:T54 Supplier_Consumer:T79 Final_value:T55
 T52	Commodity 1805 1810	crude
 T53	Financial_attribute 1811 1818	futures
 T54	DATE 1799 1804	March
 T55	Price_unit 1837 1852	$52.78 a barrel
 T56	Movement-down-loss 2075 2082	falling
-E21	Movement-down-loss:T56 Attribute:T58 Item:T60 Supplier_Consumer:T59 Difference:T57 Initial_value:T61
+E21	Movement-down-loss:T56 Attribute:T58 Item:T60 Supplier_Consumer:T59 Initial_value:T61 Final_value:T57
 T57	Production_unit 2086 2097	350,000 bpd
 T58	Financial_attribute 2042 2052	production
 T59	COUNTRY 2030 2035	Libya
@@ -133,3 +133,6 @@ A5	Intensity E9 Eased
 T90	COUNTRY 784 805	two big oil producers
 R3	Cause-Precondition Arg1:E6 Arg2:E7	
 R6	Cause-Precondition Arg1:E6 Arg2:E8	
+T95	Commodity 2661 2664	oil
+T96	Financial_attribute 2346 2353	exports
+T97	Financial_attribute 450 457	exports

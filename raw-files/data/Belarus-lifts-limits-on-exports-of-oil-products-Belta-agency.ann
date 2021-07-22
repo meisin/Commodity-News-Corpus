@@ -1,0 +1,18 @@
+T1	Financial_attribute 24 31	exports
+T2	Commodity 35 47	oil products
+T3	Cause-movement-down-loss 14 20	limits
+E1	Cause-movement-down-loss:T3 Supplier_Consumer:T5 Attribute:T1 Item:T2 Intensity_cue:T4
+T4	INTENSITY_cue 8 13	lifts
+A1	Polarity E1 Negative
+T5	COUNTRY 0 7	Belarus
+T6	Cause-movement-down-loss 268 274	limits
+E2	Cause-movement-down-loss:T6 Attribute:T9 Item:T10 Intensity_cue:T7 Supplier_Consumer:T8
+A2	Intensity E1 Eased
+T7	INTENSITY_cue 260 267	lifting
+A3	Intensity E2 Eased
+T8	COUNTRY 249 256	Belarus
+T9	Financial_attribute 282 288	export
+T10	Commodity 296 308	oil products
+T11	Commodity 344 347	oil
+T12	Commodity 552 555	oil
+T13	Financial_attribute 556 563	exports
