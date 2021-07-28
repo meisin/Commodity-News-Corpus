@@ -49,12 +49,8 @@ T40	ORGANIZATION 1631 1645	European Union
 T42	Financial_attribute 1784 1794	production
 T44	Movement-up-gain 1820 1825	risen
 E15	Movement-up-gain:T44 Attribute:T42 Supplier_Consumer:T51
-T45	Movement-down-loss 1525 1529	fall
-E16	Movement-down-loss:T45 Item:T37
 T46	PERCENTAGE 2003 2030	little more than 20 percent
 T47	DATE 2031 2040	next year
-A1	Polarity E16 Positive
-A2	Modality E16 Other
 T48	Prohibiting 2096 2099	ban
 E17	Prohibiting:T48 Activity:T49
 T49	Other_activities 2103 2112	exporting
@@ -208,7 +204,6 @@ R6	Cause-Precondition Arg1:E14 Arg2:E47
 T143	Economic_item 1576 1583	economy
 T144	Slow-weak 1587 1590	hit
 E47	Slow-weak:T144 Item:T143
-R7	Cause-Precondition Arg1:E47 Arg2:E16	
 T138	Economic_item 2387 2394	economy
 R8	Cause-Precondition Arg1:E19 Arg2:E20	
 T145	Commodity 3768 3771	oil
@@ -216,3 +211,6 @@ T146	Commodity 4089 4092	oil
 T134	POLARITY_cue 4670 4672	un
 T147	MODALITY_cue 4672 4678	likely
 T148	Financial_attribute 3742 3748	supply
+T45	Movement-down-loss 1525 1531	fallen
+E16	Movement-down-loss:T45 Item:T37
+R7	Cause-Precondition Arg1:E47 Arg2:E16	

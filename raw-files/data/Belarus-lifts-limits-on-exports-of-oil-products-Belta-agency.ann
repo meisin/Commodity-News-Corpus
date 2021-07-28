@@ -3,7 +3,7 @@ T2	Commodity 35 47	oil products
 T3	Cause-movement-down-loss 14 20	limits
 E1	Cause-movement-down-loss:T3 Supplier_Consumer:T5 Attribute:T1 Item:T2 Intensity_cue:T4
 T4	INTENSITY_cue 8 13	lifts
-A1	Polarity E1 Negative
+A1	Polarity E1 Positive
 T5	COUNTRY 0 7	Belarus
 T6	Cause-movement-down-loss 268 274	limits
 E2	Cause-movement-down-loss:T6 Attribute:T9 Item:T10 Intensity_cue:T7 Supplier_Consumer:T8

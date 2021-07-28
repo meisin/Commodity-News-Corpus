@@ -137,6 +137,12 @@
             "standoff_id": 3
           }
         ],
+		"modality_cue": {
+          "start": 1,
+          "end": 2,
+          "text": "eyes",
+          "standoff_id": 8
+        },
         "intensity_cue": {
           "start": 2,
           "end": 3,

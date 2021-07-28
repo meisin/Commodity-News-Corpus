@@ -1,5 +1,5 @@
 T1	Cause-movement-down-loss 22 26	cuts
-E1	Cause-movement-down-loss:T1 Attribute:T2 Supplier_Consumer:T3 Intensity_cue:T7
+E1	Cause-movement-down-loss:T1 Attribute:T2 Supplier_Consumer:T3 Intensity_cue:T7 Modality_cue:T8
 T2	Financial_attribute 13 21	spending
 T3	ORGANIZATION 0 2	BP
 T4	PERCENTAGE 33 43	80 percent
