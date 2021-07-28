@@ -1,0 +1,177 @@
+[
+  {
+    "sentence_id": "10_Russia-lifts-limits-on-exports-of-oil-products-Belta-agency_0_aug1",
+    "words": [
+      "Russia",
+      "lifts",
+      "restrictions",
+      "on",
+      "exports",
+      "of",
+      "oil",
+      "products",
+      ":",
+      "Belta",
+      "agency",
+      "."
+    ],
+    "sentence": "Russia lifts restrictions on exports of oil products : Belta agency .",
+    "start": 0,
+    "end": 62,
+    "pos-tags": [
+      "NNP",
+      "VBZ",
+      "NNS",
+      "IN",
+      "NNS",
+      "IN",
+      "NN",
+      "NNS",
+      ":",
+      "NNP",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "Russia",
+      "lift",
+      "limit",
+      "on",
+      "export",
+      "of",
+      "oil",
+      "product",
+      ":",
+      "Belta",
+      "agency",
+      "."
+    ],
+    "ner": [
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=1/gov=-1",
+      "nsubj/dep=0/gov=1",
+      "dobj/dep=2/gov=1",
+      "case/dep=3/gov=4",
+      "nmod:on/dep=4/gov=2",
+      "case/dep=5/gov=7",
+      "compound/dep=6/gov=7",
+      "nmod:of/dep=7/gov=4",
+      "punct/dep=8/gov=2",
+      "compound/dep=9/gov=10",
+      "dep/dep=10/gov=2",
+      "punct/dep=11/gov=1"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "exports",
+        "start": 4,
+        "end": 5,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 1
+      },
+      {
+        "text": "oil products",
+        "start": 6,
+        "end": 8,
+        "entity-type": "Commodity",
+        "standoff_id": 2
+      },
+      {
+        "text": "Russia",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Country",
+        "standoff_id": 5
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "10_Russia-lifts-limits-on-exports-of-oil-products-Belta-agency_E1_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Negative",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 2,
+          "end": 3,
+          "text": "restrictions",
+          "standoff_id": 3
+        },
+        "arguments": [
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Supplier_Consumer",
+            "entity-type": "Country",
+            "text": "Russia",
+            "standoff_id": 5
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "exports",
+            "standoff_id": 1
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "oil products",
+            "standoff_id": 2
+          }
+        ],
+        "intensity_cue": {
+          "start": 1,
+          "end": 2,
+          "text": "lifts",
+          "standoff_id": 4
+        }
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "COUNTRY",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "COMMODITY",
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "COUNTRY",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "COMMODITY",
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  }
+]

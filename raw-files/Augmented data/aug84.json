@@ -1,0 +1,318 @@
+[
+  {
+    "sentence_id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_42_aug1",
+    "words": [
+      "By",
+      "cutting",
+      "more",
+      ",",
+      "the",
+      "group",
+      "may",
+      "boost",
+      "prices",
+      "and",
+      "end",
+      "up",
+      "encouraging",
+      "more",
+      "investment",
+      "in",
+      "U.S.",
+      "shale",
+      "and",
+      "a",
+      "create",
+      "a",
+      "fresh",
+      "oversupply",
+      "."
+    ],
+    "sentence": "By cutting more , the group may boost prices and end up encouraging more investment in U.S. shale and a create a fresh oversupply .",
+    "start": 5687,
+    "end": 5816,
+    "pos-tags": [
+      "IN",
+      "VBG",
+      "RB",
+      ",",
+      "DT",
+      "NN",
+      "MD",
+      "VB",
+      "NNS",
+      "CC",
+      "VB",
+      "RP",
+      "VBG",
+      "JJR",
+      "NN",
+      "IN",
+      "NNP",
+      "NN",
+      "CC",
+      "DT",
+      "VB",
+      "DT",
+      "JJ",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "by",
+      "cut",
+      "more",
+      ",",
+      "the",
+      "group",
+      "may",
+      "boost",
+      "price",
+      "and",
+      "end",
+      "up",
+      "encourage",
+      "more",
+      "investment",
+      "in",
+      "U.S.",
+      "shale",
+      "and",
+      "a",
+      "create",
+      "a",
+      "fresh",
+      "oversupply",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=7/gov=-1",
+      "mark/dep=0/gov=1",
+      "advcl:by/dep=1/gov=7",
+      "advmod/dep=2/gov=1",
+      "punct/dep=3/gov=7",
+      "det/dep=4/gov=5",
+      "nsubj/dep=5/gov=7",
+      "nsubj/dep=5/gov=10",
+      "aux/dep=6/gov=7",
+      "dobj/dep=8/gov=7",
+      "cc/dep=9/gov=7",
+      "conj:and/dep=10/gov=7",
+      "compound:prt/dep=11/gov=10",
+      "xcomp/dep=12/gov=10",
+      "amod/dep=13/gov=14",
+      "dobj/dep=14/gov=12",
+      "case/dep=15/gov=16",
+      "nmod:in/dep=16/gov=12",
+      "dobj/dep=17/gov=7",
+      "cc/dep=18/gov=17",
+      "dobj/dep=19/gov=7",
+      "conj:and/dep=19/gov=17",
+      "acl:relcl/dep=20/gov=17",
+      "det/dep=21/gov=23",
+      "amod/dep=22/gov=23",
+      "dobj/dep=23/gov=20",
+      "punct/dep=24/gov=7"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "prices",
+        "start": 8,
+        "end": 9,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 153
+      },
+      {
+        "text": "U.S. shale",
+        "start": 16,
+        "end": 18,
+        "entity-type": "Commodity",
+        "standoff_id": 121
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_E54_aug1",
+        "event_type": "Cause-movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 7,
+          "end": 8,
+          "text": "boost",
+          "standoff_id": 152
+        },
+        "arguments": [
+          {
+            "start": 8,
+            "end": 9,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 153
+          }
+        ],
+        "modality_cue": {
+          "start": 6,
+          "end": 7,
+          "text": "may",
+          "standoff_id": 151
+        }
+      },
+      {
+        "id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_E55_aug1",
+        "event_type": "Oversupply",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 23,
+          "end": 24,
+          "text": "oversupply",
+          "standoff_id": 154
+        },
+        "arguments": [],
+        "modality_cue": {
+          "start": 6,
+          "end": 7,
+          "text": "may",
+          "standoff_id": 151
+        }
+      },
+      {
+        "id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_E56_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Intensified",
+        "trigger": {
+          "start": 1,
+          "end": 2,
+          "text": "cutting",
+          "standoff_id": 157
+        },
+        "arguments": [],
+        "intensity_cue": {
+          "start": 2,
+          "end": 3,
+          "text": "more",
+          "standoff_id": 173
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_R11_aug1",
+        "cause": {
+          "event_id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_E56_aug1",
+          "start": 1,
+          "end": 2,
+          "event_type": "Cause-movement-down-loss"
+        },
+        "effect": {
+          "event_id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_E54_aug1",
+          "start": 7,
+          "end": 8,
+          "event_type": "Cause-movement-up-gain"
+        }
+      },
+      {
+        "id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_R12_aug1",
+        "cause": {
+          "event_id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_E54_aug1",
+          "start": 7,
+          "end": 8,
+          "event_type": "Cause-movement-up-gain"
+        },
+        "effect": {
+          "event_id": "4_opec-grapples-oil-risks-from-trade-war-to-mideast-conflict_E55_aug1",
+          "start": 23,
+          "end": 24,
+          "event_type": "Oversupply"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-UP-GAIN",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COMMODITY",
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "OVERSUPPLY",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-UP-GAIN",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COMMODITY",
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "OVERSUPPLY",
+      "O"
+    ]
+  }
+]

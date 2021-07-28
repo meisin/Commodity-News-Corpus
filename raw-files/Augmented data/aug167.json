@@ -1,0 +1,294 @@
+[
+ {
+    "sentence_id": "2_oil-jumps-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-eases-fuel-demand-concern_0_aug1",
+    "words": [
+      "Oil",
+      "jumps",
+      "more",
+      "than",
+      "2",
+      "%",
+      "as",
+      "slowdown",
+      "in",
+      "new",
+      "China",
+      "coronavirus",
+      "cases",
+      "eases",
+      "fuel",
+      "demand",
+      "worries",
+      "."
+    ],
+    "sentence": "Oil increases more than 2 % as slowdown in new China coronavirus cases lessens fuel demand worries .",
+    "start": 0,
+    "end": 93,
+    "pos-tags": [
+      "NN",
+      "VBZ",
+      "JJR",
+      "IN",
+      "CD",
+      "NN",
+      "IN",
+      "NN",
+      "IN",
+      "JJ",
+      "NNP",
+      "NN",
+      "NNS",
+      "VBZ",
+      "NN",
+      "NN",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "oil",
+      "jump",
+      "more",
+      "than",
+      "2",
+      "%",
+      "as",
+      "slowdown",
+      "in",
+      "new",
+      "China",
+      "coronavirus",
+      "case",
+      "ease",
+      "fuel",
+      "demand",
+      "concern",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "PERCENT",
+      "PERCENT",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=1/gov=-1",
+      "nsubj/dep=0/gov=1",
+      "advmod/dep=2/gov=4",
+      "mwe/dep=3/gov=2",
+      "nummod/dep=4/gov=5",
+      "dobj/dep=5/gov=1",
+      "mark/dep=6/gov=13",
+      "nsubj/dep=7/gov=13",
+      "case/dep=8/gov=12",
+      "amod/dep=9/gov=12",
+      "compound/dep=10/gov=12",
+      "compound/dep=11/gov=12",
+      "nmod:in/dep=12/gov=7",
+      "advcl:as/dep=13/gov=1",
+      "compound/dep=14/gov=16",
+      "compound/dep=15/gov=16",
+      "dobj/dep=16/gov=13",
+      "punct/dep=17/gov=1"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "more than 2%",
+        "start": 2,
+        "end": 5,
+        "entity-type": "Percentage",
+        "standoff_id": 77
+      },
+      {
+        "text": "Oil",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Commodity",
+        "standoff_id": 79
+      },
+      {
+        "text": "fuel",
+        "start": 14,
+        "end": 15,
+        "entity-type": "Commodity",
+        "standoff_id": 80
+      },
+      {
+        "text": "demand",
+        "start": 15,
+        "end": 16,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 81
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "2_oil-increases-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-lessens-fuel-demand-concern_E22_aug1",
+        "event_type": "Slow-weak",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 7,
+          "end": 8,
+          "text": "slowdown",
+          "standoff_id": 76
+        },
+        "arguments": []
+      },
+      {
+        "id": "2_oil-increases-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-lessens-fuel-demand-concern_E23_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 1,
+          "end": 2,
+          "text": "increases",
+          "standoff_id": 78
+        },
+        "arguments": [
+          {
+            "start": 2,
+            "end": 5,
+            "role": "Difference",
+            "entity-type": "Percentage",
+            "text": "more than 2%",
+            "standoff_id": 77
+          },
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 79
+          }
+        ]
+      },
+      {
+        "id": "2_oil-increases-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-lessens-fuel-demand-concern_E24_aug1",
+        "event_type": "Negative_sentiment",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 16,
+          "end": 17,
+          "text": "worries",
+          "standoff_id": 82
+        },
+        "arguments": [
+          {
+            "start": 15,
+            "end": 16,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "demand",
+            "standoff_id": 81
+          },
+          {
+            "start": 14,
+            "end": 15,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "fuel",
+            "standoff_id": 80
+          }
+        ],
+        "intensity_cue": {
+          "start": 13,
+          "end": 14,
+          "text": "lessens",
+          "standoff_id": 83
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "2_oil-increases-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-lessens-fuel-demand-concern_R1_aug1",
+        "cause": {
+          "event_id": "2_oil-increases-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-lessens-fuel-demand-concern_E22_aug1",
+          "start": 7,
+          "end": 8,
+          "event_type": "Slow-weak"
+        },
+        "effect": {
+          "event_id": "2_oil-increases-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-lessens-fuel-demand-concern_E24_aug1",
+          "start": 16,
+          "end": 17,
+          "event_type": "Negative_sentiment"
+        }
+      },
+      {
+        "id": "2_oil-increases-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-lessens-fuel-demand-concern_R2_aug1",
+        "cause": {
+          "event_id": "2_oil-increases-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-lessens-fuel-demand-concern_E24_aug1",
+          "start": 16,
+          "end": 17,
+          "event_type": "Negative_sentiment"
+        },
+        "effect": {
+          "event_id": "2_oil-increases-more-than-2%-as-slowdown-in-new-China-coronavirus-cases-lessens-fuel-demand-concern_E23_aug1",
+          "start": 1,
+          "end": 2,
+          "event_type": "Movement-up-gain"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "COMMODITY",
+      "MOVEMENT-UP-GAIN",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "O",
+      "O",
+      "SLOW-WEAK",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "NEGATIVE_SENTIMENT",
+      "O"
+    ],
+    "combined_entity": [
+      "COMMODITY",
+      "MOVEMENT-UP-GAIN",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "PERCENT",
+      "O",
+      "SLOW-WEAK",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "NEGATIVE_SENTIMENT",
+      "O"
+    ]
+  }
+]

@@ -1,0 +1,271 @@
+[
+  {
+    "sentence_id": "8_movement_up_gain_21_aug1",
+    "words": [
+      "Unplanned",
+      "supply",
+      "cuts",
+      "from",
+      "Venezuela",
+      "to",
+      "Nigeria",
+      "eased",
+      "the",
+      "oversupply",
+      "that",
+      "prompted",
+      "the",
+      "worst",
+      "price",
+      "rout",
+      "in",
+      "a",
+      "generation",
+      "."
+    ],
+    "sentence": "Unplanned supply cuts from Venezuela to Nigeria eased the oversupply that prompted the worst price rout in a generation .",
+    "start": 3482,
+    "end": 3597,
+    "pos-tags": [
+      "JJ",
+      "NN",
+      "NNS",
+      "IN",
+      "NNP",
+      "TO",
+      "NNP",
+      "VBD",
+      "DT",
+      "NN",
+      "WDT",
+      "VBD",
+      "DT",
+      "JJS",
+      "NN",
+      "NN",
+      "IN",
+      "DT",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "unplanned",
+      "supply",
+      "cut",
+      "from",
+      "Venezuela",
+      "to",
+      "Nigeria",
+      "ease",
+      "the",
+      "oversupply",
+      "that",
+      "prompt",
+      "the",
+      "worst",
+      "price",
+      "rout",
+      "in",
+      "a",
+      "generation",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=7/gov=-1",
+      "amod/dep=0/gov=2",
+      "compound/dep=1/gov=2",
+      "nsubj/dep=2/gov=7",
+      "case/dep=3/gov=4",
+      "nmod:from/dep=4/gov=2",
+      "case/dep=5/gov=6",
+      "nmod:to/dep=6/gov=4",
+      "det/dep=8/gov=9",
+      "dobj/dep=9/gov=7",
+      "nsubj/dep=9/gov=11",
+      "ref/dep=10/gov=9",
+      "acl:relcl/dep=11/gov=9",
+      "det/dep=12/gov=15",
+      "amod/dep=13/gov=15",
+      "compound/dep=14/gov=15",
+      "dobj/dep=15/gov=11",
+      "case/dep=16/gov=18",
+      "det/dep=17/gov=18",
+      "nmod:in/dep=18/gov=15",
+      "punct/dep=19/gov=7"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "supply",
+        "start": 1,
+        "end": 2,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 174
+      },
+      {
+        "text": "Venezuela",
+        "start": 4,
+        "end": 5,
+        "entity-type": "Country",
+        "standoff_id": 176
+      },
+      {
+        "text": "Nigeria",
+        "start": 6,
+        "end": 7,
+        "entity-type": "Country",
+        "standoff_id": 177
+      },
+      {
+        "text": "price",
+        "start": 14,
+        "end": 15,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 276
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "8_movement_up_gain_E50_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 2,
+          "end": 3,
+          "text": "cuts",
+          "standoff_id": 175
+        },
+        "arguments": [
+          {
+            "start": 1,
+            "end": 2,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "supply",
+            "standoff_id": 174
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "role": "Supplier_Consumer",
+            "entity-type": "Country",
+            "text": "Venezuela",
+            "standoff_id": 176
+          },
+          {
+            "start": 6,
+            "end": 7,
+            "role": "Supplier_Consumer2",
+            "entity-type": "Country",
+            "text": "Nigeria",
+            "standoff_id": 177
+          }
+        ]
+      },
+      {
+        "id": "8_movement_up_gain_E51_aug1",
+        "event_type": "Oversupply",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 9,
+          "end": 10,
+          "text": "oversupply",
+          "standoff_id": 178
+        },
+        "arguments": [],
+        "intensity_cue": {
+          "start": 7,
+          "end": 8,
+          "text": "eased",
+          "standoff_id": 241
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "8_movement_up_gain_R23_aug1",
+        "cause": {
+          "event_id": "8_movement_up_gain_E50_aug1",
+          "start": 2,
+          "end": 3,
+          "event_type": "Cause-movement-down-loss"
+        },
+        "effect": {
+          "event_id": "8_movement_up_gain_E51_aug1",
+          "start": 9,
+          "end": 10,
+          "event_type": "Oversupply"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "COUNTRY",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "OVERSUPPLY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "COUNTRY",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "OVERSUPPLY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  }
+]

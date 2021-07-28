@@ -1,0 +1,285 @@
+[
+  {
+    "sentence_id": "7_Crude-dips-on-lingering-Greece-concerns-US-demand_6_aug1",
+    "words": [
+      "A",
+      "default",
+      "would",
+      "have",
+      "weaken",
+      "an",
+      "already",
+      "weak",
+      "European",
+      "economy",
+      ",",
+      "and",
+      "reduce",
+      "oil",
+      "demand",
+      "in",
+      "the",
+      "process",
+      "."
+    ],
+    "sentence": "A default would have weaken an already weak European economy , and reduce oil demand in the process .",
+    "start": 843,
+    "end": 943,
+    "pos-tags": [
+      "DT",
+      "NN",
+      "MD",
+      "VB",
+      "VBN",
+      "DT",
+      "RB",
+      "JJ",
+      "JJ",
+      "NN",
+      ",",
+      "CC",
+      "VB",
+      "NN",
+      "NN",
+      "IN",
+      "DT",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "a",
+      "default",
+      "would",
+      "have",
+      "cool",
+      "a",
+      "already",
+      "weak",
+      "european",
+      "economy",
+      ",",
+      "and",
+      "reduce",
+      "oil",
+      "demand",
+      "in",
+      "the",
+      "process",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "NATIONALITY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=4/gov=-1",
+      "det/dep=0/gov=1",
+      "nsubj/dep=1/gov=4",
+      "nsubj/dep=1/gov=12",
+      "aux/dep=2/gov=4",
+      "aux/dep=3/gov=4",
+      "det/dep=5/gov=9",
+      "advmod/dep=6/gov=9",
+      "amod/dep=7/gov=9",
+      "amod/dep=8/gov=9",
+      "dobj/dep=9/gov=4",
+      "punct/dep=10/gov=4",
+      "cc/dep=11/gov=4",
+      "conj:and/dep=12/gov=4",
+      "compound/dep=13/gov=14",
+      "dobj/dep=14/gov=12",
+      "case/dep=15/gov=17",
+      "det/dep=16/gov=17",
+      "nmod:in/dep=17/gov=12",
+      "punct/dep=18/gov=4"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "oil",
+        "start": 13,
+        "end": 14,
+        "entity-type": "Commodity",
+        "standoff_id": 34
+      },
+      {
+        "text": "demand",
+        "start": 14,
+        "end": 15,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 35
+      },
+      {
+        "text": "European",
+        "start": 8,
+        "end": 9,
+        "entity-type": "Nationality",
+        "standoff_id": 37
+      },
+      {
+        "text": "economy",
+        "start": 9,
+        "end": 10,
+        "entity-type": "Economic_item",
+        "standoff_id": 38
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "7_Crude-dips-on-lingering-Greece-concerns-US-demand_E12_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 12,
+          "end": 13,
+          "text": "reduce",
+          "standoff_id": 33
+        },
+        "arguments": [
+          {
+            "start": 13,
+            "end": 14,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "oil",
+            "standoff_id": 34
+          },
+          {
+            "start": 14,
+            "end": 15,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "demand",
+            "standoff_id": 35
+          }
+        ],
+        "modality_cue": {
+          "start": 2,
+          "end": 3,
+          "text": "would",
+          "standoff_id": 31
+        }
+      },
+      {
+        "id": "7_Crude-dips-on-lingering-Greece-concerns-US-demand_E13_aug1",
+        "event_type": "Slow-weak",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Intensified",
+        "trigger": {
+          "start": 7,
+          "end": 8,
+          "text": "weak",
+          "standoff_id": 36
+        },
+        "arguments": [
+          {
+            "start": 8,
+            "end": 9,
+            "role": "Type",
+            "entity-type": "Nationality",
+            "text": "European",
+            "standoff_id": 37
+          },
+          {
+            "start": 9,
+            "end": 10,
+            "role": "Item",
+            "entity-type": "Economic_item",
+            "text": "economy",
+            "standoff_id": 38
+          }
+        ],
+        "modality_cue": {
+          "start": 2,
+          "end": 3,
+          "text": "would",
+          "standoff_id": 31
+        },
+        "intensity_cue": {
+          "start": 4,
+          "end": 5,
+          "text": "weaken",
+          "standoff_id": 32
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "7_Crude-dips-on-lingering-Greece-concerns-US-demand_R6_aug1",
+        "cause": {
+          "event_id": "7_Crude-dips-on-lingering-Greece-concerns-US-demand_E13_aug1",
+          "start": 7,
+          "end": 8,
+          "event_type": "Slow-weak"
+        },
+        "effect": {
+          "event_id": "7_Crude-dips-on-lingering-Greece-concerns-US-demand_E12_aug1",
+          "start": 12,
+          "end": 13,
+          "event_type": "Cause-movement-down-loss"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "SLOW-WEAK",
+      "NATIONALITY",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "SLOW-WEAK",
+      "NATIONALITY",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  }
+]

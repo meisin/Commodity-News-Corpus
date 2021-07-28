@@ -1,0 +1,271 @@
+[
+ {
+    "sentence_id": "8_movement_down_loss_13_aug1",
+    "words": [
+      "Unplanned",
+      "production",
+      "curbs",
+      "from",
+      "Venezuela",
+      "to",
+      "Norway",
+      "eased",
+      "the",
+      "oversupply",
+      "that",
+      "prompted",
+      "the",
+      "worst",
+      "price",
+      "rout",
+      "in",
+      "a",
+      "generation",
+      "."
+    ],
+    "sentence": "Unplanned production curbs from Venezuela to Norway eased the oversupply that prompted the worst price rout in a generation .",
+    "start": 1885,
+    "end": 2000,
+    "pos-tags": [
+      "JJ",
+      "NN",
+      "NNS",
+      "IN",
+      "NNP",
+      "TO",
+      "NNP",
+      "VBD",
+      "DT",
+      "NN",
+      "WDT",
+      "VBD",
+      "DT",
+      "JJS",
+      "NN",
+      "NN",
+      "IN",
+      "DT",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "unplanned",
+      "production",
+      "cut",
+      "from",
+      "Venezuela",
+      "to",
+      "Norway",
+      "ease",
+      "the",
+      "oversupply",
+      "that",
+      "prompt",
+      "the",
+      "worst",
+      "price",
+      "rout",
+      "in",
+      "a",
+      "generation",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=7/gov=-1",
+      "amod/dep=0/gov=2",
+      "compound/dep=1/gov=2",
+      "nsubj/dep=2/gov=7",
+      "case/dep=3/gov=4",
+      "nmod:from/dep=4/gov=2",
+      "case/dep=5/gov=6",
+      "nmod:to/dep=6/gov=4",
+      "det/dep=8/gov=9",
+      "dobj/dep=9/gov=7",
+      "nsubj/dep=9/gov=11",
+      "ref/dep=10/gov=9",
+      "acl:relcl/dep=11/gov=9",
+      "det/dep=12/gov=15",
+      "amod/dep=13/gov=15",
+      "compound/dep=14/gov=15",
+      "dobj/dep=15/gov=11",
+      "case/dep=16/gov=18",
+      "det/dep=17/gov=18",
+      "nmod:in/dep=18/gov=15",
+      "punct/dep=19/gov=7"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "production",
+        "start": 1,
+        "end": 2,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 87
+      },
+      {
+        "text": "Venezuela",
+        "start": 4,
+        "end": 5,
+        "entity-type": "Country",
+        "standoff_id": 88
+      },
+      {
+        "text": "Norway",
+        "start": 6,
+        "end": 7,
+        "entity-type": "Country",
+        "standoff_id": 89
+      },
+      {
+        "text": "price",
+        "start": 14,
+        "end": 15,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 200
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "8_movement_down_loss_E23_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 2,
+          "end": 3,
+          "text": "curbs",
+          "standoff_id": 86
+        },
+        "arguments": [
+          {
+            "start": 1,
+            "end": 2,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "production",
+            "standoff_id": 87
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "role": "Supplier_Consumer",
+            "entity-type": "Country",
+            "text": "Venezuela",
+            "standoff_id": 88
+          },
+          {
+            "start": 6,
+            "end": 7,
+            "role": "Supplier_Consumer2",
+            "entity-type": "Country",
+            "text": "Norway",
+            "standoff_id": 89
+          }
+        ]
+      },
+      {
+        "id": "8_movement_down_loss_E39_aug1",
+        "event_type": "Oversupply",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 9,
+          "end": 10,
+          "text": "oversupply",
+          "standoff_id": 140
+        },
+        "arguments": [],
+        "intensity_cue": {
+          "start": 7,
+          "end": 8,
+          "text": "eased",
+          "standoff_id": 182
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "8_movement_down_loss_R10_aug1",
+        "cause": {
+          "event_id": "8_movement_down_loss_E23_aug1",
+          "start": 2,
+          "end": 3,
+          "event_type": "Cause-movement-down-loss"
+        },
+        "effect": {
+          "event_id": "8_movement_down_loss_E39_aug1",
+          "start": 9,
+          "end": 10,
+          "event_type": "Oversupply"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "COUNTRY",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "OVERSUPPLY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "COUNTRY",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "OVERSUPPLY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  }
+]

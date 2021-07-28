@@ -1,0 +1,185 @@
+[
+  {
+    "sentence_id": "4_saudi-arabia-Intensifies-price-war-with-huge-oil-output-hike_0_aug1",
+    "words": [
+      "Saudi",
+      "Arabia",
+      "Intensifies",
+      "Price",
+      "War",
+      "With",
+      "Huge",
+      "Oil",
+      "Output",
+      "Increase",
+      "."
+    ],
+    "sentence": "Saudi Arabia Intensifies Price War With Huge Oil Output Increase .",
+    "start": 0,
+    "end": 59,
+    "pos-tags": [
+      "NNP",
+      "NNP",
+      "NNP",
+      "NNP",
+      "NNP",
+      "IN",
+      "JJ",
+      "NN",
+      "NN",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "Saudi",
+      "Arabia",
+      "Intensifies",
+      "Price",
+      "War",
+      "with",
+      "huge",
+      "oil",
+      "output",
+      "Increase",
+      "."
+    ],
+    "ner": [
+      "COUNTRY",
+      "COUNTRY",
+      "O",
+      "O",
+      "CAUSE_OF_DEATH",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=4/gov=-1",
+      "compound/dep=0/gov=4",
+      "compound/dep=1/gov=4",
+      "compound/dep=2/gov=4",
+      "compound/dep=3/gov=4",
+      "case/dep=5/gov=9",
+      "amod/dep=6/gov=9",
+      "compound/dep=7/gov=9",
+      "compound/dep=8/gov=9",
+      "dep/dep=9/gov=4",
+      "punct/dep=10/gov=4"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "Saudi Arabia",
+        "start": 0,
+        "end": 2,
+        "entity-type": "Country",
+        "standoff_id": 1
+      },
+      {
+        "text": "Output",
+        "start": 8,
+        "end": 9,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 4
+      },
+      {
+        "text": "Oil",
+        "start": 7,
+        "end": 8,
+        "entity-type": "Commodity",
+        "standoff_id": 5
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "4_saudi-arabia-Intensifies-price-war-with-huge-oil-output-hike_E1_aug1",
+        "event_type": "trade-financial-tension",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Intensified",
+        "trigger": {
+          "start": 3,
+          "end": 5,
+          "text": "Price War",
+          "standoff_id": 2
+        },
+        "arguments": [
+          {
+            "start": 0,
+            "end": 2,
+            "role": "Participating_countries",
+            "entity-type": "Country",
+            "text": "Saudi Arabia",
+            "standoff_id": 1
+          }
+        ],
+        "intensity_cue": {
+          "start": 2,
+          "end": 3,
+          "text": "Intensifies",
+          "standoff_id": 36
+        }
+      },
+      {
+        "id": "4_saudi-arabia-Intensifies-price-war-with-huge-oil-output-hike_E2_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 9,
+          "end": 10,
+          "text": "Increase",
+          "standoff_id": 3
+        },
+        "arguments": [
+          {
+            "start": 8,
+            "end": 9,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "Output",
+            "standoff_id": 4
+          },
+          {
+            "start": 7,
+            "end": 8,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 5
+          }
+        ]
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "COUNTRY",
+      "COUNTRY",
+      "O",
+      "TRADE-FINANCIAL-TENSION",
+      "TRADE-FINANCIAL-TENSION",
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "O"
+    ],
+    "combined_entity": [
+      "COUNTRY",
+      "COUNTRY",
+      "O",
+      "TRADE-FINANCIAL-TENSION",
+      "TRADE-FINANCIAL-TENSION",
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "O"
+    ]
+  }
+]

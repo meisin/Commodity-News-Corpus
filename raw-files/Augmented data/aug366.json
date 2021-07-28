@@ -1,0 +1,541 @@
+[
+  {
+    "sentence_id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_2_aug1",
+    "words": [
+      "Investing.com",
+      "--",
+      "Crude",
+      "prices",
+      "settled",
+      "lower",
+      "on",
+      "Thursday",
+      ",",
+      "as",
+      "data",
+      "showing",
+      "U.S.",
+      "crude",
+      "output",
+      "spiked",
+      "to",
+      "its",
+      "highest",
+      "in",
+      "over",
+      "three",
+      "years",
+      "offset",
+      "a",
+      "drop",
+      "in",
+      "supplies",
+      "of",
+      "U.S.",
+      "crude",
+      "for",
+      "a",
+      "tenth-straight",
+      "week",
+      "."
+    ],
+    "sentence": "Investing.com -- Crude prices settled lower on Thursday , as data showing U.S. crude output spiked to its highest in over three years offset a drop in supplies of U.S. crude for a tenth-straight week .",
+    "start": 174,
+    "end": 379,
+    "pos-tags": [
+      "NNP",
+      ":",
+      "JJ",
+      "NNS",
+      "VBD",
+      "JJR",
+      "IN",
+      "NNP",
+      ",",
+      "IN",
+      "NNS",
+      "VBG",
+      "NNP",
+      "JJ",
+      "NN",
+      "VBD",
+      "TO",
+      "PRP$",
+      "JJS",
+      "IN",
+      "IN",
+      "CD",
+      "NNS",
+      "VBP",
+      "DT",
+      "NN",
+      "IN",
+      "NNS",
+      "IN",
+      "NNP",
+      "NN",
+      "IN",
+      "DT",
+      "JJ",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "Investing.com",
+      "--",
+      "crude",
+      "future",
+      "settle",
+      "lower",
+      "on",
+      "Thursday",
+      ",",
+      "as",
+      "datum",
+      "show",
+      "U.S.",
+      "crude",
+      "output",
+      "rise",
+      "to",
+      "its",
+      "highest",
+      "in",
+      "over",
+      "three",
+      "year",
+      "offset",
+      "a",
+      "drop",
+      "in",
+      "supplies",
+      "of",
+      "U.S.",
+      "crude",
+      "for",
+      "a",
+      "tenth-straight",
+      "week",
+      "."
+    ],
+    "ner": [
+      "URL",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "DURATION",
+      "DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "DURATION",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=23/gov=-1",
+      "nsubj/dep=0/gov=23",
+      "punct/dep=1/gov=4",
+      "amod/dep=2/gov=3",
+      "nsubj/dep=3/gov=4",
+      "dep/dep=4/gov=0",
+      "dobj/dep=5/gov=4",
+      "case/dep=6/gov=7",
+      "nmod:on/dep=7/gov=4",
+      "punct/dep=8/gov=4",
+      "mark/dep=9/gov=15",
+      "nsubj/dep=10/gov=15",
+      "acl/dep=11/gov=10",
+      "compound/dep=12/gov=14",
+      "amod/dep=13/gov=14",
+      "dobj/dep=14/gov=11",
+      "advcl:as/dep=15/gov=4",
+      "case/dep=16/gov=18",
+      "nmod:poss/dep=17/gov=18",
+      "nmod:to/dep=18/gov=15",
+      "case/dep=19/gov=22",
+      "amod/dep=20/gov=22",
+      "nummod/dep=21/gov=22",
+      "nmod:in/dep=22/gov=15",
+      "det/dep=24/gov=25",
+      "dobj/dep=25/gov=23",
+      "case/dep=26/gov=27",
+      "nmod:in/dep=27/gov=25",
+      "case/dep=28/gov=30",
+      "compound/dep=29/gov=30",
+      "nmod:of/dep=30/gov=27",
+      "case/dep=31/gov=34",
+      "det/dep=32/gov=34",
+      "amod/dep=33/gov=34",
+      "nmod:for/dep=34/gov=23",
+      "punct/dep=35/gov=23"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "prices",
+        "start": 3,
+        "end": 4,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 8
+      },
+      {
+        "text": "Crude",
+        "start": 2,
+        "end": 3,
+        "entity-type": "Commodity",
+        "standoff_id": 9
+      },
+      {
+        "text": "Thursday",
+        "start": 7,
+        "end": 8,
+        "entity-type": "Date",
+        "standoff_id": 10
+      },
+      {
+        "text": "output",
+        "start": 14,
+        "end": 15,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 12
+      },
+      {
+        "text": "three years",
+        "start": 21,
+        "end": 23,
+        "entity-type": "Duration",
+        "standoff_id": 16
+      },
+      {
+        "text": "supplies",
+        "start": 27,
+        "end": 28,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 24
+      },
+      {
+        "text": "crude",
+        "start": 13,
+        "end": 14,
+        "entity-type": "Commodity",
+        "standoff_id": 13
+      },
+      {
+        "text": "U.S.",
+        "start": 12,
+        "end": 13,
+        "entity-type": "Country",
+        "standoff_id": 93
+      },
+      {
+        "text": "U.S.",
+        "start": 29,
+        "end": 30,
+        "entity-type": "Country",
+        "standoff_id": 25
+      },
+      {
+        "text": "crude",
+        "start": 30,
+        "end": 31,
+        "entity-type": "Commodity",
+        "standoff_id": 94
+      },
+      {
+        "text": "tenth-straight week",
+        "start": 33,
+        "end": 35,
+        "entity-type": "Duration",
+        "standoff_id": 103
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_E3_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 5,
+          "end": 6,
+          "text": "lower",
+          "standoff_id": 7
+        },
+        "arguments": [
+          {
+            "start": 7,
+            "end": 8,
+            "role": "Reference_point_time",
+            "entity-type": "Date",
+            "text": "Thursday",
+            "standoff_id": 10
+          },
+          {
+            "start": 3,
+            "end": 4,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 8
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Crude",
+            "standoff_id": 9
+          }
+        ]
+      },
+      {
+        "id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_E4_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 15,
+          "end": 16,
+          "text": "spiked",
+          "standoff_id": 11
+        },
+        "arguments": [
+          {
+            "start": 14,
+            "end": 15,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "output",
+            "standoff_id": 12
+          },
+          {
+            "start": 13,
+            "end": 14,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "crude",
+            "standoff_id": 13
+          },
+          {
+            "start": 12,
+            "end": 13,
+            "role": "Supplier_Consumer",
+            "entity-type": "Country",
+            "text": "U.S.",
+            "standoff_id": 93
+          }
+        ]
+      },
+      {
+        "id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_E5_aug1",
+        "event_type": "Position-high",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 18,
+          "end": 19,
+          "text": "highest",
+          "standoff_id": 15
+        },
+        "arguments": [
+          {
+            "start": 21,
+            "end": 23,
+            "role": "Duration",
+            "entity-type": "Duration",
+            "text": "three years",
+            "standoff_id": 16
+          }
+        ]
+      },
+      {
+        "id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_E6_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 25,
+          "end": 26,
+          "text": "drop",
+          "standoff_id": 17
+        },
+        "arguments": [
+          {
+            "start": 27,
+            "end": 28,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "supplies",
+            "standoff_id": 24
+          },
+          {
+            "start": 29,
+            "end": 30,
+            "role": "Supplier_Consumer",
+            "entity-type": "Country",
+            "text": "U.S.",
+            "standoff_id": 25
+          },
+          {
+            "start": 30,
+            "end": 31,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "crude",
+            "standoff_id": 94
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "role": "Duration",
+            "entity-type": "Duration",
+            "text": "tenth-straight week",
+            "standoff_id": 103
+          }
+        ],
+        "intensity_cue": {
+          "start": 23,
+          "end": 24,
+          "text": "offset",
+          "standoff_id": 96
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_R2_aug1",
+        "cause": {
+          "event_id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_E4_aug1",
+          "start": 15,
+          "end": 16,
+          "event_type": "Movement-up-gain"
+        },
+        "effect": {
+          "event_id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_E3_aug1",
+          "start": 5,
+          "end": 6,
+          "event_type": "Movement-down-loss"
+        }
+      },
+      {
+        "id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_R4_aug1",
+        "cause": {
+          "event_id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_E4_aug1",
+          "start": 15,
+          "end": 16,
+          "event_type": "Movement-up-gain"
+        },
+        "effect": {
+          "event_id": "7_Crude-oil-settles-lower-as-US-output-hits-2year-high_E6_aug1",
+          "start": 25,
+          "end": 26,
+          "event_type": "Movement-down-loss"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "O",
+      "POSITION-HIGH",
+      "O",
+      "O",
+      "DURATION",
+      "DURATION",
+      "O",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "COUNTRY",
+      "COMMODITY",
+      "O",
+      "O",
+      "DURATION",
+      "DURATION",
+      "O"
+    ],
+    "combined_entity": [
+      "URL",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "O",
+      "POSITION-HIGH",
+      "O",
+      "O",
+      "DURATION",
+      "DURATION",
+      "O",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "COUNTRY",
+      "COMMODITY",
+      "O",
+      "O",
+      "DURATION",
+      "DURATION",
+      "O"
+    ]
+  }
+]

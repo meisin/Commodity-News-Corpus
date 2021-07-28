@@ -1,0 +1,256 @@
+[
+  {
+    "sentence_id": "8_Oil-drops-7%-on-Europe-vaccine-snag-US_10_aug1",
+    "words": [
+      "Oil",
+      "has",
+      "also",
+      "been",
+      "unable",
+      "to",
+      "shake",
+      "off",
+      "weakness",
+      "tied",
+      "to",
+      "the",
+      "increase",
+      "in",
+      "U.S.",
+      "crude",
+      "stockpiles",
+      "."
+    ],
+    "sentence": "Oil has also been unable to shake off weakness tied to the increase in U.S. crude stockpiles .",
+    "start": 1366,
+    "end": 1456,
+    "pos-tags": [
+      "NN",
+      "VBZ",
+      "RB",
+      "VBN",
+      "JJ",
+      "TO",
+      "VB",
+      "RP",
+      "NN",
+      "VBN",
+      "TO",
+      "DT",
+      "NN",
+      "IN",
+      "NNP",
+      "JJ",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "oil",
+      "have",
+      "also",
+      "be",
+      "unable",
+      "to",
+      "shake",
+      "off",
+      "weakness",
+      "tie",
+      "to",
+      "the",
+      "increase",
+      "in",
+      "U.S.",
+      "crude",
+      "inventory",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=4/gov=-1",
+      "nsubj/dep=0/gov=4",
+      "nsubj:xsubj/dep=0/gov=6",
+      "aux/dep=1/gov=4",
+      "advmod/dep=2/gov=4",
+      "cop/dep=3/gov=4",
+      "mark/dep=5/gov=6",
+      "xcomp/dep=6/gov=4",
+      "compound:prt/dep=7/gov=6",
+      "dobj/dep=8/gov=6",
+      "acl/dep=9/gov=8",
+      "case/dep=10/gov=12",
+      "det/dep=11/gov=12",
+      "nmod:to/dep=12/gov=9",
+      "case/dep=13/gov=16",
+      "compound/dep=14/gov=16",
+      "amod/dep=15/gov=16",
+      "nmod:in/dep=16/gov=12",
+      "punct/dep=17/gov=4"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "Oil",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Commodity",
+        "standoff_id": 51
+      },
+      {
+        "text": "U.S",
+        "start": 14,
+        "end": 15,
+        "entity-type": "Country",
+        "standoff_id": 22
+      },
+      {
+        "text": "crude",
+        "start": 15,
+        "end": 16,
+        "entity-type": "Commodity",
+        "standoff_id": 35
+      },
+      {
+        "text": "stockpiles",
+        "start": 16,
+        "end": 17,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 115
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "8_Oil-drops-7%-on-Europe-vaccine-snag-US_E15_aug1",
+        "event_type": "Slow-weak",
+        "polarity": "Negative",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 8,
+          "end": 9,
+          "text": "weakness",
+          "standoff_id": 52
+        },
+        "arguments": [
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 51
+          }
+        ],
+        "intensity_cue": {
+          "start": 6,
+          "end": 8,
+          "text": "shake off",
+          "standoff_id": 83
+        },
+        "polarity_cue": {
+          "start": 4,
+          "end": 5,
+          "text": "unable",
+          "standoff_id": 84
+        }
+      },
+      {
+        "id": "8_Oil-drops-7%-on-Europe-vaccine-snag-US_E11_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 12,
+          "end": 13,
+          "text": "increase",
+          "standoff_id": 24
+        },
+        "arguments": [
+          {
+            "start": 14,
+            "end": 15,
+            "role": "Supplier_Consumer",
+            "entity-type": "Country",
+            "text": "U.S",
+            "standoff_id": 22
+          },
+          {
+            "start": 15,
+            "end": 16,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "crude",
+            "standoff_id": 35
+          },
+          {
+            "start": 16,
+            "end": 17,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "stockpiles",
+            "standoff_id": 115
+          }
+        ]
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "SLOW-WEAK",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "COUNTRY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ],
+    "combined_entity": [
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "SLOW-WEAK",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "COUNTRY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ]
+  }
+]

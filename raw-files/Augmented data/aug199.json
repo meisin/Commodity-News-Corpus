@@ -1,0 +1,266 @@
+[
+  {
+    "sentence_id": "6_Oil-jumps-as-Qatar-ditched-London-attacks-hurt-sterling_23_aug1",
+    "words": [
+      "Japan",
+      "&",
+      "aposs",
+      "Nikkei",
+      "-LRB-",
+      "N225",
+      "-RRB-",
+      "also",
+      "added",
+      "0.1",
+      "percent",
+      "as",
+      "the",
+      "yen",
+      "reversed",
+      "some",
+      "of",
+      "its",
+      "gains",
+      "."
+    ],
+    "sentence": "Japan & aposs Nikkei -LRB- N225 -RRB- also added 0.1 percent as the yen reversed some of its gains .",
+    "start": 2813,
+    "end": 2903,
+    "pos-tags": [
+      "NNP",
+      "CC",
+      "NNP",
+      "NNP",
+      "-LRB-",
+      "NN",
+      "-RRB-",
+      "RB",
+      "VBD",
+      "CD",
+      "NN",
+      "IN",
+      "DT",
+      "NN",
+      "VBD",
+      "DT",
+      "IN",
+      "PRP$",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "Japan",
+      "&",
+      "aposs",
+      "Nikkei",
+      "-lrb-",
+      "n225",
+      "-rrb-",
+      "also",
+      "add",
+      "0.1",
+      "percent",
+      "as",
+      "the",
+      "yen",
+      "surrender",
+      "some",
+      "of",
+      "its",
+      "gain",
+      "."
+    ],
+    "ner": [
+      "COUNTRY",
+      "O",
+      "O",
+      "MISC",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "PERCENT",
+      "PERCENT",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=8/gov=-1",
+      "compound/dep=0/gov=3",
+      "cc/dep=1/gov=0",
+      "conj:&/dep=2/gov=0",
+      "compound/dep=2/gov=3",
+      "nsubj/dep=3/gov=8",
+      "punct/dep=4/gov=5",
+      "appos/dep=5/gov=3",
+      "punct/dep=6/gov=5",
+      "advmod/dep=7/gov=8",
+      "nummod/dep=9/gov=10",
+      "dobj/dep=10/gov=8",
+      "mark/dep=11/gov=14",
+      "det/dep=12/gov=13",
+      "nsubj/dep=13/gov=14",
+      "advcl:as/dep=14/gov=8",
+      "dobj/dep=15/gov=14",
+      "case/dep=16/gov=18",
+      "nmod:poss/dep=17/gov=18",
+      "nmod:of/dep=18/gov=15",
+      "punct/dep=19/gov=8"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "yen",
+        "start": 13,
+        "end": 14,
+        "entity-type": "Economic_item",
+        "standoff_id": 51
+      },
+      {
+        "text": "Nikkei",
+        "start": 3,
+        "end": 4,
+        "entity-type": "Economic_item",
+        "standoff_id": 52
+      },
+      {
+        "text": "0.1 percent",
+        "start": 9,
+        "end": 11,
+        "entity-type": "Percentage",
+        "standoff_id": 54
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "6_Oil-jumps-as-Qatar-ditched-London-attacks-hurt-sterling_E18_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 8,
+          "end": 9,
+          "text": "added",
+          "standoff_id": 53
+        },
+        "arguments": [
+          {
+            "start": 9,
+            "end": 11,
+            "role": "Difference",
+            "entity-type": "Percentage",
+            "text": "0.1 percent",
+            "standoff_id": 54
+          },
+          {
+            "start": 3,
+            "end": 4,
+            "role": "Item",
+            "entity-type": "Economic_item",
+            "text": "Nikkei",
+            "standoff_id": 52
+          }
+        ]
+      },
+      {
+        "id": "6_Oil-jumps-as-Qatar-ditched-London-attacks-hurt-sterling_E19_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 18,
+          "end": 19,
+          "text": "gains",
+          "standoff_id": 55
+        },
+        "arguments": [
+          {
+            "start": 13,
+            "end": 14,
+            "role": "Item",
+            "entity-type": "Economic_item",
+            "text": "yen",
+            "standoff_id": 51
+          }
+        ],
+        "intensity_cue": {
+          "start": 14,
+          "end": 15,
+          "text": "reversed",
+          "standoff_id": 56
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "6_Oil-jumps-as-Qatar-ditched-London-attacks-hurt-sterling_R4_aug1",
+        "cause": {
+          "event_id": "6_Oil-jumps-as-Qatar-ditched-London-attacks-hurt-sterling_E19_aug1",
+          "start": 18,
+          "end": 19,
+          "event_type": "Movement-up-gain"
+        },
+        "effect": {
+          "event_id": "6_Oil-jumps-as-Qatar-ditched-London-attacks-hurt-sterling_E18_aug1",
+          "start": 8,
+          "end": 9,
+          "event_type": "Movement-up-gain"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "O",
+      "O",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "O",
+      "O",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O"
+    ],
+    "combined_entity": [
+      "COUNTRY",
+      "O",
+      "O",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "O",
+      "O",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O"
+    ]
+  }
+
+]

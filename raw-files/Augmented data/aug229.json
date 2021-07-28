@@ -1,0 +1,253 @@
+[
+  {
+    "sentence_id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_0_aug1",
+    "words": [
+      "Oil",
+      "steady",
+      "as",
+      "Syria",
+      ",",
+      "Kurdish",
+      "worries",
+      "offset",
+      "by",
+      "Saudi",
+      "woes",
+      "."
+    ],
+    "sentence": "Oil steady as Syria , Kurdish worries offset by Saudi woes .",
+    "start": 0,
+    "end": 58,
+    "pos-tags": [
+      "NN",
+      "JJ",
+      "IN",
+      "NNP",
+      ",",
+      "NNP",
+      "VBZ",
+      "VBN",
+      "IN",
+      "JJ",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "oil",
+      "steady",
+      "as",
+      "Syria",
+      ",",
+      "Kurdish",
+      "worry",
+      "offset",
+      "by",
+      "greek",
+      "woe",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "LOCATION",
+      "O",
+      "MISC",
+      "O",
+      "O",
+      "O",
+      "NATIONALITY",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=6/gov=-1",
+      "nsubj/dep=0/gov=6",
+      "amod/dep=1/gov=0",
+      "case/dep=2/gov=5",
+      "compound/dep=3/gov=5",
+      "punct/dep=4/gov=5",
+      "nmod:as/dep=5/gov=1",
+      "dep/dep=7/gov=6",
+      "case/dep=8/gov=10",
+      "amod/dep=9/gov=10",
+      "nmod:by/dep=10/gov=7",
+      "punct/dep=11/gov=6"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "Oil",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Commodity",
+        "standoff_id": 2
+      },
+      {
+        "text": "Syria",
+        "start": 3,
+        "end": 4,
+        "entity-type": "Country",
+        "standoff_id": 3
+      },
+      {
+        "text": "Kurdish",
+        "start": 5,
+        "end": 6,
+        "entity-type": "Nationality",
+        "standoff_id": 4
+      },
+      {
+        "text": "Saudi",
+        "start": 9,
+        "end": 10,
+        "entity-type": "Nationality",
+        "standoff_id": 7
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_E1_aug1",
+        "event_type": "Movement-flat",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 1,
+          "end": 2,
+          "text": "steady",
+          "standoff_id": 1
+        },
+        "arguments": [
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 2
+          }
+        ]
+      },
+      {
+        "id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_E2_aug1",
+        "event_type": "Negative_sentiment",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 6,
+          "end": 7,
+          "text": "worries",
+          "standoff_id": 5
+        },
+        "arguments": [
+          {
+            "start": 3,
+            "end": 4,
+            "role": "Type2",
+            "entity-type": "Country",
+            "text": "Syria",
+            "standoff_id": 3
+          },
+          {
+            "start": 5,
+            "end": 6,
+            "role": "Type",
+            "entity-type": "Nationality",
+            "text": "Kurdish",
+            "standoff_id": 4
+          }
+        ],
+        "intensity_cue": {
+          "start": 7,
+          "end": 8,
+          "text": "offset",
+          "standoff_id": 93
+        }
+      },
+      {
+        "id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_E3_aug1",
+        "event_type": "Negative_sentiment",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 10,
+          "end": 11,
+          "text": "woes",
+          "standoff_id": 6
+        },
+        "arguments": [
+          {
+            "start": 9,
+            "end": 10,
+            "role": "Type",
+            "entity-type": "Nationality",
+            "text": "Saudi",
+            "standoff_id": 7
+          }
+        ]
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_R12_aug1",
+        "cause": {
+          "event_id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_E3_aug1",
+          "start": 10,
+          "end": 11,
+          "event_type": "Negative_sentiment"
+        },
+        "effect": {
+          "event_id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_E2_aug1",
+          "start": 6,
+          "end": 7,
+          "event_type": "Negative_sentiment"
+        }
+      },
+      {
+        "id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_R13_aug1",
+        "cause": {
+          "event_id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_E2_aug1",
+          "start": 6,
+          "end": 7,
+          "event_type": "Negative_sentiment"
+        },
+        "effect": {
+          "event_id": "7_Oil-steady-as-Syria-Kurdish-worries-offset-by-Saudi-woes_E1_aug1",
+          "start": 1,
+          "end": 2,
+          "event_type": "Movement-flat"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "COMMODITY",
+      "MOVEMENT-FLAT",
+      "O",
+      "COUNTRY",
+      "O",
+      "NATIONALITY",
+      "NEGATIVE_SENTIMENT",
+      "O",
+      "O",
+      "NATIONALITY",
+      "NEGATIVE_SENTIMENT",
+      "O"
+    ],
+    "combined_entity": [
+      "COMMODITY",
+      "MOVEMENT-FLAT",
+      "O",
+      "COUNTRY",
+      "O",
+      "NATIONALITY",
+      "NEGATIVE_SENTIMENT",
+      "O",
+      "O",
+      "NATIONALITY",
+      "NEGATIVE_SENTIMENT",
+      "O"
+    ]
+  }
+]

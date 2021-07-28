@@ -1,0 +1,455 @@
+[
+  {
+    "sentence_id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_2_aug1",
+    "words": [
+      "Oil",
+      "futures",
+      "dropped",
+      "on",
+      "Thursday",
+      ",",
+      "weighed",
+      "down",
+      "by",
+      "the",
+      "hike",
+      "in",
+      "coronavirus",
+      "cases",
+      "that",
+      "is",
+      "hindering",
+      "the",
+      "global",
+      "economy",
+      ",",
+      "along",
+      "with",
+      "an",
+      "unexpected",
+      "surge",
+      "in",
+      "U.S.",
+      "crude",
+      "inventories",
+      "."
+    ],
+    "sentence": "Oil futures dropped on Thursday , weighed down by the hike in coronavirus cases that is hindering the global economy , along with an unexpected surge in U.S. crude inventories .",
+    "start": 177,
+    "end": 346,
+    "pos-tags": [
+      "NN",
+      "NNS",
+      "VBD",
+      "IN",
+      "NNP",
+      ",",
+      "VBD",
+      "RP",
+      "IN",
+      "DT",
+      "NN",
+      "IN",
+      "NN",
+      "NNS",
+      "WDT",
+      "VBZ",
+      "VBG",
+      "DT",
+      "JJ",
+      "NN",
+      ",",
+      "IN",
+      "IN",
+      "DT",
+      "JJ",
+      "NN",
+      "IN",
+      "NNP",
+      "JJ",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "oil",
+      "price",
+      "fall",
+      "on",
+      "Thursday",
+      ",",
+      "weigh",
+      "down",
+      "by",
+      "the",
+      "hike",
+      "in",
+      "coronavirus",
+      "case",
+      "that",
+      "be",
+      "hamper",
+      "the",
+      "global",
+      "economy",
+      ",",
+      "along",
+      "with",
+      "a",
+      "unexpected",
+      "surge",
+      "in",
+      "U.S.",
+      "crude",
+      "stockpile",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=6/gov=-1",
+      "compound/dep=0/gov=1",
+      "nsubj/dep=1/gov=2",
+      "ccomp/dep=2/gov=6",
+      "case/dep=3/gov=4",
+      "nmod:on/dep=4/gov=2",
+      "punct/dep=5/gov=6",
+      "compound:prt/dep=7/gov=6",
+      "case/dep=8/gov=10",
+      "det/dep=9/gov=10",
+      "nmod:by/dep=10/gov=6",
+      "case/dep=11/gov=13",
+      "compound/dep=12/gov=13",
+      "nmod:in/dep=13/gov=6",
+      "nsubj/dep=13/gov=16",
+      "ref/dep=14/gov=13",
+      "aux/dep=15/gov=16",
+      "acl:relcl/dep=16/gov=13",
+      "det/dep=17/gov=19",
+      "amod/dep=18/gov=19",
+      "nsubj/dep=19/gov=6",
+      "punct/dep=20/gov=19",
+      "advmod/dep=21/gov=19",
+      "case/dep=22/gov=25",
+      "det/dep=23/gov=25",
+      "amod/dep=24/gov=25",
+      "nmod:with/dep=25/gov=21",
+      "case/dep=26/gov=27",
+      "nmod:in/dep=27/gov=25",
+      "amod/dep=28/gov=29",
+      "dep/dep=29/gov=19",
+      "punct/dep=30/gov=6"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "futures",
+        "start": 1,
+        "end": 2,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 9
+      },
+      {
+        "text": "Oil",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Commodity",
+        "standoff_id": 10
+      },
+      {
+        "text": "Thursday",
+        "start": 4,
+        "end": 5,
+        "entity-type": "Date",
+        "standoff_id": 11
+      },
+      {
+        "text": "economy",
+        "start": 19,
+        "end": 20,
+        "entity-type": "Economic_item",
+        "standoff_id": 12
+      },
+      {
+        "text": "global",
+        "start": 18,
+        "end": 19,
+        "entity-type": "Location",
+        "standoff_id": 13
+      },
+      {
+        "text": "U.S.",
+        "start": 27,
+        "end": 28,
+        "entity-type": "Country",
+        "standoff_id": 15
+      },
+      {
+        "text": "crude",
+        "start": 28,
+        "end": 29,
+        "entity-type": "Commodity",
+        "standoff_id": 16
+      },
+      {
+        "text": "inventories",
+        "start": 29,
+        "end": 30,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 17
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_E4_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 2,
+          "end": 3,
+          "text": "dropped",
+          "standoff_id": 8
+        },
+        "arguments": [
+          {
+            "start": 4,
+            "end": 5,
+            "role": "Reference_point_time",
+            "entity-type": "Date",
+            "text": "Thursday",
+            "standoff_id": 11
+          },
+          {
+            "start": 1,
+            "end": 2,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "futures",
+            "standoff_id": 9
+          },
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 10
+          }
+        ]
+      },
+      {
+        "id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_E5_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 25,
+          "end": 26,
+          "text": "surge",
+          "standoff_id": 14
+        },
+        "arguments": [
+          {
+            "start": 27,
+            "end": 28,
+            "role": "Supplier_Consumer",
+            "entity-type": "Country",
+            "text": "U.S.",
+            "standoff_id": 15
+          },
+          {
+            "start": 28,
+            "end": 29,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "crude",
+            "standoff_id": 16
+          },
+          {
+            "start": 29,
+            "end": 30,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "inventories",
+            "standoff_id": 17
+          }
+        ]
+      },
+      {
+        "id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_E6_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 10,
+          "end": 11,
+          "text": "hike",
+          "standoff_id": 18
+        },
+        "arguments": []
+      },
+      {
+        "id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_E25_aug1",
+        "event_type": "Slow-weak",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 16,
+          "end": 17,
+          "text": "hindering",
+          "standoff_id": 83
+        },
+        "arguments": [
+          {
+            "start": 18,
+            "end": 19,
+            "role": "Type",
+            "entity-type": "Location",
+            "text": "global",
+            "standoff_id": 13
+          },
+          {
+            "start": 19,
+            "end": 20,
+            "role": "Item",
+            "entity-type": "Economic_item",
+            "text": "economy",
+            "standoff_id": 12
+          }
+        ]
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_R2_aug1",
+        "cause": {
+          "event_id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_E25_aug1",
+          "start": 16,
+          "end": 17,
+          "event_type": "Slow-weak"
+        },
+        "effect": {
+          "event_id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_E4_aug1",
+          "start": 2,
+          "end": 3,
+          "event_type": "Movement-down-loss"
+        }
+      },
+      {
+        "id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_R3_aug1",
+        "cause": {
+          "event_id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_E5_aug1",
+          "start": 25,
+          "end": 26,
+          "event_type": "Movement-up-gain"
+        },
+        "effect": {
+          "event_id": "6_oil-falls-on-coronavirus-hike-unexpected-US-crude-stockpile-rise_E4_aug1",
+          "start": 2,
+          "end": 3,
+          "event_type": "Movement-down-loss"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "SLOW-WEAK",
+      "O",
+      "LOCATION",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "COUNTRY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ],
+    "combined_entity": [
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "SLOW-WEAK",
+      "O",
+      "LOCATION",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "COUNTRY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ]
+  }
+]

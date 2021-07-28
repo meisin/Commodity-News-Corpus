@@ -1,0 +1,475 @@
+[
+ {
+    "sentence_id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_15_aug2",
+    "words": [
+      "U.S.",
+      "and",
+      "European",
+      "Union",
+      "sanctions",
+      "on",
+      "Libyan",
+      "over",
+      "the",
+      "crisis",
+      "in",
+      "Nigeria",
+      "have",
+      "not",
+      "yet",
+      "upset",
+      "production",
+      ",",
+      "but",
+      "the",
+      "IEA",
+      "cautioned",
+      "that",
+      "the",
+      "sanctions",
+      "are",
+      "expected",
+      "to",
+      "reduce",
+      "Iranian",
+      "demand",
+      "."
+    ],
+    "sentence": "U.S. and European Union sanctions on Libyan over the crisis in Nigeria have not yet upset production , but the IEA cautioned that the sanctions are expected to reduce Iranian demand .",
+    "start": 2278,
+    "end": 2457,
+    "pos-tags": [
+      "NNP",
+      "CC",
+      "NNP",
+      "NNP",
+      "NNS",
+      "IN",
+      "NNP",
+      "IN",
+      "DT",
+      "NN",
+      "IN",
+      "NNP",
+      "VBP",
+      "RB",
+      "RB",
+      "VBN",
+      "NN",
+      ",",
+      "CC",
+      "DT",
+      "NNP",
+      "VBD",
+      "IN",
+      "DT",
+      "NNS",
+      "VBP",
+      "VBN",
+      "TO",
+      "VB",
+      "JJ",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "U.S.",
+      "and",
+      "European",
+      "Union",
+      "sanction",
+      "on",
+      "Libyan",
+      "over",
+      "the",
+      "crisis",
+      "in",
+      "Nigeria",
+      "have",
+      "not",
+      "yet",
+      "disrupt",
+      "production",
+      ",",
+      "but",
+      "the",
+      "IEA",
+      "caution",
+      "that",
+      "the",
+      "sanction",
+      "be",
+      "expect",
+      "to",
+      "reduce",
+      "russian",
+      "demand",
+      "."
+    ],
+    "ner": [
+      "COUNTRY",
+      "O",
+      "ORGANIZATION",
+      "ORGANIZATION",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "ORGANIZATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "NATIONALITY",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=15/gov=-1",
+      "compound/dep=0/gov=4",
+      "cc/dep=1/gov=0",
+      "conj:and/dep=2/gov=0",
+      "compound/dep=2/gov=4",
+      "compound/dep=3/gov=4",
+      "nsubj/dep=4/gov=15",
+      "case/dep=5/gov=6",
+      "nmod:on/dep=6/gov=4",
+      "case/dep=7/gov=9",
+      "det/dep=8/gov=9",
+      "nmod:over/dep=9/gov=6",
+      "case/dep=10/gov=11",
+      "nmod:in/dep=11/gov=9",
+      "aux/dep=12/gov=15",
+      "neg/dep=13/gov=15",
+      "advmod/dep=14/gov=15",
+      "dobj/dep=16/gov=15",
+      "punct/dep=17/gov=15",
+      "cc/dep=18/gov=15",
+      "det/dep=19/gov=20",
+      "nsubj/dep=20/gov=21",
+      "conj:but/dep=21/gov=15",
+      "mark/dep=22/gov=26",
+      "det/dep=23/gov=24",
+      "nsubjpass/dep=24/gov=26",
+      "nsubj:xsubj/dep=24/gov=28",
+      "auxpass/dep=25/gov=26",
+      "ccomp/dep=26/gov=21",
+      "mark/dep=27/gov=28",
+      "xcomp/dep=28/gov=26",
+      "amod/dep=29/gov=30",
+      "dobj/dep=30/gov=28",
+      "punct/dep=31/gov=15"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "Libyan",
+        "start": 6,
+        "end": 7,
+        "entity-type": "Country",
+        "standoff_id": 46
+      },
+      {
+        "text": "U.S.",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Country",
+        "standoff_id": 47
+      },
+      {
+        "text": "European Union",
+        "start": 2,
+        "end": 4,
+        "entity-type": "Organization",
+        "standoff_id": 48
+      },
+      {
+        "text": "Iranian",
+        "start": 29,
+        "end": 30,
+        "entity-type": "Nationality",
+        "standoff_id": 52
+      },
+      {
+        "text": "demand",
+        "start": 30,
+        "end": 31,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 53
+      },
+      {
+        "text": "Nigeria",
+        "start": 11,
+        "end": 12,
+        "entity-type": "Country",
+        "standoff_id": 62
+      },
+      {
+        "text": "production",
+        "start": 16,
+        "end": 17,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 83
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_E15_aug2",
+        "event_type": "Embargo",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 4,
+          "end": 5,
+          "text": "sanctions",
+          "standoff_id": 49
+        },
+        "arguments": [
+          {
+            "start": 2,
+            "end": 4,
+            "role": "Imposer",
+            "entity-type": "Organization",
+            "text": "European Union",
+            "standoff_id": 48
+          },
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Imposer2",
+            "entity-type": "Country",
+            "text": "U.S.",
+            "standoff_id": 47
+          },
+          {
+            "start": 6,
+            "end": 7,
+            "role": "Imposee",
+            "entity-type": "Country",
+            "text": "Libyan",
+            "standoff_id": 46
+          }
+        ]
+      },
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_E16_aug2",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Negative",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 15,
+          "end": 16,
+          "text": "upset",
+          "standoff_id": 50
+        },
+        "arguments": [
+          {
+            "start": 16,
+            "end": 17,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "production",
+            "standoff_id": 83
+          }
+        ],
+        "polarity_cue": {
+          "start": 13,
+          "end": 15,
+          "text": "not yet",
+          "standoff_id": 84
+        }
+      },
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_E17_aug2",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 28,
+          "end": 29,
+          "text": "reduce",
+          "standoff_id": 12
+        },
+        "arguments": [
+          {
+            "start": 29,
+            "end": 30,
+            "role": "Type",
+            "entity-type": "Nationality",
+            "text": "Iranian",
+            "standoff_id": 52
+          },
+          {
+            "start": 30,
+            "end": 31,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "demand",
+            "standoff_id": 53
+          }
+        ],
+        "modality_cue": {
+          "start": 26,
+          "end": 27,
+          "text": "expected",
+          "standoff_id": 85
+        }
+      },
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_E20_aug2",
+        "event_type": "Crisis",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 9,
+          "end": 10,
+          "text": "crisis",
+          "standoff_id": 61
+        },
+        "arguments": [
+          {
+            "start": 11,
+            "end": 12,
+            "role": "Place",
+            "entity-type": "Country",
+            "text": "Nigeria",
+            "standoff_id": 62
+          }
+        ]
+      },
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_E4_aug2",
+        "event_type": "Embargo",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 24,
+          "end": 25,
+          "text": "sanctions",
+          "standoff_id": 11
+        },
+        "arguments": []
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_R8_aug2",
+        "cause": {
+          "event_id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_E15_aug2",
+          "start": 4,
+          "end": 5,
+          "event_type": "Embargo"
+        },
+        "effect": {
+          "event_id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_E16_aug2",
+          "start": 15,
+          "end": 16,
+          "event_type": "Cause-movement-down-loss"
+        }
+      },
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_R9_aug2",
+        "cause": {
+          "event_id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_E4_aug2",
+          "start": 24,
+          "end": 25,
+          "event_type": "Embargo"
+        },
+        "effect": {
+          "event_id": "1_Brent-crude-falls-to-13months-low-on-ample-production-demand-worries_E17_aug2",
+          "start": 28,
+          "end": 29,
+          "event_type": "Cause-movement-down-loss"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "COUNTRY",
+      "O",
+      "ORGANIZATION",
+      "ORGANIZATION",
+      "EMBARGO",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "CRISIS",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "EMBARGO",
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "NATIONALITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ],
+    "combined_entity": [
+      "COUNTRY",
+      "O",
+      "ORGANIZATION",
+      "ORGANIZATION",
+      "EMBARGO",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "CRISIS",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "ORGANIZATION",
+      "O",
+      "O",
+      "O",
+      "EMBARGO",
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "NATIONALITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ]
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "sentence_id": "3_crude_oil_prices_continue_to_rise_as_optimism_dominates_7_aug1",
+    "words": [
+      "The",
+      "producers",
+      "agreed",
+      "in",
+      "June",
+      "to",
+      "extend",
+      "current",
+      "oil",
+      "output",
+      "curbs",
+      "until",
+      "the",
+      "end",
+      "of",
+      "2016",
+      "."
+    ],
+    "sentence": "The producers agreed in June to extend current oil output curbs until the end of 2016 .",
+    "start": 1062,
+    "end": 1151,
+    "pos-tags": [
+      "DT",
+      "NNS",
+      "VBD",
+      "IN",
+      "NNP",
+      "TO",
+      "VB",
+      "JJ",
+      "NN",
+      "NN",
+      "NNS",
+      "IN",
+      "DT",
+      "NN",
+      "IN",
+      "CD",
+      "."
+    ],
+    "lemma": [
+      "the",
+      "producer",
+      "agree",
+      "in",
+      "June",
+      "to",
+      "extend",
+      "current",
+      "oil",
+      "output",
+      "cut",
+      "until",
+      "the",
+      "end",
+      "of",
+      "2016",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "DATE",
+      "DATE",
+      "DATE",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=2/gov=-1",
+      "det/dep=0/gov=1",
+      "nsubj/dep=1/gov=2",
+      "nsubj:xsubj/dep=1/gov=6",
+      "case/dep=3/gov=4",
+      "nmod:in/dep=4/gov=2",
+      "mark/dep=5/gov=6",
+      "xcomp/dep=6/gov=2",
+      "amod/dep=7/gov=10",
+      "compound/dep=8/gov=10",
+      "compound/dep=9/gov=10",
+      "dobj/dep=10/gov=6",
+      "case/dep=11/gov=13",
+      "det/dep=12/gov=13",
+      "nmod:until/dep=13/gov=6",
+      "case/dep=14/gov=15",
+      "nmod:of/dep=15/gov=13",
+      "punct/dep=16/gov=2"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "the end of 2016",
+        "start": 12,
+        "end": 16,
+        "entity-type": "Date",
+        "standoff_id": 39
+      },
+      {
+        "text": "producers",
+        "start": 1,
+        "end": 2,
+        "entity-type": "Group",
+        "standoff_id": 73
+      },
+      {
+        "text": "oil",
+        "start": 8,
+        "end": 9,
+        "entity-type": "Commodity",
+        "standoff_id": 35
+      },
+      {
+        "text": "output",
+        "start": 9,
+        "end": 10,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 80
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "3_crude_oil_prices_continue_to_rise_as_optimism_dominates_E9_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Intensified",
+        "trigger": {
+          "start": 10,
+          "end": 11,
+          "text": "curbs",
+          "standoff_id": 36
+        },
+        "arguments": [
+          {
+            "start": 12,
+            "end": 16,
+            "role": "Reference_point_time",
+            "entity-type": "Date",
+            "text": "the end of 2016",
+            "standoff_id": 39
+          },
+          {
+            "start": 1,
+            "end": 2,
+            "role": "Supplier_Consumer",
+            "entity-type": "Group",
+            "text": "producers",
+            "standoff_id": 73
+          },
+          {
+            "start": 9,
+            "end": 10,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "output",
+            "standoff_id": 80
+          },
+          {
+            "start": 8,
+            "end": 9,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "oil",
+            "standoff_id": 35
+          }
+        ],
+        "intensity_cue": {
+          "start": 6,
+          "end": 7,
+          "text": "extend",
+          "standoff_id": 27
+        },
+        "modality_cue": {
+          "start": 2,
+          "end": 3,
+          "text": "agreed",
+          "standoff_id": 28
+        }
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "O",
+      "GROUP",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "DATE",
+      "DATE",
+      "DATE",
+      "DATE",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "GROUP",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "DATE",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "DATE",
+      "DATE",
+      "DATE",
+      "DATE",
+      "O"
+    ]
+  }
+  ]

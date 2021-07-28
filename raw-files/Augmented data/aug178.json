@@ -1,0 +1,381 @@
+[
+  {
+    "sentence_id": "4_oil-rises-as-trade-war-put-on-hold_5_aug1",
+    "words": [
+      "Oil",
+      "prices",
+      "were",
+      "higher",
+      "after",
+      "the",
+      "news",
+      "as",
+      "trade",
+      "tensions",
+      "fade",
+      "off",
+      ",",
+      "with",
+      "both",
+      "Brent",
+      "and",
+      "WTI",
+      "were",
+      "near",
+      "their",
+      "highest",
+      "levels",
+      "since",
+      "November",
+      "2014",
+      "."
+    ],
+    "sentence": "Oil prices were higher after the news as trade tensions fade off , with both Brent and WTI were near their highest levels since March 2018 .",
+    "start": 583,
+    "end": 724,
+    "pos-tags": [
+      "NN",
+      "NNS",
+      "VBD",
+      "JJR",
+      "IN",
+      "DT",
+      "NN",
+      "IN",
+      "NN",
+      "NNS",
+      "VBD",
+      "RB",
+      ",",
+      "IN",
+      "DT",
+      "NNP",
+      "CC",
+      "NNP",
+      "VBD",
+      "IN",
+      "PRP$",
+      "JJS",
+      "NNS",
+      "IN",
+      "NNP",
+      "CD",
+      "."
+    ],
+    "lemma": [
+      "oil",
+      "price",
+      "be",
+      "higher",
+      "after",
+      "the",
+      "news",
+      "as",
+      "trade",
+      "tension",
+      "wear",
+      "off",
+      ",",
+      "with",
+      "both",
+      "Brent",
+      "and",
+      "WTI",
+      "be",
+      "near",
+      "they",
+      "highest",
+      "level",
+      "since",
+      "November",
+      "2014",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "DATE",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=3/gov=-1",
+      "compound/dep=0/gov=1",
+      "nsubj/dep=1/gov=3",
+      "cop/dep=2/gov=3",
+      "case/dep=4/gov=6",
+      "det/dep=5/gov=6",
+      "nmod:after/dep=6/gov=3",
+      "mark/dep=7/gov=10",
+      "compound/dep=8/gov=9",
+      "nsubj/dep=9/gov=10",
+      "advcl:as/dep=10/gov=3",
+      "advmod/dep=11/gov=10",
+      "punct/dep=12/gov=10",
+      "mark/dep=13/gov=22",
+      "cc:preconj/dep=14/gov=15",
+      "nsubj/dep=15/gov=22",
+      "cc/dep=16/gov=15",
+      "conj:and/dep=17/gov=15",
+      "nsubj/dep=17/gov=22",
+      "cop/dep=18/gov=22",
+      "case/dep=19/gov=22",
+      "nmod:poss/dep=20/gov=22",
+      "amod/dep=21/gov=22",
+      "advcl:with/dep=22/gov=10",
+      "case/dep=23/gov=24",
+      "nmod:since/dep=24/gov=22",
+      "nummod/dep=25/gov=24",
+      "punct/dep=26/gov=3"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "prices",
+        "start": 1,
+        "end": 2,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 18
+      },
+      {
+        "text": "Oil",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Commodity",
+        "standoff_id": 19
+      },
+      {
+        "text": "March 2018",
+        "start": 24,
+        "end": 26,
+        "entity-type": "Date",
+        "standoff_id": 22
+      },
+      {
+        "text": "Brent",
+        "start": 15,
+        "end": 16,
+        "entity-type": "Commodity",
+        "standoff_id": 23
+      },
+      {
+        "text": "WTI",
+        "start": 17,
+        "end": 18,
+        "entity-type": "Commodity",
+        "standoff_id": 24
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "4_oil-rises-as-trade-war-put-on-hold_E6_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 3,
+          "end": 4,
+          "text": "higher",
+          "standoff_id": 17
+        },
+        "arguments": [
+          {
+            "start": 1,
+            "end": 2,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 18
+          },
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 19
+          }
+        ]
+      },
+      {
+        "id": "4_oil-rises-as-trade-war-put-on-hold_E7_aug1",
+        "event_type": "trade-financial-tension",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 8,
+          "end": 10,
+          "text": "trade tensions",
+          "standoff_id": 20
+        },
+        "arguments": [],
+        "intensity_cue": {
+          "start": 10,
+          "end": 12,
+          "text": "fade off",
+          "standoff_id": 21
+        }
+      },
+      {
+        "id": "4_oil-rises-as-trade-war-put-on-hold_E8_aug1",
+        "event_type": "Position-high",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 21,
+          "end": 22,
+          "text": "highest",
+          "standoff_id": 25
+        },
+        "arguments": [
+          {
+            "start": 17,
+            "end": 18,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "WTI",
+            "standoff_id": 24
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "role": "Initial_reference_point",
+            "entity-type": "Date",
+            "text": "March 2018",
+            "standoff_id": 22
+          }
+        ]
+      },
+      {
+        "id": "4_oil-rises-as-trade-war-put-on-hold_E26_aug1",
+        "event_type": "Position-high",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 21,
+          "end": 22,
+          "text": "highest",
+          "standoff_id": 25
+        },
+        "arguments": [
+          {
+            "start": 24,
+            "end": 26,
+            "role": "Initial_reference_point",
+            "entity-type": "Date",
+            "text": "March 2018",
+            "standoff_id": 22
+          },
+          {
+            "start": 15,
+            "end": 16,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Brent",
+            "standoff_id": 23
+          }
+        ]
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "4_oil-rises-as-trade-war-put-on-hold_R3_aug1",
+        "cause": {
+          "event_id": "4_oil-rises-as-trade-war-put-on-hold_E7_aug1",
+          "start": 8,
+          "end": 10,
+          "event_type": "trade-financial-tension"
+        },
+        "effect": {
+          "event_id": "4_oil-rises-as-trade-war-put-on-hold_E6_aug1",
+          "start": 3,
+          "end": 4,
+          "event_type": "Movement-up-gain"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "O",
+      "O",
+      "O",
+      "TRADE-FINANCIAL-TENSION",
+      "TRADE-FINANCIAL-TENSION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COMMODITY",
+      "O",
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "POSITION-HIGH",
+      "O",
+      "O",
+      "DATE",
+      "DATE",
+      "O"
+    ],
+    "combined_entity": [
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "O",
+      "O",
+      "O",
+      "TRADE-FINANCIAL-TENSION",
+      "TRADE-FINANCIAL-TENSION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COMMODITY",
+      "O",
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "POSITION-HIGH",
+      "O",
+      "O",
+      "DATE",
+      "DATE",
+      "O"
+    ]
+  }
+]

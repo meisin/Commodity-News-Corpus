@@ -1,0 +1,359 @@
+[
+  {
+    "sentence_id": "7_Oil-Prices-Up-More-than-1-as-Saudi-Arabia-Announce-Cut-in-Supply_2_aug1",
+    "words": [
+      "Investing.com",
+      "-",
+      "Oil",
+      "prices",
+      "increased",
+      "more",
+      "than",
+      "1",
+      "%",
+      "on",
+      "Thursday",
+      "following",
+      "reports",
+      "that",
+      "Saudi",
+      "Arabia",
+      "announced",
+      "plans",
+      "to",
+      "curb",
+      "oil",
+      "production",
+      "from",
+      "February",
+      "."
+    ],
+    "sentence": "Investing.com - Oil prices increased more than 1 % on Thursday following reports that Saudi Arabia announced plans to curb oil production from February .",
+    "start": 190,
+    "end": 331,
+    "pos-tags": [
+      "NNP",
+      ":",
+      "NN",
+      "NNS",
+      "VBD",
+      "JJR",
+      "IN",
+      "CD",
+      "NN",
+      "IN",
+      "NNP",
+      "VBG",
+      "NNS",
+      "IN",
+      "NNP",
+      "NNP",
+      "VBD",
+      "NNS",
+      "TO",
+      "VB",
+      "NN",
+      "NN",
+      "IN",
+      "NNP",
+      "."
+    ],
+    "lemma": [
+      "Investing.com",
+      "-",
+      "oil",
+      "price",
+      "gain",
+      "more",
+      "than",
+      "1",
+      "%",
+      "on",
+      "Thursday",
+      "follow",
+      "report",
+      "that",
+      "Saudi",
+      "Arabia",
+      "announce",
+      "plan",
+      "to",
+      "curb",
+      "oil",
+      "production",
+      "from",
+      "February",
+      "."
+    ],
+    "ner": [
+      "URL",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "PERCENT",
+      "PERCENT",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=0/gov=-1",
+      "punct/dep=1/gov=0",
+      "compound/dep=2/gov=3",
+      "nsubj/dep=3/gov=4",
+      "parataxis/dep=4/gov=0",
+      "advmod/dep=5/gov=7",
+      "mwe/dep=6/gov=5",
+      "nummod/dep=7/gov=8",
+      "dobj/dep=8/gov=4",
+      "case/dep=9/gov=10",
+      "nmod:on/dep=10/gov=8",
+      "case/dep=11/gov=12",
+      "nmod:following/dep=12/gov=4",
+      "mark/dep=13/gov=16",
+      "compound/dep=14/gov=15",
+      "nsubj/dep=15/gov=16",
+      "dep/dep=16/gov=12",
+      "dobj/dep=17/gov=16",
+      "mark/dep=18/gov=19",
+      "advcl:to/dep=19/gov=16",
+      "compound/dep=20/gov=21",
+      "dobj/dep=21/gov=19",
+      "case/dep=22/gov=23",
+      "nmod:from/dep=23/gov=19",
+      "punct/dep=24/gov=0"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "prices",
+        "start": 3,
+        "end": 4,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 9
+      },
+      {
+        "text": "Oil",
+        "start": 2,
+        "end": 3,
+        "entity-type": "Commodity",
+        "standoff_id": 10
+      },
+      {
+        "text": "more than 1%",
+        "start": 5,
+        "end": 8,
+        "entity-type": "Percentage",
+        "standoff_id": 11
+      },
+      {
+        "text": "Thursday",
+        "start": 10,
+        "end": 11,
+        "entity-type": "Date",
+        "standoff_id": 12
+      },
+      {
+        "text": "oil",
+        "start": 20,
+        "end": 21,
+        "entity-type": "Commodity",
+        "standoff_id": 15
+      },
+      {
+        "text": "production",
+        "start": 21,
+        "end": 22,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 16
+      },
+      {
+        "text": "February",
+        "start": 23,
+        "end": 24,
+        "entity-type": "Date",
+        "standoff_id": 17
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "7_Oil-Prices-Up-More-than-1-as-Saudi-Arabia-Announce-Cut-in-Supply_E3_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 4,
+          "end": 5,
+          "text": "increased",
+          "standoff_id": 8
+        },
+        "arguments": [
+          {
+            "start": 5,
+            "end": 8,
+            "role": "Difference",
+            "entity-type": "Percentage",
+            "text": "more than 1%",
+            "standoff_id": 11
+          },
+          {
+            "start": 10,
+            "end": 11,
+            "role": "Reference_point_time",
+            "entity-type": "Date",
+            "text": "Thursday",
+            "standoff_id": 12
+          },
+          {
+            "start": 3,
+            "end": 4,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 9
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 10
+          }
+        ]
+      },
+      {
+        "id": "7_Oil-Prices-Up-More-than-1-as-Saudi-Arabia-Announce-Cut-in-Supply_E4_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 19,
+          "end": 20,
+          "text": "curb",
+          "standoff_id": 14
+        },
+        "arguments": [
+          {
+            "start": 20,
+            "end": 21,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "oil",
+            "standoff_id": 15
+          },
+          {
+            "start": 21,
+            "end": 22,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "production",
+            "standoff_id": 16
+          },
+          {
+            "start": 23,
+            "end": 24,
+            "role": "Reference_point_time",
+            "entity-type": "Date",
+            "text": "February",
+            "standoff_id": 17
+          }
+        ],
+        "modality_cue": {
+          "start": 17,
+          "end": 18,
+          "text": "plans",
+          "standoff_id": 13
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "7_Oil-Prices-Up-More-than-1-as-Saudi-Arabia-Announce-Cut-in-Supply_R2_aug1",
+        "cause": {
+          "event_id": "7_Oil-Prices-Up-More-than-1-as-Saudi-Arabia-Announce-Cut-in-Supply_E4_aug1",
+          "start": 19,
+          "end": 20,
+          "event_type": "Cause-movement-down-loss"
+        },
+        "effect": {
+          "event_id": "7_Oil-Prices-Up-More-than-1-as-Saudi-Arabia-Announce-Cut-in-Supply_E3_aug1",
+          "start": 4,
+          "end": 5,
+          "event_type": "Movement-up-gain"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "DATE",
+      "O"
+    ],
+    "combined_entity": [
+      "URL",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "PERCENT",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "DATE",
+      "O"
+    ]
+  }
+]

@@ -1,0 +1,419 @@
+[
+  {
+    "sentence_id": "4_oil-prices-dip-on-rising-US-rig-count_11_aug2",
+    "words": [
+      "OPEC",
+      ",",
+      "Venezuela",
+      "and",
+      "several",
+      "other",
+      "oil",
+      "producers",
+      "have",
+      "been",
+      "reducing",
+      "production",
+      "since",
+      "January",
+      "2017",
+      "in",
+      "an",
+      "attempt",
+      "to",
+      "minimize",
+      "the",
+      "global",
+      "oversupply",
+      "and",
+      "prop",
+      "up",
+      "prices",
+      "."
+    ],
+    "sentence": "OPEC , Venezuela and several other oil producers have been reducing production since March 2018 in an attempt to minimize the global oversupply and prop up prices .",
+    "start": 1297,
+    "end": 1451,
+    "pos-tags": [
+      "NNP",
+      ",",
+      "NNP",
+      "CC",
+      "JJ",
+      "JJ",
+      "NN",
+      "NNS",
+      "VBP",
+      "VBN",
+      "VBG",
+      "NN",
+      "IN",
+      "NNP",
+      "CD",
+      "IN",
+      "DT",
+      "NN",
+      "TO",
+      "VB",
+      "DT",
+      "JJ",
+      "NN",
+      "CC",
+      "VB",
+      "RP",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "OPEC",
+      ",",
+      "Venezuela",
+      "and",
+      "several",
+      "other",
+      "oil",
+      "producer",
+      "have",
+      "be",
+      "cut",
+      "production",
+      "since",
+      "January",
+      "2017",
+      "in",
+      "a",
+      "attempt",
+      "to",
+      "minimize",
+      "the",
+      "global",
+      "oversupply",
+      "and",
+      "prop",
+      "up",
+      "price",
+      "."
+    ],
+    "ner": [
+      "ORGANIZATION",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=10/gov=-1",
+      "nsubj/dep=0/gov=10",
+      "punct/dep=1/gov=0",
+      "conj:and/dep=2/gov=0",
+      "nsubj/dep=2/gov=10",
+      "cc/dep=3/gov=0",
+      "amod/dep=4/gov=7",
+      "amod/dep=5/gov=7",
+      "compound/dep=6/gov=7",
+      "conj:and/dep=7/gov=0",
+      "nsubj/dep=7/gov=10",
+      "aux/dep=8/gov=10",
+      "aux/dep=9/gov=10",
+      "dobj/dep=11/gov=10",
+      "case/dep=12/gov=13",
+      "nmod:since/dep=13/gov=11",
+      "nummod/dep=14/gov=13",
+      "case/dep=15/gov=17",
+      "det/dep=16/gov=17",
+      "nmod:in/dep=17/gov=10",
+      "mark/dep=18/gov=19",
+      "advcl:to/dep=19/gov=10",
+      "det/dep=20/gov=22",
+      "amod/dep=21/gov=22",
+      "dobj/dep=22/gov=19",
+      "cc/dep=23/gov=19",
+      "advcl:to/dep=24/gov=10",
+      "conj:and/dep=24/gov=19",
+      "compound:prt/dep=25/gov=24",
+      "dobj/dep=26/gov=24",
+      "punct/dep=27/gov=10"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "production",
+        "start": 11,
+        "end": 12,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 62
+      },
+      {
+        "text": "March 2018",
+        "start": 13,
+        "end": 15,
+        "entity-type": "Date",
+        "standoff_id": 63
+      },
+      {
+        "text": "Venezuela",
+        "start": 2,
+        "end": 3,
+        "entity-type": "Country",
+        "standoff_id": 65
+      },
+      {
+        "text": "several other oil producers",
+        "start": 4,
+        "end": 8,
+        "entity-type": "Country",
+        "standoff_id": 66
+      },
+      {
+        "text": "prices",
+        "start": 26,
+        "end": 27,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 71
+      },
+      {
+        "text": "OPEC",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Organization",
+        "standoff_id": 35
+      },
+      {
+        "text": "global",
+        "start": 21,
+        "end": 22,
+        "entity-type": "Location",
+        "standoff_id": 94
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "4_oil-prices-dip-on-rising-US-rig-count_E18_aug2",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 10,
+          "end": 11,
+          "text": "reducing",
+          "standoff_id": 61
+        },
+        "arguments": [
+          {
+            "start": 13,
+            "end": 15,
+            "role": "Initial_reference_point",
+            "entity-type": "Date",
+            "text": "March 2018",
+            "standoff_id": 63
+          },
+          {
+            "start": 11,
+            "end": 12,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "production",
+            "standoff_id": 62
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "role": "Supplier_Consumer",
+            "entity-type": "Country",
+            "text": "several other oil producers",
+            "standoff_id": 66
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "role": "Supplier_Consumer2",
+            "entity-type": "Country",
+            "text": "Venezuela",
+            "standoff_id": 65
+          },
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Supplier_Consumer3",
+            "entity-type": "Organization",
+            "text": "OPEC",
+            "standoff_id": 35
+          }
+        ]
+      },
+      {
+        "id": "4_oil-prices-dip-on-rising-US-rig-count_E19_aug2",
+        "event_type": "Oversupply",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 22,
+          "end": 23,
+          "text": "oversupply",
+          "standoff_id": 67
+        },
+        "arguments": [
+          {
+            "start": 21,
+            "end": 22,
+            "role": "Place",
+            "entity-type": "Location",
+            "text": "global",
+            "standoff_id": 94
+          }
+        ],
+        "modality_cue": {
+          "start": 17,
+          "end": 18,
+          "text": "attempt",
+          "standoff_id": 69
+        },
+        "intensity_cue": {
+          "start": 19,
+          "end": 20,
+          "text": "minimize",
+          "standoff_id": 95
+        }
+      },
+      {
+        "id": "4_oil-prices-dip-on-rising-US-rig-count_E20_aug2",
+        "event_type": "Cause-movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 24,
+          "end": 26,
+          "text": "prop up",
+          "standoff_id": 70
+        },
+        "arguments": [
+          {
+            "start": 26,
+            "end": 27,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 71
+          }
+        ]
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "4_oil-prices-dip-on-rising-US-rig-count_R5_aug2",
+        "cause": {
+          "event_id": "4_oil-prices-dip-on-rising-US-rig-count_E18_aug2",
+          "start": 10,
+          "end": 11,
+          "event_type": "Cause-movement-down-loss"
+        },
+        "effect": {
+          "event_id": "4_oil-prices-dip-on-rising-US-rig-count_E19_aug2",
+          "start": 22,
+          "end": 23,
+          "event_type": "Oversupply"
+        }
+      },
+      {
+        "id": "4_oil-prices-dip-on-rising-US-rig-count_R6_aug2",
+        "cause": {
+          "event_id": "4_oil-prices-dip-on-rising-US-rig-count_E18_aug2",
+          "start": 10,
+          "end": 11,
+          "event_type": "Cause-movement-down-loss"
+        },
+        "effect": {
+          "event_id": "4_oil-prices-dip-on-rising-US-rig-count_E20_aug2",
+          "start": 24,
+          "end": 26,
+          "event_type": "Cause-movement-up-gain"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "ORGANIZATION",
+      "O",
+      "COUNTRY",
+      "O",
+      "COUNTRY",
+      "COUNTRY",
+      "COUNTRY",
+      "COUNTRY",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "DATE",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "LOCATION",
+      "OVERSUPPLY",
+      "O",
+      "CAUSE-MOVEMENT-UP-GAIN",
+      "CAUSE-MOVEMENT-UP-GAIN",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ],
+    "combined_entity": [
+      "ORGANIZATION",
+      "O",
+      "COUNTRY",
+      "O",
+      "COUNTRY",
+      "COUNTRY",
+      "COUNTRY",
+      "COUNTRY",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "DATE",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "LOCATION",
+      "OVERSUPPLY",
+      "O",
+      "CAUSE-MOVEMENT-UP-GAIN",
+      "CAUSE-MOVEMENT-UP-GAIN",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ]
+  }
+]

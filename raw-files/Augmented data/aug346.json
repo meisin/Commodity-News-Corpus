@@ -1,0 +1,469 @@
+[
+ {
+    "sentence_id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_2_aug1",
+    "words": [
+      "Investing.com",
+      "-",
+      "Oil",
+      "prices",
+      "plunged",
+      "around",
+      "2",
+      "%",
+      "on",
+      "Thursday",
+      ",",
+      "pressured",
+      "lower",
+      "by",
+      "worries",
+      "over",
+      "the",
+      "impact",
+      "of",
+      "U.S.-China",
+      "trade",
+      "war",
+      "on",
+      "the",
+      "global",
+      "economy",
+      "and",
+      "surging",
+      "OPEC",
+      "supplies",
+      "."
+    ],
+    "sentence": "Investing.com - Oil prices plunged around 2 % on Thursday , pressured lower by worries over the impact of U.S.-China trade war on the global economy and surging OPEC supplies .",
+    "start": 158,
+    "end": 322,
+    "pos-tags": [
+      "NNP",
+      ":",
+      "NN",
+      "NNS",
+      "VBD",
+      "RB",
+      "CD",
+      "NN",
+      "IN",
+      "NNP",
+      ",",
+      "VBD",
+      "JJR",
+      "IN",
+      "NNS",
+      "IN",
+      "DT",
+      "NN",
+      "IN",
+      "NNP",
+      "NN",
+      "NN",
+      "IN",
+      "DT",
+      "JJ",
+      "NN",
+      "CC",
+      "VBG",
+      "NNP",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "Investing.com",
+      "-",
+      "oil",
+      "price",
+      "fall",
+      "around",
+      "2",
+      "%",
+      "on",
+      "Thursday",
+      ",",
+      "pressure",
+      "lower",
+      "by",
+      "fear",
+      "over",
+      "the",
+      "impact",
+      "of",
+      "U.S.-China",
+      "trade",
+      "war",
+      "on",
+      "the",
+      "global",
+      "economy",
+      "and",
+      "rise",
+      "OPEC",
+      "supplies",
+      "."
+    ],
+    "ner": [
+      "URL",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "PERCENT",
+      "PERCENT",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "CAUSE_OF_DEATH",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "ORGANIZATION",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=0/gov=-1",
+      "punct/dep=1/gov=0",
+      "compound/dep=2/gov=3",
+      "nsubj/dep=3/gov=4",
+      "parataxis/dep=4/gov=0",
+      "advmod/dep=5/gov=6",
+      "nummod/dep=6/gov=7",
+      "dobj/dep=7/gov=4",
+      "case/dep=8/gov=9",
+      "nmod:on/dep=9/gov=7",
+      "punct/dep=10/gov=7",
+      "acl/dep=11/gov=7",
+      "dobj/dep=12/gov=11",
+      "case/dep=13/gov=14",
+      "nmod:by/dep=14/gov=11",
+      "case/dep=15/gov=17",
+      "det/dep=16/gov=17",
+      "nmod:over/dep=17/gov=14",
+      "case/dep=18/gov=21",
+      "compound/dep=19/gov=21",
+      "compound/dep=20/gov=21",
+      "nmod:of/dep=21/gov=17",
+      "case/dep=22/gov=25",
+      "det/dep=23/gov=25",
+      "amod/dep=24/gov=25",
+      "nmod:on/dep=25/gov=11",
+      "cc/dep=26/gov=25",
+      "amod/dep=27/gov=29",
+      "compound/dep=28/gov=29",
+      "nmod:on/dep=29/gov=11",
+      "conj:and/dep=29/gov=25",
+      "punct/dep=30/gov=0"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "prices",
+        "start": 3,
+        "end": 4,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 8
+      },
+      {
+        "text": "Oil",
+        "start": 2,
+        "end": 3,
+        "entity-type": "Commodity",
+        "standoff_id": 9
+      },
+      {
+        "text": "around 2%",
+        "start": 5,
+        "end": 7,
+        "entity-type": "Percentage",
+        "standoff_id": 10
+      },
+      {
+        "text": "Thursday",
+        "start": 9,
+        "end": 10,
+        "entity-type": "Date",
+        "standoff_id": 11
+      },
+      {
+        "text": "economy",
+        "start": 25,
+        "end": 26,
+        "entity-type": "Economic_item",
+        "standoff_id": 13
+      },
+      {
+        "text": "global",
+        "start": 24,
+        "end": 25,
+        "entity-type": "Location",
+        "standoff_id": 15
+      },
+      {
+        "text": "OPEC",
+        "start": 28,
+        "end": 29,
+        "entity-type": "Organization",
+        "standoff_id": 17
+      },
+      {
+        "text": "supplies",
+        "start": 29,
+        "end": 30,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 18
+      },
+      {
+        "text": "China",
+        "start": 19,
+        "end": 20,
+        "entity-type": "Country",
+        "standoff_id": 73
+      },
+      {
+        "text": "U.S.",
+        "start": 19,
+        "end": 20,
+        "entity-type": "Country",
+        "standoff_id": 110
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_E4_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 4,
+          "end": 5,
+          "text": "plunged",
+          "standoff_id": 7
+        },
+        "arguments": [
+          {
+            "start": 5,
+            "end": 7,
+            "role": "Difference",
+            "entity-type": "Percentage",
+            "text": "around 2%",
+            "standoff_id": 10
+          },
+          {
+            "start": 9,
+            "end": 10,
+            "role": "Reference_point_time",
+            "entity-type": "Date",
+            "text": "Thursday",
+            "standoff_id": 11
+          },
+          {
+            "start": 3,
+            "end": 4,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 8
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 9
+          }
+        ]
+      },
+      {
+        "id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_E5_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 12,
+          "end": 13,
+          "text": "lower",
+          "standoff_id": 12
+        },
+        "arguments": []
+      },
+      {
+        "id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_E6_aug1",
+        "event_type": "trade-financial-tension",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 20,
+          "end": 22,
+          "text": "trade war",
+          "standoff_id": 14
+        },
+        "arguments": [
+          {
+            "start": 19,
+            "end": 20,
+            "role": "Participating_countries",
+            "entity-type": "Country",
+            "text": "China",
+            "standoff_id": 73
+          },
+          {
+            "start": 19,
+            "end": 20,
+            "role": "Participating_countries2",
+            "entity-type": "Country",
+            "text": "U.S.",
+            "standoff_id": 110
+          }
+        ]
+      },
+      {
+        "id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_E7_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 27,
+          "end": 28,
+          "text": "surging",
+          "standoff_id": 16
+        },
+        "arguments": [
+          {
+            "start": 28,
+            "end": 29,
+            "role": "Supplier_Consumer",
+            "entity-type": "Organization",
+            "text": "OPEC",
+            "standoff_id": 17
+          },
+          {
+            "start": 29,
+            "end": 30,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "supplies",
+            "standoff_id": 18
+          }
+        ]
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_R3_aug1",
+        "cause": {
+          "event_id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_E6_aug1",
+          "start": 20,
+          "end": 22,
+          "event_type": "trade-financial-tension"
+        },
+        "effect": {
+          "event_id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_E4_aug1",
+          "start": 4,
+          "end": 5,
+          "event_type": "Movement-down-loss"
+        }
+      },
+      {
+        "id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_R4_aug1",
+        "cause": {
+          "event_id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_E7_aug1",
+          "start": 27,
+          "end": 28,
+          "event_type": "Movement-up-gain"
+        },
+        "effect": {
+          "event_id": "4_oil-falls-2-as-trade-war-and-surging-supplies-weigh_E4_aug1",
+          "start": 4,
+          "end": 5,
+          "event_type": "Movement-down-loss"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-DOWN-LOSS",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "TRADE-FINANCIAL-TENSION",
+      "TRADE-FINANCIAL-TENSION",
+      "O",
+      "O",
+      "LOCATION",
+      "ECONOMIC_ITEM",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "ORGANIZATION",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ],
+    "combined_entity": [
+      "URL",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-DOWN-LOSS",
+      "PERCENTAGE",
+      "PERCENTAGE",
+      "PERCENT",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "TRADE-FINANCIAL-TENSION",
+      "TRADE-FINANCIAL-TENSION",
+      "O",
+      "O",
+      "LOCATION",
+      "ECONOMIC_ITEM",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "ORGANIZATION",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "sentence_id": "7_Oil-Down-for-Fifth-Consecutive-Day-Over-Build-in-US-Stockpiles_3_aug1",
+    "words": [
+      "COVID-19",
+      "also",
+      "continues",
+      "to",
+      "threaten",
+      "the",
+      "fuel",
+      "demand",
+      "recovery",
+      "prospect",
+      "."
+    ],
+    "sentence": "COVID-19 also continues to threaten the fuel demand recovery prospect .",
+    "start": 363,
+    "end": 429,
+    "pos-tags": [
+      "NN",
+      "RB",
+      "VBZ",
+      "TO",
+      "VB",
+      "DT",
+      "NN",
+      "NN",
+      "NN",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "covid-19",
+      "also",
+      "continue",
+      "to",
+      "threaten",
+      "the",
+      "fuel",
+      "demand",
+      "recovery",
+      "prospect",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=2/gov=-1",
+      "nsubj/dep=0/gov=2",
+      "nsubj:xsubj/dep=0/gov=4",
+      "advmod/dep=1/gov=2",
+      "mark/dep=3/gov=4",
+      "xcomp/dep=4/gov=2",
+      "det/dep=5/gov=9",
+      "compound/dep=6/gov=9",
+      "compound/dep=7/gov=9",
+      "compound/dep=8/gov=9",
+      "dobj/dep=9/gov=4",
+      "punct/dep=10/gov=2"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "demand",
+        "start": 7,
+        "end": 8,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 15
+      },
+      {
+        "text": "fuel",
+        "start": 6,
+        "end": 7,
+        "entity-type": "Commodity",
+        "standoff_id": 16
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "7_Oil-Down-for-Fifth-Consecutive-Day-Over-Build-in-US-Stockpiles_E6_aug1",
+        "event_type": "Grow-strong",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 8,
+          "end": 9,
+          "text": "recovery",
+          "standoff_id": 17
+        },
+        "arguments": [
+          {
+            "start": 7,
+            "end": 8,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "demand",
+            "standoff_id": 15
+          },
+          {
+            "start": 6,
+            "end": 7,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "fuel",
+            "standoff_id": 16
+          }
+        ],
+        "modality_cue": {
+          "start": 9,
+          "end": 10,
+          "text": "prospect",
+          "standoff_id": 18
+        },
+        "intensity_cue": {
+          "start": 4,
+          "end": 5,
+          "text": "threaten",
+          "standoff_id": 19
+        }
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "GROW-STRONG",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "GROW-STRONG",
+      "O",
+      "O"
+    ]
+  }
+]

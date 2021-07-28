@@ -1,0 +1,204 @@
+[
+  {
+    "sentence_id": "4_oil-prices-dip-on-rising-US-rig-count_17_aug1",
+    "words": [
+      "This",
+      "might",
+      "further",
+      "restrict",
+      "global",
+      "oil",
+      "supplies",
+      "as",
+      "Iran",
+      "is",
+      "OPEC",
+      "'s",
+      "third-largest",
+      "producer",
+      "."
+    ],
+    "sentence": "This might further restrict global oil supplies as Iran is OPEC 's third-largest producer .",
+    "start": 1991,
+    "end": 2079,
+    "pos-tags": [
+      "DT",
+      "MD",
+      "RB",
+      "VB",
+      "JJ",
+      "NN",
+      "NNS",
+      "IN",
+      "NNP",
+      "VBZ",
+      "NNP",
+      "POS",
+      "JJ",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "this",
+      "might",
+      "further",
+      "restrict",
+      "global",
+      "oil",
+      "supplies",
+      "as",
+      "Iran",
+      "be",
+      "OPEC",
+      "'s",
+      "third-largest",
+      "producer",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "ORGANIZATION",
+      "O",
+      "O",
+      "TITLE",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=3/gov=-1",
+      "nsubj/dep=0/gov=3",
+      "aux/dep=1/gov=3",
+      "advmod/dep=2/gov=3",
+      "amod/dep=4/gov=6",
+      "compound/dep=5/gov=6",
+      "dobj/dep=6/gov=3",
+      "mark/dep=7/gov=13",
+      "nsubj/dep=8/gov=13",
+      "cop/dep=9/gov=13",
+      "nmod:poss/dep=10/gov=13",
+      "case/dep=11/gov=10",
+      "amod/dep=12/gov=13",
+      "advcl:as/dep=13/gov=3",
+      "punct/dep=14/gov=3"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "supplies",
+        "start": 6,
+        "end": 7,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 88
+      },
+      {
+        "text": "oil",
+        "start": 5,
+        "end": 6,
+        "entity-type": "Commodity",
+        "standoff_id": 89
+      },
+      {
+        "text": "global",
+        "start": 4,
+        "end": 5,
+        "entity-type": "Location",
+        "standoff_id": 90
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "4_oil-prices-dip-on-rising-US-rig-count_E25_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Intensified",
+        "trigger": {
+          "start": 3,
+          "end": 4,
+          "text": "restrict",
+          "standoff_id": 87
+        },
+        "arguments": [
+          {
+            "start": 4,
+            "end": 5,
+            "role": "Type",
+            "entity-type": "Location",
+            "text": "global",
+            "standoff_id": 90
+          },
+          {
+            "start": 5,
+            "end": 6,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "oil",
+            "standoff_id": 89
+          },
+          {
+            "start": 6,
+            "end": 7,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "supplies",
+            "standoff_id": 88
+          }
+        ],
+        "modality_cue": {
+          "start": 1,
+          "end": 2,
+          "text": "might",
+          "standoff_id": 86
+        },
+        "intensity_cue": {
+          "start": 2,
+          "end": 3,
+          "text": "further",
+          "standoff_id": 93
+        }
+      }
+    ],
+	"event-event-relations": [],
+    "nominal-entity": [
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "LOCATION",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "O",
+      "O",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "LOCATION",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "COUNTRY",
+      "O",
+      "ORGANIZATION",
+      "O",
+      "O",
+      "TITLE",
+      "O"
+    ]
+  }
+]

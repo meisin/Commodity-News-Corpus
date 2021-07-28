@@ -1,0 +1,239 @@
+[
+  {
+    "sentence_id": "7_Oil-decline-continues-as-inventories-hike-demand-recovery-clouded_0_aug1",
+    "words": [
+      "Oil",
+      "'s",
+      "fall",
+      "continues",
+      "as",
+      "inventories",
+      "hike",
+      ",",
+      ",",
+      "demand",
+      "recovery",
+      "clouded",
+      "."
+    ],
+    "sentence": "Oil 's fall continues as inventories hike , demand recovery clouded .",
+    "start": 0,
+    "end": 69,
+    "pos-tags": [
+      "NNP",
+      "POS",
+      "NN",
+      "VBZ",
+      "IN",
+      "NNS",
+      "VBP",
+      ",",
+      "VBP",
+      "NN",
+      "VBD",
+      "."
+    ],
+    "lemma": [
+      "Oil",
+      "'s",
+      "fall",
+      "continue",
+      "as",
+      "inventory",
+      "hike",
+      ",",
+      "demand",
+      "recovery",
+      "cloud",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=3/gov=-1",
+      "nmod:poss/dep=0/gov=2",
+      "case/dep=1/gov=0",
+      "nsubj/dep=2/gov=3",
+      "mark/dep=4/gov=6",
+      "nsubj/dep=5/gov=6",
+      "advcl:as/dep=6/gov=3",
+      "punct/dep=7/gov=6",
+      "dep/dep=8/gov=6",
+      "dobj/dep=9/gov=6",
+      "acl:relcl/dep=10/gov=9",
+      "punct/dep=11/gov=3"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "Oil",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Commodity",
+        "standoff_id": 2
+      },
+      {
+        "text": "demand",
+        "start": 8,
+        "end": 9,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 4
+      },
+      {
+        "text": "inventories",
+        "start": 5,
+        "end": 6,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 6
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "7_Oil-fall-continues-as-inventories-hike-demand-recovery-clouded_E1_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 2,
+          "end": 3,
+          "text": "fall",
+          "standoff_id": 1
+        },
+        "arguments": [
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 2
+          }
+        ]
+      },
+      {
+        "id": "7_Oil-fall-continues-as-inventories-hike-demand-recovery-clouded_E2_aug1",
+        "event_type": "Grow-strong",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 9,
+          "end": 10,
+          "text": "recovery",
+          "standoff_id": 3
+        },
+        "arguments": [
+          {
+            "start": 8,
+            "end": 9,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "demand",
+            "standoff_id": 4
+          }
+        ],
+        "intensity_cue": {
+          "start": 10,
+          "end": 11,
+          "text": "clouded",
+          "standoff_id": 5
+        }
+      },
+      {
+        "id": "7_Oil-fall-continues-as-inventories-hike-demand-recovery-clouded_E3_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 6,
+          "end": 7,
+          "text": "hike",
+          "standoff_id": 7
+        },
+        "arguments": [
+          {
+            "start": 5,
+            "end": 6,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "inventories",
+            "standoff_id": 6
+          }
+        ]
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "7_Oil-fall-continues-as-inventories-hike-demand-recovery-clouded_R1_aug1",
+        "cause": {
+          "event_id": "7_Oil-fall-continues-as-inventories-hike-demand-recovery-clouded_E3_aug1",
+          "start": 6,
+          "end": 7,
+          "event_type": "Movement-up-gain"
+        },
+        "effect": {
+          "event_id": "7_Oil-fall-continues-as-inventories-hike-demand-recovery-clouded_E1_aug1",
+          "start": 2,
+          "end": 3,
+          "event_type": "Movement-down-loss"
+        }
+      },
+      {
+        "id": "7_Oil-fall-continues-as-inventories-hike-demand-recovery-clouded_R2_aug1",
+        "cause": {
+          "event_id": "7_Oil-fall-continues-as-inventories-hike-demand-recovery-clouded_E2_aug1",
+          "start": 9,
+          "end": 10,
+          "event_type": "Grow-strong"
+        },
+        "effect": {
+          "event_id": "7_Oil-fall-continues-as-inventories-hike-demand-recovery-clouded_E1_aug1",
+          "start": 2,
+          "end": 3,
+          "event_type": "Movement-down-loss"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "COMMODITY",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "GROW-STRONG",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "COMMODITY",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "GROW-STRONG",
+      "O",
+      "O"
+    ]
+  }
+]

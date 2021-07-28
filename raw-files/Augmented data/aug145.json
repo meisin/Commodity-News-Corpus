@@ -1,0 +1,176 @@
+[ 
+{
+    "sentence_id": "10_After-chaotic-day-Rosenstein-stays-in-job-but-will-meet-with-Trump_22_aug1",
+    "words": [
+      "The",
+      "S&P",
+      "500",
+      "also",
+      "moved",
+      "down",
+      "briefly",
+      "but",
+      "pared",
+      "most",
+      "of",
+      "its",
+      "losses",
+      "."
+    ],
+    "sentence": "The S&P 500 also moved down briefly but pared most of its losses .",
+    "start": 3640,
+    "end": 3710,
+    "pos-tags": [
+      "DT",
+      "NNP",
+      "CD",
+      "RB",
+      "VBD",
+      "RP",
+      "NN",
+      "CC",
+      "VBD",
+      "JJS",
+      "IN",
+      "PRP$",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "the",
+      "S&P",
+      "500",
+      "also",
+      "tick",
+      "down",
+      "briefly",
+      "but",
+      "recover",
+      "most",
+      "of",
+      "its",
+      "loss",
+      "."
+    ],
+    "ner": [
+      "O",
+      "ORGANIZATION",
+      "NUMBER",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=4/gov=-1",
+      "det/dep=0/gov=1",
+      "nsubj/dep=1/gov=4",
+      "nsubj/dep=1/gov=8",
+      "nummod/dep=2/gov=1",
+      "advmod/dep=3/gov=4",
+      "compound:prt/dep=5/gov=4",
+      "advmod/dep=6/gov=4",
+      "cc/dep=7/gov=4",
+      "conj:but/dep=8/gov=4",
+      "dobj/dep=9/gov=8",
+      "case/dep=10/gov=12",
+      "nmod:poss/dep=11/gov=12",
+      "nmod:of/dep=12/gov=9",
+      "punct/dep=13/gov=4"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "S&P 500",
+        "start": 1,
+        "end": 3,
+        "entity-type": "Economic_item",
+        "standoff_id": 6
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "10_After-chaotic-day-Rosenstein-stays-in-job-but-will-meet-with-Trump_E3_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 5,
+          "end": 6,
+          "text": "down",
+          "standoff_id": 7
+        },
+        "arguments": [
+          {
+            "start": 1,
+            "end": 3,
+            "role": "Item",
+            "entity-type": "Economic_item",
+            "text": "S&P 500",
+            "standoff_id": 6
+          }
+        ]
+      },
+      {
+        "id": "10_After-chaotic-day-Rosenstein-stays-in-job-but-will-meet-with-Trump_E4_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 12,
+          "end": 13,
+          "text": "losses",
+          "standoff_id": 8
+        },
+        "arguments": [],
+        "intensity_cue": {
+          "start": 8,
+          "end": 9,
+          "text": "pared",
+          "standoff_id": 9
+        }
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "O",
+      "ECONOMIC_ITEM",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "ECONOMIC_ITEM",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O"
+    ]
+  }
+]

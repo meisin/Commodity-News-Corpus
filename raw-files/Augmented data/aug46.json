@@ -1,0 +1,386 @@
+[
+ {
+    "sentence_id": "7_oil-prices-rise-on-supply-cut-hopes_2_aug1",
+    "words": [
+      "Investing.com",
+      "-",
+      "Oil",
+      "prices",
+      "surged",
+      "on",
+      "Tuesday",
+      "in",
+      "Asia",
+      "as",
+      "market",
+      "sentiment",
+      "remained",
+      "remained",
+      "firm",
+      "while",
+      "expectations",
+      "that",
+      "producer",
+      "cartel",
+      "OPEC",
+      "will",
+      "prolong",
+      "supply",
+      "cuts",
+      "underpinned",
+      "prices",
+      "."
+    ],
+    "sentence": "Investing.com - Oil prices surged on Tuesday in Asia as market sentiment remained remained firm while expectations that producer cartel OPEC will prolong supply cuts underpinned prices .",
+    "start": 165,
+    "end": 350,
+    "pos-tags": [
+      "NNP",
+      ":",
+      "NN",
+      "NNS",
+      "VBD",
+      "IN",
+      "NNP",
+      "IN",
+      "NNP",
+      "IN",
+      "NN",
+      "NN",
+      "VBD",
+      "VBN",
+      "NN",
+      "IN",
+      "NNS",
+      "IN",
+      "NN",
+      "NN",
+      "NNP",
+      "MD",
+      "VB",
+      "NN",
+      "NNS",
+      "VBD",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "Investing.com",
+      "-",
+      "oil",
+      "price",
+      "climb",
+      "on",
+      "Tuesday",
+      "in",
+      "Asia",
+      "as",
+      "market",
+      "sentiment",
+      "remain",
+      "remain",
+      "firm",
+      "while",
+      "expectation",
+      "that",
+      "producer",
+      "cartel",
+      "OPEC",
+      "will",
+      "prolong",
+      "supply",
+      "cut",
+      "underpin",
+      "price",
+      "."
+    ],
+    "ner": [
+      "URL",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "CITY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "TITLE",
+      "O",
+      "ORGANIZATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=0/gov=-1",
+      "punct/dep=1/gov=0",
+      "compound/dep=2/gov=3",
+      "nsubj/dep=3/gov=4",
+      "parataxis/dep=4/gov=0",
+      "case/dep=5/gov=6",
+      "nmod:on/dep=6/gov=4",
+      "case/dep=7/gov=8",
+      "nmod:in/dep=8/gov=6",
+      "mark/dep=9/gov=12",
+      "compound/dep=10/gov=11",
+      "nsubj/dep=11/gov=12",
+      "advcl:as/dep=12/gov=4",
+      "xcomp/dep=13/gov=12",
+      "xcomp/dep=14/gov=13",
+      "mark/dep=15/gov=25",
+      "nsubj/dep=16/gov=25",
+      "mark/dep=17/gov=22",
+      "compound/dep=18/gov=20",
+      "compound/dep=19/gov=20",
+      "nsubj/dep=20/gov=22",
+      "aux/dep=21/gov=22",
+      "dep/dep=22/gov=16",
+      "compound/dep=23/gov=24",
+      "dobj/dep=24/gov=22",
+      "advcl:while/dep=25/gov=13",
+      "dobj/dep=26/gov=25",
+      "punct/dep=27/gov=0"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "Tuesday",
+        "start": 6,
+        "end": 7,
+        "entity-type": "Date",
+        "standoff_id": 8
+      },
+      {
+        "text": "prices",
+        "start": 3,
+        "end": 4,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 9
+      },
+      {
+        "text": "Oil",
+        "start": 2,
+        "end": 3,
+        "entity-type": "Commodity",
+        "standoff_id": 10
+      },
+      {
+        "text": "OPEC",
+        "start": 20,
+        "end": 21,
+        "entity-type": "Organization",
+        "standoff_id": 11
+      },
+      {
+        "text": "supply",
+        "start": 23,
+        "end": 24,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 13
+      },
+      {
+        "text": "prices",
+        "start": 26,
+        "end": 27,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 15
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "7_oil-prices-rise-on-supply-cut-hopes_E3_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 4,
+          "end": 5,
+          "text": "surged",
+          "standoff_id": 7
+        },
+        "arguments": [
+          {
+            "start": 6,
+            "end": 7,
+            "role": "Reference_point_time",
+            "entity-type": "Date",
+            "text": "Tuesday",
+            "standoff_id": 8
+          },
+          {
+            "start": 3,
+            "end": 4,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 9
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Oil",
+            "standoff_id": 10
+          }
+        ]
+      },
+      {
+        "id": "7_oil-prices-rise-on-supply-cut-hopes_E4_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Intensified",
+        "trigger": {
+          "start": 24,
+          "end": 25,
+          "text": "cuts",
+          "standoff_id": 12
+        },
+        "arguments": [
+          {
+            "start": 23,
+            "end": 24,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "supply",
+            "standoff_id": 13
+          },
+          {
+            "start": 20,
+            "end": 21,
+            "role": "Supplier_Consumer",
+            "entity-type": "Organization",
+            "text": "OPEC",
+            "standoff_id": 11
+          }
+        ],
+        "modality_cue": {
+          "start": 21,
+          "end": 22,
+          "text": "will",
+          "standoff_id": 14
+        },
+        "intensity_cue": {
+          "start": 22,
+          "end": 23,
+          "text": "prolong",
+          "standoff_id": 49
+        }
+      },
+      {
+        "id": "7_oil-prices-rise-on-supply-cut-hopes_E13_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 25,
+          "end": 26,
+          "text": "underpinned",
+          "standoff_id": 47
+        },
+        "arguments": [
+          {
+            "start": 26,
+            "end": 27,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 15
+          }
+        ]
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "7_oil-prices-rise-on-supply-cut-hopes_R5_aug1",
+        "cause": {
+          "event_id": "7_oil-prices-rise-on-supply-cut-hopes_E4_aug1",
+          "start": 24,
+          "end": 25,
+          "event_type": "Cause-movement-down-loss"
+        },
+        "effect": {
+          "event_id": "7_oil-prices-rise-on-supply-cut-hopes_E13_aug1",
+          "start": 25,
+          "end": 26,
+          "event_type": "Movement-up-gain"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "ORGANIZATION",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "MOVEMENT-UP-GAIN",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ],
+    "combined_entity": [
+      "URL",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "DATE",
+      "O",
+      "CITY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "TITLE",
+      "O",
+      "ORGANIZATION",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "MOVEMENT-UP-GAIN",
+      "FINANCIAL_ATTRIBUTE",
+      "O"
+    ]
+  }
+]

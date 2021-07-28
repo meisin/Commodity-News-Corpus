@@ -1,0 +1,359 @@
+[
+ {
+    "sentence_id": "2_demand_uncertainties_rule_oil_short_tem_outlook_11_aug1",
+    "words": [
+      "Opec",
+      "'s",
+      "supply",
+      "restrictions",
+      "support",
+      "a",
+      "rise",
+      "in",
+      "oil",
+      "prices",
+      "while",
+      "high",
+      "supplies",
+      "in",
+      "the",
+      "US",
+      "provide",
+      "hindrance",
+      "to",
+      "an",
+      "upward",
+      "trend",
+      "."
+    ],
+    "sentence": "Opec 's supply restrictions support a surge in oil prices while large supplies in the US provide hindrance to an upward trend .",
+    "start": 1494,
+    "end": 1618,
+    "pos-tags": [
+      "NNP",
+      "POS",
+      "NN",
+      "NNS",
+      "VBP",
+      "DT",
+      "NN",
+      "IN",
+      "NN",
+      "NNS",
+      "IN",
+      "JJ",
+      "NNS",
+      "IN",
+      "DT",
+      "NNP",
+      "VBP",
+      "NN",
+      "TO",
+      "DT",
+      "JJ",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "Opec",
+      "'s",
+      "supply",
+      "restriction",
+      "support",
+      "a",
+      "surge",
+      "in",
+      "oil",
+      "price",
+      "while",
+      "large",
+      "supplies",
+      "in",
+      "the",
+      "US",
+      "provide",
+      "hindrance",
+      "to",
+      "a",
+      "upward",
+      "trend",
+      "."
+    ],
+    "ner": [
+      "ORGANIZATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=4/gov=-1",
+      "nmod:poss/dep=0/gov=3",
+      "case/dep=1/gov=0",
+      "compound/dep=2/gov=3",
+      "nsubj/dep=3/gov=4",
+      "det/dep=5/gov=6",
+      "dobj/dep=6/gov=4",
+      "case/dep=7/gov=9",
+      "compound/dep=8/gov=9",
+      "nmod:in/dep=9/gov=4",
+      "mark/dep=10/gov=16",
+      "amod/dep=11/gov=12",
+      "nsubj/dep=12/gov=16",
+      "case/dep=13/gov=15",
+      "det/dep=14/gov=15",
+      "nmod:in/dep=15/gov=12",
+      "advcl:while/dep=16/gov=4",
+      "dobj/dep=17/gov=16",
+      "case/dep=18/gov=21",
+      "det/dep=19/gov=21",
+      "amod/dep=20/gov=21",
+      "nmod:to/dep=21/gov=16",
+      "punct/dep=22/gov=4"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "Opec",
+        "start": 0,
+        "end": 1,
+        "entity-type": "Organization",
+        "standoff_id": 25
+      },
+      {
+        "text": "supply",
+        "start": 2,
+        "end": 3,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 26
+      },
+      {
+        "text": "oil",
+        "start": 8,
+        "end": 9,
+        "entity-type": "Commodity",
+        "standoff_id": 28
+      },
+      {
+        "text": "prices",
+        "start": 9,
+        "end": 10,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 29
+      },
+      {
+        "text": "US",
+        "start": 15,
+        "end": 16,
+        "entity-type": "Country",
+        "standoff_id": 86
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "2_demand_uncertainties_rule_oil_short_tem_outlook_E8_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 3,
+          "end": 4,
+          "text": "restrictions",
+          "standoff_id": 24
+        },
+        "arguments": [
+          {
+            "start": 2,
+            "end": 3,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "supply",
+            "standoff_id": 26
+          },
+          {
+            "start": 0,
+            "end": 1,
+            "role": "Supplier_Consumer",
+            "entity-type": "Organization",
+            "text": "Opec",
+            "standoff_id": 25
+          }
+        ]
+      },
+      {
+        "id": "2_demand_uncertainties_rule_oil_short_tem_outlook_E9_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 6,
+          "end": 7,
+          "text": "surge",
+          "standoff_id": 27
+        },
+        "arguments": [
+          {
+            "start": 8,
+            "end": 9,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "oil",
+            "standoff_id": 28
+          },
+          {
+            "start": 9,
+            "end": 10,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 29
+          }
+        ]
+      },
+      {
+        "id": "2_demand_uncertainties_rule_oil_short_tem_outlook_E27_aug1",
+        "event_type": "Oversupply",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 11,
+          "end": 13,
+          "text": "large supplies",
+          "standoff_id": 87
+        },
+        "arguments": [
+          {
+            "start": 15,
+            "end": 16,
+            "role": "Place",
+            "entity-type": "Country",
+            "text": "US",
+            "standoff_id": 86
+          }
+        ]
+      },
+      {
+        "id": "2_demand_uncertainties_rule_oil_short_tem_outlook_E14_aug1",
+        "event_type": "Movement-up-gain",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 20,
+          "end": 22,
+          "text": "upward trend",
+          "standoff_id": 44
+        },
+        "arguments": [],
+        "intensity_cue": {
+          "start": 17,
+          "end": 18,
+          "text": "hindrance",
+          "standoff_id": 95
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "2_demand_uncertainties_rule_oil_short_tem_outlook_R8_aug1",
+        "cause": {
+          "event_id": "2_demand_uncertainties_rule_oil_short_tem_outlook_E8_aug1",
+          "start": 3,
+          "end": 4,
+          "event_type": "Cause-movement-down-loss"
+        },
+        "effect": {
+          "event_id": "2_demand_uncertainties_rule_oil_short_tem_outlook_E9_aug1",
+          "start": 6,
+          "end": 7,
+          "event_type": "Movement-up-gain"
+        }
+      },
+      {
+        "id": "2_demand_uncertainties_rule_oil_short_tem_outlook_R9_aug1",
+        "cause": {
+          "event_id": "2_demand_uncertainties_rule_oil_short_tem_outlook_E27_aug1",
+          "start": 11,
+          "end": 13,
+          "event_type": "Oversupply"
+        },
+        "effect": {
+          "event_id": "2_demand_uncertainties_rule_oil_short_tem_outlook_E14_aug1",
+          "start": 20,
+          "end": 22,
+          "event_type": "Movement-up-gain"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "ORGANIZATION",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "OVERSUPPLY",
+      "OVERSUPPLY",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "MOVEMENT-UP-GAIN",
+      "O"
+    ],
+    "combined_entity": [
+      "ORGANIZATION",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "O",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "OVERSUPPLY",
+      "OVERSUPPLY",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "MOVEMENT-UP-GAIN",
+      "MOVEMENT-UP-GAIN",
+      "O"
+    ]
+  }
+]

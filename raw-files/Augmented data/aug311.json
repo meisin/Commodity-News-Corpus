@@ -1,0 +1,253 @@
+[
+  {
+    "sentence_id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_0_aug1",
+    "words": [
+      "WTI",
+      "crude",
+      "falls",
+      "to",
+      "6-month",
+      "low",
+      "on",
+      "abundant",
+      "supply",
+      ",",
+      "demand",
+      "concerns",
+      "."
+    ],
+    "sentence": "WTI crude falls to 6-month low on abundant supply , demand concerns .",
+    "start": 0,
+    "end": 66,
+    "pos-tags": [
+      "NNP",
+      "JJ",
+      "VBZ",
+      "TO",
+      "JJ",
+      "JJ",
+      "IN",
+      "JJ",
+      "NN",
+      ",",
+      "NN",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "WTI",
+      "crude",
+      "fall",
+      "to",
+      "6-month",
+      "low",
+      "on",
+      "abundant",
+      "supply",
+      ",",
+      "demand",
+      "worry",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "DURATION",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=2/gov=-1",
+      "nsubj/dep=0/gov=2",
+      "amod/dep=1/gov=0",
+      "case/dep=3/gov=11",
+      "amod/dep=4/gov=11",
+      "amod/dep=5/gov=11",
+      "case/dep=6/gov=8",
+      "amod/dep=7/gov=8",
+      "nmod:on/dep=8/gov=5",
+      "punct/dep=9/gov=8",
+      "appos/dep=10/gov=8",
+      "nmod:to/dep=11/gov=2",
+      "punct/dep=12/gov=2"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "WTI crude",
+        "start": 0,
+        "end": 2,
+        "entity-type": "Commodity",
+        "standoff_id": 71
+      },
+      {
+        "text": "6-month",
+        "start": 4,
+        "end": 5,
+        "entity-type": "Duration",
+        "standoff_id": 73
+      },
+      {
+        "text": "demand",
+        "start": 10,
+        "end": 11,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 101
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_E23_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 2,
+          "end": 3,
+          "text": "falls",
+          "standoff_id": 70
+        },
+        "arguments": [
+          {
+            "start": 0,
+            "end": 2,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "WTI crude",
+            "standoff_id": 71
+          }
+        ]
+      },
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_E24_aug1",
+        "event_type": "Position-low",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 5,
+          "end": 6,
+          "text": "low",
+          "standoff_id": 72
+        },
+        "arguments": [
+          {
+            "start": 4,
+            "end": 5,
+            "role": "Duration",
+            "entity-type": "Duration",
+            "text": "6-month",
+            "standoff_id": 73
+          }
+        ]
+      },
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_E28_aug1",
+        "event_type": "Negative_sentiment",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 11,
+          "end": 12,
+          "text": "concerns",
+          "standoff_id": 100
+        },
+        "arguments": [
+          {
+            "start": 10,
+            "end": 11,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "demand",
+            "standoff_id": 101
+          }
+        ]
+      },
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_E30_aug1",
+        "event_type": "Oversupply",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 7,
+          "end": 9,
+          "text": "abundant supply",
+          "standoff_id": 103
+        },
+        "arguments": []
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_R1_aug1",
+        "cause": {
+          "event_id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_E30_aug1",
+          "start": 7,
+          "end": 9,
+          "event_type": "Oversupply"
+        },
+        "effect": {
+          "event_id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_E23_aug1",
+          "start": 2,
+          "end": 3,
+          "event_type": "Movement-down-loss"
+        }
+      },
+      {
+        "id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_R2_aug1",
+        "cause": {
+          "event_id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_E28_aug1",
+          "start": 11,
+          "end": 12,
+          "event_type": "Negative_sentiment"
+        },
+        "effect": {
+          "event_id": "1_Brent-crude-falls-to-13months-low-on-abundant-supply-demand-worries_E23_aug1",
+          "start": 2,
+          "end": 3,
+          "event_type": "Movement-down-loss"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "COMMODITY",
+      "COMMODITY",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "DURATION",
+      "POSITION-LOW",
+      "O",
+      "OVERSUPPLY",
+      "OVERSUPPLY",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "NEGATIVE_SENTIMENT",
+      "O"
+    ],
+    "combined_entity": [
+      "COMMODITY",
+      "COMMODITY",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "DURATION",
+      "POSITION-LOW",
+      "O",
+      "OVERSUPPLY",
+      "OVERSUPPLY",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "NEGATIVE_SENTIMENT",
+      "O"
+    ]
+  }
+]

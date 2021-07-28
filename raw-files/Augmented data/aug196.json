@@ -1,0 +1,182 @@
+[
+  {
+    "sentence_id": "6_oil-falls-on-coronavirus-surge-unexpected-US-crude-stockpile-rise_18_aug1",
+    "words": [
+      "It",
+      "was",
+      "considering",
+      "a",
+      "cutback",
+      "in",
+      "its",
+      "production",
+      "cuts",
+      "to",
+      "7.3",
+      "million",
+      "bpd",
+      "."
+    ],
+    "sentence": "It was considering a cutback in its production cuts to 7.3 million bpd .",
+    "start": 2255,
+    "end": 2324,
+    "pos-tags": [
+      "PRP",
+      "VBD",
+      "VBG",
+      "DT",
+      "NN",
+      "IN",
+      "PRP$",
+      "NN",
+      "NNS",
+      "TO",
+      "CD",
+      "CD",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "it",
+      "be",
+      "consider",
+      "a",
+      "cutback",
+      "in",
+      "its",
+      "production",
+      "cut",
+      "to",
+      "7.3",
+      "million",
+      "bpd",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "NUMBER",
+      "NUMBER",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=2/gov=-1",
+      "nsubj/dep=0/gov=2",
+      "aux/dep=1/gov=2",
+      "det/dep=3/gov=4",
+      "dobj/dep=4/gov=2",
+      "case/dep=5/gov=8",
+      "nmod:poss/dep=6/gov=8",
+      "compound/dep=7/gov=8",
+      "nmod:in/dep=8/gov=4",
+      "case/dep=9/gov=12",
+      "compound/dep=10/gov=11",
+      "nummod/dep=11/gov=12",
+      "nmod:to/dep=12/gov=2",
+      "punct/dep=13/gov=2"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "production",
+        "start": 7,
+        "end": 8,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 90
+      },
+      {
+        "text": "7.3 million bpd",
+        "start": 10,
+        "end": 13,
+        "entity-type": "Production_unit",
+        "standoff_id": 93
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "6_oil-falls-on-coronavirus-surge-unexpected-US-crude-stockpile-rise_E28_aug1",
+        "event_type": "Cause-movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 8,
+          "end": 9,
+          "text": "cuts",
+          "standoff_id": 89
+        },
+        "arguments": [
+          {
+            "start": 7,
+            "end": 8,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "production",
+            "standoff_id": 90
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "role": "Final_value",
+            "entity-type": "Production_unit",
+            "text": "7.3 million bpd",
+            "standoff_id": 93
+          }
+        ],
+        "intensity_cue": {
+          "start": 4,
+          "end": 5,
+          "text": "cutback",
+          "standoff_id": 91
+        },
+        "modality_cue": {
+          "start": 2,
+          "end": 3,
+          "text": "considering",
+          "standoff_id": 92
+        }
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "PRODUCTION_UNIT",
+      "PRODUCTION_UNIT",
+      "PRODUCTION_UNIT",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "CAUSE-MOVEMENT-DOWN-LOSS",
+      "O",
+      "PRODUCTION_UNIT",
+      "PRODUCTION_UNIT",
+      "PRODUCTION_UNIT",
+      "O"
+    ]
+  }
+]

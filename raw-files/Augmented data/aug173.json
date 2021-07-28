@@ -1,0 +1,175 @@
+[
+  {
+    "sentence_id": "3_russian_oil_use_to_sink_exports_rise_on_sanctions_tax_revamp_9_aug1",
+    "words": [
+      "The",
+      "decline",
+      "slowed",
+      "in",
+      "October",
+      ",",
+      "thanks",
+      "to",
+      "government",
+      "'s",
+      "incentives",
+      "for",
+      "new",
+      "vehicle",
+      "purchases",
+      "."
+    ],
+    "sentence": "The decline slowed in October , thanks to government 's incentives for new vehicle purchases .",
+    "start": 1307,
+    "end": 1398,
+    "pos-tags": [
+      "DT",
+      "NN",
+      "VBD",
+      "IN",
+      "NNP",
+      ",",
+      "NNS",
+      "TO",
+      "NN",
+      "POS",
+      "NNS",
+      "IN",
+      "JJ",
+      "NN",
+      "NNS",
+      "."
+    ],
+    "lemma": [
+      "the",
+      "decline",
+      "slow",
+      "in",
+      "October",
+      ",",
+      "thanks",
+      "to",
+      "government",
+      "'s",
+      "incentive",
+      "for",
+      "new",
+      "vehicle",
+      "purchase",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=2/gov=-1",
+      "det/dep=0/gov=1",
+      "nsubj/dep=1/gov=2",
+      "case/dep=3/gov=4",
+      "nmod:in/dep=4/gov=2",
+      "punct/dep=5/gov=2",
+      "advmod/dep=6/gov=2",
+      "case/dep=7/gov=10",
+      "nmod:poss/dep=8/gov=10",
+      "case/dep=9/gov=8",
+      "nmod:to/dep=10/gov=6",
+      "case/dep=11/gov=14",
+      "amod/dep=12/gov=14",
+      "compound/dep=13/gov=14",
+      "nmod:for/dep=14/gov=10",
+      "punct/dep=15/gov=2"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "October",
+        "start": 4,
+        "end": 5,
+        "entity-type": "Date",
+        "standoff_id": 34
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "3_russian_oil_use_to_sink_exports_rise_on_sanctions_tax_revamp_E41_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 1,
+          "end": 2,
+          "text": "fall",
+          "standoff_id": 46
+        },
+        "arguments": [
+          {
+            "start": 4,
+            "end": 5,
+            "role": "Reference_point_time",
+            "entity-type": "Date",
+            "text": "November",
+            "standoff_id": 34
+          }
+        ],
+        "intensity_cue": {
+          "start": 2,
+          "end": 3,
+          "text": "slowed",
+          "standoff_id": 36
+        }
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  }
+]

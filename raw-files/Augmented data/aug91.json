@@ -1,0 +1,463 @@
+[
+  {
+    "sentence_id": "7_Crude-continues-slide-on-weak-US-employment-data_2_aug1",
+    "words": [
+      "Investing.com",
+      "-",
+      "Crude",
+      "oil",
+      "futures",
+      "continued",
+      "losses",
+      "on",
+      "Thursday",
+      "as",
+      "weaker-than-expected",
+      "jobs",
+      "numbers",
+      "fueled",
+      "sentiment",
+      "the",
+      "U.S.",
+      "economy",
+      "is",
+      "slowing",
+      "and",
+      "will",
+      "need",
+      "less",
+      "fuels",
+      "to",
+      "operate",
+      "."
+    ],
+    "sentence": "Investing.com - Crude oil futures continued losses on Thursday as weaker-than-expected jobs numbers fueled sentiment the U.S. economy is slowing and will need less fuels to operate .",
+    "start": 162,
+    "end": 340,
+    "pos-tags": [
+      "NNP",
+      ":",
+      "JJ",
+      "NN",
+      "NNS",
+      "VBD",
+      "NNS",
+      "IN",
+      "NNP",
+      "IN",
+      "JJ",
+      "NNS",
+      "NNS",
+      "VBN",
+      "NN",
+      "DT",
+      "NNP",
+      "NN",
+      "VBZ",
+      "VBG",
+      "CC",
+      "MD",
+      "VB",
+      "JJR",
+      "NNS",
+      "TO",
+      "VB",
+      "."
+    ],
+    "lemma": [
+      "Investing.com",
+      "-",
+      "crude",
+      "oil",
+      "future",
+      "extend",
+      "loss",
+      "on",
+      "Thursday",
+      "as",
+      "weaker-than-expected",
+      "job",
+      "number",
+      "fuel",
+      "sentiment",
+      "the",
+      "U.S.",
+      "economy",
+      "be",
+      "cool",
+      "and",
+      "will",
+      "need",
+      "less",
+      "fuel",
+      "to",
+      "operate",
+      "."
+    ],
+    "ner": [
+      "URL",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=0/gov=-1",
+      "punct/dep=1/gov=0",
+      "amod/dep=2/gov=4",
+      "compound/dep=3/gov=4",
+      "nsubj/dep=4/gov=5",
+      "nsubj/dep=4/gov=22",
+      "parataxis/dep=5/gov=0",
+      "dobj/dep=6/gov=5",
+      "case/dep=7/gov=8",
+      "nmod:on/dep=8/gov=5",
+      "case/dep=9/gov=12",
+      "amod/dep=10/gov=12",
+      "compound/dep=11/gov=12",
+      "nmod:as/dep=12/gov=5",
+      "acl/dep=13/gov=12",
+      "dobj/dep=14/gov=13",
+      "det/dep=15/gov=17",
+      "compound/dep=16/gov=17",
+      "nsubj/dep=17/gov=19",
+      "aux/dep=18/gov=19",
+      "acl:relcl/dep=19/gov=14",
+      "cc/dep=20/gov=5",
+      "aux/dep=21/gov=22",
+      "parataxis/dep=22/gov=0",
+      "conj:and/dep=22/gov=5",
+      "amod/dep=23/gov=24",
+      "dobj/dep=24/gov=22",
+      "mark/dep=25/gov=26",
+      "acl:to/dep=26/gov=24",
+      "punct/dep=27/gov=0"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "futures",
+        "start": 4,
+        "end": 5,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 6
+      },
+      {
+        "text": "Crude oil",
+        "start": 2,
+        "end": 4,
+        "entity-type": "Commodity",
+        "standoff_id": 8
+      },
+      {
+        "text": "Thursday",
+        "start": 8,
+        "end": 9,
+        "entity-type": "Date",
+        "standoff_id": 9
+      },
+      {
+        "text": "jobs numbers",
+        "start": 11,
+        "end": 13,
+        "entity-type": "Economic_item",
+        "standoff_id": 11
+      },
+      {
+        "text": "economy",
+        "start": 17,
+        "end": 18,
+        "entity-type": "Economic_item",
+        "standoff_id": 12
+      },
+      {
+        "text": "U.S.",
+        "start": 16,
+        "end": 17,
+        "entity-type": "Country",
+        "standoff_id": 13
+      },
+      {
+        "text": "need",
+        "start": 22,
+        "end": 23,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 16
+      },
+      {
+        "text": "fuels",
+        "start": 24,
+        "end": 25,
+        "entity-type": "Commodity",
+        "standoff_id": 18
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "7_Crude-continues-slide-on-weak-US-employment-data_E3_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Intensified",
+        "trigger": {
+          "start": 6,
+          "end": 7,
+          "text": "losses",
+          "standoff_id": 7
+        },
+        "arguments": [
+          {
+            "start": 4,
+            "end": 5,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "futures",
+            "standoff_id": 6
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Crude oil",
+            "standoff_id": 8
+          },
+          {
+            "start": 8,
+            "end": 9,
+            "role": "Reference_point_time",
+            "entity-type": "Date",
+            "text": "Thursday",
+            "standoff_id": 9
+          }
+        ],
+        "intensity_cue": {
+          "start": 5,
+          "end": 6,
+          "text": "continued",
+          "standoff_id": 66
+        }
+      },
+      {
+        "id": "7_Crude-continues-slide-on-weak-US-employment-data_E4_aug1",
+        "event_type": "Slow-weak",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 10,
+          "end": 11,
+          "text": "weaker-than-expected",
+          "standoff_id": 10
+        },
+        "arguments": [
+          {
+            "start": 11,
+            "end": 13,
+            "role": "Item",
+            "entity-type": "Economic_item",
+            "text": "jobs numbers",
+            "standoff_id": 11
+          }
+        ]
+      },
+      {
+        "id": "7_Crude-continues-slide-on-weak-US-employment-data_E5_aug1",
+        "event_type": "Slow-weak",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 19,
+          "end": 20,
+          "text": "slowing",
+          "standoff_id": 14
+        },
+        "arguments": [
+          {
+            "start": 17,
+            "end": 18,
+            "role": "Item",
+            "entity-type": "Economic_item",
+            "text": "economy",
+            "standoff_id": 12
+          },
+          {
+            "start": 16,
+            "end": 17,
+            "role": "Supplier_Consumer",
+            "entity-type": "Country",
+            "text": "U.S.",
+            "standoff_id": 13
+          }
+        ]
+      },
+      {
+        "id": "7_Crude-continues-slide-on-weak-US-employment-data_E6_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 23,
+          "end": 24,
+          "text": "less",
+          "standoff_id": 15
+        },
+        "arguments": [
+          {
+            "start": 24,
+            "end": 25,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "fuels",
+            "standoff_id": 18
+          },
+          {
+            "start": 22,
+            "end": 23,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "need",
+            "standoff_id": 16
+          }
+        ],
+        "modality_cue": {
+          "start": 21,
+          "end": 22,
+          "text": "will",
+          "standoff_id": 17
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "7_Crude-continues-slide-on-weak-US-employment-data_R2_aug1",
+        "cause": {
+          "event_id": "7_Crude-continues-slide-on-weak-US-employment-data_E4_aug1",
+          "start": 10,
+          "end": 11,
+          "event_type": "Slow-weak"
+        },
+        "effect": {
+          "event_id": "7_Crude-continues-slide-on-weak-US-employment-data_E5_aug1",
+          "start": 19,
+          "end": 20,
+          "event_type": "Slow-weak"
+        }
+      },
+      {
+        "id": "7_Crude-continues-slide-on-weak-US-employment-data_R3_aug1",
+        "cause": {
+          "event_id": "7_Crude-continues-slide-on-weak-US-employment-data_E5_aug1",
+          "start": 19,
+          "end": 20,
+          "event_type": "Slow-weak"
+        },
+        "effect": {
+          "event_id": "7_Crude-continues-slide-on-weak-US-employment-data_E6_aug1",
+          "start": 23,
+          "end": 24,
+          "event_type": "Movement-down-loss"
+        }
+      },
+      {
+        "id": "7_Crude-continues-slide-on-weak-US-employment-data_R4_aug1",
+        "cause": {
+          "event_id": "7_Crude-continues-slide-on-weak-US-employment-data_E6_aug1",
+          "start": 23,
+          "end": 24,
+          "event_type": "Movement-down-loss"
+        },
+        "effect": {
+          "event_id": "7_Crude-continues-slide-on-weak-US-employment-data_E3_aug1",
+          "start": 6,
+          "end": 7,
+          "event_type": "Movement-down-loss"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "O",
+      "O",
+      "COMMODITY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "DATE",
+      "O",
+      "SLOW-WEAK",
+      "ECONOMIC_ITEM",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "ECONOMIC_ITEM",
+      "O",
+      "SLOW-WEAK",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-DOWN-LOSS",
+      "COMMODITY",
+      "O",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "URL",
+      "O",
+      "COMMODITY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "O",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "DATE",
+      "O",
+      "SLOW-WEAK",
+      "ECONOMIC_ITEM",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "COUNTRY",
+      "ECONOMIC_ITEM",
+      "O",
+      "SLOW-WEAK",
+      "O",
+      "O",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-DOWN-LOSS",
+      "COMMODITY",
+      "O",
+      "O",
+      "O"
+    ]
+  }
+]

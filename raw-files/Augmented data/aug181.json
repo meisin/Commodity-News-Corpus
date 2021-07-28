@@ -1,0 +1,194 @@
+[
+ {
+    "sentence_id": "5_crude-oil-prices-lower-as-middle-east-tensions-ease_0_aug1",
+    "words": [
+      "Crude",
+      "oil",
+      "prices",
+      "lower",
+      "as",
+      "Middle",
+      "East",
+      "tensions",
+      "lessen",
+      "."
+    ],
+    "sentence": "Crude oil prices lower as Middle East tensions lessen .",
+    "start": 0,
+    "end": 54,
+    "pos-tags": [
+      "JJ",
+      "NN",
+      "NNS",
+      "JJR",
+      "IN",
+      "NNP",
+      "NNP",
+      "NNS",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "crude",
+      "oil",
+      "future",
+      "lower",
+      "as",
+      "Middle",
+      "East",
+      "tension",
+      "lessen",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "LOCATION",
+      "LOCATION",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=8/gov=-1",
+      "amod/dep=0/gov=2",
+      "compound/dep=1/gov=2",
+      "nsubj/dep=2/gov=8",
+      "amod/dep=3/gov=2",
+      "case/dep=4/gov=7",
+      "amod/dep=5/gov=6",
+      "amod/dep=6/gov=7",
+      "nmod:as/dep=7/gov=3",
+      "punct/dep=9/gov=8"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "prices",
+        "start": 2,
+        "end": 3,
+        "entity-type": "Financial_attribute",
+        "standoff_id": 2
+      },
+      {
+        "text": "Crude oil",
+        "start": 0,
+        "end": 2,
+        "entity-type": "Commodity",
+        "standoff_id": 3
+      },
+      {
+        "text": "Middle East",
+        "start": 5,
+        "end": 7,
+        "entity-type": "Location",
+        "standoff_id": 6
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "5_crude-oil-prices-lower-as-middle-east-tensions-ease_E1_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 3,
+          "end": 4,
+          "text": "lower",
+          "standoff_id": 1
+        },
+        "arguments": [
+          {
+            "start": 2,
+            "end": 3,
+            "role": "Attribute",
+            "entity-type": "Financial_attribute",
+            "text": "prices",
+            "standoff_id": 2
+          },
+          {
+            "start": 0,
+            "end": 2,
+            "role": "Item",
+            "entity-type": "Commodity",
+            "text": "Crude oil",
+            "standoff_id": 3
+          }
+        ]
+      },
+      {
+        "id": "5_crude-oil-prices-lower-as-middle-east-tensions-ease_E2_aug1",
+        "event_type": "Geopolitical-tension",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Eased",
+        "trigger": {
+          "start": 7,
+          "end": 8,
+          "text": "tensions",
+          "standoff_id": 4
+        },
+        "arguments": [
+          {
+            "start": 5,
+            "end": 7,
+            "role": "Place",
+            "entity-type": "Location",
+            "text": "Middle East",
+            "standoff_id": 6
+          }
+        ],
+        "intensity_cue": {
+          "start": 8,
+          "end": 9,
+          "text": "lessen",
+          "standoff_id": 5
+        }
+      }
+    ],
+    "event-event-relations": [
+      {
+        "id": "5_crude-oil-prices-lower-as-middle-east-tensions-ease_R1_aug1",
+        "cause": {
+          "event_id": "5_crude-oil-prices-lower-as-middle-east-tensions-ease_E2_aug1",
+          "start": 7,
+          "end": 8,
+          "event_type": "Geopolitical-tension"
+        },
+        "effect": {
+          "event_id": "5_crude-oil-prices-lower-as-middle-east-tensions-ease_E1_aug1",
+          "start": 3,
+          "end": 4,
+          "event_type": "Movement-down-loss"
+        }
+      }
+    ],
+    "nominal-entity": [
+      "COMMODITY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "LOCATION",
+      "LOCATION",
+      "GEOPOLITICAL-TENSION",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "COMMODITY",
+      "COMMODITY",
+      "FINANCIAL_ATTRIBUTE",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "LOCATION",
+      "LOCATION",
+      "GEOPOLITICAL-TENSION",
+      "O",
+      "O"
+    ]
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "sentence_id": "2_global-oil-glut-set-to-intensify_3_aug2",
+    "words": [
+      "However",
+      ",",
+      "a",
+      "softening",
+      "global",
+      "economy",
+      "could",
+      "intensify",
+      "the",
+      "glut",
+      "it",
+      "said",
+      "."
+    ],
+    "sentence": "However , a softening global economy could intensify the glut it said .",
+    "start": 354,
+    "end": 418,
+    "pos-tags": [
+      "RB",
+      ",",
+      "DT",
+      "VBG",
+      "JJ",
+      "NN",
+      "MD",
+      "VB",
+      "DT",
+      "NN",
+      "PRP",
+      "VBD",
+      "."
+    ],
+    "lemma": [
+      "however",
+      ",",
+      "a",
+      "slow",
+      "global",
+      "economy",
+      "could",
+      "intensify",
+      "the",
+      "glut",
+      "it",
+      "say",
+      "."
+    ],
+    "ner": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=7/gov=-1",
+      "advmod/dep=0/gov=7",
+      "punct/dep=1/gov=7",
+      "det/dep=2/gov=5",
+      "amod/dep=3/gov=5",
+      "amod/dep=4/gov=5",
+      "nsubj/dep=5/gov=7",
+      "aux/dep=6/gov=7",
+      "det/dep=8/gov=9",
+      "dobj/dep=9/gov=7",
+      "nsubj/dep=10/gov=11",
+      "acl:relcl/dep=11/gov=9",
+      "punct/dep=12/gov=7"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "economy",
+        "start": 5,
+        "end": 6,
+        "entity-type": "Economic_item",
+        "standoff_id": 6
+      },
+      {
+        "text": "global",
+        "start": 4,
+        "end": 5,
+        "entity-type": "Location",
+        "standoff_id": 7
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "2_global-oil-glut-set-to-intensify_E2_aug2",
+        "event_type": "Slow-weak",
+        "polarity": "Positive",
+        "modality": "Asserted",
+        "intensity": "Neutral",
+        "trigger": {
+          "start": 3,
+          "end": 4,
+          "text": "softening",
+          "standoff_id": 5
+        },
+        "arguments": [
+          {
+            "start": 4,
+            "end": 5,
+            "role": "Type",
+            "entity-type": "Location",
+            "text": "global",
+            "standoff_id": 7
+          },
+          {
+            "start": 5,
+            "end": 6,
+            "role": "Item",
+            "entity-type": "Economic_item",
+            "text": "economy",
+            "standoff_id": 6
+          }
+        ]
+      },
+      {
+        "id": "2_global-oil-glut-set-to-intensify_E3_aug2",
+        "event_type": "glut",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Intensified",
+        "trigger": {
+          "start": 9,
+          "end": 10,
+          "text": "glut",
+          "standoff_id": 8
+        },
+        "arguments": [],
+        "intensity_cue": {
+          "start": 7,
+          "end": 8,
+          "text": "intensify",
+          "standoff_id": 9
+        },
+        "modality_cue": {
+          "start": 6,
+          "end": 7,
+          "text": "could",
+          "standoff_id": 72
+        }
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "O",
+      "O",
+      "O",
+      "SLOW-WEAK",
+      "LOCATION",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "glut",
+      "O",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "O",
+      "O",
+      "SLOW-WEAK",
+      "LOCATION",
+      "ECONOMIC_ITEM",
+      "O",
+      "O",
+      "O",
+      "glut",
+      "O",
+      "O",
+      "O"
+    ]
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "sentence_id": "9_Oil-dips-on-inventories-gold-vulnerable_9_aug1",
+    "words": [
+      "If",
+      "today",
+      "continues",
+      "to",
+      "prolong",
+      "this",
+      "bond",
+      "market",
+      "selloff",
+      ",",
+      "gold",
+      "could",
+      "see",
+      "some",
+      "more",
+      "short-term",
+      "pain",
+      "."
+    ],
+    "sentence": "If today continues to prolong this bond market selloff , gold could see some more short-term pain .",
+    "start": 872,
+    "end": 968,
+    "pos-tags": [
+      "IN",
+      "NN",
+      "VBZ",
+      "TO",
+      "VB",
+      "DT",
+      "NN",
+      "NN",
+      "NN",
+      ",",
+      "NN",
+      "MD",
+      "VB",
+      "DT",
+      "JJR",
+      "JJ",
+      "NN",
+      "."
+    ],
+    "lemma": [
+      "if",
+      "today",
+      "continue",
+      "to",
+      "prolong",
+      "this",
+      "bond",
+      "market",
+      "selloff",
+      ",",
+      "gold",
+      "could",
+      "see",
+      "some",
+      "more",
+      "short-term",
+      "pain",
+      "."
+    ],
+    "ner": [
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "stanford-colcc": [
+      "ROOT/dep=12/gov=-1",
+      "mark/dep=0/gov=2",
+      "dep/dep=1/gov=2",
+      "advcl:if/dep=2/gov=12",
+      "mark/dep=3/gov=4",
+      "xcomp/dep=4/gov=2",
+      "det/dep=5/gov=8",
+      "compound/dep=6/gov=8",
+      "compound/dep=7/gov=8",
+      "dobj/dep=8/gov=4",
+      "punct/dep=9/gov=12",
+      "nsubj/dep=10/gov=12",
+      "aux/dep=11/gov=12",
+      "det/dep=13/gov=16",
+      "amod/dep=14/gov=16",
+      "amod/dep=15/gov=16",
+      "dobj/dep=16/gov=12",
+      "punct/dep=17/gov=12"
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "bond market",
+        "start": 6,
+        "end": 8,
+        "entity-type": "Economic_item",
+        "standoff_id": 70
+      },
+      {
+        "text": "gold",
+        "start": 10,
+        "end": 11,
+        "entity-type": "Commodity",
+        "standoff_id": 71
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "id": "9_Oil-dips-on-inventories-gold-vulnerable_E24_aug1",
+        "event_type": "Movement-down-loss",
+        "polarity": "Positive",
+        "modality": "Other",
+        "intensity": "Intensified",
+        "trigger": {
+          "start": 8,
+          "end": 9,
+          "text": "selloff",
+          "standoff_id": 72
+        },
+        "arguments": [
+          {
+            "start": 6,
+            "end": 8,
+            "role": "Item",
+            "entity-type": "Economic_item",
+            "text": "bond market",
+            "standoff_id": 70
+          }
+        ],
+        "intensity_cue": {
+          "start": 4,
+          "end": 5,
+          "text": "prolong",
+          "standoff_id": 78
+        },
+        "modality_cue": {
+          "start": 0,
+          "end": 1,
+          "text": "If",
+          "standoff_id": 79
+        }
+      }
+    ],
+    "event-event-relations": [],
+    "nominal-entity": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "ECONOMIC_ITEM",
+      "ECONOMIC_ITEM",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "combined_entity": [
+      "O",
+      "DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "ECONOMIC_ITEM",
+      "ECONOMIC_ITEM",
+      "MOVEMENT-DOWN-LOSS",
+      "O",
+      "COMMODITY",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  }
+]
