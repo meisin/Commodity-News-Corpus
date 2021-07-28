@@ -285,7 +285,7 @@
     "golden-event-mentions": [
       {
         "id": "5_crude-oil-trades-lower-close-to-5-week-low-on-us-demand-concerns_E3_aug1",
-        "event_type": "Movement-lower-loss",
+        "event_type": "Movement-down-loss",
         "polarity": "Positive",
         "modality": "Asserted",
         "intensity": "Neutral",
@@ -398,7 +398,7 @@
       },
       {
         "id": "5_crude-oil-trades-lower-close-to-5-week-low-on-us-demand-concerns_E33_aug1",
-        "event_type": "Movement-lower-loss",
+        "event_type": "Movement-down-loss",
         "polarity": "Positive",
         "modality": "Other",
         "intensity": "Neutral",
@@ -447,7 +447,7 @@
           "event_id": "5_crude-oil-trades-lower-close-to-5-week-low-on-us-demand-concerns_E33_aug1",
           "start": 29,
           "end": 31,
-          "event_type": "Movement-lower-loss"
+          "event_type": "Movement-down-loss"
         }
       },
       {
@@ -456,13 +456,13 @@
           "event_id": "5_crude-oil-trades-lower-close-to-5-week-low-on-us-demand-concerns_E33_aug1",
           "start": 29,
           "end": 31,
-          "event_type": "Movement-lower-loss"
+          "event_type": "Movement-down-loss"
         },
         "effect": {
           "event_id": "5_crude-oil-trades-lower-close-to-5-week-low-on-us-demand-concerns_E3_aug1",
           "start": 6,
           "end": 7,
-          "event_type": "Movement-lower-loss"
+          "event_type": "Movement-down-loss"
         }
       }
     ],

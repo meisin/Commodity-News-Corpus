@@ -129,7 +129,7 @@
       },
       {
         "id": "2_global-oil-glut-set-to-intensify_E3_aug2",
-        "event_type": "glut",
+        "event_type": "Oversupply",
         "polarity": "Positive",
         "modality": "Other",
         "intensity": "Intensified",
@@ -165,7 +165,7 @@
       "O",
       "O",
       "O",
-      "glut",
+      "OVERSUPPLY",
       "O",
       "O",
       "O"
@@ -180,7 +180,7 @@
       "O",
       "O",
       "O",
-      "glut",
+      "OVERSUPPLY",
       "O",
       "O",
       "O"

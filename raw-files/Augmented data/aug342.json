@@ -364,7 +364,7 @@
       },
       {
         "id": "4_covid-fears-drive-oil-prices-downwards_E3_aug1",
-        "event_type": "Movement-up-profit",
+        "event_type": "Movement-up-gain",
         "polarity": "Positive",
         "modality": "Asserted",
         "intensity": "Neutral",
