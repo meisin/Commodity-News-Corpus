@@ -157,7 +157,6 @@ T118	Position-high 3008 3013	highs
 E37	Position-high:T118 Reference_point_time:T120 Final_value:T119
 T119	MONEY 3024 3027	$68
 T120	DATE 3028 3037	last week
-T121	INTENSITY_cue 3179 3184	break
 T124	Commodity 3196 3199	WTI
 T125	Movement-down-loss 3218 3223	lower
 E39	Movement-down-loss:T125 Item:T124 Modality_cue:T128 Final_value:T126

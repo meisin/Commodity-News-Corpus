@@ -97,13 +97,6 @@
         "end": 9,
         "entity-type": "Financial_attribute",
         "standoff_id": 5
-      },
-      {
-        "text": "eyes",
-        "start": 1,
-        "end": 2,
-        "entity-type": "Modality_cue",
-        "standoff_id": 8
       }
     ],
     "golden-event-mentions": [

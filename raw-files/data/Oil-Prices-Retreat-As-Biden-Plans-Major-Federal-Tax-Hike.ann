@@ -21,7 +21,6 @@ T14	Commodity 304 307	WTI
 T17	Movement-down-loss 353 357	drop
 E6	Movement-down-loss:T17 
 T18	Economic_item 458 481	corporate profit growth
-T20	MODALITY_cue 445 450	could
 T19	Oversupply 1019 1029	oversupply
 E7	Oversupply:T19 
 T21	Grow-strong 1061 1065	grew

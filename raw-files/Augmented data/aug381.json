@@ -372,13 +372,6 @@
         "standoff_id": 18
       },
       {
-        "text": "could",
-        "start": 52,
-        "end": 53,
-        "entity-type": "Modality_cue",
-        "standoff_id": 20
-      },
-      {
         "text": "below $64.50",
         "start": 28,
         "end": 31,

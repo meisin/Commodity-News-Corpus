@@ -93,7 +93,6 @@ E22	Oversupply:T69 Place:T70 Difference:T72 Reference_point_time:T93 Forecast:T7
 T70	LOCATION 1916 1922	global
 T71	Forecast_target 1904 1913	forecasts
 T72	Production_unit 1934 1959	2 million barrels per day
-T73	MODALITY_cue 1989 1995	expect
 T74	Movement-up-gain 2159 2164	risen
 E23	Movement-up-gain:T74 Attribute:T77 Item:T75 Supplier_Consumer:T76 Forecast:T78
 T75	Commodity 2064 2069	crude
