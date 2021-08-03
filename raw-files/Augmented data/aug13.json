@@ -301,7 +301,7 @@
     "golden-event-mentions": [
       {
         "id": "2_global-oil-glut-set-to-aggravate_E12_aug2",
-        "event_type": "glut",
+        "event_type": "Oversupply",
         "polarity": "Positive",
         "modality": "Other",
         "intensity": "Intensified",
