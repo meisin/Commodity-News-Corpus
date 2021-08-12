@@ -153,7 +153,6 @@ T113	Movement-up-gain 4364 4368	gain
 E38	Movement-up-gain:T113 Difference:T112
 T114	Position-high 4450 4455	highs
 E39	Position-high:T114 Item:T115
-T115	Economic_item 4382 4436	all three major Wall Street indexes (DJI) (SPX) (IXIC)
 T116	Movement-up-gain 4558 4562	rose
 E40	Movement-up-gain:T116 Item:T117 Reference_point_time:T120
 T117	Commodity 4552 4556	Gold
@@ -187,3 +186,4 @@ R6	Cause-Precondition Arg1:E42 Arg2:E40
 T132	Financial_attribute 3910 3915	yield
 T133	Financial_attribute 4062 4067	yield
 T102	Economic_item 3905 3909	bond
+T115	Economic_item 4382 4417	all three major Wall Street indexes
