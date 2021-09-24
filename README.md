@@ -1,5 +1,7 @@
 # Commodity News Corpus
 
+This is the repository for the dataset introduced in "An Annotated Commodity News Corpus for Event Extraction"(https://arxiv.org/abs/2105.08214)
+
 ### 1. Annotation
 Annotations are done using [Brat Rapid Annotation Tool](https://brat.nlplab.org/). 
  ![annotation](brat_annotation.png)
@@ -111,10 +113,12 @@ There are 19 Event Types
 ### 5. Citation
 To use this dataset is made available for academic research purposes only, please cite this publication:
 ```
-@article{lee2021commodities,
-  title={The Commodities News Corpus: A Resource forUnderstanding Commodity News Better},
-  author={Lee, Meisin and Soon, Lay Ki and Siew, Eu-gene},
-  journal={arXiv preprint arXiv:2105.08214},
-  year={2021}
+@misc{lee2021annotated,
+      title={An Annotated Commodity News Corpus for Event Extraction}, 
+      author={Meisin Lee and Lay-Ki Soon and Eu-Gene Siew and Ly Fie Sugianto},
+      year={2021},
+      eprint={2105.08214},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
