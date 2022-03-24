@@ -1,9 +1,10 @@
-import pandas as pd
-from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup as soup
-import io
 from os import listdir
 from os.path import isfile, join
+from urllib.request import Request, urlopen
+
+import pandas as pd
+from tqdm import tqdm
+from bs4 import BeautifulSoup as soup
 from bs4 import Tag, NavigableString
 
 OUTPUT_DIRECTORY = 'data/'
@@ -177,7 +178,7 @@ def fxempire(url, file_name):
 if __name__ == '__main__':
     
     data_source = pd.read_csv ('data_source.csv')
-    for index, row in data_source.iterrows():
+    for index, row in tqdm(data_source.iterrows(), total=len(data_source)):
         if row['Source'] == 'reuters':
             reuters(row['URL'],row['FileName'])
         elif row['Source'] == 'investing':

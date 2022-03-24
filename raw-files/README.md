@@ -7,6 +7,7 @@ Due to copyright issues, original news articles are not made available. Instead 
 Run the following codes to extract the news articles. The extracted artiles are saved in *.txt* format and saved into the *data* folder.
 
 ```
+pip install -r req.txt
 python content_scraping.py
 ## Note:  Make sure *data_source.csv* in the same folder as *content_scraping.py*
 ```
